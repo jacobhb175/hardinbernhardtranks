@@ -1,5 +1,5 @@
 # Hardin-Bernhardt Ranks
-Hardin-Bernhardt Ranks is a new way of ranking NHBB teams, affiliated with NHBBRank using a modified version of the Go Elo formula that takes into account strength of field and margin of victory.
+Hardin-Bernhardt Ranks is a new way of ranking NHBB teams, affiliated with NHBBRank, using a modified version of the Go Elo formula that takes into account strength of field and margin of victory.
 
 ## The Formulas
 Expected Score:
