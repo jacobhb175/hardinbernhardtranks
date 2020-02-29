@@ -13,8 +13,8 @@ The q-value is used to represent strength of field at a tournament and intended 
 The T-value is used to account for the inherent issues in equating the percent chance of a given winning to the percent of total points that team will score. It is calculated as a ratio of the percent of total points scored by a given team : the percent chance given to that team to win.
 
 ## List of Tournaments
-|Tournament|Date|Set Played|Status|
-|---|---|---|
+Tournament|Date|Set Played|Status
+---|---|---|---
 
 ## The Rankings
 
