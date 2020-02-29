@@ -1,20 +1,20 @@
 # Hardin-Bernhardt Ranks
 Hardin-Bernhardt Ranks is a new way of ranking NHBB teams using a modified version of the Go Elo formula that takes into account strength of field and margin of victory.
 
-# The Formulas
+## The Formulas
 Expected Score:
 expScoreA = 1/((Math.E^((B.rank-A.rank)/A.rank))+1)
 
 New Rank:
 A.rank = A.rank + q*K*((AScore/((AScore+BScore)*avgT))-expScoreA)
 
-# The Variables
+## The Variables
 The q-value is used to represent strength of field at a tournament and intended to help improve elo as a measure of skill unaffected by the field a team is up against, and thus more useful and accurate as a comparison between teams from different regions. It is calculated as a ratio of average total points scored per game at a given tournament : average total points scored per game on a given set, and is calculated independently the for MS, JV, and Varsity fields.
 The T-value is used to account for the inherent issues in equating the percent chance of a given winning to the percent of total points that team will score. It is calculated as a ratio of the percent of total points scored by a given team : the percent chance given to that team to win.
 
-# The Rankings
+## The Rankings
 
-Varsity Rankings
+### Varsity Rankings
 1. Millburn A New Jersey 2044.1082264260967
 2. Stevenson A Illinois 1933.6437823457336
 3. Hunter College High A New York 1889.5697128192703
@@ -231,7 +231,7 @@ Varsity Rankings
 214. Donovan Catholic A New Jersey 1128.6201351384434
 215. Poca B West Virginia 1125.1813205875774
 
-Junior Varsity Rankings
+### Junior Varsity Rankings
 1. Hunter College High B New York 2017.6038323558523
 2. Churchill A New Jersey 1953.7122795964608
 3. Ransom Everglades C Florida 1829.2256761540373
@@ -356,7 +356,7 @@ Junior Varsity Rankings
 122. Tippecanoe B Ohio 1201.2848628437384
 123. Miami Palmetto Q Florida 1161.3171216695027
 
-Middle School Rankings
+### Middle School Rankings
 1. Trinity Prep C Florida 1825.764242552922
 2. Burleigh Manor A Maryland 1764.6841609956323
 3. Burleigh Manor B Maryland 1674.6396852368455
