@@ -15,6 +15,28 @@ The T-value is used to account for the inherent issues in equating the percent c
 ## List of Tournaments
 Tournament|Date|Set Played|Status
 ---|---|---|---
+Western New York|1/4/2020|C|Complete
+Eastern Kentucky|12/14/2019|C|Complete
+Louisiana Fall|12/14/2019|C|Complete
+Northwest Illinois|12/14/2019|C|Complete
+Southern New Jersey|12/14/2019|C|Complete
+Washington DC|12/7/2019|C|Complete
+Boston Fall|11/23/2019|C|Complete
+Western Washington Fall|11/23/2019|C|Complete
+Central Florida Fall|11/16/2019|C|Complete
+Eastern Georgia Fall|11/16/2019|C|Complete
+Greater Knoxville Fall|11/16/2019|C|Complete
+Oahu|11/16/2019|C|Complete
+South Florida Fall|11/16/2019|C|Complete
+Buffalo|11/9/2019|C|Complete
+Greater Dayton|11/9/2019|C|Complete
+Northern Illinois|11/9/2019|C|Complete
+Northern New Jersey|11/9/2019|C|Complete
+West Viginia Fall|11/9/2019|C|Complete
+Montana|11/5/2019|C|Complete
+Central Georgia Fall|11/2/2019|C|Complete
+Eastern Washington|11/2/2019|C|Complete
+Northern California Fall|10/27/2019|C|Complete
 
 ## The Rankings
 
