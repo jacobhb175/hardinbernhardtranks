@@ -1,4 +1,7 @@
 //Starting Ranks
+
+//Jacob Hardin Bernhardt is a vsco girl. He uses something called vsco as a code editor so therefore he is a vsco girl.
+//sksksksk and i oop and i oop - ian lu 2020
 let teamsV = [
     AmherstAV = {
         name:"Amherst A",
@@ -3487,7 +3490,7 @@ teamsMS.sort((a, b) => parseFloat(b.rank) - parseFloat(a.rank));
 let i = 0;
 console.log("Varsity Rankings");
 while(i<teamsV.length){
-    console.log(i+1+". "+teamsV[i].name+" "+teamsV[i].state+" "+teamsV[i].rank);
+    console.log(i+1+". "+teamsV[i].name+" "+teamsV[i].state+" "+Math.round((teamsV[i].rank+Number.EPSILON)*100)/100);
     i++;
 };
 //document.getElementById("vRankings").innerHTML = teamsV;
@@ -3496,7 +3499,7 @@ while(i<teamsV.length){
 let j = 0;
 console.log("Junior Varsity Rankings")
 while(j<teamsJV.length){
-    console.log(j+1+". "+teamsJV[j].name+" "+teamsJV[j].state+" "+ teamsJV[j].rank);
+    console.log(j+1+". "+teamsJV[j].name+" "+teamsJV[j].state+" "+Math.round((teamsJV[k].rank+Number.EPSILON)*100)/100);
     j++;
 };
 //document.getElementById("jvRankings").innerHTML = teamsJV;
@@ -3505,14 +3508,7 @@ while(j<teamsJV.length){
 let k = 0;
 console.log("Middle School Rankings")
 while(k<teamsMS.length){
-    console.log(k+1+". "+teamsMS[k].name+" "+teamsMS[k].state+" "+teamsMS[k].rank);
+    console.log(k+1+". "+teamsMS[k].name+" "+teamsMS[k].state+" "+Math.round((teamsMS[k].rank+Number.EPSILON)*100)/100);
     k++;
 };
 //document.getElementById("msRankings").innerHTML = teamsMS;
-
-/*
-let A = HunterAV
-x = teamsJV.includes(A);
-y = teamsV.includes(A);
-console.log(x);
-console.log(y);*/
