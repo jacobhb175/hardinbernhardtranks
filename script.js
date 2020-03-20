@@ -1875,20 +1875,22 @@ let avgR = 0;*/
 //Nats Playoffs = 10
 
 //Calculate expected score
+//console.log(Math.E);
 function cExpScore(A, B){
     let expScore;
-    //If A is higher
-    if (A.rank>B.rank){
-        expScore = 1-(1/((Math.E^((B.rank-A.rank)/A.rank))+1));
+    //If A is lower
+    if (A.rank<B.rank){
+        expScore = 1/(1+(Math.E^((B.rank-A.rank)/400)));
     }
-    //If B is higher
-    else if (A.rank<B.rank){
-        expScore = 1/((Math.E^((B.rank-A.rank)/A.rank))+1);
+    //If B is lower
+    else if (B.rank<A.rank){
+        expScore = 1-1/(1+(Math.E^((A.rank-B.rank)/400)));
     }
     //If tie
     else {
         expScore = 0.5;
     };
+    console.log(expScore);
     return(expScore);
 };
 
@@ -3499,7 +3501,7 @@ while(i<teamsV.length){
 let j = 0;
 console.log("Junior Varsity Rankings")
 while(j<teamsJV.length){
-    console.log(j+1+". "+teamsJV[j].name+" "+teamsJV[j].state+" "+Math.round((teamsJV[k].rank+Number.EPSILON)*100)/100);
+    console.log(j+1+". "+teamsJV[j].name+" "+teamsJV[j].state+" "+Math.round((teamsJV[j].rank+Number.EPSILON)*100)/100);
     j++;
 };
 //document.getElementById("jvRankings").innerHTML = teamsJV;
