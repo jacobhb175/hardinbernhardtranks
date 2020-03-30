@@ -3492,8 +3492,10 @@ teamsMS.sort((a, b) => parseFloat(b.rank) - parseFloat(a.rank));
 let i = 0;
 console.log("Varsity Rankings");
 while(i<teamsV.length){
-    console.log(i+1+". "+teamsV[i].name+" "+teamsV[i].state+" "+Math.round((teamsV[i].rank+Number.EPSILON)*100)/100);
+    if(teamsV[i].rank!=1200){
+        console.log(i+1+". "+teamsV[i].name+" "+teamsV[i].state+" "+Math.round((teamsV[i].rank+Number.EPSILON)*100)/100);
     i++;
+    }
 };
 //document.getElementById("vRankings").innerHTML = teamsV;
 
@@ -3501,8 +3503,10 @@ while(i<teamsV.length){
 let j = 0;
 console.log("Junior Varsity Rankings")
 while(j<teamsJV.length){
-    console.log(j+1+". "+teamsJV[j].name+" "+teamsJV[j].state+" "+Math.round((teamsJV[j].rank+Number.EPSILON)*100)/100);
+    if(teamsJV[j].rank!=1200){
+        console.log(j+1+". "+teamsJV[j].name+" "+teamsJV[j].state+" "+Math.round((teamsJV[j].rank+Number.EPSILON)*100)/100);
     j++;
+    }
 };
 //document.getElementById("jvRankings").innerHTML = teamsJV;
 
@@ -3510,7 +3514,9 @@ while(j<teamsJV.length){
 let k = 0;
 console.log("Middle School Rankings")
 while(k<teamsMS.length){
-    console.log(k+1+". "+teamsMS[k].name+" "+teamsMS[k].state+" "+Math.round((teamsMS[k].rank+Number.EPSILON)*100)/100);
+    if(teamsMS[k].rank!=1200){
+        console.log(k+1+". "+teamsMS[k].name+" "+teamsMS[k].state+" "+Math.round((teamsMS[k].rank+Number.EPSILON)*100)/100);
     k++;
+    }
 };
 //document.getElementById("msRankings").innerHTML = teamsMS;

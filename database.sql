@@ -12,4 +12,4 @@ CREATE TABLE team_divisions (user_id INTEGER PRIMARY KEY, division_id INTEGER PR
 INSERT INTO team_divisions VALUES (1,2);
 SELECT * FROM team_divisions;
 
-CREATE TABLE games (id INTEGER PRIMARY KEY, score1 INTEGER, score2 INTEGER, tournament TEXT)
+CREATE TABLE games (id INTEGER PRIMARY KEY, score1 INTEGER, score2 INTEGER, tournament TEXT);
