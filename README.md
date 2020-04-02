@@ -279,7 +279,7 @@ Northern California Fall|10/27/2019|C|Complete
 
 ### Junior Varsity Rankings
 1. Hunter College High B New York 1998.16
-2. Churchill I A New Jersey 1953.71
+2. Churchill I A New Jersey 1953.71*
 3. Methacton C Pennsylvania 1904.93
 4. Ransom Everglades C Florida 1829.23
 5. Phillips Exeter B Massachusetts 1822.91
@@ -299,7 +299,7 @@ Northern California Fall|10/27/2019|C|Complete
 19. Miami Palmetto P Florida 1663.63
 20. Yonkers A New York 1633.62
 21. Richard Montgomery B Maryland 1628.35
-22. Churchill II A New Jersey 1627.98
+22. Churchill II A New Jersey 1627.98*
 23. Wilton A Connecticut 1620.6
 24. Chattahoochee B Georgia 1620.44
 25. Stevenson E Illinois 1617.98
@@ -363,7 +363,7 @@ Northern California Fall|10/27/2019|C|Complete
 83. Miami Palmetto R Florida 1365.22
 84. Centennial HS E Maryland 1361
 85. Yonkers B New York 1360.06
-86. Churchill I B New Jersey 1355.71
+86. Churchill I B New Jersey 1355.71*
 87. Ridgewood D New Jersey 1353.68
 88. St. Anselm's B Maryland 1352.25
 89. Winnebago B Illinois 1352.21
@@ -441,3 +441,4 @@ Northern California Fall|10/27/2019|C|Complete
 28. Classical Prep E Florida 1175.26
 29. BRIGHT Homeschool A New Jersey 1171.52
 
+*Given that there  are two schools named Churchill, both from New Jersey, they have been labeled as Churhcill I and Churchill II to distinguish them
