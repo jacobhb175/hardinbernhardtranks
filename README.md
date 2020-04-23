@@ -88,7 +88,7 @@ Northern California Fall|10/27/2019|C|Complete
 44. Archimedean A Florida 1660.04
 45. Iolani B Hawaii 1651.4
 46. Elgin Academy A Illinois 1647.24
-47. Wilton A Connecticut 1645.4
+47. Wilton Alex Connecticut 1645.4
 48. Ranney A New Jersey 1642.55
 49. Belen Jesuit A Florida 1640.31
 50. Oak Mountain A Georgia 1639.39
@@ -287,7 +287,7 @@ Northern California Fall|10/27/2019|C|Complete
 7. Montgomery Blair B Maryland 1755.03
 8. Wilmington Friends H Deleware 1744.28
 9. Horace Greeley B New York 1737.81
-10. Wilton B Connecticut 1712.78
+10. Wilton Lukas Connecticut 1712.78
 11. Ridgewood C New Jersey 1706.68
 12. Auburn B Illinois 1696.1
 13. Princeton C New Jersey 1683.96
@@ -300,7 +300,7 @@ Northern California Fall|10/27/2019|C|Complete
 20. Yonkers A New York 1633.62
 21. Richard Montgomery B Maryland 1628.35
 22. Churchill II A New Jersey 1627.98*
-23. Wilton A Connecticut 1620.6
+23. Wilton Anjo Connecticut 1620.6
 24. Chattahoochee B Georgia 1620.44
 25. Stevenson E Illinois 1617.98
 26. Hermann Homeschool A Georgia 1616.12
