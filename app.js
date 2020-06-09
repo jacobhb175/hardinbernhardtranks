@@ -15,6 +15,7 @@ server.listen(port, hostname, () => {
 });
 */
 
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyDXM_FBLEWgMGLFMbV_nL9ScHBqsE2D9Dk",
@@ -26,14 +27,12 @@ const firebaseConfig = {
     appId: "1:498587943256:web:979cc52a0053224122a52d",
     measurementId: "G-FHXST7T8VQ"
 };
+//firebase.initializeApp(firebaseConfig);
+//firebase.analytics();
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-
-const firebase = require("firebase");
+//const firebase = require("firebase");
 // Required for side-effects
-require("firebase/firestore");
+//require("firebase/firestore");
 
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({
