@@ -1,0 +1,22 @@
+{
+  "name": "hardinbernhardtranks",
+  "version": "1.0.0",
+  "description": "Hardin-Bernhardt Ranks is a new way of ranking NHBB teams, affiliated with NHBB Ranks, using a modified version of the Go Elo formula that takes into account strength of field and margin of victory.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobhb175/hardinbernhardtranks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobhb175/hardinbernhardtranks/issues"
+  },
+  "homepage": "https://github.com/jacobhb175/hardinbernhardtranks#readme",
+  "dependencies": {
+    "firebase": "^7.15.0"
+  }
+}
