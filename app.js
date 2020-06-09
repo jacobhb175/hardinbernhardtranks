@@ -43,33 +43,52 @@ firebase.initializeApp({
   
 var db = firebase.firestore();
 
-db.collection("users").add({
-    first: "Ada",
-    last: "Lovelace",
-    born: 1815
+db.collection("teams").doc("HunterAV").set({
+    name: "Hunter A",
+    state: "New York",
+    division: "Varsity",
+    rank: 1200
 })
-.then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
+
+db.collection("teams").doc("MillburnCJV").set({
+    name: "Millburn C",
+    state: "New Jersey",
+    division: "Junior Varsity",
+    rank: 1200
 })
-.catch(function(error) {
-    console.error("Error adding document: ", error);
+
+updaterRef=db.collection("teams").doc("HunterAV");
+
+function newRank(team1,team2,score1,score2) {
+    updaterRef=db.collection("teams").doc(team1);
+    return updaterRef.update({
+        rank: 1500
+    })
+    .then(function() {
+        console.log("updated");
+    })
+}
+
+newRank("HunterAV",2,3,4);
+
+var docRef = db.collection("teams").doc("HunterAV");
+
+docRef.get().then(function(doc) {
+    if (doc.exists) {
+        console.log("Document data:", doc.data());
+    } else {
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
+    }
+}).catch(function(error) {
+    console.log("Error getting document:", error);
 });
 
-// Add a second document with a generated ID.
-db.collection("users").add({
-    first: "Alan",
-    middle: "Mathison",
-    last: "Turing",
-    born: 1912
-})
-.then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
-})
-.catch(function(error) {
-    console.error("Error adding document: ", error);
-});
+console.log(db.collection("teams").doc("HunterAV").name);
+//console.log(db.collection("teams").doc("Millburn C").name);
 
-db.collection("users").get().then((querySnapshot) => {
+
+db.collection("teams").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
     });
