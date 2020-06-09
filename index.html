@@ -1,8 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <script src="script.js"></script>
-</head>
-<body>
-</body>
+  <head>
+    <script src="script2.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDXM_FBLEWgMGLFMbV_nL9ScHBqsE2D9Dk",
+        authDomain: "hardinbernhardtranks.firebaseapp.com",
+        databaseURL: "https://hardinbernhardtranks.firebaseio.com",
+        projectId: "hardinbernhardtranks",
+        storageBucket: "hardinbernhardtranks.appspot.com",
+        messagingSenderId: "498587943256",
+        appId: "1:498587943256:web:979cc52a0053224122a52d",
+        measurementId: "G-FHXST7T8VQ"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
+      const firebase = require("firebase");
+      // Required for side-effects
+      require("firebase/firestore");
+
+      // Initialize Cloud Firestore through Firebase
+      firebase.initializeApp({
+        apiKey: '### FIREBASE API KEY ###',
+        authDomain: '### FIREBASE AUTH DOMAIN ###',
+        projectId: '### CLOUD FIRESTORE PROJECT ID ###'
+      });
+
+      var db = firebase.firestore();
+
+      db.collection("users").add({
+        first: "Ada",
+        last: "Lovelace",
+        born: 1815
+      })
+      .then(function(docRef) {
+        console.log("Document written with ID: ", docRef.id);
+      })
+      .catch(function(error) {
+        console.error("Error adding document: ", error);
+      });
+      // Add a second document with a generated ID.
+      db.collection("users").add({
+        first: "Alan",
+        middle: "Mathison",
+        last: "Turing",
+        born: 1912
+      })
+      .then(function(docRef) {
+        console.log("Document written with ID: ", docRef.id);
+      })
+      .catch(function(error) {
+        console.error("Error adding document: ", error);
+      });
+
+      db.collection("users").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          console.log(`${doc.id} => ${doc.data()}`);
+        });
+      });
+
+      // Allow read/write access on all documents to any user signed in to the application
+        service cloud.firestore {
+          match /databases/{database}/documents {
+            match /{document=**} {
+        allow read, write: if request.auth.uid != null;
+            }
+          }
+        }
+    </script>
+  </body>
 </html>
