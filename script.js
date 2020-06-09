@@ -2079,7 +2079,9 @@ function newRank(A, B, AScore, BScore) {
     t.push((AScore/(AScore+BScore))/expScoreA);
     t.push((BScore/(AScore+BScore))/expScoreB);
     let sumT = 0;
-    for(let l = 0; l < t.length; l++ ){
+    let l;
+    let tLen = t.length;
+    for(l = 0; l < tLen; l++){
         sumT += parseInt(t[l],10);
     };
     avgT = sumT/t.length;
@@ -2090,12 +2092,16 @@ function newRank(A, B, AScore, BScore) {
         teamAvgV.push(AScore,BScore);
         teamAvgCV.push(AScore,BScore);
         let sumCV = 0;
-        for(let m = 0; m < teamAvgCV.length; m++ ){
+        let m;
+        let teamAvgCVLen = teamAvgCV.length;
+        for(m = 0; m < teamAvgCVLen; m++){
             sumCV += parseInt(teamAvgCV[m],10);
         };
         let avgCV = sumCV/teamAvgCV.length;
         let sum = 0;
-        for(let n = 0; n < teamAvgV.length; n++ ){
+        let n;
+        let teamAvgVLen = teamAvgV.length;
+        for(n = 0; n < teamAvgVLen; n++){
             sum += parseInt(teamAvgV[n],10);
         };
         let avgV = sum/teamAvgV.length;
@@ -2107,12 +2113,16 @@ function newRank(A, B, AScore, BScore) {
         teamAvgJV.push(AScore,BScore);
         teamAvgCJV.push(AScore,BScore);
         let sumCJV = 0;
-        for(let o = 0; o < teamAvgCJV.length; o++ ){
+        let o;
+        let teamAvgCJVLen = teamAvgCJV.length;
+        for(o = 0; o < teamAvgCJVLen; o++){
             sumCJV += parseInt(teamAvgCJV[o],10);
         };
         let avgCJV = sumCJV/teamAvgCJV.length;
         let sum = 0;
-        for(let p = 0; p < teamAvgJV.length; p++ ){
+        let p;
+        let teamAvgJVLen = teamAvgJV.length;
+        for(p = 0; p < teamAvgJVLen; p++ ){
             sum += parseInt(teamAvgJV[p],10);
         };
         let avgJV = sum/teamAvgJV.length;
@@ -2124,12 +2134,16 @@ function newRank(A, B, AScore, BScore) {
         teamAvgMS.push(AScore,BScore);
         teamAvgCMS.push(AScore,BScore);
         let sumCMS = 0;
-        for(let r = 0; r < teamAvgCMS.length; r++ ){
+        let r;
+        let teamAvgCMSLen = teamAvgCMS.length;
+        for(r = 0; r < teamAvgCMSLen; r++){
             sumCMS += parseInt(teamAvgCMS[r],10);
         };
         let avgCMS = sumCMS/teamAvgCMS.length;
         let sum = 0;
-        for(let s = 0; s < teamAvgMS.length; s++ ){
+        let s;
+        let teamAvgMSLen = teamAvgMS.length;
+        for(let s = 0; s < teamAvgMSLen; s++ ){
             sum += parseInt(teamAvgMS[s],10);
         };
         let avgMS = sum/teamAvgMS.length;
