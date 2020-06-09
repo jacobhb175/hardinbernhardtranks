@@ -2299,7 +2299,7 @@ newRank(MtSpokaneDJV,MtSpokaneCJV,120,110);
 //Varsity Playoffs
 //Quarterfinals
 newRank(GonzagaAV,FrenchtownBV,340,80);
-newRank(MtSpokaneAV,EastValleyAV,230,230);//Mt Spokane A wins on TB
+newRank(MtSpokaneAV,EastValleyAV,231,230);//Mt Spokane A wins on TB
 newRank(StGeorgesAV,EastValleyBV,210,100);
 newRank(MtSpokaneBV,FrenchtownAV,230,90);
 //Semifinals
@@ -2560,7 +2560,7 @@ newRank(TenaflyMSB,TenaflyMSC,190,60);
 //Varsity Playoffs
 //Octofinals
 newRank(OratoryAV,ParamusAV,310,160);
-newRank(HewlettBV,HewlettAV,220,220);//Hewlett B wins on TB
+newRank(HewlettBV,HewlettAV,221,220);//Hewlett B wins on TB
 newRank(StuyvesantAV,StJosephAV,270,150);
 newRank(MountainLakesAV,NewarkAV,220,210);
 //Quarterfinals
@@ -2925,7 +2925,7 @@ teamAvgMS = [];
 //Eastern Geogia Fall C-Set
 //Prelims
 //Round 1
-newRank(BrookwoodAV,NewnanAV,240,240);//Brookwood A wins on TB
+newRank(BrookwoodAV,NewnanAV,241,240);//Brookwood A wins on TB
 newRank(LambertAV,ChattahoocheeAV,310,280);
 newRank(WoodstockAV,WoodwardAV,350,90);
 newRank(CambridgeAV,JohnsCreekAV,340,210);
@@ -2982,7 +2982,7 @@ newRank(ChattahoocheeAV,NewnanAV,350,160);
 newRank(BrookwoodAV,JohnsCreekAV,220,190);
 //Semifinals
 newRank(CambridgeAV,BrookwoodAV,320,150);
-newRank(LambertAV,ChattahoocheeAV,270,270);//Lambert wins on TB
+newRank(LambertAV,ChattahoocheeAV,271,270);//Lambert wins on TB
 //Finals
 newRank(CambridgeAV,LambertAV,310,250);
 //JV Playoffs
@@ -3099,7 +3099,7 @@ newRank(RiverviewHJV,ClassicalBJV,210,80);
 //Semifinals
 newRank(RiverviewHJV,BerkeleyCJV,170,130);
 newRank(RiverviewFJV,LargoCJV,200,100);
-newRank(RiverviewHJV,RiverviewFJV,120,120);//Riverview H wins on TB
+newRank(RiverviewHJV,RiverviewFJV,121,120);//Riverview H wins on TB
 //MS Final
 newRank(TrinityCMS,TrinityDMS,310,40);
 //console.log("q "+q);
@@ -3191,7 +3191,7 @@ teamAvgMS = [];
 //Boston Fall C-Set
 //Prelims
 //Round 1
-newRank(SalemBV,NorthfieldMtHermonAV,230,230);//Salem wins on TB
+newRank(SalemBV,NorthfieldMtHermonAV,231,230);//Salem wins on TB
 newRank(BostonLatinAV,TantasquaBV,430,110);
 newRank(PhillipsExeterAV,SalemAV,380,130);
 newRank(LexingtonAV,TantasquaAV,380,150);
@@ -3461,7 +3461,7 @@ newRank(AuburnBJV,WilliamsBayDJV,350,60);
 //Round5
 newRank(AuburnAV,WilliamsBayBV,430,80);
 newRank(HomewoodFlossmoorAV,WilliamsBayCV,320,70);
-newRank(GlenbardWestAV,ElginAV,240,240);//Glenbard West wins on TB
+newRank(GlenbardWestAV,ElginAV,241,240);//Glenbard West wins on TB
 newRank(WilliamsBayAV,WinnebagoAV,210,160);
 newRank(AuburnBJV,HomewoodFlossmoorBJV,290,90);
 newRank(WinnebagoBJV,WilliamsBayDJV,150,90);
@@ -3547,7 +3547,7 @@ newRank(BlazerAV,JohnsonCV,390,70);
 //Varsity Playoffs
 //Semifinals
 newRank(JohnsonAV,RussellAV,270,160);
-newRank(BlazerAV,DunbarAV,210,210);//Blazer wins on TB
+newRank(BlazerAV,DunbarAV,211,210);//Blazer wins on TB
 //Finals
 newRank(BlazerAV,JohnsonAV,270,160);
 //console.log("q "+q);
@@ -3556,7 +3556,7 @@ teamAvgJV = [];
 teamAvgMS = [];
 //logTR();
 
-//Lower Hudson
+//Lower Hudson C-Set
 //Prelims
 //Round 1
 newRank(RidgewoodAV,GothamAV,410,210);
@@ -3636,7 +3636,7 @@ newRank(HoraceGreeleyBJV,WiltonLukasAJV,290,270);
 newRank(YonkersAJV,YonkersBJV,330,170);
 newRank(DaltonAV,GreensFarmsBJV,360,110);
 //Round 4
-newRank(DarienAV,GreensFarmsAV,280,280);//Darien wins on TB
+newRank(DarienAV,GreensFarmsAV,281,280);//Darien wins on TB
 newRank(DaltonAV,IrvingtonAV,310,270);
 newRank(WiltonAlexAV,ScarsdaleAV,360,200);
 newRank(ArdsleyAV,HoraceGreeleyAV,270,160);
@@ -3761,6 +3761,17 @@ newRank(MethactonCJV,WilmingtonFriendsIJV,400,50);
 newRank(WilmingtonFriendsHJV,TowerHillCJV,280,60);
 //Finals
 newRank(MethactonCJV,WilmingtonFriendsHJV,340,110);
+//console.log("q "+q);
+teamAvgV = [];
+teamAvgJV = [];
+teamAvgMS = [];
+//logTR();
+
+//Florida Panhandle C-Set
+//Prelims
+//Round 1
+newRank(ChoctawhatcheeAV,WashingtonAV,280,140);
+newRank(TateAV
 //console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
