@@ -1,18 +1,36 @@
-// Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyDXM_FBLEWgMGLFMbV_nL9ScHBqsE2D9Dk",
-        authDomain: "hardinbernhardtranks.firebaseapp.com",
-        databaseURL: "https://hardinbernhardtranks.firebaseio.com",
-        projectId: "hardinbernhardtranks",
-        storageBucket: "hardinbernhardtranks.appspot.com",
-        messagingSenderId: "498587943256",
-        appId: "1:498587943256:web:979cc52a0053224122a52d",
-        measurementId: "G-FHXST7T8VQ"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
+const http = require('http');
 
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyDXM_FBLEWgMGLFMbV_nL9ScHBqsE2D9Dk",
+    authDomain: "hardinbernhardtranks.firebaseapp.com",
+    databaseURL: "https://hardinbernhardtranks.firebaseio.com",
+    projectId: "hardinbernhardtranks",
+    storageBucket: "hardinbernhardtranks.appspot.com",
+    messagingSenderId: "498587943256",
+    appId: "1:498587943256:web:979cc52a0053224122a52d",
+    measurementId: "G-FHXST7T8VQ"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+const firebase = require("firebase");
+// Required for side-effects
+require("firebase/firestore");
       const firebase = require("firebase");
       // Required for side-effects
       require("firebase/firestore");
