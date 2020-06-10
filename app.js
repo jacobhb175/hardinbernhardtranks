@@ -202,6 +202,8 @@ function newRank(A, B, AScore, BScore) {
     //Calculate exp scores
     expScoreA = cExpScore(A,B);
     expScoreB = cExpScore(B,A);
+    console.log(expScoreA);
+    console.log(expScoreB);
 
     //Update t value
     t.push((AScore/(AScore+BScore))/expScoreA);
