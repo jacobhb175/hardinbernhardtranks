@@ -441,5 +441,5 @@ Northern California Fall|10/27/2019|C|Complete
 28. Classical Prep E Florida 1175.26
 29. BRIGHT Homeschool A New Jersey 1171.52
 
- * Given that there  are two Churchill New Jersey schools, their teams have been labeled as either Churchill I or Churchill II to distinguish them
- ** Given that there are three Wilton Connecticut teams, each consisting of one player, their teams have been labeled with the name of the respective player
+* Given that there  are two Churchill New Jersey schools, their teams have been labeled as either Churchill I or Churchill II to distinguish them
+** Given that there are three Wilton Connecticut teams, each consisting of one player, their teams have been labeled with the name of the respective player
