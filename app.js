@@ -106,10 +106,12 @@ let avgT = 0;
 K=100;
 
 //test if 2 teams are in a div
-function includes(A,B,div) {
-    let docRefA = db.collection("teams").doc(A);
-    let docRefB = db.collection("teams").doc(B);
-    docRefA.get().then(function(doc) {
+async function includes(A,B,div) {
+    console.log("Hello?");
+    let docRefA = await db.collection("teams").doc(A);
+    let docRefB = await db.collection("teams").doc(B);
+    console.log(docRefA);
+    await docRefA.get().then(function(doc) {
     if (doc.exists) {
         let divA = doc.data().division;
         docRefB.get().then(function(doc) {
@@ -122,20 +124,25 @@ function includes(A,B,div) {
                     }
                     else if (div == "JV") {
                         evalJV = true;
+                        console.log(evalJV);
                     }
                     else {
                         evalMS = true;
+                        console.log(evalMS);
                     }
                 }
                 else {
                     if (div == "V") {
                         evalV = false;
+                        console.log(evalV);
                     }
                     else if (div == "JV") {
                         evalJV = false;
+                        console.log(evalJV);
                     }
                     else {
                         evalMS = false;
+                        console.log(evalMS);
                     }
                 }
             } else {
@@ -155,9 +162,10 @@ function includes(A,B,div) {
 }
 
 //Calculate expected score
-function cExpScore(A,B){
-    var docRefA = db.collection("teams").doc(A);
-    var docRefB = db.collection("teams").doc(B);
+async function cExpScore(A,B){
+    console.log("Hello score");
+    var docRefA = await db.collection("teams").doc(A);
+    var docRefB = await db.collection("teams").doc(B);
     docRefA.get().then(function(doc) {
         if (doc.exists) {
             var rankA=doc.data().rank;
@@ -198,7 +206,7 @@ function cExpScore(A,B){
 };
 
 //calculate new ranks
-function newRank(A, B, AScore, BScore) {
+async function newRank(A, B, AScore, BScore) {
     //Calculate exp scores
     expScoreA = cExpScore(A,B);
     expScoreB = cExpScore(B,A);
@@ -215,9 +223,9 @@ function newRank(A, B, AScore, BScore) {
         sumT += parseInt(t[l],10);
     };
     avgT = sumT/t.length;
-    includes(A,B,"V");
-    includes(A,B,"JV");
-    includes(A,B,"MS");
+    await includes(A,B,"V");
+    await includes(A,B,"JV");
+    await includes(A,B,"MS");
     //C-Set games
     console.log(evalV+"?");
     if (K == 100 && evalV == true) {
