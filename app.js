@@ -61,6 +61,7 @@ updaterRef=db.collection("teams").doc("HunterAV");
 
 var docRef = db.collection("teams").doc("MillburnAV");
 
+/*
 docRef.get().then(function(doc) {
     if (doc.exists) {
         console.log("Document data:", doc.data().state);
@@ -70,7 +71,7 @@ docRef.get().then(function(doc) {
     }
 }).catch(function(error) {
     console.log("Error getting document:", error);
-});
+});*/
 
 let evalV;
 let evalJV;
@@ -107,10 +108,8 @@ K=100;
 
 //test if 2 teams are in a div
 async function includes(A,B,div) {
-    console.log("Hello?");
     let docRefA = await db.collection("teams").doc(A);
     let docRefB = await db.collection("teams").doc(B);
-    console.log(docRefA);
     await docRefA.get().then(function(doc) {
     if (doc.exists) {
         let divA = doc.data().division;
@@ -121,6 +120,7 @@ async function includes(A,B,div) {
                     if (div == "V") {
                         evalV = true;
                         console.log(evalV);
+                        return true;
                     }
                     else if (div == "JV") {
                         evalJV = true;
@@ -163,7 +163,6 @@ async function includes(A,B,div) {
 
 //Calculate expected score
 async function cExpScore(A,B){
-    console.log("Hello score");
     var docRefA = await db.collection("teams").doc(A);
     var docRefB = await db.collection("teams").doc(B);
     docRefA.get().then(function(doc) {
@@ -229,7 +228,6 @@ async function newRank(A, B, AScore, BScore) {
     //C-Set games
     console.log(evalV+"?");
     if (K == 100 && evalV == true) {
-        console.log("V");
         //update q value
         teamAvgV.push(AScore,BScore);
         teamAvgCV.push(AScore,BScore);
@@ -248,7 +246,7 @@ async function newRank(A, B, AScore, BScore) {
         };
         let avgV = sum/teamAvgV.length;
         q = avgV/avgCV;
-        nRank(A,B,AScore,BScore)
+        nRank(A,B,AScore,BScore);
     }
     else if (K == 100 && evalJV == true) {
         //update q value
