@@ -119,30 +119,23 @@ async function includes(A,B,div) {
                 if (divA == div && divB == div) {
                     if (div == "V") {
                         evalV = true;
-                        console.log(evalV);
-                        return true;
                     }
                     else if (div == "JV") {
                         evalJV = true;
-                        console.log(evalJV);
                     }
                     else {
                         evalMS = true;
-                        console.log(evalMS);
                     }
                 }
                 else {
                     if (div == "V") {
                         evalV = false;
-                        console.log(evalV);
                     }
                     else if (div == "JV") {
                         evalJV = false;
-                        console.log(evalJV);
                     }
                     else {
                         evalMS = false;
-                        console.log(evalMS);
                     }
                 }
             } else {
@@ -168,11 +161,9 @@ async function cExpScore(A,B){
     docRefA.get().then(function(doc) {
         if (doc.exists) {
             var rankA=doc.data().rank;
-            console.log("Rank A:", rankA);
             docRefB.get().then(function(doc) {
                 if (doc.exists) {
-                    var rankB=doc.data().rank;
-                    console.log("Rank B:", rankB);    
+                    var rankB=doc.data().rank;   
                     let expScore;
                     //If A is lower
                     if (rankA<rankB){
@@ -186,7 +177,6 @@ async function cExpScore(A,B){
                     else {
                         expScore = 0.5;
                     };
-                    console.log(expScore);
                     return(expScore);
                 } else {
                     // doc.data() will be undefined in this case
@@ -209,8 +199,6 @@ async function newRank(A, B, AScore, BScore) {
     //Calculate exp scores
     expScoreA = cExpScore(A,B);
     expScoreB = cExpScore(B,A);
-    console.log(expScoreA);
-    console.log(expScoreB);
 
     //Update t value
     t.push((AScore/(AScore+BScore))/expScoreA);
@@ -226,7 +214,6 @@ async function newRank(A, B, AScore, BScore) {
     await includes(A,B,"JV");
     await includes(A,B,"MS");
     //C-Set games
-    console.log(evalV+"?");
     if (K == 100 && evalV == true) {
         //update q value
         teamAvgV.push(AScore,BScore);
