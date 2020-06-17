@@ -106,7 +106,7 @@ let avgT = 0;
 K=100;
 
 //test if 2 teams are in a div
-async function includes(A,B,div) {
+function includes(A,B,div) {
     let docRefA = db.collection("teams").doc(A);
     let docRefB = db.collection("teams").doc(B);
     docRefA.get().then(function(doc) {
@@ -215,12 +215,11 @@ function newRank(A, B, AScore, BScore) {
         sumT += parseInt(t[l],10);
     };
     avgT = sumT/t.length;
+    includes(A,B,"V");
+    includes(A,B,"JV");
+    includes(A,B,"MS");
     //C-Set games
-    async function updateStuff() {
-        await includes(A,B,"V");
-        await includes(A,B,"JV");
-        await includes(A,B,"MS");
-        console.log(evalV+"?");
+    console.log(evalV+"?");
     if (K == 100 && evalV == true) {
         console.log("V");
         //update q value
@@ -284,10 +283,9 @@ function newRank(A, B, AScore, BScore) {
         let avgMS = sum/teamAvgMS.length;
         q = avgMS/avgCMS;
         nRank(A,B,AScore,BScore);
-    }   
+    }
     else {
         console.log("huh?");
-    }
     }
 };  
 
