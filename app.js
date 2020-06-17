@@ -106,7 +106,7 @@ let avgT = 0;
 K=100;
 
 //test if 2 teams are in a div
-function includes(A,B,div) {
+async function includes(A,B,div) {
     let docRefA = db.collection("teams").doc(A);
     let docRefB = db.collection("teams").doc(B);
     docRefA.get().then(function(doc) {
@@ -155,7 +155,7 @@ function includes(A,B,div) {
 }
 
 //Calculate expected score
-function cExpScore(A, B){
+function cExpScore(A,B){
     var docRefA = db.collection("teams").doc(A);
     var docRefB = db.collection("teams").doc(B);
     docRefA.get().then(function(doc) {
@@ -179,7 +179,7 @@ function cExpScore(A, B){
                     else {
                         expScore = 0.5;
                     };
-                    //console.log(expScore);
+                    console.log(expScore);
                     return(expScore);
                 } else {
                     // doc.data() will be undefined in this case
@@ -215,11 +215,12 @@ function newRank(A, B, AScore, BScore) {
         sumT += parseInt(t[l],10);
     };
     avgT = sumT/t.length;
-    includes(A,B,"V");
-    includes(A,B,"JV");
-    includes(A,B,"MS");
     //C-Set games
-    console.log(evalV+"?");
+    async function updateStuff() {
+        await includes(A,B,"V");
+        await includes(A,B,"JV");
+        await includes(A,B,"MS");
+        console.log(evalV+"?");
     if (K == 100 && evalV == true) {
         console.log("V");
         //update q value
@@ -283,9 +284,10 @@ function newRank(A, B, AScore, BScore) {
         let avgMS = sum/teamAvgMS.length;
         q = avgMS/avgCMS;
         nRank(A,B,AScore,BScore);
-    }
+    }   
     else {
         console.log("huh?");
+    }
     }
 };  
 
