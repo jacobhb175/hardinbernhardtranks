@@ -78,6 +78,8 @@ let evalJV;
 let evalMS;
 let rankA;
 let rankB;
+let expScoreA;
+let expScoreB;
 
 let teamAvgV = [];
 let teamAvgJV = [];
@@ -110,8 +112,8 @@ K=100;
 
 //test if 2 teams are in a div
 async function includes(A,B,div) {
-    let docRefA = await db.collection("teams").doc(A);
-    let docRefB = await db.collection("teams").doc(B);
+    let docRefA = db.collection("teams").doc(A);
+    let docRefB = db.collection("teams").doc(B);
     await docRefA.get().then(function(doc) {
     if (doc.exists) {
         let divA = doc.data().division;
@@ -158,8 +160,8 @@ async function includes(A,B,div) {
 
 //Calculate expected score
 async function cExpScore(A,B){
-    var docRefA = await db.collection("teams").doc(A);
-    var docRefB = await db.collection("teams").doc(B);
+    var docRefA = db.collection("teams").doc(A);
+    var docRefB = db.collection("teams").doc(B);
     docRefA.get().then(function(doc) {
         if (doc.exists) {
             rankA=doc.data().rank;
@@ -179,7 +181,8 @@ async function cExpScore(A,B){
                     else {
                         expScore = 0.5;
                     };
-                    return(expScore);
+                    let expScoreA = expScore;
+                    let expScoreB = 1-expScoreA;
                 } else {
                     // doc.data() will be undefined in this case
                     console.log("No such document!");
@@ -199,19 +202,23 @@ async function cExpScore(A,B){
 //calculate new ranks
 async function newRank(A, B, AScore, BScore) {
     //Calculate exp scores
-    expScoreA = cExpScore(A,B);
-    expScoreB = cExpScore(B,A);
+    cExpScore(A, B);
+    console.log(expScoreA,expScoreB);
 
     //Update t value
     t.push((AScore/(AScore+BScore))/expScoreA);
     t.push((BScore/(AScore+BScore))/expScoreB);
+    console.log(t);
     let sumT = 0;
     let l;
     let tLen = t.length;
     for(l = 0; l < tLen; l++){
         sumT += parseInt(t[l],10);
     };
+    console.log(sumT);
+    console.log(t.length)
     avgT = sumT/t.length;
+    console.log(avgT);
     await includes(A,B,"V");
     await includes(A,B,"JV");
     await includes(A,B,"MS");
@@ -286,8 +293,8 @@ async function newRank(A, B, AScore, BScore) {
 
 async function nRank(A,B,AScore,BScore){
     console.log("nRank");
-    var docRefA = await db.collection("teams").doc(A);
-    var docRefB = await db.collection("teams").doc(B);
+    var docRefA = db.collection("teams").doc(A);
+    var docRefB = db.collection("teams").doc(B);
     docRefA.get().then(function(doc) {
         if (doc.exists) {
             rankA=doc.data().rank;
@@ -299,8 +306,10 @@ async function nRank(A,B,AScore,BScore){
         }
     })
     console.log(rankA,rankB);
-    A.rank = A.rank + q*K*((AScore/((AScore+BScore)*avgT))-expScoreA);
-    B.rank = B.rank + q*K*((BScore/((AScore+BScore)*avgT))-expScoreB);
+    console.log(avgT);
+    rankA = rankA + q*K*((AScore/((AScore+BScore)*avgT))-expScoreA);
+    rankA = rankB + q*K*((BScore/((AScore+BScore)*avgT))-expScoreB);
+    console.log(rankA,rankB);
 }
 
 newRank("HunterAV","MillburnAV",280,140);
