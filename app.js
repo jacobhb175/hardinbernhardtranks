@@ -76,6 +76,8 @@ docRef.get().then(function(doc) {
 let evalV;
 let evalJV;
 let evalMS;
+let rankA;
+let rankB;
 
 let teamAvgV = [];
 let teamAvgJV = [];
@@ -160,10 +162,10 @@ async function cExpScore(A,B){
     var docRefB = await db.collection("teams").doc(B);
     docRefA.get().then(function(doc) {
         if (doc.exists) {
-            var rankA=doc.data().rank;
+            rankA=doc.data().rank;
             docRefB.get().then(function(doc) {
                 if (doc.exists) {
-                    var rankB=doc.data().rank;   
+                    rankB=doc.data().rank;   
                     let expScore;
                     //If A is lower
                     if (rankA<rankB){
@@ -282,7 +284,21 @@ async function newRank(A, B, AScore, BScore) {
     }
 };  
 
-function nRank(A,B,AScore,BScore){
+async function nRank(A,B,AScore,BScore){
+    console.log("nRank");
+    var docRefA = await db.collection("teams").doc(A);
+    var docRefB = await db.collection("teams").doc(B);
+    docRefA.get().then(function(doc) {
+        if (doc.exists) {
+            rankA=doc.data().rank;
+            docRefB.get().then(function(doc) {
+                if (doc.exists) {
+                    rankB=doc.data().rank;
+                }
+            })
+        }
+    })
+    console.log(rankA,rankB);
     A.rank = A.rank + q*K*((AScore/((AScore+BScore)*avgT))-expScoreA);
     B.rank = B.rank + q*K*((BScore/((AScore+BScore)*avgT))-expScoreB);
 }
