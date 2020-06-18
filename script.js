@@ -7,1197 +7,1197 @@ let teamsV = [
         name:"Amherst A",
         state:"New York",
         rank:1200
-    }),
+    },
     AmherstBV = {
         name:"Amherst B",
         state:"New York",
         rank:1200
-    }),
+    },
     ApalacheeAV = {
         name:"Apalachee A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     ArchimedeanAV = {
         name:"Archimedean A",
         state:"Florida",
         rank:1200
-    }),
+    },
     ArchimedeanBV = {
         name:"Archimedean B",
         state:"Florida",
         rank:1200
-    }),
+    },
     ArchimedeanCV = {
         name:"Archimedean C",
         state:"Florida",
         rank:1200
-    }),
+    },
     ArchimedeanDV = {
         name:"Archimedean D",
         state:"Florida",
         rank:1200
-    }),
+    },
     ArchimedeanEV = {
         name:"Archimedean E",
         state:"Florida",
         rank:1200
-    }),
+    },
     ArdsleyAV = {
         name:"Ardsley A",
         state:"New York",
         rank:1200
-    }),
+    },
     AuburnAV = {
         name:"Auburn A",
         state:"Illinois",
         rank:1200
-    }),
+    },
     BASISMcLeanAV = {
         name:"BASIS McLean A",
         state:"Virginia",
         rank:1200
-    }),
+    },
     BarringtonAV = {
         name:"Barrington A",
         state:"Illinois",
         rank:1200
-    }),
+    },
     BarringtonBV = {
         name:"Barrington B",
         state:"Illinois",
         rank:1200
-    }),
+    },
     BatonRougeEpiscopalAV = {
         name:"Baton Rouge Episcopal A",
         state:"Louisiana",
         rank:1200
-    }),
+    },
     BatonRougeMagnetAV = {
         name:"Baton Rouge Magnet A",
         state:"Louisiana",
         rank:1200
-    }),
+    },
     BeavercreekAV = {
         name:"Beavercreek A",
         state:"Ohio",
         rank:1200
-    }),
+    },
     BeavercreekBV = {
         name:"Beavercreek B",
         state:"Ohio",
         rank:1200
-    }),
+    },
     BelenAV = {
         name:"Belen Jesuit A",
         state:"Florida",
         rank:1200
-    }),
+    },
     BelenBV = {
         name:"Belen Jesuit B",
         state:"Florida",
         rank:1200
-    }),
+    },
     BerkeleyAV = {
         name:"Berkeley Prep A",
         state:"Florida",
         rank:1200
-    }),
+    },
     BerkeleyBV = {
         name:"Berkeley Prep B",
         state:"Florida",
         rank:1200
-    }),
+    },
     BillingsSeniorAV = {
         name:"Billings Senior A",
         state:"Montana",
         rank:1200
-    }),
+    },
     BillingsWestAV = {
         name:"Billings West A",
         state:"Montana",
         rank:1200
-    }),
+    },
     BillingsWestBV = {
         name:"Billings West B",
         state:"Montana",
         rank:1200
-    }),
+    },
     BlazerAV = {
         name:"Blazer A",
         state:"Kentucky",
         rank:1200
-    }),
+    },
     BostonLatinAV = {
         name:"Boston Latin A",
         state:"Massachusetts",
         rank:1200
-    }),
+    },
     BozemanAV = {
         name:"Bozeman A",
         state:"Montana",
         rank:1200
-    }),
+    },
     BozemanBV = {
         name:"Bozeman B",
         state:"Montana",
         rank:1200
-    }),
+    },
     BrookwoodAV = {
         name:"Brookwood A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     CambridgeAV = {
         name:"Cambridge A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     CaravelAV = {
         name:"Caravel A",
         state:"Deleware",
         rank:1200
-    }),
+    },
     CaravelBV = {
         name:"Caravel B",
         state:"Deleware",
         rank:1200
-    }),
+    },
     CentennialAV = {
         name:"Centennial HS A",
         state:"Maryland",
         rank:1200
-    }),
+    },
     CentennialBV = {
         name:"Centennial HS B",
         state:"Maryland",
         rank:1200
-    }),
+    },
     CentralKitsapAV = {
         name:"Central Kitsap A",
         state:"Washington",
         rank:1200
-    }),
+    },
     CharlestonAV = {
         name:"Charleston Catholic A",
         state:"West Virginia",
         rank:1200
-    }),
+    },
     CharlestonBV = {
         name:"Charleston Catholic B",
         state:"West Virginia",
         rank:1200
-    }),
+    },
     ChattahoocheeAV = {
         name:"Chattahoochee A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     ChoctawhatcheeAV = {
         name:"Choctawhatchee A",
         state:"Florida",
         rank:1200
-    }),
+    },
     ClassicalAV = {
         name:"Classical Prep A",
         state:"Florida",
         rank:1200
-    }),
+    },
     ColdhugAV = {
         name:"Team Coldhug A",
         state:"Connecticut",
         rank:1200
-    }),
+    },
     CollegiateAV = {
         name:"Collegiate A",
         state:"Florida",
         rank:1200
-    }),
+    },
     ColumbiaRiverAV = {
         name:"Columbia River A",
         state:"Washington",
         rank:1200
-    }),
+    },
     ColumbiaRiverBV = {
         name:"Columbia River B",
         state:"Washington",
         rank:1200
-    }),
+    },
     CommerceAV = {
         name:"Commerce A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     CoralReefAV = {
         name:"Coral Reef A",
         state:"Florida",
         rank:1200
-    }),
+    },
     CoralReefBV = {
         name:"Coral Reef B",
         state:"Georgia",
         rank:1200
-    }),
+    },
     CreeksideAV = {
         name:"Creekside A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     DaltonAV = {
         name:"Dalton A",
         state:"New York",
         rank:1200
-    }),
+    },
     DarienAV = {
         name:"Darien A",
         state:"Connecticut",
         rank:1200
-    }),
+    },
     DickinsonAV = {
         name:"Dickinson A",
         state:"Deleware",
         rank:1200
-    }),
+    },
     DonovanCatholicAV = {
         name:"Donovan Catholic A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     DoralAV = {
         name:"Doral Academy A",
         state:"Florida",
         rank:1200
-    }),
+    },
     DunbarAV = {
         name:"Dunbar A",
         state:"Kentucky",
         rank:1200
-    }),
+    },
     EastBrunswickAV = {
         name:"East Brunswick A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     EastBrunswickBV = {
         name:"East Brunswick B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     EastValleyAV = {
         name:"East Valley A",
         state:"Washington",
         rank:1200
-    }),
+    },
     EastValleyBV = {
         name:"East Valley B",
         state:"Washington",
         rank:1200
-    }),
+    },
     ElginAV = {
         name:"Elgin Academy A",
         state:"Illinois",
         rank:1200
-    }),
+    },
     EriksenAV = {
         name:"Eriksen A",
         state:"California",
         rank:1200
-    }),
+    },
     FontbonneAV = {
         name:"Fordham Hall Academy A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     FontbonneBV = {
         name:"Fordham Hall Academy B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     FoothillAV = {
         name:"Foothill A",
         state:"California",
         rank:1200
-    }),
+    },
     FordhamAV = {
         name:"Fordham Prep A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     FrenchtownAV = {
         name:"Frenchtown A",
         state:"Washington",
         rank:1200
-    }),
+    },
     FrenchtownBV = {
         name:"Frenchtown B",
         state:"Washington",
         rank:1200
-    }),
+    },
     FriendsCentralAV = {
         name:"Friends Central A",
         state:"Pennsylvania",
         rank:1200
-    }),
+    },
     GatlinburgAV = {
         name:"Gatlinburg-Pittman A",
         state:"Tennessee",
         rank:1200
-    }),
+    },
     GatlinburgBV = {
         name:"Gatlinburg-Pittman B",
         state:"Tennessee",
         rank:1200
-    }),
+    },
     GeorgetownDayAV = {
         name:"Georgetown Day School A",
         state:"DC",
         rank:1200
-    }),
+    },
     GeorgeWaltonAV = {
         name:"George Walton A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     GeorgeWashingtonAV = {
         name:"George Washington A",
         state:"West Virginia",
         rank:1200
-    }),
+    },
     GeorgeWashingtonBV = {
         name:"George Washington B",
         state:"West Virginia",
         rank:1200
-    }),
+    },
     GlenbardWestAV = {
         name:"Glenbard West A",
         state:"Illinois",
         rank:1200
-    }),
+    },
     GlenelgAV = {
         name:"Glenelg Country School A",
         state:"Maryland",
         rank:1200
-    }),
+    },
     GonzagaAV = {
         name:"Gonzaga Prep A",
         state:"Washington",
         rank:1200
-    }),
+    },
     GothamAV = {
         name:"Team Gotham A",
         state:"New York",
         rank:1200
-    }),
+    },
     GreatValleyAV = {
         name:"Great Valley A",
         state:"Pennsylvania",
         rank:1200
-    }),
+    },
     GreensFarmsAV = {
         name:"Greens Farms A",
         state:"Connecticut",
         rank:1200
-    }),
+    },
     GundersonAV = {
         name:"Gunderson A",
         state:"California",
         rank:1200
-    }),
+    },
     HewlettAV = {
         name:"Hewlett A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     HewlettBV = {
         name:"Hewlett B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     HighTechAV = {
         name:"High Tech A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     HinsdaleAV = {
         name:"Hinsdale Central A",
         state:"Illinois",
         rank:1200
-    }),
+    },
     HolmdelAV = {
         name:"Team Holmdel A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     HolyNamesAV = {
         name:"Holy Names Academy A",
         state:"Washington",
         rank:1200
-    }),
+    },
     HomewoodFlossmoorAV = {
         name:"Homewood-Flossmoor A",
         state:"Illinois",
         rank:1200
-    }),
+    },
     HoraceGreeleyAV = {
         name:"Horace Greeley A",
         state:"New York",
         rank:1200
-    }),
+    },
     HunterAV = {
         name:"Hunter College High A",
         state:"New York",
         rank:1200
-    }),
+    },
     IolaniAV = {
         name:"Iolani A",
         state:"Hawaii",
         rank:1200
-    }),
+    },
     IolaniBV = {
         name:"Iolani B",
         state:"Hawaii",
         rank:1200
-    }),
+    },
     IroquoisAV = {
         name:"Iroquois A",
         state:"New York",
         rank:1200
-    }),
+    },
     IrvingtonAV = {
         name:"Irvington A",
         state:"New York",
         rank:1200
-    }),
+    },
     JesuitAV = {
         name:"Jesuit A",
         state:"Washington",
         rank:1200
-    }),
+    },
     JesuitBV = {
         name:"Jesuit B",
         state:"Washington",
         rank:1200
-    }),
+    },
     JohnPaulIIAV = {
         name:"John Paul II A",
         state:"Washington",
         rank:1200
-    }),
+    },
     JohnsCreekAV = {
         name:"Johns Creek A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     JohnsonAV = {
         name:"Johnson A",
         state:"Kentucky",
         rank:1200
-    }),
+    },
     JohnsonBV = {
         name:"Johnson B",
         state:"Kentucky",
         rank:1200
-    }),
+    },
     JohnsonCV = {
         name:"Johnson C",
         state:"Kentucky",
         rank:1200
-    }),
+    },
     KingAV = {
         name:"King A",
         state:"Florida",
         rank:1200
-    }),
+    },
     KingBV = {
         name:"King B",
         state:"Florida",
         rank:1200
-    }),
+    },
     LambertAV = {
         name:"Lambert A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     LargoAV = {
         name:"Largo A",
         state:"Florida",
         rank:1200
-    }),
+    },
     LargoBV = {
         name:"Largo B",
         state:"Florida",
         rank:1200
-    }),
+    },
     LeoniaAV = {
         name:"Leonia A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     LesQuizAV = {
         name:"Les Quiz A",
         state:"California",
         rank:1200
-    }),
+    },
     LewisandClarkAV = {
         name:"Lewis and Clark A",
         state:"Washington",
         rank:1200
-    }),
+    },
     LexingtonAV = {
         name:"Lexington A",
         state:"Massachusetts",
         rank:1200
-    }),
+    },
     LincolnAV = {
         name:"Lincoln A",
         state:"Washington",
         rank:1200
-    }),
+    },
     LynbrookAV = {
         name:"Lynbrook A",
         state:"California",
         rank:1200
-    }),
+    },
     ManateeAV = {
         name:"Manatee A",
         state:"Florida",
         rank:1200
-    }),
+    },
     MarmionAV = {
         name:"Marmion Academy A",
         state:"Illinois",
         rank:1200
-    }),
+    },
     MaryvilleAV = {
         name:"Maryville Jr. High A",
         state:"Tennessee",
         rank:1200
-    }),
+    },
     MethactonAV = {
         name:"Methacton A",
         state:"Pennsylvania",
         rank:1200
-    }),
+    },
     MethactonBV = {
         name:"Methacton B",
         state:"Pennsylvania",
         rank:1200
-    }),
+    },
     MillburnAV = {
         name:"Millburn A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     MillburnBV = {
         name:"Millburn B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     MillburnCV = {
         name:"Millburn C",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     MontgomeryBlairAV = {
         name:"Montgomery Blair A",
         state:"Maryland",
         rank:1200
-    }),
+    },
     MoorestownAV = {
         name:"Moorestown Friends A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     MoorestownBV = {
         name:"Moorestown Friends B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     MoravianAV = {
         name:"Moravian Academy A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     MorristownAV = {
         name:"Morristown East A",
         state:"Tennessee",
         rank:1200
-    }),
+    },
     MorristownBV = {
         name:"Morristown East B",
         state:"Tennessee",
         rank:1200
-    }),
+    },
     MountainLakesAV = {
         name:"Mountain Lakes A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     MtSpokaneAV = {
         name:"Mt. Spokane A",
         state:"Washington",
         rank:1200
-    }),
+    },
     MtSpokaneBV = {
         name:"Mt. Spokane B",
         state:"Washington",
         rank:1200
-    }),
+    },
     MountVernonAV = {
         name:"Mount Vernon A",
         state:"Virginia",
         rank:1200
-    }),
+    },
     NewarkAV = {
         name:"Newark Academy A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     NewarkCharterAV = {
         name:"Newark Charter A",
         state:"Deleware",
         rank:1200
-    }),
+    },
     NewarkCharterBV = {
         name:"Newark Charter B",
         state:"Deleware",
         rank:1200
-    }),
+    },
     NewarkCharterCV = {
         name:"Newark Charter C",
         state:"Deleware",
         rank:1200
-    }),
+    },
     NewnanAV = {
         name:"Newnan A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     NicholsAV = {
         name:"Nichols A",
         state:"New York",
         rank:1200
-    }),
+    },
     NicholsBV = {
         name:"Nichols B",
         state:"New York",
         rank:1200
-    }),
+    },
     NicholsCV = {
         name:"Nichols C",
         state:"New York",
         rank:1200
-    }),
+    },
     NitroAV = {
         name:"Nitro A",
         state:"West Virginia",
         rank:1200
-    }),
+    },
     NitroBV = {
         name:"Nitro B",
         state:"West Virginia",
         rank:1200
-    }),
+    },
     NorthfieldMtHermonAV = {
         name:"Northfield Mt. Hermon A",
         state:"Massachusetts",
         rank:1200
-    }),
+    },
     NorthwesternAV = {
         name:"Northwestern Middle A",
         state:"Louisiana",
         rank:1200
-    }),
+    },
     OakMountainAV = {
         name:"Oak Mountain A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     OratoryAV = {
         name:"Oratory Prep A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     PalmettoAV = {
         name:"Miami Palmetto A",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoBV = {
         name:"Miami Palmetto B",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoCV = {
         name:"Miami Palmetto C",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoDV = {
         name:"Miami Palmetto D",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoEV = {
         name:"Miami Palmetto E",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoFV = {
         name:"Miami Palmetto F",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoGV = {
         name:"Miami Palmetto G",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoHV = {
         name:"Miami Palmetto H",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoIV = {
         name:"Miami Palmetto I",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoJV = {
         name:"Miami Palmetto J",
         state:"Florida",
         rank:1200
-    }),
+    },
     ParamusAV = {
         name:"Paramus A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     PhillipsExeterAV = {
         name:"Phillips Exeter A",
         state:"Massachusetts",
         rank:1200
-    }),
+    },
     PiedmontHillsAV = {
         name:"Piedmont Hills A",
         state:"California",
         rank:1200
-    }),
+    },
     PigeonForgeAV = {
         name:"Pigeon Forge A",
         state:"Tennessee",
         rank:1200
-    }),
+    },
     PineViewAV = {
         name:"Pine View A",
         state:"Florida",
         rank:1200
-    }),
+    },
     PioneersAV = {
         name:"Team Pi-oneers A",
         state:"California",
         rank:1200
-    }),
+    },
     PocaAV = {
         name:"Poca A",
         state:"West Virginia",
         rank:1200
-    }),
+    },
     PocaBV = {
         name:"Poca B",
         state:"West Virginia",
         rank:1200
-    }),
+    },
     PrincetonAV = {
         name:"Princeton A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     PrincetonBV = {
         name:"Princeton B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     PunahouAV = {
         name:"Punahou A",
         state:"Hawaii",
         rank:1200
-    }),
+    },
     PunahouBV = {
         name:"Punahou B",
         state:"Hawaii",
         rank:1200
-    }),
+    },
     RanneyAV = {
         name:"Ranney A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     RansomAV = {
         name:"Ransom Everglades A",
         state:"Florida",
         rank:1200
-    }),
+    },
     RansomBV = {
         name:"Ransom Everglades B",
         state:"Florida",
         rank:1200
-    }),
+    },
     RidgewoodAV = {
         name:"Ridgewood A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     RichardMontgomeryAV = {
         name:"Richard Montgomery A",
         state:"Maryland",
         rank:1200
-    }),
+    },
     RiversideAV = {
         name:"Riverside A",
         state:"Montana",
         rank:1200
-    }),
+    },
     RiverviewAV = {
         name:"Riverview A",
         state:"Florida",
         rank:1200
-    }),
+    },
     RiverviewBV = {
         name:"Riverview B",
         state:"Florida",
         rank:1200
-    }),
+    },
     RiverviewCV = {
         name:"Riverview C",
         state:"Florida",
         rank:1200
-    }),
+    },
     RiverviewDV = {
         name:"Riverview D",
         state:"Florida",
         rank:1200
-    }),
+    },
     RiverviewEV = {
         name:"Riverview E",
         state:"Florida",
         rank:1200
-    }),
+    },
     RussellAV = {
         name:"Russell A",
         state:"Kentucky",
         rank:1200
-    }),
+    },
     SalemAV = {
         name:"Salem A",
         state:"Massachusetts",
         rank:1200
-    }),
+    },
     SalemBV = {
         name:"Salem B",
         state:"Massachusetts",
         rank:1200
-    }),
+    },
     SandburgAV = {
         name:"Stanburg A",
         state:"Illinois",
         rank:1200
-    }),
+    },
     SaratogaAV = {
         name:"Saratoga A",
         state:"California",
         rank:1200
-    }),
+    },
     SaratogaBV = {
         name:"Saratoga B",
         state:"California",
         rank:1200
-    }),
+    },
     SaratogaCV = {
         name:"Saratoga C",
         state:"California",
         rank:1200
-    }),
+    },
     ScarsdaleAV = {
         name:"Scarsdale A",
         state:"New York",
         rank:1200
-    }),
+    },
     SeymourAV = {
         name:"Seymour A",
         state:"Tennessee",
         rank:1200
-    }),
+    },
     SkyviewAV = {
         name:"Skyview A",
         state:"Montana",
         rank:1200
-    }),
+    },
     SkyviewBV = {
         name:"Skyview B",
         state:"Montana",
         rank:1200
-    }),
+    },
     SkyviewCV = {
         name:"Skyview C",
         state:"Montana",
         rank:1200
-    }),
+    },
     StAlbansAV = {
         name:"St. Albans A",
         state:"West Virginia",
         rank:1200
-    }),
+    },
     StAnselmsAV = {
         name:"St. Anselm's A",
         state:"Maryland",
         rank:1200
-    }),
+    },
     StarrsMillAV = {
         name:"Starr's Mill A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     StarrsMillBV = {
         name:"Starr's Mill B",
         state:"Georgia",
         rank:1200
-    }),
+    },
     StarrsMillCV = {
         name:"Starr's Mill C",
         state:"Georgia",
         rank:1200
-    }),
+    },
     StarrsMillDV = {
         name:"Starr's Mill D",
         state:"Georgia",
         rank:1200
-    }),
+    },
     StarrsMillEV = {
         name:"Starr's Mill E",
         state:"Georgia",
         rank:1200
-    }),
+    },
     StevensonAV = {
         name:"Stevenson A",
         state:"Illinois",
         rank:1200
-    }),
+    },
     StevensonBV = {
         name:"Stevenson B",
         state:"Illinois",
         rank:1200
-    }),
+    },
     StevensonCV = {
         name:"Stevenson C",
         state:"Illinois",
         rank:1200
-    }),
+    },
     StGeorgesAV = {
         name:"St. George's A",
         state:"Washington",
         rank:1200
-    }),
+    },
     StJosephAV = {
         name:"St. Joseph A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     StPetersAV = {
         name:"St. Peter's Prep A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     StPetersBV = {
         name:"St. Peter's Prep B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     StuyvesantAV = {
         name:"Stuyvesant A",
         state:"New York",
         rank:1200
-    }),
+    },
     TantasquaAV = {
         name:"Tantasqua A",
         state:"Massachusetts",
         rank:1200
-    }),
+    },
     TantasquaBV = {
         name:"Tantasqua B",
         state:"Massachusetts",
         rank:1200
-    }),
+    },
     TateAV = {
         name:"Tate A",
         state:"Florida",
         rank:1200
-    }),
+    },
     ThomasJeffersonAV = {
         name:"Thomas Jefferson A",
         state:"Virginia",
         rank:1200
-    }),
+    },
     ThomasJeffersonBV = {
         name:"Thomas Jefferson B",
         state:"Virginia",
         rank:1200
-    }),
+    },
     TippecanoeAV = {
         name:"Tippecanoe A",
         state:"Ohio",
         rank:1200
-    }),
+    },
     TowerHillAV = {
         name:"Tower Hill A",
         state:"Delaware",
         rank:1200
-    }),
+    },
     TowerHillBV = {
         name:"Tower Hill B",
         state:"Delaware",
         rank:1200
-    }),
+    },
     TrinityAV = {
         name:"Trinity Prep A",
         state:"Florida",
         rank:1200
-    }),
+    },
     TrinityBV = {
         name:"Trinity Prep B",
         state:"Florida",
         rank:1200
-    }),
+    },
     TenaflyAV = {
         name:"Tenafly A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     TenaflyBV = {
         name:"Tenafly B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     VeteransAV = {
         name:"Veterans A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     WashingtonAV = {
         name:"Washington A",
         state:"Florida",
         rank:1200
-    }),
+    },
     WashingtonBV = {
         name:"Washington B",
         state:"Florida",
         rank:1200
-    }),
+    },
     WilliamsBayAV = {
         name:"Williams Bay A",
         state:"Illinois",
         rank:1200
-    }),
+    },
     WilliamsBayBV = {
         name:"Williams Bay B",
         state:"Illinois",
         rank:1200
-    }),
+    },
     WilliamsBayCV = {
         name:"Williams Bay C",
         state:"Illinois",
         rank:1200
-    }),
+    },
     WilmingtonFriendsAV = {
         name:"Wilmington Friends A",
         state:"Deleware",
         rank:1200
-    }),
+    },
     WilmingtonFriendsBV = {
         name:"Wilmington Friends B",
         state:"Deleware",
         rank:1200
-    }),
+    },
     WilmingtonFriendsCV = {
         name:"Wilmington Friends C",
         state:"Deleware",
         rank:1200
-    }),
+    },
     WilmingtonFriendsDV = {
         name:"Wilmington Friends D",
         state:"Deleware",
         rank:1200
-    }),
+    },
     WilmingtonFriendsEV = {
         name:"Wilmington Friends E",
         state:"Deleware",
         rank:1200
-    }),
+    },
     WilmingtonFriendsFV = {
         name:"Wilmington Friends F",
         state:"Deleware",
         rank:1200
-    }),
+    },
     WilmingtonFriendsGV = {
         name:"Wilmington Friends G",
         state:"Deleware",
         rank:1200
-    }),
+    },
     WiltonAlexAV = {
         name:"Wilton Alex",
         state:"Connecticut",
         rank:1200
-    }),
+    },
     WinnebagoAV = {
         name:"Winnebago A",
         state:"Illinois",
         rank:1200
-    }),
+    },
     WestminsterAV = {
         name:"Westminster Christian A",
         state:"Florida",
         rank:1200
-    }),
+    },
     WestviewAV = {
         name:"Westview A",
         state:"Washington",
         rank:1200
-    }),
+    },
     WestviewBV = {
         name:"Westview B",
         state:"Washington",
         rank:1200
-    }),
+    },
     WhitePlainsAV = {
         name:"White Plains A",
         state:"New York",
         rank:1200
-    }),
+    },
     WoodstockAV = {
         name:"Woodstock A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     WoodwardAV = {
         name:"Woodward Academy A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     ZacharyAV = {
         name:"Zachary A",
         state:"Louisiana",
         rank:1200
-    }),
+    },
     ZacharyBV = {
         name:"Zachary B",
         state:"Louisiana",
         rank:1200
-    }),
+    },
     ZacharyCV = {
         name:"Zachary C",
         state:"Louisiana",
         rank:1200
-    }),
+    },
 ];
 
 let teamsJV = [
@@ -1205,672 +1205,672 @@ let teamsJV = [
         name:"Apalachee B",
         state:"Georgia",
         rank:1200
-    }),
+    },
     AptakisicAJV = {
         name:"Aptakisic A",
         state:"Illinois",
         rank:1200
-    }),
+    },
     ArchimedeanFJV = {
         name:"Archimedean F",
         state:"Florida",
         rank:1200
-    }),
+    },
     AuburnBJV = {
         name:"Auburn B",
         state:"Illinois",
         rank:1200
-    }),
+    },
     BASISBrooklynAJV = {
         name:"BASIS Brooklyn A",
         state:"New York",
         rank:1200
-    }),
+    },
     BeavercreekCJV = {
         name:"Beavercreek C",
         state:"Ohio",
         rank:1200
-    }),
+    },
     BelenCJV = {
         name:"Belen Jesuit C",
         state:"Florida",
         rank:1200
-    }),
+    },
     BerkeleyCJV = {
         name:"Berkeley Prep C",
         state:"Florida",
         rank:1200
-    }),
+    },
     BerkeleyDJV = {
         name:"Berkeley Prep D",
         state:"Florida",
         rank:1200
-    }),
+    },
     BillingsSeniorBJV = {
         name:"Billings Senior B",
         state:"Montana",
         rank:1200
-    }),
+    },
     BozemanCJV = {
         name:"Bozeman C",
         state:"Montana",
         rank:1200
-    }),
+    },
     BromfieldAJV = {
         name:"Bromfield A",
         state:"Massachusetts",
         rank:1200
-    }),
+    },
     BrookwoodBJV = {
         name:"Brookwood B",
         state:"Georgia",
         rank:1200
-    }),
+    },
     CaliforniaAJV = {
         name:"California A",
         state:"California",
         rank:1200
-    }),
+    },
     CentennialCJV = {
         name:"Centennial HS C",
         state:"Maryland",
         rank:1200
-    }),
+    },
     CentennialDJV = {
         name:"Centennial HS D",
         state:"Maryland",
         rank:1200
-    }),
+    },
     CentennialEJV = {
         name:"Centennial HS E",
         state:"Maryland",
         rank:1200
-    }),
+    },
     ChambleeAJV = {
         name:"Chamblee Charter A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     CharlestonCJV = {
         name:"Charleston Catholic C",
         state:"West Virginia",
         rank:1200
-    }),
+    },
     CharlestonDJV = {
         name:"Charleston Catholic D",
         state:"West Virginia",
         rank:1200
-    }),
+    },
     ChattahoocheeBJV = {
         name:"Chattahoochee B",
         state:"Georgia",
         rank:1200
-    }),
+    },
     CherokeeBluffJV = {
         name:"Cherokee Bluff",
         state:"Georgia",
         rank:1200
-    }),
+    },
     ChurchillIAJV = {
         name:"Churchill I A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     ChurchillIBJV = {
         name:"Churchill I B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     ChurchillIIAJV = {
         name:"Churchill II A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     ClassicalBJV = {
         name:"Classical Prep B",
         state:"Florida",
         rank:1200
-    }),
+    },
     ColdhugBJV = {
         name:"Team Coldhug B",
         state:"Connecticut",
         rank:1200
-    }),
+    },
     DonovanCatholicBJV = {
         name:"Donovan Catholic B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     DoralBJV = {
         name:"Doral Academy B",
         state:"Florida",
         rank:1200
-    }),
+    },
     DuvallJV = {
         name:"Duvall",
         state:"Washington",
         rank:1200
-    }),
+    },
     EastValleyCJV = {
         name:"East Valley C",
         state:"Washington",
         rank:1200
-    }),
+    },
     EriksenBJV = {
         name:"Eriksen B",
         state:"California",
         rank:1200
-    }),
+    },
     GeorgeWaltonBJV = {
         name:"George Walton B",
         state:"Georgia",
         rank:1200
-    }),
+    },
     FontbonneCJV = {
         name:"Fordham Hall Academy C",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     FordhamBJV = {
         name:"Fordham Prep B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     FultonAJV = {
         name:"Fulton Science Academy A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     GeorgetownDayBJV = {
         name:"Georgetown Day B",
         state:"DC",
         rank:1200
-    }),
+    },
     GeorgeWashingtonAJV = {
         name:"George Washington A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     GreensFarmsBJV = {
         name:"Greens Farms B",
         state:"Connecticut",
         rank:1200
-    }),
+    },
     HarkerAJV = {
         name:"Harker A",
         state:"California",
         rank:1200
-    }),
+    },
     HermannAJV = {
         name:"Hermann Homeschool A",
         state:"Georgia",
         rank:1200
-    }),
+    },
     HewlettCJV = {
         name:"Hewlett C",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     HighTechBJV = {
         name:"High Tech B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     HolmdelBJV = {
         name:"Team Holmdel B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     HomesteadAJV = {
         name:"Homestead A",
         state:"California",
         rank:1200
-    }),
+    },
     HomewoodFlossmoorBJV = {
         name:"Homewood-Flossmoor B",
         state:"Illinois",
         rank:1200
-    }),
+    },
     HoraceGreeleyBJV = {
         name:"Horace Greeley B",
         state:"New York",
         rank:1200
-    }),
+    },
     HunterBJV = {
         name:"Hunter College High B",
         state:"New York",
         rank:1200
-    }),
+    },
     IroquoisBJV = {
         name:"Iroquois B",
         state:"New York",
         rank:1200
-    }),
+    },
     JohnAdamsAJV = {
         name:"John Adams A",
         state:"West Virginia",
         rank:1200
-    }),
+    },
     JohnPaulIIBJV = {
         name:"John Paul II B",
         state:"Washington",
         rank:1200
-    }),
+    },
     KinnelonAJV = {
         name:"Kinnelon A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     LargoCJV = {
         name:"Largo C",
         state:"Florida",
         rank:1200
-    }),
+    },
     LeoniaBJV = {
         name:"Leonia A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     LibbyAJV = {
         name:"Libby Middle School A",
         state:"Washington",
         rank:1200
-    }),
+    },
     LexingtonBJV = {
         name:"Lexington B",
         state:"Massachusetts",
         rank:1200
-    }),
+    },
     ManateeBJV = {
         name:"Manatee B",
         state:"Florida",
         rank:1200
-    }),
+    },
     MillburnMSAJV = {
         name:"Millburn Middle School A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     McLeanAJV = {
         name:"McLean A",
         state:"Virginia",
         rank:1200
-    }),
+    },
     MethactonCJV = {
         name:"Methacton C",
         state:"Pennsylvania",
         rank:1200
-    }),
+    },
     MillburnDJV = {
         name:"Millburn D",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     MissionSanJoseJV = {
         name:"Mission San Jose",
         state:"California",
         rank:1200
-    }),
+    },
     MontgomeryBlairBJV = {
         name:"Montgomery Blair B",
         state:"Maryland",
         rank:1200
-    }),
+    },
     MontgomeryBlairCJV = {
         name:"Montgomery Blair C",
         state:"Maryland",
         rank:1200
-    }),
+    },
     MorgantownAJV = {
         name:"Morgantown A",
         state:"West Virginia",
         rank:1200
-    }),
+    },
     MountainLakesBJV = {
         name:"Mountain Lakes",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     MountainViewAJV = {
         name:"Mountain View A",
         state:"California",
         rank:1200
-    }),
+    },
     MtSpokaneCJV = {
         name:"Mt. Spokane C",
         state:"Washington",
         rank:1200
-    }),
+    },
     MtSpokaneDJV = {
         name:"Mt. Spokane D",
         state:"Washington",
         rank:1200
-    }),
+    },
     NewnanBJV = {
         name:"Newnan B",
         state:"Georgia",
         rank:1200
-    }),
+    },
     NewnanCJV = {
         name:"Newnan C",
         state:"Georgia",
         rank:1200
-    }),
+    },
     NicholsDJV = {
         name:"Nichols D",
         state:"New York",
         rank:1200
-    }),
+    },
     NicholsEJV = {
         name:"Nichols E",
         state:"New York",
         rank:1200
-    }),
+    },
     OdleAJV = {
         name:"Odle Middle A",
         state:"Washington",
         rank:1200
-    }),
+    },
     PalmettoKJV = {
         name:"Miami Palmetto K",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoLJV = {
         name:"Miami Palmetto L",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoMJV = {
         name:"Miami Palmetto M",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettonAJV = {
         name:"Miami Palmetto N",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoOJV = {
         name:"Miami Palmetto O",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoPJV = {
         name:"Miami Palmetto P",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoQJV = {
         name:"Miami Palmetto Q",
         state:"Florida",
         rank:1200
-    }),
+    },
     PalmettoRJV = {
         name:"Miami Palmetto R",
         state:"Florida",
         rank:1200
-    }),
+    },
     ParkCityAJV = {
         name:"Park City A",
         state:"Montana",
         rank:1200
-    }),
+    },
     ParkCityBJV = {
         name:"Park City B",
         state:"Montana",
         rank:1200
-    }),
+    },
     PhillipsAndoverAJV = {
         name:"Phillips Andover A",
         state:"Massachusetts",
         rank:1200
-    }),
+    },
     PhillipsExeterBJV = {
         name:"Phillips Exeter B",
         state:"Massachusetts",
         rank:1200
-    }),
+    },
     PrincetonCJV = {
         name:"Princeton C",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     PrincetonDJV = {
         name:"Princeton D",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     RanneyBJV = {
         name:"Ranney B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     RansomCJV = {
         name:"Ransom Everglades C",
         state:"Florida",
         rank:1200
-    }),
+    },
     RansomDJV = {
         name:"Ransom Everglades D",
         state:"Florida",
         rank:1200
-    }),
+    },
     RansomEJV = {
         name:"Ransom Everglades E",
         state:"Florida",
         rank:1200
-    }),
+    },
     RansomFJV = {
         name:"Ransom Everglades F",
         state:"Florida",
         rank:1200
-    }),
+    },
     RansomGJV = {
         name:"Ransom Everglades G",
         state:"Florida",
         rank:1200
-    }),
+    },
     RichardMontgomeryBJV = {
         name:"Richard Montgomery B",
         state:"Maryland",
         rank:1200
-    }),
+    },
     RidgewoodCJV = {
         name:"Ridgewood C",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     RidgewoodDJV = {
         name:"Ridgewood D",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     RiverviewFJV = {
         name:"Riverview F",
         state:"Florida",
         rank:1200
-    }),
+    },
     RiverviewGJV = {
         name:"Riverview G",
         state:"Florida",
         rank:1200
-    }),
+    },
     RiverviewHJV = {
         name:"Riverview H",
         state:"Florida",
         rank:1200
-    }),
+    },
     RiverviewIJV = {
         name:"Riverview I",
         state:"Florida",
         rank:1200
-    }),
+    },
     RiverviewJJV = {
         name:"Riverview J",
         state:"Florida",
         rank:1200
-    }),
+    },
     SaggitariusAJV = {
         name:"Saggitarius A",
         state:"California",
         rank:1200
-    }),
+    },
     SandburgBJV = {
         name:"Stanburg B",
         state:"Illinois",
         rank:1200
-    }),
+    },
     SantaClaraAJV = {
         name:"Santa Clara A",
         state:"California",
         rank:1200
-    }),
+    },
     SaratogaDJV = {
         name:"Saratoga D",
         state:"California",
         rank:1200
-    }),
+    },
     SaratogaEJV = {
         name:"Saratoga E",
         state:"California",
         rank:1200
-    }),
+    },
     SkyviewDJV = {
         name:"Skyview D",
         state:"Montana",
         rank:1200
-    }),
+    },
     SouthBrunswickAJV = {
         name:"South Brunswick A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     StevensonDJV = {
         name:"Stevenson D",
         state:"Illinois",
         rank:1200
-    }),
+    },
     StevensonEJV = {
         name:"Stevenson E",
         state:"Illinois",
         rank:1200
-    }),
+    },
     StAnselmsBJV = {
         name:"St. Anselm's B",
         state:"Maryland",
         rank:1200
-    }),
+    },
     StevensonFJV = {
         name:"Stevenson F",
         state:"Illinois",
         rank:1200
-    }),
+    },
     StJosephBJV = {
         name:"St. Joseph B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     StPetersCJV = {
         name:"St. Peter's Prep C",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     TenaflyCJV = {
         name:"Tenafly C",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     TeslaAJV = {
         name:"Tesla STEM A",
         state:"Washington",
         rank:1200
-    }),
+    },
     ThomasJeffersonCJV = {
         name:"Thomas Jefferson C",
         state:"Virginia",
         rank:1200
-    }),
+    },
     ThomasJeffersonDJV = {
         name:"Thomas Jefferson D",
         state:"Virginia",
         rank:1200
-    }),
+    },
     TippecanoeBJV = {
         name:"Tippecanoe B",
         state:"Ohio",
         rank:1200
-    }),
+    },
     TowerHillCJV = {
         name:"Tower Hill C",
         state:"Delaware",
         rank:1200
-    }),
+    },
     VeteransBJV = {
         name:"Veterans B",
         state:"Georgia",
         rank:1200
-    }),
+    },
     WilliamsBayDJV = {
         name:"Williams Bay D",
         state:"Illinois",
         rank:1200
-    }),
+    },
     WinnebagoBJV = {
         name:"Winnebago B",
         state:"Illinois",
         rank:1200
-    }),
+    },
     WilmingtonFriendsHJV = {
         name:"Wilmington Friends H",
         state:"Deleware",
         rank:1200
-    }),
+    },
     WilmingtonFriendsIJV = {
         name:"Wilmington Friends I",
         state:"Deleware",
         rank:1200
-    }),
+    },
     WilmingtonFriendsJJV = {
         name:"Wilmington Friends J",
         state:"Deleware",
         rank:1200
-    }),
+    },
     WilmingtonFriendsKJV = {
         name:"Wilmington Friends K",
         state:"Deleware",
         rank:1200
-    }),
+    },
     WilmingtonFriendsLJV = {
         name:"Wilmington Friends L",
         state:"Deleware",
         rank:1200
-    }),
+    },
     WilmingtonFriendsMJV = {
         name:"Wilmington Friends M",
         state:"Deleware",
         rank:1200
-    }),
+    },
     WiltonAnjoAJV = {
         name:"Wilton Anjo",
         state:"Connecticut",
         rank:1200
-    }),
+    },
     WiltonLukasAJV = {
         name:"Wilton Lukas",
         state:"Connecticut",
         rank:1200
-    }),
+    },
     YonkersAJV = {
         name:"Yonkers A",
         state:"New York",
         rank:1200
-    }),
+    },
     YonkersBJV = {
         name:"Yonkers B",
         state:"New York",
         rank:1200
-    }),
+    },
 ];
 
 let teamsMS = [
@@ -1878,147 +1878,147 @@ let teamsMS = [
         name:"Challenger-Almaden A",
         state:"California",
         rank:1200
-    }),
+    },
     BRIGHTMSA = {
         name:"BRIGHT Homeschool A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     BurleighManorAMS = {
         name:"Burleigh Manor A",
         state:"Maryland",
         rank:1200
-    }),
+    },
     BurleighManorBMS = {
         name:"Burleigh Manor B",
         state:"Maryland",
         rank:1200
-    }),
+    },
     BurleighManorCMS = {
         name:"Burleigh Manor C",
         state:"Maryland",
         rank:1200
-    }),
+    },
     BurleighManorDMS = {
         name:"Burleigh Manor D",
         state:"Maryland",
         rank:1200
-    }),
+    },
     CentennialLaneAMS = {
         name:"Centennial Lane ES A",
         state:"Maryland",
         rank:1200
-    }),
+    },
     CentennialLaneBMS = {
         name:"Centennial Lane ES B",
         state:"Maryland",
         rank:1200
-    }),
+    },
     CentennialLaneCMS = {
         name:"Centennial Lane ES C",
         state:"Maryland",
         rank:1200
-    }),
+    },
     ClassicalCMS = {
         name:"Classical Prep C",
         state:"Florida",
         rank:1200
-    }),
+    },
     ClassicalDMS = {
         name:"Classical Prep D",
         state:"Florida",
         rank:1200
-    }),
+    },
     ClassicalEMS = {
         name:"Classical Prep E",
         state:"Florida",
         rank:1200
-    }),
+    },
     CompassMSA = {
         name:"Compass A",
         state:"Virginia",
         rank:1200
-    }),
+    },
     HarvestParkMSA = {
         name:"Harvest Park A",
         state:"California",
         rank:1200
-    }),
+    },
     IndianFieldsMSA = {
         name:"Indian Fields A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     JLSMSA = {
         name:"JLS A",
         state:"California",
         rank:1200
-    }),
+    },
     NysmithAMS = {
         name:"Nysmith A",
         state:"Virginia",
         rank:1200
-    }),
+    },
     NysmithBMS = {
         name:"Nysmith B",
         state:"Virginia",
         rank:1200
-    }),
+    },
     RipponAMS = {
         name:"Rippon A",
         state:"Virginia",
         rank:1200
-    }),
+    },
     RipponBMS = {
         name:"Rippon B",
         state:"Virginia",
         rank:1200
-    }),
+    },
     StollerHMS = {
         name:"Stoller H",
         state:"Washington",
         rank:1200
-    }),
+    },
     StollerKMS = {
         name:"Stoller K",
         state:"Washington",
         rank:1200
-    }),
+    },
     StollerTMS = {
         name:"Stoller T",
         state:"Washington",
         rank:1200
-    }),
+    },
     StollerWMS = {
         name:"Stoller W",
         state:"Washington",
         rank:1200
-    }),
+    },
     TenaflyMSA = {
         name:"Tenafly Middle A",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     TenaflyMSB = {
         name:"Tenafly Middle B",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     TenaflyMSC = {
         name:"Tenafly Middle C",
         state:"New Jersey",
         rank:1200
-    }),
+    },
     TrinityCMS = {
         name:"Trinity Prep C",
         state:"Florida",
         rank:1200
-    }),
+    },
     TrinityDMS = {
         name:"Trinity Prep D",
         state:"Florida",
         rank:1200
-    }),
+    },
 ];
 
 let teamAvgV = [];
