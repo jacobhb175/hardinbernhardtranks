@@ -2513,7 +2513,6 @@ let avgT = 0;
 //A Set = 25
 //Nats Prelims = 20
 //Nats Playoffs = 10
-K=100;
 
 //test if 2 teams are in a div
 async function includes(A,B,div) {
@@ -2728,6 +2727,12 @@ async function nRank(A,B,AScore,BScore){
     });
 }
 
+function printRanks(div){
+    let teamsRef = db.collection("teams");
+    teamsRef.where("division","==",div).orderBy("rank").limit(10);
+    console.log(div,teamsRef);
+}
+
 
 //Northern California Fall C-Set
 K = 100;
@@ -2811,8 +2816,10 @@ teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
 //logTR();
+printRanks("Varsity");
 
 /*
+
 //Eastern Washington C-Set
 //Prelims
 //Round 1
@@ -4324,8 +4331,6 @@ teamAvgJV = [];
 teamAvgMS = [];
 //logTR();
 */
-
-//cExpScore("HunterAV","MillburnAV");
 
 /*
 db.collection("teams").get().then((querySnapshot) => {
