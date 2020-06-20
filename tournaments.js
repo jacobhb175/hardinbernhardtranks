@@ -1,3 +1,4 @@
+async function norCalFallC(){
 //Northern California Fall C-Set
 K = 100;
 //Prelims
@@ -80,6 +81,8 @@ teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
 //logTR();
+}
+/*
 
 //Eastern Washington C-Set
 //Prelims
