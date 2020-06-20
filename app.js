@@ -2631,7 +2631,6 @@ async function newRank(A, B, AScore, BScore) {
         //update q value
         teamAvgV.push(AScore,BScore)
         teamAvgCV.push(AScore,BScore);
-        console.log(teamAvgCV);
         let sumCV = 0;
         let m;
         let teamAvgCVLen = teamAvgCV.length;
@@ -2814,7 +2813,7 @@ await newRank("SaggitariusAJV","HarkerAJV",310,170);
 await newRank("MissionSanJoseJV","CaliforniaAJV",250,220);
 //Finals
 await newRank("MissionSanJoseJV","SaggitariusAJV",280,210);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -2879,15 +2878,14 @@ await newRank("LibbyAJV","EastValleyCJV",210,100);
 await newRank("MtSpokaneCJV","MtSpokaneDJV",140,90);
 //Finals
 //await newRank("await newRank("LibbyAJV","MtSpokaneCJV",1,0);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
 //logTR();
-}
-cSet();
 
-/*
+
+
 //Central Georgia Fall C-Set
 //Prelims
 //Round 1
@@ -2929,7 +2927,7 @@ await newRank("StarrsMillAV","OakMountainAV",260,150);
 //JV Playoffs
 //Finals
 await newRank("ChambleeAJV","VeteransBJV",250,40);//Chamblee Charter
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -2986,7 +2984,7 @@ await newRank("SkyviewAV","BozemanBV",240,90);
 //JV Playoffs
 //Finals
 await newRank("BozemanCJV","SkyviewDJV",110,80);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3038,7 +3036,7 @@ await newRank("CharlestonAV","NitroAV",230,110);
 await newRank("StAlbansAV","GeorgeWashingtonBV",190,110);
 //Finals
 await newRank("CharlestonAV","StAlbansAV",240,130);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3159,7 +3157,7 @@ await newRank("HunterBJV","ChurchillIAJV",290,260);
 await newRank("TenaflyMSB","TenaflyMSC",160,20);
 //Finals
 await newRank("TenaflyMSA","TenaflyMSB",200,90);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3218,7 +3216,7 @@ await newRank("StevensonAV","StevensonCV",390,210);
 //JV Playoffs
 //Finals
 await newRank("StevensonEJV","StevensonDJV",290,220);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3253,7 +3251,7 @@ await newRank("BeavercreekAV","GeorgeWashingtonAV",320,290);
 //JV Playoffs
 //Finals
 await newRank("BeavercreekCJV","TippecanoeBJV",220,20);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3294,7 +3292,7 @@ await newRank("NicholsBV","NicholsCV",350,180);
 await newRank("IroquoisAV","NicholsAV",200,180);
 //Finals
 await newRank("NicholsBV","IroquoisAV",250,140);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3425,7 +3423,7 @@ await newRank("BelenCJV","PalmettoMJV",200,180);
 //Semifinals
 await newRank("PalmettoPJV","BelenCJV",240,70);
 await newRank("RansomCJV","PalmettoPJV",340,90);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3451,7 +3449,7 @@ await newRank("IolaniAV","PunahouBV",380,120);
 //Round 6
 await newRank("PunahouAV","PunahouBV",200,160);
 await newRank("IolaniAV","IolaniBV",260,210);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3485,7 +3483,7 @@ await newRank("GatlinburgAV","MorristownAV",230,100);
 await newRank("MaryvilleAV","PigeonForgeAV",400,160);
 //Finals
 await newRank("MaryvilleAV","GatlinburgAV",230,140);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3671,7 +3669,7 @@ await newRank("RiverviewFJV","LargoCJV",200,100);
 await newRank("RiverviewHJV","RiverviewFJV",121,120);
 //MS Final
 await newRank("TrinityCMS","TrinityDMS",310,40);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3704,7 +3702,7 @@ await newRank("HolyNamesAV","CentralKitsapAV",300,160);
 //Varsity Playoffs
 //Finals
 await newRank("CentralKitsapAV","HolyNamesAV",250,150);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3751,7 +3749,7 @@ await newRank("JesuitAV","WestviewAV",220,180);
 //MS Playoffs
 //Finals
 await newRank("StollerHMS","StollerKMS",240,200);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3806,7 +3804,7 @@ await newRank("BostonLatinAV","PhillipsExeterAV",300,170);
 //JV Playoffs
 //Finals
 await newRank("PhillipsExeterBJV","LexingtonBJV",240,180);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3914,7 +3912,7 @@ await newRank("BurleighManorBMS","NysmithAMS",220,190);
 await newRank("BurleighManorAMS","CompassMSA",220,190);
 //Finals
 await newRank("BurleighManorAMS","BurleighManorBMS",220,140);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -3991,7 +3989,7 @@ await newRank("HighTechAV","EastBrunswickAV",300,190);
 await newRank("PrincetonCJV","RanneyBJV",280,130);
 await newRank("WiltonAnjoAJV","MillburnMSAJV",200,120);
 await newRank("PrincetonCJV","WiltonAnjoAJV",290,170);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -4051,7 +4049,7 @@ await newRank("ElginAV","WinnebagoAV",480,50);
 await newRank("AuburnAV","GlenbardWestAV",250,240);
 //4th Place Game
 await newRank("HomewoodFlossmoorAV","WilliamsBayAV",260,120);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -4085,7 +4083,7 @@ await newRank("ZacharyBV","ZacharyAV",200,140);
 await newRank("BatonRougeEpiscopalAV","BatonRougeMagnetAV",210,190);
 //Finals
 await newRank("ZacharyBV","BatonRougeEpiscopalAV",210,160);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -4119,7 +4117,7 @@ await newRank("JohnsonAV","RussellAV",270,160);
 await newRank("BlazerAV","DunbarAV",211,210);
 //Finals
 await newRank("BlazerAV","JohnsonAV",270,160);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -4172,7 +4170,7 @@ await newRank("RidgewoodCJV","ColdhugBJV",350,120);
 await newRank("ChurchillIIAJV","TenaflyCJV",400,130);
 //Finals
 await newRank("RidgewoodCJV","ChurchillIIAJV",270,150);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -4236,7 +4234,7 @@ await newRank("DarienAV","ScarsdaleAV",260,230);
 await newRank("WiltonLukasAJV","YonkersBJV",380,90);
 await newRank("HoraceGreeleyBJV","YonkersAJV",270,200);
 await newRank("WiltonLukasAJV","HoraceGreeleyBJV",210,190);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
@@ -4330,12 +4328,13 @@ await newRank("MethactonCJV","WilmingtonFriendsIJV",400,50);
 await newRank("WilmingtonFriendsHJV","TowerHillCJV",280,60);
 //Finals
 await newRank("MethactonCJV","WilmingtonFriendsHJV",340,110);
-//console.log("q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
 //logTR();
-console.log(teamAvgCV);
+};
+cSet();
 
 /*
 db.collection("teams").get().then((querySnapshot) => {
