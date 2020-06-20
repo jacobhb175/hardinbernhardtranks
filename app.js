@@ -214,7 +214,7 @@ db.collection("teams").doc("BozemanBV").set({
     division:"Varsity",
 rank:1200
 }),
-db.collection("teams").doc("rookwoodAV").set({
+db.collection("teams").doc("BrookwoodAV").set({
     name:"Brookwood A",
     state:"Georgia",
     division:"Varsity",
@@ -1228,7 +1228,7 @@ db.collection("teams").doc("StevensonBV").set({
     division:"Varsity",
 rank:1200
 }),
-db.collection("teams").doc("tevensonCV").set({
+db.collection("teams").doc("StevensonCV").set({
     name:"Stevenson C",
     state:"Illinois",
     division:"Varsity",
@@ -2180,7 +2180,7 @@ db.collection("teams").doc("TenaflyCJV").set({
     division:"Junior Varsity",
 rank:1200
 }),
-db.collection("teams").doc("vTeslaAJV").set({
+db.collection("teams").doc("TeslaAJV").set({
     name:"Tesla STEM A",
     state:"Washington",
     division:"Junior Varsity",
@@ -2727,10 +2727,11 @@ async function nRank(A,B,AScore,BScore){
     });
 }
 
+//Print ranked teams in a specific division
 function printRanks(div){
     let teamsRef = db.collection("teams");
-    teamsRef.where("division","==",div).orderBy("rank").limit(10);
-    console.log(div,teamsRef);
+    console.log(teamsRef.where("division","==",div).orderBy("rank").limit(10));
+    
 }
 
 
