@@ -3767,7 +3767,7 @@ teamAvgJV = [];
 teamAvgMS = [];
 //logTR();
 
-/*
+
 //Florida Panhandle C-Set
 //Prelims
 //Round 1
@@ -3775,13 +3775,35 @@ newRank(ChoctawhatcheeAV,WashingtonAV,280,140);
 newRank(TateAV,WashingtonBV,310,60);
 newRank(RansomGJV,RansomFJV,81,80);
 //Round 2
-
+newRank(CollegiateAV,TateAV,400,180);
+newRank(WashingtonAV,WashingtonBV,250,100);
+newRank(RansomFJV,RansomEJV,100,80);
+//Round 3
+newRank(CollegiateAV,WashingtonAV,360,120);
+newRank(ChoctawhatcheeAV,WashingtonBV,390,20);
+newRank(RansomGJV,RansomEJV,140,70);
+//Round 4
+newRank(TateAV,ChoctawhatcheeAV,290,220);
+newRank(CollegiateAV,WashingtonBV,460,60);
+newRank(RansomGJV,RansomEJV,80,40);
+//Round 5
+newRank(TateAV,WashingtonAV,210,80);
+newRank(CollegiateAV,ChoctawhatcheeAV,460,110);
+newRank(RansomEJV,RansomFJV,70,50);
+//Round 6
+newRank(RansomGJV,RansomFJV,80,40);
+//Varsity Playoofs
+//Varsity Semifinals
+newRank(CollegiateAV,WashingtonAV,390,50);
+newRank(ChoctawhatcheeAV,TateAV,221,220);
+//Varsity Finals
+newRank(CollegiateAV,ChoctawhatcheeAV,420,120);
 //console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
 //logTR();
-*/
+
 
 //Sort teams by elo
 teamsV.sort((a, b) => parseFloat(b.rank) - parseFloat(a.rank));
