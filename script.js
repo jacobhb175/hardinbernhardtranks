@@ -1198,9 +1198,58 @@ let teamsV = [
         state:"Louisiana",
         rank:1200
     },
+    LindseyAV = {
+        name:"Lindsey Homeschool A",
+        state:"Missouri",
+        division:"Varsity",
+        rank:1200
+    },
+    AltonAV = {
+        name:"Alton A",
+        state:"Illinois",
+        division:"Varsity",
+        rank:1200
+    },
+    GraniteCityAV = {
+        name:"Granite City A",
+        state:"Illinois",
+        division:"Varsity",
+        rank:1200
+    },
+    SouthwesternAV = {
+        name:"Southwestern A",
+        state:"Illinois",
+        division:"Varsity",
+        rank:1200
+    },
 ];
 
+//Junior Varsity
 let teamsJV = [
+    SouthwesternBJV = {
+        name:"Southwestern B",
+        state:"Illinois",
+        division:"Junior Varsity",
+        rank:1200
+    },
+    SouthwesternCJV = {
+        name:"Southwestern B",
+        state:"Illinois",
+        division:"Junior Varsity",
+        rank:1200
+    },
+    KeithCountyDayAJV = {
+        name:"Keith County Day A",
+        state:"Illinois",
+        division:"Junior Varsity",
+        rank:1200
+    },
+    RochesterAJV = {
+        name:"Rochester A",
+        state:"Illinois",
+        division:"Junior Varsity",
+        rank:1200
+    },
     ApalacheeBJV = {
         name:"Apalachee B",
         state:"Georgia",
@@ -3804,6 +3853,49 @@ teamAvgJV = [];
 teamAvgMS = [];
 //logTR();
 
+
+//Southwestern Illinois C-Set
+//Round 1
+newRank(LindseyAV,GraniteCityAV,400,130);
+newRank(AltonAV,SouthwesternAV,360,140);
+newRank(KeithCountyDayAJV,SouthwesternCJV,330,130);
+newRank(RochesterAJV,SouthwesternBJV,260,180);
+//Round 2
+newRank(GraniteCityAV,SouthwesternAV,320,110);
+newRank(AltonAV,LindseyAV,340,260);
+newRank(RochesterAJV,SouthwesternCJV,240,200);
+newRank(KeithCountyDayAJV,SouthwesternBJV,250,200);
+//Round 3
+newRank(AltonAV,GraniteCityAV,380,140);
+newRank(LindseyAV,SouthwesternAV,410,90);
+newRank(SouthwesternBJV,SouthwesternCJV,320,150);
+newRank(RochesterAJV,KeithCountyDayAJV,310,150);
+//Round 4
+newRank(LindseyAV,SouthwesternAV,480,60);
+newRank(AltonAV,GraniteCityAV,370,180);
+newRank(KeithCountyDayAJV,RochesterAJV,260,160);
+newRank(SouthwesternBJV,SouthwesternCJV,240,100);
+//Round 5
+newRank(GraniteCityAV,SouthwesternAV,240,100);
+newRank(LindseyAV,AltonAV,310,190);
+newRank(KeithCountyDayAJV,SouthwesternBJV,310,180);
+newRank(RochesterAJV,SouthwesternCJV,260,120);
+//Round 6
+newRank(LindseyAV,GraniteCityAV,410,110);
+newRank(AltonAV,SouthwesternAV,310,70);
+newRank(RochesterAJV,SouthwesternBJV,280,150);
+newRank(KeithCountyDayAJV,SouthwesternCJV,250,100);
+//Varsity Playoffs
+//Varsity Final
+newRank(LindseyAV,AltonAV,280,200);
+//JV Playoffs
+//JV Final
+newRank(KeithCountyDayAJV,RochesterAJV,210,150);
+//console.log("q "+q);
+teamAvgV = [];
+teamAvgJV = [];
+teamAvgMS = [];
+//logTR();
 
 //Sort teams by elo
 teamsV.sort((a, b) => parseFloat(b.rank) - parseFloat(a.rank));

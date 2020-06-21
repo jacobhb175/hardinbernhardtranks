@@ -2466,6 +2466,54 @@ db.collection("teams").doc("TrinityDMS").set({
     division:"Middle School",
 rank:1200
 })
+db.collection("teams").doc("LindseyAV").set({
+    name:"Lindsey Homeschool A",
+    state:"Missouri",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("AltonAV").set({
+    name:"Alton A",
+    state:"Illinois",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("GraniteCityAV").set({
+    name:"Granite City A",
+    state:"Illinois",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("SouthwesternAV").set({
+    name:"Southwestern A",
+    state:"Illinois",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("SouthwesternBJV").set({
+    name:"Southwestern B",
+    state:"Illinois",
+    division:"Junior Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("SouthwesternCJV").set({
+    name:"Southwestern B",
+    state:"Illinois",
+    division:"Junior Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("KeithCountyDayAJV").set({
+    name:"Keith County Day A",
+    state:"Illinois",
+    division:"Junior Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("RochesterAJV").set({
+    name:"Rochester A",
+    state:"Illinois",
+    division:"Junior Varsity",
+    rank:1200
+})
 
 /*
 docRef.get().then(function(doc) {
@@ -4364,12 +4412,54 @@ await newRank("CollegiateAV","WashingtonAV",390,50);
 await newRank("ChoctawhatcheeAV","TateAV",221,220);
 //Varsity Finals
 await newRank("CollegiateAV","ChoctawhatcheeAV",420,120);
-//console.log(""q "+q);
+console.log("q "+q);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
 //logTR(");
 
+//Southwestern Illinois C-Set
+//Round 1
+await newRank("LindseyAV","GraniteCityAV",400,130);
+await newRank("AltonAV","SouthwesternAV",360,140);
+await newRank("KeithCountyDayAJV","SouthwesternCJV",330,130);
+await newRank("RochesterAJV","SouthwesternBJV",260,180);
+//Round 2
+await newRank("GraniteCityAV","SouthwesternAV",320,110);
+await newRank("AltonAV","LindseyAV",340,260);
+await newRank("RochesterAJV","SouthwesternCJV",240,200);
+await newRank("KeithCountyDayAJV","SouthwesternBJV",250,200);
+//Round 3
+await newRank("AltonAV","GraniteCityAV",380,140);
+await newRank("LindseyAV","SouthwesternAV",410,90);
+await newRank("SouthwesternBJV","SouthwesternCJV",320,150);
+await newRank("RochesterAJV","KeithCountyDayAJV",310,150);
+//Round 4
+await newRank("LindseyAV","SouthwesternAV",480,60);
+await newRank("AltonAV","GraniteCityAV",370,180);
+await newRank("KeithCountyDayAJV","RochesterAJV",260,160);
+await newRank("SouthwesternBJV","SouthwesternCJV",240,100);
+//Round 5
+await newRank("GraniteCityAV","SouthwesternAV",240,100);
+await newRank("LindseyAV","AltonAV",310,190);
+await newRank("KeithCountyDayAJV","SouthwesternBJV",310,180);
+await newRank("RochesterAJV","SouthwesternCJV",260,120);
+//Round 6
+await newRank("LindseyAV","GraniteCityAV",410,110);
+await newRank("AltonAV","SouthwesternAV",310,70);
+await newRank("RochesterAJV","SouthwesternBJV",280,150);
+await newRank("KeithCountyDayAJV","SouthwesternCJV",250,100);
+//Varsity Playoffs
+//Varsity Final
+await newRank("LindseyAV","AltonAV",280,200);
+//JV Playoffs
+//JV Final
+await newRank("KeithCountyDayAJV","RochesterAJV",210,150);
+console.log("q "+q);
+teamAvgV = [];
+teamAvgJV = [];
+teamAvgMS = [];
+//logTR();
 };
 cSet();
 
