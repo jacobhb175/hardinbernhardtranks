@@ -2696,7 +2696,7 @@ async function newRank(A, B, AScore, BScore) {
         q = avgV/avgCV;
         nRank(A,B,AScore,BScore);
     }
-    else if (K == 100 && evalJV == true) {
+    else if (K == 90 && evalJV == true) {
         //update q value
         teamAvgJV.push(AScore,BScore);
         teamAvgCJV.push(AScore,BScore);
@@ -2717,7 +2717,7 @@ async function newRank(A, B, AScore, BScore) {
         q = avgJV/avgCJV;
         nRank(A,B,AScore,BScore);
     }
-    else if (K == 100 && evalMS == true) {
+    else if (K == 90 && evalMS == true) {
         //update q value
         teamAvgMS.push(AScore,BScore);
         teamAvgCMS.push(AScore,BScore);
