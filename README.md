@@ -15,6 +15,8 @@ The T-value is used to account for the inherent issues in equating the percent c
 ## List of Tournaments
 Tournament|Date|Set Played|Status
 ---|---|---|---
+Southwestern Illinois|1/20/2020|C|Complete
+Florida Panhandle|1/18/2020|C|Complete
 Deleware|1/11/2020|C|Complete
 Western New York|1/4/2020|C|Complete
 Eastern Kentucky|12/14/2019|C|Complete
