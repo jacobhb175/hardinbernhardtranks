@@ -1226,7 +1226,7 @@ db.collection("teams").doc("StevensonBV").set({
     name:"Stevenson B",
     state:"Illinois",
     division:"Varsity",
-rank:1200
+    rank:1200
 }),
 db.collection("teams").doc("StevensonCV").set({
     name:"Stevenson C",
@@ -1668,7 +1668,7 @@ db.collection("teams").doc("EastValleyCJV").set({
     name:"East Valley C",
     state:"Washington",
     division:"Junior Varsity",
-rank:1200
+    rank:1200
 }),
 db.collection("teams").doc("EriksenBJV").set({
     name:"Eriksen B",
@@ -2696,7 +2696,7 @@ async function newRank(A, B, AScore, BScore) {
         q = avgV/avgCV;
         nRank(A,B,AScore,BScore);
     }
-    else if (K == 90 && evalJV == true) {
+    else if (K == 100 && evalJV == true) {
         //update q value
         teamAvgJV.push(AScore,BScore);
         teamAvgCJV.push(AScore,BScore);
@@ -2717,7 +2717,7 @@ async function newRank(A, B, AScore, BScore) {
         q = avgJV/avgCJV;
         nRank(A,B,AScore,BScore);
     }
-    else if (K == 90 && evalMS == true) {
+    else if (K == 0 && evalMS == true) {
         //update q value
         teamAvgMS.push(AScore,BScore);
         teamAvgCMS.push(AScore,BScore);
@@ -2739,7 +2739,7 @@ async function newRank(A, B, AScore, BScore) {
         nRank(A,B,AScore,BScore);
     }
     else {
-        console.log(A,B,"is cross-divisional");
+        //console.log(A,B,"is cross-divisional");
     }
 };  
 
