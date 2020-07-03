@@ -1226,7 +1226,7 @@ db.collection("teams").doc("StevensonBV").set({
     name:"Stevenson B",
     state:"Illinois",
     division:"Varsity",
-    rank:1200
+rank:1200
 }),
 db.collection("teams").doc("StevensonCV").set({
     name:"Stevenson C",
@@ -1668,7 +1668,7 @@ db.collection("teams").doc("EastValleyCJV").set({
     name:"East Valley C",
     state:"Washington",
     division:"Junior Varsity",
-    rank:1200
+rank:1200
 }),
 db.collection("teams").doc("EriksenBJV").set({
     name:"Eriksen B",
@@ -2537,6 +2537,9 @@ let expScoreB;
 let teamAvgV = [];
 let teamAvgJV = [];
 let teamAvgMS = [];
+let allV = [];
+let allJV = [];
+let allMS = [];
 let teamAvgCV = [];
 let teamAvgCJV = [];
 let teamAvgCMS = [];
@@ -2553,8 +2556,8 @@ let teamAvgPlJV = [];
 let q = 0;
 let t = [];
 let avgT = 0;
-//let r = [];
-//let avgR = 0;
+let r = false;
+let Q = [];
 
 //K Rank
 //C Set = 100
@@ -2745,6 +2748,7 @@ async function newRank(A, B, AScore, BScore) {
 
 //calculate and update rank
 async function nRank(A,B,AScore,BScore){
+    if (r == true) {
     var docRefA = db.collection("teams").doc(A);
     var docRefB = db.collection("teams").doc(B);
     await docRefA.get().then(async function(doc) {
@@ -2774,6 +2778,7 @@ async function nRank(A,B,AScore,BScore){
     }).catch(function(error) {
         console.log("Error getting document:", error);
     });
+    }
 }
 
 //Print ranked teams in a specific division
@@ -4461,6 +4466,8 @@ teamAvgJV = [];
 teamAvgMS = [];
 //logTR();
 };
+cSet();
+r = true;
 cSet();
 
 /*
