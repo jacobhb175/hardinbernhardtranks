@@ -2557,7 +2557,9 @@ let q = 0;
 let t = [];
 let avgT = 0;
 let r = false;
-let Q = [];
+let qV = [];
+let qJV = [];
+let qMS = [];
 let z = 0;
 
 //K Rank
@@ -2751,15 +2753,18 @@ async function newRank(A, B, AScore, BScore) {
     else if (r == true){
         //C-Set games
     if (K == 100 && evalV == true) {
-        q = Q[z];
+        q = allV[z]/avgV;
+        qV.push(q);
         nRank(A,B,AScore,BScore);
     }
     else if (K == 100 && evalJV == true) {
-        q = Q[z];
+        q = allJV[z]/avgJV;
+        qJV.push(q);
         nRank(A,B,AScore,BScore);
     }
     else if (K == 0 && evalMS == true) {
-        q = Q[z];
+        q = allMS[z]/avgMS;
+        qMS.push(q);
         nRank(A,B,AScore,BScore);
     }
     else {
@@ -2809,8 +2814,9 @@ function printRanks(div){
 }
 
 async function cSet(){
-//Northern California Fall C-Set
 K = 100;
+
+//Northern California Fall C-Set
 //Prelims
 //Round 1
 await newRank("MissionSanJoseJV","SaratogaEJV",450,70);
@@ -4648,14 +4654,14 @@ await newRank("SaggitariusAJV","HarkerAJV",310,170);
 await newRank("MissionSanJoseJV","CaliforniaAJV",250,220);
 //Finals
 await newRank("MissionSanJoseJV","SaggitariusAJV",280,210);
-console.log("NorCal C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
+console.log("NorCal C q V: "+qV[z]);
+console.log("NorCal C q JV: "+qJV[z]);
+console.log("NorCal C q MS: "+qMS[z]);
 //logTR();
 
 
 //Eastern Washington C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("GonzagaAV","MtSpokaneAV",300,180);
@@ -4712,15 +4718,14 @@ await newRank("LibbyAJV","EastValleyCJV",210,100);
 await newRank("MtSpokaneCJV","MtSpokaneDJV",140,90);
 //Finals
 //await newRank("await newRank("LibbyAJV","MtSpokaneCJV",1,0);
-console.log("East WA C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("East WA C q V: "+qV[z]);
+console.log("East WA C q JV: "+qJV[z]);
+console.log("East WA C q MS: "+qMS[z]);
 
 
 
 //Central Georgia Fall C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("StarrsMillAV","StarrsMillBV",440,90);
@@ -4761,13 +4766,12 @@ await newRank("StarrsMillAV","OakMountainAV",260,150);
 //JV Playoffs
 //Finals
 await newRank("ChambleeAJV","VeteransBJV",250,40);//Chamblee Charter
-console.log("Central GA C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("Central GA C q V: "+qV[z]);
+console.log("Central GA C q JV: "+qJV[z]);
+console.log("Central GA C q MS: "+qMS[z]);
 
 //Montana C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("BillingsSeniorAV","SkyviewBV",250,200);
@@ -4818,13 +4822,13 @@ await newRank("SkyviewAV","BozemanBV",240,90);
 //JV Playoffs
 //Finals
 await newRank("BozemanCJV","SkyviewDJV",110,80);
-console.log("MT C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
+console.log("MT C q V: "+qV[z]);
+console.log("MT C q JV: "+qJV[z]);
+console.log("MT C q MS: "+qMS[z]);
 //logTR();
 
 //West Virginia Fall C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("PocaAV","CharlestonBV",280,170);
@@ -4870,13 +4874,13 @@ await newRank("CharlestonAV","NitroAV",230,110);
 await newRank("StAlbansAV","GeorgeWashingtonBV",190,110);
 //Finals
 await newRank("CharlestonAV","StAlbansAV",240,130);
-console.log("WV C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
+console.log("WV C q V: "+qV[z]);
+console.log("WV C q JV: "+qJV[z]);
+console.log("WV C q MS: "+qMS[z]);
 //logTR();
 
 //Northern New Jersey C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("MillburnAV","StPetersAV",550,70);
@@ -4991,13 +4995,13 @@ await newRank("HunterBJV","ChurchillIAJV",290,260);
 await newRank("TenaflyMSB","TenaflyMSC",160,20);
 //Finals
 await newRank("TenaflyMSA","TenaflyMSB",200,90);
-console.log("Northern NJ C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
+console.log("Northern NJ C q V: "+qV[z]);
+console.log("Northern NJ C q JV: "+qJV[z]);
+console.log("Northern NJ C q MS: "+qMS[z]);
 //logTR();
 
 //Northern Illinois C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("StevensonAV","StevensonCV",340,300);
@@ -5050,13 +5054,13 @@ await newRank("StevensonAV","StevensonCV",390,210);
 //JV Playoffs
 //Finals
 await newRank("StevensonEJV","StevensonDJV",290,220);
-console.log("Nor IL C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
+console.log("Northern IL C q V: "+qV[z]);
+console.log("Northern IL C q JV: "+qJV[z]);
+console.log("Northern IL C q MS: "+qMS[z]);
 //logTR();
 
 //Greater Dayton C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("TippecanoeAV","TippecanoeBJV",300,60);
@@ -5085,13 +5089,13 @@ await newRank("BeavercreekAV","GeorgeWashingtonAV",320,290);
 //JV Playoffs
 //Finals
 await newRank("BeavercreekCJV","TippecanoeBJV",220,20);
-console.log("Dayton C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
+console.log("Dayton C q V: "+qV[z]);
+console.log("Dayton C q JV: "+qJV[z]);
+console.log("Dayton C q MS: "+qMS[z]);
 //logTR();
 
 //Buffalo C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("NicholsAV","AmherstAV",270,240);
@@ -5126,13 +5130,13 @@ await newRank("NicholsBV","NicholsCV",350,180);
 await newRank("IroquoisAV","NicholsAV",200,180);
 //Finals
 await newRank("NicholsBV","IroquoisAV",250,140);
-console.log("Buffalo C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
+console.log("Buffalo C q V: "+qV[z]);
+console.log("Buffalo C q JV: "+qJV[z]);
+console.log("Buffalo C q MS: "+qMS[z]);
 //logTR();
 
 //South Florida Fall C-Set
+z=z+1
 //Prelims
 //Round 1
 await newRank("RansomAV","PalmettoDV",520,30);
@@ -5257,13 +5261,13 @@ await newRank("BelenCJV","PalmettoMJV",200,180);
 //Semifinals
 await newRank("PalmettoPJV","BelenCJV",240,70);
 await newRank("RansomCJV","PalmettoPJV",340,90);
-console.log("South FL C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
+console.log("South FL C q V: "+qV[z]);
+console.log("South FL C q JV: "+qJV[z]);
+console.log("South FL C q MS: "+qMS[z]);
 //logTR();
 
 //Oahu C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("IolaniBV","PunahouBV",400,130);
@@ -5283,13 +5287,12 @@ await newRank("IolaniAV","PunahouBV",380,120);
 //Round 6
 await newRank("PunahouAV","PunahouBV",200,160);
 await newRank("IolaniAV","IolaniBV",260,210);
-console.log("Oahu C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("Oahu C q V: "+qV[z]);
+console.log("Oahu C q JV: "+qJV[z]);
+console.log("Oahu C q MS: "+qMS[z]);
 
 //Greater Knoxville Fall C-Set
+z=z+1;
 //Prelims
 //Round 3
 await newRank("SeymourAV","PigeonForgeAV",230,210);
@@ -5317,13 +5320,12 @@ await newRank("GatlinburgAV","MorristownAV",230,100);
 await newRank("MaryvilleAV","PigeonForgeAV",400,160);
 //Finals
 await newRank("MaryvilleAV","GatlinburgAV",230,140);
-console.log("Knoxville C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("Knoxville C q V: "+qV[z]);
+console.log("Knoxville C q JV: "+qJV[z]);
+console.log("Knoxville C q MS: "+qMS[z]);
 
 //Eastern Geogia Fall C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("BrookwoodAV","NewnanAV",241,240);
@@ -5392,13 +5394,12 @@ await newRank("HermannAJV","CherokeeBluffJV",370,80);
 await newRank("ChattahoocheeBJV","FultonAJV",210,160);
 //Finals
 await newRank("ChattahoocheeBJV","HermannAJV",280,140);
-console.log("Eastern GA C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("Eastern GA C q V: "+qV[z]);
+console.log("Eastern GA C q JV: "+qJV[z]);
+console.log("Eastern GA C q MS: "+qMS[z]);
 
 //Central Florida Fall C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("PineViewAV","RiverviewEV",270,220);
@@ -5504,13 +5505,12 @@ await newRank("RiverviewFJV","LargoCJV",200,100);
 await newRank("RiverviewHJV","RiverviewFJV",121,120);
 //MS Final
 await newRank("TrinityCMS","TrinityDMS",310,40);
-console.log("Central FL C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("Central FL C q V: "+qV[z]);
+console.log("Central FL C q JV: "+qJV[z]);
+console.log("Central FL C q MS: "+qMS[z]);
 
 //Western Washington C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("CentralKitsapAV","HolyNamesAV",320,200);
@@ -5537,13 +5537,12 @@ await newRank("HolyNamesAV","CentralKitsapAV",300,160);
 //Varsity Playoffs
 //Finals
 await newRank("CentralKitsapAV","HolyNamesAV",250,150);
-console.log("West WA C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("West WA C q V: "+qV[z]);
+console.log("West WA C q JV: "+qJV[z]);
+console.log("West WA C q MS: "+qMS[z]);
 
 //Southern Washington C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("JesuitAV","LincolnAV",340,180);
@@ -5584,13 +5583,12 @@ await newRank("JesuitAV","WestviewAV",220,180);
 //MS Playoffs
 //Finals
 await newRank("StollerHMS","StollerKMS",240,200);
-console.log("South WA C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("South WA C q V: "+qV[z]);
+console.log("South WA C q JV: "+qJV[z]);
+console.log("South WA C q MS: "+qMS[z]);
 
 //Boston Fall C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("SalemBV","NorthfieldMtHermonAV",231,230);
@@ -5639,13 +5637,12 @@ await newRank("BostonLatinAV","PhillipsExeterAV",300,170);
 //JV Playoffs
 //Finals
 await newRank("PhillipsExeterBJV","LexingtonBJV",240,180);
-console.log("Boston C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("Boston C q V: "+qV[z]);
+console.log("Boston C q JV: "+qJV[z]);
+console.log("Boston C q MS: "+qMS[z]);
 
 //Washington DC C-Set
+z=z+1;
 //Prelims
 //Round
 await newRank("CentennialAV","GeorgetownDayAV",330,310);
@@ -5747,13 +5744,12 @@ await newRank("BurleighManorBMS","NysmithAMS",220,190);
 await newRank("BurleighManorAMS","CompassMSA",220,190);
 //Finals
 await newRank("BurleighManorAMS","BurleighManorBMS",220,140);
-console.log("DC C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("DC C q V: "+qV[z]);
+console.log("DC C q JV: "+qJV[z]);
+console.log("DC C q MS: "+qMS[z]);
 
 //Southern New Jersey C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("RanneyAV","MoorestownBV",260,210);
@@ -5824,13 +5820,12 @@ await newRank("HighTechAV","EastBrunswickAV",300,190);
 await newRank("PrincetonCJV","RanneyBJV",280,130);
 await newRank("WiltonAnjoAJV","MillburnMSAJV",200,120);
 await newRank("PrincetonCJV","WiltonAnjoAJV",290,170);
-console.log("South NJ C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("South NJ C q V: "+qV[z]);
+console.log("South NJ C q JV: "+qJV[z]);
+console.log("South NJ C q MS: "+qMS[z]);
 
 //Northwest Illinois C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("HomewoodFlossmoorAV","WinnebagoAV",310,150);
@@ -5884,13 +5879,12 @@ await newRank("ElginAV","WinnebagoAV",480,50);
 await newRank("AuburnAV","GlenbardWestAV",250,240);
 //4th Place Game
 await newRank("HomewoodFlossmoorAV","WilliamsBayAV",260,120);
-console.log("NW IL C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("NW IL C q V: "+qV[z]);
+console.log("NW IL C q JV: "+qJV[z]);
+console.log("NW IL C q MS: "+qMS[z]);
 
 //Louisiana Fall C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("BatonRougeMagnetAV","NorthwesternAV",290,140);
@@ -5918,13 +5912,12 @@ await newRank("ZacharyBV","ZacharyAV",200,140);
 await newRank("BatonRougeEpiscopalAV","BatonRougeMagnetAV",210,190);
 //Finals
 await newRank("ZacharyBV","BatonRougeEpiscopalAV",210,160);
-console.log("LA C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("LA C q V: "+qV[z]);
+console.log("LA C q JV: "+qJV[z]);
+console.log("LA C q MS: "+qMS[z]);
 
 //Eastern Kentucky C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("BlazerAV","RussellAV",340,160);
@@ -5952,13 +5945,12 @@ await newRank("JohnsonAV","RussellAV",270,160);
 await newRank("BlazerAV","DunbarAV",211,210);
 //Finals
 await newRank("BlazerAV","JohnsonAV",270,160);
-console.log("E KY C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("East KY C q V: "+qV[z]);
+console.log("East KY C q JV: "+qJV[z]);
+console.log("East KY C q MS: "+qMS[z]);
 
 //Bergen County C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("RidgewoodAV","GothamAV",410,210);
@@ -6005,13 +5997,12 @@ await newRank("RidgewoodCJV","ColdhugBJV",350,120);
 await newRank("ChurchillIIAJV","TenaflyCJV",400,130);
 //Finals
 await newRank("RidgewoodCJV","ChurchillIIAJV",270,150);
-console.log("Bergen C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("Bergen C q V: "+qV[z]);
+console.log("Bergen C q JV: "+qJV[z]);
+console.log("Bergen C q MS: "+qMS[z]);
 
 //Lower Hudson C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("DarienAV","HoraceGreeleyAV",450,90);
@@ -6069,13 +6060,12 @@ await newRank("DarienAV","ScarsdaleAV",260,230);
 await newRank("WiltonLukasAJV","YonkersBJV",380,90);
 await newRank("HoraceGreeleyBJV","YonkersAJV",270,200);
 await newRank("WiltonLukasAJV","HoraceGreeleyBJV",210,190);
-console.log("Lower Hudson C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("Lower Hudson C q V: "+qV[z]);
+console.log("Lower Hudson C q JV: "+qJV[z]);
+console.log("Lower Hudson C q MS: "+qMS[z]);
 
 //Delaware C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("WilmingtonFriendsDV","CaravelBV",220,140);
@@ -6163,13 +6153,12 @@ await newRank("MethactonCJV","WilmingtonFriendsIJV",400,50);
 await newRank("WilmingtonFriendsHJV","TowerHillCJV",280,60);
 //Finals
 await newRank("MethactonCJV","WilmingtonFriendsHJV",340,110);
-console.log("Delaware C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
-//logTR();
+console.log("Delaware C q V: "+qV[z]);
+console.log("Delaware C q JV: "+qJV[z]);
+console.log("Delaware C q MS: "+qMS[z]);
 
 //Florida Panhandle C-Set
+z=z+1;
 //Prelims
 //Round 1
 await newRank("ChoctawhatcheeAV","WashingtonAV",280,140);
@@ -6199,13 +6188,13 @@ await newRank("CollegiateAV","WashingtonAV",390,50);
 await newRank("ChoctawhatcheeAV","TateAV",221,220);
 //Varsity Finals
 await newRank("CollegiateAV","ChoctawhatcheeAV",420,120);
-console.log("FL Panhandle C q: "+q[z]);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
+console.log("FL Panhandle C q V: "+qV[z]);
+console.log("FL Panhandle C q JV: "+qJV[z]);
+console.log("FL Panhandle C q MS: "+qMS[z]);
 
 
 //Southwestern Illinois C-Set
+z=z+1;
 //Round 1
 await newRank("LindseyAV","GraniteCityAV",400,130);
 await newRank("AltonAV","SouthwesternAV",360,140);
@@ -6242,10 +6231,9 @@ await newRank("LindseyAV","AltonAV",280,200);
 //JV Playoffs
 //JV Final
 await newRank("KeithCountyDayAJV","RochesterAJV",210,150);
-console.log("SW IL C q: "+q);
-teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
+console.log("SW IL C q V: "+qV[z]);
+console.log("SW IL C q JV: "+qJV[z]);
+console.log("SW IL C q MS: "+qMS[z]);
 };
 cSet();
 
