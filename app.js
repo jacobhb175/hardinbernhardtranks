@@ -2683,64 +2683,19 @@ async function newRank(A, B, AScore, BScore) {
     if (y == false){
     //C-Set games
     if (K == 100 && evalV == true) {
-        //update q value
+        //push game results
         teamAvgV.push(AScore,BScore)
         teamAvgCV.push(AScore,BScore);
-        let sumCV = 0;
-        let m;
-        let teamAvgCVLen = teamAvgCV.length;
-        for(m = 0; m < teamAvgCVLen; m++){
-            sumCV += parseInt(teamAvgCV[m],10);
-        };
-        let avgCV = sumCV/teamAvgCV.length;
-        let sum = 0;
-        let n;
-        let teamAvgVLen = teamAvgV.length;
-        for(n = 0; n < teamAvgVLen; n++){
-            sum += parseInt(teamAvgV[n],10);
-        };
-        let avgV = sum/teamAvgV.length;
-        q = avgV/avgCV;
     }
     else if (K == 100 && evalJV == true) {
-        //update q value
+        //push game results
         teamAvgJV.push(AScore,BScore);
         teamAvgCJV.push(AScore,BScore);
-        let sumCJV = 0;
-        let o;
-        let teamAvgCJVLen = teamAvgCJV.length;
-        for(o = 0; o < teamAvgCJVLen; o++){
-            sumCJV += parseInt(teamAvgCJV[o],10);
-        };
-        let avgCJV = sumCJV/teamAvgCJV.length;
-        let sum = 0;
-        let p;
-        let teamAvgJVLen = teamAvgJV.length;
-        for(p = 0; p < teamAvgJVLen; p++ ){
-            sum += parseInt(teamAvgJV[p],10);
-        };
-        let avgJV = sum/teamAvgJV.length;
-        q = avgJV/avgCJV;
     }
     else if (K == 0 && evalMS == true) {
-        //update q value
+        //push game results
         teamAvgMS.push(AScore,BScore);
         teamAvgCMS.push(AScore,BScore);
-        let sumCMS = 0;
-        let r;
-        let teamAvgCMSLen = teamAvgCMS.length;
-        for(r = 0; r < teamAvgCMSLen; r++){
-            sumCMS += parseInt(teamAvgCMS[r],10);
-        };
-        let avgCMS = sumCMS/teamAvgCMS.length;
-        let sum = 0;
-        let s;
-        let teamAvgMSLen = teamAvgMS.length;
-        for(s = 0; s < teamAvgMSLen; s++ ){
-            sum += parseInt(teamAvgMS[s],10);
-        };
-        let avgMS = sum/teamAvgMS.length;
-        q = avgMS/avgCMS;
     }
     else {
         //console.log(A,B,"is cross-divisional");
@@ -2750,17 +2705,62 @@ async function newRank(A, B, AScore, BScore) {
     else if (y == true){
         //C-Set games
     if (K == 100 && evalV == true) {
-        q = allV[z]/avgCV;
+        //calculate q value
+        let sumCV = 0;
+        let m;
+        let teamAvgCVLen = teamAvgCV.length;
+        for(m = 0; m < teamAvgCVLen; m++){
+            sumCV += parseInt(teamAvgCV[m],10);
+        };
+        let avgCV = sumCV/teamAvgCV.length;
+        let sum = 0;
+        let n;
+        let allVLen = allV[z].length;
+        for(n = 0; n < allVLen; n++){
+            sum += parseInt(allV[z][n],10);
+        };
+        let avgV = sum/teamAvgV.length;
+        q = avgV/avgCV;
         qV.push(q);
         nRank(A,B,AScore,BScore);
     }
     else if (K == 100 && evalJV == true) {
-        q = allJV[z]/avgCJV;
+        //calculate q value
+        let sumCJV = 0;
+        let o;
+        let teamAvgCJVLen = teamAvgCJV.length;
+        for(o = 0; o < teamAvgCJVLen; o++){
+            sumCJV += parseInt(teamAvgCJV[o],10);
+        };
+        let avgCJV = sumCJV/teamAvgCJV.length;
+        let sum = 0;
+        let p;
+        let allJVLen = allJV[z].length;
+        for(p = 0; p < allJVLen; p++ ){
+            sum += parseInt(allJV[z][p],10);
+        };
+        let avgJV = sum/teamAvgJV.length;
+        q = avgJV/avgCJV;
         qJV.push(q);
         nRank(A,B,AScore,BScore);
     }
     else if (K == 0 && evalMS == true) {
-        q = allMS[z]/avgCMS;
+        //calculate q value
+        let sumCMS = 0;
+        let r;
+        let teamAvgCMSLen = teamAvgCMS.length;
+        for(r = 0; r < teamAvgCMSLen; r++){
+            sumCMS += parseInt(teamAvgCMS[r],10);
+        };
+        let avgCMS = sumCMS/teamAvgCMS.length;
+        let sum = 0;
+        let s;
+        let allMSLen = allMS[z].length;
+        for(s = 0; s < allMSLen; s++ ){
+            sum += parseInt(allMS[z][s],10);
+        };
+        let avgMS = sum/teamAvgMS.length;
+        q = avgMS/avgCMS;
         qMS.push(q);
         nRank(A,B,AScore,BScore);
     }
