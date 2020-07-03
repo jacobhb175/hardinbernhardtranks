@@ -1616,21 +1616,21 @@ db.collection("teams").doc("CherokeeBluffJV").set({
     division:"Junior Varsity",
 rank:1200
 }),
-db.collection("teams").doc("ChurchillIAJV").set({
-    name:"Churchill I A",
+db.collection("teams").doc("ChurchillNJAJV").set({
+    name:"Churchill New Jersey A",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200
 }),
-db.collection("teams").doc("ChurchillIBJV").set({
-    name:"Churchill I B",
+db.collection("teams").doc("ChurchillNJBJV").set({
+    name:"Churchill New Jersey B",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200
 }),
-db.collection("teams").doc("ChurchillIIAJV").set({
-    name:"Churchill II A",
-    state:"New Jersey",
+db.collection("teams").doc("ChurchillMDAJV").set({
+    name:"Churchill Maryland A",
+    state:"Maryland",
     division:"Junior Varsity",
 rank:1200
 }),
@@ -3006,7 +3006,6 @@ await newRank("StarrsMillAV","OakMountainAV",260,150);
 //JV Playoffs
 //Finals
 await newRank("ChambleeAJV","VeteransBJV",250,40);//Chamblee Charter
-console.log("Central GA C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -3139,8 +3138,8 @@ await newRank("OratoryAV","MillburnCV",310,280);
 await newRank("MountainLakesAV","StPetersBV",410,60);
 await newRank("HewlettAV","HolmdelAV",400,100);
 await newRank("KinnelonAJV","StPetersCJV",300,170);
-await newRank("HewlettCJV","ChurchillIBJV",310,200);
-await newRank("ChurchillIAJV","SouthBrunswickAJV",490,90);
+await newRank("HewlettCJV","ChurchillNJBJV",310,200);
+await newRank("ChurchillNJAJV","SouthBrunswickAJV",490,90);
 await newRank("StJosephBJV","BASISBrooklynAJV",200,180);
 await newRank("HunterBJV","HolmdelBJV",470,120);
 await newRank("MillburnDJV","MountainLakesBJV",390,160);
@@ -3156,8 +3155,8 @@ await newRank("OratoryAV","StPetersBV",390,60);
 await newRank("KinnelonAJV","StJosephBJV",260,150);
 await newRank("MillburnAV","StJosephAV",510,110);
 await newRank("HolmdelBJV","StPetersCJV",340,140);
-await newRank("ChurchillIAJV","BASISBrooklynAJV",550,80);
-await newRank("MountainLakesBJV","ChurchillIBJV",370,70);
+await newRank("ChurchillNJAJV","BASISBrooklynAJV",550,80);
+await newRank("MountainLakesBJV","ChurchillNJBJV",370,70);
 await newRank("HunterBJV","MillburnDJV",410,180);
 await newRank("HewlettCJV","SouthBrunswickAJV",240,200);
 await newRank("TenaflyMSA","TenaflyMSB",400,60);
@@ -3167,11 +3166,11 @@ await newRank("MillburnCV","StPetersBV",450,100);
 await newRank("MountainLakesAV","ParamusAV",280,180);
 await newRank("StuyvesantAV","StPetersAV",360,130);
 await newRank("OratoryAV","NewarkAV",370,170);
-await newRank("HunterBJV","ChurchillIBJV",530,60);
+await newRank("HunterBJV","ChurchillNJBJV",530,60);
 await newRank("MillburnBV","HolmdelAV",430,80);
 await newRank("HunterAV","HewlettAV",370,180);
 await newRank("MillburnAV","HewlettBV",470,100);
-await newRank("ChurchillIAJV","KinnelonAJV",430,90);
+await newRank("ChurchillNJAJV","KinnelonAJV",430,90);
 await newRank("HewlettCJV","BASISBrooklynAJV",360,90);
 await newRank("HolmdelBJV","StJosephBJV",360,130);
 await newRank("MillburnDJV","StPetersCJV",360,200);
@@ -3186,10 +3185,10 @@ await newRank("MillburnAV","MountainLakesAV",540,70);
 await newRank("HewlettAV","StPetersAV",400,90);
 await newRank("NewarkAV","HolmdelAV",340,150);
 await newRank("MillburnBV","StPetersBV",460,80);
-await newRank("ChurchillIAJV","HolmdelBJV",380,210);
+await newRank("ChurchillNJAJV","HolmdelBJV",380,210);
 await newRank("HunterBJV","SouthBrunswickAJV",480,100);
 await newRank("MillburnDJV","StJosephBJV",420,90);
-await newRank("StPetersCJV","ChurchillIBJV",240,130);
+await newRank("StPetersCJV","ChurchillNJBJV",240,130);
 await newRank("MountainLakesBJV","BASISBrooklynAJV",320,50);
 await newRank("KinnelonAJV","HewlettCJV",240,210);
 await newRank("TenaflyMSC","IndianFieldsMSA",110,60);
@@ -3204,9 +3203,9 @@ await newRank("MillburnCV","StPetersAV",460,80);
 await newRank("HewlettAV","StJosephAV",330,180);
 await newRank("SouthBrunswickAJV","StPetersCJV",240,160);
 await newRank("HunterBJV","BASISBrooklynAJV",440,70);
-await newRank("ChurchillIBJV","StJosephBJV",170,90);
+await newRank("ChurchillNJBJV","StJosephBJV",170,90);
 await newRank("MountainLakesBJV","KinnelonAJV",190,180);
-await newRank("ChurchillIAJV","MillburnDJV",370,210);
+await newRank("ChurchillNJAJV","MillburnDJV",370,210);
 await newRank("HolmdelBJV","HewlettCJV",240,180);
 await newRank("TenaflyMSA","IndianFieldsMSA",250,50);
 await newRank("TenaflyMSB","TenaflyMSC",190,60);
@@ -3229,14 +3228,14 @@ await newRank("MillburnAV","HunterAV",280,260);
 //JV Playoffs
 //Quarterfinals
 await newRank("HunterBJV","StPetersCJV",500,40);
-await newRank("ChurchillIAJV","KinnelonAJV",350,110);
+await newRank("ChurchillNJAJV","KinnelonAJV",350,110);
 await newRank("HolmdelBJV","MountainLakesBJV",290,140);
 await newRank("MillburnDJV","HewlettCJV",300,140);
 //Semifinals
 await newRank("HunterBJV","MillburnDJV",360,170);
-await newRank("ChurchillIAJV","HolmdelBJV",350,170);
+await newRank("ChurchillNJAJV","HolmdelBJV",350,170);
 //Finals
-await newRank("HunterBJV","ChurchillIAJV",290,260);
+await newRank("HunterBJV","ChurchillNJAJV",290,260);
 //MS Playoffs
 //Semifinals
 //await newRank("TenaflyMSA","IndianFieldsMSA",1,0)
@@ -3341,7 +3340,6 @@ await newRank("BeavercreekAV","GeorgeWashingtonAV",320,290);
 //JV Playoffs
 //Finals
 await newRank("BeavercreekCJV","TippecanoeBJV",220,20);
-console.log("Dayton C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -4249,14 +4247,14 @@ teamAvgMS = [];
 await newRank("RidgewoodAV","GothamAV",410,210);
 await newRank("ColdhugAV","LeoniaAV",470,160);
 await newRank("TenaflyAV","TenaflyBV",430,100);
-await newRank("ColdhugBJV","ChurchillIBJV",290,280);
+await newRank("ColdhugBJV","ChurchillNJBJV",290,280);
 await newRank("TenaflyCJV","LeoniaBJV",310,200);
 await newRank("RidgewoodDJV","GeorgeWashingtonAJV",270,160);
 //Round 2
 await newRank("RidgewoodAV","TenaflyBV",530,70);
 await newRank("ColdhugAV","GothamAV",430,180);
 await newRank("TenaflyAV","LeoniaAV",280,240);
-await newRank("ChurchillIIAJV","RidgewoodCJV",280,240);
+await newRank("ChurchillMDAJV","RidgewoodCJV",280,240);
 await newRank("TenaflyCJV","GeorgeWashingtonAJV",400,100);
 await newRank("LeoniaBJV","RidgewoodDJV",220,210);
 //Round 3
@@ -4272,13 +4270,13 @@ await newRank("ColdhugAV","TenaflyAV",450,130);
 await newRank("GothamAV","TenaflyBV",360,30);
 await newRank("RidgewoodCJV","RidgewoodDJV",380,110);
 await newRank("ColdhugBJV","TenaflyCJV",290,180);
-await newRank("ChurchillIIAJV","LeoniaBJV",350,140);
+await newRank("ChurchillMDAJV","LeoniaBJV",350,140);
 //Round 5
 await newRank("ColdhugAV","RidgewoodAV",400,220);
 await newRank("TenaflyAV","GothamAV",300,260);
 await newRank("LeoniaAV","TenaflyBV",350,130);
 await newRank("RidgewoodCJV","ColdhugBJV",280,240);
-await newRank("ChurchillIIAJV","RidgewoodDJV",370,80);
+await newRank("ChurchillMDAJV","RidgewoodDJV",370,80);
 //Varsity Playoffs
 //Semifinals
 await newRank("ColdhugAV","GothamAV",440,100);
@@ -4287,9 +4285,9 @@ await newRank("RidgewoodAV","TenaflyAV",290,210);
 await newRank("ColdhugAV","RidgewoodAV",360,180);
 //JV Playoffs
 await newRank("RidgewoodCJV","ColdhugBJV",350,120);
-await newRank("ChurchillIIAJV","TenaflyCJV",400,130);
+await newRank("ChurchillMDAJV","TenaflyCJV",400,130);
 //Finals
-await newRank("RidgewoodCJV","ChurchillIIAJV",270,150);
+await newRank("RidgewoodCJV","ChurchillMDAJV",270,150);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -4861,8 +4859,8 @@ await newRank("OratoryAV","MillburnCV",310,280);
 await newRank("MountainLakesAV","StPetersBV",410,60);
 await newRank("HewlettAV","HolmdelAV",400,100);
 await newRank("KinnelonAJV","StPetersCJV",300,170);
-await newRank("HewlettCJV","ChurchillIBJV",310,200);
-await newRank("ChurchillIAJV","SouthBrunswickAJV",490,90);
+await newRank("HewlettCJV","ChurchillNJBJV",310,200);
+await newRank("ChurchillNJAJV","SouthBrunswickAJV",490,90);
 await newRank("StJosephBJV","BASISBrooklynAJV",200,180);
 await newRank("HunterBJV","HolmdelBJV",470,120);
 await newRank("MillburnDJV","MountainLakesBJV",390,160);
@@ -4878,8 +4876,8 @@ await newRank("OratoryAV","StPetersBV",390,60);
 await newRank("KinnelonAJV","StJosephBJV",260,150);
 await newRank("MillburnAV","StJosephAV",510,110);
 await newRank("HolmdelBJV","StPetersCJV",340,140);
-await newRank("ChurchillIAJV","BASISBrooklynAJV",550,80);
-await newRank("MountainLakesBJV","ChurchillIBJV",370,70);
+await newRank("ChurchillNJAJV","BASISBrooklynAJV",550,80);
+await newRank("MountainLakesBJV","ChurchillNJBJV",370,70);
 await newRank("HunterBJV","MillburnDJV",410,180);
 await newRank("HewlettCJV","SouthBrunswickAJV",240,200);
 await newRank("TenaflyMSA","TenaflyMSB",400,60);
@@ -4889,11 +4887,11 @@ await newRank("MillburnCV","StPetersBV",450,100);
 await newRank("MountainLakesAV","ParamusAV",280,180);
 await newRank("StuyvesantAV","StPetersAV",360,130);
 await newRank("OratoryAV","NewarkAV",370,170);
-await newRank("HunterBJV","ChurchillIBJV",530,60);
+await newRank("HunterBJV","ChurchillNJBJV",530,60);
 await newRank("MillburnBV","HolmdelAV",430,80);
 await newRank("HunterAV","HewlettAV",370,180);
 await newRank("MillburnAV","HewlettBV",470,100);
-await newRank("ChurchillIAJV","KinnelonAJV",430,90);
+await newRank("ChurchillNJAJV","KinnelonAJV",430,90);
 await newRank("HewlettCJV","BASISBrooklynAJV",360,90);
 await newRank("HolmdelBJV","StJosephBJV",360,130);
 await newRank("MillburnDJV","StPetersCJV",360,200);
@@ -4908,10 +4906,10 @@ await newRank("MillburnAV","MountainLakesAV",540,70);
 await newRank("HewlettAV","StPetersAV",400,90);
 await newRank("NewarkAV","HolmdelAV",340,150);
 await newRank("MillburnBV","StPetersBV",460,80);
-await newRank("ChurchillIAJV","HolmdelBJV",380,210);
+await newRank("ChurchillNJAJV","HolmdelBJV",380,210);
 await newRank("HunterBJV","SouthBrunswickAJV",480,100);
 await newRank("MillburnDJV","StJosephBJV",420,90);
-await newRank("StPetersCJV","ChurchillIBJV",240,130);
+await newRank("StPetersCJV","ChurchillNJBJV",240,130);
 await newRank("MountainLakesBJV","BASISBrooklynAJV",320,50);
 await newRank("KinnelonAJV","HewlettCJV",240,210);
 await newRank("TenaflyMSC","IndianFieldsMSA",110,60);
@@ -4926,9 +4924,9 @@ await newRank("MillburnCV","StPetersAV",460,80);
 await newRank("HewlettAV","StJosephAV",330,180);
 await newRank("SouthBrunswickAJV","StPetersCJV",240,160);
 await newRank("HunterBJV","BASISBrooklynAJV",440,70);
-await newRank("ChurchillIBJV","StJosephBJV",170,90);
+await newRank("ChurchillNJBJV","StJosephBJV",170,90);
 await newRank("MountainLakesBJV","KinnelonAJV",190,180);
-await newRank("ChurchillIAJV","MillburnDJV",370,210);
+await newRank("ChurchillNJAJV","MillburnDJV",370,210);
 await newRank("HolmdelBJV","HewlettCJV",240,180);
 await newRank("TenaflyMSA","IndianFieldsMSA",250,50);
 await newRank("TenaflyMSB","TenaflyMSC",190,60);
@@ -4951,14 +4949,14 @@ await newRank("MillburnAV","HunterAV",280,260);
 //JV Playoffs
 //Quarterfinals
 await newRank("HunterBJV","StPetersCJV",500,40);
-await newRank("ChurchillIAJV","KinnelonAJV",350,110);
+await newRank("ChurchillNJAJV","KinnelonAJV",350,110);
 await newRank("HolmdelBJV","MountainLakesBJV",290,140);
 await newRank("MillburnDJV","HewlettCJV",300,140);
 //Semifinals
 await newRank("HunterBJV","MillburnDJV",360,170);
-await newRank("ChurchillIAJV","HolmdelBJV",350,170);
+await newRank("ChurchillNJAJV","HolmdelBJV",350,170);
 //Finals
-await newRank("HunterBJV","ChurchillIAJV",290,260);
+await newRank("HunterBJV","ChurchillNJAJV",290,260);
 //MS Playoffs
 //Semifinals
 //await newRank("TenaflyMSA","IndianFieldsMSA",1,0)
@@ -5926,14 +5924,14 @@ z=z+1;
 await newRank("RidgewoodAV","GothamAV",410,210);
 await newRank("ColdhugAV","LeoniaAV",470,160);
 await newRank("TenaflyAV","TenaflyBV",430,100);
-await newRank("ColdhugBJV","ChurchillIBJV",290,280);
+await newRank("ColdhugBJV","ChurchillNJBJV",290,280);
 await newRank("TenaflyCJV","LeoniaBJV",310,200);
 await newRank("RidgewoodDJV","GeorgeWashingtonAJV",270,160);
 //Round 2
 await newRank("RidgewoodAV","TenaflyBV",530,70);
 await newRank("ColdhugAV","GothamAV",430,180);
 await newRank("TenaflyAV","LeoniaAV",280,240);
-await newRank("ChurchillIIAJV","RidgewoodCJV",280,240);
+await newRank("ChurchillMDAJV","RidgewoodCJV",280,240);
 await newRank("TenaflyCJV","GeorgeWashingtonAJV",400,100);
 await newRank("LeoniaBJV","RidgewoodDJV",220,210);
 //Round 3
@@ -5949,13 +5947,13 @@ await newRank("ColdhugAV","TenaflyAV",450,130);
 await newRank("GothamAV","TenaflyBV",360,30);
 await newRank("RidgewoodCJV","RidgewoodDJV",380,110);
 await newRank("ColdhugBJV","TenaflyCJV",290,180);
-await newRank("ChurchillIIAJV","LeoniaBJV",350,140);
+await newRank("ChurchillMDAJV","LeoniaBJV",350,140);
 //Round 5
 await newRank("ColdhugAV","RidgewoodAV",400,220);
 await newRank("TenaflyAV","GothamAV",300,260);
 await newRank("LeoniaAV","TenaflyBV",350,130);
 await newRank("RidgewoodCJV","ColdhugBJV",280,240);
-await newRank("ChurchillIIAJV","RidgewoodDJV",370,80);
+await newRank("ChurchillMDAJV","RidgewoodDJV",370,80);
 //Varsity Playoffs
 //Semifinals
 await newRank("ColdhugAV","GothamAV",440,100);
@@ -5964,9 +5962,9 @@ await newRank("RidgewoodAV","TenaflyAV",290,210);
 await newRank("ColdhugAV","RidgewoodAV",360,180);
 //JV Playoffs
 await newRank("RidgewoodCJV","ColdhugBJV",350,120);
-await newRank("ChurchillIIAJV","TenaflyCJV",400,130);
+await newRank("ChurchillMDAJV","TenaflyCJV",400,130);
 //Finals
-await newRank("RidgewoodCJV","ChurchillIIAJV",270,150);
+await newRank("RidgewoodCJV","ChurchillMDAJV",270,150);
 console.log("Bergen C q V: "+qV[z]);
 console.log("Bergen C q JV: "+qJV[z]);
 console.log("Bergen C q MS: "+qMS[z]);
