@@ -2753,17 +2753,17 @@ async function newRank(A, B, AScore, BScore) {
     else if (r == true){
         //C-Set games
     if (K == 100 && evalV == true) {
-        q = allV[z]/avgV;
+        q = allV[z]/avgCV;
         qV.push(q);
         nRank(A,B,AScore,BScore);
     }
     else if (K == 100 && evalJV == true) {
-        q = allJV[z]/avgJV;
+        q = allJV[z]/avgCJV;
         qJV.push(q);
         nRank(A,B,AScore,BScore);
     }
     else if (K == 0 && evalMS == true) {
-        q = allMS[z]/avgMS;
+        q = allMS[z]/avgCMS;
         qMS.push(q);
         nRank(A,B,AScore,BScore);
     }
