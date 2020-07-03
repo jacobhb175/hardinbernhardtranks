@@ -2889,7 +2889,6 @@ await newRank("SaggitariusAJV","HarkerAJV",310,170);
 await newRank("MissionSanJoseJV","CaliforniaAJV",250,220);
 //Finals
 await newRank("MissionSanJoseJV","SaggitariusAJV",280,210);
-console.log("NorCal C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -2956,7 +2955,6 @@ await newRank("LibbyAJV","EastValleyCJV",210,100);
 await newRank("MtSpokaneCJV","MtSpokaneDJV",140,90);
 //Finals
 //await newRank("await newRank("LibbyAJV","MtSpokaneCJV",1,0);
-console.log("East WA C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -3068,7 +3066,6 @@ await newRank("SkyviewAV","BozemanBV",240,90);
 //JV Playoffs
 //Finals
 await newRank("BozemanCJV","SkyviewDJV",110,80);
-console.log("MT C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -3123,7 +3120,6 @@ await newRank("CharlestonAV","NitroAV",230,110);
 await newRank("StAlbansAV","GeorgeWashingtonBV",190,110);
 //Finals
 await newRank("CharlestonAV","StAlbansAV",240,130);
-console.log("WV C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -3247,7 +3243,6 @@ await newRank("HunterBJV","ChurchillIAJV",290,260);
 await newRank("TenaflyMSB","TenaflyMSC",160,20);
 //Finals
 await newRank("TenaflyMSA","TenaflyMSB",200,90);
-console.log("Northern NJ C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -3309,7 +3304,6 @@ await newRank("StevensonAV","StevensonCV",390,210);
 //JV Playoffs
 //Finals
 await newRank("StevensonEJV","StevensonDJV",290,220);
-console.log("Nor IL C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -3391,7 +3385,6 @@ await newRank("NicholsBV","NicholsCV",350,180);
 await newRank("IroquoisAV","NicholsAV",200,180);
 //Finals
 await newRank("NicholsBV","IroquoisAV",250,140);
-console.log("Buffalo C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -3525,7 +3518,6 @@ await newRank("BelenCJV","PalmettoMJV",200,180);
 //Semifinals
 await newRank("PalmettoPJV","BelenCJV",240,70);
 await newRank("RansomCJV","PalmettoPJV",340,90);
-console.log("South FL C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -3591,7 +3583,6 @@ await newRank("GatlinburgAV","MorristownAV",230,100);
 await newRank("MaryvilleAV","PigeonForgeAV",400,160);
 //Finals
 await newRank("MaryvilleAV","GatlinburgAV",230,140);
-console.log("Knoxville C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -3669,7 +3660,6 @@ await newRank("HermannAJV","CherokeeBluffJV",370,80);
 await newRank("ChattahoocheeBJV","FultonAJV",210,160);
 //Finals
 await newRank("ChattahoocheeBJV","HermannAJV",280,140);
-console.log("Eastern GA C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -3784,7 +3774,6 @@ await newRank("RiverviewFJV","LargoCJV",200,100);
 await newRank("RiverviewHJV","RiverviewFJV",121,120);
 //MS Final
 await newRank("TrinityCMS","TrinityDMS",310,40);
-console.log("Central FL C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -3820,7 +3809,6 @@ await newRank("HolyNamesAV","CentralKitsapAV",300,160);
 //Varsity Playoffs
 //Finals
 await newRank("CentralKitsapAV","HolyNamesAV",250,150);
-console.log("West WA C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -3833,7 +3821,7 @@ teamAvgMS = [];
 //Prelims
 //Round 1
 await newRank("JesuitAV","LincolnAV",340,180);
-await newRank("ColumbiaRiverAV","WestviewAV",270,270);//Columbia River wins on
+await newRank("ColumbiaRiverAV","WestviewAV",271,270);//Columbia River wins on
 await newRank("LewisandClarkAV","WestviewBV",340,110);
 await newRank("JesuitBV","ColumbiaRiverBV",340,110);
 await newRank("StollerKMS","StollerTMS",340,140);
@@ -3870,14 +3858,12 @@ await newRank("JesuitAV","WestviewAV",220,180);
 //MS Playoffs
 //Finals
 await newRank("StollerHMS","StollerKMS",240,200);
-console.log("South WA C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
 
 //Boston Fall C-Set
 //Prelims
@@ -3928,14 +3914,13 @@ await newRank("BostonLatinAV","PhillipsExeterAV",300,170);
 //JV Playoffs
 //Finals
 await newRank("PhillipsExeterBJV","LexingtonBJV",240,180);
-console.log("Boston C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+
 
 //Washington DC C-Set
 //Prelims
@@ -4039,14 +4024,12 @@ await newRank("BurleighManorBMS","NysmithAMS",220,190);
 await newRank("BurleighManorAMS","CompassMSA",220,190);
 //Finals
 await newRank("BurleighManorAMS","BurleighManorBMS",220,140);
-console.log("DC C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
 
 //Southern New Jersey C-Set
 //Prelims
@@ -4119,14 +4102,12 @@ await newRank("HighTechAV","EastBrunswickAV",300,190);
 await newRank("PrincetonCJV","RanneyBJV",280,130);
 await newRank("WiltonAnjoAJV","MillburnMSAJV",200,120);
 await newRank("PrincetonCJV","WiltonAnjoAJV",290,170);
-console.log("South NJ C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
 
 //Northwest Illinois C-Set
 //Prelims
@@ -4182,14 +4163,13 @@ await newRank("ElginAV","WinnebagoAV",480,50);
 await newRank("AuburnAV","GlenbardWestAV",250,240);
 //4th Place Game
 await newRank("HomewoodFlossmoorAV","WilliamsBayAV",260,120);
-console.log("NW IL C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+
 
 //Louisiana Fall C-Set
 //Prelims
@@ -4219,14 +4199,13 @@ await newRank("ZacharyBV","ZacharyAV",200,140);
 await newRank("BatonRougeEpiscopalAV","BatonRougeMagnetAV",210,190);
 //Finals
 await newRank("ZacharyBV","BatonRougeEpiscopalAV",210,160);
-console.log("LA C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+
 
 //Eastern Kentucky C-Set
 //Prelims
@@ -4256,14 +4235,13 @@ await newRank("JohnsonAV","RussellAV",270,160);
 await newRank("BlazerAV","DunbarAV",211,210);
 //Finals
 await newRank("BlazerAV","JohnsonAV",270,160);
-console.log("E KY C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+
 
 //Bergen County C-Set
 //Prelims
@@ -4312,14 +4290,13 @@ await newRank("RidgewoodCJV","ColdhugBJV",350,120);
 await newRank("ChurchillIIAJV","TenaflyCJV",400,130);
 //Finals
 await newRank("RidgewoodCJV","ChurchillIIAJV",270,150);
-console.log("Bergen C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+
 
 //Lower Hudson C-Set
 //Prelims
@@ -4379,14 +4356,13 @@ await newRank("DarienAV","ScarsdaleAV",260,230);
 await newRank("WiltonLukasAJV","YonkersBJV",380,90);
 await newRank("HoraceGreeleyBJV","YonkersAJV",270,200);
 await newRank("WiltonLukasAJV","HoraceGreeleyBJV",210,190);
-console.log("Lower Hudson C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+
 
 //Delaware C-Set
 //Prelims
@@ -4476,14 +4452,13 @@ await newRank("MethactonCJV","WilmingtonFriendsIJV",400,50);
 await newRank("WilmingtonFriendsHJV","TowerHillCJV",280,60);
 //Finals
 await newRank("MethactonCJV","WilmingtonFriendsHJV",340,110);
-console.log("Delaware C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+
 
 //Florida Panhandle C-Set
 //Prelims
@@ -4515,14 +4490,13 @@ await newRank("CollegiateAV","WashingtonAV",390,50);
 await newRank("ChoctawhatcheeAV","TateAV",221,220);
 //Varsity Finals
 await newRank("CollegiateAV","ChoctawhatcheeAV",420,120);
-console.log("FL Panhandle C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR(");
+
 
 //Southwestern Illinois C-Set
 //Round 1
@@ -4560,15 +4534,14 @@ await newRank("KeithCountyDayAJV","SouthwesternCJV",250,100);
 await newRank("LindseyAV","AltonAV",280,200);
 //JV Playoffs
 //JV Final
-await newRank("KeithCountyDayAJV","RochesterAJV",210,150);
-console.log("SW IL C q-pre: "+q);
+await newRank("KeithCountyDayAJV","RochesterAJV",210,150);;
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+
 
 
 y = true;
