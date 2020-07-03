@@ -2556,7 +2556,7 @@ let teamAvgPlJV = [];
 let q = 0;
 let t = [];
 let avgT = 0;
-let r = false;
+let y = false;
 let qV = [];
 let qJV = [];
 let qMS = [];
@@ -2680,7 +2680,7 @@ async function newRank(A, B, AScore, BScore) {
     await includes(A,B,"Varsity");
     await includes(A,B,"Junior Varsity");
     await includes(A,B,"Middle School");
-    if (r == false){
+    if (y == false){
     //C-Set games
     if (K == 100 && evalV == true) {
         //update q value
@@ -2701,7 +2701,6 @@ async function newRank(A, B, AScore, BScore) {
         };
         let avgV = sum/teamAvgV.length;
         q = avgV/avgCV;
-        nRank(A,B,AScore,BScore);
     }
     else if (K == 100 && evalJV == true) {
         //update q value
@@ -2722,7 +2721,6 @@ async function newRank(A, B, AScore, BScore) {
         };
         let avgJV = sum/teamAvgJV.length;
         q = avgJV/avgCJV;
-        nRank(A,B,AScore,BScore);
     }
     else if (K == 0 && evalMS == true) {
         //update q value
@@ -2743,14 +2741,13 @@ async function newRank(A, B, AScore, BScore) {
         };
         let avgMS = sum/teamAvgMS.length;
         q = avgMS/avgCMS;
-        nRank(A,B,AScore,BScore);
     }
     else {
         //console.log(A,B,"is cross-divisional");
     }
     }
 
-    else if (r == true){
+    else if (y == true){
         //C-Set games
     if (K == 100 && evalV == true) {
         q = allV[z]/avgCV;
@@ -4574,7 +4571,7 @@ teamAvgMS = [];
 //logTR();
 
 
-r = true;
+y = true;
 
 
 //Northern California Fall C-Set
