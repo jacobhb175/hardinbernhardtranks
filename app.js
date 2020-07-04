@@ -3544,7 +3544,6 @@ await newRank("IolaniAV","PunahouBV",380,120);
 //Round 6
 await newRank("PunahouAV","PunahouBV",200,160);
 await newRank("IolaniAV","IolaniBV",260,210);
-console.log("Oahu C q-pre: "+q);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
