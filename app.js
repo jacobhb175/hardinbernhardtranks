@@ -2719,8 +2719,9 @@ async function newRank(A, B, AScore, BScore) {
         for(n = 0; n < allVLen; n++){
             sum += parseInt(allV[z][n],10);
         };
-        let avgV = sum/teamAvgV.length;
+        let avgV = sum/allVLen;
         q = avgV/avgCV;
+        console.log("avgV, avgCV, q",avgV,avgCV,q)
         qV.push(q);
         nRank(A,B,AScore,BScore);
     }
@@ -2739,7 +2740,7 @@ async function newRank(A, B, AScore, BScore) {
         for(p = 0; p < allJVLen; p++ ){
             sum += parseInt(allJV[z][p],10);
         };
-        let avgJV = sum/teamAvgJV.length;
+        let avgJV = sum/allJVLen;
         q = avgJV/avgCJV;
         qJV.push(q);
         nRank(A,B,AScore,BScore);
@@ -2759,7 +2760,7 @@ async function newRank(A, B, AScore, BScore) {
         for(s = 0; s < allMSLen; s++ ){
             sum += parseInt(allMS[z][s],10);
         };
-        let avgMS = sum/teamAvgMS.length;
+        let avgMS = sum/allMSLen;
         q = avgMS/avgCMS;
         qMS.push(q);
         nRank(A,B,AScore,BScore);
@@ -4542,6 +4543,7 @@ teamAvgMS = [];
 
 
 y = true;
+console.log(y);
 
 
 //Northern California Fall C-Set
