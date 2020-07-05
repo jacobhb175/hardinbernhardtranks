@@ -2513,6 +2513,78 @@ db.collection("teams").doc("RochesterAJV").set({
     state:"Illinois",
     division:"Junior Varsity",
     rank:1200
+}),
+db.collection("teams").doc("NorthmontAV").set({
+    name:"Northmont A",
+    state:"Pennsylvania",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("KiskiAV").set({
+    name:"Kiski A",
+    state:"Pennsylvania",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("NCatholicAV").set({
+    name:"N. Catholic A",
+    state:"Pennsylvania",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("NAlleghenyAV").set({
+    name:"N. Allegheny HS A",
+    state:"Pennsylvania",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("AllderdiceAV").set({
+    name:"Allderdice A",
+    state:"Pennsylvania",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("AllderdiceBV").set({
+    name:"Allderdice B",
+    state:"Pennsylvania",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("SaegertownAV").set({
+    name:"Saegertown A",
+    state:"Pennsylvania",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("SouthSideAV").set({
+    name:"South Side A",
+    state:"Pennsylvania",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("SouthSideBJV").set({
+    name:"South Side B",
+    state:"Pennsylvania",
+    division:"Junior Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("AlagarAJV").set({
+    name:"Algar Homeschool A",
+    state:"Pennsylvania",
+    division:"Junior Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("NAlleghenyIntAJV").set({
+    name:"N. Allegheny Intermediate A",
+    state:"Pennsylvania",
+    division:"Junior Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("NAlleghenyIntBJV").set({
+    name:"N. Allegheny Intermediate B",
+    state:"Pennsylvania",
+    division:"Junior Varsity",
+    rank:1200
 })
 
 /*
@@ -2987,7 +3059,6 @@ teamAvgMS = [];
 
 
 
-/*
 //Central Georgia Fall C-Set
 //Prelims
 //Round 1
@@ -4562,7 +4633,7 @@ teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
 
-*/
+
 
 y = true;
 console.log(y);
@@ -4719,7 +4790,7 @@ b = 0;
 c = 0;
 
 
-/*
+
 //Central Georgia Fall C-Set
 z=z+1;
 //Prelims
@@ -4765,6 +4836,9 @@ await newRank("ChambleeAJV","VeteransBJV",250,40);//Chamblee Charter
 console.log("Central GA C q V: "+qV[z]);
 console.log("Central GA C q JV: "+qJV[z]);
 console.log("Central GA C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Montana C-Set
 z=z+1;
@@ -4821,7 +4895,10 @@ await newRank("BozemanCJV","SkyviewDJV",110,80);
 console.log("MT C q V: "+qV[z]);
 console.log("MT C q JV: "+qJV[z]);
 console.log("MT C q MS: "+qMS[z]);
-//logTR();
+a = 0;
+b = 0;
+c = 0;
+
 
 //West Virginia Fall C-Set
 z=z+1;
@@ -4873,7 +4950,9 @@ await newRank("CharlestonAV","StAlbansAV",240,130);
 console.log("WV C q V: "+qV[z]);
 console.log("WV C q JV: "+qJV[z]);
 console.log("WV C q MS: "+qMS[z]);
-//logTR();
+a = 0;
+b = 0;
+c = 0;
 
 //Northern New Jersey C-Set
 z=z+1;
@@ -4994,7 +5073,9 @@ await newRank("TenaflyMSA","TenaflyMSB",200,90);
 console.log("Northern NJ C q V: "+qV[z]);
 console.log("Northern NJ C q JV: "+qJV[z]);
 console.log("Northern NJ C q MS: "+qMS[z]);
-//logTR();
+a = 0;
+b = 0;
+c = 0;
 
 //Northern Illinois C-Set
 z=z+1;
@@ -5053,7 +5134,9 @@ await newRank("StevensonEJV","StevensonDJV",290,220);
 console.log("Northern IL C q V: "+qV[z]);
 console.log("Northern IL C q JV: "+qJV[z]);
 console.log("Northern IL C q MS: "+qMS[z]);
-//logTR();
+a = 0;
+b = 0;
+c = 0;
 
 //Greater Dayton C-Set
 z=z+1;
@@ -5088,7 +5171,9 @@ await newRank("BeavercreekCJV","TippecanoeBJV",220,20);
 console.log("Dayton C q V: "+qV[z]);
 console.log("Dayton C q JV: "+qJV[z]);
 console.log("Dayton C q MS: "+qMS[z]);
-//logTR();
+a = 0;
+b = 0;
+c = 0;
 
 //Buffalo C-Set
 z=z+1;
@@ -5129,7 +5214,9 @@ await newRank("NicholsBV","IroquoisAV",250,140);
 console.log("Buffalo C q V: "+qV[z]);
 console.log("Buffalo C q JV: "+qJV[z]);
 console.log("Buffalo C q MS: "+qMS[z]);
-//logTR();
+a = 0;
+b = 0;
+c = 0;
 
 //South Florida Fall C-Set
 z=z+1
@@ -5260,7 +5347,9 @@ await newRank("RansomCJV","PalmettoPJV",340,90);
 console.log("South FL C q V: "+qV[z]);
 console.log("South FL C q JV: "+qJV[z]);
 console.log("South FL C q MS: "+qMS[z]);
-//logTR();
+a = 0;
+b = 0;
+c = 0;
 
 //Oahu C-Set
 z=z+1;
@@ -5286,6 +5375,9 @@ await newRank("IolaniAV","IolaniBV",260,210);
 console.log("Oahu C q V: "+qV[z]);
 console.log("Oahu C q JV: "+qJV[z]);
 console.log("Oahu C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Greater Knoxville Fall C-Set
 z=z+1;
@@ -5319,6 +5411,9 @@ await newRank("MaryvilleAV","GatlinburgAV",230,140);
 console.log("Knoxville C q V: "+qV[z]);
 console.log("Knoxville C q JV: "+qJV[z]);
 console.log("Knoxville C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Eastern Geogia Fall C-Set
 z=z+1;
@@ -5393,6 +5488,9 @@ await newRank("ChattahoocheeBJV","HermannAJV",280,140);
 console.log("Eastern GA C q V: "+qV[z]);
 console.log("Eastern GA C q JV: "+qJV[z]);
 console.log("Eastern GA C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Central Florida Fall C-Set
 z=z+1;
@@ -5504,6 +5602,9 @@ await newRank("TrinityCMS","TrinityDMS",310,40);
 console.log("Central FL C q V: "+qV[z]);
 console.log("Central FL C q JV: "+qJV[z]);
 console.log("Central FL C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Western Washington C-Set
 z=z+1;
@@ -5536,6 +5637,9 @@ await newRank("CentralKitsapAV","HolyNamesAV",250,150);
 console.log("West WA C q V: "+qV[z]);
 console.log("West WA C q JV: "+qJV[z]);
 console.log("West WA C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Southern Washington C-Set
 z=z+1;
@@ -5582,6 +5686,9 @@ await newRank("StollerHMS","StollerKMS",240,200);
 console.log("South WA C q V: "+qV[z]);
 console.log("South WA C q JV: "+qJV[z]);
 console.log("South WA C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Boston Fall C-Set
 z=z+1;
@@ -5636,6 +5743,9 @@ await newRank("PhillipsExeterBJV","LexingtonBJV",240,180);
 console.log("Boston C q V: "+qV[z]);
 console.log("Boston C q JV: "+qJV[z]);
 console.log("Boston C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Washington DC C-Set
 z=z+1;
@@ -5743,6 +5853,9 @@ await newRank("BurleighManorAMS","BurleighManorBMS",220,140);
 console.log("DC C q V: "+qV[z]);
 console.log("DC C q JV: "+qJV[z]);
 console.log("DC C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Southern New Jersey C-Set
 z=z+1;
@@ -5819,6 +5932,9 @@ await newRank("PrincetonCJV","WiltonAnjoAJV",290,170);
 console.log("South NJ C q V: "+qV[z]);
 console.log("South NJ C q JV: "+qJV[z]);
 console.log("South NJ C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Northwest Illinois C-Set
 z=z+1;
@@ -5878,6 +5994,9 @@ await newRank("HomewoodFlossmoorAV","WilliamsBayAV",260,120);
 console.log("NW IL C q V: "+qV[z]);
 console.log("NW IL C q JV: "+qJV[z]);
 console.log("NW IL C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Louisiana Fall C-Set
 z=z+1;
@@ -5911,6 +6030,9 @@ await newRank("ZacharyBV","BatonRougeEpiscopalAV",210,160);
 console.log("LA C q V: "+qV[z]);
 console.log("LA C q JV: "+qJV[z]);
 console.log("LA C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Eastern Kentucky C-Set
 z=z+1;
@@ -5944,6 +6066,9 @@ await newRank("BlazerAV","JohnsonAV",270,160);
 console.log("East KY C q V: "+qV[z]);
 console.log("East KY C q JV: "+qJV[z]);
 console.log("East KY C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Bergen County C-Set
 z=z+1;
@@ -5996,6 +6121,9 @@ await newRank("RidgewoodCJV","ChurchillMDAJV",270,150);
 console.log("Bergen C q V: "+qV[z]);
 console.log("Bergen C q JV: "+qJV[z]);
 console.log("Bergen C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Lower Hudson C-Set
 z=z+1;
@@ -6059,6 +6187,9 @@ await newRank("WiltonLukasAJV","HoraceGreeleyBJV",210,190);
 console.log("Lower Hudson C q V: "+qV[z]);
 console.log("Lower Hudson C q JV: "+qJV[z]);
 console.log("Lower Hudson C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Delaware C-Set
 z=z+1;
@@ -6152,6 +6283,9 @@ await newRank("MethactonCJV","WilmingtonFriendsHJV",340,110);
 console.log("Delaware C q V: "+qV[z]);
 console.log("Delaware C q JV: "+qJV[z]);
 console.log("Delaware C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 //Florida Panhandle C-Set
 z=z+1;
@@ -6187,6 +6321,9 @@ await newRank("CollegiateAV","ChoctawhatcheeAV",420,120);
 console.log("FL Panhandle C q V: "+qV[z]);
 console.log("FL Panhandle C q JV: "+qJV[z]);
 console.log("FL Panhandle C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 
 //Southwestern Illinois C-Set
@@ -6229,7 +6366,68 @@ await newRank("LindseyAV","AltonAV",280,200);
 await newRank("KeithCountyDayAJV","RochesterAJV",210,150);
 console.log("SW IL C q V: "+qV[z]);
 console.log("SW IL C q JV: "+qJV[z]);
-console.log("SW IL C q MS: "+qMS[z]);*/
+console.log("SW IL C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
+
+//Western Pennsylvania C-Set
+//Prelims
+//Round 1
+await newRank("KiskiAV","AllderdiceBV",450,70);
+await newRank("NorthmontAV","SaegertownAV",480,80);
+await newRank("NAlleghenyHSAV","NCatholicAV",261,260);
+await newRank("AllderdiceAV","SouthSideAV",400,30);
+await newRank("NAlleghenyIntAJV","SouthSideBJV",270,220);
+await newRank("AlagarAJV","NAlleghenyIntBJV",250,220);
+//Round 2
+await newRank("NorthmontAV","AllderdiceBV",470,80);
+await newRank("KiskiAV","SaegertownAV",480,70);
+await newRank("NCatholicAV","AllderdiceAV",310,200);
+await newRank("NAlleghenyHSAV","SouthSideAV",280,70);
+await newRank("SouthSideBJV","AlagarAJV",300,190);
+await newRank("NAlleghenyIntAJV","NAlleghenyIntBJV",340,130);
+//Round 3
+await newRank("AllderdiceBV","SouthSideAV",260,80);
+await newRank("KiskiAV","NAlleghenyHSAV",280,240);
+await newRank("NCatholicAV","AllderdiceAV",300,160);
+await newRank("NorthmontAV","SaegertownAV",480,80);
+await newRank("SouthSideBJV","NAlleghenyIntBJV",250,160);
+await newRank("NAlleghenyIntAJV","AlagarAJV",320,210);
+//Round 4
+await newRank("NCatholicAV","SaegertownAV",300,110);
+await newRank("KiskiAV","AllderdiceBV",370,120);
+await newRank("NAlleghenyHSAV","SouthSideAV",370,80);
+await newRank("NorthmontAV","AllderdiceAV",440,80);
+await newRank("SouthSideBJV","AlagarAJV",220,210);
+await newRank("NAlleghenyIntAJV","NAlleghenyIntBJV",390,150);
+//Round 5
+await newRank("SaegertownAV","SouthSideAV",161,160);
+await newRank("KiskiAV","AllderdiceAV",370,150);
+await newRank("NCatholicAV","AllderdiceBV",240,110);
+await newRank("NorthmontAV","NAlleghenyHSAV",420,110);
+await newRank("AlagarAJV","NAlleghenyIntBJV",230,140);
+await newRank("NAlleghenyIntAJV","SouthSideBJV",270,160);
+//Round 6
+await newRank("NAlleghenyIntAJV","AlagarAJV",270,150);
+await newRank("SouthSideBJV","NAlleghenyIntBJV",270,90);
+//Varsity Playoffs
+//Varsity Semifinals
+await newRank("NorthmontAV","NAlleghenyHSAV",350,90);
+await newRank("KiskiAV","NCatholicAV",270,130);
+//Varsity Finals
+await newRank("NorthmontAV","KiskiAV",310,230);
+//JV PLayoffs
+//JV Finals
+await newRank("NAlleghenyIntAJV","SouthSideBJV",270,140);
+console.log("W PA C q V: "+qV[z]);
+console.log("W PA C q JV: "+qJV[z]);
+console.log("W PA C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
+
+
 };
 cSet();
 
