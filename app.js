@@ -2712,7 +2712,8 @@ async function newRank(A, B, AScore, BScore) {
         for(m = 0; m < teamAvgCVLen; m++){
             sumCV += parseInt(teamAvgCV[m],10);
         };
-        let avgCV = sumCV/teamAvgCV.length;
+        let avgCV = sumCV/teamAvgCVLen;
+        console.log("sumCV,teamAvgCVLen,avgCV",sumCV,teamAvgCVLen,avgCV);
         let sum = 0;
         let n;
         let allVLen = allV[z].length;
@@ -2720,9 +2721,11 @@ async function newRank(A, B, AScore, BScore) {
             sum += parseInt(allV[z][n],10);
         };
         let avgV = sum/allVLen;
+        console.log("sum,allVLen,avgV",sum,allVLen,avgV);
         q = avgV/avgCV;
-        console.log("avgV, avgCV, q",avgV,avgCV,q)
+        console.log("avgV,avgCV,q",avgV,avgCV,q)
         qV.push(q);
+        console.log("q,qV",q,qV)
         nRank(A,B,AScore,BScore);
     }
     else if (K == 100 && evalJV == true) {
@@ -2773,6 +2776,7 @@ async function newRank(A, B, AScore, BScore) {
 
 //calculate and update rank
 async function nRank(A,B,AScore,BScore){
+    console.log("q",q)
     var docRefA = db.collection("teams").doc(A);
     var docRefB = db.collection("teams").doc(B);
     await docRefA.get().then(async function(doc) {
