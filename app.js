@@ -2552,14 +2552,17 @@ let teamAvgPrV = [];
 let teamAvgPrJV = []
 let teamAvgPlV = [];
 let teamAvgPlJV = [];
+let qV = [];
+let qJV = [];
+let qMS = [];
 
+let a = 0;
+let b = 0;
+let c = 0;
 let q = 0;
 let t = [];
 let avgT = 0;
 let y = false;
-let qV = [];
-let qJV = [];
-let qMS = [];
 let z = 0;
 
 //K Rank
@@ -2705,6 +2708,8 @@ async function newRank(A, B, AScore, BScore) {
     else if (y == true){
         //C-Set games
     if (K == 100 && evalV == true) {
+        if (a == 0) {
+        a = a+1;
         //calculate q value
         let sumCV = 0;
         let m;
@@ -2721,15 +2726,18 @@ async function newRank(A, B, AScore, BScore) {
             sum += parseInt(allV[z][n],10);
         };
         let avgV = sum/allVLen;
-        console.log("sum,allVLen,avgV",sum,allVLen,avgV);
         q = avgV/avgCV;
-        console.log("avgV,avgCV,q",avgV,avgCV,q)
         qV.push(q);
-        console.log("q,qV",q,qV)
+        }
+        else {
+            q = qV[z];
+        }
         nRank(A,B,AScore,BScore);
     }
     else if (K == 100 && evalJV == true) {
+        if (b == 0) {
         //calculate q value
+        b = b+1;
         let sumCJV = 0;
         let o;
         let teamAvgCJVLen = teamAvgCJV.length;
@@ -2746,10 +2754,16 @@ async function newRank(A, B, AScore, BScore) {
         let avgJV = sum/allJVLen;
         q = avgJV/avgCJV;
         qJV.push(q);
+        }
+        else {
+            q = qJV[z];
+        }
         nRank(A,B,AScore,BScore);
     }
     else if (K == 0 && evalMS == true) {
+        if (c == 0) {
         //calculate q value
+        c=c+1;
         let sumCMS = 0;
         let r;
         let teamAvgCMSLen = teamAvgCMS.length;
@@ -2766,6 +2780,10 @@ async function newRank(A, B, AScore, BScore) {
         let avgMS = sum/allMSLen;
         q = avgMS/avgCMS;
         qMS.push(q);
+        }
+        else {
+            q = qMS[z];
+        }
         nRank(A,B,AScore,BScore);
     }
     else {
@@ -2900,7 +2918,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+
 
 
 //Eastern Washington C-Set
@@ -2966,10 +2984,10 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
 
 
 
+/*
 //Central Georgia Fall C-Set
 //Prelims
 //Round 1
@@ -3017,7 +3035,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+
 
 //Montana C-Set
 //Prelims
@@ -4544,7 +4562,7 @@ teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
 
-
+*/
 
 y = true;
 console.log(y);
@@ -4630,7 +4648,9 @@ await newRank("MissionSanJoseJV","SaggitariusAJV",280,210);
 console.log("NorCal C q V: "+qV[z]);
 console.log("NorCal C q JV: "+qJV[z]);
 console.log("NorCal C q MS: "+qMS[z]);
-//logTR();
+a = 0;
+b = 0;
+c = 0;
 
 
 //Eastern Washington C-Set
@@ -4694,9 +4714,12 @@ await newRank("MtSpokaneCJV","MtSpokaneDJV",140,90);
 console.log("East WA C q V: "+qV[z]);
 console.log("East WA C q JV: "+qJV[z]);
 console.log("East WA C q MS: "+qMS[z]);
+a = 0;
+b = 0;
+c = 0;
 
 
-
+/*
 //Central Georgia Fall C-Set
 z=z+1;
 //Prelims
@@ -6206,7 +6229,7 @@ await newRank("LindseyAV","AltonAV",280,200);
 await newRank("KeithCountyDayAJV","RochesterAJV",210,150);
 console.log("SW IL C q V: "+qV[z]);
 console.log("SW IL C q JV: "+qJV[z]);
-console.log("SW IL C q MS: "+qMS[z]);
+console.log("SW IL C q MS: "+qMS[z]);*/
 };
 cSet();
 
