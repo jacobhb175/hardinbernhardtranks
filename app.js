@@ -15,7 +15,8 @@ server.listen(port, hostname, () => {
 });
 */
 
-
+// You should look into ENV variables for this. Storing credentials in the
+// codebase isn't safe. https://stackabuse.com/managing-environment-variables-in-node-js-with-dotenv/
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyDXM_FBLEWgMGLFMbV_nL9ScHBqsE2D9Dk",
@@ -40,7 +41,7 @@ firebase.initializeApp({
     authDomain: 'hardinbernhardtranks.firebaseapp.com',
     projectId: 'hardinbernhardtranks'
 });
-  
+
 var db = firebase.firestore();
 
 
@@ -2586,6 +2587,10 @@ db.collection("teams").doc("NAlleghenyIntBJV").set({
     division:"Junior Varsity",
     rank:1200
 })
+// I think you only want to store all those once right? Everytime you run the
+// code it will reset and store all that data. It might also be better to put
+// these in a spreadsheet format, and export them as a CSV for import purposres.
+// Alternatively, you can also look into SQLite as a quick way to store them.
 
 /*
 docRef.get().then(function(doc) {
@@ -2702,8 +2707,8 @@ async function cExpScore(A,B){
             //console.log("rankA",rankA);
             await docRefB.get().then(async function(doc) {
                 if (doc.exists) {
-                    let rankB=doc.data().rank; 
-                    //console.log("rankB",rankB);  
+                    let rankB=doc.data().rank;
+                    //console.log("rankB",rankB);
                     //If A is lower
                     if (rankA<rankB){
                         expScore = 1/(1+(Math.E^((rankB-rankA)/400)));
@@ -2735,6 +2740,11 @@ async function cExpScore(A,B){
 };
 
 
+// Try to take a look at https://lodash.com/
+// and https://github.com/pelevesque/elo
+// These are more optimized scripts for what you are trying to do.
+// As you add more data, it'll naturally be slower. I would try to do the
+// calculation and see how fast everything runs without firebase.
 
 //calculate new ranks
 async function newRank(A, B, AScore, BScore) {
@@ -2862,7 +2872,7 @@ async function newRank(A, B, AScore, BScore) {
         //console.log(A,B,"is cross-divisional");
     }
     }
-};  
+};
 
 //calculate and update rank
 async function nRank(A,B,AScore,BScore){
@@ -2875,11 +2885,17 @@ async function nRank(A,B,AScore,BScore){
             //console.log("rankA",rankA);
             await docRefB.get().then(async function(doc) {
                 if (doc.exists) {
-                    let rankB=doc.data().rank; 
+                    let rankB=doc.data().rank;
                     rankA = rankA + q*K*((AScore/((AScore+BScore)*avgT))-expScoreA);
                     rankB = rankB + q*K*((BScore/((AScore+BScore)*avgT))-expScoreB);
                     //console.log("rankAB",rankA,rankB);
                     //update rank
+                  // This will be very slow since it's pinging the databae and
+                  // making an update every single time. Making a call to the
+                  // internet takes about 200-300ms. Let's say you have to make
+                  // 10 updates, that's 3 seconds of waiting. Try to batch all
+                  // the updates in one query.
+                  // https://firebase.google.com/docs/firestore/manage-data/transactions
                     db.collection("teams").doc(A).update({rank:rankA})
                     db.collection("teams").doc(B).update({rank:rankB})
                 } else {
@@ -2902,7 +2918,7 @@ async function nRank(A,B,AScore,BScore){
 function printRanks(div){
     let teamsRef = db.collection("teams");
     console.log(teamsRef.where("division","==",div).orderBy("rank").limit(10));
-    
+
 }
 
 async function cSet(){
