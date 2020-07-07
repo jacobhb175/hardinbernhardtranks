@@ -4629,13 +4629,63 @@ await newRank("LindseyAV","AltonAV",280,200);
 //JV Playoffs
 //JV Final
 await newRank("KeithCountyDayAJV","RochesterAJV",210,150);;
+
+
+//Western Pennsylvania C-Set
+//Prelims
+//Round 1
+await newRank("KiskiAV","AllderdiceBV",450,70);
+await newRank("NorthmontAV","SaegertownAV",480,80);
+await newRank("NAlleghenyHSAV","NCatholicAV",261,260);
+await newRank("AllderdiceAV","SouthSideAV",400,30);
+await newRank("NAlleghenyIntAJV","SouthSideBJV",270,220);
+await newRank("AlagarAJV","NAlleghenyIntBJV",250,220);
+//Round 2
+await newRank("NorthmontAV","AllderdiceBV",470,80);
+await newRank("KiskiAV","SaegertownAV",480,70);
+await newRank("NCatholicAV","AllderdiceAV",310,200);
+await newRank("NAlleghenyHSAV","SouthSideAV",280,70);
+await newRank("SouthSideBJV","AlagarAJV",300,190);
+await newRank("NAlleghenyIntAJV","NAlleghenyIntBJV",340,130);
+//Round 3
+await newRank("AllderdiceBV","SouthSideAV",260,80);
+await newRank("KiskiAV","NAlleghenyHSAV",280,240);
+await newRank("NCatholicAV","AllderdiceAV",300,160);
+await newRank("NorthmontAV","SaegertownAV",480,80);
+await newRank("SouthSideBJV","NAlleghenyIntBJV",250,160);
+await newRank("NAlleghenyIntAJV","AlagarAJV",320,210);
+//Round 4
+await newRank("NCatholicAV","SaegertownAV",300,110);
+await newRank("KiskiAV","AllderdiceBV",370,120);
+await newRank("NAlleghenyHSAV","SouthSideAV",370,80);
+await newRank("NorthmontAV","AllderdiceAV",440,80);
+await newRank("SouthSideBJV","AlagarAJV",220,210);
+await newRank("NAlleghenyIntAJV","NAlleghenyIntBJV",390,150);
+//Round 5
+await newRank("SaegertownAV","SouthSideAV",161,160);
+await newRank("KiskiAV","AllderdiceAV",370,150);
+await newRank("NCatholicAV","AllderdiceBV",240,110);
+await newRank("NorthmontAV","NAlleghenyHSAV",420,110);
+await newRank("AlagarAJV","NAlleghenyIntBJV",230,140);
+await newRank("NAlleghenyIntAJV","SouthSideBJV",270,160);
+//Round 6
+await newRank("NAlleghenyIntAJV","AlagarAJV",270,150);
+await newRank("SouthSideBJV","NAlleghenyIntBJV",270,90);
+//Varsity Playoffs
+//Varsity Semifinals
+await newRank("NorthmontAV","NAlleghenyHSAV",350,90);
+await newRank("KiskiAV","NCatholicAV",270,130);
+//Varsity Finals
+await newRank("NorthmontAV","KiskiAV",310,230);
+//JV PLayoffs
+//JV Finals
+await newRank("NAlleghenyIntAJV","SouthSideBJV",270,140);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-
 
 
 y = true;
@@ -6437,7 +6487,8 @@ c = 0;
 
 /*
 //Mississippi Winter
-z=z+1;
+a2 = a2+1;
+b2 = b2+1;
 //Prelims
 console.log("Miss C q V: "+qV[z]);
 console.log("Miss C q JV: "+qJV[z]);
