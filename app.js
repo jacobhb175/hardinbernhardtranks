@@ -1850,7 +1850,7 @@ db.collection("teams").doc("MillburnDJV").set({
     division:"Junior Varsity",
 rank:1200
 }),
-db.collection("teams").doc("MissionSanJoseJV").set({
+db.collection("teams").doc("MissionSanJoseAJV").set({
     name:"Mission San Jose",
     state:"California",
     division:"Junior Varsity",
@@ -2466,6 +2466,7 @@ db.collection("teams").doc("TrinityDMS").set({
     division:"Middle School",
 rank:1200
 })
+//Later teams added
 db.collection("teams").doc("LindseyAV").set({
     name:"Lindsey Homeschool A",
     state:"Missouri",
@@ -2583,6 +2584,102 @@ db.collection("teams").doc("NAlleghenyIntAJV").set({
 db.collection("teams").doc("NAlleghenyIntBJV").set({
     name:"N. Allegheny Intermediate B",
     state:"Pennsylvania",
+    division:"Junior Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("MadisonAV").set({
+    name:"Madison Central A",
+    state:"Mississippi",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("MadisonAV").set({
+    name:"Madison Central A",
+    state:"Mississippi",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("MadisonBV").set({
+    name:"Madison Central B",
+    state:"Mississippi",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("MadisonCJV").set({
+    name:"Madison Central C",
+    state:"Mississippi",
+    division:"Junior Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("PetalAV").set({
+    name:"Petal A",
+    state:"Mississippi",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("PetalBV").set({
+    name:"Petal B",
+    state:"Mississippi",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("HancockAV").set({
+    name:"Hancock A",
+    state:"Mississippi",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("HancockBV").set({
+    name:"Hancock B",
+    state:"Mississippi",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("HancockCV").set({
+    name:"Hancock C",
+    state:"Mississippi",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("ClintonAV").set({
+    name:"Clinton A",
+    state:"Mississippi",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("ClintonBJV").set({
+    name:"Clinton B",
+    state:"Mississippi",
+    division:"Junior Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("WestJonesAV").set({
+    name:"West Jones A",
+    state:"Mississippi",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("RichtonAV").set({
+    name:"Richton A",
+    state:"Mississippi",
+    division:"Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("RichtonBJV").set({
+    name:"Richton B",
+    state:"Mississippi",
+    division:"Junior Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("RosaScottAJV").set({
+    name:"Rosa Scott A",
+    state:"Mississippi",
+    division:"Junior Varsity",
+    rank:1200
+}),
+db.collection("teams").doc("CHECHAJV").set({
+    name:"CHEC A",
+    state:"Mississippi",
     division:"Junior Varsity",
     rank:1200
 })
@@ -2914,7 +3011,7 @@ K = 100;
 //Northern California Fall C-Set
 //Prelims
 //Round 1
-await newRank("MissionSanJoseJV","SaratogaEJV",450,70);
+await newRank("MissionSanJoseAJV","SaratogaEJV",450,70);
 await newRank("HomesteadAJV","MountainViewAJV",390,130);
 await newRank("SaggitariusAJV","SantaClaraAJV",390,180);
 await newRank("SaratogaDJV","CaliforniaAJV",340,210);
@@ -2931,7 +3028,7 @@ await newRank("PioneersAV","GundersonAV",430,210);
 await newRank("FoothillAV","PiedmontHillsAV",310,300);
 await newRank("HomesteadAJV","SaratogaEJV",300,150);
 await newRank("SantaClaraAJV","HarkerAJV",320,250);
-await newRank("MissionSanJoseJV","SaratogaDJV",330,270);
+await newRank("MissionSanJoseAJV","SaratogaDJV",330,270);
 await newRank("SaggitariusAJV","MountainViewAJV",370,170);
 await newRank("CaliforniaAJV","EriksenBJV",400,130);
 await newRank("SaratogaBV","EriksenAV",340,310);
@@ -2946,12 +3043,12 @@ await newRank("SaratogaAV","SaratogaBV",360,220);
 await newRank("EriksenAV","PiedmontHillsAV",370,180);
 await newRank("PioneersAV","LynbrookAV",370,210);
 await newRank("GundersonAV","FoothillAV",260,240);
-await newRank("MissionSanJoseJV","EriksenBJV",400,100);
+await newRank("MissionSanJoseAJV","EriksenBJV",400,100);
 await newRank("HarkerAJV","MountainViewAJV",360,120);
 await newRank("JLSMSA","HarvestParkMSA",260,220);
 //Round 4
 await newRank("SaratogaAV","GundersonAV",350,170);
-await newRank("MissionSanJoseJV","SantaClaraAJV",340,240);
+await newRank("MissionSanJoseAJV","SantaClaraAJV",340,240);
 await newRank("PioneersAV","LesQuizAV",560,50)
 await newRank("LynbrookAV","FoothillAV",390,200);
 await newRank("HomesteadAJV","EriksenBJV",400,80);
@@ -2969,7 +3066,7 @@ await newRank("CaliforniaAJV","SaratogaEJV",320,140);
 await newRank("PioneersAV","SaratogaCV",490,110);
 await newRank("LynbrookAV","PiedmontHillsAV",390,180);
 await newRank("SaggitariusAJV","EriksenBJV",440,90);
-await newRank("MissionSanJoseJV","MountainViewAJV",270,150);
+await newRank("MissionSanJoseAJV","MountainViewAJV",270,150);
 await newRank("AlmadenMSA","HarvestParkMSA",390,230);
 await newRank("SaratogaDJV","HarkerAJV",300,180);
 await newRank("SantaClaraAJV","HomesteadAJV",300,170);
@@ -2984,9 +3081,9 @@ await newRank("PioneersAV","SaratogaAV",360,230);
 //JV Playoffs
 //Semifinals
 await newRank("SaggitariusAJV","HarkerAJV",310,170);
-await newRank("MissionSanJoseJV","CaliforniaAJV",250,220);
+await newRank("MissionSanJoseAJV","CaliforniaAJV",250,220);
 //Finals
-await newRank("MissionSanJoseJV","SaggitariusAJV",280,210);
+await newRank("MissionSanJoseAJV","SaggitariusAJV",280,210);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -4688,6 +4785,71 @@ teamAvgJV = [];
 teamAvgMS = [];
 
 
+//Mississippi Winter
+//Prelims
+//Round 1
+newRank("MadisonAV","MadisonBV",340,100);
+newRank("HancockAV","PetalBV",230,180);
+newRank("HancockCV","HancockBV",120,100);
+newRank("ClintonAV","WestJonesAV",210,190);
+newRank("PetalAV","RichtonAV",390,60);
+newRank("CHECHAJV","RichtonBJV",200,190);
+newRank("MadisonCJV","ClintonBJV",221,220);
+//Round 2
+newRank("MadisonAV","HancockBV",470,30);
+newRank("PetalAV","WestJonesAV",270,120);
+newRank("PetalBV","RichtonAV",260,90);
+newRank("HancockAV","HancockCV",280,110);
+newRank("ClintonBJV","RichtonBJV",240,80);
+newRank("MadisonCJV","RosaScottAJV",260,160);
+//Round 3
+newRank("PetalBV","HancockBV",260,70);
+newRank("MadisonBV","HancockCV",390,50);
+newRank("MadisonAV","WestJonesAV",360,120);
+newRank("PetalAV","HancockAV",310,150);
+newRank("ClintonAV","RichtonAV",330,40);
+newRank("CHECHAJV","ClintonBJV",240,150);
+newRank("RosaScottAJV","RichtonBJV",360,40);
+//Round 4
+newRank("MadisonAV","HancockAV",300,120);
+newRank("HancockCV","RichtonAV",140,110);
+newRank("ClintonAV","HancockBV",180,50);
+newRank("PetalAV","MadisonBV",290,130);
+newRank("PetalBV","WestJonesAV",250,120);
+newRank("RosaScottAJV","ClintonBJV",260,150);
+newRank("CHECHAJV","MadisonCJV",260,140);
+//Round 5
+newRank("HancockAV","ClintonAV",200,160);
+newRank("WestJonesAV","HancockCV",210,20);
+newRank("MadisonBV","PetalBV",190,150);
+newRank("PetalAV","HancockBV",270,40);
+newRank("MadisonAV","RichtonAV",310,30);
+newRank("RosaScottAJV","CHECHAJV",240,170);
+newRank("MadisonCJV","RichtonBJV",290,40);
+//Varsity Playoffs
+//Varsity Quarterfinals
+newRank("MadisonAV","HancockCV",290,20);
+newRank("PetalAV","WestJonesAV",300,60);
+newRank("PetalBV","ClintonAV",240,130);
+newRank("HancockAV","MadisonBV",200,130);
+//Varsity Semifinals
+newRank("MadisonAV","HancockAV",360,50);
+newRank("PetalAV","PetalBV",190,120);
+//Varsity Finals
+newRank("MadisonAV","PetalAV",290,90);
+//JV Playoffs
+//JV Semifinals
+newRank("RosaScottAJV","ClintonBJV",190,140);
+newRank("CHECHAJV","MadisonCJV",220,100);
+//JV Final
+newRank("RosaScottAJV","CHECHAJV",190,140);
+allV.push(teamAvgV);
+allJV.push(teamAvgJV);
+allMS.push(teamAvgMS);
+teamAvgV = [];
+teamAvgJV = [];
+teamAvgMS = [];
+
 y = true;
 console.log(y);
 
@@ -4698,7 +4860,7 @@ b2 = 0;
 c2 = 0;
 //Prelims
 //Round 1
-await newRank("MissionSanJoseJV","SaratogaEJV",450,70);
+await newRank("MissionSanJoseAJV","SaratogaEJV",450,70);
 await newRank("HomesteadAJV","MountainViewAJV",390,130);
 await newRank("SaggitariusAJV","SantaClaraAJV",390,180);
 await newRank("SaratogaDJV","CaliforniaAJV",340,210);
@@ -4715,7 +4877,7 @@ await newRank("PioneersAV","GundersonAV",430,210);
 await newRank("FoothillAV","PiedmontHillsAV",310,300);
 await newRank("HomesteadAJV","SaratogaEJV",300,150);
 await newRank("SantaClaraAJV","HarkerAJV",320,250);
-await newRank("MissionSanJoseJV","SaratogaDJV",330,270);
+await newRank("MissionSanJoseAJV","SaratogaDJV",330,270);
 await newRank("SaggitariusAJV","MountainViewAJV",370,170);
 await newRank("CaliforniaAJV","EriksenBJV",400,130);
 await newRank("SaratogaBV","EriksenAV",340,310);
@@ -4730,12 +4892,12 @@ await newRank("SaratogaAV","SaratogaBV",360,220);
 await newRank("EriksenAV","PiedmontHillsAV",370,180);
 await newRank("PioneersAV","LynbrookAV",370,210);
 await newRank("GundersonAV","FoothillAV",260,240);
-await newRank("MissionSanJoseJV","EriksenBJV",400,100);
+await newRank("MissionSanJoseAJV","EriksenBJV",400,100);
 await newRank("HarkerAJV","MountainViewAJV",360,120);
 await newRank("JLSMSA","HarvestParkMSA",260,220);
 //Round 4
 await newRank("SaratogaAV","GundersonAV",350,170);
-await newRank("MissionSanJoseJV","SantaClaraAJV",340,240);
+await newRank("MissionSanJoseAJV","SantaClaraAJV",340,240);
 await newRank("PioneersAV","LesQuizAV",560,50)
 await newRank("LynbrookAV","FoothillAV",390,200);
 await newRank("HomesteadAJV","EriksenBJV",400,80);
@@ -4753,7 +4915,7 @@ await newRank("CaliforniaAJV","SaratogaEJV",320,140);
 await newRank("PioneersAV","SaratogaCV",490,110);
 await newRank("LynbrookAV","PiedmontHillsAV",390,180);
 await newRank("SaggitariusAJV","EriksenBJV",440,90);
-await newRank("MissionSanJoseJV","MountainViewAJV",270,150);
+await newRank("MissionSanJoseAJV","MountainViewAJV",270,150);
 await newRank("AlmadenMSA","HarvestParkMSA",390,230);
 await newRank("SaratogaDJV","HarkerAJV",300,180);
 await newRank("SantaClaraAJV","HomesteadAJV",300,170);
@@ -4768,9 +4930,9 @@ await newRank("PioneersAV","SaratogaAV",360,230);
 //JV Playoffs
 //Semifinals
 await newRank("SaggitariusAJV","HarkerAJV",310,170);
-await newRank("MissionSanJoseJV","CaliforniaAJV",250,220);
+await newRank("MissionSanJoseAJV","CaliforniaAJV",250,220);
 //Finals
-await newRank("MissionSanJoseJV","SaggitariusAJV",280,210);
+await newRank("MissionSanJoseAJV","SaggitariusAJV",280,210);
 console.log("NorCal C q V: "+qV[a2]);
 console.log("NorCal C q JV: "+qJV[b2]);
 console.log("NorCal C q MS: "+qMS[c2]);
@@ -5472,7 +5634,6 @@ c = 0;
 //Eastern Geogia Fall C-Set
 a2 = a2+1;
 b2 = b2+1;
-c2 = c2+1;
 //Prelims
 //Round 1
 await newRank("BrookwoodAV","NewnanAV",241,240);
@@ -5742,7 +5903,6 @@ await newRank("JesuitAV","WestviewAV",220,180);
 //Finals
 await newRank("StollerHMS","StollerKMS",240,200);
 console.log("South WA C q V: "+qV[a2]);
-console.log("South WA C q MS: "+qMS[c2]);
 a = 0;
 b = 0;
 c = 0;
@@ -6430,7 +6590,6 @@ c = 0;
 //Western Pennsylvania C-Set
 a2 = a2+1;
 b2 = b2+1;
-c2 = c2+1;
 //Prelims
 //Round 1
 await newRank("KiskiAV","AllderdiceBV",450,70);
@@ -6485,17 +6644,72 @@ a = 0;
 b = 0;
 c = 0;
 
-/*
+
 //Mississippi Winter
 a2 = a2+1;
 b2 = b2+1;
 //Prelims
-console.log("Miss C q V: "+qV[z]);
-console.log("Miss C q JV: "+qJV[z]);
-console.log("Misss C q MS: "+qMS[z]);
+//Round 1
+newRank("MadisonAV","MadisonBV",340,100);
+newRank("HancockAV","PetalBV",230,180);
+newRank("HancockCV","HancockBV",120,100);
+newRank("ClintonAV","WestJonesAV",210,190);
+newRank("PetalAV","RichtonAV",390,60);
+newRank("CHECHAJV","RichtonBJV",200,190);
+newRank("MadisonCJV","ClintonBJV",221,220);
+//Round 2
+newRank("MadisonAV","HancockBV",470,30);
+newRank("PetalAV","WestJonesAV",270,120);
+newRank("PetalBV","RichtonAV",260,90);
+newRank("HancockAV","HancockCV",280,110);
+newRank("ClintonBJV","RichtonBJV",240,80);
+newRank("MadisonCJV","RosaScottAJV",260,160);
+//Round 3
+newRank("PetalBV","HancockBV",260,70);
+newRank("MadisonBV","HancockCV",390,50);
+newRank("MadisonAV","WestJonesAV",360,120);
+newRank("PetalAV","HancockAV",310,150);
+newRank("ClintonAV","RichtonAV",330,40);
+newRank("CHECHAJV","ClintonBJV",240,150);
+newRank("RosaScottAJV","RichtonBJV",360,40);
+//Round 4
+newRank("MadisonAV","HancockAV",300,120);
+newRank("HancockCV","RichtonAV",140,110);
+newRank("ClintonAV","HancockBV",180,50);
+newRank("PetalAV","MadisonBV",290,130);
+newRank("PetalBV","WestJonesAV",250,120);
+newRank("RosaScottAJV","ClintonBJV",260,150);
+newRank("CHECHAJV","MadisonCJV",260,140);
+//Round 5
+newRank("HancockAV","ClintonAV",200,160);
+newRank("WestJonesAV","HancockCV",210,20);
+newRank("MadisonBV","PetalBV",190,150);
+newRank("PetalAV","HancockBV",270,40);
+newRank("MadisonAV","RichtonAV",310,30);
+newRank("RosaScottAJV","CHECHAJV",240,170);
+newRank("MadisonCJV","RichtonBJV",290,40);
+//Varsity Playoffs
+//Varsity Quarterfinals
+newRank("MadisonAV","HancockCV",290,20);
+newRank("PetalAV","WestJonesAV",300,60);
+newRank("PetalBV","ClintonAV",240,130);
+newRank("HancockAV","MadisonBV",200,130);
+//Varsity Semifinals
+newRank("MadisonAV","HancockAV",360,50);
+newRank("PetalAV","PetalBV",190,120);
+//Varsity Finals
+newRank("MadisonAV","PetalAV",290,90);
+//JV Playoffs
+//JV Semifinals
+newRank("RosaScottAJV","ClintonBJV",190,140);
+newRank("CHECHAJV","MadisonCJV",220,100);
+//JV Final
+newRank("RosaScottAJV","CHECHAJV",190,140);
+console.log("Miss C q V: "+qV[a2]);
+console.log("Miss C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;*/
+c = 0;
 };
 cSet();
 
