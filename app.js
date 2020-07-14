@@ -2946,7 +2946,7 @@ db.collection("teams").doc("NCatholicAV").set({
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("NAlleghenyAV").set({
+db.collection("teams").doc("NAlleghenyHSAV").set({
     name:"N. Allegheny HS A",
     state:"Pennsylvania",
     division:"Varsity",
@@ -3006,13 +3006,6 @@ db.collection("teams").doc("NAlleghenyIntBJV").set({
     name:"N. Allegheny Intermediate B",
     state:"Pennsylvania",
     division:"Junior Varsity",
-    rank:1200,
-games:0
-}),
-db.collection("teams").doc("MadisonAV").set({
-    name:"Madison Central A",
-    state:"Mississippi",
-    division:"Varsity",
     rank:1200,
 games:0
 }),
@@ -4661,6 +4654,7 @@ await newRank("BurleighManorAMS","BurleighManorCMS",430,70);
 //Round 4
 await newRank("GeorgetownDayAV","MontgomeryBlairAV",380,290);
 await newRank("ThomasJeffersonBV","CentennialBV",520,100);
+await newRank("ThomasJeffersonAV","CentennialAV",350,260);
 await newRank("RichardMontgomeryAV","MountVernonAV",500,80);
 await newRank("StAnselmsAV","GlenelgAV",340,290);
 await newRank("McLeanAJV","CentennialEJV",360,120);
