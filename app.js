@@ -3576,7 +3576,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-
+console.log("NorCal Fall C");
 
 
 //Eastern Washington C-Set
@@ -3635,14 +3635,14 @@ await newRank("GonzagaAV","MtSpokaneBV",260,70)
 await newRank("LibbyAJV","EastValleyCJV",210,100);
 await newRank("MtSpokaneCJV","MtSpokaneDJV",140,90);
 //Finals
-//await newRank("await newRank("LibbyAJV","MtSpokaneCJV",1,0);
+//await newRank("LibbyAJV","MtSpokaneCJV",1,0);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-
+console.log("East WA C");
 
 
 //Central Georgia Fall C-Set
@@ -3692,6 +3692,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
+console.log("Central GA C");
 
 
 //Montana C-Set
@@ -3751,7 +3752,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+console.log("MT C");
 
 //West Virginia Fall C-Set
 //Prelims
@@ -3805,7 +3806,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+console.log("WV Fall C");
 
 //Northern New Jersey C-Set
 //Prelims
@@ -3928,7 +3929,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+console.log("North NJ C");
 
 //Northern Illinois C-Set
 //Prelims
@@ -3989,7 +3990,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+console.log("North IL C");
 
 //Greater Dayton C-Set
 //Prelims
@@ -4026,7 +4027,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+console.log("Greater Dayton C");
 
 //Buffalo C-Set
 //Prelims
@@ -4202,7 +4203,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+console.log("South FL Fall C");
 
 //Oahu C-Set
 //Prelims
@@ -4230,7 +4231,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+console.log("Oahu C");
 
 //Greater Knoxville Fall C-Set
 //Prelims
@@ -4266,7 +4267,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+console.log("Greater Knoxville Fall C");
 
 //Eastern Geogia Fall C-Set
 //Prelims
@@ -4343,7 +4344,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//logTR();
+console.log("East GA Fall C");
 
 //Central Florida Fall C-Set
 //Prelims
@@ -4458,6 +4459,7 @@ teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
 //logTR();
+console.log("Central FL C");
 
 //Western Washington C-Set
 //Prelims
@@ -4493,6 +4495,7 @@ teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
 //logTR();
+console.log("West WA C");
 
 //Southern Washington C-Set
 //Prelims
@@ -4541,6 +4544,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
+console.log("South WA C");
 
 //Boston Fall C-Set
 //Prelims
@@ -4597,6 +4601,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
+console.log("Boston Fall C");
 
 
 //Washington DC C-Set
@@ -4708,6 +4713,8 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
+console.log("DC C");
+
 
 //Southern New Jersey C-Set
 //Prelims
@@ -4786,7 +4793,9 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
+console.log("South NJ C");
 
+/*
 //Northwest Illinois C-Set
 //Prelims
 //Round 1
@@ -4847,6 +4856,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
+console.log("NW IL C");
 
 
 //Louisiana Fall C-Set
@@ -4883,6 +4893,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
+console.log("Louisiana Fall C");
 
 
 //Eastern Kentucky C-Set
@@ -4919,6 +4930,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
+console.log("Eastern KY C");
 
 
 //Bergen County C-Set
@@ -4974,6 +4986,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
+console.log("Bergen C");
 
 
 //Lower Hudson C-Set
@@ -5040,6 +5053,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
+console.log("Lower Hudson C");
 
 
 //Delaware C-Set
@@ -5336,7 +5350,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-
+*/
 y = true;
 console.log(y);
 
@@ -6643,6 +6657,7 @@ a = 0;
 b = 0;
 c = 0;
 
+/*
 //Northwest Illinois C-Set
 a2 = a2+1;
 b2 = b2+1;
@@ -7197,6 +7212,9 @@ console.log("Miss C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
 c = 0;
+
+
+*/
 };
 cSet();
 
