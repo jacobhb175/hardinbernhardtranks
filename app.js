@@ -3323,7 +3323,7 @@ async function newRank(A, B, AScore, BScore) {
             sumCV += parseInt(teamAvgCV[m],10);
         };
         let avgCV = sumCV/teamAvgCVLen;
-        console.log("sumCV,teamAvgCVLen,avgCV",sumCV,teamAvgCVLen,avgCV);
+        //console.log("sumCV,teamAvgCVLen,avgCV",sumCV,teamAvgCVLen,avgCV);
         let sum = 0;
         let n;
         let allVLen = allV[a2].length;
@@ -3349,7 +3349,7 @@ async function newRank(A, B, AScore, BScore) {
         for(o = 0; o < teamAvgCJVLen; o++){
             sumCJV += parseInt(teamAvgCJV[o],10);
         };
-        let avgCJV = sumCJV/teamAvgCJV.length;
+        let avgCJV = sumCJV/teamAvgCJVLen;
         let sum = 0;
         let p;
         let allJVLen = allJV[b2].length;
@@ -3638,10 +3638,8 @@ await newRank("MtSpokaneCJV","MtSpokaneDJV",140,90);
 //await newRank("LibbyAJV","MtSpokaneCJV",1,0);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
-teamAvgMS = [];
 console.log("East WA C");
 
 
@@ -3688,10 +3686,8 @@ await newRank("StarrsMillAV","OakMountainAV",260,150);
 await newRank("ChambleeAJV","VeteransBJV",250,40);//Chamblee Charter
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
-teamAvgMS = [];
 console.log("Central GA C");
 
 
@@ -3748,10 +3744,8 @@ await newRank("SkyviewAV","BozemanBV",240,90);
 await newRank("BozemanCJV","SkyviewDJV",110,80);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
-teamAvgMS = [];
 console.log("MT C");
 
 //West Virginia Fall C-Set
@@ -3802,10 +3796,8 @@ await newRank("StAlbansAV","GeorgeWashingtonBV",190,110);
 await newRank("CharlestonAV","StAlbansAV",240,130);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
-teamAvgMS = [];
 console.log("WV Fall C");
 
 //Northern New Jersey C-Set
@@ -3986,10 +3978,8 @@ await newRank("StevensonAV","StevensonCV",390,210);
 await newRank("StevensonEJV","StevensonDJV",290,220);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
-teamAvgMS = [];
 console.log("North IL C");
 
 //Greater Dayton C-Set
@@ -4023,10 +4013,8 @@ await newRank("BeavercreekAV","GeorgeWashingtonAV",320,290);
 await newRank("BeavercreekCJV","TippecanoeBJV",220,20);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
-teamAvgMS = [];
 console.log("Greater Dayton C");
 
 //Buffalo C-Set
@@ -4066,10 +4054,8 @@ await newRank("IroquoisAV","NicholsAV",200,180);
 await newRank("NicholsBV","IroquoisAV",250,140);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
-teamAvgMS = [];
 //logTR();
 
 //South Florida Fall C-Set
@@ -4199,10 +4185,8 @@ await newRank("PalmettoPJV","BelenCJV",240,70);
 await newRank("RansomCJV","PalmettoPJV",340,90);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
-teamAvgMS = [];
 console.log("South FL Fall C");
 
 //Oahu C-Set
@@ -4226,11 +4210,7 @@ await newRank("IolaniAV","PunahouBV",380,120);
 await newRank("PunahouAV","PunahouBV",200,160);
 await newRank("IolaniAV","IolaniBV",260,210);
 allV.push(teamAvgV);
-allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
 console.log("Oahu C");
 
 //Greater Knoxville Fall C-Set
@@ -4262,11 +4242,7 @@ await newRank("MaryvilleAV","PigeonForgeAV",400,160);
 //Finals
 await newRank("MaryvilleAV","GatlinburgAV",230,140);
 allV.push(teamAvgV);
-allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
-teamAvgJV = [];
-teamAvgMS = [];
 console.log("Greater Knoxville Fall C");
 
 //Eastern Geogia Fall C-Set
@@ -4340,10 +4316,8 @@ await newRank("ChattahoocheeBJV","FultonAJV",210,160);
 await newRank("ChattahoocheeBJV","HermannAJV",280,140);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
-teamAvgMS = [];
 console.log("East GA Fall C");
 
 //Central Florida Fall C-Set
@@ -4490,10 +4464,8 @@ await newRank("HolyNamesAV","CentralKitsapAV",300,160);
 await newRank("CentralKitsapAV","HolyNamesAV",250,150);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
-teamAvgMS = [];
 //logTR();
 console.log("West WA C");
 
@@ -4539,10 +4511,8 @@ await newRank("JesuitAV","WestviewAV",220,180);
 //Finals
 await newRank("StollerHMS","StollerKMS",240,200);
 allV.push(teamAvgV);
-allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
 teamAvgV = [];
-teamAvgJV = [];
 teamAvgMS = [];
 console.log("South WA C");
 
@@ -4597,10 +4567,8 @@ await newRank("BostonLatinAV","PhillipsExeterAV",300,170);
 await newRank("PhillipsExeterBJV","LexingtonBJV",240,180);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
-teamAvgMS = [];
 console.log("Boston Fall C");
 
 
@@ -4789,10 +4757,8 @@ await newRank("WiltonAnjoAJV","MillburnMSAJV",200,120);
 await newRank("PrincetonCJV","WiltonAnjoAJV",290,170);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
-allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
-teamAvgMS = [];
 console.log("South NJ C");
 
 /*
@@ -5356,6 +5322,9 @@ console.log(y);
 
 
 //Northern California Fall C-Set
+a = 0;
+b = 0;
+c = 0;
 a2 = 0;
 b2 = 0;
 c2 = 0;
@@ -6072,6 +6041,8 @@ a = 0;
 b = 0;
 c = 0;
 
+console.log(qV,qJV);
+
 //Oahu C-Set
 a2 = a2+1;
 //Prelims
@@ -6097,6 +6068,8 @@ console.log("Oahu C q V: "+qV[a2]);
 a = 0;
 b = 0;
 c = 0;
+
+console.log(qV,qJV);
 
 //Greater Knoxville Fall C-Set
 a2 = a2+1;
@@ -6131,6 +6104,8 @@ console.log("Knoxville C q V: "+qV[a2]);
 a = 0;
 b = 0;
 c = 0;
+
+console.log(qV,qJV);
 
 //Eastern Geogia Fall C-Set
 a2 = a2+1;
@@ -6208,6 +6183,8 @@ console.log("Eastern GA C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
 c = 0;
+
+console.log(qV,qJV);
 
 //Central Florida Fall C-Set
 a2 = a2+1;
@@ -6325,6 +6302,8 @@ a = 0;
 b = 0;
 c = 0;
 
+console.log(qV,qJV);
+
 //Western Washington C-Set
 a2 = a2+1;
 b2 = b2+1;
@@ -6359,6 +6338,7 @@ console.log("West WA C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
 c = 0;
+console.log(qV,qJV);
 
 //Southern Washington C-Set
 a2 = a2+1;
@@ -6407,6 +6387,7 @@ console.log("South WA C q V: "+qV[a2]);
 a = 0;
 b = 0;
 c = 0;
+console.log(qV,qJV);
 
 //Boston Fall C-Set
 a2 = a2+1;
@@ -6465,6 +6446,7 @@ console.log("Boston C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
 c = 0;
+console.log(qV,qJV);
 
 //Washington DC C-Set
 a2 = a2+1;
@@ -6577,6 +6559,7 @@ console.log("DC C q MS: "+qMS[c2]);
 a = 0;
 b = 0;
 c = 0;
+console.log(qV,qJV);
 
 //Southern New Jersey C-Set
 a2 = a2+1;
@@ -6656,6 +6639,7 @@ console.log("South NJ C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
 c = 0;
+console.log(qV,qJV);
 
 /*
 //Northwest Illinois C-Set
