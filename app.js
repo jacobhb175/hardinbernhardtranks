@@ -3446,8 +3446,14 @@ async function nRank(A,B,AScore,BScore){
                             await docRefB.get().then(async function(doc) {
                                 if (doc.exists) {
                                     let gamesB=doc.data().games;
-                                    let gA = 10/gamesA;
-                                    let gB = 10/gamesB;
+                                    let gA = 1;
+                                    let gB = 1;/*
+                                    if (gamesA > 5) {
+                                        gA = 5/(gamesA-5);
+                                    }
+                                    if (gamesB > 5) {
+                                        gB = 5/(gamesB-5);
+                                    }*/
                                     rankA = rankA + gA*q*K*((AScore/((AScore+BScore)*avgT))-expScoreA);
                                     rankB = rankB + gB*q*K*((BScore/((AScore+BScore)*avgT))-expScoreB);
                                     //console.log("rankAB",rankA,rankB);
