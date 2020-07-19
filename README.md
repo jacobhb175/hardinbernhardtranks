@@ -2,11 +2,11 @@
 Hardin-Bernhardt Ranks is a new way of ranking NHBB teams using a modified version of the Go Elo formula that takes into account strength of field and margin of victory.
 
 ## The Formulas
-Expected Score:
-expScoreA = 1/((Math.E^((B.rank-A.rank)/A.rank))+1)
+Expected Score Formula:
+expected score of A = 1 / ((e^((rank of B - rank of A) / rank of A)) + 1)
 
-New Rank:
-A.rank = A.rank + q*K*((AScore/((AScore+BScore)*avgT))-expScoreA)
+New Rank Formula:
+new rank of A = rank of A + q * K * ((score of A / ((score of A + score of B) * average T-value)) - expected score of A)
 
 ## The Variables
 The q-value is used to represent strength of field at a tournament and intended to help improve elo as a measure of skill unaffected by the field a team is up against, and thus more useful and accurate as a comparison between teams from different regions. It is calculated as a ratio of average total points scored per game at a given tournament : average total points scored per game on a given set, and is calculated independently the for MS, JV, and Varsity fields.
@@ -15,6 +15,8 @@ The T-value is used to account for the inherent issues in equating the percent c
 ## List of Tournaments
 Tournament|Date|Set Played|Status|Varsity q-Value|JV q-Value
 ---|---|---|---|---|---
+
+Eastern Iowa|1/28/2020|C|Complete||
 Nevada|1/26/2020|C|Complete||
 Mississippi Winter|1/25/2020|C|Complete||
 Western Pennsylvania|1/25/2020|C|Complete|
