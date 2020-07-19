@@ -15,7 +15,7 @@ The T-value is used to account for the inherent issues in equating the percent c
 ## List of Tournaments
 Tournament|Date|Set Played|Status|Varsity q-Value|JV q-Value
 ---|---|---|---|---|---
-
+Upper Hudson|2/1/2020|C|Complete||
 Eastern Iowa|1/28/2020|C|Complete||
 Nevada|1/26/2020|C|Complete||
 Mississippi Winter|1/25/2020|C|Complete||
