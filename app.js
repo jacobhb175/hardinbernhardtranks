@@ -17,7 +17,7 @@ server.listen(port, hostname, () => {
 
 
 // Your web app's Firebase configuration
-import {firebaseConfig} from './apiKey.js';
+
 //firebase.initializeApp(firebaseConfig);
 //firebase.analytics();
 
@@ -26,11 +26,7 @@ import {firebaseConfig} from './apiKey.js';
 //require("firebase/firestore");
 
 // Initialize Cloud Firestore through Firebase
-firebase.initializeApp({
-    apiKey: 'AIzaSyDXM_FBLEWgMGLFMbV_nL9ScHBqsE2D9Dk',
-    authDomain: 'hardinbernhardtranks.firebaseapp.com',
-    projectId: 'hardinbernhardtranks'
-});
+
   
 var db = firebase.firestore();
 
