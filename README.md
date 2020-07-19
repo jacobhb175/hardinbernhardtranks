@@ -13,9 +13,10 @@ The q-value is used to represent strength of field at a tournament and intended 
 The T-value is used to account for the inherent issues in equating the percent chance of a given winning to the percent of total points that team will score. It is calculated as a ratio of the percent of total points scored by a given team : the percent chance given to that team to win. The g-value is used to account for the disparity in game numbers between tournaments, and is set equal to 10/games played.
 
 ## List of Tournaments
-Tournament|Date|Set Played|Status|Varsity q-Value| JV q-Value
+Tournament|Date|Set Played|Status|Varsity q-Value|JV q-Value
 ---|---|---|---|---|---
-Mississippi Winter||C|Complete||
+Nevada|1/26/2020|C|Complete||
+Mississippi Winter|1/25/2020|C|Complete||
 Western Pennsylvania|1/25/2020|C|Complete|
 Southwestern Illinois|1/20/2020|C|Complete|1.003
 Florida Panhandle|1/18/2020|C|Complete|0.959
