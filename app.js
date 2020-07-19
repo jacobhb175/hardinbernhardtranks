@@ -17,7 +17,7 @@ server.listen(port, hostname, () => {
 
 
 // Your web app's Firebase configuration
-
+import {firebaseConfig} from './apiKey.js';
 //firebase.initializeApp(firebaseConfig);
 //firebase.analytics();
 
