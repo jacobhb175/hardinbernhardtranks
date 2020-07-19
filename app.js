@@ -15,7 +15,32 @@ server.listen(port, hostname, () => {
 });
 */
 
+// Your web app's Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyDXM_FBLEWgMGLFMbV_nL9ScHBqsE2D9Dk",
+    authDomain: "hardinbernhardtranks.firebaseapp.com",
+    databaseURL: "https://hardinbernhardtranks.firebaseio.com",
+    projectId: "hardinbernhardtranks",
+    storageBucket: "hardinbernhardtranks.appspot.com",
+    messagingSenderId: "498587943256",
+    appId: "1:498587943256:web:979cc52a0053224122a52d",
+    measurementId: "G-FHXST7T8VQ"
+};
+//firebase.initializeApp(firebaseConfig);
+//firebase.analytics();
 
+//const firebase = require("firebase");
+// Required for side-effects
+//require("firebase/firestore");
+
+// Initialize Cloud Firestore through Firebase
+firebase.initializeApp({
+    apiKey: 'AIzaSyDXM_FBLEWgMGLFMbV_nL9ScHBqsE2D9Dk',
+    authDomain: 'hardinbernhardtranks.firebaseapp.com',
+    projectId: 'hardinbernhardtranks'
+});
+  
+var db = firebase.firestore();
 
 
 
@@ -3088,6 +3113,34 @@ db.collection("teams").doc("CHECHAJV").set({
     division:"Junior Varsity",
     rank:1200,
 games:0
+}),
+db.collection("teams").doc("ClarkAV").set({
+    name:"Clark A",
+    state:"Nevada",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("ClarkBJV").set({
+    name:"Clark B",
+    state:"Nevada",
+    division:"Junior Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("LibertyAV").set({
+    name:"Liberty A",
+    state:"Nevada",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("LibertyBJV").set({
+    name:"Liberty B",
+    state:"Nevada",
+    division:"Junior Varsity",
+    rank:1200,
+games:0
 })
 
 /*
@@ -5219,72 +5272,92 @@ teamAvgV = [];
 teamAvgJV = [];
 
 
-//Mississippi Winter
+//Mississippi Winter C-Set
 //Prelims
 //Round 1
-newRank("MadisonAV","MadisonBV",340,100);
-newRank("HancockAV","PetalBV",230,180);
-newRank("HancockCV","HancockBV",120,100);
-newRank("ClintonAV","WestJonesAV",210,190);
-newRank("PetalAV","RichtonAV",390,60);
-newRank("CHECHAJV","RichtonBJV",200,190);
-newRank("MadisonCJV","ClintonBJV",221,220);
+await newRank("MadisonAV","MadisonBV",340,100);
+await newRank("HancockAV","PetalBV",230,180);
+await newRank("HancockCV","HancockBV",120,100);
+await newRank("ClintonAV","WestJonesAV",210,190);
+await newRank("PetalAV","RichtonAV",390,60);
+await newRank("CHECHAJV","RichtonBJV",200,190);
+await newRank("MadisonCJV","ClintonBJV",221,220);
 //Round 2
-newRank("MadisonAV","HancockBV",470,30);
-newRank("PetalAV","WestJonesAV",270,120);
-newRank("PetalBV","RichtonAV",260,90);
-newRank("HancockAV","HancockCV",280,110);
-newRank("ClintonBJV","RichtonBJV",240,80);
-newRank("MadisonCJV","RosaScottAJV",260,160);
+await newRank("MadisonAV","HancockBV",470,30);
+await newRank("PetalAV","WestJonesAV",270,120);
+await newRank("PetalBV","RichtonAV",260,90);
+await newRank("HancockAV","HancockCV",280,110);
+await newRank("ClintonBJV","RichtonBJV",240,80);
+await newRank("MadisonCJV","RosaScottAJV",260,160);
 //Round 3
-newRank("PetalBV","HancockBV",260,70);
-newRank("MadisonBV","HancockCV",390,50);
-newRank("MadisonAV","WestJonesAV",360,120);
-newRank("PetalAV","HancockAV",310,150);
-newRank("ClintonAV","RichtonAV",330,40);
-newRank("CHECHAJV","ClintonBJV",240,150);
-newRank("RosaScottAJV","RichtonBJV",360,40);
+await newRank("PetalBV","HancockBV",260,70);
+await newRank("MadisonBV","HancockCV",390,50);
+await newRank("MadisonAV","WestJonesAV",360,120);
+await newRank("PetalAV","HancockAV",310,150);
+await newRank("ClintonAV","RichtonAV",330,40);
+await newRank("CHECHAJV","ClintonBJV",240,150);
+await newRank("RosaScottAJV","RichtonBJV",360,40);
 //Round 4
-newRank("MadisonAV","HancockAV",300,120);
-newRank("HancockCV","RichtonAV",140,110);
-newRank("ClintonAV","HancockBV",180,50);
-newRank("PetalAV","MadisonBV",290,130);
-newRank("PetalBV","WestJonesAV",250,120);
-newRank("RosaScottAJV","ClintonBJV",260,150);
-newRank("CHECHAJV","MadisonCJV",260,140);
+await newRank("MadisonAV","HancockAV",300,120);
+await newRank("HancockCV","RichtonAV",140,110);
+await newRank("ClintonAV","HancockBV",180,50);
+await newRank("PetalAV","MadisonBV",290,130);
+await newRank("PetalBV","WestJonesAV",250,120);
+await newRank("RosaScottAJV","ClintonBJV",260,150);
+await newRank("CHECHAJV","MadisonCJV",260,140);
 //Round 5
-newRank("HancockAV","ClintonAV",200,160);
-newRank("WestJonesAV","HancockCV",210,20);
-newRank("MadisonBV","PetalBV",190,150);
-newRank("PetalAV","HancockBV",270,40);
-newRank("MadisonAV","RichtonAV",310,30);
-newRank("RosaScottAJV","CHECHAJV",240,170);
-newRank("MadisonCJV","RichtonBJV",290,40);
+await newRank("HancockAV","ClintonAV",200,160);
+await newRank("WestJonesAV","HancockCV",210,20);
+await newRank("MadisonBV","PetalBV",190,150);
+await newRank("PetalAV","HancockBV",270,40);
+await newRank("MadisonAV","RichtonAV",310,30);
+await newRank("RosaScottAJV","CHECHAJV",240,170);
+await newRank("MadisonCJV","RichtonBJV",290,40);
 //Varsity Playoffs
 //Varsity Quarterfinals
-newRank("MadisonAV","HancockCV",290,20);
-newRank("PetalAV","WestJonesAV",300,60);
-newRank("PetalBV","ClintonAV",240,130);
-newRank("HancockAV","MadisonBV",200,130);
+await newRank("MadisonAV","HancockCV",290,20);
+await newRank("PetalAV","WestJonesAV",300,60);
+await newRank("PetalBV","ClintonAV",240,130);
+await newRank("HancockAV","MadisonBV",200,130);
 //Varsity Semifinals
-newRank("MadisonAV","HancockAV",360,50);
-newRank("PetalAV","PetalBV",190,120);
+await newRank("MadisonAV","HancockAV",360,50);
+await newRank("PetalAV","PetalBV",190,120);
 //Varsity Finals
-newRank("MadisonAV","PetalAV",290,90);
+await newRank("MadisonAV","PetalAV",290,90);
 //JV Playoffs
 //JV Semifinals
-newRank("RosaScottAJV","ClintonBJV",190,140);
-newRank("CHECHAJV","MadisonCJV",220,100);
+await newRank("RosaScottAJV","ClintonBJV",190,140);
+await newRank("CHECHAJV","MadisonCJV",220,100);
 //JV Final
-newRank("RosaScottAJV","CHECHAJV",190,140);
+await newRank("RosaScottAJV","CHECHAJV",190,140);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 teamAvgV = [];
 teamAvgJV = [];
 
 
+//Nevada C-Set
+//Round 1
+await newRank("ClarkBJV","LibertyAV",430,0);
+await newRank("ClarkAV","LibertyBJV",480,60);
+//Round 2
+await newRank("LibertyBJV","LibertyAV",290,0);
+await newRank("ClarkAV","ClarkBJV",540,90);
+//Round 3
+await newRank("ClarkBJV","LibertyBJV",300,130);
+await newRank("ClarkAV","LibertyAV",580,0);
+allV.push(teamAvgV);
+allJV.push(teamAvgJV);
+teamAvgV = [];
+teamAvgJV = [];
+
+
+
+
 y = true;
 console.log(y);
+
+
 
 
 //Northern California Fall C-Set
@@ -7102,63 +7175,79 @@ a2 = a2+1;
 b2 = b2+1;
 //Prelims
 //Round 1
-newRank("MadisonAV","MadisonBV",340,100);
-newRank("HancockAV","PetalBV",230,180);
-newRank("HancockCV","HancockBV",120,100);
-newRank("ClintonAV","WestJonesAV",210,190);
-newRank("PetalAV","RichtonAV",390,60);
-newRank("CHECHAJV","RichtonBJV",200,190);
-newRank("MadisonCJV","ClintonBJV",221,220);
+await newRank("MadisonAV","MadisonBV",340,100);
+await newRank("HancockAV","PetalBV",230,180);
+await newRank("HancockCV","HancockBV",120,100);
+await newRank("ClintonAV","WestJonesAV",210,190);
+await newRank("PetalAV","RichtonAV",390,60);
+await newRank("CHECHAJV","RichtonBJV",200,190);
+await newRank("MadisonCJV","ClintonBJV",221,220);
 //Round 2
-newRank("MadisonAV","HancockBV",470,30);
-newRank("PetalAV","WestJonesAV",270,120);
-newRank("PetalBV","RichtonAV",260,90);
-newRank("HancockAV","HancockCV",280,110);
-newRank("ClintonBJV","RichtonBJV",240,80);
-newRank("MadisonCJV","RosaScottAJV",260,160);
+await newRank("MadisonAV","HancockBV",470,30);
+await newRank("PetalAV","WestJonesAV",270,120);
+await newRank("PetalBV","RichtonAV",260,90);
+await newRank("HancockAV","HancockCV",280,110);
+await newRank("ClintonBJV","RichtonBJV",240,80);
+await newRank("MadisonCJV","RosaScottAJV",260,160);
 //Round 3
-newRank("PetalBV","HancockBV",260,70);
-newRank("MadisonBV","HancockCV",390,50);
-newRank("MadisonAV","WestJonesAV",360,120);
-newRank("PetalAV","HancockAV",310,150);
-newRank("ClintonAV","RichtonAV",330,40);
-newRank("CHECHAJV","ClintonBJV",240,150);
-newRank("RosaScottAJV","RichtonBJV",360,40);
+await newRank("PetalBV","HancockBV",260,70);
+await newRank("MadisonBV","HancockCV",390,50);
+await newRank("MadisonAV","WestJonesAV",360,120);
+await newRank("PetalAV","HancockAV",310,150);
+await newRank("ClintonAV","RichtonAV",330,40);
+await newRank("CHECHAJV","ClintonBJV",240,150);
+await newRank("RosaScottAJV","RichtonBJV",360,40);
 //Round 4
-newRank("MadisonAV","HancockAV",300,120);
-newRank("HancockCV","RichtonAV",140,110);
-newRank("ClintonAV","HancockBV",180,50);
-newRank("PetalAV","MadisonBV",290,130);
-newRank("PetalBV","WestJonesAV",250,120);
-newRank("RosaScottAJV","ClintonBJV",260,150);
-newRank("CHECHAJV","MadisonCJV",260,140);
+await newRank("MadisonAV","HancockAV",300,120);
+await newRank("HancockCV","RichtonAV",140,110);
+await newRank("ClintonAV","HancockBV",180,50);
+await newRank("PetalAV","MadisonBV",290,130);
+await newRank("PetalBV","WestJonesAV",250,120);
+await newRank("RosaScottAJV","ClintonBJV",260,150);
+await newRank("CHECHAJV","MadisonCJV",260,140);
 //Round 5
-newRank("HancockAV","ClintonAV",200,160);
-newRank("WestJonesAV","HancockCV",210,20);
-newRank("MadisonBV","PetalBV",190,150);
-newRank("PetalAV","HancockBV",270,40);
-newRank("MadisonAV","RichtonAV",310,30);
-newRank("RosaScottAJV","CHECHAJV",240,170);
-newRank("MadisonCJV","RichtonBJV",290,40);
+await newRank("HancockAV","ClintonAV",200,160);
+await newRank("WestJonesAV","HancockCV",210,20);
+await newRank("MadisonBV","PetalBV",190,150);
+await newRank("PetalAV","HancockBV",270,40);
+await newRank("MadisonAV","RichtonAV",310,30);
+await newRank("RosaScottAJV","CHECHAJV",240,170);
+await newRank("MadisonCJV","RichtonBJV",290,40);
 //Varsity Playoffs
 //Varsity Quarterfinals
-newRank("MadisonAV","HancockCV",290,20);
-newRank("PetalAV","WestJonesAV",300,60);
-newRank("PetalBV","ClintonAV",240,130);
-newRank("HancockAV","MadisonBV",200,130);
+await newRank("MadisonAV","HancockCV",290,20);
+await newRank("PetalAV","WestJonesAV",300,60);
+await newRank("PetalBV","ClintonAV",240,130);
+await newRank("HancockAV","MadisonBV",200,130);
 //Varsity Semifinals
-newRank("MadisonAV","HancockAV",360,50);
-newRank("PetalAV","PetalBV",190,120);
+await newRank("MadisonAV","HancockAV",360,50);
+await newRank("PetalAV","PetalBV",190,120);
 //Varsity Finals
-newRank("MadisonAV","PetalAV",290,90);
+await newRank("MadisonAV","PetalAV",290,90);
 //JV Playoffs
 //JV Semifinals
-newRank("RosaScottAJV","ClintonBJV",190,140);
-newRank("CHECHAJV","MadisonCJV",220,100);
+await newRank("RosaScottAJV","ClintonBJV",190,140);
+await newRank("CHECHAJV","MadisonCJV",220,100);
 //JV Final
-newRank("RosaScottAJV","CHECHAJV",190,140);
+await newRank("RosaScottAJV","CHECHAJV",190,140);
 console.log("Miss C q V: "+qV[a2]);
 console.log("Miss C q JV: "+qJV[b2]);
+a = 0;
+b = 0;
+c = 0;
+
+a2 = a2+1;
+b2 = b2+1;
+await newRank("ClarkBJV","LibertyAV",430,0);
+await newRank("ClarkAV","LibertyBJV",480,60);
+//Round 2
+await newRank("LibertyBJV","LibertyAV",290,0);
+await newRank("ClarkAV","ClarkBJV",540,90);
+//Round 3
+await newRank("ClarkBJV","LibertyBJV",300,130);
+await newRank("ClarkAV","LibertyAV",580,0);
+console.log("Nevada C q V: "+qV[a2]);
+console.log("Nevada C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
 c = 0;
