@@ -7442,6 +7442,40 @@ a = 0;
 b = 0;
 c = 0;
 
+a2 = a2+1;
+b2 = b2+1;
+//Upper Hudson C-Set
+//Round 1
+await newRank("BethlehemAV","BerlinBJV",490,80);
+await newRank("BethlehemBJV","LaurensAV",370,80);
+await newRank("LoyolaAV","BethlehemMSJV",310,220);
+//Round 2
+await newRank("BethlehemBJV","BerlinBJV",260,140);
+await newRank("BethlehemAV","LoyolaAV",360,190);
+await newRank("BerlinAV","LaurensAV",360,190);
+//Round 3
+await newRank("BethlehemBJV","BerlinAV",430,70);
+await newRank("BethlehemMSJV","BerlinBJV",360,110);
+await newRank("LoyolaAV","LaurensAV",340,70);
+//Round 4
+await newRank("LoyolaAV","BerlinBJV",280,80);
+await newRank("BethlehemAV","BethlehemBJV",400,160);
+await newRank("BethlehemMSJV","BerlinAV",280,120);
+//Round 5
+await newRank("BethlehemAV","LaurensAV",390,90);
+await newRank("LoyolaAV","BerlinAV",280,140);
+await newRank("BethlehemBJV","BethlehemMSJV",360,90);
+//Playoffs
+//Varsity Final
+await newRank("BethlehemAV","LoyolaAV",210,170);
+await newRank("BethlehemBJV","BethlehemMSJV",240,110);
+console.log("Upper Hudson C q V: "+qV[a2]);
+console.log("Upper Hudson C q JV: "+qJV[b2]);
+a = 0;
+b = 0;
+c = 0;
+
+
 
 };
 cSet();
