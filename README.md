@@ -2,10 +2,10 @@
 Hardin-Bernhardt Ranks is a new way of ranking NHBB teams using a modified version of the Go Elo formula that takes into account strength of field and margin of victory.
 
 ## The Formulas
-Expected Score Formula:
+### Expected Score Formula
 expected score of A = 1 / ((e^((rank of B - rank of A) / rank of A)) + 1)
 
-New Rank Formula:
+### New Rank Formula
 new rank of A = rank of A + q * K * ((score of A / ((score of A + score of B) * average T-value)) - expected score of A)
 
 ## The Variables
