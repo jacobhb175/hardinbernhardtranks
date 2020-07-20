@@ -56,6 +56,7 @@ Northern California Fall|10/27/2019|C|Complete|1.222|1.212
 
 ### Varsity Rankings
 Ranking|Team|State|Points
+---|---|---|---
 1.|Millburn A|New Jersey|2105.886
 2.|Arcadia A|California|2092.585
 3.|Russellville A|Arkansas|2037.378
@@ -69,6 +70,7 @@ Ranking|Team|State|Points
 
 ### Junior Varsity Rankings
 Ranking|Team|State|Points
+---|---|---|---
 1.|Hunter College High B||New York|2073.902
 2.|Churchill A|New Jersey|2041.770
 3.|Methacton C|Pennsylvania|1899.636
