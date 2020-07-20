@@ -3094,148 +3094,226 @@ db.collection("teams").doc("ClarkAV").set({
     state:"Nevada",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("ClarkBJV").set({
     name:"Clark B",
     state:"Nevada",
     division:"Junior Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("LibertyAV").set({
     name:"Liberty A",
     state:"Nevada",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("LibertyBJV").set({
     name:"Liberty B",
     state:"Nevada",
     division:"Junior Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("PleasantValleyAV").set({
     name:"Pleasant Valley A",
     state:"Iowa",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("PleasantValleyBJV").set({
     name:"Pleasant Valley B",
     state:"Iowa",
     division:"Junior Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("CentralAV").set({
     name:"Central A",
     state:"Iowa",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("CentralBJV").set({
     name:"Central B",
     state:"Iowa",
     division:"Junior Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("SherrardAV").set({
     name:"Sherrard A",
     state:"Iowa",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("BethlehemAV").set({
     name:"Bethlehem A",
     state:"New York",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("BethlehemBJV").set({
     name:"Bethlehem B",
     state:"New York",
     division:"Junior Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("BethlehemMSJV").set({
     name:"Bethlehem MS",
     state:"New York",
     division:"Junior Varsity",
     rank:1200,
-games:0
+    ames:0
 }),
 db.collection("teams").doc("BerlinAV").set({
     name:"Berlin A",
     state:"New York",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("BerlinBJV").set({
     name:"Berlin B",
     state:"New York",
     division:"Junior Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("Loyola AV").set({
     name:"Loyola A",
     state:"New York",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("LaurensAV").set({
     name:"Laurens A",
     state:"New York",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("ParklandAV").set({
     name:"Parkland A",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("WyomingAV").set({
     name:"Wyoming Area A",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("WyomingBV").set({
     name:"Wyoming Area B",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("WyomingCV").set({
     name:"Wyoming Area V",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
 }),
 db.collection("teams").doc("NanticokeAV").set({
     name:"Greater Nanticoke A",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
-games:0
+    games:0
+}),
+db.collection("teams").doc("NewtonNorthAV").set({
+    name:"Newton North A",
+    state:"Massachusetts",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("NewtonNorthBV").set({
+    name:"Newton North B",
+    state:"Massachusetts",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("NewtonNorthCV").set({
+    name:"Newton North C",
+    state:"Massachusetts",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("NewtonSouthAV").set({
+    name:"Newton South A",
+    state:"Massachusetts",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("NewtonSouthBV").set({
+    name:"Newton South B",
+    state:"Massachusetts",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("NewtonSouthCJV").set({
+    name:"Newton South C",
+    state:"Massachusetts",
+    division:"Junior Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("HanoverAV").set({
+    name:"Hanover A",
+    state:"New Hampshire",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("PlymouthAV").set({
+    name:"Plymouth A",
+    state:"New Hampshire",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("PlymouthBJV").set({
+    name:"Plymouth B",
+    state:"New Hampshire",
+    division:"JuniorVarsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("PlymouthAV").set({
+    name:"Plymouth A",
+    state:"New Hampshire",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("SouthBurlingtonAV").set({
+    name:"South Burlington A",
+    state:"Vermont",
+    division:"Varsity",
+    rank:1200,
+    games:0
 })
+
 
 
 //End of team list
@@ -5522,6 +5600,51 @@ allV.push(teamAvgV);
 teamAvgV = [];
 
 
+//New Hampshire C-Set
+//Round 1
+await newRank("PlymouthBJV","NewtonSouthBV",210,170);
+await newRank("SouthBurlingtonAV","NewtonSouthCJV",400,120);
+await newRank("HanoverAV","NewtonNorthBV",390,150);
+await newRank("NewtonNorthAV","NewtonSouthAV",440,110);
+await newRank("PlymouthAV","NewtonNorthCV",410,140);
+//Round 2
+await newRank("NewtonNorthBV","NewtonSouthAV",230,190);
+await newRank("NewtonNorthCV","NewtonSouthBV",230,170);
+await newRank("NewtonNorthAV","PlymouthBJV",350,160);
+await newRank("HanoverAV","NewtonSouthCJV",390,100);
+await newRank("PlymouthAV","SouthBurlingtonAV",380,170);
+//Round 3
+await newRank("NewtonNorthAV","HanoverAV",290,250);
+await newRank("PlymouthAV","NewtonNorthAV",300,170);
+await newRank("NewtonNorthBV","NewtonSouthBV",390,60);
+await newRank("SouthBurlingtonAV","NewtonNorthCV",260,250);
+await newRank("NewtonSouthCJV","PlymouthBJV",260,160);
+//Round 4
+await newRank("PlymouthAV","NewtonSouthCJV",420,110);
+await newRank("HanoverAV","NewtonNorthCV",470,110);
+await newRank("NewtonNorthAV","NewtonSouthBV",490,90);
+await newRank("NewtonSouthAV","PlymouthBJV",360,140);
+await newRank("SouthBurlingtonAV","NewtonNorthBV",260,240);
+//Round 5
+await newRank("SouthBurlingtonAV","NewtonSouthAV",300,170);
+await newRank("NewtonNorthBV","PlymouthBJV",320,120);
+await newRank("NewtonNorthCV","NewtonSouthCJV",200,180);
+await newRank("NewtonNorthAV","PlymouthAV",370,140);
+await newRank("HanoverAV","NewtonSouthBV",350,70);
+//Playoffs
+//Semifinals
+await newRank("NewtonNorthAV","SouthBurlingtonAV",380,150);
+await newRank("PlymouthAV","HanoverAV",280,250);
+//Varsity Finals
+await newRank("NewtonNorthAV","PlymouthAV",330,160);
+//JV Finals
+await newRank("PlymouthBJV","NewtonSouthCJV",160,110);
+allV.push(teamAvgV);
+allJV.push(teamAvgJV);
+teamAvgV = [];
+teamAvgJV = [];
+
+
 y = true;
 console.log(y);
 
@@ -7402,7 +7525,7 @@ console.log("Miss C q V: "+qV[a2]);
 console.log("Miss C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
+
 
 a2 = a2+1;
 b2 = b2+1;
@@ -7420,7 +7543,7 @@ console.log("Nevada C q V: "+qV[a2]);
 console.log("Nevada C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
+
 
 a2 = a2+1;
 b2 = b2+1;
@@ -7440,7 +7563,7 @@ console.log("Eastern Iowa C q V: "+qV[a2]);
 console.log("Eastern Iowa C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
+
 
 a2 = a2+1;
 b2 = b2+1;
@@ -7473,7 +7596,7 @@ console.log("Upper Hudson C q V: "+qV[a2]);
 console.log("Upper Hudson C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
+
 
 a2 = a2+1;
 //Northern Pennsylvania C-Set
@@ -7498,8 +7621,53 @@ await newRank("NanticokeAV","WyomingCV",220,120);
 await newRank("ParklandAV","WyomingBV",220,110);
 console.log("Northern Pennsylvania C q V: "+qV[a2]);
 a = 0;
+
+
+a2 = a2+1;
+b2 = b2+1;
+//New Hampshire C-Set
+//Round 1
+await newRank("PlymouthBJV","NewtonSouthBV",210,170);
+await newRank("SouthBurlingtonAV","NewtonSouthCJV",400,120);
+await newRank("HanoverAV","NewtonNorthBV",390,150);
+await newRank("NewtonNorthAV","NewtonSouthAV",440,110);
+await newRank("PlymouthAV","NewtonNorthCV",410,140);
+//Round 2
+await newRank("NewtonNorthBV","NewtonSouthAV",230,190);
+await newRank("NewtonNorthCV","NewtonSouthBV",230,170);
+await newRank("NewtonNorthAV","PlymouthBJV",350,160);
+await newRank("HanoverAV","NewtonSouthCJV",390,100);
+await newRank("PlymouthAV","SouthBurlingtonAV",380,170);
+//Round 3
+await newRank("NewtonNorthAV","HanoverAV",290,250);
+await newRank("PlymouthAV","NewtonNorthAV",300,170);
+await newRank("NewtonNorthBV","NewtonSouthBV",390,60);
+await newRank("SouthBurlingtonAV","NewtonNorthCV",260,250);
+await newRank("NewtonSouthCJV","PlymouthBJV",260,160);
+//Round 4
+await newRank("PlymouthAV","NewtonSouthCJV",420,110);
+await newRank("HanoverAV","NewtonNorthCV",470,110);
+await newRank("NewtonNorthAV","NewtonSouthBV",490,90);
+await newRank("NewtonSouthAV","PlymouthBJV",360,140);
+await newRank("SouthBurlingtonAV","NewtonNorthBV",260,240);
+//Round 5
+await newRank("SouthBurlingtonAV","NewtonSouthAV",300,170);
+await newRank("NewtonNorthBV","PlymouthBJV",320,120);
+await newRank("NewtonNorthCV","NewtonSouthCJV",200,180);
+await newRank("NewtonNorthAV","PlymouthAV",370,140);
+await newRank("HanoverAV","NewtonSouthBV",350,70);
+//Playoffs
+//Semifinals
+await newRank("NewtonNorthAV","SouthBurlingtonAV",380,150);
+await newRank("PlymouthAV","HanoverAV",280,250);
+//Varsity Finals
+await newRank("NewtonNorthAV","PlymouthAV",330,160);
+//JV Finals
+await newRank("PlymouthBJV","NewtonSouthCJV",160,110);
+console.log("NH C q V: "+qV[a2]);
+console.log("NH C q JV: "+qJV[b2]);
+a = 0;
 b = 0;
-c = 0;
 
 };
 cSet();
