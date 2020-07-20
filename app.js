@@ -7475,7 +7475,31 @@ a = 0;
 b = 0;
 c = 0;
 
-
+a2 = a2+1;
+//Northern Pennsylvania C-Set
+//Prelims
+//Round 1
+await newRank("WyomingBV","NanticokeAV",230,190);
+await newRank("ParklandAV","WyomingAV",260,170);
+//Round 2
+await newRank("WyomingBV","WyomingCV",250,130);
+await newRank("WyomingAV","NanticokeAV",270,140);
+//Round 3
+await newRank("WyomingAV","WyomingCV",210,170);
+await newRank("ParklandAV","NanticokeAV",230,200);
+//Round 4
+await newRank("ParklandAV","WyomingCV",300,120);
+await newRank("WyomingAV","WyomingBV",210,200);
+//Round 5
+await newRank("WyomingBV","ParklandAV",230,200);
+await newRank("NanticokeAV","WyomingCV",220,120);
+//Playoffs
+//Finals
+await newRank("ParklandAV","WyomingBV",220,110);
+console.log("Northern Pennsylvania C q V: "+qV[a2]);
+a = 0;
+b = 0;
+c = 0;
 
 };
 cSet();
