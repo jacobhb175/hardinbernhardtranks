@@ -73,7 +73,7 @@ Ranking|Team|State|Points
 ### Junior Varsity Rankings
 Ranking|Team|State|Points
 ---|---|---|---
-1.|Hunter College High B||New York|2073.902
+1.|Hunter College High B|New York|2073.902
 2.|Churchill A|New Jersey|2041.770
 3.|Methacton C|Pennsylvania|1899.636
 4.|Montgomery Blair B|Maryland|1892.820
