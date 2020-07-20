@@ -15,8 +15,8 @@ The T-value is used to account for the inherent issues in equating the percent c
 ## List of Tournaments
 Tournament|Date|Set Played|Status|Varsity q-Value|JV q-Value
 ---|---|---|---|---|---
-Southern California|3/1/2020|C|Complete|1.188|
-Arkansas|2/29/2020|C|Complete|0.959|
+Southern California|3/1/2020|C|Complete|1.188|1.146
+Arkansas|2/29/2020|C|Complete|0.959|0.742
 New Hampshire|2/29/2020|C|Complete|1.066|
 Northern Pennsylvania|2/1/2020|C|Complete|0.841|-
 Upper Hudson|2/1/2020|C|Complete|0.982|0.989
