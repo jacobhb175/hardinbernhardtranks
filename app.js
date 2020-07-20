@@ -2160,8 +2160,8 @@ db.collection("teams").doc("MountainLakesBJV").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MountainViewAJV").set({
-    name:"Mountain View A",
+db.collection("teams").doc("MountainViewCAAJV").set({
+    name:"Mountain View California A",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
@@ -3299,16 +3299,107 @@ db.collection("teams").doc("PlymouthBJV").set({
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("PlymouthAV").set({
-    name:"Plymouth A",
-    state:"New Hampshire",
+db.collection("teams").doc("SouthBurlingtonAV").set({
+    name:"South Burlington A",
+    state:"Vermont",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("SouthBurlingtonAV").set({
-    name:"South Burlington A",
-    state:"Vermont",
+db.collection("teams").doc("RussellvilleAV").set({
+    name:"Russellville A",
+    state:"Arkansas",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("RussellvilleBJV").set({
+    name:"Russellville B",
+    state:"Arkansas",
+    division:"Junior Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("MountainViewARAV").set({
+    name:"Mountain View Arkansas",
+    state:"Arkansas",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("FayettevilleAV").set({
+    name:"Fayetteville A",
+    state:"Arkansas",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("FortSmithSouthsideAV").set({
+    name:"Fort Smith Southside A",
+    state:"Arkansas",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("FortSmithSouthsideBV").set({
+    name:"Fort Smith Southside B",
+    state:"Arkansas",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("FortSmithSouthsideCJV").set({
+    name:"Fort Smith Southside C",
+    state:"Arkansas",
+    division:"Junior Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("DeQueenAV").set({
+    name:"De Queen A",
+    state:"Arkansas",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("ConwayChristianAV").set({
+    name:"Conway Christian A",
+    state:"Arkansas",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("ConwayChristianBV").set({
+    name:"Conway Christian B",
+    state:"Arkansas",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("ChesterCountyAV").set({
+    name:"Chester County A",
+    state:"Arkansas",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("ChesterCountyBV").set({
+    name:"Chester County B",
+    state:"Arkansas",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("EpiscopalAV").set({
+    name:"Episcopal A",
+    state:"Arkansas",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("VanBurenAV").set({
+    name:"Van Buren A",
+    state:"Arkansas",
     division:"Varsity",
     rank:1200,
     games:0
@@ -3707,7 +3798,7 @@ K = 100;
 //Prelims
 //Round 1
 await newRank("MissionSanJoseAJV","SaratogaEJV",450,70);
-await newRank("HomesteadAJV","MountainViewAJV",390,130);
+await newRank("HomesteadAJV","MountainViewCAAJV",390,130);
 await newRank("SaggitariusAJV","SantaClaraAJV",390,180);
 await newRank("SaratogaDJV","CaliforniaAJV",340,210);
 await newRank("HarkerAJV","EriksenBJV",370,150);
@@ -3724,7 +3815,7 @@ await newRank("FoothillAV","PiedmontHillsAV",310,300);
 await newRank("HomesteadAJV","SaratogaEJV",300,150);
 await newRank("SantaClaraAJV","HarkerAJV",320,250);
 await newRank("MissionSanJoseAJV","SaratogaDJV",330,270);
-await newRank("SaggitariusAJV","MountainViewAJV",370,170);
+await newRank("SaggitariusAJV","MountainViewCAAJV",370,170);
 await newRank("CaliforniaAJV","EriksenBJV",400,130);
 await newRank("SaratogaBV","EriksenAV",340,310);
 await newRank("SaratogaAV","LesQuizAV",540,90);
@@ -3739,7 +3830,7 @@ await newRank("EriksenAV","PiedmontHillsAV",370,180);
 await newRank("PioneersAV","LynbrookAV",370,210);
 await newRank("GundersonAV","FoothillAV",260,240);
 await newRank("MissionSanJoseAJV","EriksenBJV",400,100);
-await newRank("HarkerAJV","MountainViewAJV",360,120);
+await newRank("HarkerAJV","MountainViewCAAJV",360,120);
 await newRank("JLSMSA","HarvestParkMSA",260,220);
 //Round 4
 await newRank("SaratogaAV","GundersonAV",350,170);
@@ -3748,7 +3839,7 @@ await newRank("PioneersAV","LesQuizAV",560,50)
 await newRank("LynbrookAV","FoothillAV",390,200);
 await newRank("HomesteadAJV","EriksenBJV",400,80);
 await newRank("SaratogaBV","PiedmontHillsAV",440,140);
-await newRank("CaliforniaAJV","MountainViewAJV",420,80);
+await newRank("CaliforniaAJV","MountainViewCAAJV",420,80);
 await newRank("EriksenAV","SaratogaCV",440,150);
 await newRank("AlmadenMSA","JLSMSA",410,160);
 await newRank("HarkerAJV","SaratogaEJV",320,170);
@@ -3761,7 +3852,7 @@ await newRank("CaliforniaAJV","SaratogaEJV",320,140);
 await newRank("PioneersAV","SaratogaCV",490,110);
 await newRank("LynbrookAV","PiedmontHillsAV",390,180);
 await newRank("SaggitariusAJV","EriksenBJV",440,90);
-await newRank("MissionSanJoseAJV","MountainViewAJV",270,150);
+await newRank("MissionSanJoseAJV","MountainViewCAAJV",270,150);
 await newRank("AlmadenMSA","HarvestParkMSA",390,230);
 await newRank("SaratogaDJV","HarkerAJV",300,180);
 await newRank("SantaClaraAJV","HomesteadAJV",300,170);
@@ -5644,6 +5735,70 @@ allJV.push(teamAvgJV);
 teamAvgV = [];
 teamAvgJV = [];
 
+//Arkansas
+//Prelims
+//Round 1
+await newRank("RussellvilleBJV","EpiscopalAV",220,140);
+await newRank("FayettevilleAV","VanBurenAV",330,140);
+await newRank("RussellvilleAV","ChesterCountyBV",490,50);
+await newRank("ChesterCountyAV","FortSmithSouthsideBV",290,160);
+await newRank("MountainViewARAV","FortSmithSouthsideAV",390,140);
+await newRank("DeQueenAV","ConwayChristianBV",270,100);
+await newRank("ConwayChristianBAV","FortSmithSouthsideCJV",200,180);
+//Round 2
+await newRank("MountainViewARAK","ChesterCountyAV",350,150);
+await newRank("RussellvilleAV","ConwayChristianBV",520,30);
+await newRank("RussellvilleBJV","VanBurenAV",300,100);
+await newRank("EpiscopalAV","ChesterCountyBV",210,140);
+await newRank("FortSmithSouthsideAV","FortSmithSouthsideCJV",310,120);
+await newRank("DeQueenAV","ConwayChristianAV",350,120);
+await newRank("FayettevilleAV","FortSmithSouthsideBV",250,220);
+//Round 3
+await newRank("RussellvilleAV","EpiscopalAV",510,50);
+await newRank("FayettevilleAV","ConwayChristianBV",380,80);
+await newRank("FortSmithSouthsideCJV","MountainViewARAV",340,120);
+await newRank("FortSmithSouthsideAV","ConwayChristianAV",370,140);
+await newRank("DeQueenAV","ChesterCountyAV",260,250);
+await newRank("ChesterCountyBV","VanBurenAV",180,170);
+await newRank("FortSmithSouthsideBV","RussellvilleBJV",250,190);
+//Round 4
+await newRank("FortSmithSouthsideCJV","ConwayChristianBV",210,110);
+await newRank("ChesterCountyAV","FortSmithSouthsideAV",260,220);
+await newRank("MountainViewARAV","DeQueenAV",380,180);
+await newRank("RussellvilleAV","FayettevilleAV",370,250);
+await newRank("EpiscopalAV","VanBurenAV",230,90);
+await newRank("RussellvilleBJV","ChesterCountyBV",230,90);
+await newRank("ConwayChristianAV","FortSmithSouthsideBV",230,140);
+//Round 5
+await newRank("FayettevilleAV","DeQueenAV",260,220);
+await newRank("ConwayChristianAV","VanBurenAV",180,90);
+await newRank("RussellvilleAV","ChesterCountyAV",440,110);
+await newRank("RussellvilleBJV","FortSmithSouthsideCJV",180,160);
+await newRank("MountainViewARAV","FortSmithSouthsideBV",230,190);
+await newRank("ConwayChristianBV","ChesterCountyBV",140,110);
+await newRank("FortSmithSouthsideAV","EpiscopalAV",350,70);
+//Playoffs
+//Varsity Playoffs
+//Varsity Quarterfinals
+await newRank("RussellvilleAV","EpiscopalAV",400,90);
+await newRank("FortSmithSouthsideAV","DeQueen",250,200);
+await newRank("FayettevilleAV","ConwayChristianAV",240,110);
+await newRank("MountainViewARAV","ChesterCountyAV",360,130);
+//Varsity Semifinals
+await newRank("RussellvilleAV","FortSmithSouthsideAV",340,120);
+await newRank("MountainViewARAV","FayettevilleAV",270,140);
+//Varsity Final
+await newRank("RussellvilleAV","MountainViewARAV",350,160);
+//JV Playoffs (Best of 3 Final)
+await newRank("RussellvilleBJV","FortSmithSouthsideCJV",170,100);
+await newRank("RussellvilleBJV","FortSmithSouthsideCJV",200,130);
+allV.push(teamAvgV);
+allJV.push(teamAvgJV);
+teamAvgV = [];
+teamAvgJV = [];
+
+
+
 
 y = true;
 console.log(y);
@@ -5661,7 +5816,7 @@ c2 = 0;
 //Prelims
 //Round 1
 await newRank("MissionSanJoseAJV","SaratogaEJV",450,70);
-await newRank("HomesteadAJV","MountainViewAJV",390,130);
+await newRank("HomesteadAJV","MountainViewCAAJV",390,130);
 await newRank("SaggitariusAJV","SantaClaraAJV",390,180);
 await newRank("SaratogaDJV","CaliforniaAJV",340,210);
 await newRank("HarkerAJV","EriksenBJV",370,150);
@@ -5678,7 +5833,7 @@ await newRank("FoothillAV","PiedmontHillsAV",310,300);
 await newRank("HomesteadAJV","SaratogaEJV",300,150);
 await newRank("SantaClaraAJV","HarkerAJV",320,250);
 await newRank("MissionSanJoseAJV","SaratogaDJV",330,270);
-await newRank("SaggitariusAJV","MountainViewAJV",370,170);
+await newRank("SaggitariusAJV","MountainViewCAAJV",370,170);
 await newRank("CaliforniaAJV","EriksenBJV",400,130);
 await newRank("SaratogaBV","EriksenAV",340,310);
 await newRank("SaratogaAV","LesQuizAV",540,90);
@@ -5693,7 +5848,7 @@ await newRank("EriksenAV","PiedmontHillsAV",370,180);
 await newRank("PioneersAV","LynbrookAV",370,210);
 await newRank("GundersonAV","FoothillAV",260,240);
 await newRank("MissionSanJoseAJV","EriksenBJV",400,100);
-await newRank("HarkerAJV","MountainViewAJV",360,120);
+await newRank("HarkerAJV","MountainViewCAAJV",360,120);
 await newRank("JLSMSA","HarvestParkMSA",260,220);
 //Round 4
 await newRank("SaratogaAV","GundersonAV",350,170);
@@ -5702,7 +5857,7 @@ await newRank("PioneersAV","LesQuizAV",560,50)
 await newRank("LynbrookAV","FoothillAV",390,200);
 await newRank("HomesteadAJV","EriksenBJV",400,80);
 await newRank("SaratogaBV","PiedmontHillsAV",440,140);
-await newRank("CaliforniaAJV","MountainViewAJV",420,80);
+await newRank("CaliforniaAJV","MountainViewCAAJV",420,80);
 await newRank("EriksenAV","SaratogaCV",440,150);
 await newRank("AlmadenMSA","JLSMSA",410,160);
 await newRank("HarkerAJV","SaratogaEJV",320,170);
@@ -5715,7 +5870,7 @@ await newRank("CaliforniaAJV","SaratogaEJV",320,140);
 await newRank("PioneersAV","SaratogaCV",490,110);
 await newRank("LynbrookAV","PiedmontHillsAV",390,180);
 await newRank("SaggitariusAJV","EriksenBJV",440,90);
-await newRank("MissionSanJoseAJV","MountainViewAJV",270,150);
+await newRank("MissionSanJoseAJV","MountainViewCAAJV",270,150);
 await newRank("AlmadenMSA","HarvestParkMSA",390,230);
 await newRank("SaratogaDJV","HarkerAJV",300,180);
 await newRank("SantaClaraAJV","HomesteadAJV",300,170);
