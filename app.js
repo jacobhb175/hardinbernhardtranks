@@ -3403,6 +3403,111 @@ db.collection("teams").doc("VanBurenAV").set({
     division:"Varsity",
     rank:1200,
     games:0
+}),
+db.collection("teams").doc("ArcadiaAV").set({
+    name:"Arcadia A",
+    state:"California",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("ArcadiaBV").set({
+    name:"Arcadia B",
+    state:"California",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("ArcadiaCV").set({
+    name:"Arcadia C",
+    state:"California",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("ArcadiaDJV").set({
+    name:"Arcadia D",
+    state:"California",
+    division:"Junior Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("SantaMonicaAV").set({
+    name:"Santa Monica A",
+    state:"California",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("CanyonCrestAV").set({
+    name:"Canyon Crest A",
+    state:"California",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("CanyonCrestBV").set({
+    name:"Canyon Crest B",
+    state:"California",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("TroyAV").set({
+    name:"Troy A",
+    state:"California",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("ScrippsRanchAV").set({
+    name:"Scripps Ranch A",
+    state:"California",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("WhitneyAV").set({
+    name:"Whitney A",
+    state:"California",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("StMargaretsAJV").set({
+    name:"St. Margaret's A",
+    state:"California",
+    division:"Junior Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("PegasusAJV").set({
+    name:"Pegasus A",
+    state:"California",
+    division:"Junior Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("SantiagoAJV").set({
+    name:"Santiago A",
+    state:"California",
+    division:"Junior Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("LaCanadaAJV").set({
+    name:"La Canada Prep A",
+    state:"California",
+    division:"Junior Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("VistaVerdeAJV").set({
+    name:"Vista Verde A",
+    state:"California",
+    division:"Junior Varsity",
+    rank:1200,
+    games:0
 })
 
 
@@ -5735,7 +5840,7 @@ allJV.push(teamAvgJV);
 teamAvgV = [];
 teamAvgJV = [];
 
-//Arkansas
+//Arkansas C-Set
 //Prelims
 //Round 1
 await newRank("RussellvilleBJV","EpiscopalAV",220,140);
@@ -5792,6 +5897,69 @@ await newRank("RussellvilleAV","MountainViewARAV",350,160);
 //JV Playoffs (Best of 3 Final)
 await newRank("RussellvilleBJV","FortSmithSouthsideCJV",170,100);
 await newRank("RussellvilleBJV","FortSmithSouthsideCJV",200,130);
+allV.push(teamAvgV);
+allJV.push(teamAvgJV);
+teamAvgV = [];
+teamAvgJV = [];
+
+//SoCal C-Set
+//Prelims
+//Round 1
+await newRank("SantaMonicaAV","WhitneyAV",450,140);
+await newRank("CanyonCrestAV","ArcadiaCV",410,160);
+await newRank("ArcadiaAV","ScrippsRanchAV",420,130);
+await newRank("ArcadiaBV","TroyAV",330,220);
+await newRank("StMargaretsAJV","LaCanadaAJV",470,70);
+await newRank("SantiagoAJV","ArcadiaDJV",240,210);
+await newRank("PegasusAJV","VistaVerdeAJV",240,210);
+//Round 2
+await newRank("SantaMonicaAV","ScrippsRanchAV",420,200);
+await newRank("CanyonCrestAV","ArcadiaBV",310,250);
+await newRank("ArcadiaAV","CanyonCrestBV",530,110);
+await newRank("ArcadiaDJV","LaCanadaAJV",260,150);
+await newRank("StMargaretsAJV","VistaVerdeAJV",520,70);
+await newRank("SantiagoAJV","PegasusAJV",240,220);
+await newRank("TroyAV","WhitneyAV",390,120);
+//Round 3
+await newRank("SantaMonicaAV","CanyonCrestBV",340,230);
+await newRank("ScrippsRanchAV","TroyAV",280,240);
+await newRank("CanyonCrestAV","WhitneyAV",390,160);
+await newRank("ArcadiaAV","ArcadiaCV",410,170);
+await newRank("PegasusAJV","ArcadiaDJV",330,180);
+await newRank("VistaVerdeAJV","LaCanadaAJV",250,160);
+await newRank("StMargaretsAJV","SantiagoAJV",370,140);
+//Round 4
+await newRank("SantaMonicaAV","ArcadiaCV",520,70);
+await newRank("ArcadiaAV","ArcadiaBV",330,230);
+await newRank("StMargaretsAJV","PegasusAJV",300,250);
+await newRank("TroyAV","CanyonCrestBV",310,300);
+await newRank("SantiagoAJV","LaCanadaAJV",390,150);
+await newRank("CanyonCrestAV","ScrippsRanchAV",390,180);
+//Round 5
+await newRank("CanyonCrestAV","CanyonCrestBV",450,140);
+await newRank("TroyAV","ArcadiaCV",290,180);
+await newRank("SantaMonicaAV","ArcadiaBV",360,190);
+await newRank("ArcadiaAV","WhitneyAV",530,60);
+await newRank("LaCanadaAJV","PegasusAJV",230,220);
+await newRank("StMargaretsAJV","ArcadiaDJV",380,110);
+//Playoffs
+//Varsity Playoffs
+//Varsity Quarterfinals
+await newRank("ArcadiaAV","ArcadiaCV",420,140);
+await newRank("SantaMonicaAV","CanyonCrestBV",390,170);
+await newRank("CanyonCrestAV","ScrippsRanchAV",430,110);
+await newRank("ArcadiaBV","TroyAV",300,210);
+//Varsity Semifinals
+await newRank("ArcadiaAV","ArcadiaBV",470,120);
+await newRank("CanyonCrestAV","SantaMonicaAV",320,240);
+//Varsity Finals
+await newRank("ArcadiaAV","CanyonCrestAV",350,180);
+//JV Playoffs
+//JV Semifinals
+await newRank("StMargaretsAJV","ArcadiaDJV",450,70);
+await newRank("SantiagoAJV","PegasusAJV",320,120);
+//JV Finals
+await newRank("StMargaretsAJV","SantiagoAJV",280,140);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 teamAvgV = [];
@@ -7824,6 +7992,135 @@ console.log("NH C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
 
+a2 = a2+1;
+b2 = b2+1;
+//Arkansas C-Set
+//Prelims
+//Round 1
+await newRank("RussellvilleBJV","EpiscopalAV",220,140);
+await newRank("FayettevilleAV","VanBurenAV",330,140);
+await newRank("RussellvilleAV","ChesterCountyBV",490,50);
+await newRank("ChesterCountyAV","FortSmithSouthsideBV",290,160);
+await newRank("MountainViewARAV","FortSmithSouthsideAV",390,140);
+await newRank("DeQueenAV","ConwayChristianBV",270,100);
+await newRank("ConwayChristianBAV","FortSmithSouthsideCJV",200,180);
+//Round 2
+await newRank("MountainViewARAK","ChesterCountyAV",350,150);
+await newRank("RussellvilleAV","ConwayChristianBV",520,30);
+await newRank("RussellvilleBJV","VanBurenAV",300,100);
+await newRank("EpiscopalAV","ChesterCountyBV",210,140);
+await newRank("FortSmithSouthsideAV","FortSmithSouthsideCJV",310,120);
+await newRank("DeQueenAV","ConwayChristianAV",350,120);
+await newRank("FayettevilleAV","FortSmithSouthsideBV",250,220);
+//Round 3
+await newRank("RussellvilleAV","EpiscopalAV",510,50);
+await newRank("FayettevilleAV","ConwayChristianBV",380,80);
+await newRank("FortSmithSouthsideCJV","MountainViewARAV",340,120);
+await newRank("FortSmithSouthsideAV","ConwayChristianAV",370,140);
+await newRank("DeQueenAV","ChesterCountyAV",260,250);
+await newRank("ChesterCountyBV","VanBurenAV",180,170);
+await newRank("FortSmithSouthsideBV","RussellvilleBJV",250,190);
+//Round 4
+await newRank("FortSmithSouthsideCJV","ConwayChristianBV",210,110);
+await newRank("ChesterCountyAV","FortSmithSouthsideAV",260,220);
+await newRank("MountainViewARAV","DeQueenAV",380,180);
+await newRank("RussellvilleAV","FayettevilleAV",370,250);
+await newRank("EpiscopalAV","VanBurenAV",230,90);
+await newRank("RussellvilleBJV","ChesterCountyBV",230,90);
+await newRank("ConwayChristianAV","FortSmithSouthsideBV",230,140);
+//Round 5
+await newRank("FayettevilleAV","DeQueenAV",260,220);
+await newRank("ConwayChristianAV","VanBurenAV",180,90);
+await newRank("RussellvilleAV","ChesterCountyAV",440,110);
+await newRank("RussellvilleBJV","FortSmithSouthsideCJV",180,160);
+await newRank("MountainViewARAV","FortSmithSouthsideBV",230,190);
+await newRank("ConwayChristianBV","ChesterCountyBV",140,110);
+await newRank("FortSmithSouthsideAV","EpiscopalAV",350,70);
+//Playoffs
+//Varsity Playoffs
+//Varsity Quarterfinals
+await newRank("RussellvilleAV","EpiscopalAV",400,90);
+await newRank("FortSmithSouthsideAV","DeQueen",250,200);
+await newRank("FayettevilleAV","ConwayChristianAV",240,110);
+await newRank("MountainViewARAV","ChesterCountyAV",360,130);
+//Varsity Semifinals
+await newRank("RussellvilleAV","FortSmithSouthsideAV",340,120);
+await newRank("MountainViewARAV","FayettevilleAV",270,140);
+//Varsity Final
+await newRank("RussellvilleAV","MountainViewARAV",350,160);
+//JV Playoffs (Best of 3 Final)
+await newRank("RussellvilleBJV","FortSmithSouthsideCJV",170,100);
+await newRank("RussellvilleBJV","FortSmithSouthsideCJV",200,130);
+console.log("Arkansas C q V: "+qV[a2]);
+console.log("Arkansas C q JV: "+qJV[b2]);
+a = 0;
+b = 0;
+
+
+a2 = a2+1;
+b2 = b2+1;
+//SoCal C-Set
+//Prelims
+//Round 1
+await newRank("SantaMonicaAV","WhitneyAV",450,140);
+await newRank("CanyonCrestAV","ArcadiaCV",410,160);
+await newRank("ArcadiaAV","ScrippsRanchAV",420,130);
+await newRank("ArcadiaBV","TroyAV",330,220);
+await newRank("StMargaretsAJV","LaCanadaAJV",470,70);
+await newRank("SantiagoAJV","ArcadiaDJV",240,210);
+await newRank("PegasusAJV","VistaVerdeAJV",240,210);
+//Round 2
+await newRank("SantaMonicaAV","ScrippsRanchAV",420,200);
+await newRank("CanyonCrestAV","ArcadiaBV",310,250);
+await newRank("ArcadiaAV","CanyonCrestBV",530,110);
+await newRank("ArcadiaDJV","LaCanadaAJV",260,150);
+await newRank("StMargaretsAJV","VistaVerdeAJV",520,70);
+await newRank("SantiagoAJV","PegasusAJV",240,220);
+await newRank("TroyAV","WhitneyAV",390,120);
+//Round 3
+await newRank("SantaMonicaAV","CanyonCrestBV",340,230);
+await newRank("ScrippsRanchAV","TroyAV",280,240);
+await newRank("CanyonCrestAV","WhitneyAV",390,160);
+await newRank("ArcadiaAV","ArcadiaCV",410,170);
+await newRank("PegasusAJV","ArcadiaDJV",330,180);
+await newRank("VistaVerdeAJV","LaCanadaAJV",250,160);
+await newRank("StMargaretsAJV","SantiagoAJV",370,140);
+//Round 4
+await newRank("SantaMonicaAV","ArcadiaCV",520,70);
+await newRank("ArcadiaAV","ArcadiaBV",330,230);
+await newRank("StMargaretsAJV","PegasusAJV",300,250);
+await newRank("TroyAV","CanyonCrestBV",310,300);
+await newRank("SantiagoAJV","LaCanadaAJV",390,150);
+await newRank("CanyonCrestAV","ScrippsRanchAV",390,180);
+//Round 5
+await newRank("CanyonCrestAV","CanyonCrestBV",450,140);
+await newRank("TroyAV","ArcadiaCV",290,180);
+await newRank("SantaMonicaAV","ArcadiaBV",360,190);
+await newRank("ArcadiaAV","WhitneyAV",530,60);
+await newRank("LaCanadaAJV","PegasusAJV",230,220);
+await newRank("StMargaretsAJV","ArcadiaDJV",380,110);
+//Playoffs
+//Varsity Playoffs
+//Varsity Quarterfinals
+await newRank("ArcadiaAV","ArcadiaCV",420,140);
+await newRank("SantaMonicaAV","CanyonCrestBV",390,170);
+await newRank("CanyonCrestAV","ScrippsRanchAV",430,110);
+await newRank("ArcadiaBV","TroyAV",300,210);
+//Varsity Semifinals
+await newRank("ArcadiaAV","ArcadiaBV",470,120);
+await newRank("CanyonCrestAV","SantaMonicaAV",320,240);
+//Varsity Finals
+await newRank("ArcadiaAV","CanyonCrestAV",350,180);
+//JV Playoffs
+//JV Semifinals
+await newRank("StMargaretsAJV","ArcadiaDJV",450,70);
+await newRank("SantiagoAJV","PegasusAJV",320,120);
+//JV Finals
+await newRank("StMargaretsAJV","SantiagoAJV",280,140);
+console.log("SoCal C q V: "+qV[a2]);
+console.log("SoCal C q JV: "+qJV[b2]);
+a = 0;
+b = 0;
 };
 cSet();
 
