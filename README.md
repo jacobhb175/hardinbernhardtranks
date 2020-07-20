@@ -15,41 +15,42 @@ The T-value is used to account for the inherent issues in equating the percent c
 ## List of Tournaments
 Tournament|Date|Set Played|Status|Varsity q-Value|JV q-Value
 ---|---|---|---|---|---
-Southern California|3/1/2020|C|Complete||
-Arkansas|2/29/2020|C|Complete||
-New Hampshire|2/29/2020|C|Complete||
-Upper Hudson|2/1/2020|C|Complete||
-Eastern Iowa|1/28/2020|C|Complete||
-Nevada|1/26/2020|C|Complete||
-Mississippi Winter|1/25/2020|C|Complete||
-Western Pennsylvania|1/25/2020|C|Complete|
-Southwestern Illinois|1/20/2020|C|Complete|1.003
-Florida Panhandle|1/18/2020|C|Complete|0.959
-Deleware|1/11/2020|C|Complete|0.932
-Lower Hudson|1/11/2020|C|Complete|1.166
-Bergen County|1/5/2020|C|Complete|1.172
-Eastern Kentucky|12/14/2019|C|Complete|1.001
-Louisiana Fall|12/14/2019|C|Complete|0.870
-Northwest Illinois|12/14/2019|C|Complete|0.966
-Southern New Jersey|12/14/2019|C|Complete|1.053
-Washington DC|12/7/2019|C|Complete|1.263
-Boston Fall|11/23/2019|C|Complete|1.153
-Southern Washington|11/23/2019|C|Complete|1.006
-Western Washington|11/23/2019|C|Complete|0.938
-Central Florida Fall|11/16/2019|C|Complete|0.797
-Eastern Georgia Fall|11/16/2019|C|Complete|1.004
-Greater Knoxville Fall|11/16/2019|C|Complete|0.863
-Oahu|11/16/2019|C|Complete|1.081
-South Florida Fall|11/16/2019|C|Complete|0.963
-Buffalo|11/9/2019|C|Complete|0.944
-Greater Dayton|11/9/2019|C|Complete|0.511
-Northern Illinois|11/9/2019|C|Complete|1.200
-Northern New Jersey|11/9/2019|C|Complete|1.145
-West Viginia Fall|11/9/2019|C|Complete|0.921
-Montana|11/5/2019|C|Complete|0.641
-Central Georgia Fall|11/2/2019|C|Complete|0.700
-Eastern Washington|11/2/2019|C|Complete|0.685
-Northern California Fall|10/27/2019|C|Complete|1.000
+Southern California|3/1/2020|C|Complete|1.188|
+Arkansas|2/29/2020|C|Complete|0.959|
+New Hampshire|2/29/2020|C|Complete|1.066|
+Northern Pennsulvania||C|Complete|0.841|-
+Upper Hudson|2/1/2020|C|Complete|0.982|0.989
+Eastern Iowa|1/28/2020|C|Complete|1.130|0.916
+Nevada|1/26/2020|C|Complete|1.225|1.019
+Mississippi Winter|1/25/2020|C|Complete|0.775|0.891
+Western Pennsylvania|1/25/2020|C|Complete|0.996|1.061
+Southwestern Illinois|1/20/2020|C|Complete|1.038|1.000
+Florida Panhandle|1/18/2020|C|Complete|0.962|0.359
+Deleware|1/11/2020|C|Complete|0.896|0.940
+Lower Hudson|1/11/2020|C|Complete|1.085|1.181
+Bergen County|1/5/2020|C|Complete|1.169|1.179
+Eastern Kentucky|12/14/2019|C|Complete|1.006|-
+Louisiana Fall|12/14/2019|C|Complete|0.874|-
+Northwest Illinois|12/14/2019|C|Complete|0.974|0.851
+Southern New Jersey|12/14/2019|C|Complete|1.055|1.019
+Washington DC|12/7/2019|C|Complete|1.267|1.260
+Boston Fall|11/23/2019|C|Complete|1.065|1.117
+Southern Washington|11/23/2019|C|Complete|0.997|-
+Western Washington|11/23/2019|C|Complete|0.929|0.929
+Central Florida Fall|11/16/2019|C|Complete|1.007|0.766
+Eastern Georgia Fall|11/16/2019|C|Complete|1.083|0.999
+Greater Knoxville Fall|11/16/2019|C|Complete|0.846|-
+Oahu|11/16/2019|C|Complete|1.068|-
+South Florida Fall|11/16/2019|C|Complete|0.880|0.958
+Buffalo|11/9/2019|C|Complete|0.960|0.726
+Greater Dayton|11/9/2019|C|Complete|1.212|0.521
+Northern Illinois|11/9/2019|C|Complete|1.228|1.234
+Northern New Jersey|11/9/2019|C|Complete|1.092|1.153
+West Viginia Fall|11/9/2019|C|Complete|0.860|0.827
+Montana|11/5/2019|C|Complete|0.779|0.607
+Central Georgia Fall|11/2/2019|C|Complete|0.898|0.722
+Eastern Washington|11/2/2019|C|Complete|0.848|0.717
+Northern California Fall|10/27/2019|C|Complete|1.222|1.212
 
 ## The Rankings
 
