@@ -16,7 +16,7 @@ server.listen(port, hostname, () => {
 */
 
 
-
+//--
 
 
 //Varsity Teams
@@ -3116,7 +3116,129 @@ db.collection("teams").doc("LibertyBJV").set({
     division:"Junior Varsity",
     rank:1200,
 games:0
+}),
+db.collection("teams").doc("PleasantValleyAV").set({
+    name:"Pleasant Valley A",
+    state:"Iowa",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("PleasantValleyBJV").set({
+    name:"Pleasant Valley B",
+    state:"Iowa",
+    division:"Junior Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("CentralAV").set({
+    name:"Central A",
+    state:"Iowa",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("CentralBJV").set({
+    name:"Central B",
+    state:"Iowa",
+    division:"Junior Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("SherrardAV").set({
+    name:"Sherrard A",
+    state:"Iowa",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("BethlehemAV").set({
+    name:"Bethlehem A",
+    state:"New York",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("BethlehemBJV").set({
+    name:"Bethlehem B",
+    state:"New York",
+    division:"Junior Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("BethlehemMSJV").set({
+    name:"Bethlehem MS",
+    state:"New York",
+    division:"Junior Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("BerlinAV").set({
+    name:"Berlin A",
+    state:"New York",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("BerlinBJV").set({
+    name:"Berlin B",
+    state:"New York",
+    division:"Junior Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("Loyola AV").set({
+    name:"Loyola A",
+    state:"New York",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("LaurensAV").set({
+    name:"Laurens A",
+    state:"New York",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("ParklandAV").set({
+    name:"Parkland A",
+    state:"Pennsylvania",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("WyomingAV").set({
+    name:"Wyoming Area A",
+    state:"Pennsylvania",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("WyomingBV").set({
+    name:"Wyoming Area B",
+    state:"Pennsylvania",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("WyomingCV").set({
+    name:"Wyoming Area V",
+    state:"Pennsylvania",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("NanticokeAV").set({
+    name:"Greater Nanticoke A",
+    state:"Pennsylvania",
+    division:"Varsity",
+    rank:1200,
+games:0
 })
+
+
+//End of team list
 
 /*
 docRef.get().then(function(doc) {
@@ -5326,7 +5448,78 @@ allJV.push(teamAvgJV);
 teamAvgV = [];
 teamAvgJV = [];
 
+//Eastern Iowa C-Set
+//Prelims
+//Round 1
+await newRank("PleasantValleyAV","CentralAV",280,270);
+await newRank("PleasantValleyBJV","CentralBJV",230,160);
+//Round 2
+await newRank("PleasantValleyAV","SherrardAV",320,160);
+await newRank("CentralBJV","PleasantValleyBJV",280,130);
+//Round 3
+await newRank("CentralAV","SherrardAV",370,170);
+await newRank("CentralBJV","PleasantValleyBJV",220,140);
+//Playoffs
+//Varsity Final
+await newRank("PleasantValleyAV","CentralAV",320,250);
+allV.push(teamAvgV);
+allJV.push(teamAvgJV);
+teamAvgV = [];
+teamAvgJV = [];
 
+//Upper Hudson C-Set
+//Prelims
+//Round 1
+await newRank("BethlehemAV","BerlinBJV",490,80);
+await newRank("BethlehemBJV","LaurensAV",370,80);
+await newRank("LoyolaAV","BethlehemMSJV",310,220);
+//Round 2
+await newRank("BethlehemBJV","BerlinBJV",260,140);
+await newRank("BethlehemAV","LoyolaAV",360,190);
+await newRank("BerlinAV","LaurensAV",360,190);
+//Round 3
+await newRank("BethlehemBJV","BerlinAV",430,70);
+await newRank("BethlehemMSJV","BerlinBJV",360,110);
+await newRank("LoyolaAV","LaurensAV",340,70);
+//Round 4
+await newRank("LoyolaAV","BerlinBJV",280,80);
+await newRank("BethlehemAV","BethlehemBJV",400,160);
+await newRank("BethlehemMSJV","BerlinAV",280,120);
+//Round 5
+await newRank("BethlehemAV","LaurensAV",390,90);
+await newRank("LoyolaAV","BerlinAV",280,140);
+await newRank("BethlehemBJV","BethlehemMSJV",360,90);
+//Playoffs
+//Varsity Final
+await newRank("BethlehemAV","LoyolaAV",210,170);
+await newRank("BethlehemBJV","BethlehemMSJV",240,110);
+allV.push(teamAvgV);
+allJV.push(teamAvgJV);
+teamAvgV = [];
+teamAvgJV = [];
+
+//Northern Pennsylvania C-Set
+//Prelims
+//Round 1
+await newRank("WyomingBV","NanticokeAV",230,190);
+await newRank("ParklandAV","WyomingAV",260,170);
+//Round 2
+await newRank("WyomingBV","WyomingCV",250,130);
+await newRank("WyomingAV","NanticokeAV",270,140);
+//Round 3
+await newRank("WyomingAV","WyomingCV",210,170);
+await newRank("ParklandAV","NanticokeAV",230,200);
+//Round 4
+await newRank("ParklandAV","WyomingCV",300,120);
+await newRank("WyomingAV","WyomingBV",210,200);
+//Round 5
+await newRank("WyomingBV","ParklandAV",230,200);
+await newRank("NanticokeAV","WyomingCV",220,120);
+//Playoffs
+//Finals
+await newRank("ParklandAV","WyomingBV",220,110);
+allV.push(teamAvgV);
+teamAvgV = [];
 
 
 y = true;
@@ -7213,6 +7406,8 @@ c = 0;
 
 a2 = a2+1;
 b2 = b2+1;
+//Nevada C-Set
+//Round 1
 await newRank("ClarkBJV","LibertyAV",430,0);
 await newRank("ClarkAV","LibertyBJV",480,60);
 //Round 2
@@ -7226,6 +7421,28 @@ console.log("Nevada C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
 c = 0;
+
+a2 = a2+1;
+b2 = b2+1;
+//Eastern Iowa C-Set
+//Round 1
+await newRank("PleasantValleyAV","CentralAV",280,270);
+await newRank("PleasantValleyBJV","CentralBJV",230,160);
+//Round 2
+await newRank("PleasantValleyAV","SherrardAV",320,160);
+await newRank("CentralBJV","PleasantValleyBJV",280,130);
+//Round 3
+await newRank("CentralAV","SherrardAV",370,170);
+await newRank("CentralBJV","PleasantValleyBJV",220,140);
+//Varsity Final
+await newRank("PleasantValleyAV","CentralAV",320,250);
+console.log("Eastern Iowa C q V: "+qV[a2]);
+console.log("Eastern Iowa C q JV: "+qJV[b2]);
+a = 0;
+b = 0;
+c = 0;
+
+
 };
 cSet();
 
