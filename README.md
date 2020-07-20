@@ -18,7 +18,7 @@ Tournament|Date|Set Played|Status|Varsity q-Value|JV q-Value
 Southern California|3/1/2020|C|Complete|1.188|
 Arkansas|2/29/2020|C|Complete|0.959|
 New Hampshire|2/29/2020|C|Complete|1.066|
-Northern Pennsulvania||C|Complete|0.841|-
+Northern Pennsylvania|2/1/2020|C|Complete|0.841|-
 Upper Hudson|2/1/2020|C|Complete|0.982|0.989
 Eastern Iowa|1/28/2020|C|Complete|1.130|0.916
 Nevada|1/26/2020|C|Complete|1.225|1.019
