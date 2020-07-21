@@ -15,33 +15,7 @@ server.listen(port, hostname, () => {
 });
 */
 
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyDXM_FBLEWgMGLFMbV_nL9ScHBqsE2D9Dk",
-    authDomain: "hardinbernhardtranks.firebaseapp.com",
-    databaseURL: "https://hardinbernhardtranks.firebaseio.com",
-    projectId: "hardinbernhardtranks",
-    storageBucket: "hardinbernhardtranks.appspot.com",
-    messagingSenderId: "498587943256",
-    appId: "1:498587943256:web:979cc52a0053224122a52d",
-    measurementId: "G-FHXST7T8VQ"
-};
-//firebase.initializeApp(firebaseConfig);
-//firebase.analytics();
-
-//const firebase = require("firebase");
-// Required for side-effects
-//require("firebase/firestore");
-
-// Initialize Cloud Firestore through Firebase
-firebase.initializeApp({
-    apiKey: 'AIzaSyDXM_FBLEWgMGLFMbV_nL9ScHBqsE2D9Dk',
-    authDomain: 'hardinbernhardtranks.firebaseapp.com',
-    projectId: 'hardinbernhardtranks'
-});
-  
-var db = firebase.firestore();
+//--
 
 
 //Varsity Teams
@@ -3916,10 +3890,22 @@ async function nRank(A,B,AScore,BScore){
 
 //Print ranked teams in a specific division
 function printRanks(div){
-    let teamsRef = db.collection("teams");
-    console.log(teamsRef.where("division","==",div).orderBy("rank").limit(10));
+    //let teamsRef = db.collection("teams");
+    //console.log(teamsRef.where("division","==",div).orderBy("rank").limit(10));
     
+    db.collection("teams").where("division", "==", div).orderBy("rank").limit(10);
+        .get()
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                // doc.data() is never undefined for query doc snapshots
+                console.log(doc.id, " => ", doc.data());
+            });
+        })
+        .catch(function(error) {
+            console.log("Error getting documents: ", error);
+        });
 }
+
 
 async function cSet(){
 K = 100;
@@ -5874,9 +5860,9 @@ await newRank("RussellvilleAV","ChesterCountyBV",490,50);
 await newRank("ChesterCountyAV","FortSmithSouthsideBV",290,160);
 await newRank("MountainViewARAV","FortSmithSouthsideAV",390,140);
 await newRank("DeQueenAV","ConwayChristianBV",270,100);
-await newRank("ConwayChristianBAV","FortSmithSouthsideCJV",200,180);
+await newRank("ConwayChristianBV","FortSmithSouthsideCJV",200,180);
 //Round 2
-await newRank("MountainViewARAK","ChesterCountyAV",350,150);
+await newRank("MountainViewARAV","ChesterCountyAV",350,150);
 await newRank("RussellvilleAV","ConwayChristianBV",520,30);
 await newRank("RussellvilleBJV","VanBurenAV",300,100);
 await newRank("EpiscopalAV","ChesterCountyBV",210,140);
@@ -5911,7 +5897,7 @@ await newRank("FortSmithSouthsideAV","EpiscopalAV",350,70);
 //Varsity Playoffs
 //Varsity Quarterfinals
 await newRank("RussellvilleAV","EpiscopalAV",400,90);
-await newRank("FortSmithSouthsideAV","DeQueen",250,200);
+await newRank("FortSmithSouthsideAV","DeQueenAV",250,200);
 await newRank("FayettevilleAV","ConwayChristianAV",240,110);
 await newRank("MountainViewARAV","ChesterCountyAV",360,130);
 //Varsity Semifinals
@@ -8028,9 +8014,9 @@ await newRank("RussellvilleAV","ChesterCountyBV",490,50);
 await newRank("ChesterCountyAV","FortSmithSouthsideBV",290,160);
 await newRank("MountainViewARAV","FortSmithSouthsideAV",390,140);
 await newRank("DeQueenAV","ConwayChristianBV",270,100);
-await newRank("ConwayChristianBAV","FortSmithSouthsideCJV",200,180);
+await newRank("ConwayChristianBV","FortSmithSouthsideCJV",200,180);
 //Round 2
-await newRank("MountainViewARAK","ChesterCountyAV",350,150);
+await newRank("MountainViewARAV","ChesterCountyAV",350,150);
 await newRank("RussellvilleAV","ConwayChristianBV",520,30);
 await newRank("RussellvilleBJV","VanBurenAV",300,100);
 await newRank("EpiscopalAV","ChesterCountyBV",210,140);
@@ -8065,7 +8051,7 @@ await newRank("FortSmithSouthsideAV","EpiscopalAV",350,70);
 //Varsity Playoffs
 //Varsity Quarterfinals
 await newRank("RussellvilleAV","EpiscopalAV",400,90);
-await newRank("FortSmithSouthsideAV","DeQueen",250,200);
+await newRank("FortSmithSouthsideAV","DeQueenAV",250,200);
 await newRank("FayettevilleAV","ConwayChristianAV",240,110);
 await newRank("MountainViewARAV","ChesterCountyAV",360,130);
 //Varsity Semifinals
