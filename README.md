@@ -17,42 +17,42 @@ The T-value is used to account for the inherent issues in equating the percent c
 ## List of Tournaments
 Tournament|Date|Set Played|Status|Varsity q-Value|JV q-Value
 ---|---|---|---|---|---
-Southern California|3/1/2020|C|Complete|1.188|1.146
-Arkansas|2/29/2020|C|Complete|0.959|0.742
-New Hampshire|2/29/2020|C|Complete|1.066|
+Southern California|3/1/2020|C|Complete|1.188|1.147
+Arkansas|2/29/2020|C|Complete|0.959|0.743
+New Hampshire|2/29/2020|C|Complete|1.066|0.818
 Northern Pennsylvania|2/1/2020|C|Complete|0.841|-
-Upper Hudson|2/1/2020|C|Complete|0.982|0.989
-Eastern Iowa|1/28/2020|C|Complete|1.130|0.916
-Nevada|1/26/2020|C|Complete|1.225|1.019
-Mississippi Winter|1/25/2020|C|Complete|0.775|0.891
-Western Pennsylvania|1/25/2020|C|Complete|0.996|1.061
-Southwestern Illinois|1/20/2020|C|Complete|1.038|1.000
-Florida Panhandle|1/18/2020|C|Complete|0.962|0.359
-Deleware|1/11/2020|C|Complete|0.896|0.940
-Lower Hudson|1/11/2020|C|Complete|1.085|1.181
-Bergen County|1/5/2020|C|Complete|1.169|1.179
+Upper Hudson|2/1/2020|C|Complete|0.982|0.990
+Eastern Iowa|1/28/2020|C|Complete|1.130|0.917
+Nevada|1/26/2020|C|Complete|1.225|1.020
+Mississippi Winter|1/25/2020|C|Complete|0.775|0.892
+Western Pennsylvania|1/25/2020|C|Complete|0.996|1.062
+Southwestern Illinois|1/20/2020|C|Complete|1.038|1.001
+Florida Panhandle|1/18/2020|C|Complete|0.962|0.360
+Deleware|1/11/2020|C|Complete|0.896|0.941
+Lower Hudson|1/11/2020|C|Complete|1.085|1.182
+Bergen County|1/5/2020|C|Complete|1.169|1.180
 Eastern Kentucky|12/14/2019|C|Complete|1.006|-
 Louisiana Fall|12/14/2019|C|Complete|0.874|-
-Northwest Illinois|12/14/2019|C|Complete|0.974|0.851
-Southern New Jersey|12/14/2019|C|Complete|1.055|1.019
-Washington DC|12/7/2019|C|Complete|1.267|1.260
-Boston Fall|11/23/2019|C|Complete|1.065|1.117
+Northwest Illinois|12/14/2019|C|Complete|0.974|0.852
+Southern New Jersey|12/14/2019|C|Complete|1.019|1.056
+Washington DC|12/7/2019|C|Complete|1.267|1.261
+Boston Fall|11/23/2019|C|Complete|1.065|1.118
 Southern Washington|11/23/2019|C|Complete|0.997|-
 Western Washington|11/23/2019|C|Complete|0.929|0.929
-Central Florida Fall|11/16/2019|C|Complete|1.007|0.766
-Eastern Georgia Fall|11/16/2019|C|Complete|1.083|0.999
+Central Florida Fall|11/16/2019|C|Complete|1.007|0.767
+Eastern Georgia Fall|11/16/2019|C|Complete|1.083|1.000
 Greater Knoxville Fall|11/16/2019|C|Complete|0.846|-
 Oahu|11/16/2019|C|Complete|1.068|-
-South Florida Fall|11/16/2019|C|Complete|0.880|0.958
-Buffalo|11/9/2019|C|Complete|0.960|0.726
+South Florida Fall|11/16/2019|C|Complete|0.880|0.959
+Buffalo|11/9/2019|C|Complete|0.960|0.727
 Greater Dayton|11/9/2019|C|Complete|1.212|0.521
-Northern Illinois|11/9/2019|C|Complete|1.228|1.234
-Northern New Jersey|11/9/2019|C|Complete|1.092|1.153
-West Viginia Fall|11/9/2019|C|Complete|0.860|0.827
-Montana|11/5/2019|C|Complete|0.779|0.607
-Central Georgia Fall|11/2/2019|C|Complete|0.898|0.722
-Eastern Washington|11/2/2019|C|Complete|0.848|0.717
-Northern California Fall|10/27/2019|C|Complete|1.222|1.212
+Northern Illinois|11/9/2019|C|Complete|1.228|1.235
+Northern New Jersey|11/9/2019|C|Complete|1.092|1.154
+West Viginia Fall|11/9/2019|C|Complete|0.860|0.828
+Montana|11/5/2019|C|Complete|0.779|0.608
+Central Georgia Fall|11/2/2019|C|Complete|0.898|0.723
+Eastern Washington|11/2/2019|C|Complete|0.848|0.718
+Northern California Fall|10/27/2019|C|Complete|1.222|1.213
 
 ## The Rankings
 
@@ -60,7 +60,7 @@ Northern California Fall|10/27/2019|C|Complete|1.222|1.212
 Ranking|Team|State|Points
 ---|---|---|---
 1.|Millburn A|New Jersey|2105.886
-2.|Arcadia A|California|2092.585
+2.|Arcadia A|California|2082.677
 3.|Russellville A|Arkansas|2037.378
 4.|Stevenson C|Illinois|1925.355
 5.|Team Pi-oneers A|California|1885.982
@@ -68,18 +68,18 @@ Ranking|Team|State|Points
 7.|Team Coldhug A|Connecticut|1867.569
 8.|Great Valley A|Pennsylvania|1861.875
 9.|Trinity Prep A|Florida|1848.294
-10.|Millburn C|New Jersey|1839.365
+10.|Canyon Crest Academy A|California|1845.995
 
 ### Junior Varsity Rankings
 Ranking|Team|State|Points
 ---|---|---|---
-1.|Hunter College High B|New York|2073.902
-2.|Churchill A|New Jersey|2041.770
-3.|Methacton C|Pennsylvania|1899.636
-4.|Montgomery Blair B|Maryland|1892.820
-5.|Ridgewood C|New Jersey|1876.587
-6.|Ransom Everglades C|Florida|1876.026
-7.|Saggitarius A|California|1831.068
-8.|Mission San Jose|California|1830.233
-9.|Phillips Exeter B|New Hampshire|1798.978
-10.|Stevenson E|Illinois|1791.394
+1.|Hunter College High B|New York|2074.658
+2.|Churchill A|New Jersey|2042.498
+3.|Methacton C|Pennsylvania|1900.241
+4.|Montgomery Blair B|Maryland|1893.419
+5.|St. Margaret's A|California|1885.588
+6.|Ridgewood C|New Jersey|1877.172
+7.|Ransom Everglades C|Florida|1876.610
+8.|Sagittarius|California|1831.614
+9.|Mission San Jose|California|1830.778
+10.|Phillips Exeter B|New Hampshire|1799.496
