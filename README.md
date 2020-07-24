@@ -6,13 +6,15 @@ Hardin-Bernhardt Ranks is a new way of ranking NHBB teams using a modified versi
 expected score of A = 1 / ((e^((rank of B - rank of A) / rank of A)) + 1)
 
 ### New Rank Formula
-new rank of A = rank of A + q * K * ((score of A / ((score of A + score of B) * average T-value)) - expected score of A)
+new rank of A = rank of A + g * q * K * ((score of A / ((score of A + score of B) * average T-value)) - expected score of A)
 
 ## The Variables
 ### q-Value
-The q-value is used to represent strength of field at a tournament and intended to help improve elo as a measure of skill unaffected by the field a team is up against, and thus more useful and accurate as a comparison between teams from different regions. It is calculated as a ratio of average total points scored per game at a given tournament : average total points scored per game on a given set, and is calculated independently the for MS, JV, and Varsity fields.
+The q-value is a multiplier used to represent strength of field at a tournament and intended to help improve elo as a measure of skill unaffected by the field a team is up against, and thus more useful and accurate as a comparison between teams from different regions. It is calculated as a ratio of average total points scored per game at a given tournament : average total points scored per game on a given set, and is calculated independently the for MS, JV, and Varsity fields.
 ### T-Value
 The T-value is used to account for the inherent issues in equating the percent chance of a given winning to the percent of total points that team will score. It is calculated as a ratio of the percent of total points scored by a given team : the percent chance given to that team to win.
+### g-Value
+The g-Value is a multiplier to adjust for the different formats of tournaments which lead some teams to play more or fewer games. It is set equal to 8/the number of games played by the team (not counting byes or crossover matches).
 
 ## List of Tournaments
 Tournament|Date|Set Played|Status|Varsity q-Value|JV q-Value
@@ -56,7 +58,7 @@ Northern California Fall|10/27/2019|C|Complete|1.222|1.213
 
 ## The Rankings
 
-### Varsity Rankings
+### Varsity Rankings (g-Value not included)
 Ranking|Team|State|Points
 ---|---|---|---
 1.|Millburn A|New Jersey|2105.886
@@ -70,7 +72,7 @@ Ranking|Team|State|Points
 9.|Trinity Prep A|Florida|1848.294
 10.|Canyon Crest Academy A|California|1845.995
 
-### Junior Varsity Rankings
+### Junior Varsity Rankings (g-Value not included)
 Ranking|Team|State|Points
 ---|---|---|---
 1.|Hunter College High B|New York|2074.658
@@ -83,3 +85,30 @@ Ranking|Team|State|Points
 8.|Sagittarius|California|1831.614
 9.|Mission San Jose|California|1830.778
 10.|Phillips Exeter B|New Hampshire|1799.496
+
+### Varsity Rankings (g-Value included)
+Ranking|Team|State|Points
+---|---|---|---
+1.|Millburn A|New Jersey|2104.275
+2.|Arcadia A|California|2072.387
+3.|Russellville A|Arkansas|2060.707
+4.|Team Coldhug A|Connecticut|1996.221
+5.|Team Pi-oneers A|California|1983.979
+6.|Collegiate A|Florida|1981.544
+7.|Cambridge A|Georgia|1966.800
+8.|Stevenson A|Illinois|1939.301
+9.|Richard Montgomery A|Maryland|1938.246
+10.|Saratoga A|California|1925.474
+### Junior Varsity Rankings (g-Value included)
+Ranking|Team|State|Points
+---|---|---|---
+1.|Stevenson E|Illinois|2145.523
+2.|Hunter B|New York|2072.991
+3.|Churchill A|New Jersey|2040.958
+4.|Ridgewood C|New Jersey|2040.198
+5.|Ransom Everglades C|Florida|1997.725
+6.|Methacton C|Pennsylvania|1990.755
+7.|Montgomery Blair B|Maryland|1982.417
+8.|McLean A|Virginia|1977.806
+9.|St. Margaret's|California|1973.390
+10.|Phillips Exeter B|New Hampshire|1918.715
