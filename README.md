@@ -12,7 +12,7 @@ new rank of A = rank of A + q * K * ((score of A / ((score of A + score of B) * 
 ### q-Value
 The q-value is used to represent strength of field at a tournament and intended to help improve elo as a measure of skill unaffected by the field a team is up against, and thus more useful and accurate as a comparison between teams from different regions. It is calculated as a ratio of average total points scored per game at a given tournament : average total points scored per game on a given set, and is calculated independently the for MS, JV, and Varsity fields.
 ### T-Value
-The T-value is used to account for the inherent issues in equating the percent chance of a given winning to the percent of total points that team will score. It is calculated as a ratio of the percent of total points scored by a given team : the percent chance given to that team to win. The g-value is used to account for the disparity in game numbers between tournaments, and is set equal to 10/games played.
+The T-value is used to account for the inherent issues in equating the percent chance of a given winning to the percent of total points that team will score. It is calculated as a ratio of the percent of total points scored by a given team : the percent chance given to that team to win.
 
 ## List of Tournaments
 Tournament|Date|Set Played|Status|Varsity q-Value|JV q-Value
