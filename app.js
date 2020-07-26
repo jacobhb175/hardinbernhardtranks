@@ -4297,23 +4297,13 @@ async function newRank(A, B, AScore, BScore) {
         await docRefA.get().then(async function(doc) {
             if (doc.exists) {
                 let gamesA=doc.data().games;
-                let PPGA=doc.data().PPG
                 await docRefB.get().then(async function(doc) {
                     if (doc.exists) {
                         let gamesB=doc.data().games;
-                        let PPGB=doc.data().PPG
-                        let totalPointsA = PPGA*gamesA;
-                        let totalPointsB = PPGB*gamesB;
-                        totalPointsA = totalPointsA + AScore;
-                        totalPointsB = totalPointsB + BScore;
                         gamesA = gamesA + 1;
                         gamesB = gamesB + 1;
-                        PPGA=totalPointsA/gamesA;
-                        PPGB=totalPointsB/gamesB;
                         db.collection("teams").doc(A).update({games:gamesA})
                         db.collection("teams").doc(B).update({games:gamesB})
-                        db.collection("teams").doc(A).update({PPG:PPGA})
-                        db.collection("teams").doc(B).update({PPG:PPGB})
                     } else {
                         // doc.data() will be undefined in this case
                         console.log("No such document!"+B);
@@ -4333,7 +4323,7 @@ async function newRank(A, B, AScore, BScore) {
 
 //calculate and update rank
 async function nRank(A,B,AScore,BScore){
-    console.log("q",q)
+    //console.log("q",q)
     var docRefA = db.collection("teams").doc(A);
     var docRefB = db.collection("teams").doc(B);
     await docRefA.get().then(async function(doc) {
@@ -4351,8 +4341,8 @@ async function nRank(A,B,AScore,BScore){
                             await docRefB.get().then(async function(doc) {
                                 if (doc.exists) {
                                     let gamesB=doc.data().games;
-                                    let gA = 1;
-                                    let gB = 1;/*
+                                    let gA = 8/gamesA;
+                                    let gB = 8/gamesB;/*
                                     if (gamesA > 5) {
                                         gA = 5/(gamesA-5);
                                     }
@@ -4396,7 +4386,7 @@ async function nRank(A,B,AScore,BScore){
 }
 
 //Print ranked teams in a specific division
-function printRanks(div){
+/*function printRanks(div){
     //let teamsRef = db.collection("teams");
     //console.log(teamsRef.where("division","==",div).orderBy("rank").limit(10));
     
@@ -4411,7 +4401,7 @@ function printRanks(div){
         .catch(function(error) {
             console.log("Error getting documents: ", error);
         });
-}
+}*/
 
 
 async function cSet(){
