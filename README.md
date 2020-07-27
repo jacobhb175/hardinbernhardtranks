@@ -58,35 +58,7 @@ Northern California Fall|10/27/2019|C|Complete|1.222|1.213
 
 ## The Rankings
 
-### Varsity Rankings (g-Value not included)
-Ranking|Team|State|Points
----|---|---|---
-1.|Millburn A|New Jersey|2105.886
-2.|Arcadia A|California|2082.677
-3.|Russellville A|Arkansas|2037.378
-4.|Stevenson C|Illinois|1925.355
-5.|Team Pi-oneers A|California|1885.982
-6.|Cambridge A|Georgia|1876.142
-7.|Team Coldhug A|Connecticut|1867.569
-8.|Great Valley A|Pennsylvania|1861.875
-9.|Trinity Prep A|Florida|1848.294
-10.|Canyon Crest Academy A|California|1845.995
-
-### Junior Varsity Rankings (g-Value not included)
-Ranking|Team|State|Points
----|---|---|---
-1.|Hunter College High B|New York|2074.658
-2.|Churchill A|New Jersey|2042.498
-3.|Methacton C|Pennsylvania|1900.241
-4.|Montgomery Blair B|Maryland|1893.419
-5.|St. Margaret's A|California|1885.588
-6.|Ridgewood C|New Jersey|1877.172
-7.|Ransom Everglades C|Florida|1876.610
-8.|Sagittarius|California|1831.614
-9.|Mission San Jose|California|1830.778
-10.|Phillips Exeter B|New Hampshire|1799.496
-
-### Varsity Rankings (g-Value included)
+### Varsity Rankings
 Ranking|Team|State|Points
 ---|---|---|---
 1.|Millburn A|New Jersey|2104.275
@@ -99,7 +71,8 @@ Ranking|Team|State|Points
 8.|Stevenson A|Illinois|1939.301
 9.|Richard Montgomery A|Maryland|1938.246
 10.|Saratoga A|California|1925.474
-### Junior Varsity Rankings (g-Value included)
+
+### Junior Varsity Rankings
 Ranking|Team|State|Points
 ---|---|---|---
 1.|Stevenson E|Illinois|2145.523

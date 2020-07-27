@@ -38,16 +38,16 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h1>
-<a id="hardin-bernhardt-ranks---version-100" class="anchor" href="#hardin-bernhardt-ranks---version-100" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hardin-Bernhardt Ranks</h1>
+<a id="hardin-bernhardt-ranks---version-100" class="anchor" href="#hardin-bernhardt-ranks---version-100" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hardin-Bernhardt Ranks - Version 1.0.0</h1>
 <p>Hardin-Bernhardt Ranks is a new way of ranking NHBB teams using a modified version of the Go Elo formula that takes into account strength of field and margin of victory.</p>
 <h2>
 <a id="the-formulas" class="anchor" href="#the-formulas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Formulas</h2>
 <h3>
 <a id="expected-score-formula" class="anchor" href="#expected-score-formula" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Expected Score Formula</h3>
-<p>expected score of A = 1 / ((e^((rank of B - rank of A) / rank of A)) + 1)</p>
+<p>expected score of A = 1 / ( ( e^ ( ( rank of B - rank of A ) / rank of A ) ) + 1)</p>
 <h3>
 <a id="new-rank-formula" class="anchor" href="#new-rank-formula" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>New Rank Formula</h3>
-<p>new rank of A = rank of A + q * K * ((score of A / ((score of A + score of B) * average T-value)) - expected score of A)</p>
+<p>new rank of A = rank of A + q * K * ( ( score of A / ( ( score of A + score of B ) * average T-value ) ) - expected score of A )</p>
 <h2>
 <a id="the-variables" class="anchor" href="#the-variables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Variables</h2>
 <h3>
@@ -56,6 +56,9 @@
 <h3>
 <a id="t-value" class="anchor" href="#t-value" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>T-Value</h3>
 <p>The T-value is used to account for the inherent issues in equating the percent chance of a given winning to the percent of total points that team will score. It is calculated as a ratio of the percent of total points scored by a given team : the percent chance given to that team to win.</p>
+<h3>
+<a id="g-value" class="anchor" href="#g-value" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>g-Value</h3>
+<p>The g-value is a multiplier to adjust for the different formats of tournaments which lead some teams to play more or fewer games. It is set equal to 8/the number of games played by the team (not counting byes or crossover matches).</p>
 <h2>
 <a id="list-of-tournaments" class="anchor" href="#list-of-tournaments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List of Tournaments</h2>
 <table>
@@ -374,66 +377,66 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>1.</td>
-<td>Millburn A</td>
-<td>New Jersey</td>
-<td>2105.886</td>
-</tr>
-<tr>
-<td>2.</td>
-<td>Arcadia A</td>
-<td>California</td>
-<td>2082.677</td>
-</tr>
-<tr>
-<td>3.</td>
-<td>Russellville A</td>
-<td>Arkansas</td>
-<td>2037.378</td>
-</tr>
-<tr>
-<td>4.</td>
-<td>Stevenson C</td>
-<td>Illinois</td>
-<td>1925.355</td>
-</tr>
-<tr>
-<td>5.</td>
-<td>Team Pi-oneers A</td>
-<td>California</td>
-<td>1885.982</td>
-</tr>
-<tr>
-<td>6.</td>
-<td>Cambridge A</td>
-<td>Georgia</td>
-<td>1876.142</td>
-</tr>
-<tr>
-<td>7.</td>
-<td>Team Coldhug A</td>
-<td>Connecticut</td>
-<td>1867.569</td>
-</tr>
-<tr>
-<td>8.</td>
-<td>Great Valley A</td>
-<td>Pennsylvania</td>
-<td>1861.875</td>
-</tr>
-<tr>
-<td>9.</td>
-<td>Trinity Prep A</td>
-<td>Florida</td>
-<td>1848.294</td>
-</tr>
-<tr>
-<td>10.</td>
-<td>Canyon Crest Academy A</td>
-<td>California</td>
-<td>1845.995</td>
-</tr>
+  <tr>
+    <td>1.</td>
+    <td>Millburn A</td>
+    <td>New Jersey</td>
+    <td>2104.275</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>Arcadia A</td>
+    <td>California</td>
+    <td>2072.387</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>Russellville A</td>
+    <td>Arkansas</td>
+    <td>2060.707</td>
+  </tr>
+  <tr>
+    <td>4.</td>
+    <td>Team Coldhug A</td>
+    <td>Connecticut</td>
+    <td>1996.221</td>
+  </tr>
+  <tr>
+    <td>5.</td>
+    <td>Team Pi-oneers A</td>
+    <td>California</td>
+    <td>1983.979</td>
+  </tr>
+  <tr>
+    <td>6.</td>
+    <td>Collegiate A</td>
+    <td>Florida</td>
+    <td>1981.544</td>
+  </tr>
+  <tr>
+    <td>7.</td>
+    <td>Cambridge A</td>
+    <td>Georgia</td>
+    <td>1966.800</td>
+  </tr>
+  <tr>
+    <td>8.</td>
+    <td>Stevenson A</td>
+    <td>Illinois</td>
+    <td>1939.301</td>
+    </tr>
+  <tr>
+    <td>9.</td>
+    <td>Richard Montgomery A</td>
+    <td>Maryland</td>
+    <td>1938.246</td>
+  </tr>
+  <tr>
+    <td>10.</td>
+    <td>Saratoga</td>
+    <td>California</td>
+    <td>1925.474</td>
+  </tr>
 </tbody>
 </table>
 <h3>
@@ -448,66 +451,66 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>1.</td>
-<td>Hunter College High B</td>
-<td>New York</td>
-<td>2074.658</td>
-</tr>
-<tr>
-<td>2.</td>
-<td>Churchill A</td>
-<td>New Jersey</td>
-<td>2042.498</td>
-</tr>
-<tr>
-<td>3.</td>
-<td>Methacton C</td>
-<td>Pennsylvania</td>
-<td>1900.241</td>
-</tr>
-<tr>
-<td>4.</td>
-<td>Montgomery Blair B</td>
-<td>Maryland</td>
-<td>1893.419</td>
-</tr>
-<tr>
-<td>5.</td>
-<td>St. Margaret's A</td>
-<td>California</td>
-<td>1885.588</td>
-</tr>
-<tr>
-<td>6.</td>
-<td>Ridgewood C</td>
-<td>New Jersey</td>
-<td>1877.172</td>
-</tr>
-<tr>
-<td>7.</td>
-<td>Ransom Everglades C</td>
-<td>Florida</td>
-<td>1876.610</td>
-</tr>
-<tr>
-<td>8.</td>
-<td>Sagittarius</td>
-<td>California</td>
-<td>1831.614</td>
-</tr>
-<tr>
-<td>9.</td>
-<td>Mission San Jose</td>
-<td>California</td>
-<td>1830.778</td>
-</tr>
-<tr>
-<td>10.</td>
-<td>Phillips Exeter B</td>
-<td>New Hampshire</td>
-<td>1799.496</td>
-</tr>
+  <tr>
+    <td>1.</td>
+    <td>Stevenson E</td>
+    <td>Illinois</td>
+    <td>2145.523</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>Hunter College High B</td>
+    <td>New York</td>
+    <td>2072.991</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>Churchill A</td>
+    <td>New Jersey</td>
+    <td>2040.958</td>
+  </tr>
+  <tr>
+    <td>4.</td>
+    <td>Ridgewood C</td>
+    <td>New Jersey</td>
+    <td>2040.198</td>
+  </tr>
+  <tr>
+    <td>5.</td>
+    <td>Ransom Everglades C</td>
+    <td>Florida</td>
+    <td>1997.725</td>
+  </tr>
+  <tr>
+    <td>6.</td>
+    <td>Methacton C</td>
+    <td>Pennsylvania</td>
+    <td>1990.755</td>
+  </tr>
+  <tr>
+    <td>7.</td>
+    <td>Montgomery Blair B</td>
+    <td>Maryland</td>
+    <td>1982.417</td>
+  </tr>
+  <tr>
+    <td>8.</td>
+    <td>McLean</td>
+    <td>Virginia</td>
+    <td>1977.806</td>
+  </tr>
+  <tr>
+    <td>9.</td>
+    <td>St. Margaret's</td>
+    <td>California</td>
+    <td>1973.390</td>
+  </tr>
+  <tr>
+    <td>10.</td>
+    <td>Phillips Exeter B</td>
+    <td>New Hampshire</td>
+    <td>1918.715</td>
+  </tr>
 </tbody>
 </table>
         </section>
