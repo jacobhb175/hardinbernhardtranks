@@ -2639,7 +2639,6 @@ games:0
 
 
 //MS Teams
-/*
 db.collection("teams").doc("AlmadenMSA").set({
     name:"Challenger-Almaden A",
     state:"California",
@@ -2842,7 +2841,7 @@ db.collection("teams").doc("TrinityDMS").set({
     division:"Middle School",
 rank:1200,
 games:0
-}),*/
+}),
 //Later teams added
 db.collection("teams").doc("LindseyAV").set({
     name:"Lindsey Homeschool A",
@@ -3166,13 +3165,13 @@ db.collection("teams").doc("BethlehemBJV").set({
     rank:1200,
     games:0
 }),
-/*db.collection("teams").doc("BethlehemMSJV").set({
+db.collection("teams").doc("BethlehemMSJV").set({
     name:"Bethlehem MS",
     state:"New York",
     division:"Junior Varsity",
     rank:1200,
     games:0
-}),*/
+}),
 db.collection("teams").doc("BerlinAV").set({
     name:"Berlin A",
     state:"New York",
@@ -3699,7 +3698,7 @@ async function newRank(A, B, AScore, BScore) {
         teamAvgJV.push(AScore,BScore);
         teamAvgCJV.push(AScore,BScore);
     }
-    else if (K == 0 && evalMS == true) {
+    else if (K == 100 && evalMS == true) {
         //push game results
         teamAvgMS.push(AScore,BScore);
         teamAvgCMS.push(AScore,BScore);
@@ -3764,7 +3763,7 @@ async function newRank(A, B, AScore, BScore) {
         }
         nRank(A,B,AScore,BScore);
     }
-    else if (K == 0 && evalMS == true) {
+    else if (K == 100 && evalMS == true) {
         if (c == 0) {
         //calculate q value
         c=c+1;
@@ -3890,11 +3889,10 @@ async function nRank(A,B,AScore,BScore){
 }
 
 //Print ranked teams in a specific division
-/*function printRanks(div){
+function printRanks(div){
     //let teamsRef = db.collection("teams");
     //console.log(teamsRef.where("division","==",div).orderBy("rank").limit(10));
-    
-    db.collection("teams").where("division", "==", div).orderBy("rank").limit(10);
+    db.collection("teams").where("division", "==", div).orderBy("rank").limit(10)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
@@ -3905,7 +3903,7 @@ async function nRank(A,B,AScore,BScore){
         .catch(function(error) {
             console.log("Error getting documents: ", error);
         });
-}*/
+}
 
 
 async function cSet(){
@@ -8133,6 +8131,8 @@ console.log("SoCal C q V: "+qV[a2]);
 console.log("SoCal C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
+await printRanks("Varsity");
+await printRanks("Junior Varsity");
 };
 cSet();
 
