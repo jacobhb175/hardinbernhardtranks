@@ -18,7 +18,6 @@ server.listen(port, hostname, () => {
 
 
 
-
 //Varsity Teams
 
 db.collection("teams").doc("AmherstAV").set({
@@ -651,10 +650,10 @@ db.collection("teams").doc("IolaniAV").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("IolaniBV").set({
-    name:"Iolani B",
+db.collection("teams").doc("IolaniCJV").set({
+    name:"Iolani C",
     state:"Hawaii",
-    division:"Varsity",
+    division:"Junior Varsity",
 rank:1200,
 games:0
 }),
@@ -1169,8 +1168,15 @@ db.collection("teams").doc("PunahouAV").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PunahouBV").set({
+db.collection("teams").doc("PunahouBJV").set({
     name:"Punahou B",
+    state:"Hawaii",
+    division:"Junior Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("McKinleyAV").set({
+    name:"McKinley",
     state:"Hawaii",
     division:"Varsity",
 rank:1200,
@@ -3584,6 +3590,7 @@ docRef.get().then(function(doc) {
 let evalV;
 let evalJV;
 let evalMS;
+
 let expScore;
 let expScoreA;
 let expScoreB;
@@ -3591,14 +3598,17 @@ let expScoreB;
 let teamAvgV = [];
 let teamAvgJV = [];
 let teamAvgMS = [];
+
 let allV = [];
 let allJV = [];
 let allMS = [];
+
 let teamAvgCV = [];
 let teamAvgCJV = [];
 let teamAvgCMS = [];
 let teamAvgBV = [];
 let teamAvgBJV = [];
+let teamAvgBMS = [];
 let teamAvgAV = [];
 let teamAvgAJV = [];
 let teamAvgAMS = [];
@@ -3606,23 +3616,30 @@ let teamAvgPrV = [];
 let teamAvgPrJV = []
 let teamAvgPlV = [];
 let teamAvgPlJV = [];
+
 let qV = [];
 let qJV = [];
 let qMS = [];
 
+let cSet = false;
+let bSet = false;
+let aSet = false;
+
 let a = 0;
 let b = 0;
 let c = 0;
-let a2 = 0;
-let b2 = 0;
-let c2 = 0;
+let a2 = -1;
+let b2 = -1;
+let c2 = -1;
+
 let q = 0;
 let t = [];
 let avgT = 0;
+
 let y = false;
 let z = 0;
 
-let cDiv = false;
+let crossDiv = false;
 
 //K Rank
 //C Set = 100
@@ -3743,114 +3760,224 @@ async function newRank(A, B, AScore, BScore) {
     await includes(A,B,"Junior Varsity");
     await includes(A,B,"Middle School");
     if (y == false){
-    //C-Set games
-    if (K == 100 && evalV == true) {
-        //push game results
-        teamAvgV.push(AScore,BScore)
-        teamAvgCV.push(AScore,BScore);
+        //C-Set games
+        if (cSet == true){
+            if (evalV == true) {
+                //push game results
+                teamAvgV.push(AScore,BScore)
+                teamAvgCV.push(AScore,BScore);
+            }
+            else if (evalJV == true) {
+                //push game results
+                teamAvgJV.push(AScore,BScore);
+                teamAvgCJV.push(AScore,BScore);
+            }
+            else if (evalMS == true) {
+                //push game results
+                teamAvgMS.push(AScore,BScore);
+                teamAvgCMS.push(AScore,BScore);
+            }
+            else {
+                //console.log(A,B,"is cross-divisional");
+            }
+        }
+        //B-Set games
+        if (bSet == true){
+            if (evalV == true) {
+                //push game results
+                teamAvgV.push(AScore,BScore)
+                teamAvgBV.push(AScore,BScore);
+            }
+            else if (evalJV == true) {
+                //push game results
+                teamAvgJV.push(AScore,BScore);
+                teamAvgBJV.push(AScore,BScore);
+            }
+            else if (evalMS == true) {
+                //push game results
+                teamAvgMS.push(AScore,BScore);
+                teamAvgBMS.push(AScore,BScore);
+            }
+            else {
+                //console.log(A,B,"is cross-divisional");
+            }
+        } 
     }
-    else if (K == 100 && evalJV == true) {
-        //push game results
-        teamAvgJV.push(AScore,BScore);
-        teamAvgCJV.push(AScore,BScore);
-    }
-    else if (K == 100 && evalMS == true) {
-        //push game results
-        teamAvgMS.push(AScore,BScore);
-        teamAvgCMS.push(AScore,BScore);
-    }
-    else {
-        //console.log(A,B,"is cross-divisional");
-    }
-    }
-
     else if (y == true){
         //C-Set games
-    if (K == 100 && evalV == true) {
-        if (a == 0) {
-        a = a+1;
-        //calculate q value
-        let sumCV = 0;
-        let m;
-        let teamAvgCVLen = teamAvgCV.length;
-        for(m = 0; m < teamAvgCVLen; m++){
-            sumCV += parseInt(teamAvgCV[m],10);
-        };
-        let avgCV = sumCV/teamAvgCVLen;
-        //console.log("sumCV,teamAvgCVLen,avgCV",sumCV,teamAvgCVLen,avgCV);
-        let sum = 0;
-        let n;
-        let allVLen = allV[a2].length;
-        for(n = 0; n < allVLen; n++){
-            sum += parseInt(allV[a2][n],10);
-        };
-        let avgV = sum/allVLen;
-        q = avgV/avgCV;
-        qV.push(q);
+        if (cSet == true) {
+            if (evalV == true) {
+                if (a == 0) {
+                    a = a+1;
+                    //calculate q value
+                    let sumCV = 0;
+                    let m;
+                    let teamAvgCVLen = teamAvgCV.length;
+                    for(m = 0; m < teamAvgCVLen; m++){
+                        sumCV += parseInt(teamAvgCV[m],10);
+                    };
+                    let avgCV = sumCV/teamAvgCVLen;
+                    //console.log("sumCV,teamAvgCVLen,avgCV",sumCV,teamAvgCVLen,avgCV);
+                    let sum = 0;
+                    let n;
+                    let allVLen = allV[a2].length;
+                    for(n = 0; n < allVLen; n++){
+                        sum += parseInt(allV[a2][n],10);
+                    };
+                    let avgV = sum/allVLen;
+                    q = avgV/avgCV;
+                    qV.push(q);
+                }
+                else {
+                    q = qV[a2];
+                }
+                nRank(A,B,AScore,BScore);
+            }
+            else if (evalJV == true) {
+                if (b == 0) {
+                //calculate q value
+                b = b+1;
+                let sumCJV = 0;
+                let o;
+                let teamAvgCJVLen = teamAvgCJV.length;
+                for(o = 0; o < teamAvgCJVLen; o++){
+                    sumCJV += parseInt(teamAvgCJV[o],10);
+                };
+                let avgCJV = sumCJV/teamAvgCJVLen;
+                let sum = 0;
+                let p;
+                let allJVLen = allJV[b2].length;
+                for(p = 0; p < allJVLen; p++ ){
+                    sum += parseInt(allJV[b2][p],10);
+                };
+                let avgJV = sum/allJVLen;
+                q = avgJV/avgCJV;
+                qJV.push(q);
+                }
+                else {
+                    q = qJV[b2];
+                }
+                nRank(A,B,AScore,BScore);
+            }
+            else if (evalMS == true) {
+                if (c == 0) {
+                //calculate q value
+                c=c+1;
+                let sumCMS = 0;
+                let r;
+                let teamAvgCMSLen = teamAvgCMS.length;
+                for(r = 0; r < teamAvgCMSLen; r++){
+                    sumCMS += parseInt(teamAvgCMS[r],10);
+                };
+                let avgCMS = sumCMS/teamAvgCMS.length;
+                let sum = 0;
+                let s;
+                let allMSLen = allMS[c2].length;
+                for(s = 0; s < allMSLen; s++ ){
+                    sum += parseInt(allMS[c2][s],10);
+                };
+                let avgMS = sum/allMSLen;
+                q = avgMS/avgCMS;
+                qMS.push(q);
+                }
+                else {
+                    q = qMS[c2];
+                }
+                nRank(A,B,AScore,BScore);
+            }
+            else {
+                crossDiv = true;
+                //console.log(A,B,"is cross-divisional");
+            }
         }
-        else {
-            q = qV[a2];
+        //B-Set games
+        if (bSet == true) {
+            if (evalV == true) {
+                if (a == 0) {
+                    a = a+1;
+                    //calculate q value
+                    let sumBV = 0;
+                    let m;
+                    let teamAvgBVLen = teamAvgBV.length;
+                    for(m = 0; m < teamAvgBVLen; m++){
+                        sumBV += parseInt(teamAvgBV[m],10);
+                    };
+                    let avgBV = sumBV/teamAvBVLen;
+                    //console.log("sumCV,teamAvgCVLen,avgCV",sumCV,teamAvgCVLen,avgCV);
+                    let sum = 0;
+                    let n;
+                    let allVLen = allV[a2].length;
+                    for(n = 0; n < allVLen; n++){
+                        sum += parseInt(allV[a2][n],10);
+                    };
+                    let avgV = sum/allVLen;
+                    q = avgV/avgBV;
+                    qV.push(q);
+                }
+                else {
+                    q = qV[a2];
+                }
+                nRank(A,B,AScore,BScore);
+            }
+            else if (evalJV == true) {
+                if (b == 0) {
+                //calculate q value
+                b = b+1;
+                let sumBJV = 0;
+                let o;
+                let teamAvgBJVLen = teamAvgBJV.length;
+                for(o = 0; o < teamAvgBJVLen; o++){
+                    sumBJV += parseInt(teamAvgBJV[o],10);
+                };
+                let avgBJV = sumBJV/teamAvgBJVLen;
+                let sum = 0;
+                let p;
+                let allJVLen = allJV[b2].length;
+                for(p = 0; p < allJVLen; p++ ){
+                    sum += parseInt(allJV[b2][p],10);
+                };
+                let avgJV = sum/allJVLen;
+                q = avgJV/avgBJV;
+                qJV.push(q);
+                }
+                else {
+                    q = qJV[b2];
+                }
+                nRank(A,B,AScore,BScore);
+            }
+            else if (evalMS == true) {
+                if (c == 0) {
+                //calculate q value
+                c=c+1;
+                let sumBMS = 0;
+                let r;
+                let teamAvgBMSLen = teamAvgBMS.length;
+                for(r = 0; r < teamAvgBMSLen; r++){
+                    sumBMS += parseInt(teamAvgBMS[r],10);
+                };
+                let avgBMS = sumBMS/teamAvgBMS.length;
+                let sum = 0;
+                let s;
+                let allMSLen = allMS[c2].length;
+                for(s = 0; s < allMSLen; s++ ){
+                    sum += parseInt(allMS[c2][s],10);
+                };
+                let avgMS = sum/allMSLen;
+                q = avgMS/avgBMS;
+                qMS.push(q);
+                }
+                else {
+                    q = qMS[c2];
+                }
+                nRank(A,B,AScore,BScore);
+            }
+            else {
+                crossDiv = true;
+                //console.log(A,B,"is cross-divisional");
+            }
         }
-        nRank(A,B,AScore,BScore);
     }
-    else if (K == 100 && evalJV == true) {
-        if (b == 0) {
-        //calculate q value
-        b = b+1;
-        let sumCJV = 0;
-        let o;
-        let teamAvgCJVLen = teamAvgCJV.length;
-        for(o = 0; o < teamAvgCJVLen; o++){
-            sumCJV += parseInt(teamAvgCJV[o],10);
-        };
-        let avgCJV = sumCJV/teamAvgCJVLen;
-        let sum = 0;
-        let p;
-        let allJVLen = allJV[b2].length;
-        for(p = 0; p < allJVLen; p++ ){
-            sum += parseInt(allJV[b2][p],10);
-        };
-        let avgJV = sum/allJVLen;
-        q = avgJV/avgCJV;
-        qJV.push(q);
-        }
-        else {
-            q = qJV[b2];
-        }
-        nRank(A,B,AScore,BScore);
-    }
-    else if (K == 100 && evalMS == true) {
-        if (c == 0) {
-        //calculate q value
-        c=c+1;
-        let sumCMS = 0;
-        let r;
-        let teamAvgCMSLen = teamAvgCMS.length;
-        for(r = 0; r < teamAvgCMSLen; r++){
-            sumCMS += parseInt(teamAvgCMS[r],10);
-        };
-        let avgCMS = sumCMS/teamAvgCMS.length;
-        let sum = 0;
-        let s;
-        let allMSLen = allMS[c2].length;
-        for(s = 0; s < allMSLen; s++ ){
-            sum += parseInt(allMS[c2][s],10);
-        };
-        let avgMS = sum/allMSLen;
-        q = avgMS/avgCMS;
-        qMS.push(q);
-        }
-        else {
-            q = qMS[c2];
-        }
-        nRank(A,B,AScore,BScore);
-    }
-    else {
-        cDiv = true;
-        //console.log(A,B,"is cross-divisional");
-    }
-    }
-    if (cDiv != true) {
+    if (crossDiv != true) {
         var docRefA = db.collection("teams").doc(A);
         var docRefB = db.collection("teams").doc(B);
         await docRefA.get().then(async function(doc) {
@@ -3967,6 +4094,7 @@ function reset(){}
 
 async function cSet(){
 K = 100;
+cSet = true;
 
 //Northern California Fall C-Set
 //Prelims
@@ -4050,7 +4178,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-console.log("NorCal Fall C");
+//console.log("NorCal Fall C");
 
 
 //Eastern Washington C-Set
@@ -6047,9 +6175,9 @@ console.log(y);
 a = 0;
 b = 0;
 c = 0;
-a2 = 0;
-b2 = 0;
-c2 = 0;
+a2 = a2+1;
+b2 = b2+1;
+c2 = c2+1;
 //Prelims
 //Round 1
 await newRank("MissionSanJoseAJV","SaratogaEJV",450,70);
@@ -8175,17 +8303,151 @@ console.log("SoCal C q V: "+qV[a2]);
 console.log("SoCal C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
+
+cSet = false;
+y = false;
+
 await printRanks("Varsity");
 await printRanks("Junior Varsity");
 await printRanks("Middle School");
 };
 
-async function bSet(){
-    K = 100;
+async function bSet() {
+K = 100;
+bSet = true
+
+//Western New York B-Set
+//Prelims
+//Round 1
+newRank("FayettevilleManliusAV","IroquoisAV",250,240);
+newRank("IthacaAV","IroquoisBV",410,60);
+newRank("NicholsAV","NicholsBV",360,70);
+newRank("IthacaBJV","SacredHeartAJV",380,20);
+newRank("ParkSchoolAJV","IroquoisCJV",320,40);
+//Round 2
+newRank("FayettevilleManliusAV","IroquoisBV",410,60);
+newRank("IthacaAV","NicholsAV",350,160);
+newRank("IroquoisAV","NicholsBV",260,160);
+newRank("IthacaBJV","ParkSchoolAJV",240,200);
+newRank("IroquoisCJV","SacredHeartBJV",90,80);
+//Round 3
+newRank("NicholsAV","IroquoisAV",260,230);
+newRank("IthacaAV","FayettevilleManliusAV",370,150);
+newRank("NicholsBV","IroquoisBV",250,150);
+newRank("SacredHeartAJV","SacredHeartBJV",150,100);
+newRank("IthacaBJV","IroquoisCJV",380,30);
+//Round 4
+newRank("IthacaAV","IroquoisAV",330,190);
+newRank("NicholsAV","IroquoisBV",250,110);
+newRank("FayettevilleManliusAV","NicholsBV",270,110);
+newRank("SacredHeartAJV","IroquoisCJV",100,20);
+newRank("ParkSchoolAJV","SacredHeartBJV",210,40);
+//Round 5
+newRank("NicholsAV","FayettevilleManliusAV",250,180);
+newRank("IroquoisAV","IroquoisBV",230,180);
+newRank("IthacaAV","NicholsBV",400,60);
+newRank("IthacaBJV","SacredHeartBJV",230,30);
+newRank("ParkSchoolAJV","SacredHeartAJV",230,50);
+//Playoffs
+//Varsity Semifinals
+newRank("IthacaAV","IroquoisAV",420,80);
+newRank("FayettevilleManliusAV","NicholsAV",220,210);
+//Varsity Finals
+newRank("IthacaAV","FayettevilleManliusAV",360,110);
+//JV Semifinals
+newRank("IthacaBJV","IroquoisCJV",210,30);
+newRank("ParkSchoolAJV","SacredHeartAJV",160,40);
+//JV Finals
+newRank("IthacaBJV","ParkSchoolAJV",180,140);
+allV.push(teamAvgV);
+allJV.push(teamAvgJV);
+teamAvgV = [];
+teamAvgJV = [];
+
+//Hawaii State B-Set
+allV.push(teamAvgV);
+allJV.push(teamAvgJV);
+teamAvgV = [];
+teamAvgJV = [];
+
+
+
+
+
+y = true
+
+
+
+
+
+a2 = a2+1;
+b2 = b2+1;
+//Western New York B-Set
+//Prelims
+//Round 1
+newRank("FayettevilleManliusAV","IroquoisAV",250,240);
+newRank("IthacaAV","IroquoisBV",410,60);
+newRank("NicholsAV","NicholsBV",360,70);
+newRank("IthacaBJV","SacredHeartAJV",380,20);
+newRank("ParkSchoolAJV","IroquoisCJV",320,40);
+//Round 2
+newRank("FayettevilleManliusAV","IroquoisBV",410,60);
+newRank("IthacaAV","NicholsAV",350,160);
+newRank("IroquoisAV","NicholsBV",260,160);
+newRank("IthacaBJV","ParkSchoolAJV",240,200);
+newRank("IroquoisCJV","SacredHeartBJV",90,80);
+//Round 3
+newRank("NicholsAV","IroquoisAV",260,230);
+newRank("IthacaAV","FayettevilleManliusAV",370,150);
+newRank("NicholsBV","IroquoisBV",250,150);
+newRank("SacredHeartAJV","SacredHeartBJV",150,100);
+newRank("IthacaBJV","IroquoisCJV",380,30);
+//Round 4
+newRank("IthacaAV","IroquoisAV",330,190);
+newRank("NicholsAV","IroquoisBV",250,110);
+newRank("FayettevilleManliusAV","NicholsBV",270,110);
+newRank("SacredHeartAJV","IroquoisCJV",100,20);
+newRank("ParkSchoolAJV","SacredHeartBJV",210,40);
+//Round 5
+newRank("NicholsAV","FayettevilleManliusAV",250,180);
+newRank("IroquoisAV","IroquoisBV",230,180);
+newRank("IthacaAV","NicholsBV",400,60);
+newRank("IthacaBJV","SacredHeartBJV",230,30);
+newRank("ParkSchoolAJV","SacredHeartAJV",230,50);
+//Playoffs
+//Varsity Semifinals
+newRank("IthacaAV","IroquoisAV",420,80);
+newRank("FayettevilleManliusAV","NicholsAV",220,210);
+//Varsity Finals
+newRank("IthacaAV","FayettevilleManliusAV",360,110);
+//JV Semifinals
+newRank("IthacaBJV","IroquoisCJV",210,30);
+newRank("ParkSchoolAJV","SacredHeartAJV",160,40);
+//JV Finals
+newRank("IthacaBJV","ParkSchoolAJV",180,140);
+console.log("WestNY B q V: "+qV[a2]);
+console.log("WestNY B q JV: "+qJV[b2]);
+a = 0;
+b = 0;
+
+a2 = a2+1;
+b2 = b2+1;
+//Hawaii State B-Set
+console.log("Hawaii B q V: "+qV[a2]);
+console.log("Hawaii B q JV: "+qJV[b2]);
+a = 0;
+b = 0;
+bSet = false;
+y = false;
 }
 
-cSet();
-bSet();
+async function allSets() {
+    await cSet();
+    await bSet();
+    await printRanks("Varsity");
+    await printRanks("Junior Varsity");
+    await printRanks("Middle School");
+}
 
 
 
