@@ -16,7 +16,7 @@ server.listen(port, hostname, () => {
 */
 
 
-//--
+
 
 
 //Varsity Teams
@@ -2034,8 +2034,22 @@ db.collection("teams").doc("HunterBJV").set({
 rank:1200,
 games:0
 }),
+db.collection("teams").doc("IroquoisBV").set({
+    name:"Iroquois B",
+    state:"New York",
+    division:"Varsity",
+rank:1200,
+games:0
+}),
 db.collection("teams").doc("IroquoisBJV").set({
     name:"Iroquois B",
+    state:"New York",
+    division:"Junior Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("IroquoisCJV").set({
+    name:"Iroquois C",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
@@ -3507,6 +3521,48 @@ db.collection("teams").doc("VistaVerdeAJV").set({
     division:"Junior Varsity",
     rank:1200,
     games:0
+}),
+db.collection("teams").doc("FayettevilleManliusAV").set({
+    name:"Fayetteville-Manlius",
+    state:"New York",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("IthacaAV").set({
+    name:"Ithaca A",
+    state:"New York",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("IthacaBJV").set({
+    name:"Ithaca B",
+    state:"New York",
+    division:"Junior Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("ParkSchoolAJV").set({
+    name:"Park School",
+    state:"New York",
+    division:"Junior Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("SacredHeartAJV").set({
+    name:"Sacred Heart A",
+    state:"New York",
+    division:"Junior Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("SacredHeartBJV").set({
+    name:"Sacred Heart B",
+    state:"New York",
+    division:"Junior Varsity",
+rank:1200,
+games:0
 })
 
 
@@ -3892,7 +3948,7 @@ async function nRank(A,B,AScore,BScore){
 function printRanks(div){
     //let teamsRef = db.collection("teams");
     //console.log(teamsRef.where("division","==",div).orderBy("rank").limit(10));
-    db.collection("teams").where("division", "==", div).orderBy("rank").limit(10)
+    db.collection("teams").where("division", "==", div).orderBy("rank","desc").limit(10)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
@@ -3904,6 +3960,9 @@ function printRanks(div){
             console.log("Error getting documents: ", error);
         });
 }
+
+//Reset score and game values for teams
+function reset(){}
 
 
 async function cSet(){
@@ -6432,7 +6491,6 @@ c = 0;
 //Northern Illinois C-Set
 a2 = a2+1;
 b2 = b2+1;
-c2 = c2+1;
 //Prelims
 //Round 1
 await newRank("StevensonAV","StevensonCV",340,300);
@@ -6489,7 +6547,6 @@ console.log("Northern IL C q V: "+qV[a2]);
 console.log("Northern IL C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
 
 //Greater Dayton C-Set
 a2 = a2+1;
@@ -6569,7 +6626,6 @@ console.log("Buffalo C q V: "+qV[a2]);
 console.log("Buffalo C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
 
 //South Florida Fall C-Set
 a2 = a2+1;
@@ -6732,7 +6788,7 @@ a = 0;
 b = 0;
 c = 0;
 
-console.log(qV,qJV);
+console.log(qV,qJV,qMS);
 
 //Greater Knoxville Fall C-Set
 a2 = a2+1;
@@ -6765,10 +6821,7 @@ await newRank("MaryvilleAV","PigeonForgeAV",400,160);
 await newRank("MaryvilleAV","GatlinburgAV",230,140);
 console.log("Knoxville C q V: "+qV[a2]);
 a = 0;
-b = 0;
-c = 0;
 
-console.log(qV,qJV);
 
 //Eastern Geogia Fall C-Set
 a2 = a2+1;
@@ -6845,9 +6898,6 @@ console.log("Eastern GA C q V: "+qV[a2]);
 console.log("Eastern GA C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
-
-console.log(qV,qJV);
 
 //Central Florida Fall C-Set
 a2 = a2+1;
@@ -6965,7 +7015,6 @@ a = 0;
 b = 0;
 c = 0;
 
-console.log(qV,qJV);
 
 //Western Washington C-Set
 a2 = a2+1;
@@ -7047,15 +7096,14 @@ await newRank("JesuitAV","WestviewAV",220,180);
 //Finals
 await newRank("StollerHMS","StollerKMS",240,200);
 console.log("South WA C q V: "+qV[a2]);
+console.log("South WA C q MS: "+qMS[c2]);
 a = 0;
-b = 0;
 c = 0;
 console.log(qV,qJV);
 
 //Boston Fall C-Set
 a2 = a2+1;
 b2 = b2+1;
-c2 = c2+1;
 //Prelims
 //Round 1
 await newRank("SalemBV","NorthfieldMtHermonAV",231,230);
@@ -7108,8 +7156,7 @@ console.log("Boston C q V: "+qV[a2]);
 console.log("Boston C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
-console.log(qV,qJV);
+
 
 //Washington DC C-Set
 a2 = a2+1;
@@ -7301,8 +7348,7 @@ console.log("South NJ C q V: "+qV[a2]);
 console.log("South NJ C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
-console.log(qV,qJV);
+
 
 
 //Northwest Illinois C-Set
@@ -7365,7 +7411,7 @@ console.log("NW IL C q V: "+qV[a2]);
 console.log("NW IL C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
+
 
 //Louisiana Fall C-Set
 a2 = a2+1;
@@ -7398,8 +7444,7 @@ await newRank("BatonRougeEpiscopalAV","BatonRougeMagnetAV",210,190);
 await newRank("ZacharyBV","BatonRougeEpiscopalAV",210,160);
 console.log("LA C q V: "+qV[a2]);
 a = 0;
-b = 0;
-c = 0;
+
 
 //Eastern Kentucky C-Set
 a2 = a2+1;
@@ -7432,8 +7477,7 @@ await newRank("BlazerAV","DunbarAV",211,210);
 await newRank("BlazerAV","JohnsonAV",270,160);
 console.log("East KY C q V: "+qV[a2]);
 a = 0;
-b = 0;
-c = 0;
+
 
 //Bergen County C-Set
 a2 = a2+1;
@@ -7488,7 +7532,7 @@ console.log("Bergen C q V: "+qV[a2]);
 console.log("Bergen C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
+
 
 //Lower Hudson C-Set
 a2 = a2+1;
@@ -7554,7 +7598,7 @@ console.log("Lower Hudson C q V: "+qV[a2]);
 console.log("Lower Hudson C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
+
 
 //Delaware C-Set
 a2 = a2+1;
@@ -7650,7 +7694,7 @@ console.log("Delaware C q V: "+qV[a2]);
 console.log("Delaware C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
+
 
 //Florida Panhandle C-Set
 a2 = a2+1;
@@ -7688,7 +7732,7 @@ console.log("FL Panhandle C q V: "+qV[a2]);
 console.log("FL Panhandle C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
+
 
 
 //Southwestern Illinois C-Set
@@ -7734,7 +7778,7 @@ console.log("SW IL C q V: "+qV[a2]);
 console.log("SW IL C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
+
 
 //Western Pennsylvania C-Set
 a2 = a2+1;
@@ -7791,7 +7835,7 @@ console.log("W PA C q V: "+qV[a2]);
 console.log("W PA C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-c = 0;
+
 
 
 //Mississippi Winter
@@ -8133,8 +8177,16 @@ a = 0;
 b = 0;
 await printRanks("Varsity");
 await printRanks("Junior Varsity");
+await printRanks("Middle School");
 };
+
+async function bSet(){
+    K = 100;
+}
+
 cSet();
+bSet();
+
 
 
 /*
