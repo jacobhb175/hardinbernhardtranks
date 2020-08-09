@@ -3658,6 +3658,48 @@ db.collection("teams").doc("HillcrestBV").set({
     division:"Varsity",
     rank:1200,
     games:0
+}),
+db.collection("teams").doc("SignalMountainAV").set({
+    name:"Signal Mountain A",
+    state:"Tennessee",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("SignalMountainBMS").set({
+    name:"Signal Mountain B",
+    state:"Tennessee",
+    division:"Middle School",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("SignalMountainCMS").set({
+    name:"Signal Mountain C",
+    state:"Tennessee",
+    division:"Middle School",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("SignalMountainDMS").set({
+    name:"Signal Mountain D",
+    state:"Tennessee",
+    division:"Middle School",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("RedBankAV").set({
+    name:"Red Bank A",
+    state:"Tennessee",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("RedBankBV").set({
+    name:"Red Bank B",
+    state:"Tennessee",
+    division:"Varsity",
+    rank:1200,
+    games:0
 })
 
 //End of team list
@@ -8561,6 +8603,23 @@ async function bSetData() {
     await newRank("ThunderRidgeAV","ThunderRidgeBV",180,50);
     allV.push(teamAvgV);
     teamAvgV = [];
+
+
+    //Chattanooga B-Set
+    //Prelims
+    //Round 1
+    await newRank("RedBankAV","RedBankBV",210,30);
+    await newRank("SignalMountainBMS","SignalMountainDMS",170,150);
+    //Round 2
+    await newRank("SignalMountainAV","RedBankAV",250,80);
+    await newRank("SignalMountainDMS","SignalMountainCMS",100,80);
+    //Round 3
+    await newRank("SignalMountainAV","RedBankBV",290,30);
+    await newRank("SignalMountainBMS","SignalMountainCMS",190,90);
+    allV.push(teamAvgV);
+    allMS.push(teamAvgMS);
+    teamAvgV = [];
+    teamAvgMS = [];
     
     
 
@@ -8737,6 +8796,24 @@ async function bSetData() {
     await newRank("ThunderRidgeAV","ThunderRidgeBV",180,50);
     console.log("NoVa B q V: "+qV[a2]);
     a = 0;
+
+    a2 = a2+1;
+    c2 = c2+1;
+    //Chattanooga B-Set
+    //Prelims
+    //Round 1
+    await newRank("RedBankAV","RedBankBV",210,30);
+    await newRank("SignalMountainBMS","SignalMountainDMS",170,150);
+    //Round 2
+    await newRank("SignalMountainAV","RedBankAV",250,80);
+    await newRank("SignalMountainDMS","SignalMountainCMS",100,80);
+    //Round 3
+    await newRank("SignalMountainAV","RedBankBV",290,30);
+    await newRank("SignalMountainBMS","SignalMountainCMS",190,90);
+    console.log("Chattanooga B q V: "+qV[a2]);
+    console.log("Chattanooga B q MS: "+qV[c2]);
+    a = 0;
+    c = 0;
 
     bSet = false;
     y = false;
