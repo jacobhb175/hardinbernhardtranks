@@ -3596,7 +3596,7 @@ db.collection("teams").doc("PotomacAV").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WTWoodsonAV").set({
+db.collection("teams").doc("WoodsonAV").set({
     name:"W. T. Woodson",
     state:"Virginia",
     division:"Varsity",
@@ -3616,6 +3616,48 @@ db.collection("teams").doc("OaktonBV").set({
     division:"Varsity",
 rank:1200,
 games:0
+}),
+db.collection("teams").doc("ThunderRidgeAV").set({
+    name:"Thunder Ridge A",
+    state:"Idaho",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("ThunderRidgeBV").set({
+    name:"Thunder Ridge B",
+    state:"Idaho",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("ThunderRidgeCV").set({
+    name:"Thunder Ridge C",
+    state:"Idaho",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("IdahoFallsAV").set({
+    name:"Idaho Falls",
+    state:"Idaho",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("HillcrestAV").set({
+    name:"Hillcrest A",
+    state:"Idaho",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
+db.collection("teams").doc("HillcrestBV").set({
+    name:"Hillcrest B",
+    state:"Idaho",
+    division:"Varsity",
+    rank:1200,
+    games:0
 })
 
 //End of team list
@@ -8453,20 +8495,57 @@ async function bSetData() {
     await newRank("ThomasJeffersonBV","ThomasJeffersonCV",350,160);
     await newRank("RichardMontgomeryBJV","ThomasJeffersonDJV",360,200);
     //Round 2
-    await newRank();
-    await newRank();
-    await newRank();
-    await newRank();
-    await newRank();
+    await newRank("ThomasJeffersonBV","WoodsonAV",310,200);
+    await newRank("RichardMontgomeryAV","PotomacAV",400,180);
+    await newRank("WhitmanAV","ThomasJeffersonCV",370,130);
+    await newRank("OaktonBV","OaktonAV",210,160);
+    await newRank("RichardMontgomeryBJV","ThomasJeffersonEJV",400,140);
     //Round 3
-    await newRank();
-    await newRank();
-    await newRank();
-    await newRank();
-    await newRank();
+    await newRank("ThomasJeffersonAV","OaktonAV",490,90);
+    await newRank("RichardMontgomeryAV","WhitmanAV",420,170);
+    await newRank("PotomacAV","WoodsonAV",270,240);
+    await newRank("ThomasJeffersonBV","OaktonBV",330,130);
+    await newRank("ThomasJeffersonDJV","ThomasJeffersonEJV",340,210);
     //Round 4
-    await newRank();
-    await newRank();
+    await newRank("PotomacAV","OaktonBV",320,100);
+    await newRank("ThomasJeffersonAV","ThomasJeffersonBV",380,150);
+    await newRank("ThomasJeffersonCV","OaktonAV",210,110);
+    await newRank("WhitmanAV","WoodsonAV",320,160);
+    await newRank("ThomasJeffersonDJV","RichardMontgomeryBJV",270,250);
+    //Round 5
+    await newRank("ThomasJeffersonAV","WhitmanAV",290,220);
+    await newRank("PotomacAV","ThomasJeffersonCV",320,130);
+    await newRank("RichardMontgomeryAV","ThomasJeffersonBV",390,160);
+    await newRank("WoodsonAV","OaktonAV",340,110);
+    await newRank("RichardMontgomeryBJV","ThomasJeffersonEJV",280,220);
+    //Playoffs
+    //Varsity Semifinals
+    await newRank("ThomasJeffersonAV","WhitmanAV",400,160);
+    await newRank("RichardMontgomeryAV","ThomasJeffersonBV",450,90);
+    //Varsity Finals
+    await newRank("RichardMontgomeryAV","ThomasJeffersonAV",290,280);
+    //JV Finals
+    await newRank("RichardMontgomeryBJV","ThomasJeffersonDJV",300,200);
+    allV.push(teamAvgV);
+    allJV.push(teamAvgJV);
+    teamAvgV = [];
+    teamAvgJV = [];
+    
+    //Idaho Falls B-Set
+    //Prelims
+    //Round 1
+    await newRank("HillcrestAV","ThunderRidgeBV",201,200);
+    await newRank("ThunderRidgeAV","IdahoFallsAV",270,200);
+    await newRank("ThunderRidgeCV","HillcrestBV",220,90);
+    //Round 2
+    await newRank("IdahoFallsAV","HillcrestAV",210,110);
+    await newRank("ThunderRidgeBV","HillcrestBV",330,20);
+    await newRank("ThunderRidgeAV","ThunderRidgeCV",290,20);
+    //Round 3
+    await newRank("HillcrestAV","HillcrestBV",280,30);
+    await newRank("IdahoFallsAV","ThunderRidgeCV",330,80);
+    await newRank("ThunderRidgeBV","ThunderRidgeAV",220,150);
+    //Round 4
     await newRank();
     await newRank();
     await newRank();
@@ -8474,11 +8553,7 @@ async function bSetData() {
     await newRank();
     await newRank();
     await newRank();
-    await newRank();
-    await newRank();
     //Playoffs
-    await newRank();
-    await newRank();
     await newRank();
     await newRank();
     await newRank();
@@ -8488,6 +8563,9 @@ async function bSetData() {
     teamAvgJV = [];
     
     
+
+
+
     y = true
     
     
@@ -8581,6 +8659,52 @@ async function bSetData() {
     a = 0;
     b = 0;
 
+    a2 = a2+1;
+    b2 = b2+1;
+    //Northern Virginia B-Set
+    //Prelims
+    //Round 1
+    await newRank("RichardMontgomeryAV","OaktonAV",390,170);
+    await newRank("WhitmanAV","OaktonBV",430,100);
+    await newRank("ThomasJeffersonAV","PotomacAV",360,200);
+    await newRank("ThomasJeffersonBV","ThomasJeffersonCV",350,160);
+    await newRank("RichardMontgomeryBJV","ThomasJeffersonDJV",360,200);
+    //Round 2
+    await newRank("ThomasJeffersonBV","WoodsonAV",310,200);
+    await newRank("RichardMontgomeryAV","PotomacAV",400,180);
+    await newRank("WhitmanAV","ThomasJeffersonCV",370,130);
+    await newRank("OaktonBV","OaktonAV",210,160);
+    await newRank("RichardMontgomeryBJV","ThomasJeffersonEJV",400,140);
+    //Round 3
+    await newRank("ThomasJeffersonAV","OaktonAV",490,90);
+    await newRank("RichardMontgomeryAV","WhitmanAV",420,170);
+    await newRank("PotomacAV","WoodsonAV",270,240);
+    await newRank("ThomasJeffersonBV","OaktonBV",330,130);
+    await newRank("ThomasJeffersonDJV","ThomasJeffersonEJV",340,210);
+    //Round 4
+    await newRank("PotomacAV","OaktonBV",320,100);
+    await newRank("ThomasJeffersonAV","ThomasJeffersonBV",380,150);
+    await newRank("ThomasJeffersonCV","OaktonAV",210,110);
+    await newRank("WhitmanAV","WoodsonAV",320,160);
+    await newRank("ThomasJeffersonDJV","RichardMontgomeryBJV",270,250);
+    //Round 5
+    await newRank("ThomasJeffersonAV","WhitmanAV",290,220);
+    await newRank("PotomacAV","ThomasJeffersonCV",320,130);
+    await newRank("RichardMontgomeryAV","ThomasJeffersonBV",390,160);
+    await newRank("WoodsonAV","OaktonAV",340,110);
+    await newRank("RichardMontgomeryBJV","ThomasJeffersonEJV",280,220);
+    //Playoffs
+    //Varsity Semifinals
+    await newRank("ThomasJeffersonAV","WhitmanAV",400,160);
+    await newRank("RichardMontgomeryAV","ThomasJeffersonBV",450,90);
+    //Varsity Finals
+    await newRank("RichardMontgomeryAV","ThomasJeffersonAV",290,280);
+    //JV Finals
+    await newRank("RichardMontgomeryBJV","ThomasJeffersonDJV",300,200);
+    console.log("NoVa B q V: "+qV[a2]);
+    console.log("NoVa B q JV: "+qJV[b2]);
+    a = 0;
+    b = 0;
 
     bSet = false;
     y = false;
