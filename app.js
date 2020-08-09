@@ -16,8 +16,6 @@ server.listen(port, hostname, () => {
 */
 
 
-
-
 //Varsity Teams
 
 db.collection("teams").doc("AmherstAV").set({
@@ -1483,6 +1481,13 @@ db.collection("teams").doc("ThomasJeffersonBV").set({
 rank:1200,
 games:0
 }),
+db.collection("teams").doc("ThomasJeffersonCV").set({
+    name:"Thomas Jefferson C",
+    state:"Virginia",
+    division:"Varsity",
+rank:1200,
+games:0
+}),
 db.collection("teams").doc("TippecanoeAV").set({
     name:"Tippecanoe A",
     state:"Ohio",
@@ -2551,6 +2556,13 @@ db.collection("teams").doc("ThomasJeffersonDJV").set({
 rank:1200,
 games:0
 }),
+db.collection("teams").doc("ThomasJeffersonEJV").set({
+    name:"Thomas Jefferson E",
+    state:"Virginia",
+    division:"Junior Varsity",
+rank:1200,
+games:0
+}),
 db.collection("teams").doc("TippecanoeBJV").set({
     name:"Tippecanoe B",
     state:"Ohio",
@@ -3569,9 +3581,42 @@ db.collection("teams").doc("SacredHeartBJV").set({
     division:"Junior Varsity",
 rank:1200,
 games:0
+}),
+db.collection("teams").doc("WhitmanAV").set({
+    name:"Walt Whitman",
+    state:"Maryland",
+    division:"Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("PotomacAV").set({
+    name:"Potomac",
+    state:"Maryland",
+    division:"Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("WTWoodsonAV").set({
+    name:"W. T. Woodson",
+    state:"Virginia",
+    division:"Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("OaktonAV").set({
+    name:"Oakton A",
+    state:"Virginia",
+    division:"Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("OaktonBV").set({
+    name:"Oakton B",
+    state:"Virginia",
+    division:"Varsity",
+rank:1200,
+games:0
 })
-
-
 
 //End of team list
 
@@ -3902,7 +3947,7 @@ async function newRank(A, B, AScore, BScore) {
                     for(m = 0; m < teamAvgBVLen; m++){
                         sumBV += parseInt(teamAvgBV[m],10);
                     };
-                    let avgBV = sumBV/teamAvBVLen;
+                    let avgBV = sumBV/teamAvgBVLen;
                     //console.log("sumCV,teamAvgCVLen,avgCV",sumCV,teamAvgCVLen,avgCV);
                     let sum = 0;
                     let n;
@@ -4092,7 +4137,7 @@ function printRanks(div){
 function reset(){}
 
 
-async function cSet(){
+async function cSetData(){
 K = 100;
 cSet = true;
 
@@ -8312,138 +8357,240 @@ await printRanks("Junior Varsity");
 await printRanks("Middle School");
 };
 
-async function bSet() {
-K = 100;
-bSet = true
+async function bSetData() {
+    K = 100;
+    bSet = true
+    
+    //Western New York B-Set
+    //Prelims
+    //Round 1
+    await newRank("FayettevilleManliusAV","IroquoisAV",250,240);
+    await newRank("IthacaAV","IroquoisBV",410,60);
+    await newRank("NicholsAV","NicholsBV",360,70);
+    await newRank("IthacaBJV","SacredHeartAJV",380,20);
+    await newRank("ParkSchoolAJV","IroquoisCJV",320,40);
+    //Round 2
+    await newRank("FayettevilleManliusAV","IroquoisBV",410,60);
+    await newRank("IthacaAV","NicholsAV",350,160);
+    await newRank("IroquoisAV","NicholsBV",260,160);
+    await newRank("IthacaBJV","ParkSchoolAJV",240,200);
+    await newRank("IroquoisCJV","SacredHeartBJV",90,80);
+    //Round 3
+    await newRank("NicholsAV","IroquoisAV",260,230);
+    await newRank("IthacaAV","FayettevilleManliusAV",370,150);
+    await newRank("NicholsBV","IroquoisBV",250,150);
+    await newRank("SacredHeartAJV","SacredHeartBJV",150,100);
+    await newRank("IthacaBJV","IroquoisCJV",380,30);
+    //Round 4
+    await newRank("IthacaAV","IroquoisAV",330,190);
+    await newRank("NicholsAV","IroquoisBV",250,110);
+    await newRank("FayettevilleManliusAV","NicholsBV",270,110);
+    await newRank("SacredHeartAJV","IroquoisCJV",100,20);
+    await newRank("ParkSchoolAJV","SacredHeartBJV",210,40);
+    //Round 5
+    await newRank("NicholsAV","FayettevilleManliusAV",250,180);
+    await newRank("IroquoisAV","IroquoisBV",230,180);
+    await newRank("IthacaAV","NicholsBV",400,60);
+    await newRank("IthacaBJV","SacredHeartBJV",230,30);
+    await newRank("ParkSchoolAJV","SacredHeartAJV",230,50);
+    //Playoffs
+    //Varsity Semifinals
+    await newRank("IthacaAV","IroquoisAV",420,80);
+    await newRank("FayettevilleManliusAV","NicholsAV",220,210);
+    //Varsity Finals
+    await newRank("IthacaAV","FayettevilleManliusAV",360,110);
+    //JV Semifinals
+    await newRank("IthacaBJV","IroquoisCJV",210,30);
+    await newRank("ParkSchoolAJV","SacredHeartAJV",160,40);
+    //JV Finals
+    await newRank("IthacaBJV","ParkSchoolAJV",180,140);
+    allV.push(teamAvgV);
+    allJV.push(teamAvgJV);
+    teamAvgV = [];
+    teamAvgJV = [];
+    
+    //Hawaii State B-Set
+    //Prelims
+    //Round 1
+    await newRank("IolaniBV","PunahouBJV",340,60);
+    await newRank("IolaniAV","PunahouAV",320,200);
+    await newRank("McKinleyAV","IolaniCJV",220,140);
+    //Round 2
+    await newRank("IolaniAV","IolaniBV",370,140);
+    await newRank("McKinleyAV","PunahouBJV",150,110);
+    await newRank("PunahouAV","IolaniCJV",320,90);
+    //Round 3
+    await newRank("PunahouAV","PunahouBJV",380,50);
+    await newRank("IolaniAV","IolaniCJV",370,70);
+    await newRank("IolaniBV","McKinleyAV",300,120);
+    //Round 4
+    await newRank("PunahouAV","IolaniBV",290,120);
+    await newRank("IolaniCJV","PunahouBJV",100,80);
+    await newRank("IolaniAV","McKinelyAV",540,40);
+    //Round 5
+    await newRank("IolaniAV","PunahouBJV",400,60);
+    await newRank("IolaniBV","IolaniCJV",250,20);
+    await newRank("PunahouAV","McKinelyAV",350,70);
+    //Playoffs
+    //Varsity Semifinals
+    await newRank("IolaniAV","McKinleyAV",430,20);
+    await newRank("PunahouAV","IolaniBV",270,150);
+    //Varsity Finals
+    await newRank("IolaniAV","PunahouAV",320,120);
+    //JV Finals
+    await newRank("IolaniCJV","PunahouBJV",110,90);
+    allV.push(teamAvgV);
+    allJV.push(teamAvgJV);
+    teamAvgV = [];
+    teamAvgJV = [];
+    
+    //Northern Virginia B-Set
+    //Prelims
+    //Round 1
+    await newRank("RichardMontgomeryAV","OaktonAV",390,170);
+    await newRank("WhitmanAV","OaktonBV",430,100);
+    await newRank("ThomasJeffersonAV","PotomacAV",360,200);
+    await newRank("ThomasJeffersonBV","ThomasJeffersonCV",350,160);
+    await newRank("RichardMontgomeryBJV","ThomasJeffersonDJV",360,200);
+    //Round 2
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    //Round 3
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    //Round 4
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    //Round 5
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    //Playoffs
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    allV.push(teamAvgV);
+    allJV.push(teamAvgJV);
+    teamAvgV = [];
+    teamAvgJV = [];
+    
+    
+    y = true
+    
+    
+    
+    
+    
+    a2 = a2+1;
+    b2 = b2+1;
+    //Western New York B-Set
+    //Prelims
+    //Round 1
+    await newRank("FayettevilleManliusAV","IroquoisAV",250,240);
+    await newRank("IthacaAV","IroquoisBV",410,60);
+    await newRank("NicholsAV","NicholsBV",360,70);
+    await newRank("IthacaBJV","SacredHeartAJV",380,20);
+    await newRank("ParkSchoolAJV","IroquoisCJV",320,40);
+    //Round 2
+    await newRank("FayettevilleManliusAV","IroquoisBV",410,60);
+    await newRank("IthacaAV","NicholsAV",350,160);
+    await newRank("IroquoisAV","NicholsBV",260,160);
+    await newRank("IthacaBJV","ParkSchoolAJV",240,200);
+    await newRank("IroquoisCJV","SacredHeartBJV",90,80);
+    //Round 3
+    await newRank("NicholsAV","IroquoisAV",260,230);
+    await newRank("IthacaAV","FayettevilleManliusAV",370,150);
+    await newRank("NicholsBV","IroquoisBV",250,150);
+    await newRank("SacredHeartAJV","SacredHeartBJV",150,100);
+    await newRank("IthacaBJV","IroquoisCJV",380,30);
+    //Round 4
+    await newRank("IthacaAV","IroquoisAV",330,190);
+    await newRank("NicholsAV","IroquoisBV",250,110);
+    await newRank("FayettevilleManliusAV","NicholsBV",270,110);
+    await newRank("SacredHeartAJV","IroquoisCJV",100,20);
+    await newRank("ParkSchoolAJV","SacredHeartBJV",210,40);
+    //Round 5
+    await newRank("NicholsAV","FayettevilleManliusAV",250,180);
+    await newRank("IroquoisAV","IroquoisBV",230,180);
+    await newRank("IthacaAV","NicholsBV",400,60);
+    await newRank("IthacaBJV","SacredHeartBJV",230,30);
+    await newRank("ParkSchoolAJV","SacredHeartAJV",230,50);
+    //Playoffs
+    //Varsity Semifinals
+    await newRank("IthacaAV","IroquoisAV",420,80);
+    await newRank("FayettevilleManliusAV","NicholsAV",220,210);
+    //Varsity Finals
+    await newRank("IthacaAV","FayettevilleManliusAV",360,110);
+    //JV Semifinals
+    await newRank("IthacaBJV","IroquoisCJV",210,30);
+    await newRank("ParkSchoolAJV","SacredHeartAJV",160,40);
+    //JV Finals
+    await newRank("IthacaBJV","ParkSchoolAJV",180,140);
+    console.log("WestNY B q V: "+qV[a2]);
+    console.log("WestNY B q JV: "+qJV[b2]);
+    a = 0;
+    b = 0;
+    
+    a2 = a2+1;
+    b2 = b2+1;
+    //Hawaii State B-Set
+    //Prelims
+    //Round 1
+    await newRank("IolaniBV","PunahouBJV",340,60);
+    await newRank("IolaniAV","PunahouAV",320,200);
+    await newRank("McKinleyAV","IolaniCJV",220,140);
+    //Round 2
+    await newRank("IolaniAV","IolaniBV",370,140);
+    await newRank("McKinleyAV","PunahouBJV",150,110);
+    await newRank("PunahouAV","IolaniCJV",320,90);
+    //Round 3
+    await newRank("PunahouAV","PunahouBJV",380,50);
+    await newRank("IolaniAV","IolaniCJV",370,70);
+    await newRank("IolaniBV","McKinleyAV",300,120);
+    //Round 4
+    await newRank("PunahouAV","IolaniBV",290,120);
+    await newRank("IolaniCJV","PunahouBJV",100,80);
+    await newRank("IolaniAV","McKinelyAV",540,40);
+    //Round 5
+    await newRank("IolaniAV","PunahouBJV",400,60);
+    await newRank("IolaniBV","IolaniCJV",250,20);
+    await newRank("PunahouAV","McKinelyAV",350,70);
+    //Playoffs
+    //Varsity Semifinals
+    await newRank("IolaniAV","McKinleyAV",430,20);
+    await newRank("PunahouAV","IolaniBV",270,150);
+    //Varsity Finals
+    await newRank("IolaniAV","PunahouAV",320,120);
+    //JV Finals
+    await newRank("IolaniCJV","PunahouBJV",110,90);
+    console.log("Hawaii B q V: "+qV[a2]);
+    console.log("Hawaii B q JV: "+qJV[b2]);
+    a = 0;
+    b = 0;
 
-//Western New York B-Set
-//Prelims
-//Round 1
-newRank("FayettevilleManliusAV","IroquoisAV",250,240);
-newRank("IthacaAV","IroquoisBV",410,60);
-newRank("NicholsAV","NicholsBV",360,70);
-newRank("IthacaBJV","SacredHeartAJV",380,20);
-newRank("ParkSchoolAJV","IroquoisCJV",320,40);
-//Round 2
-newRank("FayettevilleManliusAV","IroquoisBV",410,60);
-newRank("IthacaAV","NicholsAV",350,160);
-newRank("IroquoisAV","NicholsBV",260,160);
-newRank("IthacaBJV","ParkSchoolAJV",240,200);
-newRank("IroquoisCJV","SacredHeartBJV",90,80);
-//Round 3
-newRank("NicholsAV","IroquoisAV",260,230);
-newRank("IthacaAV","FayettevilleManliusAV",370,150);
-newRank("NicholsBV","IroquoisBV",250,150);
-newRank("SacredHeartAJV","SacredHeartBJV",150,100);
-newRank("IthacaBJV","IroquoisCJV",380,30);
-//Round 4
-newRank("IthacaAV","IroquoisAV",330,190);
-newRank("NicholsAV","IroquoisBV",250,110);
-newRank("FayettevilleManliusAV","NicholsBV",270,110);
-newRank("SacredHeartAJV","IroquoisCJV",100,20);
-newRank("ParkSchoolAJV","SacredHeartBJV",210,40);
-//Round 5
-newRank("NicholsAV","FayettevilleManliusAV",250,180);
-newRank("IroquoisAV","IroquoisBV",230,180);
-newRank("IthacaAV","NicholsBV",400,60);
-newRank("IthacaBJV","SacredHeartBJV",230,30);
-newRank("ParkSchoolAJV","SacredHeartAJV",230,50);
-//Playoffs
-//Varsity Semifinals
-newRank("IthacaAV","IroquoisAV",420,80);
-newRank("FayettevilleManliusAV","NicholsAV",220,210);
-//Varsity Finals
-newRank("IthacaAV","FayettevilleManliusAV",360,110);
-//JV Semifinals
-newRank("IthacaBJV","IroquoisCJV",210,30);
-newRank("ParkSchoolAJV","SacredHeartAJV",160,40);
-//JV Finals
-newRank("IthacaBJV","ParkSchoolAJV",180,140);
-allV.push(teamAvgV);
-allJV.push(teamAvgJV);
-teamAvgV = [];
-teamAvgJV = [];
 
-//Hawaii State B-Set
-allV.push(teamAvgV);
-allJV.push(teamAvgJV);
-teamAvgV = [];
-teamAvgJV = [];
-
-
-
-
-
-y = true
-
-
-
-
-
-a2 = a2+1;
-b2 = b2+1;
-//Western New York B-Set
-//Prelims
-//Round 1
-newRank("FayettevilleManliusAV","IroquoisAV",250,240);
-newRank("IthacaAV","IroquoisBV",410,60);
-newRank("NicholsAV","NicholsBV",360,70);
-newRank("IthacaBJV","SacredHeartAJV",380,20);
-newRank("ParkSchoolAJV","IroquoisCJV",320,40);
-//Round 2
-newRank("FayettevilleManliusAV","IroquoisBV",410,60);
-newRank("IthacaAV","NicholsAV",350,160);
-newRank("IroquoisAV","NicholsBV",260,160);
-newRank("IthacaBJV","ParkSchoolAJV",240,200);
-newRank("IroquoisCJV","SacredHeartBJV",90,80);
-//Round 3
-newRank("NicholsAV","IroquoisAV",260,230);
-newRank("IthacaAV","FayettevilleManliusAV",370,150);
-newRank("NicholsBV","IroquoisBV",250,150);
-newRank("SacredHeartAJV","SacredHeartBJV",150,100);
-newRank("IthacaBJV","IroquoisCJV",380,30);
-//Round 4
-newRank("IthacaAV","IroquoisAV",330,190);
-newRank("NicholsAV","IroquoisBV",250,110);
-newRank("FayettevilleManliusAV","NicholsBV",270,110);
-newRank("SacredHeartAJV","IroquoisCJV",100,20);
-newRank("ParkSchoolAJV","SacredHeartBJV",210,40);
-//Round 5
-newRank("NicholsAV","FayettevilleManliusAV",250,180);
-newRank("IroquoisAV","IroquoisBV",230,180);
-newRank("IthacaAV","NicholsBV",400,60);
-newRank("IthacaBJV","SacredHeartBJV",230,30);
-newRank("ParkSchoolAJV","SacredHeartAJV",230,50);
-//Playoffs
-//Varsity Semifinals
-newRank("IthacaAV","IroquoisAV",420,80);
-newRank("FayettevilleManliusAV","NicholsAV",220,210);
-//Varsity Finals
-newRank("IthacaAV","FayettevilleManliusAV",360,110);
-//JV Semifinals
-newRank("IthacaBJV","IroquoisCJV",210,30);
-newRank("ParkSchoolAJV","SacredHeartAJV",160,40);
-//JV Finals
-newRank("IthacaBJV","ParkSchoolAJV",180,140);
-console.log("WestNY B q V: "+qV[a2]);
-console.log("WestNY B q JV: "+qJV[b2]);
-a = 0;
-b = 0;
-
-a2 = a2+1;
-b2 = b2+1;
-//Hawaii State B-Set
-console.log("Hawaii B q V: "+qV[a2]);
-console.log("Hawaii B q JV: "+qJV[b2]);
-a = 0;
-b = 0;
-bSet = false;
-y = false;
+    bSet = false;
+    y = false;
 }
-
+    
+bSetData();
+    
 async function allSets() {
-    await cSet();
-    await bSet();
+    await cSetData();
+    await bSetData();
     await printRanks("Varsity");
     await printRanks("Junior Varsity");
     await printRanks("Middle School");
