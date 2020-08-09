@@ -8546,21 +8546,21 @@ async function bSetData() {
     await newRank("IdahoFallsAV","ThunderRidgeCV",330,80);
     await newRank("ThunderRidgeBV","ThunderRidgeAV",220,150);
     //Round 4
-    await newRank();
-    await newRank();
-    await newRank();
+    await newRank("HillcrestAV","ThunderRidgeCV",220,110);
+    await newRank("ThunderRidgeAV","HillcrestBV",160,40);
+    await newRank("ThunderRidgeBV","IdahoFallsAV",210,140);
     //Round 5
-    await newRank();
-    await newRank();
-    await newRank();
+    await newRank("ThunderRidgeBV","ThunderRidgeCV",130,110);
+    await newRank("IdahoFallsAV","HillcrestBV",290,70);
+    await newRank("ThunderRidgeAV","HillcrestAV",180,140);
     //Playoffs
-    await newRank();
-    await newRank();
-    await newRank();
+    //Semifinals
+    await newRank("ThunderRidgeAV","IdahoFallsAV",170,140);
+    await newRank("ThunderRidgeBV","HillcrestAV",110,70);
+    //Finals
+    await newRank("ThunderRidgeAV","ThunderRidgeBV",180,50);
     allV.push(teamAvgV);
-    allJV.push(teamAvgJV);
     teamAvgV = [];
-    teamAvgJV = [];
     
     
 
@@ -8705,6 +8705,38 @@ async function bSetData() {
     console.log("NoVa B q JV: "+qJV[b2]);
     a = 0;
     b = 0;
+
+    a2 = a2+1;
+    //Idaho Falls B-Set
+    //Prelims
+    //Round 1
+    await newRank("HillcrestAV","ThunderRidgeBV",201,200);
+    await newRank("ThunderRidgeAV","IdahoFallsAV",270,200);
+    await newRank("ThunderRidgeCV","HillcrestBV",220,90);
+    //Round 2
+    await newRank("IdahoFallsAV","HillcrestAV",210,110);
+    await newRank("ThunderRidgeBV","HillcrestBV",330,20);
+    await newRank("ThunderRidgeAV","ThunderRidgeCV",290,20);
+    //Round 3
+    await newRank("HillcrestAV","HillcrestBV",280,30);
+    await newRank("IdahoFallsAV","ThunderRidgeCV",330,80);
+    await newRank("ThunderRidgeBV","ThunderRidgeAV",220,150);
+    //Round 4
+    await newRank("HillcrestAV","ThunderRidgeCV",220,110);
+    await newRank("ThunderRidgeAV","HillcrestBV",160,40);
+    await newRank("ThunderRidgeBV","IdahoFallsAV",210,140);
+    //Round 5
+    await newRank("ThunderRidgeBV","ThunderRidgeCV",130,110);
+    await newRank("IdahoFallsAV","HillcrestBV",290,70);
+    await newRank("ThunderRidgeAV","HillcrestAV",180,140);
+    //Playoffs
+    //Semifinals
+    await newRank("ThunderRidgeAV","IdahoFallsAV",170,140);
+    await newRank("ThunderRidgeBV","HillcrestAV",110,70);
+    //Finals
+    await newRank("ThunderRidgeAV","ThunderRidgeBV",180,50);
+    console.log("NoVa B q V: "+qV[a2]);
+    a = 0;
 
     bSet = false;
     y = false;
