@@ -8,7 +8,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -44,13 +46,23 @@
 <a id="the-formulas" class="anchor" href="#the-formulas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Formulas</h2>
 <h3>
 <a id="expected-score-formula" class="anchor" href="#expected-score-formula" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Expected Score Formula</h3>
-<p>This formula uses the mElo Rankings of a given Team A and Team B to calculate what percentage of the total points Team A would be expected to score in a game against Team B. This formula will always result in a value for the Expected Score of A between 0 and 1.</p>
-<p>Expected Score of A = 1 / ( ( e^ ( ( mElo of B - mElo of A ) / mElo of A ) ) + 1)</p>
+<p>This formula uses the mElo Ratings of a given Team A and Team B to calculate what percentage of the total points Team A would be expected to score in a game against Team B. This formula will always result in a value for the Expected Score of A between 0 and 1.</p>
+<p>
+    \[S_E(A) = {1\over e^{D/R_A}+1}\]
+    \[D = R_B-R_A\]
+</p>
 <h3>
 <a id="mElo-formula" class="anchor" href="#new-rank-formula" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>New mElo Formula</h3>
 <p>Following a game between Team A and Team B, this formula calculates the new mElo Ranking of Team A. The new mElo formula  takes the percentage of the game’s points scored by Team A, multiplies it by the T-value to adjust for conversion issues, and compares it to the Expected Score for A. That result is then multiplied by the variables q, g, and K to adjust for strength of field, games played, and to increase the impact respectively.</p>
-<p>new mElo of A = mElo of A + q * g * K * ( ( score of A / ( ( score of A + score of B ) * average T-value ) ) - expected score of A )</p>
-<p></p>
+<p>
+    \[R_n(A) = {R_o(A)+q({800\over g_A})[({S_A\over S_A+S_B})-S_E]}\]
+    \[R_n = new\;rating\]
+    \[R_o = old\;rating\]
+    \[q = strength\;of\;field\]
+    \[g = games\;played\]
+    \[S = score\]
+    \[S_E = expected\;score\]
+</p>
 <h2>
 <a id="the-variables" class="anchor" href="#the-variables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Variables</h2>
 <h3>
