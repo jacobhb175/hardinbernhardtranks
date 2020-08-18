@@ -44,12 +44,13 @@
 <a id="the-formulas" class="anchor" href="#the-formulas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Formulas</h2>
 <h3>
 <a id="expected-score-formula" class="anchor" href="#expected-score-formula" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Expected Score Formula</h3>
-<p>This formula calculates what Team A would be expected to score as a ratio to the total points scored in a game between them and Team B using their existing mElo Rankings. This formula will always result in a value for the Expected Score of A between 0 and 1.</p>
+<p>This formula uses the mElo Rankings of a given Team A and Team B to calculate what percentage of the total points Team A would be expected to score in a game against Team B. This formula will always result in a value for the Expected Score of A between 0 and 1.</p>
 <p>Expected Score of A = 1 / ( ( e^ ( ( mElo of B - mElo of A ) / mElo of A ) ) + 1)</p>
 <h3>
 <a id="mElo-formula" class="anchor" href="#new-rank-formula" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>New mElo Formula</h3>
-<p>This formula calculates the new mElo Ranking of A based on what Team A scored as a ratio to the total points scored in the actual game between them and Team B, multiplies it by the T-value to adjust for conversion issues, and compares it to the result of the Expected Score Formula for A. That result is then multiplied by the multipliers q, g, and K, to adjust for strength of field, games played, and to increase the impact respectively.</p>
+<p>Following a game between Team A and Team B, this formula calculates the new mElo Ranking of Team A. The new mElo formula  takes the percentage of the game’s points scored by Team A, multiplies it by the T-value to adjust for conversion issues, and compares it to the Expected Score for A. That result is then multiplied by the variables q, g, and K to adjust for strength of field, games played, and to increase the impact respectively.</p>
 <p>new mElo of A = mElo of A + q * g * K * ( ( score of A / ( ( score of A + score of B ) * average T-value ) ) - expected score of A )</p>
+<p></p>
 <h2>
 <a id="the-variables" class="anchor" href="#the-variables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Variables</h2>
 <h3>
