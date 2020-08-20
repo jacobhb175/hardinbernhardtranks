@@ -1,71 +1,87 @@
-# LIQBA Records
-## School
-### Number of Events
-Kellenberg: 3
-TAG: 4
-Lowell: 4
-DCDS: 5
-Hotchkiss: 6
-### Number of Wins
-### Number of Tournament Wins
-Wins|School|Tournaments
+# Hardin-Bernhardt Ranks - Version 1.0.0
+Hardin-Bernhardt Ranks is a new way of ranking NHBB teams using a modified version of the Go Elo formula that takes into account strength of field and margin of victory.
 
-## Team
-### Powers in a Tournament
-Powers|Team|Tournament
----|---|---
-127|TAG Magnet|BHSAT Online
-125|Detroit Country Day|Midsummer Classic
-112|Lowell|Midsummer Classic
-111|Choate Lava Lizard|SCOP Novice Online
-109|Strake Jesuit|BHSAT Online
-108|Hotchkiss A|SCOP Novice Online
-104|Wakeland A|Midsummer Classic
-102|Wayzata|SCOP Novice Online
-91|Detroit Country Day A|BHSAT Online
-90|Tenafly MS A|Midsummer Classic
+## The Formulas
+### Expected Score Formula
+expected score of A = 1 / ((e^((rank of B - rank of A) / rank of A)) + 1)
 
-### PPG in a Tournament
-PPG|Team|Tournament
----|---|---
-555.5|Kellenberg A|Island Cup: October
-546.8|Hotchkiss A|SCOP Novice Online
-534.1|Choate Lava Lizard|SCOP Novice Online
-478.5|Churchill A|Island Cup: October
-475|Darien A|Island Cup: February
-470|Darien B|Island Cup: February
-455.5|Wayzata|SCOP Novice Online
-438.2|Plano West|SCOP Novice Online
-424.1|Stanton|SCOP Novice Online
-407.0|TAG Magnet B|SCOP Novice Online
+### New Rank Formula
+new rank of A = rank of A + g * q * K * ((score of A / ((score of A + score of B) * average T-value)) - expected score of A)
 
-## Individual
-### Career PPG
+## The Variables
+### q-Value
+The q-value is a multiplier used to represent strength of field at a tournament and intended to help improve elo as a measure of skill unaffected by the field a team is up against, and thus more useful and accurate as a comparison between teams from different regions. It is calculated as a ratio of average total points scored per game at a given tournament : average total points scored per game on a given set, and is calculated independently the for MS, JV, and Varsity fields.
+### T-Value
+The T-value is used to account for the inherent issues in equating the percent chance of a given winning to the percent of total points that team will score. It is calculated as a ratio of the percent of total points scored by a given team : the percent chance given to that team to win.
+### g-Value
+The g-Value is a multiplier to adjust for the different formats of tournaments which lead some teams to play more or fewer games. It is set equal to 8/the number of games played by the team (not counting byes or crossover matches).
 
-### Powers in a Tournament
-Powers|Individual|Team|Tournament
+## List of Tournaments
+Tournament|Date|Set Played|Status|Varsity q-Value|JV q-Value
+---|---|---|---|---|---
+Southern California|3/1/2020|C|Complete|1.188|1.147
+Arkansas|2/29/2020|C|Complete|0.959|0.743
+New Hampshire|2/29/2020|C|Complete|1.066|0.818
+Northern Pennsylvania|2/1/2020|C|Complete|0.841|-
+Upper Hudson|2/1/2020|C|Complete|0.982|0.990
+Eastern Iowa|1/28/2020|C|Complete|1.130|0.917
+Nevada|1/26/2020|C|Complete|1.225|1.020
+Mississippi Winter|1/25/2020|C|Complete|0.775|0.892
+Western Pennsylvania|1/25/2020|C|Complete|0.996|1.062
+Southwestern Illinois|1/20/2020|C|Complete|1.038|1.001
+Florida Panhandle|1/18/2020|C|Complete|0.962|0.360
+Deleware|1/11/2020|C|Complete|0.896|0.941
+Lower Hudson|1/11/2020|C|Complete|1.085|1.182
+Bergen County|1/5/2020|C|Complete|1.169|1.180
+Eastern Kentucky|12/14/2019|C|Complete|1.006|-
+Louisiana Fall|12/14/2019|C|Complete|0.874|-
+Northwest Illinois|12/14/2019|C|Complete|0.974|0.852
+Southern New Jersey|12/14/2019|C|Complete|1.019|1.056
+Washington DC|12/7/2019|C|Complete|1.267|1.261
+Boston Fall|11/23/2019|C|Complete|1.065|1.118
+Southern Washington|11/23/2019|C|Complete|0.997|-
+Western Washington|11/23/2019|C|Complete|0.929|0.929
+Central Florida Fall|11/16/2019|C|Complete|1.007|0.767
+Eastern Georgia Fall|11/16/2019|C|Complete|1.083|1.000
+Greater Knoxville Fall|11/16/2019|C|Complete|0.846|-
+Oahu|11/16/2019|C|Complete|1.068|-
+South Florida Fall|11/16/2019|C|Complete|0.880|0.959
+Buffalo|11/9/2019|C|Complete|0.960|0.727
+Greater Dayton|11/9/2019|C|Complete|1.212|0.521
+Northern Illinois|11/9/2019|C|Complete|1.228|1.235
+Northern New Jersey|11/9/2019|C|Complete|1.092|1.154
+West Viginia Fall|11/9/2019|C|Complete|0.860|0.828
+Montana|11/5/2019|C|Complete|0.779|0.608
+Central Georgia Fall|11/2/2019|C|Complete|0.898|0.723
+Eastern Washington|11/2/2019|C|Complete|0.848|0.718
+Northern California Fall|10/27/2019|C|Complete|1.222|1.213
+
+## The Rankings
+
+### Varsity Rankings
+Ranking|Team|State|Points
 ---|---|---|---
-72|Aarush Santoshi|Tenafly MS A|Midsummer Classic
-71|Ameya Singh|Laurel Springs|Scop Novice Online
-66|Jeremiah Rayban|Wilmington Charter|Midsummer Classic
-61|Simon Emmanuel|Churchill JHS|Midsummer Classic
-58|Amogh Kulkarni|Arcadia|Scottie Online
-57|Cooper Roh|Hotchkiss|BHSAT Online
-57|Arthur Gayden|Detroit Country Day|Midsummer Classic
-55|John Phipps|Darien A|Island Cup Winter
-54|Ketan Pamurthy|TAG Magner|BHSAT Online
-54|Jack McGlinn|Hotchkiss|Scop Novice Online
+1.|Millburn A|New Jersey|2104.275
+2.|Arcadia A|California|2072.387
+3.|Russellville A|Arkansas|2060.707
+4.|Team Coldhug A|Connecticut|1996.221
+5.|Team Pi-oneers A|California|1983.979
+6.|Collegiate A|Florida|1981.544
+7.|Cambridge A|Georgia|1966.800
+8.|Stevenson A|Illinois|1939.301
+9.|Richard Montgomery A|Maryland|1938.246
+10.|Saratoga A|California|1925.474
 
-### PPG in a Tournament
-PPG|Individual|Team|Tournament
+### Junior Varsity Rankings
+Ranking|Team|State|Points
 ---|---|---|---
-142.50|Jeremiah Rayban|Wilmington Charter|Midsummer Classic
-135.00|Simon Emmanuel|Churchill JHS|Midsummer Classic
-132.50|Aarush Santoshi|Tenafly MS A|Midsummer Classic
-119.55|Ameya Singh|Laurel Springs|Scop Novice Online
-110.00|Amogh Kulkarni|Arcadia|Scottie Online
-108.64|Ean Casey|Norfolk Academic Guild|Scottie Online
-105.00|Amitav Narayan|Churchill|James Blair Bowl Online
-104.09|Eli Issokson|Lusher|Scottie Online
-103.00|Raymond Zhang|Coppell|Midsummer Classic
-102.73|Shawn Caffert-Lueck|Russellville|Scottie Online
+1.|Stevenson E|Illinois|2145.523
+2.|Hunter B|New York|2072.991
+3.|Churchill A|New Jersey|2040.958
+4.|Ridgewood C|New Jersey|2040.198
+5.|Ransom Everglades C|Florida|1997.725
+6.|Methacton C|Pennsylvania|1990.755
+7.|Montgomery Blair B|Maryland|1982.417
+8.|McLean A|Virginia|1977.806
+9.|St. Margaret's|California|1973.390
+10.|Phillips Exeter B|New Hampshire|1918.715
