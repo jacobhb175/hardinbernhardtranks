@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/jacobhb175/hardinbernhardtranks#readme",
   "dependencies": {
-    "firebase": "^7.15.0",
+    "firebase": "^7.18.0",
     "sqlite3": "^5.0.0"
   }
 }
