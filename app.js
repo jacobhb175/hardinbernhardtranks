@@ -384,6 +384,13 @@ db.collection("teams").doc("DonovanCatholicAV").set({
 rank:1200,
 games:0
 }),
+db.collection("teams").doc("NorthHighlandsAV").set({
+    name:"North Highlands",
+    state:"New Jersey",
+    division:"Varsity",
+rank:1200,
+games:0
+}),
 db.collection("teams").doc("DoralAV").set({
     name:"Doral Academy A",
     state:"Florida",
@@ -860,6 +867,13 @@ db.collection("teams").doc("MillburnCV").set({
 rank:1200,
 games:0
 }),
+db.collection("teams").doc("MillburnCJV").set({
+    name:"Millburn C",
+    state:"New Jersey",
+    division:"Varsity",
+rank:1200,
+games:0
+}),
 db.collection("teams").doc("MontgomeryBlairAV").set({
     name:"Montgomery Blair A",
     state:"Maryland",
@@ -1217,7 +1231,7 @@ db.collection("teams").doc("RidgewoodAV").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RidgewoodAV").set({
+db.collection("teams").doc("RidgewoodBV").set({
     name:"Ridgewood B",
     state:"New Jersey",
     division:"Varsity",
@@ -2911,21 +2925,21 @@ db.collection("teams").doc("StollerWMS").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TenaflyMSA").set({
+db.collection("teams").doc("TenaflyAMS").set({
     name:"Tenafly Middle A",
     state:"New Jersey",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TenaflyMSB").set({
+db.collection("teams").doc("TenaflyBMS").set({
     name:"Tenafly Middle B",
     state:"New Jersey",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TenaflyMSC").set({
+db.collection("teams").doc("TenaflyCMS").set({
     name:"Tenafly Middle C",
     state:"New Jersey",
     division:"Middle School",
@@ -3269,7 +3283,7 @@ db.collection("teams").doc("BethlehemBJV").set({
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("BethlehemMSJV").set({
+db.collection("teams").doc("BethlehemMSAJV").set({
     name:"Bethlehem MS",
     state:"New York",
     division:"Junior Varsity",
@@ -3960,18 +3974,10 @@ db.collection("teams").doc("NortheastAJV").set({
 
 //End of team list
 
-/*
-docRef.get().then(function(doc) {
-    if (doc.exists) {
-        console.log("Document data:", doc.data().state);
-    } else {
-        // doc.data() will be undefined in this case
-        console.log("No such document!");
-    }
-}).catch(function(error) {
-    console.log("Error getting document:", error);
-});*/
 
+
+
+//defining variables
 let evalV;
 let evalJV;
 let evalMS;
@@ -4035,15 +4041,19 @@ let crossDiv = false;
 
 //test if 2 teams are in a div
 async function includes(A,B,div) {
+    //get the two teams' info
     let docRefA = db.collection("teams").doc(A);
     let docRefB = db.collection("teams").doc(B);
     await docRefA.get().then(async function(doc) {
         if (doc.exists) {
+            //set team A's div to a var
             let divA = doc.data().division;
             await docRefB.get().then(async function(doc) {
                 if (doc.exists) {
+                    //set team B's div to a var
                     let divB = doc.data().division;
                     if (divA == div && divB == div) {
+                        //check the divs against each other, if they match the div that true
                         if (div == "Varsity") {
                             evalV = true;
                         }
@@ -4054,6 +4064,7 @@ async function includes(A,B,div) {
                             evalMS = true;
                         }
                     }
+                    //if they don't match than false
                     else {
                         if (div == "Varsity") {
                             evalV = false;
@@ -4083,28 +4094,35 @@ async function includes(A,B,div) {
 
 //Calculate expected score
 async function cExpScore(A,B){
+    //getting team info
     var docRefA = db.collection("teams").doc(A);
     var docRefB = db.collection("teams").doc(B);
     await docRefA.get().then(async function(doc) {
         if (doc.exists) {
+            //set team A's rank as a var
             let rankA=doc.data().rank;
             //console.log("rankA",rankA);
             await docRefB.get().then(async function(doc) {
                 if (doc.exists) {
+                    //set team B's rank as a var
                     let rankB=doc.data().rank; 
                     //console.log("rankB",rankB);  
                     //If A is lower
                     if (rankA<rankB){
+                        //expected score equation
                         expScore = 1/(1+(Math.E^((rankB-rankA)/400)));
                     }
                     //If B is lower
                     else if (rankB<rankA){
+                        //expected score equation
                         expScore = 1-1/(1+(Math.E^((rankA-rankB)/400)));
                     }
                     //If tie
                     else {
+                        //set exp score to tie
                         expScore = 0.5;
                     };
+                    //calculate exp score of B
                     expScoreA = expScore;
                     expScoreB = 1-expScoreA;
                 } else {
@@ -4145,20 +4163,20 @@ async function newRank(A, B, AScore, BScore) {
     await includes(A,B,"Junior Varsity");
     await includes(A,B,"Middle School");
     if (y == false){
-        //C-Set games
+        //if C-Set games
         if (cSet == true){
             if (evalV == true) {
-                //push game results
+                //push game results to array
                 teamAvgV.push(AScore,BScore)
                 teamAvgCV.push(AScore,BScore);
             }
             else if (evalJV == true) {
-                //push game results
+                //push game results to array
                 teamAvgJV.push(AScore,BScore);
                 teamAvgCJV.push(AScore,BScore);
             }
             else if (evalMS == true) {
-                //push game results
+                //push game results to array
                 teamAvgMS.push(AScore,BScore);
                 teamAvgCMS.push(AScore,BScore);
             }
@@ -4166,20 +4184,20 @@ async function newRank(A, B, AScore, BScore) {
                 //console.log(A,B,"is cross-divisional");
             }
         }
-        //B-Set games
-        if (bSet == true){
+        //if B-Set games
+        else if (bSet == true){
             if (evalV == true) {
-                //push game results
+                //push game results to array
                 teamAvgV.push(AScore,BScore)
                 teamAvgBV.push(AScore,BScore);
             }
             else if (evalJV == true) {
-                //push game results
+                //push game results to array
                 teamAvgJV.push(AScore,BScore);
                 teamAvgBJV.push(AScore,BScore);
             }
             else if (evalMS == true) {
-                //push game results
+                //push game results to array
                 teamAvgMS.push(AScore,BScore);
                 teamAvgBMS.push(AScore,BScore);
             }
@@ -4189,12 +4207,14 @@ async function newRank(A, B, AScore, BScore) {
         } 
     }
     else if (y == true){
+        crossDiv = false;
         //C-Set games
         if (cSet == true) {
             if (evalV == true) {
                 if (a == 0) {
+                    //only do once per tnmt
                     a = a+1;
-                    //calculate q value
+                    //calculate avg points scored in a varsity game at a c set
                     let sumCV = 0;
                     let m;
                     let teamAvgCVLen = teamAvgCV.length;
@@ -4202,7 +4222,7 @@ async function newRank(A, B, AScore, BScore) {
                         sumCV += parseInt(teamAvgCV[m],10);
                     };
                     let avgCV = sumCV/teamAvgCVLen;
-                    //console.log("sumCV,teamAvgCVLen,avgCV",sumCV,teamAvgCVLen,avgCV);
+                    //calculate avg points scored in a varsity game at this tnmt
                     let sum = 0;
                     let n;
                     let allVLen = allV[a2].length;
@@ -4210,9 +4230,12 @@ async function newRank(A, B, AScore, BScore) {
                         sum += parseInt(allV[a2][n],10);
                     };
                     let avgV = sum/allVLen;
+                    //calculate q value (varsity ppg at this tnmt:varsity ppg at all c-sets)
                     q = avgV/avgCV;
+                    //push q to array
                     qV.push(q);
                 }
+                //find q for this tnmt
                 else {
                     q = qV[a2];
                 }
@@ -4220,14 +4243,16 @@ async function newRank(A, B, AScore, BScore) {
             }
             else if (evalJV == true) {
                 if (b == 0) {
-                //calculate q value
+                //only do once per tnmt
                 b = b+1;
+                //calculate avg points scored in jv games at a c set
                 let sumCJV = 0;
                 let o;
                 let teamAvgCJVLen = teamAvgCJV.length;
                 for(o = 0; o < teamAvgCJVLen; o++){
                     sumCJV += parseInt(teamAvgCJV[o],10);
                 };
+                //calculate avg points scored in jv games at this tnmt
                 let avgCJV = sumCJV/teamAvgCJVLen;
                 let sum = 0;
                 let p;
@@ -4236,9 +4261,12 @@ async function newRank(A, B, AScore, BScore) {
                     sum += parseInt(allJV[b2][p],10);
                 };
                 let avgJV = sum/allJVLen;
+                //calculate q
                 q = avgJV/avgCJV;
+                //push q to array
                 qJV.push(q);
                 }
+                //find q for this tnmt
                 else {
                     q = qJV[b2];
                 }
@@ -4276,7 +4304,7 @@ async function newRank(A, B, AScore, BScore) {
             }
         }
         //B-Set games
-        if (bSet == true) {
+        else if (bSet == true) {
             if (evalV == true) {
                 if (a == 0) {
                     a = a+1;
@@ -4460,7 +4488,7 @@ async function nRank(A,B,AScore,BScore){
 function printRanks(div){
     //let teamsRef = db.collection("teams");
     //console.log(teamsRef.where("division","==",div).orderBy("rank").limit(10));
-    db.collection("teams").where("division", "==", div).orderBy("rank","desc").limit(10)
+    db.collection("teams").where("division", "==", div).orderBy("rank","desc").limit(25)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
@@ -4478,7 +4506,6 @@ function reset(){}
 
 
 async function cSetData(){
-K = 100;
 cSet = true;
 
 //Northern California Fall C-Set
@@ -4595,7 +4622,7 @@ await newRank("EastValleyAV","MtSpokaneAV",250,210);
 await newRank("EastValleyBV","FrenchtownAV",220,150);
 await newRank("GonzagaAV","StGeorgesAV",340,180);
 await newRank("LibbyAJV","MtSpokaneDJV",220,80);
-await newRank("MtSpokaneCJV"," EastValleyCJV",150,110);
+await newRank("MtSpokaneCJV","EastValleyCJV",150,110);
 //Round 5
 await newRank("MtSpokaneBV","EastValleyAV",240,160);
 await newRank("StGeorgesAV","EastValleyBV",200,150);
@@ -4803,8 +4830,8 @@ await newRank("ChurchillNJAJV","SouthBrunswickAJV",490,90);
 await newRank("StJosephBJV","BASISBrooklynAJV",200,180);
 await newRank("HunterBJV","HolmdelBJV",470,120);
 await newRank("MillburnDJV","MountainLakesBJV",390,160);
-await newRank("TenaflyMSB","IndianFieldsMSA",130,100);
-await newRank("TenaflyMSC","BRIGHTMSA",130,100);
+await newRank("TenaflyBMS","IndianFieldsMSA",130,100);
+await newRank("TenaflyCMS","BRIGHTMSA",130,100);
 //Round 2
 await newRank("HewlettBV","ParamusAV",250,170);
 await newRank("MountainLakesAV","NewarkAV",280,210);
@@ -4819,7 +4846,7 @@ await newRank("ChurchillNJAJV","BASISBrooklynAJV",550,80);
 await newRank("MountainLakesBJV","ChurchillNJBJV",370,70);
 await newRank("HunterBJV","MillburnDJV",410,180);
 await newRank("HewlettCJV","SouthBrunswickAJV",240,200);
-await newRank("TenaflyMSA","TenaflyMSB",400,60);
+await newRank("TenaflyAMS","TenaflyBMS",400,60);
 await newRank("IndianFieldsMSA","BRIGHTMSA",130,80);
 //Round 3
 await newRank("MillburnCV","StPetersBV",450,100);
@@ -4835,8 +4862,8 @@ await newRank("HewlettCJV","BASISBrooklynAJV",360,90);
 await newRank("HolmdelBJV","StJosephBJV",360,130);
 await newRank("MillburnDJV","StPetersCJV",360,200);
 await newRank("MountainLakesBJV","SouthBrunswickAJV",290,150);
-await newRank("TenaflyMSA","TenaflyMSC",410,10);
-await newRank("TenaflyMSB","BRIGHTMSA",290,40);
+await newRank("TenaflyAMS","TenaflyCMS",410,10);
+await newRank("TenaflyBMS","BRIGHTMSA",290,40);
 //Round 4
 await newRank("StuyvesantAV","StJosephAV",340,140);
 await newRank("OratoryAV","ParamusAV",500,100);
@@ -4851,8 +4878,8 @@ await newRank("MillburnDJV","StJosephBJV",420,90);
 await newRank("StPetersCJV","ChurchillNJBJV",240,130);
 await newRank("MountainLakesBJV","BASISBrooklynAJV",320,50);
 await newRank("KinnelonAJV","HewlettCJV",240,210);
-await newRank("TenaflyMSC","IndianFieldsMSA",110,60);
-await newRank("TenaflyMSA","BRIGHTMSA",380,20);
+await newRank("TenaflyCMS","IndianFieldsMSA",110,60);
+await newRank("TenaflyAMS","BRIGHTMSA",380,20);
 //Round 5
 await newRank("MillburnAV","OratoryAV",490,130);
 await newRank("StuyvesantAV","HewlettBV",380,110);
@@ -4867,8 +4894,8 @@ await newRank("ChurchillNJBJV","StJosephBJV",170,90);
 await newRank("MountainLakesBJV","KinnelonAJV",190,180);
 await newRank("ChurchillNJAJV","MillburnDJV",370,210);
 await newRank("HolmdelBJV","HewlettCJV",240,180);
-await newRank("TenaflyMSA","IndianFieldsMSA",250,50);
-await newRank("TenaflyMSB","TenaflyMSC",190,60);
+await newRank("TenaflyAMS","IndianFieldsMSA",250,50);
+await newRank("TenaflyBMS","TenaflyCMS",190,60);
 //Varsity Playoffs
 //Octofinals
 await newRank("OratoryAV","ParamusAV",310,160);
@@ -4898,10 +4925,10 @@ await newRank("ChurchillNJAJV","HolmdelBJV",350,170);
 await newRank("HunterBJV","ChurchillNJAJV",290,260);
 //MS Playoffs
 //Semifinals
-//await newRank("TenaflyMSA","IndianFieldsMSA",1,0)
-await newRank("TenaflyMSB","TenaflyMSC",160,20);
+//await newRank("TenaflyAMS","IndianFieldsMSA",1,0)
+await newRank("TenaflyBMS","TenaflyCMS",160,20);
 //Finals
-await newRank("TenaflyMSA","TenaflyMSB",200,90);
+await newRank("TenaflyAMS","TenaflyBMS",200,90);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 allMS.push(teamAvgMS);
@@ -4922,7 +4949,7 @@ await newRank("StevensonDJV","AptakisicAJV",360,150);
 //Round 2
 await newRank("MarmionAV","BarringtonBV",360,180);
 await newRank("HinsdaleAV","SandburgAV",300,290);
-await newRank("StevensonAV"," StevensonBV",470,170);
+await newRank("StevensonAV","StevensonBV",470,170);
 await newRank("StevensonCV","BarringtonAV",340,330);
 await newRank("StevensonFJV","AptakisicAJV",270,160);
 await newRank("StevensonEJV","SandburgBJV",470,140);
@@ -6333,27 +6360,27 @@ console.log("East Iowa C");
 //Round 1
 await newRank("BethlehemAV","BerlinBJV",490,80);
 await newRank("BethlehemBJV","LaurensAV",370,80);
-await newRank("LoyolaAV","BethlehemMSJV",310,220);
+await newRank("LoyolaAV","BethlehemMSAJV",310,220);
 //Round 2
 await newRank("BethlehemBJV","BerlinBJV",260,140);
 await newRank("BethlehemAV","LoyolaAV",360,190);
 await newRank("BerlinAV","LaurensAV",360,190);
 //Round 3
 await newRank("BethlehemBJV","BerlinAV",430,70);
-await newRank("BethlehemMSJV","BerlinBJV",360,110);
+await newRank("BethlehemMSAJV","BerlinBJV",360,110);
 await newRank("LoyolaAV","LaurensAV",340,70);
 //Round 4
 await newRank("LoyolaAV","BerlinBJV",280,80);
 await newRank("BethlehemAV","BethlehemBJV",400,160);
-await newRank("BethlehemMSJV","BerlinAV",280,120);
+await newRank("BethlehemMSAJV","BerlinAV",280,120);
 //Round 5
 await newRank("BethlehemAV","LaurensAV",390,90);
 await newRank("LoyolaAV","BerlinAV",280,140);
-await newRank("BethlehemBJV","BethlehemMSJV",360,90);
+await newRank("BethlehemBJV","BethlehemMSAJV",360,90);
 //Playoffs
 //Varsity Final
 await newRank("BethlehemAV","LoyolaAV",210,170);
-await newRank("BethlehemBJV","BethlehemMSJV",240,110);
+await newRank("BethlehemBJV","BethlehemMSAJV",240,110);
 allV.push(teamAvgV);
 allJV.push(teamAvgJV);
 teamAvgV = [];
@@ -6904,8 +6931,8 @@ await newRank("ChurchillNJAJV","SouthBrunswickAJV",490,90);
 await newRank("StJosephBJV","BASISBrooklynAJV",200,180);
 await newRank("HunterBJV","HolmdelBJV",470,120);
 await newRank("MillburnDJV","MountainLakesBJV",390,160);
-await newRank("TenaflyMSB","IndianFieldsMSA",130,100);
-await newRank("TenaflyMSC","BRIGHTMSA",130,100);
+await newRank("TenaflyBMS","IndianFieldsMSA",130,100);
+await newRank("TenaflyCMS","BRIGHTMSA",130,100);
 //Round 2
 await newRank("HewlettBV","ParamusAV",250,170);
 await newRank("MountainLakesAV","NewarkAV",280,210);
@@ -6920,7 +6947,7 @@ await newRank("ChurchillNJAJV","BASISBrooklynAJV",550,80);
 await newRank("MountainLakesBJV","ChurchillNJBJV",370,70);
 await newRank("HunterBJV","MillburnDJV",410,180);
 await newRank("HewlettCJV","SouthBrunswickAJV",240,200);
-await newRank("TenaflyMSA","TenaflyMSB",400,60);
+await newRank("TenaflyAMS","TenaflyBMS",400,60);
 await newRank("IndianFieldsMSA","BRIGHTMSA",130,80);
 //Round 3
 await newRank("MillburnCV","StPetersBV",450,100);
@@ -6936,8 +6963,8 @@ await newRank("HewlettCJV","BASISBrooklynAJV",360,90);
 await newRank("HolmdelBJV","StJosephBJV",360,130);
 await newRank("MillburnDJV","StPetersCJV",360,200);
 await newRank("MountainLakesBJV","SouthBrunswickAJV",290,150);
-await newRank("TenaflyMSA","TenaflyMSC",410,10);
-await newRank("TenaflyMSB","BRIGHTMSA",290,40);
+await newRank("TenaflyAMS","TenaflyCMS",410,10);
+await newRank("TenaflyBMS","BRIGHTMSA",290,40);
 //Round 4
 await newRank("StuyvesantAV","StJosephAV",340,140);
 await newRank("OratoryAV","ParamusAV",500,100);
@@ -6952,8 +6979,8 @@ await newRank("MillburnDJV","StJosephBJV",420,90);
 await newRank("StPetersCJV","ChurchillNJBJV",240,130);
 await newRank("MountainLakesBJV","BASISBrooklynAJV",320,50);
 await newRank("KinnelonAJV","HewlettCJV",240,210);
-await newRank("TenaflyMSC","IndianFieldsMSA",110,60);
-await newRank("TenaflyMSA","BRIGHTMSA",380,20);
+await newRank("TenaflyCMS","IndianFieldsMSA",110,60);
+await newRank("TenaflyAMS","BRIGHTMSA",380,20);
 //Round 5
 await newRank("MillburnAV","OratoryAV",490,130);
 await newRank("StuyvesantAV","HewlettBV",380,110);
@@ -6968,8 +6995,8 @@ await newRank("ChurchillNJBJV","StJosephBJV",170,90);
 await newRank("MountainLakesBJV","KinnelonAJV",190,180);
 await newRank("ChurchillNJAJV","MillburnDJV",370,210);
 await newRank("HolmdelBJV","HewlettCJV",240,180);
-await newRank("TenaflyMSA","IndianFieldsMSA",250,50);
-await newRank("TenaflyMSB","TenaflyMSC",190,60);
+await newRank("TenaflyAMS","IndianFieldsMSA",250,50);
+await newRank("TenaflyBMS","TenaflyCMS",190,60);
 //Varsity Playoffs
 //Octofinals
 await newRank("OratoryAV","ParamusAV",310,160);
@@ -6999,10 +7026,10 @@ await newRank("ChurchillNJAJV","HolmdelBJV",350,170);
 await newRank("HunterBJV","ChurchillNJAJV",290,260);
 //MS Playoffs
 //Semifinals
-//await newRank("TenaflyMSA","IndianFieldsMSA",1,0)
-await newRank("TenaflyMSB","TenaflyMSC",160,20);
+//await newRank("TenaflyAMS","IndianFieldsMSA",1,0)
+await newRank("TenaflyBMS","TenaflyCMS",160,20);
 //Finals
-await newRank("TenaflyMSA","TenaflyMSB",200,90);
+await newRank("TenaflyAMS","TenaflyBMS",200,90);
 console.log("Northern NJ C q V: "+qV[a2]);
 console.log("Northern NJ C q JV: "+qJV[b2]);
 console.log("Northern NJ C q MS: "+qMS[c2]);
@@ -7282,7 +7309,7 @@ a = 0;
 b = 0;
 c = 0;
 
-console.log(qV,qJV);
+
 
 //Oahu C-Set
 a2 = a2+1;
@@ -7310,7 +7337,6 @@ a = 0;
 b = 0;
 c = 0;
 
-console.log(qV,qJV,qMS);
 
 //Greater Knoxville Fall C-Set
 a2 = a2+1;
@@ -7572,7 +7598,7 @@ console.log("West WA C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
 c = 0;
-console.log(qV,qJV);
+
 
 //Southern Washington C-Set
 a2 = a2+1;
@@ -7621,7 +7647,7 @@ console.log("South WA C q V: "+qV[a2]);
 console.log("South WA C q MS: "+qMS[c2]);
 a = 0;
 c = 0;
-console.log(qV,qJV);
+
 
 //Boston Fall C-Set
 a2 = a2+1;
@@ -8470,27 +8496,27 @@ b2 = b2+1;
 //Round 1
 await newRank("BethlehemAV","BerlinBJV",490,80);
 await newRank("BethlehemBJV","LaurensAV",370,80);
-await newRank("LoyolaAV","BethlehemMSJV",310,220);
+await newRank("LoyolaAV","BethlehemMSAJV",310,220);
 //Round 2
 await newRank("BethlehemBJV","BerlinBJV",260,140);
 await newRank("BethlehemAV","LoyolaAV",360,190);
 await newRank("BerlinAV","LaurensAV",360,190);
 //Round 3
 await newRank("BethlehemBJV","BerlinAV",430,70);
-await newRank("BethlehemMSJV","BerlinBJV",360,110);
+await newRank("BethlehemMSAJV","BerlinBJV",360,110);
 await newRank("LoyolaAV","LaurensAV",340,70);
 //Round 4
 await newRank("LoyolaAV","BerlinBJV",280,80);
 await newRank("BethlehemAV","BethlehemBJV",400,160);
-await newRank("BethlehemMSJV","BerlinAV",280,120);
+await newRank("BethlehemMSAJV","BerlinAV",280,120);
 //Round 5
 await newRank("BethlehemAV","LaurensAV",390,90);
 await newRank("LoyolaAV","BerlinAV",280,140);
-await newRank("BethlehemBJV","BethlehemMSJV",360,90);
+await newRank("BethlehemBJV","BethlehemMSAJV",360,90);
 //Playoffs
 //Varsity Final
 await newRank("BethlehemAV","LoyolaAV",210,170);
-await newRank("BethlehemBJV","BethlehemMSJV",240,110);
+await newRank("BethlehemBJV","BethlehemMSAJV",240,110);
 console.log("Upper Hudson C q V: "+qV[a2]);
 console.log("Upper Hudson C q JV: "+qJV[b2]);
 a = 0;
@@ -8701,6 +8727,7 @@ b = 0;
 cSet = false;
 y = false;
 
+console.log("C-Set Rankings");
 await printRanks("Varsity");
 await printRanks("Junior Varsity");
 await printRanks("Middle School");
@@ -8776,11 +8803,11 @@ async function bSetData() {
     //Round 4
     await newRank("PunahouAV","IolaniBV",290,120);
     await newRank("IolaniCJV","PunahouBJV",100,80);
-    await newRank("IolaniAV","McKinelyAV",540,40);
+    await newRank("IolaniAV","McKinleyAV",540,40);
     //Round 5
     await newRank("IolaniAV","PunahouBJV",400,60);
     await newRank("IolaniBV","IolaniCJV",250,20);
-    await newRank("PunahouAV","McKinelyAV",350,70);
+    await newRank("PunahouAV","McKinleyAV",350,70);
     //Playoffs
     //Varsity Semifinals
     await newRank("IolaniAV","McKinleyAV",430,20);
@@ -9012,7 +9039,7 @@ async function bSetData() {
     await newRank("HolmdelAJV","RidgewoodEJV",360,50);
     await newRank("HunterBJV","RidgewoodDJV",450,100);
     await newRank("HewlettDJV","RanneyBJV",230,190);
-    await newRank("BethlehemMSJV","MillburnEJV",250,210);
+    await newRank("BethlehemMSAJV","MillburnEJV",250,210);
     await newRank("ChurchillNJAJV","BergenAJV",330,170);
     await newRank("SetonHallBJV","RidgewoodFJV",230,60);
     await newRank("MillburnDJV","HewlettCJV",370,170);
@@ -9043,7 +9070,7 @@ async function bSetData() {
     await newRank("HewlettCJV","RidgewoodCJV",180,170);
     await newRank("HunterBJV","HolmdelAJV",350,210);
     await newRank("HewlettDJV","RidgewoodDJV",290,170);
-    await newRank("BethlehemMSJV","RanneyBJV",190,100);
+    await newRank("BethlehemMSAJV","RanneyBJV",190,100);
     await newRank("BergenAJV","MillburnEJV",240,140);
     await newRank("ChurchillNJAJV","SetonHallBJV",490,30);
     await newRank("JohnAdamsAMS","CavalliniBMS",210,60);
@@ -9063,7 +9090,7 @@ async function bSetData() {
     await newRank("EastBrunswickAV","RanneyAV",360,130);
     await newRank("OratoryAV","DemarestBV",230,190);
     await newRank("HunterAV","TenaflyBV",380,140);
-    await newRank("MillburnAV","SetonHallBV",480,70);
+    await newRank("MillburnAV","SetonHallBJV",480,70);
     await newRank("RidgewoodBV","ParamusAV",430,90);
     await newRank("EastBrunswickBV","NorthHighlandsAV",200,100);
     await newRank("MCABV","DemarestAV",270,170);
@@ -9071,7 +9098,7 @@ async function bSetData() {
     await newRank("KinnelonAJV","TenaflyCJV",280,210);
     await newRank("HunterBJV","HighTechBJV",410,80);
     await newRank("HolmdelAJV","HewlettDJV",260,150);
-    await newRank("BethlehemMSJV","RidgewoodDJV",240,200);
+    await newRank("BethlehemMSAJV","RidgewoodDJV",240,200);
     await newRank("BergenAJV","RanneyBJV",310,130);
     await newRank("MillburnEJV","SetonHallBJV",230,150);
     await newRank("ChurchillNJAJV","MillburnDJV",400,210);
@@ -9088,7 +9115,7 @@ async function bSetData() {
     await newRank("MCABV","DemarestBV",200,120);
     await newRank("BethlehemAV","TenaflyBV",270,90);
     await newRank("TenaflyAV","MillburnCV",380,70);
-    await newRank("RanneyAV","NorthernHighlands",300,50);
+    await newRank("RanneyAV","NorthernHighlandsAV",300,50);
     await newRank("HewlettBV","RidgewoodAV",250,90);
     await newRank("OratoryAV","MCAAV",210,200);
     await newRank("RamseyAV","ParamusAV",290,170);
@@ -9104,7 +9131,7 @@ async function bSetData() {
     await newRank("EastBrunswickAV","TenaflyAV",290,200);
     await newRank("BethlehemAV","MCABV",230,160);
     //Quarterfinals
-    await newRank("MillburnAV","BEthlehemAV",360,150);
+    await newRank("MillburnAV","BethlehemAV",360,150);
     await newRank("RidgewoodBV","EastBrunswickAV",250,210);
     await newRank("GeorgeWashingtonAV","SetonHallAV",370,130);
     await newRank("HunterAV","HighTechAV",290,220);
@@ -9120,9 +9147,9 @@ async function bSetData() {
     await newRank("BergenAJV","HewlettCJV",310,110);
     await newRank("TenaflyCJV","RidgewoodCJV",340,60);
     await newRank("HolmdelAJV","HewlettDJV",240,180);
-    await newRank("BethlehemMSJV","KinnelonAJV",200,140);
+    await newRank("BethlehemMSAJV","KinnelonAJV",200,140);
     //Quarterfinals
-    await newRank("HunterBJV","BethlehemMSJV",340,150);
+    await newRank("HunterBJV","BethlehemMSAJV",340,150);
     await newRank("ChurchillNJAJV","HolmdelAJV",360,140);
     await newRank("HunterCJV","TenaflyCJV",380,130);
     await newRank("MillburnDJV","BergenAJV",310,110);
@@ -9157,7 +9184,7 @@ async function bSetData() {
     await newRank("StarrsMillAV","DeerfieldWindsorAV",380,90);
     await newRank("StarrsMillBV","JacksonAV",350,80);
     await newRank("TJClassicAV","StarrsMillEV",450,90);
-    await newRank("WandoJV","StarrsMillCV",260,150);
+    await newRank("WandoAJV","StarrsMillCV",260,150);
     await newRank("StarrsMillDV","NortheastAJV");
     //Round 2
     await newRank("StarrsMillDV","JacksonAV",200,120);
@@ -9170,7 +9197,7 @@ async function bSetData() {
     await newRank("StarrsMillAV","StarrsMillDV",400,80);
     await newRank("DeerfieldWindsorAV","StarrsMillCV",260,160);
     await newRank("StarrsMillEV","NortheastAJV",260,50);
-    await newRank("TJClassicAV","WandoAJV4",20,130);
+    await newRank("TJClassicAV","WandoAJV",20,130);
     //Round 4
     await newRank("StarrsMillCV","StarrsMillDV",130,110);
     await newRank("StarrsMillAV","JacksonAV",370,20);
@@ -9198,7 +9225,7 @@ async function bSetData() {
 
 
     y = true
-    
+    console.log(y);
     
     
     
@@ -9272,11 +9299,11 @@ async function bSetData() {
     //Round 4
     await newRank("PunahouAV","IolaniBV",290,120);
     await newRank("IolaniCJV","PunahouBJV",100,80);
-    await newRank("IolaniAV","McKinelyAV",540,40);
+    await newRank("IolaniAV","McKinleyAV",540,40);
     //Round 5
     await newRank("IolaniAV","PunahouBJV",400,60);
     await newRank("IolaniBV","IolaniCJV",250,20);
-    await newRank("PunahouAV","McKinelyAV",350,70);
+    await newRank("PunahouAV","McKinleyAV",350,70);
     //Playoffs
     //Varsity Semifinals
     await newRank("IolaniAV","McKinleyAV",430,20);
@@ -9510,7 +9537,7 @@ async function bSetData() {
     await newRank("HolmdelAJV","RidgewoodEJV",360,50);
     await newRank("HunterBJV","RidgewoodDJV",450,100);
     await newRank("HewlettDJV","RanneyBJV",230,190);
-    await newRank("BethlehemMSJV","MillburnEJV",250,210);
+    await newRank("BethlehemMSAJV","MillburnEJV",250,210);
     await newRank("ChurchillNJAJV","BergenAJV",330,170);
     await newRank("SetonHallBJV","RidgewoodFJV",230,60);
     await newRank("MillburnDJV","HewlettCJV",370,170);
@@ -9541,7 +9568,7 @@ async function bSetData() {
     await newRank("HewlettCJV","RidgewoodCJV",180,170);
     await newRank("HunterBJV","HolmdelAJV",350,210);
     await newRank("HewlettDJV","RidgewoodDJV",290,170);
-    await newRank("BethlehemMSJV","RanneyBJV",190,100);
+    await newRank("BethlehemMSAJV","RanneyBJV",190,100);
     await newRank("BergenAJV","MillburnEJV",240,140);
     await newRank("ChurchillNJAJV","SetonHallBJV",490,30);
     await newRank("JohnAdamsAMS","CavalliniBMS",210,60);
@@ -9561,7 +9588,7 @@ async function bSetData() {
     await newRank("EastBrunswickAV","RanneyAV",360,130);
     await newRank("OratoryAV","DemarestBV",230,190);
     await newRank("HunterAV","TenaflyBV",380,140);
-    await newRank("MillburnAV","SetonHallBV",480,70);
+    await newRank("MillburnAV","SetonHallBJV",480,70);
     await newRank("RidgewoodBV","ParamusAV",430,90);
     await newRank("EastBrunswickBV","NorthHighlandsAV",200,100);
     await newRank("MCABV","DemarestAV",270,170);
@@ -9569,7 +9596,7 @@ async function bSetData() {
     await newRank("KinnelonAJV","TenaflyCJV",280,210);
     await newRank("HunterBJV","HighTechBJV",410,80);
     await newRank("HolmdelAJV","HewlettDJV",260,150);
-    await newRank("BethlehemMSJV","RidgewoodDJV",240,200);
+    await newRank("BethlehemMSAJV","RidgewoodDJV",240,200);
     await newRank("BergenAJV","RanneyBJV",310,130);
     await newRank("MillburnEJV","SetonHallBJV",230,150);
     await newRank("ChurchillNJAJV","MillburnDJV",400,210);
@@ -9586,7 +9613,7 @@ async function bSetData() {
     await newRank("MCABV","DemarestBV",200,120);
     await newRank("BethlehemAV","TenaflyBV",270,90);
     await newRank("TenaflyAV","MillburnCV",380,70);
-    await newRank("RanneyAV","NorthernHighlands",300,50);
+    await newRank("RanneyAV","NorthernHighlandsAV",300,50);
     await newRank("HewlettBV","RidgewoodAV",250,90);
     await newRank("OratoryAV","MCAAV",210,200);
     await newRank("RamseyAV","ParamusAV",290,170);
@@ -9602,7 +9629,7 @@ async function bSetData() {
     await newRank("EastBrunswickAV","TenaflyAV",290,200);
     await newRank("BethlehemAV","MCABV",230,160);
     //Quarterfinals
-    await newRank("MillburnAV","BEthlehemAV",360,150);
+    await newRank("MillburnAV","BethlehemAV",360,150);
     await newRank("RidgewoodBV","EastBrunswickAV",250,210);
     await newRank("GeorgeWashingtonAV","SetonHallAV",370,130);
     await newRank("HunterAV","HighTechAV",290,220);
@@ -9618,9 +9645,9 @@ async function bSetData() {
     await newRank("BergenAJV","HewlettCJV",310,110);
     await newRank("TenaflyCJV","RidgewoodCJV",340,60);
     await newRank("HolmdelAJV","HewlettDJV",240,180);
-    await newRank("BethlehemMSJV","KinnelonAJV",200,140);
+    await newRank("BethlehemMSAJV","KinnelonAJV",200,140);
     //Quarterfinals
-    await newRank("HunterBJV","BethlehemMSJV",340,150);
+    await newRank("HunterBJV","BethlehemMSAJV",340,150);
     await newRank("ChurchillNJAJV","HolmdelAJV",360,140);
     await newRank("HunterCJV","TenaflyCJV",380,130);
     await newRank("MillburnDJV","BergenAJV",310,110);
@@ -9654,7 +9681,7 @@ async function bSetData() {
     await newRank("StarrsMillAV","DeerfieldWindsorAV",380,90);
     await newRank("StarrsMillBV","JacksonAV",350,80);
     await newRank("TJClassicAV","StarrsMillEV",450,90);
-    await newRank("WandoJV","StarrsMillCV",260,150);
+    await newRank("WandoAJV","StarrsMillCV",260,150);
     await newRank("StarrsMillDV","NortheastAJV");
     //Round 2
     await newRank("StarrsMillDV","JacksonAV",200,120);
@@ -9667,7 +9694,7 @@ async function bSetData() {
     await newRank("StarrsMillAV","StarrsMillDV",400,80);
     await newRank("DeerfieldWindsorAV","StarrsMillCV",260,160);
     await newRank("StarrsMillEV","NortheastAJV",260,50);
-    await newRank("TJClassicAV","WandoAJV4",20,130);
+    await newRank("TJClassicAV","WandoAJV",20,130);
     //Round 4
     await newRank("StarrsMillCV","StarrsMillDV",130,110);
     await newRank("StarrsMillAV","JacksonAV",370,20);
@@ -9696,14 +9723,18 @@ async function bSetData() {
 }
     
 async function allSets() {
-    await cSetData();
+    //await cSetData();
     await bSetData();
+    console.log("Overall Rankings")
     await printRanks("Varsity");
     await printRanks("Junior Varsity");
     await printRanks("Middle School");
 }
 
+
+
 allSets();
+
 cExpScore("HunterBJV","StevensonEJV");
 
 
