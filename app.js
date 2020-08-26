@@ -16,7 +16,6 @@ server.listen(port, hostname, () => {
 */
 
 
-//--
 
 
 //Varsity Teams
@@ -4141,7 +4140,37 @@ async function cExpScore(A,B){
     });
 };
 
-
+async function games(crossDiv,A,B) {
+    if (crossDiv != true) {
+        //console.log("working");
+        var docRefA = db.collection("teams").doc(A);
+        var docRefB = db.collection("teams").doc(B);
+        await docRefA.get().then(async function(doc) {
+            if (doc.exists) {
+                let gamesA=doc.data().games;
+                await docRefB.get().then(async function(doc) {
+                    if (doc.exists) {
+                        let gamesB=doc.data().games;
+                        gamesA = gamesA + 1;
+                        gamesB = gamesB + 1;
+                        db.collection("teams").doc(A).update({games:gamesA})
+                        db.collection("teams").doc(B).update({games:gamesB})
+                    } else {
+                        // doc.data() will be undefined in this case
+                        console.log("No such document!"+B);
+                    }
+                }).catch(function(error) {
+                    console.log("Error getting document:", error);
+                });
+            } else {
+                // doc.data() will be undefined in this case
+                console.log("No such document!"+A);
+            }
+        }).catch(function(error) {
+            console.log("Error getting document:", error);
+        });
+    }
+}
 
 //calculate new ranks
 async function newRank(A, B, AScore, BScore) {
@@ -4151,6 +4180,7 @@ async function newRank(A, B, AScore, BScore) {
     //Update t value
     t.push((AScore/(AScore+BScore))/expScoreA);
     t.push((BScore/(AScore+BScore))/expScoreB);
+    //calculate the average value for t
     let sumT = 0;
     let l;
     let tLen = t.length;
@@ -4158,6 +4188,8 @@ async function newRank(A, B, AScore, BScore) {
         sumT += parseInt(t[l],10);
     };
     avgT = sumT/t.length;
+    //console.log("avgT, sumT, t.length",avgT, sumT, t.length);
+    //console.log("t",t);
     //check what division
     await includes(A,B,"Varsity");
     await includes(A,B,"Junior Varsity");
@@ -4302,6 +4334,7 @@ async function newRank(A, B, AScore, BScore) {
                 crossDiv = true;
                 //console.log(A,B,"is cross-divisional");
             }
+            games(crossDiv,A,B);
         }
         //B-Set games
         else if (bSet == true) {
@@ -4388,35 +4421,8 @@ async function newRank(A, B, AScore, BScore) {
                 crossDiv = true;
                 //console.log(A,B,"is cross-divisional");
             }
-        }
-    }
-    if (crossDiv != true) {
-        var docRefA = db.collection("teams").doc(A);
-        var docRefB = db.collection("teams").doc(B);
-        await docRefA.get().then(async function(doc) {
-            if (doc.exists) {
-                let gamesA=doc.data().games;
-                await docRefB.get().then(async function(doc) {
-                    if (doc.exists) {
-                        let gamesB=doc.data().games;
-                        gamesA = gamesA + 1;
-                        gamesB = gamesB + 1;
-                        db.collection("teams").doc(A).update({games:gamesA})
-                        db.collection("teams").doc(B).update({games:gamesB})
-                    } else {
-                        // doc.data() will be undefined in this case
-                        console.log("No such document!"+B);
-                    }
-                }).catch(function(error) {
-                    console.log("Error getting document:", error);
-                });
-            } else {
-                // doc.data() will be undefined in this case
-                console.log("No such document!"+A);
-            }
-        }).catch(function(error) {
-            console.log("Error getting document:", error);
-        });
+            games(crossDiv,A,B);
+        }    
     }
 };  
 
@@ -4441,13 +4447,17 @@ async function nRank(A,B,AScore,BScore){
                                 if (doc.exists) {
                                     let gamesB=doc.data().games;
                                     let Ka = 800/gamesA;
-                                    let Kb = 800/gamesB;/*
+                                    let Kb = 800/gamesB;
+                                    //console.log(Ka,Kb);
+                                    //let K = 100;
+                                    /*
                                     if (gamesA > 5) {
                                         gA = 5/(gamesA-5);
                                     }
                                     if (gamesB > 5) {
                                         gB = 5/(gamesB-5);
                                     }*/
+                                    console.log("q,Ka,Kb,avgT"+q,Ka,Kb,avgT);
                                     rankA = rankA + q*Ka*((AScore/((AScore+BScore)*avgT))-expScoreA);
                                     rankB = rankB + q*Kb*((BScore/((AScore+BScore)*avgT))-expScoreB);
                                     //console.log("rankAB",rankA,rankB);
