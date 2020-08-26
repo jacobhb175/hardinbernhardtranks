@@ -15,6 +15,7 @@ server.listen(port, hostname, () => {
 });
 */
 
+//--
 
 
 
@@ -4024,7 +4025,8 @@ let c2 = -1;
 
 let q = 0;
 let t = [];
-let avgT = 0;
+let avgTA = 0;
+let avgTB = 0;
 
 let y = false;
 let z = 0;
@@ -4178,16 +4180,11 @@ async function newRank(A, B, AScore, BScore) {
     await cExpScore(A,B);
 
     //Update t value
-    t.push((AScore/(AScore+BScore))/expScoreA);
-    t.push((BScore/(AScore+BScore))/expScoreB);
+    tA.push((AScore/(AScore+BScore))/expScoreA);
+    tB.push((BScore/(AScore+BScore))/expScoreB);
     //calculate the average value for t
-    let sumT = 0;
-    let l;
-    let tLen = t.length;
-    for(l = 0; l < tLen; l++){
-        sumT += parseInt(t[l],10);
-    };
-    avgT = sumT/t.length;
+    let avgTA = tA.reduce((a, b) => a + parseInt(b)) / tA.length;
+    let avgTB = tB.reduce((a, b) => a + parseInt(b)) / tB.length;
     //console.log("avgT, sumT, t.length",avgT, sumT, t.length);
     //console.log("t",t);
     //check what division
@@ -4349,7 +4346,6 @@ async function newRank(A, B, AScore, BScore) {
                         sumBV += parseInt(teamAvgBV[m],10);
                     };
                     let avgBV = sumBV/teamAvgBVLen;
-                    //console.log("sumCV,teamAvgCVLen,avgCV",sumCV,teamAvgCVLen,avgCV);
                     let sum = 0;
                     let n;
                     let allVLen = allV[a2].length;
@@ -4457,9 +4453,9 @@ async function nRank(A,B,AScore,BScore){
                                     if (gamesB > 5) {
                                         gB = 5/(gamesB-5);
                                     }*/
-                                    console.log("q,Ka,Kb,avgT"+q,Ka,Kb,avgT);
-                                    rankA = rankA + q*Ka*((AScore/((AScore+BScore)*avgT))-expScoreA);
-                                    rankB = rankB + q*Kb*((BScore/((AScore+BScore)*avgT))-expScoreB);
+                                    console.log("q,Ka,Kb,avgTA,avgTB "+q,Ka,Kb,avgTA,avgTB);
+                                    rankA = rankA + q*Ka*((AScore/((AScore+BScore)*avgTA))-expScoreA);
+                                    rankB = rankB + q*Kb*((BScore/((AScore+BScore)*avgTB))-expScoreB);
                                     //console.log("rankAB",rankA,rankB);
                                     //update rank
                                     db.collection("teams").doc(A).update({rank:rankA})
@@ -9733,7 +9729,7 @@ async function bSetData() {
 }
     
 async function allSets() {
-    //await cSetData();
+    await cSetData();
     await bSetData();
     console.log("Overall Rankings")
     await printRanks("Varsity");
