@@ -4024,9 +4024,11 @@ let b2 = -1;
 let c2 = -1;
 
 let q = 0;
-let t = [];
+let tA = [];
+let tB = [];
 let avgTA = 0;
 let avgTB = 0;
+
 
 let y = false;
 let z = 0;
@@ -4183,8 +4185,8 @@ async function newRank(A, B, AScore, BScore) {
     tA.push((AScore/(AScore+BScore))/expScoreA);
     tB.push((BScore/(AScore+BScore))/expScoreB);
     //calculate the average value for t
-    let avgTA = tA.reduce((a, b) => a + parseInt(b)) / tA.length;
-    let avgTB = tB.reduce((a, b) => a + parseInt(b)) / tB.length;
+    avgTA = tA.reduce((a, b) => a + parseInt(b)) / tA.length;
+    avgTB = tB.reduce((a, b) => a + parseInt(b)) / tB.length;
     //console.log("avgT, sumT, t.length",avgT, sumT, t.length);
     //console.log("t",t);
     //check what division
@@ -4596,7 +4598,7 @@ allMS.push(teamAvgMS);
 teamAvgV = [];
 teamAvgJV = [];
 teamAvgMS = [];
-//console.log("NorCal Fall C");
+console.log("NorCal Fall C");
 
 
 //Eastern Washington C-Set
