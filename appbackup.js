@@ -18,6 +18,7 @@ server.listen(port, hostname, () => {
 //--
 
 
+
 //Varsity Teams
 db.collection("teams").doc("AmherstAV").set({
     name:"Amherst A",
@@ -3981,9 +3982,9 @@ let evalV;
 let evalJV;
 let evalMS;
 
-let expScore;
-let expScoreA;
-let expScoreB;
+let expScore = 0;
+let expScoreA = 0;
+let expScoreB = 0;
 
 let teamAvgV = [];
 let teamAvgJV = [];
@@ -4023,8 +4024,11 @@ let b2 = -1;
 let c2 = -1;
 
 let q = 0;
-let t = [];
-let avgT = 0;
+let tA = [];
+let tB = [];
+let avgTA = 0;
+let avgTB = 0;
+
 
 let y = false;
 let z = 0;
@@ -4153,8 +4157,8 @@ async function games(crossDiv,A,B) {
                         let gamesB=doc.data().games;
                         gamesA = gamesA + 1;
                         gamesB = gamesB + 1;
-                        db.collection("teams").doc(A).update({games:gamesA})
-                        db.collection("teams").doc(B).update({games:gamesB})
+                        db.collection("teams").doc(A).update({games:gamesA});
+                        db.collection("teams").doc(B).update({games:gamesB});
                     } else {
                         // doc.data() will be undefined in this case
                         console.log("No such document!"+B);
@@ -4172,23 +4176,26 @@ async function games(crossDiv,A,B) {
     }
 }
 
+function average(array) {
+    return array.reduce((a, b) => (a + b)) / array.length;
+}
+
 //calculate new ranks
 async function newRank(A, B, AScore, BScore) {
     //Calculate exp scores
     await cExpScore(A,B);
-    
     //Update t value
-    t.push((AScore/(AScore+BScore))/expScoreA);
-    t.push((BScore/(AScore+BScore))/expScoreB);
+    //console.log("tA",((AScore/(AScore+BScore))/expScoreA));
+    tA.push((AScore/(AScore+BScore))/expScoreA);
+    //console.log("tB",((BScore/(AScore+BScore))/expScoreB));
+    tB.push((BScore/(AScore+BScore))/expScoreB);
     //calculate the average value for t
-    let sumT = 0;
-    let l;
-    let tLen = t.length;
-    for(l = 0; l < tLen; l++){
-        sumT += parseInt(t[l],10);
-    };
-    avgT = sumT/tLen;
-    console.log("avgT, sumT, t.length",avgT, sumT, t.length);
+    avgTA = 0;
+    avgTB = 0;
+    avgTA = average(tA);
+    avgTB = average(tB);
+    //console.log("avgTA,avgTB",avgTA,avgTB);
+    //console.log("avgT, sumT, t.length",avgT, sumT, t.length);
     //console.log("t",t);
     //check what division
     await includes(A,B,"Varsity");
@@ -4349,7 +4356,6 @@ async function newRank(A, B, AScore, BScore) {
                         sumBV += parseInt(teamAvgBV[m],10);
                     };
                     let avgBV = sumBV/teamAvgBVLen;
-                    //console.log("sumCV,teamAvgCVLen,avgCV",sumCV,teamAvgCVLen,avgCV);
                     let sum = 0;
                     let n;
                     let allVLen = allV[a2].length;
@@ -4445,14 +4451,14 @@ async function nRank(A,B,AScore,BScore){
                             let gamesA=doc.data().games;
                             if (gamesA<1){
                                 gamesA = 1;
-                                db.collection("teams").doc(A).update({games:gamesA})
+                                db.collection("teams").doc(A).update({games:gamesA});
                             }
                             await docRefB.get().then(async function(doc) {
                                 if (doc.exists) {
                                     let gamesB=doc.data().games;
                                     if (gamesB<1){
                                         gamesB = 1;
-                                        db.collection("teams").doc(B).update({games:gamesB})
+                                        db.collection("teams").doc(B).update({games:gamesB});
                                     }
                                     let Ka = 800/gamesA;
                                     let Kb = 800/gamesB;
@@ -4471,9 +4477,11 @@ async function nRank(A,B,AScore,BScore){
                                     if (gamesB > 5) {
                                         gB = 5/(gamesB-5);
                                     }*/
-                                    console.log("q,Ka,Kb,avgT "+q,Ka,Kb,avgT);
-                                    rankA = rankA + q*Ka*((AScore/((AScore+BScore)*avgT))-expScoreA);
-                                    rankB = rankB + q*Kb*((BScore/((AScore+BScore)*avgT))-expScoreB);
+                                    console.log("q,Ka,Kb,avgTA,avgTB ",q,Ka,Kb,avgTA,avgTB);
+                                    console.log("rankA,rankB ",rankA,rankB);
+                                    rankA = rankA + q*Ka*((AScore/((AScore+BScore)*avgTA))-expScoreA);
+                                    rankB = rankB + q*Kb*((BScore/((AScore+BScore)*avgTB))-expScoreB);
+                                    console.log("rankA,rankB "+rankA+rankB);
                                     //console.log("rankAB",rankA,rankB);
                                     //update rank
                                     db.collection("teams").doc(A).update({rank:rankA})
@@ -9756,11 +9764,12 @@ async function allSets() {
 }
 
 
-
 allSets();
-
+/*
 cExpScore("HunterBJV","StevensonEJV");
-
+nRank("HunterBJV","StevensonEJV");
+y = true;
+nRank("HunterBJV","StevensonEJV");*/
 
 
 /*

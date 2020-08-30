@@ -18,6 +18,8 @@
   "homepage": "https://github.com/jacobhb175/hardinbernhardtranks#readme",
   "dependencies": {
     "firebase": "^7.18.0",
+    "firebase-admin": "^9.1.1",
+    "request": "^2.88.2",
     "sqlite3": "^5.0.0"
   }
 }
