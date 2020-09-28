@@ -15,9 +15,7 @@ server.listen(port, hostname, () => {
 });
 */
 
-//export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/service-account-file.json"
-
-
+//--
 
 
 
@@ -1959,7 +1957,7 @@ rank:1200,
 games:0
 }),
 db.collection("teams").doc("EastValleyDJV").set({
-    name:"East Valley D",
+    name:"East Valley C",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
@@ -3021,7 +3019,7 @@ games:0
 }),
 db.collection("teams").doc("NorthmontAV").set({
     name:"Northmont A",
-    state:"Ohio",
+    state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
 games:0
@@ -4028,12 +4026,8 @@ let c2 = -1;
 let q = 0;
 let tA = [];
 let tB = [];
-let t = [];
-let avgTA = 1.34;
-let avgTB = 0.66;
-let avgT = 1;
-//const avgTA = 1.34;
-//const avgTB = 0.66;
+let avgTA = 0;
+let avgTB = 0;
 
 
 let y = false;
@@ -4047,17 +4041,6 @@ let crossDiv = false;
 //A Set = 25
 //Nats Prelims = 20
 //Nats Playoffs = 10
-
-//track a specific team
-let trace = "MissionSanJoseAJV";
-async function tracer(A,B){
-    if (A == trace){
-        console.log("rank"+trace+", rankB ",rankA,rankB)
-    }
-    else if (B == trace){
-        console.log("rankA, rankB ",rankA,rankB)
-    }
-}
 
 //test if 2 teams are in a div
 async function includes(A,B,div) {
@@ -4203,21 +4186,16 @@ async function newRank(A, B, AScore, BScore) {
     await cExpScore(A,B);
     //Update t value
     //console.log("tA",((AScore/(AScore+BScore))/expScoreA));
-    if(((AScore/(AScore+BScore))/expScoreA) > 0 && ((AScore/(AScore+BScore))/expScoreA) < 5){
-        tA.push((AScore/(AScore+BScore))/expScoreA);
-    }
-    //console.log("tB",((AScore/(AScore+BScore))/expScoreA));
-    if(((BScore/(AScore+BScore))/expScoreB) > 0 && ((BScore/(AScore+BScore))/expScoreB) < 5){
-        tB.push((BScore/(AScore+BScore))/expScoreB);
-    }
+    tA.push((AScore/(AScore+BScore))/expScoreA);
+    //console.log("tB",((BScore/(AScore+BScore))/expScoreB));
+    tB.push((BScore/(AScore+BScore))/expScoreB);
     //calculate the average value for t
+    avgTA = 0;
+    avgTB = 0;
     avgTA = average(tA);
     avgTB = average(tB);
-    if (avgTA>5||avgTB>5){
-        console.log(">5");
-        console.log("avgTA,tA.length",avgTA,tA.length);
-        console.log("avgTB,tB.length",avgTB,tB.length);
-    }
+    //console.log("avgTA,avgTB",avgTA,avgTB);
+    //console.log("avgT, sumT, t.length",avgT, sumT, t.length);
     //console.log("t",t);
     //check what division
     await includes(A,B,"Varsity");
@@ -4499,12 +4477,11 @@ async function nRank(A,B,AScore,BScore){
                                     if (gamesB > 5) {
                                         gB = 5/(gamesB-5);
                                     }*/
-                                    //console.log("q,Ka,Kb,avgTA,avgTB ",q,Ka,Kb,avgTA,avgTB);
-                                    await tracer(A,B);
-                                    rankA = rankA + q*Ka*((avgTA*(AScore/(AScore+BScore)))-expScoreA);
-                                    rankB = rankB + q*Kb*((avgTB*(BScore/(AScore+BScore)))-expScoreB);
-                                    await tracer(A,B);
-                                    //console.log("rankA,rankB "+rankA,rankB);
+                                    console.log("q,Ka,Kb,avgTA,avgTB ",q,Ka,Kb,avgTA,avgTB);
+                                    console.log("rankA,rankB ",rankA,rankB);
+                                    rankA = rankA + q*Ka*((AScore/((AScore+BScore)*avgTA))-expScoreA);
+                                    rankB = rankB + q*Kb*((BScore/((AScore+BScore)*avgTB))-expScoreB);
+                                    console.log("rankA,rankB "+rankA+rankB);
                                     //console.log("rankAB",rankA,rankB);
                                     //update rank
                                     db.collection("teams").doc(A).update({rank:rankA})
@@ -4543,7 +4520,7 @@ async function nRank(A,B,AScore,BScore){
 function printRanks(div){
     //let teamsRef = db.collection("teams");
     //console.log(teamsRef.where("division","==",div).orderBy("rank").limit(10));
-    db.collection("teams").where("division", "==", div).orderBy("rank","desc").limit(10)
+    db.collection("teams").where("division", "==", div).orderBy("rank","desc").limit(25)
         .get()
         .then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
@@ -4648,7 +4625,6 @@ teamAvgMS = [];
 console.log("NorCal Fall C");
 
 
-
 //Eastern Washington C-Set
 //Prelims
 //Round 1
@@ -4656,21 +4632,21 @@ await newRank("GonzagaAV","MtSpokaneAV",300,180);
 await newRank("StGeorgesAV","FrenchtownAV",250,140);
 await newRank("EastValleyAV","FrenchtownBV",370,70);
 await newRank("MtSpokaneBV","EastValleyBV",330,100);
-//await newRank("LibbyAJV","EastValleyCJV",300,70);
+await newRank("LibbyAJV","EastValleyCJV",300,70);
 await newRank("MtSpokaneCJV","MtSpokaneDJV",260,130);
 //Round 2
 await newRank("MtSpokaneAV","FrenchtownAV",320,60);
 await newRank("StGeorgesAV","MtSpokaneBV",200,180);
 await newRank("GonzagaAV","FrenchtownBV",350,70);
 await newRank("EastValleyBV","EastValleyAV",190,180);
-//await newRank("MtSpokaneDJV","EastValleyCJV",170,140);
+await newRank("MtSpokaneDJV","EastValleyCJV",170,140);
 await newRank("LibbyAJV","MtSpokaneCJV",220,130);
 //Round 3
 await newRank("MtSpokaneBV","MtSpokaneAV",240,210);
 await newRank("FrenchtownAV","FrenchtownBV",250,90);
 await newRank("GonzagaAV","EastValleyBV",340,120);
 await newRank("StGeorgesAV","EastValleyAV",310,100);
-//await newRank("MtSpokaneCJV","EastValleyCJV",210,100);
+await newRank("MtSpokaneCJV","EastValleyCJV",210,100);
 await newRank("LibbyAJV","MtSpokaneDJV",240,110);
 //Round 4
 await newRank("MtSpokaneBV","FrenchtownBV",410,40);
@@ -4678,16 +4654,16 @@ await newRank("EastValleyAV","MtSpokaneAV",250,210);
 await newRank("EastValleyBV","FrenchtownAV",220,150);
 await newRank("GonzagaAV","StGeorgesAV",340,180);
 await newRank("LibbyAJV","MtSpokaneDJV",220,80);
-//await newRank("MtSpokaneCJV","EastValleyCJV",150,110);
+await newRank("MtSpokaneCJV","EastValleyCJV",150,110);
 //Round 5
 await newRank("MtSpokaneBV","EastValleyAV",240,160);
 await newRank("StGeorgesAV","EastValleyBV",200,150);
 await newRank("MtSpokaneAV","FrenchtownBV",290,60);
 await newRank("GonzagaAV","FrenchtownAV",280,70);
 await newRank("LibbyAJV","MtSpokaneCJV",290,50);
-//await newRank("MtSpokaneDJV","EastValleyCJV",140,100);
+await newRank("MtSpokaneDJV","EastValleyCJV",140,100);
 //Round 6
-//await newRank("LibbyAJV","EastValleyCJV",180,70);
+await newRank("LibbyAJV","EastValleyCJV",180,70);
 await newRank("MtSpokaneDJV","MtSpokaneCJV",120,110);
 //Varsity Playoffs
 //Quarterfinals
@@ -4702,7 +4678,7 @@ await newRank("GonzagaAV","MtSpokaneAV",320,120);
 await newRank("GonzagaAV","MtSpokaneBV",260,70)
 //JV Playoffs
 //Semifinals
-//await newRank("LibbyAJV","EastValleyCJV",210,100);
+await newRank("LibbyAJV","EastValleyCJV",210,100);
 await newRank("MtSpokaneCJV","MtSpokaneDJV",140,90);
 //Finals
 //await newRank("LibbyAJV","MtSpokaneCJV",1,0);
@@ -4711,7 +4687,6 @@ allJV.push(teamAvgJV);
 teamAvgV = [];
 teamAvgJV = [];
 console.log("East WA C");
-
 
 
 //Central Georgia Fall C-Set
@@ -5000,13 +4975,13 @@ console.log("North NJ C");
 await newRank("StevensonAV","StevensonCV",340,300);
 await newRank("BarringtonAV","BarringtonBV",490,90);
 await newRank("SandburgAV","MarmionAV",320,230);
-//await newRank("StevensonBV","HinsdaleAV",350,210);
+await newRank("StevensonBV","HinsdaleAV",350,210);
 await newRank("StevensonEJV","StevensonFJV",400,120);
 await newRank("StevensonDJV","AptakisicAJV",360,150);
 //Round 2
 await newRank("MarmionAV","BarringtonBV",360,180);
 await newRank("HinsdaleAV","SandburgAV",300,290);
-//await newRank("StevensonAV","StevensonBV",470,170);
+await newRank("StevensonAV","StevensonBV",470,170);
 await newRank("StevensonCV","BarringtonAV",340,330);
 await newRank("StevensonFJV","AptakisicAJV",270,160);
 await newRank("StevensonEJV","SandburgBJV",470,140);
@@ -5014,18 +4989,18 @@ await newRank("StevensonEJV","SandburgBJV",470,140);
 await newRank("StevensonAV","MarmionAV",460,180);
 await newRank("StevensonCV","SandburgAV",420,160);
 await newRank("HinsdaleAV","BarringtonBV",450,120);
-//await newRank("StevensonBV","BarringtonAV",280,260);
+await newRank("StevensonBV","BarringtonAV",280,260);
 await newRank("SandburgBJV","StevensonFJV",340,160);
 await newRank("StevensonEJV","StevensonDJV",370,220);
 //Round 4
 await newRank("SandburgAV","BarringtonAV",350,280);
 await newRank("StevensonAV","BarringtonBV",530,40);
-//await newRank("StevensonCV","StevensonBV",380,230);
+await newRank("StevensonCV","StevensonBV",380,230);
 await newRank("HinsdaleAV","MarmionAV",400,190);
 await newRank("SandburgBJV","AptakisicAJV",310,180);
 await newRank("StevensonDJV","StevensonFJV",430,100);
 //Round 5
-//await newRank("StevensonBV","BarringtonBV",390,140);
+await newRank("StevensonBV","BarringtonBV",390,140);
 await newRank("BarringtonAV","HinsdaleAV",320,270);
 await newRank("StevensonCV","MarmionAV",510,130);
 await newRank("StevensonAV","SandburgAV",440,160);
@@ -5037,7 +5012,7 @@ await newRank("BarringtonAV","MarmionAV",380,200);
 await newRank("StevensonCV","BarringtonBV",520,60);
 await newRank("SandburgAV","SandburgBJV",270,240);
 //Round 7
-//await newRank("StevensonBV","MarmionAV",340,170);
+await newRank("StevensonBV","MarmionAV",340,170);
 await newRank("SandburgAV","BarringtonBV",370,70);
 await newRank("StevensonAV","BarringtonAV",320,240);
 await newRank("StevensonCV","HinsdaleAV",410,130);
@@ -6643,7 +6618,6 @@ console.log("SoCal C");
 
 
 
-
 y = true;
 console.log(y);
 
@@ -6749,21 +6723,21 @@ await newRank("GonzagaAV","MtSpokaneAV",300,180);
 await newRank("StGeorgesAV","FrenchtownAV",250,140);
 await newRank("EastValleyAV","FrenchtownBV",370,70);
 await newRank("MtSpokaneBV","EastValleyBV",330,100);
-//await newRank("LibbyAJV","EastValleyCJV",300,70);
+await newRank("LibbyAJV","EastValleyCJV",300,70);
 await newRank("MtSpokaneCJV","MtSpokaneDJV",260,130);
 //Round 2
 await newRank("MtSpokaneAV","FrenchtownAV",320,60);
 await newRank("StGeorgesAV","MtSpokaneBV",200,180);
 await newRank("GonzagaAV","FrenchtownBV",350,70);
 await newRank("EastValleyBV","EastValleyAV",190,180);
-//await newRank("MtSpokaneDJV","EastValleyCJV",170,140);
+await newRank("MtSpokaneDJV","EastValleyCJV",170,140);
 await newRank("LibbyAJV","MtSpokaneCJV",220,130);
 //Round 3
 await newRank("MtSpokaneBV","MtSpokaneAV",240,210);
 await newRank("FrenchtownAV","FrenchtownBV",250,90);
 await newRank("GonzagaAV","EastValleyBV",340,120);
 await newRank("StGeorgesAV","EastValleyAV",310,100);
-//await newRank("MtSpokaneCJV","EastValleyCJV",210,100);
+await newRank("MtSpokaneCJV","EastValleyCJV",210,100);
 await newRank("LibbyAJV","MtSpokaneDJV",240,110);
 //Round 4
 await newRank("MtSpokaneBV","FrenchtownBV",410,40);
@@ -6771,16 +6745,16 @@ await newRank("EastValleyAV","MtSpokaneAV",250,210);
 await newRank("EastValleyBV","FrenchtownAV",220,150);
 await newRank("GonzagaAV","StGeorgesAV",340,180);
 await newRank("LibbyAJV","MtSpokaneDJV",220,80);
-//await newRank("MtSpokaneCJV"," EastValleyCJV",150,110);
+await newRank("MtSpokaneCJV"," EastValleyCJV",150,110);
 //Round 5
 await newRank("MtSpokaneBV","EastValleyAV",240,160);
 await newRank("StGeorgesAV","EastValleyBV",200,150);
 await newRank("MtSpokaneAV","FrenchtownBV",290,60);
 await newRank("GonzagaAV","FrenchtownAV",280,70);
 await newRank("LibbyAJV","MtSpokaneCJV",290,50);
-//await newRank("MtSpokaneDJV","EastValleyCJV",140,100);
+await newRank("MtSpokaneDJV","EastValleyCJV",140,100);
 //Round 6
-//await newRank("LibbyAJV","EastValleyCJV",180,70);
+await newRank("LibbyAJV","EastValleyCJV",180,70);
 await newRank("MtSpokaneDJV","MtSpokaneCJV",120,110);
 //Varsity Playoffs
 //Quarterfinals
@@ -6795,10 +6769,10 @@ await newRank("GonzagaAV","MtSpokaneAV",320,120);
 await newRank("GonzagaAV","MtSpokaneBV",260,70)
 //JV Playoffs
 //Semifinals
-//await newRank("LibbyAJV","EastValleyCJV",210,100);
+await newRank("LibbyAJV","EastValleyCJV",210,100);
 await newRank("MtSpokaneCJV","MtSpokaneDJV",140,90);
 //Finals
-//await newRank("LibbyAJV","MtSpokaneCJV",1,0);
+//await newRank("await newRank("LibbyAJV","MtSpokaneCJV",1,0);
 console.log("East WA C q V: "+qV[a2]);
 console.log("East WA C q JV: "+qJV[b2]);
 a = 0;
@@ -7103,13 +7077,13 @@ b2 = b2+1;
 await newRank("StevensonAV","StevensonCV",340,300);
 await newRank("BarringtonAV","BarringtonBV",490,90);
 await newRank("SandburgAV","MarmionAV",320,230);
-//await newRank("StevensonBV","HinsdaleAV",350,210);
+await newRank("StevensonBV","HinsdaleAV",350,210);
 await newRank("StevensonEJV","StevensonFJV",400,120);
 await newRank("StevensonDJV","AptakisicAJV",360,150);
 //Round 2
 await newRank("MarmionAV","BarringtonBV",360,180);
 await newRank("HinsdaleAV","SandburgAV",300,290);
-//await newRank("StevensonAV","StevensonBV",470,170);
+await newRank("StevensonAV"," StevensonBV",470,170);
 await newRank("StevensonCV","BarringtonAV",340,330);
 await newRank("StevensonFJV","AptakisicAJV",270,160);
 await newRank("StevensonEJV","SandburgBJV",470,140);
@@ -7117,18 +7091,18 @@ await newRank("StevensonEJV","SandburgBJV",470,140);
 await newRank("StevensonAV","MarmionAV",460,180);
 await newRank("StevensonCV","SandburgAV",420,160);
 await newRank("HinsdaleAV","BarringtonBV",450,120);
-//await newRank("StevensonBV","BarringtonAV",280,260);
+await newRank("StevensonBV","BarringtonAV",280,260);
 await newRank("SandburgBJV","StevensonFJV",340,160);
 await newRank("StevensonEJV","StevensonDJV",370,220);
 //Round 4
 await newRank("SandburgAV","BarringtonAV",350,280);
 await newRank("StevensonAV","BarringtonBV",530,40);
-//await newRank("StevensonCV","StevensonBV",380,230);
+await newRank("StevensonCV","StevensonBV",380,230);
 await newRank("HinsdaleAV","MarmionAV",400,190);
 await newRank("SandburgBJV","AptakisicAJV",310,180);
 await newRank("StevensonDJV","StevensonFJV",430,100);
 //Round 5
-//await newRank("StevensonBV","BarringtonBV",390,140);
+await newRank("StevensonBV","BarringtonBV",390,140);
 await newRank("BarringtonAV","HinsdaleAV",320,270);
 await newRank("StevensonCV","MarmionAV",510,130);
 await newRank("StevensonAV","SandburgAV",440,160);
@@ -7140,7 +7114,7 @@ await newRank("BarringtonAV","MarmionAV",380,200);
 await newRank("StevensonCV","BarringtonBV",520,60);
 await newRank("SandburgAV","SandburgBJV",270,240);
 //Round 7
-//await newRank("StevensonBV","MarmionAV",340,170);
+await newRank("StevensonBV","MarmionAV",340,170);
 await newRank("SandburgAV","BarringtonBV",370,70);
 await newRank("StevensonAV","BarringtonAV",320,240);
 await newRank("StevensonCV","HinsdaleAV",410,130);
@@ -7875,7 +7849,7 @@ console.log("DC C q MS: "+qMS[c2]);
 a = 0;
 b = 0;
 c = 0;
-//console.log(qV,qJV);
+console.log(qV,qJV);
 
 //Southern New Jersey C-Set
 a2 = a2+1;
@@ -8781,8 +8755,6 @@ console.log("SoCal C q V: "+qV[a2]);
 console.log("SoCal C q JV: "+qJV[b2]);
 a = 0;
 b = 0;
-
-
 
 cSet = false;
 y = false;
@@ -9784,13 +9756,11 @@ async function bSetData() {
     
 async function allSets() {
     await cSetData();
-    console.log("tA,tB",avgTA,avgTB);
-    //await bSetData();
-    /*
+    await bSetData();
     console.log("Overall Rankings")
     await printRanks("Varsity");
     await printRanks("Junior Varsity");
-    await printRanks("Middle School");*/
+    await printRanks("Middle School");
 }
 
 
