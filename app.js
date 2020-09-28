@@ -15,7 +15,10 @@ server.listen(port, hostname, () => {
 });
 */
 
-//--
+//export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/service-account-file.json"
+
+
+
 
 
 //Varsity Teams
@@ -1956,7 +1959,7 @@ rank:1200,
 games:0
 }),
 db.collection("teams").doc("EastValleyDJV").set({
-    name:"East Valley C",
+    name:"East Valley D",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
@@ -4023,10 +4026,9 @@ let b2 = -1;
 let c2 = -1;
 
 let q = 0;
-let tA = [];
-let tB = [];
-let avgTA = 0;
-let avgTB = 0;
+let t = [];
+let avgT = 0;
+const one = 1;
 
 
 let y = false;
@@ -4185,14 +4187,11 @@ async function newRank(A, B, AScore, BScore) {
     await cExpScore(A,B);
     //Update t value
     //console.log("tA",((AScore/(AScore+BScore))/expScoreA));
-    tA.push((AScore/(AScore+BScore))/expScoreA);
+    t.push((AScore/(AScore+BScore))/expScoreA);
     //console.log("tB",((BScore/(AScore+BScore))/expScoreB));
-    tB.push((BScore/(AScore+BScore))/expScoreB);
+    t.push((BScore/(AScore+BScore))/expScoreB);
     //calculate the average value for t
-    avgTA = 0;
-    avgTB = 0;
-    avgTA = average(tA);
-    avgTB = average(tB);
+    avgT = average(t);
     //console.log("avgTA,avgTB",avgTA,avgTB);
     //console.log("avgT, sumT, t.length",avgT, sumT, t.length);
     //console.log("t",t);
@@ -4476,11 +4475,11 @@ async function nRank(A,B,AScore,BScore){
                                     if (gamesB > 5) {
                                         gB = 5/(gamesB-5);
                                     }*/
-                                    console.log("q,Ka,Kb,avgTA,avgTB ",q,Ka,Kb,avgTA,avgTB);
-                                    console.log("rankA,rankB ",rankA,rankB);
-                                    rankA = rankA + q*Ka*((AScore/((AScore+BScore)*avgTA))-expScoreA);
-                                    rankB = rankB + q*Kb*((BScore/((AScore+BScore)*avgTB))-expScoreB);
-                                    console.log("rankA,rankB "+rankA+rankB);
+                                    //console.log("q,Ka,Kb,avgT ",q,Ka,Kb,one);
+                                    //console.log("rankA,rankB ",rankA,rankB);
+                                    rankA = rankA + q*Ka*((AScore/((AScore+BScore)*one))-expScoreA);
+                                    rankB = rankB + q*Kb*((BScore/((AScore+BScore)*one))-expScoreB);
+                                    //console.log("rankA,rankB "+rankA+" "+rankB);
                                     //console.log("rankAB",rankA,rankB);
                                     //update rank
                                     db.collection("teams").doc(A).update({rank:rankA})
@@ -9755,7 +9754,7 @@ async function bSetData() {
     
 async function allSets() {
     await cSetData();
-    await bSetData();
+    //await bSetData();
     console.log("Overall Rankings")
     await printRanks("Varsity");
     await printRanks("Junior Varsity");
