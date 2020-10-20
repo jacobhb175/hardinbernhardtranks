@@ -6,15 +6,13 @@ Hardin-Bernhardt Ranks is a new way of ranking NHBB teams using a modified versi
 expected score of A = 1 / ((e^((rank of B - rank of A) / rank of A)) + 1)
 
 ### New Rank Formula
-new rank of A = rank of A + g * q * K * ((score of A / ((score of A + score of B) * average T-value)) - expected score of A)
+new rank of A = rank of A + g * q (score of A / (score of A + score of B) - expected score of A)
 
 ## The Variables
 ### q-Value
 The q-value is a multiplier used to represent strength of field at a tournament and intended to help improve elo as a measure of skill unaffected by the field a team is up against, and thus more useful and accurate as a comparison between teams from different regions. It is calculated as a ratio of average total points scored per game at a given tournament : average total points scored per game on a given set, and is calculated independently the for MS, JV, and Varsity fields.
-### T-Value
-The T-value is used to account for the inherent issues in equating the percent chance of a given winning to the percent of total points that team will score. It is calculated as a ratio of the percent of total points scored by a given team : the percent chance given to that team to win.
 ### g-Value
-The g-Value is a multiplier to adjust for the different formats of tournaments which lead some teams to play more or fewer games. It is set equal to 8/the number of games played by the team (not counting byes or crossover matches).
+The g-Value is a multiplier to adjust for the different formats of tournaments which lead some teams to play more or fewer games. It is set equal to 800/the number of games played by the team (not counting byes or crossover matches).
 
 ## List of Tournaments
 Tournament|Date|Set Played|Status|Varsity q-Value|JV q-Value
