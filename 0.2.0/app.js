@@ -12,1715 +12,1715 @@ const db = admin.firestore();
 // Teams
 
 //Varsity Teams
-db.collection("teams").doc("AmherstAV").set({
+db.collection("teams").doc("AmherstA").set({
     name:"Amherst A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("AmherstBV").set({
+db.collection("teams").doc("AmherstB").set({
     name:"Amherst B",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ApalacheeAV").set({
+db.collection("teams").doc("ApalacheeA").set({
     name:"Apalachee A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArchimedeanAV").set({
+db.collection("teams").doc("ArchimedeanA").set({
     name:"Archimedean A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArchimedeanBV").set({
+db.collection("teams").doc("ArchimedeanB").set({
     name:"Archimedean B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArchimedeanCV").set({
+db.collection("teams").doc("ArchimedeanC").set({
     name:"Archimedean C",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArchimedeanDV").set({
+db.collection("teams").doc("ArchimedeanD").set({
     name:"Archimedean D",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArchimedeanEV").set({
+db.collection("teams").doc("ArchimedeanE").set({
     name:"Archimedean E",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArdsleyAV").set({
+db.collection("teams").doc("ArdsleyA").set({
     name:"Ardsley A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("AuburnAV").set({
+db.collection("teams").doc("AuburnA").set({
     name:"Auburn A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BASISMcLeanAV").set({
+db.collection("teams").doc("BASISMcLeanA").set({
     name:"BASIS McLean A",
     state:"Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BarringtonAV").set({
+db.collection("teams").doc("BarringtonA").set({
     name:"Barrington A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BarringtonBV").set({
+db.collection("teams").doc("BarringtonB").set({
     name:"Barrington B",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BatonRougeEpiscopalAV").set({
+db.collection("teams").doc("BatonRougeEpiscopalA").set({
     name:"Baton Rouge Episcopal A",
     state:"Louisiana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BatonRougeMagnetAV").set({
+db.collection("teams").doc("BatonRougeMagnetA").set({
     name:"Baton Rouge Magnet A",
     state:"Louisiana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BeavercreekAV").set({
+db.collection("teams").doc("BeavercreekA").set({
     name:"Beavercreek A",
     state:"Ohio",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BeavercreekBV").set({
+db.collection("teams").doc("BeavercreekB").set({
     name:"Beavercreek B",
     state:"Ohio",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BelenAV").set({
+db.collection("teams").doc("BelenA").set({
     name:"Belen Jesuit A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BelenBV").set({
+db.collection("teams").doc("BelenB").set({
     name:"Belen Jesuit B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BerkeleyAV").set({
+db.collection("teams").doc("BerkeleyA").set({
     name:"Berkeley Prep A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BerkeleyBV").set({
+db.collection("teams").doc("BerkeleyB").set({
     name:"Berkeley Prep B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BillingsSeniorAV").set({
+db.collection("teams").doc("BillingsSeniorA").set({
     name:"Billings Senior A",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BillingsWestAV").set({
+db.collection("teams").doc("BillingsWestA").set({
     name:"Billings West A",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BillingsWestBV").set({
+db.collection("teams").doc("BillingsWestB").set({
     name:"Billings West B",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BlazerAV").set({
+db.collection("teams").doc("BlazerA").set({
     name:"Blazer A",
     state:"Kentucky",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BostonLatinAV").set({
+db.collection("teams").doc("BostonLatinA").set({
     name:"Boston Latin A",
     state:"Massachusetts",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BozemanAV").set({
+db.collection("teams").doc("BozemanA").set({
     name:"Bozeman A",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BozemanBV").set({
+db.collection("teams").doc("BozemanB").set({
     name:"Bozeman B",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BrookwoodAV").set({
+db.collection("teams").doc("BrookwoodA").set({
     name:"Brookwood A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CambridgeAV").set({
+db.collection("teams").doc("CambridgeA").set({
     name:"Cambridge",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CaravelAV").set({
+db.collection("teams").doc("CaravelA").set({
     name:"Caravel A",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CaravelBV").set({
+db.collection("teams").doc("CaravelB").set({
     name:"Caravel B",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentennialAV").set({
+db.collection("teams").doc("CentennialA").set({
     name:"Centennial HS A",
     state:"Maryland",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentennialBV").set({
+db.collection("teams").doc("CentennialB").set({
     name:"Centennial HS B",
     state:"Maryland",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentralKitsapAV").set({
+db.collection("teams").doc("CentralKitsapA").set({
     name:"Central Kitsap A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CharlestonAV").set({
+db.collection("teams").doc("CharlestonA").set({
     name:"Charleston Catholic A",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CharlestonBV").set({
+db.collection("teams").doc("CharlestonB").set({
     name:"Charleston Catholic B",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChattahoocheeAV").set({
+db.collection("teams").doc("ChattahoocheeA").set({
     name:"Chattahoochee A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChoctawhatcheeAV").set({
+db.collection("teams").doc("ChoctawhatcheeA").set({
     name:"Choctawhatchee A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ClassicalAV").set({
+db.collection("teams").doc("ClassicalA").set({
     name:"Classical Prep A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ColdhugAV").set({
+db.collection("teams").doc("ColdhugA").set({
     name:"Team Coldhug A",
     state:"Connecticut",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CollegiateAV").set({
+db.collection("teams").doc("CollegiateA").set({
     name:"Collegiate",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ColumbiaRiverAV").set({
+db.collection("teams").doc("ColumbiaRiverA").set({
     name:"Columbia River A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ColumbiaRiverBV").set({
+db.collection("teams").doc("ColumbiaRiverB").set({
     name:"Columbia River B",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CommerceAV").set({
+db.collection("teams").doc("CommerceA").set({
     name:"Commerce A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CoralReefAV").set({
+db.collection("teams").doc("CoralReefA").set({
     name:"Coral Reef A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CoralReefBV").set({
+db.collection("teams").doc("CoralReefB").set({
     name:"Coral Reef B",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CreeksideAV").set({
+db.collection("teams").doc("CreeksideA").set({
     name:"Creekside A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DaltonAV").set({
+db.collection("teams").doc("DaltonA").set({
     name:"Dalton A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DarienAV").set({
+db.collection("teams").doc("DarienA").set({
     name:"Darien A",
     state:"Connecticut",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DickinsonAV").set({
+db.collection("teams").doc("DickinsonA").set({
     name:"Dickinson A",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DonovanCatholicAV").set({
+db.collection("teams").doc("DonovanCatholicA").set({
     name:"Donovan Catholic A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NorthHighlandsAV").set({
+db.collection("teams").doc("NorthHighlandsA").set({
     name:"North Highlands",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DoralAV").set({
+db.collection("teams").doc("DoralA").set({
     name:"Doral Academy A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DunbarAV").set({
+db.collection("teams").doc("DunbarA").set({
     name:"Dunbar A",
     state:"Kentucky",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EastBrunswickAV").set({
+db.collection("teams").doc("EastBrunswickA").set({
     name:"East Brunswick A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EastBrunswickBV").set({
+db.collection("teams").doc("EastBrunswickB").set({
     name:"East Brunswick B",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EastValleyAV").set({
+db.collection("teams").doc("EastValleyA").set({
     name:"East Valley A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EastValleyBV").set({
+db.collection("teams").doc("EastValleyB").set({
     name:"East Valley B",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ElginAV").set({
+db.collection("teams").doc("ElginA").set({
     name:"Elgin Academy A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EriksenAV").set({
+db.collection("teams").doc("EriksenA").set({
     name:"Eriksen A",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FontbonneAV").set({
+db.collection("teams").doc("FontbonneA").set({
     name:"Fordham Hall Academy A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FontbonneBV").set({
+db.collection("teams").doc("FontbonneB").set({
     name:"Fordham Hall Academy B",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FoothillAV").set({
+db.collection("teams").doc("FoothillA").set({
     name:"Foothill A",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FordhamAV").set({
+db.collection("teams").doc("FordhamA").set({
     name:"Fordham Prep A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FrenchtownAV").set({
+db.collection("teams").doc("FrenchtownA").set({
     name:"Frenchtown A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FrenchtownBV").set({
+db.collection("teams").doc("FrenchtownB").set({
     name:"Frenchtown B",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FriendsCentralAV").set({
+db.collection("teams").doc("FriendsCentralA").set({
     name:"Friends Central A",
     state:"Pennsylvania",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GatlinburgAV").set({
+db.collection("teams").doc("GatlinburgA").set({
     name:"Gatlinburg-Pittman A",
     state:"Tennessee",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GatlinburgBV").set({
+db.collection("teams").doc("GatlinburgB").set({
     name:"Gatlinburg-Pittman B",
     state:"Tennessee",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GeorgetownDayAV").set({
+db.collection("teams").doc("GeorgetownDayA").set({
     name:"Georgetown Day School A",
     state:"DC",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GeorgeWaltonAV").set({
+db.collection("teams").doc("GeorgeWaltonA").set({
     name:"George Walton A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GeorgeWashingtonAV").set({
+db.collection("teams").doc("GeorgeWashingtonWVA").set({
     name:"George Washington A",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GeorgeWashingtonBV").set({
+db.collection("teams").doc("GeorgeWashingtonB").set({
     name:"George Washington B",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GlenbardWestAV").set({
+db.collection("teams").doc("GlenbardWestA").set({
     name:"Glenbard West A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GlenelgAV").set({
+db.collection("teams").doc("GlenelgA").set({
     name:"Glenelg Country School A",
     state:"Maryland",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GonzagaAV").set({
+db.collection("teams").doc("GonzagaA").set({
     name:"Gonzaga Prep A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GothamAV").set({
+db.collection("teams").doc("GothamA").set({
     name:"Team Gotham A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GreatValleyAV").set({
+db.collection("teams").doc("GreatValleyA").set({
     name:"Great Valley A",
     state:"Pennsylvania",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GreensFarmsAV").set({
+db.collection("teams").doc("GreensFarmsA").set({
     name:"Greens Farms A",
     state:"Connecticut",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GundersonAV").set({
+db.collection("teams").doc("GundersonA").set({
     name:"Gunderson A",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HewlettAV").set({
+db.collection("teams").doc("HewlettA").set({
     name:"Hewlett A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HewlettBV").set({
+db.collection("teams").doc("HewlettB").set({
     name:"Hewlett B",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HighTechAV").set({
+db.collection("teams").doc("HighTechA").set({
     name:"High Tech A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HinsdaleAV").set({
+db.collection("teams").doc("HinsdaleA").set({
     name:"Hinsdale Central A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HolmdelAV").set({
+db.collection("teams").doc("HolmdelA").set({
     name:"Team Holmdel A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HolyNamesAV").set({
+db.collection("teams").doc("HolyNamesA").set({
     name:"Holy Names Academy A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HomewoodFlossmoorAV").set({
+db.collection("teams").doc("HomewoodFlossmoorA").set({
     name:"Homewood-Flossmoor A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HoraceGreeleyAV").set({
+db.collection("teams").doc("HoraceGreeleyA").set({
     name:"Horace Greeley A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HunterAV").set({
+db.collection("teams").doc("HunterA").set({
     name:"Hunter College High A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("IolaniAV").set({
+db.collection("teams").doc("IolaniA").set({
     name:"Iolani A",
     state:"Hawaii",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("IolaniBV").set({
+db.collection("teams").doc("IolaniB").set({
     name:"Iolani B",
     state:"Hawaii",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("IolaniCJV").set({
+db.collection("teams").doc("IolaniC").set({
     name:"Iolani C",
     state:"Hawaii",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("IroquoisAV").set({
+db.collection("teams").doc("IroquoisA").set({
     name:"Iroquois A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("IrvingtonAV").set({
+db.collection("teams").doc("IrvingtonA").set({
     name:"Irvington A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JesuitAV").set({
+db.collection("teams").doc("JesuitA").set({
     name:"Jesuit A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JesuitBV").set({
+db.collection("teams").doc("JesuitB").set({
     name:"Jesuit B",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnPaulIIAV").set({
+db.collection("teams").doc("JohnPaulIIA").set({
     name:"John Paul II A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnsCreekAV").set({
+db.collection("teams").doc("JohnsCreekA").set({
     name:"Johns Creek A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnsonAV").set({
+db.collection("teams").doc("JohnsonA").set({
     name:"Johnson A",
     state:"Kentucky",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnsonBV").set({
+db.collection("teams").doc("JohnsonB").set({
     name:"Johnson B",
     state:"Kentucky",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnsonCV").set({
+db.collection("teams").doc("JohnsonC").set({
     name:"Johnson C",
     state:"Kentucky",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("KingAV").set({
+db.collection("teams").doc("KingA").set({
     name:"King A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("KingBV").set({
+db.collection("teams").doc("KingB").set({
     name:"King B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LambertAV").set({
+db.collection("teams").doc("LambertA").set({
     name:"Lambert A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LargoAV").set({
+db.collection("teams").doc("LargoA").set({
     name:"Largo A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LargoBV").set({
+db.collection("teams").doc("LargoB").set({
     name:"Largo B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LeoniaAV").set({
+db.collection("teams").doc("LeoniaA").set({
     name:"Leonia A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LesQuizAV").set({
+db.collection("teams").doc("LesQuizA").set({
     name:"Les Quiz A",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LewisandClarkAV").set({
+db.collection("teams").doc("LewisandClarkA").set({
     name:"Lewis and Clark A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LexingtonAV").set({
+db.collection("teams").doc("LexingtonA").set({
     name:"Lexington A",
     state:"Massachusetts",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LincolnAV").set({
+db.collection("teams").doc("LincolnA").set({
     name:"Lincoln A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LynbrookAV").set({
+db.collection("teams").doc("LynbrookA").set({
     name:"Lynbrook A",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ManateeAV").set({
+db.collection("teams").doc("ManateeA").set({
     name:"Manatee A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MarmionAV").set({
+db.collection("teams").doc("MarmionA").set({
     name:"Marmion Academy A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MaryvilleAV").set({
+db.collection("teams").doc("MaryvilleA").set({
     name:"Maryville Jr. High A",
     state:"Tennessee",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MethactonAV").set({
+db.collection("teams").doc("MethactonA").set({
     name:"Methacton A",
     state:"Pennsylvania",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MethactonBV").set({
+db.collection("teams").doc("MethactonB").set({
     name:"Methacton B",
     state:"Pennsylvania",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnAV").set({
+db.collection("teams").doc("MillburnA").set({
     name:"Millburn A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnBV").set({
+db.collection("teams").doc("MillburnB").set({
     name:"Millburn B",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnCV").set({
+db.collection("teams").doc("MillburnC").set({
     name:"Millburn C",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnCJV").set({
+db.collection("teams").doc("MillburnC").set({
     name:"Millburn C",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MontgomeryBlairAV").set({
+db.collection("teams").doc("MontgomeryBlairA").set({
     name:"Montgomery Blair A",
     state:"Maryland",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MoorestownAV").set({
+db.collection("teams").doc("MoorestownA").set({
     name:"Moorestown Friends A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MoorestownBV").set({
+db.collection("teams").doc("MoorestownB").set({
     name:"Moorestown Friends B",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MoravianAV").set({
+db.collection("teams").doc("MoravianA").set({
     name:"Moravian Academy A",
     state:"Pennsylvania",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MorristownAV").set({
+db.collection("teams").doc("MorristownA").set({
     name:"Morristown East A",
     state:"Tennessee",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MorristownBV").set({
+db.collection("teams").doc("MorristownB").set({
     name:"Morristown East B",
     state:"Tennessee",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MountainLakesAV").set({
+db.collection("teams").doc("MountainLakesA").set({
     name:"Mountain Lakes A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MtSpokaneAV").set({
+db.collection("teams").doc("MtSpokaneA").set({
     name:"Mt. Spokane A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MtSpokaneBV").set({
+db.collection("teams").doc("MtSpokaneB").set({
     name:"Mt. Spokane B",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MountVernonAV").set({
+db.collection("teams").doc("MountVernonA").set({
     name:"Mount Vernon A",
     state:"Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewarkAV").set({
+db.collection("teams").doc("NewarkA").set({
     name:"Newark Academy A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewarkCharterAV").set({
+db.collection("teams").doc("NewarkCharterA").set({
     name:"Newark Charter A",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewarkCharterBV").set({
+db.collection("teams").doc("NewarkCharterB").set({
     name:"Newark Charter B",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewarkCharterCV").set({
+db.collection("teams").doc("NewarkCharterC").set({
     name:"Newark Charter C",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewnanAV").set({
+db.collection("teams").doc("NewnanA").set({
     name:"Newnan A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NicholsAV").set({
+db.collection("teams").doc("NicholsA").set({
     name:"Nichols A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NicholsBV").set({
+db.collection("teams").doc("NicholsB").set({
     name:"Nichols B",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NicholsCV").set({
+db.collection("teams").doc("NicholsC").set({
     name:"Nichols C",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NitroAV").set({
+db.collection("teams").doc("NitroA").set({
     name:"Nitro A",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NitroBV").set({
+db.collection("teams").doc("NitroB").set({
     name:"Nitro B",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NorthfieldMtHermonAV").set({
+db.collection("teams").doc("NorthfieldMtHermonA").set({
     name:"Northfield Mt. Hermon A",
     state:"Massachusetts",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NorthwesternAV").set({
+db.collection("teams").doc("NorthwesternA").set({
     name:"Northwestern Middle A",
     state:"Louisiana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("OakMountainAV").set({
+db.collection("teams").doc("OakMountainA").set({
     name:"Oak Mountain A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("OratoryAV").set({
+db.collection("teams").doc("OratoryA").set({
     name:"Oratory Prep A",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoAV").set({
+db.collection("teams").doc("PalmettoA").set({
     name:"Miami Palmetto A",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoBV").set({
+db.collection("teams").doc("PalmettoB").set({
     name:"Miami Palmetto B",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoCV").set({
+db.collection("teams").doc("PalmettoC").set({
     name:"Miami Palmetto C",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoDV").set({
+db.collection("teams").doc("PalmettoD").set({
     name:"Miami Palmetto D",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoEV").set({
+db.collection("teams").doc("PalmettoE").set({
     name:"Miami Palmetto E",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoFV").set({
+db.collection("teams").doc("PalmettoF").set({
     name:"Miami Palmetto F",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoGV").set({
+db.collection("teams").doc("PalmettoG").set({
     name:"Miami Palmetto G",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoHV").set({
+db.collection("teams").doc("PalmettoH").set({
     name:"Miami Palmetto H",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoIV").set({
+db.collection("teams").doc("PalmettoI").set({
     name:"Miami Palmetto I",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoJV").set({
+db.collection("teams").doc("Palmetto").set({
     name:"Miami Palmetto J",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("ParamusAV").set({
+db.collection("teams").doc("ParamusA").set({
     name:"Paramus A",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PhillipsExeterAV").set({
+db.collection("teams").doc("PhillipsExeterA").set({
     name:"Phillips Exeter A",
     state:"New Hampshire",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PiedmontHillsAV").set({
+db.collection("teams").doc("PiedmontHillsA").set({
     name:"Piedmont Hills A",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PigeonForgeAV").set({
+db.collection("teams").doc("PigeonForgeA").set({
     name:"Pigeon Forge A",
     state:"Tennessee",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PineViewAV").set({
+db.collection("teams").doc("PineViewA").set({
     name:"Pine View A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PioneersAV").set({
+db.collection("teams").doc("PioneersA").set({
     name:"Team Pi-oneers",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PocaAV").set({
+db.collection("teams").doc("PocaA").set({
     name:"Poca A",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PocaBV").set({
+db.collection("teams").doc("PocaB").set({
     name:"Poca B",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PrincetonAV").set({
+db.collection("teams").doc("PrincetonA").set({
     name:"Princeton A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PrincetonBV").set({
+db.collection("teams").doc("PrincetonB").set({
     name:"Princeton B",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PunahouAV").set({
+db.collection("teams").doc("PunahouA").set({
     name:"Punahou A",
     state:"Hawaii",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PunahouBJV").set({
+db.collection("teams").doc("PunahouB").set({
     name:"Punahou B",
     state:"Hawaii",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("McKinleyAV").set({
+db.collection("teams").doc("McKinleyA").set({
     name:"McKinley",
     state:"Hawaii",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RanneyAV").set({
+db.collection("teams").doc("RanneyA").set({
     name:"Ranney A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomAV").set({
+db.collection("teams").doc("RansomA").set({
     name:"Ransom Everglades A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomBV").set({
+db.collection("teams").doc("RansomB").set({
     name:"Ransom Everglades B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RidgewoodAV").set({
+db.collection("teams").doc("RidgewoodA").set({
     name:"Ridgewood A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RidgewoodBV").set({
+db.collection("teams").doc("RidgewoodB").set({
     name:"Ridgewood B",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RichardMontgomeryAV").set({
+db.collection("teams").doc("RichardMontgomeryA").set({
     name:"Richard Montgomery A",
     state:"Maryland",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiversideAV").set({
+db.collection("teams").doc("RiversideA").set({
     name:"Riverside A",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiverviewAV").set({
+db.collection("teams").doc("RiverviewA").set({
     name:"Riverview A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiverviewBV").set({
+db.collection("teams").doc("RiverviewB").set({
     name:"Riverview B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiverviewCV").set({
+db.collection("teams").doc("RiverviewC").set({
     name:"Riverview C",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiverviewDV").set({
+db.collection("teams").doc("RiverviewD").set({
     name:"Riverview D",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiverviewEV").set({
+db.collection("teams").doc("RiverviewE").set({
     name:"Riverview E",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RussellAV").set({
+db.collection("teams").doc("RussellA").set({
     name:"Russell A",
     state:"Kentucky",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SalemAV").set({
+db.collection("teams").doc("SalemA").set({
     name:"Salem A",
     state:"Massachusetts",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SalemBV").set({
+db.collection("teams").doc("SalemB").set({
     name:"Salem B",
     state:"Massachusetts",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SandburgAV").set({
+db.collection("teams").doc("SandburgA").set({
     name:"Stanburg A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SaratogaAV").set({
+db.collection("teams").doc("SaratogaA").set({
     name:"Saratoga A",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SaratogaBV").set({
+db.collection("teams").doc("SaratogaB").set({
     name:"Saratoga B",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SaratogaCV").set({
+db.collection("teams").doc("SaratogaC").set({
     name:"Saratoga C",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ScarsdaleAV").set({
+db.collection("teams").doc("ScarsdaleA").set({
     name:"Scarsdale A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SeymourAV").set({
+db.collection("teams").doc("SeymourA").set({
     name:"Seymour A",
     state:"Tennessee",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SkyviewAV").set({
+db.collection("teams").doc("SkyviewA").set({
     name:"Skyview A",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SkyviewBV").set({
+db.collection("teams").doc("SkyviewB").set({
     name:"Skyview B",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SkyviewCV").set({
+db.collection("teams").doc("SkyviewC").set({
     name:"Skyview C",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StAlbansAV").set({
+db.collection("teams").doc("StAlbansA").set({
     name:"St. Albans A",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StAnselmsAV").set({
+db.collection("teams").doc("StAnselmsA").set({
     name:"St. Anselm's A",
     state:"Maryland",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StarrsMillAV").set({
+db.collection("teams").doc("StarrsMillA").set({
     name:"Starr's Mill A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StarrsMillBV").set({
+db.collection("teams").doc("StarrsMillB").set({
     name:"Starr's Mill B",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StarrsMillCV").set({
+db.collection("teams").doc("StarrsMillC").set({
     name:"Starr's Mill C",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StarrsMillDV").set({
+db.collection("teams").doc("StarrsMillD").set({
     name:"Starr's Mill D",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StarrsMillEV").set({
+db.collection("teams").doc("StarrsMillE").set({
     name:"Starr's Mill E",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StevensonAV").set({
+db.collection("teams").doc("StevensonA").set({
     name:"Stevenson A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StevensonBV").set({
+db.collection("teams").doc("StevensonB").set({
     name:"Stevenson B",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StevensonCV").set({
+db.collection("teams").doc("StevensonC").set({
     name:"Stevenson C",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StGeorgesAV").set({
+db.collection("teams").doc("StGeorgesA").set({
     name:"St. George's A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StJosephAV").set({
+db.collection("teams").doc("StJosephA").set({
     name:"St. Joseph A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StPetersAV").set({
+db.collection("teams").doc("StPetersA").set({
     name:"St. Peter's Prep A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StPetersBV").set({
+db.collection("teams").doc("StPetersB").set({
     name:"St. Peter's Prep B",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StuyvesantAV").set({
+db.collection("teams").doc("StuyvesantA").set({
     name:"Stuyvesant A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TantasquaAV").set({
+db.collection("teams").doc("TantasquaA").set({
     name:"Tantasqua A",
     state:"Massachusetts",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TantasquaBV").set({
+db.collection("teams").doc("TantasquaB").set({
     name:"Tantasqua B",
     state:"Massachusetts",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TateAV").set({
+db.collection("teams").doc("TateA").set({
     name:"Tate A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ThomasJeffersonAV").set({
+db.collection("teams").doc("ThomasJeffersonA").set({
     name:"Thomas Jefferson A",
     state:"Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ThomasJeffersonBV").set({
+db.collection("teams").doc("ThomasJeffersonB").set({
     name:"Thomas Jefferson B",
     state:"Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ThomasJeffersonCV").set({
+db.collection("teams").doc("ThomasJeffersonC").set({
     name:"Thomas Jefferson C",
     state:"Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TippecanoeAV").set({
+db.collection("teams").doc("TippecanoeA").set({
     name:"Tippecanoe A",
     state:"Ohio",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TowerHillAV").set({
+db.collection("teams").doc("TowerHillA").set({
     name:"Tower Hill A",
     state:"Delaware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TowerHillBV").set({
+db.collection("teams").doc("TowerHillB").set({
     name:"Tower Hill B",
     state:"Delaware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TrinityAV").set({
+db.collection("teams").doc("TrinityA").set({
     name:"Trinity Prep A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TrinityBV").set({
+db.collection("teams").doc("TrinityB").set({
     name:"Trinity Prep B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TenaflyAV").set({
+db.collection("teams").doc("TenaflyA").set({
     name:"Tenafly A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TenaflyBV").set({
+db.collection("teams").doc("TenaflyB").set({
     name:"Tenafly B",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("VeteransAV").set({
+db.collection("teams").doc("VeteransA").set({
     name:"Veterans A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WashingtonAV").set({
+db.collection("teams").doc("WashingtonA").set({
     name:"Washington A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WashingtonBV").set({
+db.collection("teams").doc("WashingtonB").set({
     name:"Washington B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilliamsBayAV").set({
+db.collection("teams").doc("WilliamsBayA").set({
     name:"Williams Bay A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilliamsBayBV").set({
+db.collection("teams").doc("WilliamsBayB").set({
     name:"Williams Bay B",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilliamsBayCV").set({
+db.collection("teams").doc("WilliamsBayC").set({
     name:"Williams Bay C",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsAV").set({
+db.collection("teams").doc("WilmingtonFriendsA").set({
     name:"Wilmington Friends A",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsBV").set({
+db.collection("teams").doc("WilmingtonFriendsB").set({
     name:"Wilmington Friends B",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsCV").set({
+db.collection("teams").doc("WilmingtonFriendsC").set({
     name:"Wilmington Friends C",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsDV").set({
+db.collection("teams").doc("WilmingtonFriendsD").set({
     name:"Wilmington Friends D",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsEV").set({
+db.collection("teams").doc("WilmingtonFriendsE").set({
     name:"Wilmington Friends E",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsFV").set({
+db.collection("teams").doc("WilmingtonFriendsF").set({
     name:"Wilmington Friends F",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsGV").set({
+db.collection("teams").doc("WilmingtonFriendsG").set({
     name:"Wilmington Friends G",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WiltonAlexAV").set({
+db.collection("teams").doc("WiltonAlexA").set({
     name:"Wilton Alex",
     state:"Connecticut",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WinnebagoAV").set({
+db.collection("teams").doc("WinnebagoA").set({
     name:"Winnebago A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WestminsterAV").set({
+db.collection("teams").doc("WestminsterA").set({
     name:"Westminster Christian A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WestviewAV").set({
+db.collection("teams").doc("WestviewA").set({
     name:"Westview A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WestviewBV").set({
+db.collection("teams").doc("WestviewB").set({
     name:"Westview B",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WhitePlainsAV").set({
+db.collection("teams").doc("WhitePlainsA").set({
     name:"White Plains A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WoodstockAV").set({
+db.collection("teams").doc("WoodstockA").set({
     name:"Woodstock A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WoodwardAV").set({
+db.collection("teams").doc("WoodwardA").set({
     name:"Woodward Academy A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ZacharyAV").set({
+db.collection("teams").doc("ZacharyA").set({
     name:"Zachary A",
     state:"Louisiana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ZacharyBV").set({
+db.collection("teams").doc("ZacharyB").set({
     name:"Zachary B",
     state:"Louisiana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ZacharyCV").set({
+db.collection("teams").doc("ZacharyC").set({
     name:"Zachary C",
     state:"Louisiana",
     division:"Varsity",
@@ -1731,1015 +1731,1015 @@ games:0
 
 //JV Teams
 
-db.collection("teams").doc("ApalacheeBJV").set({
+db.collection("teams").doc("ApalacheeB").set({
     name:"Apalachee B",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("AptakisicAJV").set({
+db.collection("teams").doc("AptakisicA").set({
     name:"Aptakisic A",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArchimedeanFJV").set({
+db.collection("teams").doc("ArchimedeanF").set({
     name:"Archimedean F",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("AuburnBJV").set({
+db.collection("teams").doc("AuburnB").set({
     name:"Auburn B",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BASISBrooklynAJV").set({
+db.collection("teams").doc("BASISBrooklynA").set({
     name:"BASIS Brooklyn A",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BeavercreekCJV").set({
+db.collection("teams").doc("BeavercreekC").set({
     name:"Beavercreek C",
     state:"Ohio",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BelenCJV").set({
+db.collection("teams").doc("BelenC").set({
     name:"Belen Jesuit C",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BerkeleyCJV").set({
+db.collection("teams").doc("BerkeleyC").set({
     name:"Berkeley Prep C",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BerkeleyDJV").set({
+db.collection("teams").doc("BerkeleyD").set({
     name:"Berkeley Prep D",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BillingsSeniorBJV").set({
+db.collection("teams").doc("BillingsSeniorB").set({
     name:"Billings Senior B",
     state:"Montana",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BozemanCJV").set({
+db.collection("teams").doc("BozemanC").set({
     name:"Bozeman C",
     state:"Montana",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BromfieldAJV").set({
+db.collection("teams").doc("BromfieldA").set({
     name:"Bromfield A",
     state:"Massachusetts",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BrookwoodBJV").set({
+db.collection("teams").doc("BrookwoodB").set({
     name:"Brookwood B",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CaliforniaAJV").set({
+db.collection("teams").doc("CaliforniaA").set({
     name:"California A",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentennialCJV").set({
+db.collection("teams").doc("CentennialC").set({
     name:"Centennial HS C",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentennialDJV").set({
+db.collection("teams").doc("CentennialD").set({
     name:"Centennial HS D",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentennialEJV").set({
+db.collection("teams").doc("CentennialE").set({
     name:"Centennial HS E",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChambleeAJV").set({
+db.collection("teams").doc("ChambleeA").set({
     name:"Chamblee Charter A",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CharlestonCJV").set({
+db.collection("teams").doc("CharlestonC").set({
     name:"Charleston Catholic C",
     state:"West Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CharlestonDJV").set({
+db.collection("teams").doc("CharlestonD").set({
     name:"Charleston Catholic D",
     state:"West Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChattahoocheeBJV").set({
+db.collection("teams").doc("ChattahoocheeB").set({
     name:"Chattahoochee B",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CherokeeBluffJV").set({
+db.collection("teams").doc("CherokeeBluff").set({
     name:"Cherokee Bluff",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChurchillNJAJV").set({
+db.collection("teams").doc("ChurchillNJA").set({
     name:"Churchill A",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChurchillNJBJV").set({
+db.collection("teams").doc("ChurchillNJB").set({
     name:"Churchill B",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChurchillMDAJV").set({
+db.collection("teams").doc("ChurchillMDA").set({
     name:"Churchill",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ClassicalBJV").set({
+db.collection("teams").doc("ClassicalB").set({
     name:"Classical Prep B",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ColdhugBJV").set({
+db.collection("teams").doc("ColdhugB").set({
     name:"Team Coldhug B",
     state:"Connecticut",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DonovanCatholicBJV").set({
+db.collection("teams").doc("DonovanCatholicB").set({
     name:"Donovan Catholic B",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DoralBJV").set({
+db.collection("teams").doc("DoralB").set({
     name:"Doral Academy B",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DuvallJV").set({
+db.collection("teams").doc("Duvall").set({
     name:"Duvall",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EastValleyCJV").set({
+db.collection("teams").doc("EastValleyC").set({
     name:"East Valley C",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EastValleyDJV").set({
+db.collection("teams").doc("EastValleyD").set({
     name:"East Valley C",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EriksenBJV").set({
+db.collection("teams").doc("EriksenB").set({
     name:"Eriksen B",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GeorgeWaltonBJV").set({
+db.collection("teams").doc("GeorgeWaltonB").set({
     name:"George Walton B",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FontbonneCJV").set({
+db.collection("teams").doc("FontbonneC").set({
     name:"Fordham Hall Academy C",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FordhamBJV").set({
+db.collection("teams").doc("FordhamB").set({
     name:"Fordham Prep B",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FultonAJV").set({
+db.collection("teams").doc("FultonA").set({
     name:"Fulton Science Academy A",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GeorgetownDayBJV").set({
+db.collection("teams").doc("GeorgetownDayB").set({
     name:"Georgetown Day B",
     state:"DC",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GeorgeWashingtonAJV").set({
+db.collection("teams").doc("GeorgeWashingtonNJA").set({
     name:"George Washington A",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GreensFarmsBJV").set({
+db.collection("teams").doc("GreensFarmsB").set({
     name:"Greens Farms B",
     state:"Connecticut",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HarkerAJV").set({
+db.collection("teams").doc("HarkerA").set({
     name:"Harker A",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HermannAJV").set({
+db.collection("teams").doc("HermannA").set({
     name:"Hermann Homeschool A",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HewlettCJV").set({
+db.collection("teams").doc("HewlettC").set({
     name:"Hewlett C",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("HewlettDJV").set({
+db.collection("teams").doc("HewlettD").set({
     name:"Hewlett D",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("HighTechBJV").set({
+db.collection("teams").doc("HighTechB").set({
     name:"High Tech B",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HolmdelBJV").set({
+db.collection("teams").doc("HolmdelB").set({
     name:"Team Holmdel B",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("HolmdelAJV").set({
+db.collection("teams").doc("HolmdelA").set({
     name:"Holmdel",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("HomesteadAJV").set({
+db.collection("teams").doc("HomesteadA").set({
     name:"Homestead A",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HomewoodFlossmoorBJV").set({
+db.collection("teams").doc("HomewoodFlossmoorB").set({
     name:"Homewood-Flossmoor B",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HoraceGreeleyBJV").set({
+db.collection("teams").doc("HoraceGreeleyB").set({
     name:"Horace Greeley B",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HunterBJV").set({
+db.collection("teams").doc("HunterB").set({
     name:"Hunter College High B",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HunterCJV").set({
+db.collection("teams").doc("HunterC").set({
     name:"Hunter College High C",
     state:"New York",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("IroquoisBV").set({
+db.collection("teams").doc("IroquoisB").set({
     name:"Iroquois B",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("IroquoisBJV").set({
+db.collection("teams").doc("IroquoisB").set({
     name:"Iroquois B",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("IroquoisCJV").set({
+db.collection("teams").doc("IroquoisC").set({
     name:"Iroquois C",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnAdamsAJV").set({
+db.collection("teams").doc("JohnAdamsA").set({
     name:"John Adams A",
     state:"West Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnPaulIIBJV").set({
+db.collection("teams").doc("JohnPaulIIB").set({
     name:"John Paul II B",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("KinnelonAJV").set({
+db.collection("teams").doc("KinnelonA").set({
     name:"Kinnelon A",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LargoCJV").set({
+db.collection("teams").doc("LargoC").set({
     name:"Largo C",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LeoniaBJV").set({
+db.collection("teams").doc("LeoniaB").set({
     name:"Leonia A",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LibbyAJV").set({
+db.collection("teams").doc("LibbyA").set({
     name:"Libby Middle School A",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LexingtonBJV").set({
+db.collection("teams").doc("LexingtonB").set({
     name:"Lexington B",
     state:"Massachusetts",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ManateeBJV").set({
+db.collection("teams").doc("ManateeB").set({
     name:"Manatee B",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnMSAJV").set({
+db.collection("teams").doc("MillburnMSA").set({
     name:"Millburn Middle School A",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnAMS").set({
+db.collection("teams").doc("MillburnA").set({
     name:"Millburn Middle School A",
     state:"New Jersey",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("McLeanAJV").set({
+db.collection("teams").doc("McLeanA").set({
     name:"McLean A",
     state:"Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MethactonCJV").set({
+db.collection("teams").doc("MethactonC").set({
     name:"Methacton C",
     state:"Pennsylvania",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnDJV").set({
+db.collection("teams").doc("MillburnD").set({
     name:"Millburn D",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("MillburnEJV").set({
+db.collection("teams").doc("MillburnE").set({
     name:"Millburn E",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("MissionSanJoseAJV").set({
+db.collection("teams").doc("MissionSanJoseA").set({
     name:"Mission San Jose",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MontgomeryBlairBJV").set({
+db.collection("teams").doc("MontgomeryBlairB").set({
     name:"Montgomery Blair B",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MontgomeryBlairCJV").set({
+db.collection("teams").doc("MontgomeryBlairC").set({
     name:"Montgomery Blair C",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MorgantownAJV").set({
+db.collection("teams").doc("MorgantownA").set({
     name:"Morgantown A",
     state:"West Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MountainLakesBJV").set({
+db.collection("teams").doc("MountainLakesB").set({
     name:"Mountain Lakes",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MountainViewCAAJV").set({
+db.collection("teams").doc("MountainViewCAA").set({
     name:"Mountain View California A",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MtSpokaneCJV").set({
+db.collection("teams").doc("MtSpokaneC").set({
     name:"Mt. Spokane C",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MtSpokaneDJV").set({
+db.collection("teams").doc("MtSpokaneD").set({
     name:"Mt. Spokane D",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewnanBJV").set({
+db.collection("teams").doc("NewnanB").set({
     name:"Newnan B",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewnanCJV").set({
+db.collection("teams").doc("NewnanC").set({
     name:"Newnan C",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NicholsDJV").set({
+db.collection("teams").doc("NicholsD").set({
     name:"Nichols D",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NicholsEJV").set({
+db.collection("teams").doc("NicholsE").set({
     name:"Nichols E",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("OdleAJV").set({
+db.collection("teams").doc("OdleA").set({
     name:"Odle Middle A",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoKJV").set({
+db.collection("teams").doc("PalmettoK").set({
     name:"Miami Palmetto K",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoLJV").set({
+db.collection("teams").doc("PalmettoL").set({
     name:"Miami Palmetto L",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoMJV").set({
+db.collection("teams").doc("PalmettoM").set({
     name:"Miami Palmetto M",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettonAJV").set({
+db.collection("teams").doc("PalmettonA").set({
     name:"Miami Palmetto N",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoOJV").set({
+db.collection("teams").doc("PalmettoO").set({
     name:"Miami Palmetto O",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoPJV").set({
+db.collection("teams").doc("PalmettoP").set({
     name:"Miami Palmetto P",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoQJV").set({
+db.collection("teams").doc("PalmettoQ").set({
     name:"Miami Palmetto Q",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoRJV").set({
+db.collection("teams").doc("PalmettoR").set({
     name:"Miami Palmetto R",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ParkCityAJV").set({
+db.collection("teams").doc("ParkCityA").set({
     name:"Park City A",
     state:"Montana",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ParkCityBJV").set({
+db.collection("teams").doc("ParkCityB").set({
     name:"Park City B",
     state:"Montana",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PhillipsAndoverAJV").set({
+db.collection("teams").doc("PhillipsAndoverA").set({
     name:"Phillips Andover A",
     state:"Massachusetts",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PhillipsExeterBJV").set({
+db.collection("teams").doc("PhillipsExeterB").set({
     name:"Phillips Exeter B",
     state:"New Hampshire",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PrincetonCJV").set({
+db.collection("teams").doc("PrincetonC").set({
     name:"Princeton C",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PrincetonDJV").set({
+db.collection("teams").doc("PrincetonD").set({
     name:"Princeton D",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RanneyBJV").set({
+db.collection("teams").doc("RanneyB").set({
     name:"Ranney B",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomCJV").set({
+db.collection("teams").doc("RansomC").set({
     name:"Ransom Everglades C",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomDJV").set({
+db.collection("teams").doc("RansomD").set({
     name:"Ransom Everglades D",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomEJV").set({
+db.collection("teams").doc("RansomE").set({
     name:"Ransom Everglades E",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomFJV").set({
+db.collection("teams").doc("RansomF").set({
     name:"Ransom Everglades F",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomGJV").set({
+db.collection("teams").doc("RansomG").set({
     name:"Ransom Everglades G",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RichardMontgomeryBJV").set({
+db.collection("teams").doc("RichardMontgomeryB").set({
     name:"Richard Montgomery B",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RidgewoodCJV").set({
+db.collection("teams").doc("RidgewoodC").set({
     name:"Ridgewood C",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("RidgewoodDJV").set({
+db.collection("teams").doc("RidgewoodD").set({
     name:"Ridgewood D",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("RidgewoodEJV").set({
+db.collection("teams").doc("RidgewoodE").set({
     name:"Ridgewood E",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("RidgewoodFJV").set({
+db.collection("teams").doc("RidgewoodF").set({
     name:"Ridgewood F",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("RiverviewFJV").set({
+db.collection("teams").doc("RiverviewF").set({
     name:"Riverview F",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiverviewGJV").set({
+db.collection("teams").doc("RiverviewG").set({
     name:"Riverview G",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiverviewHJV").set({
+db.collection("teams").doc("RiverviewH").set({
     name:"Riverview H",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiverviewIJV").set({
+db.collection("teams").doc("RiverviewI").set({
     name:"Riverview I",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiverviewJJV").set({
+db.collection("teams").doc("RiverviewJ").set({
     name:"Riverview J",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SaggitariusAJV").set({
+db.collection("teams").doc("SaggitariusA").set({
     name:"Saggitarius A",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SandburgBJV").set({
+db.collection("teams").doc("SandburgB").set({
     name:"Stanburg B",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SantaClaraAJV").set({
+db.collection("teams").doc("SantaClaraA").set({
     name:"Santa Clara A",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SaratogaDJV").set({
+db.collection("teams").doc("SaratogaD").set({
     name:"Saratoga D",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SaratogaEJV").set({
+db.collection("teams").doc("SaratogaE").set({
     name:"Saratoga E",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SkyviewDJV").set({
+db.collection("teams").doc("SkyviewD").set({
     name:"Skyview D",
     state:"Montana",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SouthBrunswickAJV").set({
+db.collection("teams").doc("SouthBrunswickA").set({
     name:"South Brunswick A",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StevensonDJV").set({
+db.collection("teams").doc("StevensonD").set({
     name:"Stevenson D",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StevensonEJV").set({
+db.collection("teams").doc("StevensonE").set({
     name:"Stevenson E",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StAnselmsBJV").set({
+db.collection("teams").doc("StAnselmsB").set({
     name:"St. Anselm's B",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StevensonFJV").set({
+db.collection("teams").doc("StevensonF").set({
     name:"Stevenson F",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StJosephBJV").set({
+db.collection("teams").doc("StJosephB").set({
     name:"St. Joseph B",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StPetersCJV").set({
+db.collection("teams").doc("StPetersC").set({
     name:"St. Peter's Prep C",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TenaflyCJV").set({
+db.collection("teams").doc("TenaflyC").set({
     name:"Tenafly C",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TeslaAJV").set({
+db.collection("teams").doc("TeslaA").set({
     name:"Tesla STEM A",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ThomasJeffersonCJV").set({
+db.collection("teams").doc("ThomasJeffersonC").set({
     name:"Thomas Jefferson C",
     state:"Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ThomasJeffersonDJV").set({
+db.collection("teams").doc("ThomasJeffersonD").set({
     name:"Thomas Jefferson D",
     state:"Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ThomasJeffersonEJV").set({
+db.collection("teams").doc("ThomasJeffersonE").set({
     name:"Thomas Jefferson E",
     state:"Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TippecanoeBJV").set({
+db.collection("teams").doc("TippecanoeB").set({
     name:"Tippecanoe B",
     state:"Ohio",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TowerHillCJV").set({
+db.collection("teams").doc("TowerHillC").set({
     name:"Tower Hill C",
     state:"Delaware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("VeteransBJV").set({
+db.collection("teams").doc("VeteransB").set({
     name:"Veterans B",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilliamsBayDJV").set({
+db.collection("teams").doc("WilliamsBayD").set({
     name:"Williams Bay D",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WinnebagoBJV").set({
+db.collection("teams").doc("WinnebagoB").set({
     name:"Winnebago B",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsHJV").set({
+db.collection("teams").doc("WilmingtonFriendsH").set({
     name:"Wilmington Friends H",
     state:"Deleware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsIJV").set({
+db.collection("teams").doc("WilmingtonFriendsI").set({
     name:"Wilmington Friends I",
     state:"Deleware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsJJV").set({
+db.collection("teams").doc("WilmingtonFriendsJ").set({
     name:"Wilmington Friends J",
     state:"Deleware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsKJV").set({
+db.collection("teams").doc("WilmingtonFriendsK").set({
     name:"Wilmington Friends K",
     state:"Deleware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsLJV").set({
+db.collection("teams").doc("WilmingtonFriendsL").set({
     name:"Wilmington Friends L",
     state:"Deleware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsMJV").set({
+db.collection("teams").doc("WilmingtonFriendsM").set({
     name:"Wilmington Friends M",
     state:"Deleware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WiltonAnjoAJV").set({
+db.collection("teams").doc("WiltonAnjoA").set({
     name:"Wilton Anjo",
     state:"Connecticut",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WiltonLukasAJV").set({
+db.collection("teams").doc("WiltonLukasA").set({
     name:"Wilton Lukas",
     state:"Connecticut",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("YonkersAJV").set({
+db.collection("teams").doc("YonkersA").set({
     name:"Yonkers A",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("YonkersBJV").set({
+db.collection("teams").doc("YonkersB").set({
     name:"Yonkers B",
     state:"New York",
     division:"Junior Varsity",
@@ -2763,70 +2763,70 @@ db.collection("teams").doc("BRIGHTMSA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BurleighManorAMS").set({
+db.collection("teams").doc("BurleighManorA").set({
     name:"Burleigh Manor A",
     state:"Maryland",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BurleighManorBMS").set({
+db.collection("teams").doc("BurleighManorB").set({
     name:"Burleigh Manor B",
     state:"Maryland",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BurleighManorCMS").set({
+db.collection("teams").doc("BurleighManorC").set({
     name:"Burleigh Manor C",
     state:"Maryland",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BurleighManorDMS").set({
+db.collection("teams").doc("BurleighManorD").set({
     name:"Burleigh Manor D",
     state:"Maryland",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentennialLaneAMS").set({
+db.collection("teams").doc("CentennialLaneA").set({
     name:"Centennial Lane ES A",
     state:"Maryland",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentennialLaneBMS").set({
+db.collection("teams").doc("CentennialLaneB").set({
     name:"Centennial Lane ES B",
     state:"Maryland",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentennialLaneCMS").set({
+db.collection("teams").doc("CentennialLaneC").set({
     name:"Centennial Lane ES C",
     state:"Maryland",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ClassicalCMS").set({
+db.collection("teams").doc("ClassicalC").set({
     name:"Classical Prep C",
     state:"Florida",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ClassicalDMS").set({
+db.collection("teams").doc("ClassicalD").set({
     name:"Classical Prep D",
     state:"Florida",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ClassicalEMS").set({
+db.collection("teams").doc("ClassicalE").set({
     name:"Classical Prep E",
     state:"Florida",
     division:"Middle School",
@@ -2861,91 +2861,91 @@ db.collection("teams").doc("JLSMSA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NysmithAMS").set({
+db.collection("teams").doc("NysmithA").set({
     name:"Nysmith A",
     state:"Virginia",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NysmithBMS").set({
+db.collection("teams").doc("NysmithB").set({
     name:"Nysmith B",
     state:"Virginia",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RipponAMS").set({
+db.collection("teams").doc("RipponA").set({
     name:"Rippon A",
     state:"Virginia",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RipponBMS").set({
+db.collection("teams").doc("RipponB").set({
     name:"Rippon B",
     state:"Virginia",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StollerHMS").set({
+db.collection("teams").doc("StollerH").set({
     name:"Stoller H",
     state:"Washington",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StollerKMS").set({
+db.collection("teams").doc("StollerK").set({
     name:"Stoller K",
     state:"Washington",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StollerTMS").set({
+db.collection("teams").doc("StollerT").set({
     name:"Stoller T",
     state:"Washington",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StollerWMS").set({
+db.collection("teams").doc("StollerW").set({
     name:"Stoller W",
     state:"Washington",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TenaflyAMS").set({
+db.collection("teams").doc("TenaflyA").set({
     name:"Tenafly Middle A",
     state:"New Jersey",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TenaflyBMS").set({
+db.collection("teams").doc("TenaflyB").set({
     name:"Tenafly Middle B",
     state:"New Jersey",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TenaflyCMS").set({
+db.collection("teams").doc("TenaflyC").set({
     name:"Tenafly Middle C",
     state:"New Jersey",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TrinityCMS").set({
+db.collection("teams").doc("TrinityC").set({
     name:"Trinity Prep C",
     state:"Florida",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TrinityDMS").set({
+db.collection("teams").doc("TrinityD").set({
     name:"Trinity Prep D",
     state:"Florida",
     division:"Middle School",
@@ -2953,1008 +2953,1008 @@ rank:1200,
 games:0
 }),
 //Later teams added
-db.collection("teams").doc("LindseyAV").set({
+db.collection("teams").doc("LindseyA").set({
     name:"Lindsey Homeschool A",
     state:"Missouri",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("AltonAV").set({
+db.collection("teams").doc("AltonA").set({
     name:"Alton A",
     state:"Illinois",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("GraniteCityAV").set({
+db.collection("teams").doc("GraniteCityA").set({
     name:"Granite City A",
     state:"Illinois",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("SouthwesternAV").set({
+db.collection("teams").doc("SouthwesternA").set({
     name:"Southwestern A",
     state:"Illinois",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("SouthwesternBJV").set({
+db.collection("teams").doc("SouthwesternB").set({
     name:"Southwestern B",
     state:"Illinois",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("SouthwesternCJV").set({
+db.collection("teams").doc("SouthwesternC").set({
     name:"Southwestern B",
     state:"Illinois",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("KeithCountyDayAJV").set({
+db.collection("teams").doc("KeithCountyDayA").set({
     name:"Keith County Day A",
     state:"Illinois",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("RochesterAJV").set({
+db.collection("teams").doc("RochesterA").set({
     name:"Rochester A",
     state:"Illinois",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("NorthmontAV").set({
+db.collection("teams").doc("NorthmontA").set({
     name:"Northmont A",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("KiskiAV").set({
+db.collection("teams").doc("KiskiA").set({
     name:"Kiski A",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("NCatholicAV").set({
+db.collection("teams").doc("NCatholicA").set({
     name:"N. Catholic A",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("NAlleghenyHSAV").set({
+db.collection("teams").doc("NAlleghenyHSA").set({
     name:"N. Allegheny HS A",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("AllderdiceAV").set({
+db.collection("teams").doc("AllderdiceA").set({
     name:"Allderdice A",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("AllderdiceBV").set({
+db.collection("teams").doc("AllderdiceB").set({
     name:"Allderdice B",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("SaegertownAV").set({
+db.collection("teams").doc("SaegertownA").set({
     name:"Saegertown A",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("SouthSideAV").set({
+db.collection("teams").doc("SouthSideA").set({
     name:"South Side A",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("SouthSideBJV").set({
+db.collection("teams").doc("SouthSideB").set({
     name:"South Side B",
     state:"Pennsylvania",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("AlagarAJV").set({
+db.collection("teams").doc("AlagarA").set({
     name:"Algar Homeschool A",
     state:"Pennsylvania",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("NAlleghenyIntAJV").set({
+db.collection("teams").doc("NAlleghenyIntA").set({
     name:"N. Allegheny Intermediate A",
     state:"Pennsylvania",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("NAlleghenyIntBJV").set({
+db.collection("teams").doc("NAlleghenyIntB").set({
     name:"N. Allegheny Intermediate B",
     state:"Pennsylvania",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("MadisonAV").set({
+db.collection("teams").doc("MadisonA").set({
     name:"Madison Central A",
     state:"Mississippi",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("MadisonBV").set({
+db.collection("teams").doc("MadisonB").set({
     name:"Madison Central B",
     state:"Mississippi",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("MadisonCJV").set({
+db.collection("teams").doc("MadisonC").set({
     name:"Madison Central C",
     state:"Mississippi",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PetalAV").set({
+db.collection("teams").doc("PetalA").set({
     name:"Petal A",
     state:"Mississippi",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PetalBV").set({
+db.collection("teams").doc("PetalB").set({
     name:"Petal B",
     state:"Mississippi",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("HancockAV").set({
+db.collection("teams").doc("HancockA").set({
     name:"Hancock A",
     state:"Mississippi",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("HancockBV").set({
+db.collection("teams").doc("HancockB").set({
     name:"Hancock B",
     state:"Mississippi",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("HancockCV").set({
+db.collection("teams").doc("HancockC").set({
     name:"Hancock C",
     state:"Mississippi",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("ClintonAV").set({
+db.collection("teams").doc("ClintonA").set({
     name:"Clinton A",
     state:"Mississippi",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("ClintonBJV").set({
+db.collection("teams").doc("ClintonB").set({
     name:"Clinton B",
     state:"Mississippi",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("WestJonesAV").set({
+db.collection("teams").doc("WestJonesA").set({
     name:"West Jones A",
     state:"Mississippi",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("RichtonAV").set({
+db.collection("teams").doc("RichtonA").set({
     name:"Richton A",
     state:"Mississippi",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("RichtonBJV").set({
+db.collection("teams").doc("RichtonB").set({
     name:"Richton B",
     state:"Mississippi",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("RosaScottAJV").set({
+db.collection("teams").doc("RosaScottA").set({
     name:"Rosa Scott A",
     state:"Mississippi",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("CHECHAJV").set({
+db.collection("teams").doc("CHECHA").set({
     name:"CHEC A",
     state:"Mississippi",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("ClarkAV").set({
+db.collection("teams").doc("ClarkA").set({
     name:"Clark A",
     state:"Nevada",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ClarkBJV").set({
+db.collection("teams").doc("ClarkB").set({
     name:"Clark B",
     state:"Nevada",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("LibertyAV").set({
+db.collection("teams").doc("LibertyA").set({
     name:"Liberty A",
     state:"Nevada",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("LibertyBJV").set({
+db.collection("teams").doc("LibertyB").set({
     name:"Liberty B",
     state:"Nevada",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("PleasantValleyAV").set({
+db.collection("teams").doc("PleasantValleyA").set({
     name:"Pleasant Valley A",
     state:"Iowa",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("PleasantValleyBJV").set({
+db.collection("teams").doc("PleasantValleyB").set({
     name:"Pleasant Valley B",
     state:"Iowa",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("CentralAV").set({
+db.collection("teams").doc("CentralA").set({
     name:"Central A",
     state:"Iowa",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("CentralBJV").set({
+db.collection("teams").doc("CentralB").set({
     name:"Central B",
     state:"Iowa",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("SherrardAV").set({
+db.collection("teams").doc("SherrardA").set({
     name:"Sherrard A",
     state:"Iowa",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("BethlehemAV").set({
+db.collection("teams").doc("BethlehemA").set({
     name:"Bethlehem A",
     state:"New York",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("BethlehemBJV").set({
+db.collection("teams").doc("BethlehemB").set({
     name:"Bethlehem B",
     state:"New York",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("BethlehemMSAJV").set({
-    name:"Bethlehem MS",
+db.collection("teams").doc("BethlehemMSA").set({
+    name:"Bethlehem ",
     state:"New York",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("BerlinAV").set({
+db.collection("teams").doc("BerlinA").set({
     name:"Berlin A",
     state:"New York",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("BerlinBJV").set({
+db.collection("teams").doc("BerlinB").set({
     name:"Berlin B",
     state:"New York",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("LoyolaAV").set({
+db.collection("teams").doc("LoyolaA").set({
     name:"Loyola A",
     state:"New York",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("LaurensAV").set({
+db.collection("teams").doc("LaurensA").set({
     name:"Laurens A",
     state:"New York",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ParklandAV").set({
+db.collection("teams").doc("ParklandA").set({
     name:"Parkland A",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("WyomingAV").set({
+db.collection("teams").doc("WyomingA").set({
     name:"Wyoming Area A",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("WyomingBV").set({
+db.collection("teams").doc("WyomingB").set({
     name:"Wyoming Area B",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("WyomingCV").set({
-    name:"Wyoming Area V",
+db.collection("teams").doc("WyomingC").set({
+    name:"Wyoming Area ",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("NanticokeAV").set({
+db.collection("teams").doc("NanticokeA").set({
     name:"Greater Nanticoke A",
     state:"Pennsylvania",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("NewtonNorthAV").set({
+db.collection("teams").doc("NewtonNorthA").set({
     name:"Newton North A",
     state:"Massachusetts",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("NewtonNorthBV").set({
+db.collection("teams").doc("NewtonNorthB").set({
     name:"Newton North B",
     state:"Massachusetts",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("NewtonNorthCV").set({
+db.collection("teams").doc("NewtonNorthC").set({
     name:"Newton North C",
     state:"Massachusetts",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("NewtonSouthAV").set({
+db.collection("teams").doc("NewtonSouthA").set({
     name:"Newton South A",
     state:"Massachusetts",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("NewtonSouthBV").set({
+db.collection("teams").doc("NewtonSouthB").set({
     name:"Newton South B",
     state:"Massachusetts",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("NewtonSouthCJV").set({
+db.collection("teams").doc("NewtonSouthC").set({
     name:"Newton South C",
     state:"Massachusetts",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("HanoverAV").set({
+db.collection("teams").doc("HanoverA").set({
     name:"Hanover A",
     state:"New Hampshire",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("PlymouthAV").set({
+db.collection("teams").doc("PlymouthA").set({
     name:"Plymouth A",
     state:"New Hampshire",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("PlymouthBJV").set({
+db.collection("teams").doc("PlymouthB").set({
     name:"Plymouth B",
     state:"New Hampshire",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("SouthBurlingtonAV").set({
+db.collection("teams").doc("SouthBurlingtonA").set({
     name:"South Burlington A",
     state:"Vermont",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("RussellvilleAV").set({
+db.collection("teams").doc("RussellvilleA").set({
     name:"Russellville A",
     state:"Arkansas",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("RussellvilleBJV").set({
+db.collection("teams").doc("RussellvilleB").set({
     name:"Russellville B",
     state:"Arkansas",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("MountainViewARAV").set({
+db.collection("teams").doc("MountainViewARA").set({
     name:"Mountain View Arkansas",
     state:"Arkansas",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("FayettevilleAV").set({
+db.collection("teams").doc("FayettevilleA").set({
     name:"Fayetteville A",
     state:"Arkansas",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("FortSmithSouthsideAV").set({
+db.collection("teams").doc("FortSmithSouthsideA").set({
     name:"Fort Smith Southside A",
     state:"Arkansas",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("FortSmithSouthsideBV").set({
+db.collection("teams").doc("FortSmithSouthsideB").set({
     name:"Fort Smith Southside B",
     state:"Arkansas",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("FortSmithSouthsideCJV").set({
+db.collection("teams").doc("FortSmithSouthsideC").set({
     name:"Fort Smith Southside C",
     state:"Arkansas",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("DeQueenAV").set({
+db.collection("teams").doc("DeQueenA").set({
     name:"De Queen A",
     state:"Arkansas",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ConwayChristianAV").set({
+db.collection("teams").doc("ConwayChristianA").set({
     name:"Conway Christian A",
     state:"Arkansas",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ConwayChristianBV").set({
+db.collection("teams").doc("ConwayChristianB").set({
     name:"Conway Christian B",
     state:"Arkansas",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ChesterCountyAV").set({
+db.collection("teams").doc("ChesterCountyA").set({
     name:"Chester County A",
     state:"Arkansas",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ChesterCountyBV").set({
+db.collection("teams").doc("ChesterCountyB").set({
     name:"Chester County B",
     state:"Arkansas",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("EpiscopalAV").set({
+db.collection("teams").doc("EpiscopalA").set({
     name:"Episcopal A",
     state:"Arkansas",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("VanBurenAV").set({
+db.collection("teams").doc("VanBurenA").set({
     name:"Van Buren A",
     state:"Arkansas",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ArcadiaAV").set({
+db.collection("teams").doc("ArcadiaA").set({
     name:"Arcadia A",
     state:"California",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ArcadiaBV").set({
+db.collection("teams").doc("ArcadiaB").set({
     name:"Arcadia B",
     state:"California",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ArcadiaCV").set({
+db.collection("teams").doc("ArcadiaC").set({
     name:"Arcadia C",
     state:"California",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ArcadiaDJV").set({
+db.collection("teams").doc("ArcadiaD").set({
     name:"Arcadia D",
     state:"California",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("SantaMonicaAV").set({
+db.collection("teams").doc("SantaMonicaA").set({
     name:"Santa Monica A",
     state:"California",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("CanyonCrestAV").set({
+db.collection("teams").doc("CanyonCrestA").set({
     name:"Canyon Crest A",
     state:"California",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("CanyonCrestBV").set({
+db.collection("teams").doc("CanyonCrestB").set({
     name:"Canyon Crest B",
     state:"California",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("TroyAV").set({
+db.collection("teams").doc("TroyA").set({
     name:"Troy A",
     state:"California",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ScrippsRanchAV").set({
+db.collection("teams").doc("ScrippsRanchA").set({
     name:"Scripps Ranch A",
     state:"California",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("WhitneyAV").set({
+db.collection("teams").doc("WhitneyA").set({
     name:"Whitney A",
     state:"California",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("StMargaretsAJV").set({
+db.collection("teams").doc("StMargaretsA").set({
     name:"St. Margaret's A",
     state:"California",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("PegasusAJV").set({
+db.collection("teams").doc("PegasusA").set({
     name:"Pegasus A",
     state:"California",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("SantiagoAJV").set({
+db.collection("teams").doc("SantiagoA").set({
     name:"Santiago A",
     state:"California",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("LaCanadaAJV").set({
+db.collection("teams").doc("LaCanadaA").set({
     name:"La Canada Prep A",
     state:"California",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("VistaVerdeAJV").set({
+db.collection("teams").doc("VistaVerdeA").set({
     name:"Vista Verde A",
     state:"California",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("FayettevilleManliusAV").set({
+db.collection("teams").doc("FayettevilleManliusA").set({
     name:"Fayetteville-Manlius",
     state:"New York",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("IthacaAV").set({
+db.collection("teams").doc("IthacaA").set({
     name:"Ithaca A",
     state:"New York",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("IthacaBJV").set({
+db.collection("teams").doc("IthacaB").set({
     name:"Ithaca B",
     state:"New York",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ParkSchoolAJV").set({
+db.collection("teams").doc("ParkSchoolA").set({
     name:"Park School",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SacredHeartAJV").set({
+db.collection("teams").doc("SacredHeartA").set({
     name:"Sacred Heart A",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SacredHeartBJV").set({
+db.collection("teams").doc("SacredHeartB").set({
     name:"Sacred Heart B",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WhitmanAV").set({
+db.collection("teams").doc("WhitmanA").set({
     name:"Walt Whitman",
     state:"Maryland",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PotomacAV").set({
+db.collection("teams").doc("PotomacA").set({
     name:"Potomac",
     state:"Maryland",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WoodsonAV").set({
+db.collection("teams").doc("WoodsonA").set({
     name:"W. T. Woodson",
     state:"Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("OaktonAV").set({
+db.collection("teams").doc("OaktonA").set({
     name:"Oakton A",
     state:"Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("OaktonBV").set({
+db.collection("teams").doc("OaktonB").set({
     name:"Oakton B",
     state:"Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ThunderRidgeAV").set({
+db.collection("teams").doc("ThunderRidgeA").set({
     name:"Thunder Ridge A",
     state:"Idaho",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ThunderRidgeBV").set({
+db.collection("teams").doc("ThunderRidgeB").set({
     name:"Thunder Ridge B",
     state:"Idaho",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("ThunderRidgeCV").set({
+db.collection("teams").doc("ThunderRidgeC").set({
     name:"Thunder Ridge C",
     state:"Idaho",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("IdahoFallsAV").set({
+db.collection("teams").doc("IdahoFallsA").set({
     name:"Idaho Falls",
     state:"Idaho",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("HillcrestAV").set({
+db.collection("teams").doc("HillcrestA").set({
     name:"Hillcrest A",
     state:"Idaho",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("HillcrestBV").set({
+db.collection("teams").doc("HillcrestB").set({
     name:"Hillcrest B",
     state:"Idaho",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("SignalMountainAV").set({
+db.collection("teams").doc("SignalMountainA").set({
     name:"Signal Mountain A",
     state:"Tennessee",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("SignalMountainBMS").set({
+db.collection("teams").doc("SignalMountainB").set({
     name:"Signal Mountain B",
     state:"Tennessee",
     division:"Middle School",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("SignalMountainCMS").set({
+db.collection("teams").doc("SignalMountainC").set({
     name:"Signal Mountain C",
     state:"Tennessee",
     division:"Middle School",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("SignalMountainDMS").set({
+db.collection("teams").doc("SignalMountainD").set({
     name:"Signal Mountain D",
     state:"Tennessee",
     division:"Middle School",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("RedBankAV").set({
+db.collection("teams").doc("RedBankA").set({
     name:"Red Bank A",
     state:"Tennessee",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("RedBankBV").set({
+db.collection("teams").doc("RedBankB").set({
     name:"Red Bank B",
     state:"Tennessee",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("SetonHallAV").set({
+db.collection("teams").doc("SetonHallA").set({
     name:"Seton Hall Prep A",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("SetonHallBJV").set({
+db.collection("teams").doc("SetonHallB").set({
     name:"Seton Hall Prep B",
     state:"",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("MCAAV").set({
+db.collection("teams").doc("MCAA").set({
     name:"Middlesex County Academy A",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("MCABV").set({
+db.collection("teams").doc("MCAB").set({
     name:"Middlesex County Academy B",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("RamseyAV").set({
+db.collection("teams").doc("RamseyA").set({
     name:"Ramsey",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("DemarestAV").set({
+db.collection("teams").doc("DemarestA").set({
     name:"North Valley Demarest A",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("DemarestBV").set({
+db.collection("teams").doc("DemarestB").set({
     name:"North Valley Demarest B",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("DemarestAV").set({
+db.collection("teams").doc("DemarestA").set({
     name:"North Valley Demarest A",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("NorthernHighlandsAV").set({
+db.collection("teams").doc("NorthernHighlandsA").set({
     name:"Northern Highlands",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("WestMilfordAV").set({
+db.collection("teams").doc("WestMilfordA").set({
     name:"West Milford A",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("WestMilfordBV").set({
+db.collection("teams").doc("WestMilfordB").set({
     name:"West Milford B",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("PascackHillsAV").set({
+db.collection("teams").doc("PascackHillsA").set({
     name:"Pascack Hills",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("BergenAJV").set({
+db.collection("teams").doc("BergenA").set({
     name:"Bergen Academies",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("PEARLSAMS").set({
+db.collection("teams").doc("PEARLSA").set({
     name:"PEARLS Hawthorne",
     state:"New Jersey",
     division:"Middle School",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("JohnAdamsAMS").set({
+db.collection("teams").doc("JohnAdamsA").set({
     name:"John Adams",
     state:"New Jersey",
     division:"Middle School",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("BenFranklinAMS").set({
+db.collection("teams").doc("BenFranklinA").set({
     name:"Ben Franklin",
     state:"New Jersey",
     division:"Middle School",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("PrimorisAMS").set({
+db.collection("teams").doc("PrimorisA").set({
     name:"Primoris Academy",
     state:"New Jersey",
     division:"Middle School",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("CavalliniAMS").set({
+db.collection("teams").doc("CavalliniA").set({
     name:"Cavallini A",
     state:"New Jersey",
     division:"Middle School",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("CavalliniBMS").set({
+db.collection("teams").doc("CavalliniB").set({
     name:"Cavallini B",
     state:"New Jersey",
     division:"Middle School",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("NyackAMS").set({
+db.collection("teams").doc("NyackA").set({
     name:"Nyack Middle",
     state:"New Jersey",
     division:"Middle School",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("HomeschoolAMS").set({
+db.collection("teams").doc("HomeschoolA").set({
     name:"Team Homeschool",
     state:"New Jersey",
     division:"Middle School",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("TJClassicAV").set({
+db.collection("teams").doc("TJClassicA").set({
     name:"Thomas Jefferson Classic",
     state:"Georgia",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("DeerfieldWindsorAV").set({
+db.collection("teams").doc("DeerfieldWindsorA").set({
     name:"Deerfield-Windsor",
     state:"Georgia",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("JacksonAV").set({
+db.collection("teams").doc("JacksonA").set({
     name:"Jackson",
     state:"Georgia",
     division:"Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("WandoAJV").set({
+db.collection("teams").doc("WandoA").set({
     name:"Wando",
     state:"Georgia",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("NortheastAJV").set({
+db.collection("teams").doc("NortheastA").set({
     name:"Northeast",
     state:"Georgia",
     division:"Junior Varsity",
@@ -3987,12 +3987,13 @@ let teamAvgMS = [];
 let allV = [];
 let allJV = [];
 let allMS = [];
-let teamAvgCV = [];
+let teamAvgC = [];
 let teamAvgCJV = [];
 let teamAvgCMS = [];
-let teamAvgBV = [];
+let teamAvgB = [];
 let teamAvgBJV = [];
-let teamAvgAV = [];
+let teamAvgBMS = [];
+let teamAvgA = [];
 let teamAvgAJV = [];
 let teamAvgAMS = [];
 let teamAvgPrV = [];
@@ -4137,14 +4138,14 @@ async function cExpScore(A,B){
                     expScoreB = 1-expScoreA;
                 } else {
                     // doc.data() will be undefined in this case
-                    console.log("No such document!");
+                    console.log("No such document!"+B);
                 }
             }).catch(function(error) {
                 console.log("Error getting document:", error);
             });
         } else {
             // doc.data() will be undefined in this case
-            console.log("No such document!");
+            console.log("No such document!"+A);
         }
     }).catch(function(error) {
         console.log("Error getting document:", error);
@@ -4184,7 +4185,7 @@ async function newRank(A, B, AScore, BScore) {
             if (evalV == true) {
                 //push game results to array
                 teamAvgV.push(AScore,BScore)
-                teamAvgCV.push(AScore,BScore);
+                teamAvgC.push(AScore,BScore);
             }
             else if (evalJV == true) {
                 //push game results to array
@@ -4205,7 +4206,7 @@ async function newRank(A, B, AScore, BScore) {
             if (evalV == true) {
                 //push game results to array
                 teamAvgV.push(AScore,BScore)
-                teamAvgBV.push(AScore,BScore);
+                teamAvgB.push(AScore,BScore);
             }
             else if (evalJV == true) {
                 //push game results to array
@@ -4231,13 +4232,13 @@ async function newRank(A, B, AScore, BScore) {
                     //only do once per tnmt
                     a = a+1;
                     //calculate avg points scored in a varsity game at a c set
-                    let sumCV = 0;
+                    let sumC = 0;
                     let m;
-                    let teamAvgCVLen = teamAvgCV.length;
-                    for(m = 0; m < teamAvgCVLen; m++){
-                        sumCV += parseInt(teamAvgCV[m],10);
+                    let teamAvgCLen = teamAvgC.length;
+                    for(m = 0; m < teamAvgCLen; m++){
+                        sumC += parseInt(teamAvgC[m],10);
                     };
-                    let avgCV = sumCV/teamAvgCVLen;
+                    let avgC = sumC/teamAvgCLen;
                     //calculate avg points scored in a varsity game at this tnmt
                     let sum = 0;
                     let n;
@@ -4247,7 +4248,7 @@ async function newRank(A, B, AScore, BScore) {
                     };
                     let avgV = sum/allVLen;
                     //calculate q value (varsity ppg at this tnmt:varsity ppg at all c-sets)
-                    q = avgV/avgCV;
+                    q = avgV/avgC;
                     //push q to array
                     qV.push(q);
                 }
@@ -4326,13 +4327,13 @@ async function newRank(A, B, AScore, BScore) {
                 if (a == 0) {
                     a = a+1;
                     //calculate q value
-                    let sumBV = 0;
+                    let sumB = 0;
                     let m;
-                    let teamAvgBVLen = teamAvgBV.length;
-                    for(m = 0; m < teamAvgBVLen; m++){
-                        sumBV += parseInt(teamAvgBV[m],10);
+                    let teamAvgBLen = teamAvgB.length;
+                    for(m = 0; m < teamAvgBLen; m++){
+                        sumB += parseInt(teamAvgB[m],10);
                     };
-                    let avgBV = sumBV/teamAvgBVLen;
+                    let avgB = sumB/teamAvgBLen;
                     let sum = 0;
                     let n;
                     let allVLen = allV[a2].length;
@@ -4340,7 +4341,7 @@ async function newRank(A, B, AScore, BScore) {
                         sum += parseInt(allV[a2][n],10);
                     };
                     let avgV = sum/allVLen;
-                    q = avgV/avgBV;
+                    q = avgV/avgB;
                     qV.push(q);
                 }
                 else {
@@ -4376,24 +4377,24 @@ async function newRank(A, B, AScore, BScore) {
             }
             else if (evalMS == true) {
                 if (c == 0) {
-                //calculate q value
-                c=c+1;
-                let sumBMS = 0;
-                let r;
-                let teamAvgBMSLen = teamAvgBMS.length;
-                for(r = 0; r < teamAvgBMSLen; r++){
-                    sumBMS += parseInt(teamAvgBMS[r],10);
-                };
-                let avgBMS = sumBMS/teamAvgBMS.length;
-                let sum = 0;
-                let s;
-                let allMSLen = allMS[c2].length;
-                for(s = 0; s < allMSLen; s++ ){
-                    sum += parseInt(allMS[c2][s],10);
-                };
-                let avgMS = sum/allMSLen;
-                q = avgMS/avgBMS;
-                qMS.push(q);
+                    //calculate q value
+                    c=c+1;
+                    let sumBMS = 0;
+                    let r;
+                    let teamAvgBMSLen = teamAvgBMS.length;
+                    for(r = 0; r < teamAvgBMSLen; r++){
+                        sumBMS += parseInt(teamAvgBMS[r],10);
+                    };
+                    let avgBMS = sumBMS/teamAvgBMS.length;
+                    let sum = 0;
+                    let s;
+                    let allMSLen = allMS[c2].length;
+                    for(s = 0; s < allMSLen; s++ ){
+                        sum += parseInt(allMS[c2][s],10);
+                    };
+                    let avgMS = sum/allMSLen;
+                    q = avgMS/avgBMS;
+                    qMS.push(q);
                 }
                 else {
                     q = qMS[c2];
@@ -4502,84 +4503,86 @@ function printRanks(div){
 }
 
 async function cSetData(){
+    K = 100;
+    y = false;
     cSet = true;
     
     //Northern California Fall C-Set
     //Prelims
     //Round 1
-    await newRank("MissionSanJoseAJV","SaratogaEJV",450,70);
-    await newRank("HomesteadAJV","MountainViewCAAJV",390,130);
-    await newRank("SaggitariusAJV","SantaClaraAJV",390,180);
-    await newRank("SaratogaDJV","CaliforniaAJV",340,210);
-    await newRank("HarkerAJV","EriksenBJV",370,150);
+    await newRank("MissionSanJoseA","SaratogaE",450,70);
+    await newRank("HomesteadA","MountainViewCAA",390,130);
+    await newRank("SaggitariusA","SantaClaraA",390,180);
+    await newRank("SaratogaD","CaliforniaA",340,210);
+    await newRank("HarkerA","EriksenB",370,150);
     await newRank("AlmadenMSA","JLSMSA",360,200);
-    await newRank("LynbrookAV","LesQuizAV",450,90);
-    await newRank("PiedmontHillsAV","SaratogaCV",280,230);
-    await newRank("GundersonAV","EriksenAV",300,280);
-    await newRank("SaratogaAV","FoothillAV",440,190);
-    await newRank("PioneersAV","SaratogaBV",350,290);
+    await newRank("LynbrookA","LesQuizA",450,90);
+    await newRank("PiedmontHillsA","SaratogaC",280,230);
+    await newRank("GundersonA","EriksenA",300,280);
+    await newRank("SaratogaA","FoothillA",440,190);
+    await newRank("PioneersA","SaratogaB",350,290);
     //Round 2
-    await newRank("LynbrookAV","SaratogaCV",490,80);
-    await newRank("PioneersAV","GundersonAV",430,210);
-    await newRank("FoothillAV","PiedmontHillsAV",310,300);
-    await newRank("HomesteadAJV","SaratogaEJV",300,150);
-    await newRank("SantaClaraAJV","HarkerAJV",320,250);
-    await newRank("MissionSanJoseAJV","SaratogaDJV",330,270);
-    await newRank("SaggitariusAJV","MountainViewCAAJV",370,170);
-    await newRank("CaliforniaAJV","EriksenBJV",400,130);
-    await newRank("SaratogaBV","EriksenAV",340,310);
-    await newRank("SaratogaAV","LesQuizAV",540,90);
+    await newRank("LynbrookA","SaratogaC",490,80);
+    await newRank("PioneersA","GundersonA",430,210);
+    await newRank("FoothillA","PiedmontHillsA",310,300);
+    await newRank("HomesteadA","SaratogaE",300,150);
+    await newRank("SantaClaraA","HarkerA",320,250);
+    await newRank("MissionSanJoseA","SaratogaD",330,270);
+    await newRank("SaggitariusA","MountainViewCAA",370,170);
+    await newRank("CaliforniaA","EriksenB",400,130);
+    await newRank("SaratogaB","EriksenA",340,310);
+    await newRank("SaratogaA","LesQuizA",540,90);
     await newRank("AlmadenMSA","HarvestParkMSA",320,270);
     //Round 3
-    await newRank("SaratogaDJV","HomesteadAJV",330,210);
-    await newRank("SaggitariusAJV","SaratogaEJV",400,160);
-    await newRank("SantaClaraAJV","CaliforniaAJV",270,240);
-    await newRank("SaratogaCV","LesQuizAV",280,230);
-    await newRank("SaratogaAV","SaratogaBV",360,220);
-    await newRank("EriksenAV","PiedmontHillsAV",370,180);
-    await newRank("PioneersAV","LynbrookAV",370,210);
-    await newRank("GundersonAV","FoothillAV",260,240);
-    await newRank("MissionSanJoseAJV","EriksenBJV",400,100);
-    await newRank("HarkerAJV","MountainViewCAAJV",360,120);
+    await newRank("SaratogaD","HomesteadA",330,210);
+    await newRank("SaggitariusA","SaratogaE",400,160);
+    await newRank("SantaClaraA","CaliforniaA",270,240);
+    await newRank("SaratogaC","LesQuizA",280,230);
+    await newRank("SaratogaA","SaratogaB",360,220);
+    await newRank("EriksenA","PiedmontHillsA",370,180);
+    await newRank("PioneersA","LynbrookA",370,210);
+    await newRank("GundersonA","FoothillA",260,240);
+    await newRank("MissionSanJoseA","EriksenB",400,100);
+    await newRank("HarkerA","MountainViewCAA",360,120);
     await newRank("JLSMSA","HarvestParkMSA",260,220);
     //Round 4
-    await newRank("SaratogaAV","GundersonAV",350,170);
-    await newRank("MissionSanJoseAJV","SantaClaraAJV",340,240);
-    await newRank("PioneersAV","LesQuizAV",560,50)
-    await newRank("LynbrookAV","FoothillAV",390,200);
-    await newRank("HomesteadAJV","EriksenBJV",400,80);
-    await newRank("SaratogaBV","PiedmontHillsAV",440,140);
-    await newRank("CaliforniaAJV","MountainViewCAAJV",420,80);
-    await newRank("EriksenAV","SaratogaCV",440,150);
+    await newRank("SaratogaA","GundersonA",350,170);
+    await newRank("MissionSanJoseA","SantaClaraA",340,240);
+    await newRank("PioneersA","LesQuizA",560,50)
+    await newRank("LynbrookA","FoothillA",390,200);
+    await newRank("HomesteadA","EriksenB",400,80);
+    await newRank("SaratogaB","PiedmontHillsA",440,140);
+    await newRank("CaliforniaA","MountainViewCAA",420,80);
+    await newRank("EriksenA","SaratogaC",440,150);
     await newRank("AlmadenMSA","JLSMSA",410,160);
-    await newRank("HarkerAJV","SaratogaEJV",320,170);
-    await newRank("SaggitariusAJV","SaratogaDJV",330,180);
+    await newRank("HarkerA","SaratogaE",320,170);
+    await newRank("SaggitariusA","SaratogaD",330,180);
     //Round 5
-    await newRank("FoothillAV","LesQuizAV",380,130);
-    await newRank("SaratogaBV","GundersonAV",290,280);
-    await newRank("SaratogaAV","EriksenAV",320,290);
-    await newRank("CaliforniaAJV","SaratogaEJV",320,140);
-    await newRank("PioneersAV","SaratogaCV",490,110);
-    await newRank("LynbrookAV","PiedmontHillsAV",390,180);
-    await newRank("SaggitariusAJV","EriksenBJV",440,90);
-    await newRank("MissionSanJoseAJV","MountainViewCAAJV",270,150);
+    await newRank("FoothillA","LesQuizA",380,130);
+    await newRank("SaratogaB","GundersonA",290,280);
+    await newRank("SaratogaA","EriksenA",320,290);
+    await newRank("CaliforniaA","SaratogaE",320,140);
+    await newRank("PioneersA","SaratogaC",490,110);
+    await newRank("LynbrookA","PiedmontHillsA",390,180);
+    await newRank("SaggitariusA","EriksenB",440,90);
+    await newRank("MissionSanJoseA","MountainViewCAA",270,150);
     await newRank("AlmadenMSA","HarvestParkMSA",390,230);
-    await newRank("SaratogaDJV","HarkerAJV",300,180);
-    await newRank("SantaClaraAJV","HomesteadAJV",300,170);
+    await newRank("SaratogaD","HarkerA",300,180);
+    await newRank("SantaClaraA","HomesteadA",300,170);
     //Round 6
     await newRank("HarvestParkMSA","JLSMSA",270,150)
     //Varsity Playoffs
     //Semifinals
-    await newRank("PioneersAV","SaratogaBV",370,210);
-    await newRank("SaratogaAV","LynbrookAV",390,170);
+    await newRank("PioneersA","SaratogaB",370,210);
+    await newRank("SaratogaA","LynbrookA",390,170);
     //Finals
-    await newRank("PioneersAV","SaratogaAV",360,230);
+    await newRank("PioneersA","SaratogaA",360,230);
     //JV Playoffs
     //Semifinals
-    await newRank("SaggitariusAJV","HarkerAJV",310,170);
-    await newRank("MissionSanJoseAJV","CaliforniaAJV",250,220);
+    await newRank("SaggitariusA","HarkerA",310,170);
+    await newRank("MissionSanJoseA","CaliforniaA",250,220);
     //Finals
-    await newRank("MissionSanJoseAJV","SaggitariusAJV",280,210);
+    await newRank("MissionSanJoseA","SaggitariusA",280,210);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     allMS.push(teamAvgMS);
@@ -4592,60 +4595,60 @@ async function cSetData(){
     //Eastern Washington C-Set
     //Prelims
     //Round 1
-    await newRank("GonzagaAV","MtSpokaneAV",300,180);
-    await newRank("StGeorgesAV","FrenchtownAV",250,140);
-    await newRank("EastValleyAV","FrenchtownBV",370,70);
-    await newRank("MtSpokaneBV","EastValleyBV",330,100);
-    await newRank("LibbyAJV","EastValleyCJV",300,70);
-    await newRank("MtSpokaneCJV","MtSpokaneDJV",260,130);
+    await newRank("GonzagaA","MtSpokaneA",300,180);
+    await newRank("StGeorgesA","FrenchtownA",250,140);
+    await newRank("EastValleyA","FrenchtownB",370,70);
+    await newRank("MtSpokaneB","EastValleyB",330,100);
+    await newRank("LibbyA","EastValleyC",300,70);
+    await newRank("MtSpokaneC","MtSpokaneD",260,130);
     //Round 2
-    await newRank("MtSpokaneAV","FrenchtownAV",320,60);
-    await newRank("StGeorgesAV","MtSpokaneBV",200,180);
-    await newRank("GonzagaAV","FrenchtownBV",350,70);
-    await newRank("EastValleyBV","EastValleyAV",190,180);
-    await newRank("MtSpokaneDJV","EastValleyCJV",170,140);
-    await newRank("LibbyAJV","MtSpokaneCJV",220,130);
+    await newRank("MtSpokaneA","FrenchtownA",320,60);
+    await newRank("StGeorgesA","MtSpokaneB",200,180);
+    await newRank("GonzagaA","FrenchtownB",350,70);
+    await newRank("EastValleyB","EastValleyA",190,180);
+    await newRank("MtSpokaneD","EastValleyC",170,140);
+    await newRank("LibbyA","MtSpokaneC",220,130);
     //Round 3
-    await newRank("MtSpokaneBV","MtSpokaneAV",240,210);
-    await newRank("FrenchtownAV","FrenchtownBV",250,90);
-    await newRank("GonzagaAV","EastValleyBV",340,120);
-    await newRank("StGeorgesAV","EastValleyAV",310,100);
-    await newRank("MtSpokaneCJV","EastValleyCJV",210,100);
-    await newRank("LibbyAJV","MtSpokaneDJV",240,110);
+    await newRank("MtSpokaneB","MtSpokaneA",240,210);
+    await newRank("FrenchtownA","FrenchtownB",250,90);
+    await newRank("GonzagaA","EastValleyB",340,120);
+    await newRank("StGeorgesA","EastValleyA",310,100);
+    await newRank("MtSpokaneC","EastValleyC",210,100);
+    await newRank("LibbyA","MtSpokaneD",240,110);
     //Round 4
-    await newRank("MtSpokaneBV","FrenchtownBV",410,40);
-    await newRank("EastValleyAV","MtSpokaneAV",250,210);
-    await newRank("EastValleyBV","FrenchtownAV",220,150);
-    await newRank("GonzagaAV","StGeorgesAV",340,180);
-    await newRank("LibbyAJV","MtSpokaneDJV",220,80);
-    await newRank("MtSpokaneCJV","EastValleyCJV",150,110);
+    await newRank("MtSpokaneB","FrenchtownB",410,40);
+    await newRank("EastValleyA","MtSpokaneA",250,210);
+    await newRank("EastValleyB","FrenchtownA",220,150);
+    await newRank("GonzagaA","StGeorgesA",340,180);
+    await newRank("LibbyA","MtSpokaneD",220,80);
+    await newRank("MtSpokaneC","EastValleyC",150,110);
     //Round 5
-    await newRank("MtSpokaneBV","EastValleyAV",240,160);
-    await newRank("StGeorgesAV","EastValleyBV",200,150);
-    await newRank("MtSpokaneAV","FrenchtownBV",290,60);
-    await newRank("GonzagaAV","FrenchtownAV",280,70);
-    await newRank("LibbyAJV","MtSpokaneCJV",290,50);
-    await newRank("MtSpokaneDJV","EastValleyCJV",140,100);
+    await newRank("MtSpokaneB","EastValleyA",240,160);
+    await newRank("StGeorgesA","EastValleyB",200,150);
+    await newRank("MtSpokaneA","FrenchtownB",290,60);
+    await newRank("GonzagaA","FrenchtownA",280,70);
+    await newRank("LibbyA","MtSpokaneC",290,50);
+    await newRank("MtSpokaneD","EastValleyC",140,100);
     //Round 6
-    await newRank("LibbyAJV","EastValleyCJV",180,70);
-    await newRank("MtSpokaneDJV","MtSpokaneCJV",120,110);
+    await newRank("LibbyA","EastValleyC",180,70);
+    await newRank("MtSpokaneD","MtSpokaneC",120,110);
     //Varsity Playoffs
     //Quarterfinals
-    await newRank("GonzagaAV","FrenchtownBV",340,80);
-    await newRank("MtSpokaneAV","EastValleyAV",231,230);
-    await newRank("StGeorgesAV","EastValleyBV",210,100);
-    await newRank("MtSpokaneBV","FrenchtownAV",230,90);
+    await newRank("GonzagaA","FrenchtownB",340,80);
+    await newRank("MtSpokaneA","EastValleyA",231,230);
+    await newRank("StGeorgesA","EastValleyB",210,100);
+    await newRank("MtSpokaneB","FrenchtownA",230,90);
     //Semifinals
-    await newRank("MtSpokaneBV","StGeorgesAV",200,160);
-    await newRank("GonzagaAV","MtSpokaneAV",320,120);
+    await newRank("MtSpokaneB","StGeorgesA",200,160);
+    await newRank("GonzagaA","MtSpokaneA",320,120);
     //Finals
-    await newRank("GonzagaAV","MtSpokaneBV",260,70)
+    await newRank("GonzagaA","MtSpokaneB",260,70)
     //JV Playoffs
     //Semifinals
-    await newRank("LibbyAJV","EastValleyCJV",210,100);
-    await newRank("MtSpokaneCJV","MtSpokaneDJV",140,90);
+    await newRank("LibbyA","EastValleyC",210,100);
+    await newRank("MtSpokaneC","MtSpokaneD",140,90);
     //Finals
-    //await newRank("LibbyAJV","MtSpokaneCJV",1,0);
+    //await newRank("LibbyA","MtSpokaneC",1,0);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -4656,44 +4659,44 @@ async function cSetData(){
     //Central Georgia Fall C-Set
     //Prelims
     //Round 1
-    await newRank("StarrsMillAV","StarrsMillBV",440,90);
-    await newRank("CreeksideAV","StarrsMillCV",190,170);
-    await newRank("ChambleeAJV","VeteransAV",270,220);
-    await newRank("OakMountainAV","StarrsMillDV",300,140);
-    await newRank("StarrsMillEV","VeteransBJV",240,120);
+    await newRank("StarrsMillA","StarrsMillB",440,90);
+    await newRank("CreeksideA","StarrsMillC",190,170);
+    await newRank("ChambleeA","VeteransA",270,220);
+    await newRank("OakMountainA","StarrsMillD",300,140);
+    await newRank("StarrsMillE","VeteransB",240,120);
     //Round 2
-    await newRank("OakMountainAV","StarrsMillEV",340,90);
-    await newRank("ChambleeAJV","StarrsMillCV",340,60);
-    await newRank("CreeksideAV","VeteransBJV",160,150);
-    await newRank("StarrsMillAV","StarrsMillDV",430,90);
-    await newRank("StarrsMillBV","VeteransAV",240,200);
+    await newRank("OakMountainA","StarrsMillE",340,90);
+    await newRank("ChambleeA","StarrsMillC",340,60);
+    await newRank("CreeksideA","VeteransB",160,150);
+    await newRank("StarrsMillA","StarrsMillD",430,90);
+    await newRank("StarrsMillB","VeteransA",240,200);
     //Round 3
-    await newRank("VeteransAV","StarrsMillEV",310,140);
-    await newRank("OakMountainAV","ChambleeAJV",250,220);
-    await newRank("StarrsMillCV","StarrsMillDV",210,180);
-    await newRank("StarrsMillBV","VeteransBJV",370,80);
-    await newRank("StarrsMillAV","CreeksideAV",390,100);
+    await newRank("VeteransA","StarrsMillE",310,140);
+    await newRank("OakMountainA","ChambleeA",250,220);
+    await newRank("StarrsMillC","StarrsMillD",210,180);
+    await newRank("StarrsMillB","VeteransB",370,80);
+    await newRank("StarrsMillA","CreeksideA",390,100);
     //Round 4
-    await newRank("OakMountainAV","StarrsMillBV",210,150);
-    await newRank("StarrsMillAV","ChambleeAJV",390,170);
-    await newRank("VeteransAV","CreeksideAV",310,40);
-    await newRank("StarrsMillDV","VeteransBJV",290,90);
-    await newRank("StarrsMillCV","StarrsMillEV",210,150);
+    await newRank("OakMountainA","StarrsMillB",210,150);
+    await newRank("StarrsMillA","ChambleeA",390,170);
+    await newRank("VeteransA","CreeksideA",310,40);
+    await newRank("StarrsMillD","VeteransB",290,90);
+    await newRank("StarrsMillC","StarrsMillE",210,150);
     //Round 5
-    await newRank("StarrsMillBV","StarrsMillCV",340,80);
-    await newRank("VeteransAV","StarrsMillDV",240,180);
-    await newRank("OakMountainAV","CreeksideAV",320,40);
-    await newRank("ChambleeAJV","VeteransBJV",280,40);
-    await newRank("StarrsMillAV","StarrsMillEV",390,80);
+    await newRank("StarrsMillB","StarrsMillC",340,80);
+    await newRank("VeteransA","StarrsMillD",240,180);
+    await newRank("OakMountainA","CreeksideA",320,40);
+    await newRank("ChambleeA","VeteransB",280,40);
+    await newRank("StarrsMillA","StarrsMillE",390,80);
     //Varsity Playoffs
     //Semifinals
-    await newRank("StarrsMillAV","StarrsMillBV",380,100);
-    await newRank("OakMountainAV","VeteransAV",260,140);
+    await newRank("StarrsMillA","StarrsMillB",380,100);
+    await newRank("OakMountainA","VeteransA",260,140);
     //Finals
-    await newRank("StarrsMillAV","OakMountainAV",260,150);
+    await newRank("StarrsMillA","OakMountainA",260,150);
     //JV Playoffs
     //Finals
-    await newRank("ChambleeAJV","VeteransBJV",250,40);//Chamblee Charter
+    await newRank("ChambleeA","VeteransB",250,40);//Chamblee Charter
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -4704,54 +4707,54 @@ async function cSetData(){
     //Montana C-Set
     //Prelims
     //Round 1
-    await newRank("BillingsSeniorAV","SkyviewBV",250,200);
-    await newRank("BozemanBV","BillingsWestAV",300,140);
-    await newRank("BozemanAV","SkyviewCV",230,80);
-    await newRank("BillingsWestBV","RiversideAV",140,130);
-    await newRank("SkyviewAV","SkyviewDJV",430,50);
-    await newRank("BillingsSeniorBJV","ParkCityBJV",150,80);
-    await newRank("BozemanCJV","ParkCityAJV",260,80);
+    await newRank("BillingsSeniorA","SkyviewB",250,200);
+    await newRank("BozemanB","BillingsWestA",300,140);
+    await newRank("BozemanA","SkyviewC",230,80);
+    await newRank("BillingsWestB","RiversideA",140,130);
+    await newRank("SkyviewA","SkyviewD",430,50);
+    await newRank("BillingsSeniorB","ParkCityB",150,80);
+    await newRank("BozemanC","ParkCityA",260,80);
     //Round 2
-    await newRank("BozemanAV","RiversideAV",240,90);
-    await newRank("SkyviewAV","BillingsSeniorAV",250,190);
-    await newRank("BillingsWestAV","BillingsWestBV",210,110);
-    await newRank("SkyviewBV","SkyviewCV",300,80);
-    await newRank("BozemanBV","BozemanCJV",250,90);
-    await newRank("BillingsSeniorBJV","ParkCityAJV",190,30);
-    await newRank("SkyviewDJV","ParkCityBJV",190,110);
+    await newRank("BozemanA","RiversideA",240,90);
+    await newRank("SkyviewA","BillingsSeniorA",250,190);
+    await newRank("BillingsWestA","BillingsWestB",210,110);
+    await newRank("SkyviewB","SkyviewC",300,80);
+    await newRank("BozemanB","BozemanC",250,90);
+    await newRank("BillingsSeniorB","ParkCityA",190,30);
+    await newRank("SkyviewD","ParkCityB",190,110);
     //Round 3
-    await newRank("BozemanBV","SkyviewCV",340,50);
-    await newRank("SkyviewAV","RiversideAV",360,70);
-    await newRank("BillingsSeniorAV","BillingsWestBV",380,70);
-    await newRank("BillingsWestAV","SkyviewDJV",240,180);
-    await newRank("BozemanAV","ParkCityBJV",340,100);
-    await newRank("SkyviewDJV","ParkCityAJV",310,60);
-    await newRank("BozemanCJV","BillingsSeniorBJV",250,30);
+    await newRank("BozemanB","SkyviewC",340,50);
+    await newRank("SkyviewA","RiversideA",360,70);
+    await newRank("BillingsSeniorA","BillingsWestB",380,70);
+    await newRank("BillingsWestA","SkyviewD",240,180);
+    await newRank("BozemanA","ParkCityB",340,100);
+    await newRank("SkyviewD","ParkCityA",310,60);
+    await newRank("BozemanC","BillingsSeniorB",250,30);
     //Round 4
-    await newRank("SkyviewAV","BillingsWestAV",380,80);
-    await newRank("BillingsWestBV","SkyviewCV",110,100);
-    await newRank("BozemanBV","RiversideAV",340,40);
-    await newRank("BillingsSeniorAV","BozemanAV",240,170);
-    await newRank("SkyviewBV","BillingsSeniorBJV",210,90);
-    await newRank("BozemanCJV","SkyviewDJV",140,110);
-    await newRank("ParkCityBJV","ParkCityAJV",120,50);
+    await newRank("SkyviewA","BillingsWestA",380,80);
+    await newRank("BillingsWestB","SkyviewC",110,100);
+    await newRank("BozemanB","RiversideA",340,40);
+    await newRank("BillingsSeniorA","BozemanA",240,170);
+    await newRank("SkyviewB","BillingsSeniorB",210,90);
+    await newRank("BozemanC","SkyviewD",140,110);
+    await newRank("ParkCityB","ParkCityA",120,50);
     //Round 5
-    await newRank("SkyviewBV","RiversideAV",170,70);
-    await newRank("BozemanBV","BillingsSeniorAV",220,150);
-    await newRank("BillingsWestAV","BozemanAV",180,170);
-    await newRank("SkyviewAV","SkyviewCV",310,50);
-    await newRank("BillingsWestBV","ParkCityAJV",120,60);
-    await newRank("BozemanCJV","ParkCityBJV",190,40);
-    await newRank("SkyviewDJV","BillingsSeniorBJV",150,90);
+    await newRank("SkyviewB","RiversideA",170,70);
+    await newRank("BozemanB","BillingsSeniorA",220,150);
+    await newRank("BillingsWestA","BozemanA",180,170);
+    await newRank("SkyviewA","SkyviewC",310,50);
+    await newRank("BillingsWestB","ParkCityA",120,60);
+    await newRank("BozemanC","ParkCityB",190,40);
+    await newRank("SkyviewD","BillingsSeniorB",150,90);
     //Varsity Playoffs
     //Semifinals
-    await newRank("BozemanBV","BillingsSeniorAV",260,110);
-    await newRank("SkyviewAV","SkyviewBV",350,70);
+    await newRank("BozemanB","BillingsSeniorA",260,110);
+    await newRank("SkyviewA","SkyviewB",350,70);
     //Finals
-    await newRank("SkyviewAV","BozemanBV",240,90);
+    await newRank("SkyviewA","BozemanB",240,90);
     //JV Playoffs
     //Finals
-    await newRank("BozemanCJV","SkyviewDJV",110,80);
+    await newRank("BozemanC","SkyviewD",110,80);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -4761,49 +4764,49 @@ async function cSetData(){
     //West Virginia Fall C-Set
     //Prelims
     //Round 1
-    await newRank("PocaAV","CharlestonBV",280,170);
-    await newRank("CharlestonAV","PocaBV",430,10);
-    await newRank("GeorgeWashingtonBV","NitroBV",280,140);
-    await newRank("StAlbansAV","NitroAV",260,200);
-    await newRank("JohnAdamsAJV","CharlestonCJV",310,70);
-    await newRank("MorgantownAJV","CharlestonDJV",240,110);
+    await newRank("PocaA","CharlestonB",280,170);
+    await newRank("CharlestonA","PocaB",430,10);
+    await newRank("GeorgeWashingtonB","NitroB",280,140);
+    await newRank("StAlbansA","NitroA",260,200);
+    await newRank("JohnAdamsA","CharlestonC",310,70);
+    await newRank("MorgantownA","CharlestonD",240,110);
     //Round 2
-    await newRank("StAlbansAV","PocaBV",290,110);
-    await newRank("GeorgeWashingtonBV","PocaAV",280,180);
-    await newRank("CharlestonBV","NitroBV",240,160);
-    await newRank("CharlestonAV","NitroAV",260,220);
-    await newRank("CharlestonDJV","CharlestonCJV",170,130);
-    await newRank("MorgantownAJV","JohnAdamsAJV",260,160);
+    await newRank("StAlbansA","PocaB",290,110);
+    await newRank("GeorgeWashingtonB","PocaA",280,180);
+    await newRank("CharlestonB","NitroB",240,160);
+    await newRank("CharlestonA","NitroA",260,220);
+    await newRank("CharlestonD","CharlestonC",170,130);
+    await newRank("MorgantownA","JohnAdamsA",260,160);
     //Round 3
-    await newRank("GeorgeWashingtonBV","PocaBV",410,20);
-    await newRank("StAlbansAV","CharlestonBV",240,170);
-    await newRank("NitroAV","PocaAV",290,180);
-    await newRank("CharlestonAV","NitroBV",330,160);
-    await newRank("JohnAdamsAJV","CharlestonDJV",290,100);
-    await newRank("MorgantownAJV","CharlestonCJV",280,110);
+    await newRank("GeorgeWashingtonB","PocaB",410,20);
+    await newRank("StAlbansA","CharlestonB",240,170);
+    await newRank("NitroA","PocaA",290,180);
+    await newRank("CharlestonA","NitroB",330,160);
+    await newRank("JohnAdamsA","CharlestonD",290,100);
+    await newRank("MorgantownA","CharlestonC",280,110);
     //Round 4
-    await newRank("PocaAV","NitroBV",220,170);
-    await newRank("GeorgeWashingtonBV","CharlestonBV",300,140);
-    await newRank("CharlestonAV","StAlbansAV",350,90);
-    await newRank("NitroAV","PocaBV",360,10);
-    await newRank("JohnAdamsAJV","CharlestonDJV",200,160);
-    await newRank("MorgantownAJV","CharlestonCJV",220,130);
+    await newRank("PocaA","NitroB",220,170);
+    await newRank("GeorgeWashingtonB","CharlestonB",300,140);
+    await newRank("CharlestonA","StAlbansA",350,90);
+    await newRank("NitroA","PocaB",360,10);
+    await newRank("JohnAdamsA","CharlestonD",200,160);
+    await newRank("MorgantownA","CharlestonC",220,130);
     //Round 5
-    await newRank("NitroBV","PocaBV",220,50);
-    await newRank("CharlestonBV","NitroAV",240,120);
-    await newRank("CharlestonAV","GeorgeWashingtonBV",250,150);
-    await newRank("StAlbansAV","PocaAV",230,140);
-    await newRank("CharlestonDJV","CharlestonCJV",200,80);
-    await newRank("MorgantownAJV","JohnAdamsAJV",240,130);
+    await newRank("NitroB","PocaB",220,50);
+    await newRank("CharlestonB","NitroA",240,120);
+    await newRank("CharlestonA","GeorgeWashingtonB",250,150);
+    await newRank("StAlbansA","PocaA",230,140);
+    await newRank("CharlestonD","CharlestonC",200,80);
+    await newRank("MorgantownA","JohnAdamsA",240,130);
     //Round 6
-    await newRank("JohnAdamsAJV","CharlestonCJV",260,80);
-    await newRank("MorgantownAJV","CharlestonDJV",200,60);
+    await newRank("JohnAdamsA","CharlestonC",260,80);
+    await newRank("MorgantownA","CharlestonD",200,60);
     //Varsity Playoffs
     //Semifinals
-    await newRank("CharlestonAV","NitroAV",230,110);
-    await newRank("StAlbansAV","GeorgeWashingtonBV",190,110);
+    await newRank("CharlestonA","NitroA",230,110);
+    await newRank("StAlbansA","GeorgeWashingtonB",190,110);
     //Finals
-    await newRank("CharlestonAV","StAlbansAV",240,130);
+    await newRank("CharlestonA","StAlbansA",240,130);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -4813,118 +4816,118 @@ async function cSetData(){
     //Northern New Jersey C-Set
     //Prelims
     //Round 1
-    await newRank("MillburnAV","StPetersAV",550,70);
-    await newRank("StJosephAV","ParamusAV",300,180);
-    await newRank("MillburnBV","StuyvesantAV",280,250);
-    await newRank("NewarkAV","HewlettBV",270,240);
-    await newRank("OratoryAV","MillburnCV",310,280);
-    await newRank("MountainLakesAV","StPetersBV",410,60);
-    await newRank("HewlettAV","HolmdelAV",400,100);
-    await newRank("KinnelonAJV","StPetersCJV",300,170);
-    await newRank("HewlettCJV","ChurchillNJBJV",310,200);
-    await newRank("ChurchillNJAJV","SouthBrunswickAJV",490,90);
-    await newRank("StJosephBJV","BASISBrooklynAJV",200,180);
-    await newRank("HunterBJV","HolmdelBJV",470,120);
-    await newRank("MillburnDJV","MountainLakesBJV",390,160);
-    await newRank("TenaflyBMS","IndianFieldsMSA",130,100);
-    await newRank("TenaflyCMS","BRIGHTMSA",130,100);
+    await newRank("MillburnA","StPetersA",550,70);
+    await newRank("StJosephA","ParamusA",300,180);
+    await newRank("MillburnB","StuyvesantA",280,250);
+    await newRank("NewarkA","HewlettB",270,240);
+    await newRank("OratoryA","MillburnC",310,280);
+    await newRank("MountainLakesA","StPetersB",410,60);
+    await newRank("HewlettA","HolmdelA",400,100);
+    await newRank("KinnelonA","StPetersC",300,170);
+    await newRank("HewlettC","ChurchillNJB",310,200);
+    await newRank("ChurchillNJA","SouthBrunswickA",490,90);
+    await newRank("StJosephB","BASISBrooklynA",200,180);
+    await newRank("HunterB","HolmdelB",470,120);
+    await newRank("MillburnD","MountainLakesB",390,160);
+    await newRank("TenaflyB","IndianFieldsMSA",130,100);
+    await newRank("TenaflyC","BRIGHTMSA",130,100);
     //Round 2
-    await newRank("HewlettBV","ParamusAV",250,170);
-    await newRank("MountainLakesAV","NewarkAV",280,210);
-    await newRank("HunterAV","StuyvesantAV",450,120);
-    await newRank("MillburnCV","HolmdelAV",520,80);
-    await newRank("MillburnBV","HewlettAV",320,250);
-    await newRank("OratoryAV","StPetersBV",390,60);
-    await newRank("KinnelonAJV","StJosephBJV",260,150);
-    await newRank("MillburnAV","StJosephAV",510,110);
-    await newRank("HolmdelBJV","StPetersCJV",340,140);
-    await newRank("ChurchillNJAJV","BASISBrooklynAJV",550,80);
-    await newRank("MountainLakesBJV","ChurchillNJBJV",370,70);
-    await newRank("HunterBJV","MillburnDJV",410,180);
-    await newRank("HewlettCJV","SouthBrunswickAJV",240,200);
-    await newRank("TenaflyAMS","TenaflyBMS",400,60);
+    await newRank("HewlettB","ParamusA",250,170);
+    await newRank("MountainLakesA","NewarkA",280,210);
+    await newRank("HunterA","StuyvesantA",450,120);
+    await newRank("MillburnC","HolmdelA",520,80);
+    await newRank("MillburnB","HewlettA",320,250);
+    await newRank("OratoryA","StPetersB",390,60);
+    await newRank("KinnelonA","StJosephB",260,150);
+    await newRank("MillburnA","StJosephA",510,110);
+    await newRank("HolmdelB","StPetersC",340,140);
+    await newRank("ChurchillNJA","BASISBrooklynA",550,80);
+    await newRank("MountainLakesB","ChurchillNJB",370,70);
+    await newRank("HunterB","MillburnD",410,180);
+    await newRank("HewlettC","SouthBrunswickA",240,200);
+    await newRank("TenaflyA","TenaflyB",400,60);
     await newRank("IndianFieldsMSA","BRIGHTMSA",130,80);
     //Round 3
-    await newRank("MillburnCV","StPetersBV",450,100);
-    await newRank("MountainLakesAV","ParamusAV",280,180);
-    await newRank("StuyvesantAV","StPetersAV",360,130);
-    await newRank("OratoryAV","NewarkAV",370,170);
-    await newRank("HunterBJV","ChurchillNJBJV",530,60);
-    await newRank("MillburnBV","HolmdelAV",430,80);
-    await newRank("HunterAV","HewlettAV",370,180);
-    await newRank("MillburnAV","HewlettBV",470,100);
-    await newRank("ChurchillNJAJV","KinnelonAJV",430,90);
-    await newRank("HewlettCJV","BASISBrooklynAJV",360,90);
-    await newRank("HolmdelBJV","StJosephBJV",360,130);
-    await newRank("MillburnDJV","StPetersCJV",360,200);
-    await newRank("MountainLakesBJV","SouthBrunswickAJV",290,150);
-    await newRank("TenaflyAMS","TenaflyCMS",410,10);
-    await newRank("TenaflyBMS","BRIGHTMSA",290,40);
+    await newRank("MillburnC","StPetersB",450,100);
+    await newRank("MountainLakesA","ParamusA",280,180);
+    await newRank("StuyvesantA","StPetersA",360,130);
+    await newRank("OratoryA","NewarkA",370,170);
+    await newRank("HunterB","ChurchillNJB",530,60);
+    await newRank("MillburnB","HolmdelA",430,80);
+    await newRank("HunterA","HewlettA",370,180);
+    await newRank("MillburnA","HewlettB",470,100);
+    await newRank("ChurchillNJA","KinnelonA",430,90);
+    await newRank("HewlettC","BASISBrooklynA",360,90);
+    await newRank("HolmdelB","StJosephB",360,130);
+    await newRank("MillburnD","StPetersC",360,200);
+    await newRank("MountainLakesB","SouthBrunswickA",290,150);
+    await newRank("TenaflyA","TenaflyC",410,10);
+    await newRank("TenaflyB","BRIGHTMSA",290,40);
     //Round 4
-    await newRank("StuyvesantAV","StJosephAV",340,140);
-    await newRank("OratoryAV","ParamusAV",500,100);
-    await newRank("HunterAV","MillburnCV",410,230);
-    await newRank("MillburnAV","MountainLakesAV",540,70);
-    await newRank("HewlettAV","StPetersAV",400,90);
-    await newRank("NewarkAV","HolmdelAV",340,150);
-    await newRank("MillburnBV","StPetersBV",460,80);
-    await newRank("ChurchillNJAJV","HolmdelBJV",380,210);
-    await newRank("HunterBJV","SouthBrunswickAJV",480,100);
-    await newRank("MillburnDJV","StJosephBJV",420,90);
-    await newRank("StPetersCJV","ChurchillNJBJV",240,130);
-    await newRank("MountainLakesBJV","BASISBrooklynAJV",320,50);
-    await newRank("KinnelonAJV","HewlettCJV",240,210);
-    await newRank("TenaflyCMS","IndianFieldsMSA",110,60);
-    await newRank("TenaflyAMS","BRIGHTMSA",380,20);
+    await newRank("StuyvesantA","StJosephA",340,140);
+    await newRank("OratoryA","ParamusA",500,100);
+    await newRank("HunterA","MillburnC",410,230);
+    await newRank("MillburnA","MountainLakesA",540,70);
+    await newRank("HewlettA","StPetersA",400,90);
+    await newRank("NewarkA","HolmdelA",340,150);
+    await newRank("MillburnB","StPetersB",460,80);
+    await newRank("ChurchillNJA","HolmdelB",380,210);
+    await newRank("HunterB","SouthBrunswickA",480,100);
+    await newRank("MillburnD","StJosephB",420,90);
+    await newRank("StPetersC","ChurchillNJB",240,130);
+    await newRank("MountainLakesB","BASISBrooklynA",320,50);
+    await newRank("KinnelonA","HewlettC",240,210);
+    await newRank("TenaflyC","IndianFieldsMSA",110,60);
+    await newRank("TenaflyA","BRIGHTMSA",380,20);
     //Round 5
-    await newRank("MillburnAV","OratoryAV",490,130);
-    await newRank("StuyvesantAV","HewlettBV",380,110);
-    await newRank("ParamusAV","HolmdelAV",190,180);
-    await newRank("HunterAV","StPetersBV",450,40);
-    await newRank("MillburnBV","NewarkAV",320,190);
-    await newRank("MillburnCV","StPetersAV",460,80);
-    await newRank("HewlettAV","StJosephAV",330,180);
-    await newRank("SouthBrunswickAJV","StPetersCJV",240,160);
-    await newRank("HunterBJV","BASISBrooklynAJV",440,70);
-    await newRank("ChurchillNJBJV","StJosephBJV",170,90);
-    await newRank("MountainLakesBJV","KinnelonAJV",190,180);
-    await newRank("ChurchillNJAJV","MillburnDJV",370,210);
-    await newRank("HolmdelBJV","HewlettCJV",240,180);
-    await newRank("TenaflyAMS","IndianFieldsMSA",250,50);
-    await newRank("TenaflyBMS","TenaflyCMS",190,60);
+    await newRank("MillburnA","OratoryA",490,130);
+    await newRank("StuyvesantA","HewlettB",380,110);
+    await newRank("ParamusA","HolmdelA",190,180);
+    await newRank("HunterA","StPetersB",450,40);
+    await newRank("MillburnB","NewarkA",320,190);
+    await newRank("MillburnC","StPetersA",460,80);
+    await newRank("HewlettA","StJosephA",330,180);
+    await newRank("SouthBrunswickA","StPetersC",240,160);
+    await newRank("HunterB","BASISBrooklynA",440,70);
+    await newRank("ChurchillNJB","StJosephB",170,90);
+    await newRank("MountainLakesB","KinnelonA",190,180);
+    await newRank("ChurchillNJA","MillburnD",370,210);
+    await newRank("HolmdelB","HewlettC",240,180);
+    await newRank("TenaflyA","IndianFieldsMSA",250,50);
+    await newRank("TenaflyB","TenaflyC",190,60);
     //Varsity Playoffs
     //Octofinals
-    await newRank("OratoryAV","ParamusAV",310,160);
-    await newRank("HewlettBV","HewlettAV",221,220);
-    await newRank("StuyvesantAV","StJosephAV",270,150);
-    await newRank("MountainLakesAV","NewarkAV",220,210);
+    await newRank("OratoryA","ParamusA",310,160);
+    await newRank("HewlettB","HewlettA",221,220);
+    await newRank("StuyvesantA","StJosephA",270,150);
+    await newRank("MountainLakesA","NewarkA",220,210);
     //Quarterfinals
-    await newRank("MillburnAV","MountainLakesAV",420,90);
-    await newRank("HunterAV","StuyvesantAV",410,140);
-    await newRank("MillburnCV","HewlettBV",330,110);
-    await newRank("MillburnBV","OratoryAV",240,230);
+    await newRank("MillburnA","MountainLakesA",420,90);
+    await newRank("HunterA","StuyvesantA",410,140);
+    await newRank("MillburnC","HewlettB",330,110);
+    await newRank("MillburnB","OratoryA",240,230);
     //Semifinals
-    await newRank("MillburnAV","MillburnBV",400,120);
-    await newRank("HunterAV","MillburnCV",300,210);
+    await newRank("MillburnA","MillburnB",400,120);
+    await newRank("HunterA","MillburnC",300,210);
     //Finals
-    await newRank("MillburnAV","HunterAV",280,260);
+    await newRank("MillburnA","HunterA",280,260);
     //JV Playoffs
     //Quarterfinals
-    await newRank("HunterBJV","StPetersCJV",500,40);
-    await newRank("ChurchillNJAJV","KinnelonAJV",350,110);
-    await newRank("HolmdelBJV","MountainLakesBJV",290,140);
-    await newRank("MillburnDJV","HewlettCJV",300,140);
+    await newRank("HunterB","StPetersC",500,40);
+    await newRank("ChurchillNJA","KinnelonA",350,110);
+    await newRank("HolmdelB","MountainLakesB",290,140);
+    await newRank("MillburnD","HewlettC",300,140);
     //Semifinals
-    await newRank("HunterBJV","MillburnDJV",360,170);
-    await newRank("ChurchillNJAJV","HolmdelBJV",350,170);
+    await newRank("HunterB","MillburnD",360,170);
+    await newRank("ChurchillNJA","HolmdelB",350,170);
     //Finals
-    await newRank("HunterBJV","ChurchillNJAJV",290,260);
+    await newRank("HunterB","ChurchillNJA",290,260);
     //MS Playoffs
     //Semifinals
-    //await newRank("TenaflyAMS","IndianFieldsMSA",1,0)
-    await newRank("TenaflyBMS","TenaflyCMS",160,20);
+    //await newRank("TenaflyA","IndianFieldsMSA",1,0)
+    await newRank("TenaflyB","TenaflyC",160,20);
     //Finals
-    await newRank("TenaflyAMS","TenaflyBMS",200,90);
+    await newRank("TenaflyA","TenaflyB",200,90);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     allMS.push(teamAvgMS);
@@ -4936,56 +4939,56 @@ async function cSetData(){
     //Northern Illinois C-Set
     //Prelims
     //Round 1
-    await newRank("StevensonAV","StevensonCV",340,300);
-    await newRank("BarringtonAV","BarringtonBV",490,90);
-    await newRank("SandburgAV","MarmionAV",320,230);
-    await newRank("StevensonBV","HinsdaleAV",350,210);
-    await newRank("StevensonEJV","StevensonFJV",400,120);
-    await newRank("StevensonDJV","AptakisicAJV",360,150);
+    await newRank("StevensonA","StevensonC",340,300);
+    await newRank("BarringtonA","BarringtonB",490,90);
+    await newRank("SandburgA","MarmionA",320,230);
+    await newRank("StevensonB","HinsdaleA",350,210);
+    await newRank("StevensonE","StevensonF",400,120);
+    await newRank("StevensonD","AptakisicA",360,150);
     //Round 2
-    await newRank("MarmionAV","BarringtonBV",360,180);
-    await newRank("HinsdaleAV","SandburgAV",300,290);
-    await newRank("StevensonAV","StevensonBV",470,170);
-    await newRank("StevensonCV","BarringtonAV",340,330);
-    await newRank("StevensonFJV","AptakisicAJV",270,160);
-    await newRank("StevensonEJV","SandburgBJV",470,140);
+    await newRank("MarmionA","BarringtonB",360,180);
+    await newRank("HinsdaleA","SandburgA",300,290);
+    await newRank("StevensonA","StevensonB",470,170);
+    await newRank("StevensonC","BarringtonA",340,330);
+    await newRank("StevensonF","AptakisicA",270,160);
+    await newRank("StevensonE","SandburgB",470,140);
     //Round 3
-    await newRank("StevensonAV","MarmionAV",460,180);
-    await newRank("StevensonCV","SandburgAV",420,160);
-    await newRank("HinsdaleAV","BarringtonBV",450,120);
-    await newRank("StevensonBV","BarringtonAV",280,260);
-    await newRank("SandburgBJV","StevensonFJV",340,160);
-    await newRank("StevensonEJV","StevensonDJV",370,220);
+    await newRank("StevensonA","MarmionA",460,180);
+    await newRank("StevensonC","SandburgA",420,160);
+    await newRank("HinsdaleA","BarringtonB",450,120);
+    await newRank("StevensonB","BarringtonA",280,260);
+    await newRank("SandburgB","StevensonF",340,160);
+    await newRank("StevensonE","StevensonD",370,220);
     //Round 4
-    await newRank("SandburgAV","BarringtonAV",350,280);
-    await newRank("StevensonAV","BarringtonBV",530,40);
-    await newRank("StevensonCV","StevensonBV",380,230);
-    await newRank("HinsdaleAV","MarmionAV",400,190);
-    await newRank("SandburgBJV","AptakisicAJV",310,180);
-    await newRank("StevensonDJV","StevensonFJV",430,100);
+    await newRank("SandburgA","BarringtonA",350,280);
+    await newRank("StevensonA","BarringtonB",530,40);
+    await newRank("StevensonC","StevensonB",380,230);
+    await newRank("HinsdaleA","MarmionA",400,190);
+    await newRank("SandburgB","AptakisicA",310,180);
+    await newRank("StevensonD","StevensonF",430,100);
     //Round 5
-    await newRank("StevensonBV","BarringtonBV",390,140);
-    await newRank("BarringtonAV","HinsdaleAV",320,270);
-    await newRank("StevensonCV","MarmionAV",510,130);
-    await newRank("StevensonAV","SandburgAV",440,160);
-    await newRank("StevensonDJV","SandburgBJV",380,160);
-    await newRank("StevensonEJV","AptakisicAJV",360,140);
+    await newRank("StevensonB","BarringtonB",390,140);
+    await newRank("BarringtonA","HinsdaleA",320,270);
+    await newRank("StevensonC","MarmionA",510,130);
+    await newRank("StevensonA","SandburgA",440,160);
+    await newRank("StevensonD","SandburgB",380,160);
+    await newRank("StevensonE","AptakisicA",360,140);
     //Round 6
-    await newRank("StevensonAV","HinsdaleAV",410,200);
-    await newRank("BarringtonAV","MarmionAV",380,200);
-    await newRank("StevensonCV","BarringtonBV",520,60);
-    await newRank("SandburgAV","SandburgBJV",270,240);
+    await newRank("StevensonA","HinsdaleA",410,200);
+    await newRank("BarringtonA","MarmionA",380,200);
+    await newRank("StevensonC","BarringtonB",520,60);
+    await newRank("SandburgA","SandburgB",270,240);
     //Round 7
-    await newRank("StevensonBV","MarmionAV",340,170);
-    await newRank("SandburgAV","BarringtonBV",370,70);
-    await newRank("StevensonAV","BarringtonAV",320,240);
-    await newRank("StevensonCV","HinsdaleAV",410,130);
+    await newRank("StevensonB","MarmionA",340,170);
+    await newRank("SandburgA","BarringtonB",370,70);
+    await newRank("StevensonA","BarringtonA",320,240);
+    await newRank("StevensonC","HinsdaleA",410,130);
     //Varsity Playoffs
     //Finals
-    await newRank("StevensonAV","StevensonCV",390,210);
+    await newRank("StevensonA","StevensonC",390,210);
     //JV Playoffs
     //Finals
-    await newRank("StevensonEJV","StevensonDJV",290,220);
+    await newRank("StevensonE","StevensonD",290,220);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -4995,32 +4998,32 @@ async function cSetData(){
     //Greater Dayton C-Set
     //Prelims
     //Round 1
-    await newRank("TippecanoeAV","TippecanoeBJV",300,60);
-    await newRank("GeorgeWashingtonAV","BeavercreekCJV",530,70);
-    await newRank("BeavercreekAV","BeavercreekBV",520,90);
+    await newRank("TippecanoeA","TippecanoeB",300,60);
+    await newRank("GeorgeWashingtonWVA","BeavercreekC",530,70);
+    await newRank("BeavercreekA","BeavercreekB",520,90);
     //Round 2
-    await newRank("BeavercreekBV","TippecanoeBJV",310,80);
-    await newRank("GeorgeWashingtonAV","TippecanoeAV",460,140);
-    await newRank("BeavercreekAV","BeavercreekCJV",590,60);
+    await newRank("BeavercreekB","TippecanoeB",310,80);
+    await newRank("GeorgeWashingtonWVA","TippecanoeA",460,140);
+    await newRank("BeavercreekA","BeavercreekC",590,60);
     //Round 3
-    await newRank("GeorgeWashingtonAV","BeavercreekBV",450,120);
-    await newRank("TippecanoeAV","BeavercreekCJV",220,160);
-    await newRank("BeavercreekAV","TippecanoeBJV",270,240);
+    await newRank("GeorgeWashingtonWVA","BeavercreekB",450,120);
+    await newRank("TippecanoeA","BeavercreekC",220,160);
+    await newRank("BeavercreekA","TippecanoeB",270,240);
     //Round 4
-    await newRank("BeavercreekBV","BeavercreekCJV",400,120);
-    await newRank("GeorgeWashingtonAV","TippecanoeBJV",560,20);
-    await newRank("BeavercreekAV","TippecanoeAV",500,70);
+    await newRank("BeavercreekB","BeavercreekC",400,120);
+    await newRank("GeorgeWashingtonWVA","TippecanoeB",560,20);
+    await newRank("BeavercreekA","TippecanoeA",500,70);
     //Round 5
-    await newRank("BeavercreekAV","GeorgeWashingtonAV",340,320);
-    await newRank("TippecanoeAV","BeavercreekBV",280,80);
-    await newRank("BeavercreekCJV","TippecanoeBJV",120,80);
+    await newRank("BeavercreekA","GeorgeWashingtonWVA",340,320);
+    await newRank("TippecanoeA","BeavercreekB",280,80);
+    await newRank("BeavercreekC","TippecanoeB",120,80);
     //Varsity Playoffs
     //Finals
-    await newRank("GeorgeWashingtonAV","BeavercreekAV",310,300);//Beavercreek with advantage
-    await newRank("BeavercreekAV","GeorgeWashingtonAV",320,290);
+    await newRank("GeorgeWashingtonWVA","BeavercreekA",310,300);//Beavercreek with advantage
+    await newRank("BeavercreekA","GeorgeWashingtonWVA",320,290);
     //JV Playoffs
     //Finals
-    await newRank("BeavercreekCJV","TippecanoeBJV",220,20);
+    await newRank("BeavercreekC","TippecanoeB",220,20);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -5030,38 +5033,38 @@ async function cSetData(){
     //Buffalo C-Set
     //Prelims
     //Round 1
-    await newRank("NicholsAV","AmherstAV",270,240);
-    await newRank("NicholsBV","AmherstBV",320,180);
-    await newRank("IroquoisAV","NicholsCV",340,210);
-    await newRank("NicholsDJV","IroquoisBJV",250,70);
+    await newRank("NicholsA","AmherstA",270,240);
+    await newRank("NicholsB","AmherstB",320,180);
+    await newRank("IroquoisA","NicholsC",340,210);
+    await newRank("NicholsD","IroquoisB",250,70);
     //Round 2
-    await newRank("NicholsAV","AmherstBV",250,210);
-    await newRank("NicholsBV","IroquoisAV",350,110);
-    await newRank("NicholsCV","AmherstAV",290,140);
-    await newRank("NicholsEJV","IroquoisBJV",220,90);
+    await newRank("NicholsA","AmherstB",250,210);
+    await newRank("NicholsB","IroquoisA",350,110);
+    await newRank("NicholsC","AmherstA",290,140);
+    await newRank("NicholsE","IroquoisB",220,90);
     //Round 3
-    await newRank("NicholsAV","NicholsCV",250,210);
-    await newRank("NicholsBV","AmherstAV",390,120);
-    await newRank("IroquoisAV","AmherstBV",350,110);
-    await newRank("NicholsDJV","NicholsEJV",260,140);
+    await newRank("NicholsA","NicholsC",250,210);
+    await newRank("NicholsB","AmherstA",390,120);
+    await newRank("IroquoisA","AmherstB",350,110);
+    await newRank("NicholsD","NicholsE",260,140);
     //Round 4
-    await newRank("IroquoisAV","NicholsAV",280,170);
-    await newRank("NicholsBV","NicholsCV",370,100);
-    await newRank("AmherstBV","AmherstAV",290,180);
-    await newRank("NicholsDJV","IroquoisBJV",290,40);
+    await newRank("IroquoisA","NicholsA",280,170);
+    await newRank("NicholsB","NicholsC",370,100);
+    await newRank("AmherstB","AmherstA",290,180);
+    await newRank("NicholsD","IroquoisB",290,40);
     //Round5
-    await newRank("NicholsBV","NicholsAV",250,180);
-    await newRank("NicholsCV","AmherstBV",170,150);
-    await newRank("IroquoisAV","AmherstAV",270,130);
-    await newRank("NicholsEJV","IroquoisBJV",140,60);
+    await newRank("NicholsB","NicholsA",250,180);
+    await newRank("NicholsC","AmherstB",170,150);
+    await newRank("IroquoisA","AmherstA",270,130);
+    await newRank("NicholsE","IroquoisB",140,60);
     //Round 6
-    await newRank("NicholsDJV","NicholsEJV",190,90);
+    await newRank("NicholsD","NicholsE",190,90);
     //Varsity Playoffs
     //Semifinals
-    await newRank("NicholsBV","NicholsCV",350,180);
-    await newRank("IroquoisAV","NicholsAV",200,180);
+    await newRank("NicholsB","NicholsC",350,180);
+    await newRank("IroquoisA","NicholsA",200,180);
     //Finals
-    await newRank("NicholsBV","IroquoisAV",250,140);
+    await newRank("NicholsB","IroquoisA",250,140);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -5071,128 +5074,128 @@ async function cSetData(){
     //South Florida Fall C-Set
     //Prelims
     //Round 1
-    await newRank("RansomAV","PalmettoDV",520,30);
-    await newRank("ArchimedeanAV","PalmettoEV",330,130);
-    await newRank("ArchimedeanCV","PalmettoFV",220,90);
-    await newRank("CoralReefAV","PalmettoJV",360,70);
-    await newRank("PalmettoBV","BelenBV",280,210);
-    await newRank("ArchimedeanEV","PalmettoHV",220,60);
-    await newRank("BelenAV","PalmettoIV",420,40);
-    await newRank("DoralAV","ArchimedeanDV",330,50);
-    await newRank("ArchimedeanBV","PalmettoAV",240,180);
-    await newRank("PalmettoCV","WestminsterAV",310,160);
-    await newRank("CoralReefBV","PalmettoGV",300,120);
-    await newRank("RansomBV","PalmettoMJV",280,190);
-    await newRank("PalmettoPJV","PalmettoOJV",310,160);
-    await newRank("BelenCJV","PalmettonAJV",330,110);
-    await newRank("PalmettoLJV","PalmettoQJV",310,50);
-    await newRank("DoralBJV","PalmettoRJV",270,140);
-    await newRank("RansomCJV","PalmettoKJV",460,90);
-    await newRank("ArchimedeanFJV","RansomDJV",180,170);
+    await newRank("RansomA","PalmettoD",520,30);
+    await newRank("ArchimedeanA","PalmettoE",330,130);
+    await newRank("ArchimedeanC","PalmettoF",220,90);
+    await newRank("CoralReefA","Palmetto",360,70);
+    await newRank("PalmettoB","BelenB",280,210);
+    await newRank("ArchimedeanE","PalmettoH",220,60);
+    await newRank("BelenA","PalmettoI",420,40);
+    await newRank("DoralA","ArchimedeanD",330,50);
+    await newRank("ArchimedeanB","PalmettoA",240,180);
+    await newRank("PalmettoC","WestminsterA",310,160);
+    await newRank("CoralReefB","PalmettoG",300,120);
+    await newRank("RansomB","PalmettoM",280,190);
+    await newRank("PalmettoP","PalmettoO",310,160);
+    await newRank("BelenC","PalmettonA",330,110);
+    await newRank("PalmettoL","PalmettoQ",310,50);
+    await newRank("DoralB","PalmettoR",270,140);
+    await newRank("RansomC","PalmettoK",460,90);
+    await newRank("ArchimedeanF","RansomD",180,170);
     //Round 2
-    await newRank("RansomBV","PalmettoCV",230,230);
-    await newRank("RansomAV","CoralReefBV",410,90);
-    await newRank("PalmettoEV","PalmettoDV",260,100);
-    await newRank("ArchimedeanAV","ArchimedeanCV",280,150);
-    await newRank("PalmettoJV","PalmettoFV",180,170);
-    await newRank("CoralReefAV","BelenBV",300,210);
-    await newRank("PalmettoBV","PalmettoHV",290,140);
-    await newRank("BelenAV","ArchimedeanEV",360,40);
-    await newRank("ArchimedeanDV","PalmettoIV",120,120);
-    await newRank("DoralAV","PalmettoAV",230,190);
-    await newRank("ArchimedeanBV","WestminsterAV",240,180);
-    await newRank("RansomDJV","PalmettoGV",210,150);
-    await newRank("PalmettoMJV","PalmettoOJV",290,150);
-    await newRank("PalmettoPJV","PalmettonAJV",260,140);
-    await newRank("PalmettoLJV","BelenCJV",250,190);
-    await newRank("DoralBJV","PalmettoQJV",260,90);
-    await newRank("RansomCJV","PalmettoRJV",450,90);
-    await newRank("ArchimedeanFJV","PalmettoKJV",250,120);
+    await newRank("RansomB","PalmettoC",230,230);
+    await newRank("RansomA","CoralReefB",410,90);
+    await newRank("PalmettoE","PalmettoD",260,100);
+    await newRank("ArchimedeanA","ArchimedeanC",280,150);
+    await newRank("Palmetto","PalmettoF",180,170);
+    await newRank("CoralReefA","BelenB",300,210);
+    await newRank("PalmettoB","PalmettoH",290,140);
+    await newRank("BelenA","ArchimedeanE",360,40);
+    await newRank("ArchimedeanD","PalmettoI",120,120);
+    await newRank("DoralA","PalmettoA",230,190);
+    await newRank("ArchimedeanB","WestminsterA",240,180);
+    await newRank("RansomD","PalmettoG",210,150);
+    await newRank("PalmettoM","PalmettoO",290,150);
+    await newRank("PalmettoP","PalmettonA",260,140);
+    await newRank("PalmettoL","BelenC",250,190);
+    await newRank("DoralB","PalmettoQ",260,90);
+    await newRank("RansomC","PalmettoR",450,90);
+    await newRank("ArchimedeanF","PalmettoK",250,120);
     //Round 3
-    await newRank("WestminsterAV","DoralAV",280,160);
-    await newRank("ArchimedeanBV","PalmettoGV",240,150);
-    await newRank("RansomAV","PalmettoCV",330,180);
-    await newRank("CoralReefBV","RansomBV",250,220);
-    await newRank("ArchimedeanCV","PalmettoDV",220,150);
-    await newRank("ArchimedeanAV","PalmettoJV",390,80);
-    await newRank("BelenBV","PalmettoFV",370,110);
-    await newRank("CoralReefAV","PalmettoHV",410,40);
-    await newRank("PalmettoBV","BelenAV",340,210);
-    await newRank("ArchimedeanDV","ArchimedeanEV",130,120);
-    await newRank("PalmettoAV","PalmettoIV",410,90);
-    await newRank("PalmettoEV","PalmettoKJV",270,170);
-    await newRank("ArchimedeanFJV","PalmettoRJV",220,140);
-    await newRank("RansomDJV","PalmettoOJV",250,150);
-    await newRank("PalmettoMJV","PalmettonAJV",330,130);
-    await newRank("PalmettoPJV","PalmettoLJV",270,180);
-    await newRank("BelenCJV","DoralBJV",240,200);
-    await newRank("RansomCJV","PalmettoQJV",460,50);
+    await newRank("WestminsterA","DoralA",280,160);
+    await newRank("ArchimedeanB","PalmettoG",240,150);
+    await newRank("RansomA","PalmettoC",330,180);
+    await newRank("CoralReefB","RansomB",250,220);
+    await newRank("ArchimedeanC","PalmettoD",220,150);
+    await newRank("ArchimedeanA","Palmetto",390,80);
+    await newRank("BelenB","PalmettoF",370,110);
+    await newRank("CoralReefA","PalmettoH",410,40);
+    await newRank("PalmettoB","BelenA",340,210);
+    await newRank("ArchimedeanD","ArchimedeanE",130,120);
+    await newRank("PalmettoA","PalmettoI",410,90);
+    await newRank("PalmettoE","PalmettoK",270,170);
+    await newRank("ArchimedeanF","PalmettoR",220,140);
+    await newRank("RansomD","PalmettoO",250,150);
+    await newRank("PalmettoM","PalmettonA",330,130);
+    await newRank("PalmettoP","PalmettoL",270,180);
+    await newRank("BelenC","DoralB",240,200);
+    await newRank("RansomC","PalmettoQ",460,50);
     //Round 4
-    await newRank("PalmettoAV","ArchimedeanEV",410,50);
-    await newRank("WestminsterAV","PalmettoIV",290,40);
-    await newRank("DoralAV","PalmettoGV",210,160);
-    await newRank("RansomAV","ArchimedeanBV",450,110);
-    await newRank("PalmettoCV","PalmettoEV",240,230);
-    await newRank("CoralReefBV","ArchimedeanCV",230,130);
-    await newRank("PalmettoLJV","PalmettoDV",140,70);
-    await newRank("ArchimedeanAV","BelenBV",330,240);
-    await newRank("PalmettoFV","PalmettoHV",160,70);
-    await newRank("BelenAV","CoralReefAV",280,270);
-    await newRank("PalmettoBV","RansomBV",370,130);
-    await newRank("PalmettoRJV","ArchimedeanDV",160,130);
-    await newRank("RansomCJV","BelenCJV",520,110);
-    await newRank("ArchimedeanFJV","PalmettoQJV",320,40);
-    await newRank("PalmettoOJV","PalmettoKJV",170,150);
-    await newRank("RansomDJV","PalmettonAJV",280,80);
-    await newRank("PalmettoMJV","PalmettoLJV",190,130);
-    await newRank("PalmettoPJV","DoralBJV",300,140);
+    await newRank("PalmettoA","ArchimedeanE",410,50);
+    await newRank("WestminsterA","PalmettoI",290,40);
+    await newRank("DoralA","PalmettoG",210,160);
+    await newRank("RansomA","ArchimedeanB",450,110);
+    await newRank("PalmettoC","PalmettoE",240,230);
+    await newRank("CoralReefB","ArchimedeanC",230,130);
+    await newRank("PalmettoL","PalmettoD",140,70);
+    await newRank("ArchimedeanA","BelenB",330,240);
+    await newRank("PalmettoF","PalmettoH",160,70);
+    await newRank("BelenA","CoralReefA",280,270);
+    await newRank("PalmettoB","RansomB",370,130);
+    await newRank("PalmettoR","ArchimedeanD",160,130);
+    await newRank("RansomC","BelenC",520,110);
+    await newRank("ArchimedeanF","PalmettoQ",320,40);
+    await newRank("PalmettoO","PalmettoK",170,150);
+    await newRank("RansomD","PalmettonA",280,80);
+    await newRank("PalmettoM","PalmettoL",190,130);
+    await newRank("PalmettoP","DoralB",300,140);
     //Round 5
-    await newRank("PalmettoBV","CoralReefAV",260,190);
-    await newRank("PalmettoAV","ArchimedeanDV",290,40);
-    await newRank("WestminsterAV","ArchimedeanEV",250,50);
-    await newRank("RansomAV","PalmettoGV",360,80);
-    await newRank("DoralAV","PalmettoIV",250,80);
-    await newRank("ArchimedeanBV","PalmettoEV",230,210);
-    await newRank("PalmettoCV","ArchimedeanCV",230,150);
-    await newRank("CoralReefBV","PalmettoJV",260,80);
-    await newRank("RansomBV","PalmettoDV",320,80);
-    await newRank("ArchimedeanAV","PalmettoHV",330,40);
-    await newRank("BelenBV","PalmettoQJV",350,60);
-    await newRank("PalmettoMJV","DoralBJV",290,90);
-    await newRank("RansomCJV","PalmettoPJV",390,130);
-    await newRank("ArchimedeanFJV","BelenCJV",170,170);
-    await newRank("PalmettoRJV","PalmettoOJV",180,140);
-    await newRank("PalmettoKJV","PalmettonAJV",150,110);
-    await newRank("PalmettoLJV","RansomDJV",180,170);
+    await newRank("PalmettoB","CoralReefA",260,190);
+    await newRank("PalmettoA","ArchimedeanD",290,40);
+    await newRank("WestminsterA","ArchimedeanE",250,50);
+    await newRank("RansomA","PalmettoG",360,80);
+    await newRank("DoralA","PalmettoI",250,80);
+    await newRank("ArchimedeanB","PalmettoE",230,210);
+    await newRank("PalmettoC","ArchimedeanC",230,150);
+    await newRank("CoralReefB","Palmetto",260,80);
+    await newRank("RansomB","PalmettoD",320,80);
+    await newRank("ArchimedeanA","PalmettoH",330,40);
+    await newRank("BelenB","PalmettoQ",350,60);
+    await newRank("PalmettoM","DoralB",290,90);
+    await newRank("RansomC","PalmettoP",390,130);
+    await newRank("ArchimedeanF","BelenC",170,170);
+    await newRank("PalmettoR","PalmettoO",180,140);
+    await newRank("PalmettoK","PalmettonA",150,110);
+    await newRank("PalmettoL","RansomD",180,170);
     //Varsity Playoffs
     //Octofinals
-    //await newRank("RansomAV","PalmettoGV",1,0);
-    await newRank("PalmettoCV","DoralAV",200,150);
-    await newRank("PalmettoBV","ArchimedeanBV",320,150);
-    await newRank("CoralReefAV","RansomBV",200,190);
-    await newRank("ArchimedeanAV","ArchimedeanCV",280,70);
-    await newRank("BelenBV","WestminsterAV",300,90);
-    await newRank("BelenAV","PalmettoEV",270,150);
-    await newRank("PalmettoAV","CoralReefBV",210,190);
+    //await newRank("RansomA","PalmettoG",1,0);
+    await newRank("PalmettoC","DoralA",200,150);
+    await newRank("PalmettoB","ArchimedeanB",320,150);
+    await newRank("CoralReefA","RansomB",200,190);
+    await newRank("ArchimedeanA","ArchimedeanC",280,70);
+    await newRank("BelenB","WestminsterA",300,90);
+    await newRank("BelenA","PalmettoE",270,150);
+    await newRank("PalmettoA","CoralReefB",210,190);
     //Quarterfinals
-    await newRank("RansomAV","PalmettoCV",310,150);
-    await newRank("BelenBV","ArchimedeanAV",270,220);
-    await newRank("BelenAV","PalmettoAV",230,200);
-    await newRank("PalmettoBV","CoralReefAV",200,140);
+    await newRank("RansomA","PalmettoC",310,150);
+    await newRank("BelenB","ArchimedeanA",270,220);
+    await newRank("BelenA","PalmettoA",230,200);
+    await newRank("PalmettoB","CoralReefA",200,140);
     //Semifinals
-    await newRank("RansomAV","PalmettoBV",220,190);
-    await newRank("BelenBV","BelenAV",180,170);
+    await newRank("RansomA","PalmettoB",220,190);
+    await newRank("BelenB","BelenA",180,170);
     //Finals
-    await newRank("RansomAV","BelenBV",260,170)
+    await newRank("RansomA","BelenB",260,170)
     //JV Playoffs
     //Quarterfinals
-    await newRank("RansomCJV","DoralBJV",330,140);
-    await newRank("RansomDJV","ArchimedeanFJV",180,130);
-    await newRank("PalmettoPJV","PalmettoLJV",250,70);
-    await newRank("BelenCJV","PalmettoMJV",200,180);
+    await newRank("RansomC","DoralB",330,140);
+    await newRank("RansomD","ArchimedeanF",180,130);
+    await newRank("PalmettoP","PalmettoL",250,70);
+    await newRank("BelenC","PalmettoM",200,180);
     //Semifinals
-    await newRank("PalmettoPJV","BelenCJV",240,70);
-    await newRank("RansomCJV","PalmettoPJV",340,90);
+    await newRank("PalmettoP","BelenC",240,70);
+    await newRank("RansomC","PalmettoP",340,90);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -5202,23 +5205,23 @@ async function cSetData(){
     //Oahu C-Set
     //Prelims
     //Round 1
-    await newRank("IolaniBV","PunahouBJV",400,130);
-    await newRank("IolaniAV","PunahouAV",270,260);
+    await newRank("IolaniB","PunahouB",400,130);
+    await newRank("IolaniA","PunahouA",270,260);
     //Round 2
-    await newRank("IolaniBV","IolaniAV",410,160);
-    await newRank("PunahouAV","PunahouBJV",320,150);
+    await newRank("IolaniB","IolaniA",410,160);
+    await newRank("PunahouA","PunahouB",320,150);
     //Round 3
-    await newRank("IolaniBV","PunahouAV",350,210);
-    await newRank("IolaniAV","PunahouBJV",330,190);
+    await newRank("IolaniB","PunahouA",350,210);
+    await newRank("IolaniA","PunahouB",330,190);
     //Round 4
-    await newRank("IolaniBV","PunahouBJV",370,130);
-    await newRank("IolaniAV","PunahouAV",280,280);
+    await newRank("IolaniB","PunahouB",370,130);
+    await newRank("IolaniA","PunahouA",280,280);
     //Round 5
-    await newRank("IolaniBV","PunahouAV",380,120);
-    await newRank("IolaniAV","PunahouBJV",380,120);
+    await newRank("IolaniB","PunahouA",380,120);
+    await newRank("IolaniA","PunahouB",380,120);
     //Round 6
-    await newRank("PunahouAV","PunahouBJV",200,160);
-    await newRank("IolaniAV","IolaniBV",260,210);
+    await newRank("PunahouA","PunahouB",200,160);
+    await newRank("IolaniA","IolaniB",260,210);
     allV.push(teamAvgV);
     teamAvgV = [];
     console.log("Oahu C");
@@ -5226,31 +5229,31 @@ async function cSetData(){
     //Greater Knoxville Fall C-Set
     //Prelims
     //Round 3
-    await newRank("SeymourAV","PigeonForgeAV",230,210);
-    await newRank("MaryvilleAV","MorristownAV",370,140);
-    await newRank("GatlinburgBV","MorristownBV",170,110);
+    await newRank("SeymourA","PigeonForgeA",230,210);
+    await newRank("MaryvilleA","MorristownA",370,140);
+    await newRank("GatlinburgB","MorristownB",170,110);
     //Round 2
-    await newRank("MaryvilleAV","MorristownBV",460,40);
-    await newRank("GatlinburgAV","MorristownAV",270,140);
-    await newRank("SeymourAV","GatlinburgBV",280,60);
+    await newRank("MaryvilleA","MorristownB",460,40);
+    await newRank("GatlinburgA","MorristownA",270,140);
+    await newRank("SeymourA","GatlinburgB",280,60);
     //Round 3
-    await newRank("GatlinburgAV","MorristownBV",370,60);
-    await newRank("MaryvilleAV","SeymourAV",320,140);
-    await newRank("PigeonForgeAV","MorristownAV",230,190);
+    await newRank("GatlinburgA","MorristownB",370,60);
+    await newRank("MaryvilleA","SeymourA",320,140);
+    await newRank("PigeonForgeA","MorristownA",230,190);
     //Round 4
-    await newRank("GatlinburgAV","SeymourAV",330,90);
-    await newRank("PigeonForgeAV","MorristownBV",250,70);
-    await newRank("MorristownAV","GatlinburgBV",310,30);
+    await newRank("GatlinburgA","SeymourA",330,90);
+    await newRank("PigeonForgeA","MorristownB",250,70);
+    await newRank("MorristownA","GatlinburgB",310,30);
     //Round 5
-    await newRank("PigeonForgeAV","GatlinburgBV",310,20);
-    await newRank("GatlinburgAV","MaryvilleAV",220,210);
-    await newRank("MorristownAV","SeymourAV",190,130);
+    await newRank("PigeonForgeA","GatlinburgB",310,20);
+    await newRank("GatlinburgA","MaryvilleA",220,210);
+    await newRank("MorristownA","SeymourA",190,130);
     //Varsity Playoffs
     //Semifinals
-    await newRank("GatlinburgAV","MorristownAV",230,100);
-    await newRank("MaryvilleAV","PigeonForgeAV",400,160);
+    await newRank("GatlinburgA","MorristownA",230,100);
+    await newRank("MaryvilleA","PigeonForgeA",400,160);
     //Finals
-    await newRank("MaryvilleAV","GatlinburgAV",230,140);
+    await newRank("MaryvilleA","GatlinburgA",230,140);
     allV.push(teamAvgV);
     teamAvgV = [];
     console.log("Greater Knoxville Fall C");
@@ -5258,72 +5261,72 @@ async function cSetData(){
     //Eastern Geogia Fall C-Set
     //Prelims
     //Round 1
-    await newRank("BrookwoodAV","NewnanAV",241,240);
-    await newRank("LambertAV","ChattahoocheeAV",310,280);
-    await newRank("WoodstockAV","WoodwardAV",350,90);
-    await newRank("CambridgeAV","JohnsCreekAV",340,210);
-    await newRank("CommerceAV","ApalacheeAV",300,180);
-    await newRank("NewnanCJV","BrookwoodBJV",230,170);
-    await newRank("ChattahoocheeBJV","NewnanBJV",240,220);
-    await newRank("HermannAJV","CherokeeBluffJV",290,220);
-    await newRank("FultonAJV","GeorgeWaltonBJV",410,40);
+    await newRank("BrookwoodA","NewnanA",241,240);
+    await newRank("LambertA","ChattahoocheeA",310,280);
+    await newRank("WoodstockA","WoodwardA",350,90);
+    await newRank("CambridgeA","JohnsCreekA",340,210);
+    await newRank("CommerceA","ApalacheeA",300,180);
+    await newRank("NewnanC","BrookwoodB",230,170);
+    await newRank("ChattahoocheeB","NewnanB",240,220);
+    await newRank("HermannA","CherokeeBluff",290,220);
+    await newRank("FultonA","GeorgeWaltonB",410,40);
     //Round 2
-    await newRank("LambertAV","NewnanAV",430,200);
-    await newRank("BrookwoodAV","WoodstockAV",350,160);
-    await newRank("ChattahoocheeAV","WoodwardAV",410,140);
-    await newRank("ApalacheeAV","GeorgeWaltonAV",220,190);
-    await newRank("CambridgeAV","CommerceAV",510,110);
-    await newRank("ChattahoocheeBJV","ApalacheeBJV",360,60);
-    await newRank("NewnanCJV","CherokeeBluffJV",240,190);
-    await newRank("NewnanBJV","FultonAJV",210,150);
-    await newRank("HermannAJV","GeorgeWaltonBJV",450,40);
+    await newRank("LambertA","NewnanA",430,200);
+    await newRank("BrookwoodA","WoodstockA",350,160);
+    await newRank("ChattahoocheeA","WoodwardA",410,140);
+    await newRank("ApalacheeA","GeorgeWaltonA",220,190);
+    await newRank("CambridgeA","CommerceA",510,110);
+    await newRank("ChattahoocheeB","ApalacheeB",360,60);
+    await newRank("NewnanC","CherokeeBluff",240,190);
+    await newRank("NewnanB","FultonA",210,150);
+    await newRank("HermannA","GeorgeWaltonB",450,40);
     //Round 3
-    await newRank("BrookwoodAV","WoodwardAV",360,110);
-    await newRank("LambertAV","WoodstockAV",380,120);
-    await newRank("ChattahoocheeAV","NewnanAV",370,170);
-    await newRank("CommerceAV","GeorgeWaltonAV",250,220);
-    await newRank("JohnsCreekAV","ApalacheeAV",340,130);
-    await newRank("CherokeeBluffJV","BrookwoodBJV",240,220);
-    await newRank("FultonAJV","ApalacheeBJV",330,100);
-    await newRank("NewnanCJV","GeorgeWaltonBJV",230,200);
-    await newRank("HermannAJV","NewnanBJV",310,170);
+    await newRank("BrookwoodA","WoodwardA",360,110);
+    await newRank("LambertA","WoodstockA",380,120);
+    await newRank("ChattahoocheeA","NewnanA",370,170);
+    await newRank("CommerceA","GeorgeWaltonA",250,220);
+    await newRank("JohnsCreekA","ApalacheeA",340,130);
+    await newRank("CherokeeBluff","BrookwoodB",240,220);
+    await newRank("FultonA","ApalacheeB",330,100);
+    await newRank("NewnanC","GeorgeWaltonB",230,200);
+    await newRank("HermannA","NewnanB",310,170);
     //Round 4
-    await newRank("LambertAV","WoodwardAV",460,140);
-    await newRank("ChattahoocheeAV","BrookwoodAV",400,150);
-    await newRank("NewnanAV","WoodstockAV",320,180);
-    await newRank("CambridgeAV","GeorgeWaltonAV",490,80);
-    await newRank("JohnsCreekAV","CommerceAV",280,140);
-    await newRank("CherokeeBluffJV","GeorgeWaltonBJV",320,70);
-    await newRank("HermannAJV","ChattahoocheeBJV",260,200);
-    await newRank("BrookwoodBJV","NewnanBJV",200,190);
-    await newRank("NewnanCJV","ApalacheeBJV",170,110);
+    await newRank("LambertA","WoodwardA",460,140);
+    await newRank("ChattahoocheeA","BrookwoodA",400,150);
+    await newRank("NewnanA","WoodstockA",320,180);
+    await newRank("CambridgeA","GeorgeWaltonA",490,80);
+    await newRank("JohnsCreekA","CommerceA",280,140);
+    await newRank("CherokeeBluff","GeorgeWaltonB",320,70);
+    await newRank("HermannA","ChattahoocheeB",260,200);
+    await newRank("BrookwoodB","NewnanB",200,190);
+    await newRank("NewnanC","ApalacheeB",170,110);
     //Round 5
-    await newRank("ChattahoocheeAV","WoodstockAV",370,200);
-    await newRank("WoodwardAV","NewnanAV",200,180);
-    await newRank("LambertAV","BrookwoodAV",380,200);
-    await newRank("CambridgeAV","ApalacheeAV",510,60);
-    await newRank("JohnsCreekAV","GeorgeWaltonAV",310,150);
-    await newRank("HermannAJV","FultonAJV",270,200);
-    await newRank("CherokeeBluffJV","NewnanBJV",230,180);
-    await newRank("ChattahoocheeBJV","NewnanCJV",230,180);
-    await newRank("BrookwoodBJV","ApalacheeBJV",250,80);
+    await newRank("ChattahoocheeA","WoodstockA",370,200);
+    await newRank("WoodwardA","NewnanA",200,180);
+    await newRank("LambertA","BrookwoodA",380,200);
+    await newRank("CambridgeA","ApalacheeA",510,60);
+    await newRank("JohnsCreekA","GeorgeWaltonA",310,150);
+    await newRank("HermannA","FultonA",270,200);
+    await newRank("CherokeeBluff","NewnanB",230,180);
+    await newRank("ChattahoocheeB","NewnanC",230,180);
+    await newRank("BrookwoodB","ApalacheeB",250,80);
     //Varsity Playoffs
     //Quarterfinals
-    await newRank("CambridgeAV","CommerceAV",340,130);
-    await newRank("LambertAV","WoodstockAV",370,160);
-    await newRank("ChattahoocheeAV","NewnanAV",350,160);
-    await newRank("BrookwoodAV","JohnsCreekAV",220,190);
+    await newRank("CambridgeA","CommerceA",340,130);
+    await newRank("LambertA","WoodstockA",370,160);
+    await newRank("ChattahoocheeA","NewnanA",350,160);
+    await newRank("BrookwoodA","JohnsCreekA",220,190);
     //Semifinals
-    await newRank("CambridgeAV","BrookwoodAV",320,150);
-    await newRank("LambertAV","ChattahoocheeAV",271,270);
+    await newRank("CambridgeA","BrookwoodA",320,150);
+    await newRank("LambertA","ChattahoocheeA",271,270);
     //Finals
-    await newRank("CambridgeAV","LambertAV",310,250);
+    await newRank("CambridgeA","LambertA",310,250);
     //JV Playoffs
     //Semifinals
-    await newRank("HermannAJV","CherokeeBluffJV",370,80);
-    await newRank("ChattahoocheeBJV","FultonAJV",210,160);
+    await newRank("HermannA","CherokeeBluff",370,80);
+    await newRank("ChattahoocheeB","FultonA",210,160);
     //Finals
-    await newRank("ChattahoocheeBJV","HermannAJV",280,140);
+    await newRank("ChattahoocheeB","HermannA",280,140);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -5333,109 +5336,109 @@ async function cSetData(){
     //Central Florida Fall C-Set
     //Prelims
     //Round 1
-    await newRank("PineViewAV","RiverviewEV",270,220);
-    await newRank("RiverviewAV","LargoBV",280,240);
-    await newRank("BerkeleyBV","KingAV",270,240);
-    await newRank("TrinityBV","ClassicalAV",290,180);
-    await newRank("TrinityAV","RiverviewDV",450,70);
-    await newRank("LargoAV","RiverviewBV",380,160);
-    await newRank("KingBV","BerkeleyAV",340,190);
-    await newRank("ManateeAV","RiverviewCV",320,200);
-    await newRank("RiverviewHJV","LargoCJV",230,170);
-    await newRank("BerkeleyCJV","RiverviewIJV",330,20);
-    await newRank("RiverviewFJV","RiverviewGJV",310,50);
-    await newRank("ManateeBJV","RiverviewJJV",330,30);
-    await newRank("ClassicalBJV","BerkeleyDJV",140,110);
-    await newRank("ClassicalBJV","BerkeleyDJV",140,110);
-    await newRank("ClassicalCMS","ClassicalEMS",190,30);
-    await newRank("TrinityDMS","ClassicalDMS",220,40);
+    await newRank("PineViewA","RiverviewE",270,220);
+    await newRank("RiverviewA","LargoB",280,240);
+    await newRank("BerkeleyB","KingA",270,240);
+    await newRank("TrinityB","ClassicalA",290,180);
+    await newRank("TrinityA","RiverviewD",450,70);
+    await newRank("LargoA","RiverviewB",380,160);
+    await newRank("KingB","BerkeleyA",340,190);
+    await newRank("ManateeA","RiverviewC",320,200);
+    await newRank("RiverviewH","LargoC",230,170);
+    await newRank("BerkeleyC","RiverviewI",330,20);
+    await newRank("RiverviewF","RiverviewG",310,50);
+    await newRank("ManateeB","RiverviewJ",330,30);
+    await newRank("ClassicalB","BerkeleyD",140,110);
+    await newRank("ClassicalB","BerkeleyD",140,110);
+    await newRank("ClassicalC","ClassicalE",190,30);
+    await newRank("TrinityD","ClassicalD",220,40);
     //Round 2
-    await newRank("RiverviewCV","ClassicalAV",260,220);
-    await newRank("KingAV","RiverviewDV",320,120);
-    await newRank("TrinityAV","BerkeleyBV",320,310);
-    await newRank("KingBV","RiverviewAV",230,220);
-    await newRank("LargoAV","RiverviewEV",350,130);
-    await newRank("ManateeAV","TrinityBV",240,220);
-    await newRank("LargoBV","BerkeleyAV",340,140);
-    await newRank("PineViewAV","RiverviewBV",250,200);
-    await newRank("RiverviewFJV","RiverviewIJV",360,60);
-    await newRank("RiverviewGJV","RiverviewJJV",280,70);
-    await newRank("ManateeBJV","BerkeleyDJV",170,130);
-    await newRank("LargoCJV","ClassicalBJV",240,100);
-    await newRank("BerkeleyCJV","RiverviewHJV",240,180);
-    await newRank("TrinityCMS","ClassicalEMS",430,10);
-    await newRank("ClassicalCMS","TrinityDMS",150,140);
+    await newRank("RiverviewC","ClassicalA",260,220);
+    await newRank("KingA","RiverviewD",320,120);
+    await newRank("TrinityA","BerkeleyB",320,310);
+    await newRank("KingB","RiverviewA",230,220);
+    await newRank("LargoA","RiverviewE",350,130);
+    await newRank("ManateeA","TrinityB",240,220);
+    await newRank("LargoB","BerkeleyA",340,140);
+    await newRank("PineViewA","RiverviewB",250,200);
+    await newRank("RiverviewF","RiverviewI",360,60);
+    await newRank("RiverviewG","RiverviewJ",280,70);
+    await newRank("ManateeB","BerkeleyD",170,130);
+    await newRank("LargoC","ClassicalB",240,100);
+    await newRank("BerkeleyC","RiverviewH",240,180);
+    await newRank("TrinityC","ClassicalE",430,10);
+    await newRank("ClassicalC","TrinityD",150,140);
     //Round 3
-    await newRank("TrinityAV","ManateeAV",510,80);
-    await newRank("TrinityBV","RiverviewDV",330,130);
-    await newRank("KingAV","ClassicalAV",360,140);
-    await newRank("BerkeleyAV","PineViewAV",230,220);
-    await newRank("RiverviewCV","BerkeleyBV",320,250);
-    await newRank("TrinityCMS","ClassicalDMS",490,10);
-    await newRank("LargoBV","RiverviewEV",260,160);
-    await newRank("RiverviewFJV","RiverviewHJV",210,150);
-    await newRank("LargoAV","RiverviewAV",370,150);
-    await newRank("KingBV","RiverviewBV",270,220);
-    await newRank("ManateeBJV","LargoCJV",230,190);
-    await newRank("RiverviewIJV","RiverviewJJV",140,120);
-    await newRank("BerkeleyCJV","ClassicalBJV",190,170);
-    await newRank("TrinityCMS","ClassicalDMS",490,10);
-    await newRank("TrinityDMS","ClassicalEMS",230,40);
+    await newRank("TrinityA","ManateeA",510,80);
+    await newRank("TrinityB","RiverviewD",330,130);
+    await newRank("KingA","ClassicalA",360,140);
+    await newRank("BerkeleyA","PineViewA",230,220);
+    await newRank("RiverviewC","BerkeleyB",320,250);
+    await newRank("TrinityC","ClassicalD",490,10);
+    await newRank("LargoB","RiverviewE",260,160);
+    await newRank("RiverviewF","RiverviewH",210,150);
+    await newRank("LargoA","RiverviewA",370,150);
+    await newRank("KingB","RiverviewB",270,220);
+    await newRank("ManateeB","LargoC",230,190);
+    await newRank("RiverviewI","RiverviewJ",140,120);
+    await newRank("BerkeleyC","ClassicalB",190,170);
+    await newRank("TrinityC","ClassicalD",490,10);
+    await newRank("TrinityD","ClassicalE",230,40);
     //Round 4
-    await newRank("KingBV","RiverviewEV",330,110);
-    await newRank("BerkeleyBV","TrinityBV",340,160);
-    await newRank("BerkeleyCJV","ManateeBJV",250,130);
-    await newRank("TrinityCMS","ClassicalCMS",410,40);
-    await newRank("RiverviewAV","PineViewAV",290,200);
-    await newRank("LargoAV","BerkeleyAV",330,170);
-    await newRank("LargoBV","RiverviewBV",290,150);
-    await newRank("LargoCJV","RiverviewGJV",190,110);
-    await newRank("BerkeleyDJV","RiverviewIJV",160,70);
-    await newRank("ClassicalDMS","ClassicalEMS",60,50);
-    await newRank("RiverviewCV","RiverviewDV",470,110);
-    await newRank("RiverviewHJV","RiverviewJJV",180,90);
-    await newRank("RiverviewFJV","ClassicalBJV",340,130);
-    await newRank("KingAV","ManateeAV",270,160);
-    await newRank("TrinityAV","ClassicalAV",500,70);
+    await newRank("KingB","RiverviewE",330,110);
+    await newRank("BerkeleyB","TrinityB",340,160);
+    await newRank("BerkeleyC","ManateeB",250,130);
+    await newRank("TrinityC","ClassicalC",410,40);
+    await newRank("RiverviewA","PineViewA",290,200);
+    await newRank("LargoA","BerkeleyA",330,170);
+    await newRank("LargoB","RiverviewB",290,150);
+    await newRank("LargoC","RiverviewG",190,110);
+    await newRank("BerkeleyD","RiverviewI",160,70);
+    await newRank("ClassicalD","ClassicalE",60,50);
+    await newRank("RiverviewC","RiverviewD",470,110);
+    await newRank("RiverviewH","RiverviewJ",180,90);
+    await newRank("RiverviewF","ClassicalB",340,130);
+    await newRank("KingA","ManateeA",270,160);
+    await newRank("TrinityA","ClassicalA",500,70);
     //Round 5
-    await newRank("TrinityAV","LargoAV",310,230);
-    await newRank("RiverviewAV","ManateeAV",300,140);
-    await newRank("ClassicalAV","BerkeleyAV",210,160);
-    await newRank("BerkeleyBV","RiverviewBV",220,150);
-    await newRank("TrinityCMS","TrinityDMS",330,60);
-    await newRank("ClassicalBJV","RiverviewJJV",220,60);
-    await newRank("KingBV","RiverviewCV",320,150);
-    await newRank("RiverviewFJV","ManateeBJV",210,90);
-    await newRank("KingAV","PineViewAV",290,140);
-    await newRank("LargoCJV","RiverviewIJV",150,80);
-    await newRank("BerkeleyCJV","RiverviewGJV",260,70);
-    await newRank("RiverviewEV","RiverviewDV",190,150);
-    await newRank("RiverviewHJV","BerkeleyDJV",240,100);
-    await newRank("TrinityBV","LargoBV",230,190);
-    await newRank("ClassicalCMS","ClassicalDMS",120,50);
+    await newRank("TrinityA","LargoA",310,230);
+    await newRank("RiverviewA","ManateeA",300,140);
+    await newRank("ClassicalA","BerkeleyA",210,160);
+    await newRank("BerkeleyB","RiverviewB",220,150);
+    await newRank("TrinityC","TrinityD",330,60);
+    await newRank("ClassicalB","RiverviewJ",220,60);
+    await newRank("KingB","RiverviewC",320,150);
+    await newRank("RiverviewF","ManateeB",210,90);
+    await newRank("KingA","PineViewA",290,140);
+    await newRank("LargoC","RiverviewI",150,80);
+    await newRank("BerkeleyC","RiverviewG",260,70);
+    await newRank("RiverviewE","RiverviewD",190,150);
+    await newRank("RiverviewH","BerkeleyD",240,100);
+    await newRank("TrinityB","LargoB",230,190);
+    await newRank("ClassicalC","ClassicalD",120,50);
     //Varsity Playoffs
     //Quarterfinals
-    await newRank("TrinityAV","RiverviewAV",370,100);
-    await newRank("LargoAV","BerkeleyBV",280,130);
-    await newRank("KingBV","LargoBV",190,170);
-    await newRank("KingAV","RiverviewCV",290,150);
+    await newRank("TrinityA","RiverviewA",370,100);
+    await newRank("LargoA","BerkeleyB",280,130);
+    await newRank("KingB","LargoB",190,170);
+    await newRank("KingA","RiverviewC",290,150);
     //Semifinals
-    await newRank("LargoAV","KingBV",280,150);
-    await newRank("TrinityAV","KingAV",310,180);
+    await newRank("LargoA","KingB",280,150);
+    await newRank("TrinityA","KingA",310,180);
     //Finals
-    await newRank("TrinityAV","LargoAV",330,170);
+    await newRank("TrinityA","LargoA",330,170);
     //JV Playoffs
     //Quarterfinals
-    //await newRank("RiverviewFJV","BerkeleyDJV",1,0);
-    await newRank("BerkeleyCJV","RiverviewGJV",260,50);
-    await newRank("LargoCJV","ManateeBJV",180,80);
-    await newRank("RiverviewHJV","ClassicalBJV",210,80);
+    //await newRank("RiverviewF","BerkeleyD",1,0);
+    await newRank("BerkeleyC","RiverviewG",260,50);
+    await newRank("LargoC","ManateeB",180,80);
+    await newRank("RiverviewH","ClassicalB",210,80);
     //Semifinals
-    await newRank("RiverviewHJV","BerkeleyCJV",170,130);
-    await newRank("RiverviewFJV","LargoCJV",200,100);
-    await newRank("RiverviewHJV","RiverviewFJV",121,120);
+    await newRank("RiverviewH","BerkeleyC",170,130);
+    await newRank("RiverviewF","LargoC",200,100);
+    await newRank("RiverviewH","RiverviewF",121,120);
     //MS Final
-    await newRank("TrinityCMS","TrinityDMS",310,40);
+    await newRank("TrinityC","TrinityD",310,40);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     allMS.push(teamAvgMS);
@@ -5448,30 +5451,30 @@ async function cSetData(){
     //Western Washington C-Set
     //Prelims
     //Round 1
-    await newRank("CentralKitsapAV","HolyNamesAV",320,200);
-    await newRank("OdleAJV","JohnPaulIIBJV",250,120);
-    await newRank("TeslaAJV","DuvallJV",400,70);
+    await newRank("CentralKitsapA","HolyNamesA",320,200);
+    await newRank("OdleA","JohnPaulIIB",250,120);
+    await newRank("TeslaA","Duvall",400,70);
     //Round 2
-    await newRank("HolyNamesAV","JohnPaulIIAV",240,200);
-    await newRank("TeslaAJV","JohnPaulIIBJV",390,70);
-    await newRank("OdleAJV","DuvallJV",230,130);
+    await newRank("HolyNamesA","JohnPaulIIA",240,200);
+    await newRank("TeslaA","JohnPaulIIB",390,70);
+    await newRank("OdleA","Duvall",230,130);
     //Round 3
-    await newRank("CentralKitsapAV","JohnPaulIIAV",330,80);
-    await newRank("TeslaAJV","OdleAJV",330,140);
-    await newRank("JohnPaulIIBJV","DuvallJV",190,120);
+    await newRank("CentralKitsapA","JohnPaulIIA",330,80);
+    await newRank("TeslaA","OdleA",330,140);
+    await newRank("JohnPaulIIB","Duvall",190,120);
     //Round 4
-    await newRank("HolyNamesAV","JohnPaulIIAV",330,110);
-    await newRank("TeslaAJV","JohnPaulIIBJV",430,80);
-    await newRank("OdleAJV","DuvallJV",190,60);
+    await newRank("HolyNamesA","JohnPaulIIA",330,110);
+    await newRank("TeslaA","JohnPaulIIB",430,80);
+    await newRank("OdleA","Duvall",190,60);
     //Round 5
-    await newRank("CentralKitsapAV","JohnPaulIIAV",320,90);
-    await newRank("TeslaAJV","OdleAJV",360,110);
-    await newRank("JohnPaulIIBJV","DuvallJV",160,90);
+    await newRank("CentralKitsapA","JohnPaulIIA",320,90);
+    await newRank("TeslaA","OdleA",360,110);
+    await newRank("JohnPaulIIB","Duvall",160,90);
     //Round 6
-    await newRank("HolyNamesAV","CentralKitsapAV",300,160);
+    await newRank("HolyNamesA","CentralKitsapA",300,160);
     //Varsity Playoffs
     //Finals
-    await newRank("CentralKitsapAV","HolyNamesAV",250,150);
+    await newRank("CentralKitsapA","HolyNamesA",250,150);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -5482,44 +5485,44 @@ async function cSetData(){
     //Southern Washington C-Set
     //Prelims
     //Round 1
-    await newRank("JesuitAV","LincolnAV",340,180);
-    await newRank("ColumbiaRiverAV","WestviewAV",271,270);//Columbia River wins on
-    await newRank("LewisandClarkAV","WestviewBV",340,110);
-    await newRank("JesuitBV","ColumbiaRiverBV",340,110);
-    await newRank("StollerKMS","StollerTMS",340,140);
-    await newRank("StollerHMS","StollerWMS",410,70);
+    await newRank("JesuitA","LincolnA",340,180);
+    await newRank("ColumbiaRiverA","WestviewA",271,270);//Columbia River wins on
+    await newRank("LewisandClarkA","WestviewB",340,110);
+    await newRank("JesuitB","ColumbiaRiverB",340,110);
+    await newRank("StollerK","StollerT",340,140);
+    await newRank("StollerH","StollerW",410,70);
     //Round 2
-    await newRank("LewisandClarkAV","JesuitBV",220,140);
-    await newRank("JesuitAV","ColumbiaRiverAV",360,180);
-    await newRank("WestviewAV","ColumbiaRiverAV",380,100);
+    await newRank("LewisandClarkA","JesuitB",220,140);
+    await newRank("JesuitA","ColumbiaRiverA",360,180);
+    await newRank("WestviewA","ColumbiaRiverA",380,100);
     //Round 3
-    await newRank("JesuitAV","ColumbiaRiverBV",430,70);
-    await newRank("WestviewAV","LewisandClarkAV",330,200);
-    await newRank("JesuitBV","LincolnAV",260,210);
-    await newRank("ColumbiaRiverAV","WestviewBV",410,120);
-    await newRank("StollerKMS","StollerWMS",450,70);
-    await newRank("StollerHMS","StollerTMS",380,90);
+    await newRank("JesuitA","ColumbiaRiverB",430,70);
+    await newRank("WestviewA","LewisandClarkA",330,200);
+    await newRank("JesuitB","LincolnA",260,210);
+    await newRank("ColumbiaRiverA","WestviewB",410,120);
+    await newRank("StollerK","StollerW",450,70);
+    await newRank("StollerH","StollerT",380,90);
     //Round 4
-    await newRank("ColumbiaRiverAV","JesuitBV",410,130);
-    await newRank("WestviewAV","LincolnAV",350,220);
-    await newRank("JesuitAV","LewisandClarkAV",350,130);
-    await newRank("WestviewBV","ColumbiaRiverBV",250,70);
-    await newRank("StollerKMS","StollerHMS",350,200);
-    await newRank("StollerWMS","StollerTMS",210,110);
+    await newRank("ColumbiaRiverA","JesuitB",410,130);
+    await newRank("WestviewA","LincolnA",350,220);
+    await newRank("JesuitA","LewisandClarkA",350,130);
+    await newRank("WestviewB","ColumbiaRiverB",250,70);
+    await newRank("StollerK","StollerH",350,200);
+    await newRank("StollerW","StollerT",210,110);
     //Round 5
-    await newRank("LincolnAV","ColumbiaRiverBV",300,110);
-    await newRank("WestviewAV","JesuitBV",340,110);
-    await newRank("ColumbiaRiverAV","LewisandClarkAV",300,160);
-    await newRank("JesuitAV","WestviewBV",430,80);
+    await newRank("LincolnA","ColumbiaRiverB",300,110);
+    await newRank("WestviewA","JesuitB",340,110);
+    await newRank("ColumbiaRiverA","LewisandClarkA",300,160);
+    await newRank("JesuitA","WestviewB",430,80);
     //Varsity Playoffs
     //Semifinals
-    await newRank("WestviewAV","ColumbiaRiverAV",250,170);
-    await newRank("JesuitAV","LincolnAV",320,130);
+    await newRank("WestviewA","ColumbiaRiverA",250,170);
+    await newRank("JesuitA","LincolnA",320,130);
     //Finals
-    await newRank("JesuitAV","WestviewAV",220,180);
+    await newRank("JesuitA","WestviewA",220,180);
     //MS Playoffs
     //Finals
-    await newRank("StollerHMS","StollerKMS",240,200);
+    await newRank("StollerH","StollerK",240,200);
     allV.push(teamAvgV);
     allMS.push(teamAvgMS);
     teamAvgV = [];
@@ -5529,52 +5532,52 @@ async function cSetData(){
     //Boston Fall C-Set
     //Prelims
     //Round 1
-    await newRank("SalemBV","NorthfieldMtHermonAV",231,230);
-    await newRank("BostonLatinAV","TantasquaBV",430,110);
-    await newRank("PhillipsExeterAV","SalemAV",380,130);
-    await newRank("LexingtonAV","TantasquaAV",380,150);
-    await newRank("LexingtonBJV","BromfieldAJV",450,60);
-    await newRank("PhillipsExeterBJV","PhillipsAndoverAJV",440,60);
+    await newRank("SalemB","NorthfieldMtHermonA",231,230);
+    await newRank("BostonLatinA","TantasquaB",430,110);
+    await newRank("PhillipsExeterA","SalemA",380,130);
+    await newRank("LexingtonA","TantasquaA",380,150);
+    await newRank("LexingtonB","BromfieldA",450,60);
+    await newRank("PhillipsExeterB","PhillipsAndoverA",440,60);
     //Round 2
-    await newRank("TantasquaAV","SalemBV",230,210);
-    await newRank("PhillipsExeterAV","NorthfieldMtHermonAV",370,150);
-    await newRank("SalemAV","TantasquaBV",340,150);
-    await newRank("BostonLatinAV","LexingtonAV",320,240);
-    await newRank("BromfieldAJV","PhillipsAndoverAJV",180,170);
-    await newRank("PhillipsExeterBJV","LexingtonBJV",310,280);
+    await newRank("TantasquaA","SalemB",230,210);
+    await newRank("PhillipsExeterA","NorthfieldMtHermonA",370,150);
+    await newRank("SalemA","TantasquaB",340,150);
+    await newRank("BostonLatinA","LexingtonA",320,240);
+    await newRank("BromfieldA","PhillipsAndoverA",180,170);
+    await newRank("PhillipsExeterB","LexingtonB",310,280);
     //Round 3
-    await newRank("BostonLatinAV","TantasquaAV",470,120);
-    await newRank("LexingtonAV","SalemAV",370,130);
-    await newRank("NorthfieldMtHermonAV","TantasquaBV",280,220);
-    await newRank("PhillipsExeterAV","SalemBV",350,150);
-    await newRank("LexingtonBJV","PhillipsAndoverAJV",410,110);
-    await newRank("PhillipsExeterBJV","BromfieldAJV",360,120);
+    await newRank("BostonLatinA","TantasquaA",470,120);
+    await newRank("LexingtonA","SalemA",370,130);
+    await newRank("NorthfieldMtHermonA","TantasquaB",280,220);
+    await newRank("PhillipsExeterA","SalemB",350,150);
+    await newRank("LexingtonB","PhillipsAndoverA",410,110);
+    await newRank("PhillipsExeterB","BromfieldA",360,120);
     //Round 4
-    await newRank("LexingtonAV","NorthfieldMtHermonAV",420,140);
-    await newRank("PhillipsExeterAV","TantasquaBV",450,90);
-    await newRank("SalemAV","TantasquaBV",230,200);
-    await newRank("BostonLatinAV","SalemBV",370,180);
-    await newRank("LexingtonBJV","BromfieldAJV",440,80);
-    await newRank("PhillipsExeterBJV","PhillipsAndoverAJV",450,110);
+    await newRank("LexingtonA","NorthfieldMtHermonA",420,140);
+    await newRank("PhillipsExeterA","TantasquaB",450,90);
+    await newRank("SalemA","TantasquaB",230,200);
+    await newRank("BostonLatinA","SalemB",370,180);
+    await newRank("LexingtonB","BromfieldA",440,80);
+    await newRank("PhillipsExeterB","PhillipsAndoverA",450,110);
     //Round 5
-    await newRank("PhillipsExeterAV","LexingtonAV",370,210);
-    await newRank("TantasquaAV","NorthfieldMtHermonAV",200,180);
-    await newRank("BostonLatinAV","SalemAV",510,70);
-    await newRank("SalemBV","TantasquaBV",280,110);
-    await newRank("PhillipsAndoverAJV","BromfieldAJV",150,140);
-    await newRank("LexingtonBJV","PhillipsExeterBJV",270,230);
+    await newRank("PhillipsExeterA","LexingtonA",370,210);
+    await newRank("TantasquaA","NorthfieldMtHermonA",200,180);
+    await newRank("BostonLatinA","SalemA",510,70);
+    await newRank("SalemB","TantasquaB",280,110);
+    await newRank("PhillipsAndoverA","BromfieldA",150,140);
+    await newRank("LexingtonB","PhillipsExeterB",270,230);
     //Round 6
-    await newRank("LexingtonBJV","PhillipsAndoverAJV",300,130);
-    await newRank("PhillipsExeterBJV","BromfieldAJV",330,130);
+    await newRank("LexingtonB","PhillipsAndoverA",300,130);
+    await newRank("PhillipsExeterB","BromfieldA",330,130);
     //Varsity Playoffs
     //Semifinals
-    await newRank("BostonLatinAV","SalemBV",290,180);
-    await newRank("PhillipsExeterAV","LexingtonAV",260,250);
+    await newRank("BostonLatinA","SalemB",290,180);
+    await newRank("PhillipsExeterA","LexingtonA",260,250);
     //Finals
-    await newRank("BostonLatinAV","PhillipsExeterAV",300,170);
+    await newRank("BostonLatinA","PhillipsExeterA",300,170);
     //JV Playoffs
     //Finals
-    await newRank("PhillipsExeterBJV","LexingtonBJV",240,180);
+    await newRank("PhillipsExeterB","LexingtonB",240,180);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -5585,106 +5588,106 @@ async function cSetData(){
     //Washington DC C-Set
     //Prelims
     //Round
-    await newRank("CentennialAV","GeorgetownDayAV",330,310);
-    await newRank("ThomasJeffersonAV","MountVernonAV",490,110);
-    await newRank("BASISMcLeanAV","ThomasJeffersonBV",320,290);
-    await newRank("MontgomeryBlairAV","GlenelgAV",420,150);
-    await newRank("StAnselmsAV","CentennialBV",380,190);
-    await newRank("MontgomeryBlairCJV","CentennialEJV",260,190);
-    await newRank("CentennialCJV","CentennialDJV",390,160);
-    await newRank("MontgomeryBlairBJV","ThomasJeffersonDJV",390,180);
-    await newRank("ThomasJeffersonCJV","GeorgetownDayBJV",400,160);
-    await newRank("McLeanAJV","StAnselmsBJV",350,190);
-    await newRank("CentennialLaneAMS","BurleighManorDMS",330,160);
-    await newRank("BurleighManorAMS","NysmithBMS",410,60);
-    await newRank("BurleighManorCMS","CentennialLaneBMS",210,180);
-    await newRank("CompassMSA","CentennialLaneCMS",270,130);
-    await newRank("NysmithAMS","RipponBMS",310,90);
-    await newRank("BurleighManorBMS","RipponAMS",330,170);
+    await newRank("CentennialA","GeorgetownDayA",330,310);
+    await newRank("ThomasJeffersonA","MountVernonA",490,110);
+    await newRank("BASISMcLeanA","ThomasJeffersonB",320,290);
+    await newRank("MontgomeryBlairA","GlenelgA",420,150);
+    await newRank("StAnselmsA","CentennialB",380,190);
+    await newRank("MontgomeryBlairC","CentennialE",260,190);
+    await newRank("CentennialC","CentennialD",390,160);
+    await newRank("MontgomeryBlairB","ThomasJeffersonD",390,180);
+    await newRank("ThomasJeffersonC","GeorgetownDayB",400,160);
+    await newRank("McLeanA","StAnselmsB",350,190);
+    await newRank("CentennialLaneA","BurleighManorD",330,160);
+    await newRank("BurleighManorA","NysmithB",410,60);
+    await newRank("BurleighManorC","CentennialLaneB",210,180);
+    await newRank("CompassMSA","CentennialLaneC",270,130);
+    await newRank("NysmithA","RipponB",310,90);
+    await newRank("BurleighManorB","RipponA",330,170);
     //Round 2
-    await newRank("GeorgetownDayAV","GlenelgAV",410,180);
-    await newRank("RichardMontgomeryAV","BASISMcLeanAV",390,290);
-    await newRank("ThomasJeffersonBV","MountVernonAV",540,80);
-    await newRank("MontgomeryBlairAV","CentennialBV",470,140);
-    await newRank("ThomasJeffersonAV","StAnselmsAV",420,230);
-    await newRank("RichardMontgomeryBJV","StAnselmsBJV",450,100);
-    await newRank("MontgomeryBlairBJV","CentennialEJV",510,90);
-    await newRank("ThomasJeffersonCJV","ThomasJeffersonDJV",300,280);
-    await newRank("CentennialCJV","MontgomeryBlairCJV",320,170);
-    await newRank("McLeanAJV","CentennialDJV",300,150);
-    await newRank("BurleighManorCMS","RipponBMS",230,140);
-    await newRank("CentennialLaneAMS","CentennialLaneBMS",370,90);
-    await newRank("BurleighManorBMS","BurleighManorDMS",340,150);
-    await newRank("BurleighManorAMS","CentennialLaneCMS",350,90);
-    await newRank("NysmithAMS","CompassMSA",300,200);
-    await newRank("RipponAMS","NysmithBMS",260,140);
+    await newRank("GeorgetownDayA","GlenelgA",410,180);
+    await newRank("RichardMontgomeryA","BASISMcLeanA",390,290);
+    await newRank("ThomasJeffersonB","MountVernonA",540,80);
+    await newRank("MontgomeryBlairA","CentennialB",470,140);
+    await newRank("ThomasJeffersonA","StAnselmsA",420,230);
+    await newRank("RichardMontgomeryB","StAnselmsB",450,100);
+    await newRank("MontgomeryBlairB","CentennialE",510,90);
+    await newRank("ThomasJeffersonC","ThomasJeffersonD",300,280);
+    await newRank("CentennialC","MontgomeryBlairC",320,170);
+    await newRank("McLeanA","CentennialD",300,150);
+    await newRank("BurleighManorC","RipponB",230,140);
+    await newRank("CentennialLaneA","CentennialLaneB",370,90);
+    await newRank("BurleighManorB","BurleighManorD",340,150);
+    await newRank("BurleighManorA","CentennialLaneC",350,90);
+    await newRank("NysmithA","CompassMSA",300,200);
+    await newRank("RipponA","NysmithB",260,140);
     //Round 3
-    await newRank("MontgomeryBlairAV","ThomasJeffersonBV",430,210);
-    await newRank("StAnselmsAV","MountVernonAV",470,70);
-    await newRank("GlenelgAV","CentennialBV",290,220);
-    await newRank("CentennialAV","BASISMcLeanAV",350,250);
-    await newRank("RichardMontgomeryAV","ThomasJeffersonAV",380,230);
-    await newRank("GeorgetownDayBJV","StAnselmsBJV",300,250);
-    await newRank("MontgomeryBlairBJV","McLeanAJV",350,220);
-    await newRank("ThomasJeffersonDJV","CentennialEJV",290,210);
-    await newRank("RichardMontgomeryBJV","CentennialLaneCMS",330,230);
-    await newRank("MontgomeryBlairCJV","CentennialDJV",350,140);
-    await newRank("RipponAMS","BurleighManorDMS",250,200);
-    await newRank("BurleighManorBMS","CentennialLaneBMS",330,120);
-    await newRank("NysmithBMS","CentennialLaneCMS",310,80);
-    await newRank("NysmithAMS","CentennialLaneAMS",350,170);
-    await newRank("BurleighManorAMS","BurleighManorCMS",430,70);
+    await newRank("MontgomeryBlairA","ThomasJeffersonB",430,210);
+    await newRank("StAnselmsA","MountVernonA",470,70);
+    await newRank("GlenelgA","CentennialB",290,220);
+    await newRank("CentennialA","BASISMcLeanA",350,250);
+    await newRank("RichardMontgomeryA","ThomasJeffersonA",380,230);
+    await newRank("GeorgetownDayB","StAnselmsB",300,250);
+    await newRank("MontgomeryBlairB","McLeanA",350,220);
+    await newRank("ThomasJeffersonD","CentennialE",290,210);
+    await newRank("RichardMontgomeryB","CentennialLaneC",330,230);
+    await newRank("MontgomeryBlairC","CentennialD",350,140);
+    await newRank("RipponA","BurleighManorD",250,200);
+    await newRank("BurleighManorB","CentennialLaneB",330,120);
+    await newRank("NysmithB","CentennialLaneC",310,80);
+    await newRank("NysmithA","CentennialLaneA",350,170);
+    await newRank("BurleighManorA","BurleighManorC",430,70);
     //Round 4
-    await newRank("GeorgetownDayAV","MontgomeryBlairAV",380,290);
-    await newRank("ThomasJeffersonBV","CentennialBV",520,100);
-    await newRank("ThomasJeffersonAV","CentennialAV",350,260);
-    await newRank("RichardMontgomeryAV","MountVernonAV",500,80);
-    await newRank("StAnselmsAV","GlenelgAV",340,290);
-    await newRank("McLeanAJV","CentennialEJV",360,120);
-    await newRank("ThomasJeffersonDJV","MontgomeryBlairCJV",400,200);
-    await newRank("GeorgetownDayBJV","CentennialCJV",280,250);
-    await newRank("MontgomeryBlairBJV","ThomasJeffersonCJV",350,280);
-    await newRank("BurleighManorDMS","CentennialLaneBMS",230,270);
-    await newRank("CompassMSA","NysmithBMS",200,190);
-    await newRank("CentennialLaneAMS","RipponBMS",340,70);
-    await newRank("BurleighManorBMS","NysmithAMS",270,210);
-    await newRank("BurleighManorAMS","RipponAMS",370,140);
-    await newRank("BurleighManorCMS","CentennialLaneCMS",240,70);
+    await newRank("GeorgetownDayA","MontgomeryBlairA",380,290);
+    await newRank("ThomasJeffersonB","CentennialB",520,100);
+    await newRank("ThomasJeffersonA","CentennialA",350,260);
+    await newRank("RichardMontgomeryA","MountVernonA",500,80);
+    await newRank("StAnselmsA","GlenelgA",340,290);
+    await newRank("McLeanA","CentennialE",360,120);
+    await newRank("ThomasJeffersonD","MontgomeryBlairC",400,200);
+    await newRank("GeorgetownDayB","CentennialC",280,250);
+    await newRank("MontgomeryBlairB","ThomasJeffersonC",350,280);
+    await newRank("BurleighManorD","CentennialLaneB",230,270);
+    await newRank("CompassMSA","NysmithB",200,190);
+    await newRank("CentennialLaneA","RipponB",340,70);
+    await newRank("BurleighManorB","NysmithA",270,210);
+    await newRank("BurleighManorA","RipponA",370,140);
+    await newRank("BurleighManorC","CentennialLaneC",240,70);
     //Round 5
-    await newRank("BASISMcLeanAV","StAnselmsAV",350,240);
-    await newRank("CentennialBV","MountVernonAV",380,80);
-    await newRank("RichardMontgomeryAV","MontgomeryBlairAV",430,200);
-    await newRank("CentennialAV","GlenelgAV",410,120);
-    await newRank("GeorgetownDayAV","ThomasJeffersonAV",400,240);
-    await newRank("CentennialEJV","CentennialDJV",240,180);
-    await newRank("ThomasJeffersonDJV","GeorgetownDayBJV",360,180);
-    await newRank("MontgomeryBlairBJV","RichardMontgomeryBJV",340,270);
-    await newRank("ThomasJeffersonCJV","CentennialCJV",360,180);
-    await newRank("StAnselmsBJV","MontgomeryBlairCJV",250,170);
-    await newRank("CompassMSA","CentennialLaneBMS",320,80);
-    await newRank("BurleighManorBMS","NysmithBMS",290,150);
-    await newRank("CentennialLaneCMS","RipponBMS",180,100);
-    await newRank("NysmithAMS","RipponAMS",270,120);
-    await newRank("BurleighManorAMS","CentennialLaneAMS",270,230);
-    await newRank("BurleighManorDMS","BurleighManorCMS",250,100);
+    await newRank("BASISMcLeanA","StAnselmsA",350,240);
+    await newRank("CentennialB","MountVernonA",380,80);
+    await newRank("RichardMontgomeryA","MontgomeryBlairA",430,200);
+    await newRank("CentennialA","GlenelgA",410,120);
+    await newRank("GeorgetownDayA","ThomasJeffersonA",400,240);
+    await newRank("CentennialE","CentennialD",240,180);
+    await newRank("ThomasJeffersonD","GeorgetownDayB",360,180);
+    await newRank("MontgomeryBlairB","RichardMontgomeryB",340,270);
+    await newRank("ThomasJeffersonC","CentennialC",360,180);
+    await newRank("StAnselmsB","MontgomeryBlairC",250,170);
+    await newRank("CompassMSA","CentennialLaneB",320,80);
+    await newRank("BurleighManorB","NysmithB",290,150);
+    await newRank("CentennialLaneC","RipponB",180,100);
+    await newRank("NysmithA","RipponA",270,120);
+    await newRank("BurleighManorA","CentennialLaneA",270,230);
+    await newRank("BurleighManorD","BurleighManorC",250,100);
     //Varsity Playoffs
     //Semifinals
-    await newRank("RichardMontgomeryAV","MontgomeryBlairAV",360,260);
-    await newRank("GeorgetownDayAV","ThomasJeffersonAV",390,200);
+    await newRank("RichardMontgomeryA","MontgomeryBlairA",360,260);
+    await newRank("GeorgetownDayA","ThomasJeffersonA",390,200);
     //Finals
-    await newRank("GeorgetownDayAV","RichardMontgomeryAV",300,280);
+    await newRank("GeorgetownDayA","RichardMontgomeryA",300,280);
     //JV Playoffs
     //Semifinals
-    await newRank("MontgomeryBlairBJV","ThomasJeffersonDJV",360,190);
-    await newRank("RichardMontgomeryBJV","ThomasJeffersonCJV",340,200);
+    await newRank("MontgomeryBlairB","ThomasJeffersonD",360,190);
+    await newRank("RichardMontgomeryB","ThomasJeffersonC",340,200);
     //Finals
-    await newRank("MontgomeryBlairBJV","RichardMontgomeryBJV",360,160);
+    await newRank("MontgomeryBlairB","RichardMontgomeryB",360,160);
     //MS Playoffs
     //Semifinals
-    await newRank("BurleighManorBMS","NysmithAMS",220,190);
-    await newRank("BurleighManorAMS","CompassMSA",220,190);
+    await newRank("BurleighManorB","NysmithA",220,190);
+    await newRank("BurleighManorA","CompassMSA",220,190);
     //Finals
-    await newRank("BurleighManorAMS","BurleighManorBMS",220,140);
+    await newRank("BurleighManorA","BurleighManorB",220,140);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     allMS.push(teamAvgMS);
@@ -5697,74 +5700,74 @@ async function cSetData(){
     //Southern New Jersey C-Set
     //Prelims
     //Round 1
-    await newRank("RanneyAV","MoorestownBV",260,210);
-    await newRank("PrincetonBV","MoorestownAV",360,170);
-    await newRank("HighTechAV","FontbonneAV",400,120);
-    await newRank("MoravianAV","FontbonneBV",440,70);
-    await newRank("PrincetonAV","DonovanCatholicAV",480,30);
-    await newRank("EastBrunswickAV","EastBrunswickBV",370,160);
-    await newRank("RanneyBJV","FordhamBJV",270,180);
-    await newRank("WiltonAnjoAJV","DonovanCatholicBJV",280,190);
-    await newRank("PrincetonCJV","PrincetonDJV",340,150);
-    await newRank("MillburnMSAJV","FontbonneCJV",350,80);
+    await newRank("RanneyA","MoorestownB",260,210);
+    await newRank("PrincetonB","MoorestownA",360,170);
+    await newRank("HighTechA","FontbonneA",400,120);
+    await newRank("MoravianA","FontbonneB",440,70);
+    await newRank("PrincetonA","DonovanCatholicA",480,30);
+    await newRank("EastBrunswickA","EastBrunswickB",370,160);
+    await newRank("RanneyB","FordhamB",270,180);
+    await newRank("WiltonAnjoA","DonovanCatholicB",280,190);
+    await newRank("PrincetonC","PrincetonD",340,150);
+    await newRank("MillburnMSA","FontbonneC",350,80);
     //Round 2
-    await newRank("EastBrunswickBV","FontbonneAV",290,200);
-    await newRank("MoravianAV","DonovanCatholicAV",480,40);
-    await newRank("EastBrunswickAV","PrincetonBV",350,210);
-    await newRank("MoorestownAV","MoorestownBV",310,140);
-    await newRank("HighTechAV","FontbonneBV",470,40);
-    await newRank("RanneyAV","FordhamAV",400,160);
-    await newRank("WiltonAnjoAJV","HighTechBJV",360,120);
-    await newRank("MillburnMSAJV","FordhamBJV",250,180);
-    await newRank("FontbonneCJV","DonovanCatholicBJV",270,240);
-    await newRank("PrincetonCJV","RanneyBJV",270,220);
+    await newRank("EastBrunswickB","FontbonneA",290,200);
+    await newRank("MoravianA","DonovanCatholicA",480,40);
+    await newRank("EastBrunswickA","PrincetonB",350,210);
+    await newRank("MoorestownA","MoorestownB",310,140);
+    await newRank("HighTechA","FontbonneB",470,40);
+    await newRank("RanneyA","FordhamA",400,160);
+    await newRank("WiltonAnjoA","HighTechB",360,120);
+    await newRank("MillburnMSA","FordhamB",250,180);
+    await newRank("FontbonneC","DonovanCatholicB",270,240);
+    await newRank("PrincetonC","RanneyB",270,220);
     //Round 3
-    await newRank("PrincetonBV","FontbonneAV",330,140);
-    await newRank("HighTechAV","MoorestownBV",460,100);
-    await newRank("EastBrunswickBV","FontbonneBV",380,60);
-    await newRank("MoravianAV","RanneyAV",270,250);
-    await newRank("PrincetonAV","FordhamAV",340,130);
-    await newRank("RanneyBJV","FontbonneCJV",280,100);
-    await newRank("WiltonAnjoAJV","MillburnMSAJV",250,230);
-    await newRank("PrincetonCJV","HighTechBJV",330,140);
-    await newRank("FordhamBJV","PrincetonDJV",230,200);
+    await newRank("PrincetonB","FontbonneA",330,140);
+    await newRank("HighTechA","MoorestownB",460,100);
+    await newRank("EastBrunswickB","FontbonneB",380,60);
+    await newRank("MoravianA","RanneyA",270,250);
+    await newRank("PrincetonA","FordhamA",340,130);
+    await newRank("RanneyB","FontbonneC",280,100);
+    await newRank("WiltonAnjoA","MillburnMSA",250,230);
+    await newRank("PrincetonC","HighTechB",330,140);
+    await newRank("FordhamB","PrincetonD",230,200);
     //Round 4
-    await newRank("PrincetonAV","MoravianAV",320,220);
-    await newRank("RanneyAV","DonovanCatholicAV",450,30);
-    await newRank("EastBrunswickAV","FontbonneAV",460,30);
-    await newRank("EastBrunswickBV","PrincetonBV",270,260);
-    await newRank("HighTechAV","MoorestownAV",480,90);
-    await newRank("FordhamBJV","FontbonneBV",380,40);
-    await newRank("FordhamBJV","DonovanCatholicBJV",330,100);
-    await newRank("WiltonAnjoAJV","PrincetonDJV",290,220);
-    await newRank("PrincetonCJV","MillburnMSAJV",340,190);
-    await newRank("HighTechBJV","FontbonneCJV",250,100);
+    await newRank("PrincetonA","MoravianA",320,220);
+    await newRank("RanneyA","DonovanCatholicA",450,30);
+    await newRank("EastBrunswickA","FontbonneA",460,30);
+    await newRank("EastBrunswickB","PrincetonB",270,260);
+    await newRank("HighTechA","MoorestownA",480,90);
+    await newRank("FordhamB","FontbonneB",380,40);
+    await newRank("FordhamB","DonovanCatholicB",330,100);
+    await newRank("WiltonAnjoA","PrincetonD",290,220);
+    await newRank("PrincetonC","MillburnMSA",340,190);
+    await newRank("HighTechB","FontbonneC",250,100);
     //Round 5
-    await newRank("HighTechAV","RanneyAV",350,160);
-    await newRank("FontbonneBV","DonovanCatholicAV",160,50);
-    await newRank("EastBrunswickAV","PrincetonAV",320,260);
-    await newRank("MoravianAV","FordhamAV",260,180);
-    await newRank("MoorestownAV","FontbonneAV",210,160);
-    await newRank("PrincetonBV","MoorestownBV",250,190);
-    await newRank("WiltonAnjoAJV","RanneyBJV",300,190);
-    await newRank("HighTechBJV","FordhamBJV",240,170);
-    await newRank("PrincetonCJV","DonovanCatholicBJV",300,80);
+    await newRank("HighTechA","RanneyA",350,160);
+    await newRank("FontbonneB","DonovanCatholicA",160,50);
+    await newRank("EastBrunswickA","PrincetonA",320,260);
+    await newRank("MoravianA","FordhamA",260,180);
+    await newRank("MoorestownA","FontbonneA",210,160);
+    await newRank("PrincetonB","MoorestownB",250,190);
+    await newRank("WiltonAnjoA","RanneyB",300,190);
+    await newRank("HighTechB","FordhamB",240,170);
+    await newRank("PrincetonC","DonovanCatholicB",300,80);
     //Varsity Playoffs
     //Quarterfinals
-    //await newRank("HighTechAV","FordhamAV",1,0);
-    await newRank("EastBrunswickAV","PrincetonAV",250,230);
-    await newRank("MoravianAV","EastBrunswickBV",220,150);
-    await newRank("RanneyAV","PrincetonBV",320,130);
+    //await newRank("HighTechA","FordhamA",1,0);
+    await newRank("EastBrunswickA","PrincetonA",250,230);
+    await newRank("MoravianA","EastBrunswickB",220,150);
+    await newRank("RanneyA","PrincetonB",320,130);
     //Semifinals
-    await newRank("EastBrunswickAV","MoravianAV",240,150);
-    await newRank("HighTechAV","RanneyAV",290,150);
+    await newRank("EastBrunswickA","MoravianA",240,150);
+    await newRank("HighTechA","RanneyA",290,150);
     //Finals
-    await newRank("HighTechAV","EastBrunswickAV",300,190);
+    await newRank("HighTechA","EastBrunswickA",300,190);
     //JV Playoffs
     //Semifinals
-    await newRank("PrincetonCJV","RanneyBJV",280,130);
-    await newRank("WiltonAnjoAJV","MillburnMSAJV",200,120);
-    await newRank("PrincetonCJV","WiltonAnjoAJV",290,170);
+    await newRank("PrincetonC","RanneyB",280,130);
+    await newRank("WiltonAnjoA","MillburnMSA",200,120);
+    await newRank("PrincetonC","WiltonAnjoA",290,170);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -5775,57 +5778,57 @@ async function cSetData(){
     //Northwest Illinois C-Set
     //Prelims
     //Round 1
-    await newRank("HomewoodFlossmoorAV","WinnebagoAV",310,150);
-    await newRank("WilliamsBayAV","WilliamsBayCV",410,60);
-    await newRank("GlenbardWestAV","WilliamsBayBV",390,150);
-    await newRank("AuburnAV","ElginAV",410,170);
-    await newRank("AuburnBJV","WilliamsBayDJV",360,50);
-    await newRank("HomewoodFlossmoorBJV","WinnebagoBJV",270,130);
+    await newRank("HomewoodFlossmoorA","WinnebagoA",310,150);
+    await newRank("WilliamsBayA","WilliamsBayC",410,60);
+    await newRank("GlenbardWestA","WilliamsBayB",390,150);
+    await newRank("AuburnA","ElginA",410,170);
+    await newRank("AuburnB","WilliamsBayD",360,50);
+    await newRank("HomewoodFlossmoorB","WinnebagoB",270,130);
     //Round 2
-    await newRank("ElginAV","WilliamsBayCV",340,100);
-    await newRank("AuburnAV","WinnebagoAV",400,140);
-    await newRank("GlenbardWestAV","WilliamsBayAV",420,110);
-    await newRank("HomewoodFlossmoorAV","WilliamsBayBV",340,110);
-    await newRank("AuburnBJV","HomewoodFlossmoorBJV",280,160);
-    await newRank("WinnebagoBJV","WilliamsBayDJV",180,90);
+    await newRank("ElginA","WilliamsBayC",340,100);
+    await newRank("AuburnA","WinnebagoA",400,140);
+    await newRank("GlenbardWestA","WilliamsBayA",420,110);
+    await newRank("HomewoodFlossmoorA","WilliamsBayB",340,110);
+    await newRank("AuburnB","HomewoodFlossmoorB",280,160);
+    await newRank("WinnebagoB","WilliamsBayD",180,90);
     //Round 3
-    await newRank("AuburnAV","GlenbardWestAV",330,250);
-    await newRank("WinnebagoAV","WilliamsBayCV",300,120);
-    await newRank("ElginAV","WilliamsBayBV",330,130);
-    await newRank("WilliamsBayAV","HomewoodFlossmoorAV",290,240);
-    await newRank("AuburnBJV","WinnebagoBJV",430,60);
-    await newRank("HomewoodFlossmoorBJV","WilliamsBayDJV",330,20);
+    await newRank("AuburnA","GlenbardWestA",330,250);
+    await newRank("WinnebagoA","WilliamsBayC",300,120);
+    await newRank("ElginA","WilliamsBayB",330,130);
+    await newRank("WilliamsBayA","HomewoodFlossmoorA",290,240);
+    await newRank("AuburnB","WinnebagoB",430,60);
+    await newRank("HomewoodFlossmoorB","WilliamsBayD",330,20);
     //Round 4
-    await newRank("GlenbardWestAV","WinnebagoAV",360,120);
-    await newRank("HomewoodFlossmoorAV","ElginAV",270,240);
-    await newRank("AuburnAV","WilliamsBayCV",440,70);
-    await newRank("WilliamsBayAV","WilliamsBayBV",290,110);
-    await newRank("HomewoodFlossmoorBJV","WinnebagoBJV",200,130);
-    await newRank("AuburnBJV","WilliamsBayDJV",350,60);
+    await newRank("GlenbardWestA","WinnebagoA",360,120);
+    await newRank("HomewoodFlossmoorA","ElginA",270,240);
+    await newRank("AuburnA","WilliamsBayC",440,70);
+    await newRank("WilliamsBayA","WilliamsBayB",290,110);
+    await newRank("HomewoodFlossmoorB","WinnebagoB",200,130);
+    await newRank("AuburnB","WilliamsBayD",350,60);
     //Round5
-    await newRank("AuburnAV","WilliamsBayBV",430,80);
-    await newRank("HomewoodFlossmoorAV","WilliamsBayCV",320,70);
-    await newRank("GlenbardWestAV","ElginAV",241,240);
-    await newRank("WilliamsBayAV","WinnebagoAV",210,160);
-    await newRank("AuburnBJV","HomewoodFlossmoorBJV",290,90);
-    await newRank("WinnebagoBJV","WilliamsBayDJV",150,90);
+    await newRank("AuburnA","WilliamsBayB",430,80);
+    await newRank("HomewoodFlossmoorA","WilliamsBayC",320,70);
+    await newRank("GlenbardWestA","ElginA",241,240);
+    await newRank("WilliamsBayA","WinnebagoA",210,160);
+    await newRank("AuburnB","HomewoodFlossmoorB",290,90);
+    await newRank("WinnebagoB","WilliamsBayD",150,90);
     //Round6
-    await newRank("GlenbardWestAV","WilliamsBayCV",320,80);
-    await newRank("AuburnAV","HomewoodFlossmoorAV",390,110);
-    await newRank("ElginAV","WilliamsBayAV",290,160);
-    await newRank("WinnebagoAV","WilliamsBayBV",170,120);
-    await newRank("AuburnBJV","WinnebagoBJV",290,90);
-    await newRank("HomewoodFlossmoorBJV","WilliamsBayDJV",150,60);
+    await newRank("GlenbardWestA","WilliamsBayC",320,80);
+    await newRank("AuburnA","HomewoodFlossmoorA",390,110);
+    await newRank("ElginA","WilliamsBayA",290,160);
+    await newRank("WinnebagoA","WilliamsBayB",170,120);
+    await newRank("AuburnB","WinnebagoB",290,90);
+    await newRank("HomewoodFlossmoorB","WilliamsBayD",150,60);
     //Round 7
-    await newRank("GlenbardWestAV","HomewoodFlossmoorBJV",280,160);
-    await newRank("WilliamsBayBV","WilliamsBayCV",110,100);
-    await newRank("AuburnAV","WilliamsBayAV",320,150);
-    await newRank("ElginAV","WinnebagoAV",480,50);
+    await newRank("GlenbardWestA","HomewoodFlossmoorB",280,160);
+    await newRank("WilliamsBayB","WilliamsBayC",110,100);
+    await newRank("AuburnA","WilliamsBayA",320,150);
+    await newRank("ElginA","WinnebagoA",480,50);
     //Varsity Playoffs
     //Finals
-    await newRank("AuburnAV","GlenbardWestAV",250,240);
+    await newRank("AuburnA","GlenbardWestA",250,240);
     //4th Place Game
-    await newRank("HomewoodFlossmoorAV","WilliamsBayAV",260,120);
+    await newRank("HomewoodFlossmoorA","WilliamsBayA",260,120);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -5836,31 +5839,31 @@ async function cSetData(){
     //Louisiana Fall C-Set
     //Prelims
     //Round 1
-    await newRank("BatonRougeMagnetAV","NorthwesternAV",290,140);
-    await newRank("ZacharyAV","ZacharyBV",260,170);
-    await newRank("BatonRougeEpiscopalAV","ZacharyCV",290,110);
+    await newRank("BatonRougeMagnetA","NorthwesternA",290,140);
+    await newRank("ZacharyA","ZacharyB",260,170);
+    await newRank("BatonRougeEpiscopalA","ZacharyC",290,110);
     //Round 2
-    await newRank("ZacharyAV","NorthwesternAV",320,80);
-    await newRank("BatonRougeMagnetAV","ZacharyCV",350,60);
-    await newRank("ZacharyBV","BatonRougeEpiscopalAV",270,180);
+    await newRank("ZacharyA","NorthwesternA",320,80);
+    await newRank("BatonRougeMagnetA","ZacharyC",350,60);
+    await newRank("ZacharyB","BatonRougeEpiscopalA",270,180);
     //Round 3
-    await newRank("BatonRougeMagnetAV","ZacharyAV",280,220);
-    await newRank("ZacharyBV","ZacharyCV",280,130);
-    await newRank("BatonRougeEpiscopalAV","NorthwesternAV",290,140);
+    await newRank("BatonRougeMagnetA","ZacharyA",280,220);
+    await newRank("ZacharyB","ZacharyC",280,130);
+    await newRank("BatonRougeEpiscopalA","NorthwesternA",290,140);
     //Round 4
-    await newRank("BatonRougeMagnetAV","BatonRougeEpiscopalAV",310,180);
-    await newRank("ZacharyAV","ZacharyCV",330,70);
-    await newRank("ZacharyBV","NorthwesternAV",300,110);
+    await newRank("BatonRougeMagnetA","BatonRougeEpiscopalA",310,180);
+    await newRank("ZacharyA","ZacharyC",330,70);
+    await newRank("ZacharyB","NorthwesternA",300,110);
     //Round 5
-    await newRank("ZacharyBV","BatonRougeMagnetAV",240,190);
-    await newRank("BatonRougeEpiscopalAV","ZacharyAV",240,140);
-    await newRank("NorthwesternAV","ZacharyCV",220,150);
+    await newRank("ZacharyB","BatonRougeMagnetA",240,190);
+    await newRank("BatonRougeEpiscopalA","ZacharyA",240,140);
+    await newRank("NorthwesternA","ZacharyC",220,150);
     //Varsity Playoffs
     //Semifinals
-    await newRank("ZacharyBV","ZacharyAV",200,140);
-    await newRank("BatonRougeEpiscopalAV","BatonRougeMagnetAV",210,190);
+    await newRank("ZacharyB","ZacharyA",200,140);
+    await newRank("BatonRougeEpiscopalA","BatonRougeMagnetA",210,190);
     //Finals
-    await newRank("ZacharyBV","BatonRougeEpiscopalAV",210,160);
+    await newRank("ZacharyB","BatonRougeEpiscopalA",210,160);
     allV.push(teamAvgV);
     teamAvgV = [];
     console.log("Louisiana Fall C");
@@ -5869,31 +5872,31 @@ async function cSetData(){
     //Eastern Kentucky C-Set
     //Prelims
     //Round 1
-    await newRank("BlazerAV","RussellAV",340,160);
-    await newRank("JohnsonAV","JohnsonCV",410,70);
-    await newRank("DunbarAV","JohnsonBV",410,80);
+    await newRank("BlazerA","RussellA",340,160);
+    await newRank("JohnsonA","JohnsonC",410,70);
+    await newRank("DunbarA","JohnsonB",410,80);
     //Round 2
-    await newRank("BlazerAV","DunbarAV",320,260);
-    await newRank("JohnsonBV","JohnsonCV",300,110);
-    await newRank("JohnsonAV","RussellAV",370,180);
+    await newRank("BlazerA","DunbarA",320,260);
+    await newRank("JohnsonB","JohnsonC",300,110);
+    await newRank("JohnsonA","RussellA",370,180);
     //Round 3
-    await newRank("JohnsonAV","BlazerAV",370,190);
-    await newRank("RussellAV","JohnsonBV",250,200);
-    await newRank("DunbarAV","JohnsonCV",390,70);
+    await newRank("JohnsonA","BlazerA",370,190);
+    await newRank("RussellA","JohnsonB",250,200);
+    await newRank("DunbarA","JohnsonC",390,70);
     //Round 4
-    await newRank("JohnsonAV","DunbarAV",380,140);
-    await newRank("BlazerAV","JohnsonBV",390,120);
-    await newRank("RussellAV","JohnsonCV",290,150);
+    await newRank("JohnsonA","DunbarA",380,140);
+    await newRank("BlazerA","JohnsonB",390,120);
+    await newRank("RussellA","JohnsonC",290,150);
     //Round 5
-    await newRank("DunbarAV","RussellAV",250,190);
-    await newRank("JohnsonAV","JohnsonBV",350,90);
-    await newRank("BlazerAV","JohnsonCV",390,70);
+    await newRank("DunbarA","RussellA",250,190);
+    await newRank("JohnsonA","JohnsonB",350,90);
+    await newRank("BlazerA","JohnsonC",390,70);
     //Varsity Playoffs
     //Semifinals
-    await newRank("JohnsonAV","RussellAV",270,160);
-    await newRank("BlazerAV","DunbarAV",211,210);
+    await newRank("JohnsonA","RussellA",270,160);
+    await newRank("BlazerA","DunbarA",211,210);
     //Finals
-    await newRank("BlazerAV","JohnsonAV",270,160);
+    await newRank("BlazerA","JohnsonA",270,160);
     allV.push(teamAvgV);
     teamAvgV = [];
     console.log("Eastern KY C");
@@ -5902,50 +5905,50 @@ async function cSetData(){
     //Bergen County C-Set
     //Prelims
     //Round 1
-    await newRank("RidgewoodAV","GothamAV",410,210);
-    await newRank("ColdhugAV","LeoniaAV",470,160);
-    await newRank("TenaflyAV","TenaflyBV",430,100);
-    await newRank("ColdhugBJV","ChurchillNJBJV",290,280);
-    await newRank("TenaflyCJV","LeoniaBJV",310,200);
-    await newRank("RidgewoodDJV","GeorgeWashingtonAJV",270,160);
+    await newRank("RidgewoodA","GothamA",410,210);
+    await newRank("ColdhugA","LeoniaA",470,160);
+    await newRank("TenaflyA","TenaflyB",430,100);
+    await newRank("ColdhugB","ChurchillNJB",290,280);
+    await newRank("TenaflyC","LeoniaB",310,200);
+    await newRank("RidgewoodD","GeorgeWashingtonNJA",270,160);
     //Round 2
-    await newRank("RidgewoodAV","TenaflyBV",530,70);
-    await newRank("ColdhugAV","GothamAV",430,180);
-    await newRank("TenaflyAV","LeoniaAV",280,240);
-    await newRank("ChurchillMDAJV","RidgewoodCJV",280,240);
-    await newRank("TenaflyCJV","GeorgeWashingtonAJV",400,100);
-    await newRank("LeoniaBJV","RidgewoodDJV",220,210);
+    await newRank("RidgewoodA","TenaflyB",530,70);
+    await newRank("ColdhugA","GothamA",430,180);
+    await newRank("TenaflyA","LeoniaA",280,240);
+    await newRank("ChurchillMDA","RidgewoodC",280,240);
+    await newRank("TenaflyC","GeorgeWashingtonNJA",400,100);
+    await newRank("LeoniaB","RidgewoodD",220,210);
     //Round 3
-    await newRank("RidgewoodAV","TenaflyAV",400,200);
-    await newRank("ColdhugAV","TenaflyBV",510,70);
-    await newRank("GothamAV","LeoniaAV",280,260);
-    await newRank("RidgewoodCJV","GeorgeWashingtonAJV",480,60);
-    await newRank("ColdhugBJV","LeoniaBJV",380,180);
-    await newRank("TenaflyCJV","RidgewoodDJV",400,160);
+    await newRank("RidgewoodA","TenaflyA",400,200);
+    await newRank("ColdhugA","TenaflyB",510,70);
+    await newRank("GothamA","LeoniaA",280,260);
+    await newRank("RidgewoodC","GeorgeWashingtonNJA",480,60);
+    await newRank("ColdhugB","LeoniaB",380,180);
+    await newRank("TenaflyC","RidgewoodD",400,160);
     //Round 4
-    await newRank("RidgewoodAV","LeoniaAV",350,170);
-    await newRank("ColdhugAV","TenaflyAV",450,130);
-    await newRank("GothamAV","TenaflyBV",360,30);
-    await newRank("RidgewoodCJV","RidgewoodDJV",380,110);
-    await newRank("ColdhugBJV","TenaflyCJV",290,180);
-    await newRank("ChurchillMDAJV","LeoniaBJV",350,140);
+    await newRank("RidgewoodA","LeoniaA",350,170);
+    await newRank("ColdhugA","TenaflyA",450,130);
+    await newRank("GothamA","TenaflyB",360,30);
+    await newRank("RidgewoodC","RidgewoodD",380,110);
+    await newRank("ColdhugB","TenaflyC",290,180);
+    await newRank("ChurchillMDA","LeoniaB",350,140);
     //Round 5
-    await newRank("ColdhugAV","RidgewoodAV",400,220);
-    await newRank("TenaflyAV","GothamAV",300,260);
-    await newRank("LeoniaAV","TenaflyBV",350,130);
-    await newRank("RidgewoodCJV","ColdhugBJV",280,240);
-    await newRank("ChurchillMDAJV","RidgewoodDJV",370,80);
+    await newRank("ColdhugA","RidgewoodA",400,220);
+    await newRank("TenaflyA","GothamA",300,260);
+    await newRank("LeoniaA","TenaflyB",350,130);
+    await newRank("RidgewoodC","ColdhugB",280,240);
+    await newRank("ChurchillMDA","RidgewoodD",370,80);
     //Varsity Playoffs
     //Semifinals
-    await newRank("ColdhugAV","GothamAV",440,100);
-    await newRank("RidgewoodAV","TenaflyAV",290,210);
+    await newRank("ColdhugA","GothamA",440,100);
+    await newRank("RidgewoodA","TenaflyA",290,210);
     //Finals
-    await newRank("ColdhugAV","RidgewoodAV",360,180);
+    await newRank("ColdhugA","RidgewoodA",360,180);
     //JV Playoffs
-    await newRank("RidgewoodCJV","ColdhugBJV",350,120);
-    await newRank("ChurchillMDAJV","TenaflyCJV",400,130);
+    await newRank("RidgewoodC","ColdhugB",350,120);
+    await newRank("ChurchillMDA","TenaflyC",400,130);
     //Finals
-    await newRank("RidgewoodCJV","ChurchillMDAJV",270,150);
+    await newRank("RidgewoodC","ChurchillMDA",270,150);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -5956,61 +5959,61 @@ async function cSetData(){
     //Lower Hudson C-Set
     //Prelims
     //Round 1
-    await newRank("DarienAV","HoraceGreeleyAV",450,90);
-    await newRank("GreensFarmsAV","WhitePlainsAV",360,140);
-    await newRank("WiltonAlexAV","DaltonAV",320,230);
-    await newRank("IrvingtonAV","ArdsleyAV",370,160);
-    await newRank("WiltonLukasAJV","YonkersAJV",350,210);
-    await newRank("HoraceGreeleyBJV","GreensFarmsBJV",380,120);
-    await newRank("ScarsdaleAV","YonkersBJV",380,180);
+    await newRank("DarienA","HoraceGreeleyA",450,90);
+    await newRank("GreensFarmsA","WhitePlainsA",360,140);
+    await newRank("WiltonAlexA","DaltonA",320,230);
+    await newRank("IrvingtonA","ArdsleyA",370,160);
+    await newRank("WiltonLukasA","YonkersA",350,210);
+    await newRank("HoraceGreeleyB","GreensFarmsB",380,120);
+    await newRank("ScarsdaleA","YonkersB",380,180);
     //Round 2
-    await newRank("WiltonAlexAV","WhitePlainsAV",440,100);
-    await newRank("DaltonAV","HoraceGreeleyAV",330,130);
-    await newRank("GreensFarmsAV","ArdsleyAV",260,250);
-    await newRank("IrvingtonAV","ScarsdaleAV",290,250);
-    await newRank("YonkersBJV","GreensFarmsBJV",300,170);
-    await newRank("YonkersAJV","HoraceGreeleyBJV",350,170);
-    await newRank("DarienAV","WiltonLukasAJV",340,290);
+    await newRank("WiltonAlexA","WhitePlainsA",440,100);
+    await newRank("DaltonA","HoraceGreeleyA",330,130);
+    await newRank("GreensFarmsA","ArdsleyA",260,250);
+    await newRank("IrvingtonA","ScarsdaleA",290,250);
+    await newRank("YonkersB","GreensFarmsB",300,170);
+    await newRank("YonkersA","HoraceGreeleyB",350,170);
+    await newRank("DarienA","WiltonLukasA",340,290);
     //Round 3
-    await newRank("ScarsdaleAV","GreensFarmsAV",280,230);
-    await newRank("WiltonAlexAV","ArdsleyAV",460,100);
-    await newRank("DarienAV","IrvingtonAV",330,260);
-    await newRank("WhitePlainsAV","HoraceGreeleyAV",280,150);
-    await newRank("HoraceGreeleyBJV","WiltonLukasAJV",290,270);
-    await newRank("YonkersAJV","YonkersBJV",330,170);
-    await newRank("DaltonAV","GreensFarmsBJV",360,110);
+    await newRank("ScarsdaleA","GreensFarmsA",280,230);
+    await newRank("WiltonAlexA","ArdsleyA",460,100);
+    await newRank("DarienA","IrvingtonA",330,260);
+    await newRank("WhitePlainsA","HoraceGreeleyA",280,150);
+    await newRank("HoraceGreeleyB","WiltonLukasA",290,270);
+    await newRank("YonkersA","YonkersB",330,170);
+    await newRank("DaltonA","GreensFarmsB",360,110);
     //Round 4
-    await newRank("DarienAV","GreensFarmsAV",281,280);//Darien wins on TB
-    await newRank("DaltonAV","IrvingtonAV",310,270);
-    await newRank("WiltonAlexAV","ScarsdaleAV",360,200);
-    await newRank("ArdsleyAV","HoraceGreeleyAV",270,160);
-    await newRank("HoraceGreeleyBJV","YonkersBJV",370,190);
-    await newRank("WiltonLukasAJV","GreensFarmsBJV",470,90);
-    await newRank("YonkersAJV","WhitePlainsAV",420,150);
+    await newRank("DarienA","GreensFarmsA",281,280);//Darien wins on TB
+    await newRank("DaltonA","IrvingtonA",310,270);
+    await newRank("WiltonAlexA","ScarsdaleA",360,200);
+    await newRank("ArdsleyA","HoraceGreeleyA",270,160);
+    await newRank("HoraceGreeleyB","YonkersB",370,190);
+    await newRank("WiltonLukasA","GreensFarmsB",470,90);
+    await newRank("YonkersA","WhitePlainsA",420,150);
     //Round 5
-    await newRank("ScarsdaleAV","HoraceGreeleyAV",450,60);
-    await newRank("IrvingtonAV","WhitePlainsAV",320,170);
-    await newRank("GreensFarmsAV","DaltonAV",310,170);
-    await newRank("DarienAV","WiltonAlexAV",320,290);
-    await newRank("WiltonLukasAJV","HoraceGreeleyBJV",310,180);
-    await newRank("YonkersAJV","GreensFarmsBJV",340,80);
-    await newRank("HoraceGreeleyBJV","ArdsleyAV",250,140);
+    await newRank("ScarsdaleA","HoraceGreeleyA",450,60);
+    await newRank("IrvingtonA","WhitePlainsA",320,170);
+    await newRank("GreensFarmsA","DaltonA",310,170);
+    await newRank("DarienA","WiltonAlexA",320,290);
+    await newRank("WiltonLukasA","HoraceGreeleyB",310,180);
+    await newRank("YonkersA","GreensFarmsB",340,80);
+    await newRank("HoraceGreeleyB","ArdsleyA",250,140);
     //Varsity Playoffs
     //Quarterfinals
-    await newRank("WiltonAlexAV","WhitePlainsAV",300,180);
-    await newRank("DarienAV","ArdsleyAV",310,180);
-    await newRank("DaltonAV","IrvingtonAV",230,210);
-    await newRank("ScarsdaleAV","GreensFarmsBJV",270,220);
+    await newRank("WiltonAlexA","WhitePlainsA",300,180);
+    await newRank("DarienA","ArdsleyA",310,180);
+    await newRank("DaltonA","IrvingtonA",230,210);
+    await newRank("ScarsdaleA","GreensFarmsB",270,220);
     //Semifinals
-    await newRank("ScarsdaleAV","WiltonAlexAV",260,240);
-    await newRank("DarienAV","DaltonAV",320,160);
+    await newRank("ScarsdaleA","WiltonAlexA",260,240);
+    await newRank("DarienA","DaltonA",320,160);
     //Finals
-    await newRank("DarienAV","ScarsdaleAV",260,230);
+    await newRank("DarienA","ScarsdaleA",260,230);
     //JV Playoffs
     //JV Semifinals
-    await newRank("WiltonLukasAJV","YonkersBJV",380,90);
-    await newRank("HoraceGreeleyBJV","YonkersAJV",270,200);
-    await newRank("WiltonLukasAJV","HoraceGreeleyBJV",210,190);
+    await newRank("WiltonLukasA","YonkersB",380,90);
+    await newRank("HoraceGreeleyB","YonkersA",270,200);
+    await newRank("WiltonLukasA","HoraceGreeleyB",210,190);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -6021,91 +6024,91 @@ async function cSetData(){
     //Delaware C-Set
     //Prelims
     //Round 1
-    await newRank("WilmingtonFriendsDV","CaravelBV",220,140);
-    await newRank("NewarkCharterCV","WilmingtonFriendsEV",260,240);
-    await newRank("MethactonAV","WilmingtonFriendsCV",460,80);
-    await newRank("WilmingtonFriendsAV","FriendsCentralAV",290,150);
-    await newRank("MethactonCJV","WilmingtonFriendsKJV",470,40);
-    await newRank("NewarkCharterAV","WilmingtonFriendsGV",360,90);
-    await newRank("WilmingtonFriendsFV","NewarkCharterBV",200,180);
-    await newRank("WilmingtonFriendsIJV","WilmingtonFriendsLJV",290,100);
-    await newRank("DickinsonAV","CaravelAV",280,100);
-    await newRank("WilmingtonFriendsHJV","WilmingtonFriendsMJV",350,70);
-    await newRank("TowerHillCJV","WilmingtonFriendsJJV",200,80);
-    await newRank("WilmingtonFriendsBV","TowerHillBV",270,190);
-    await newRank("TowerHillAV","MethactonBV",290,220);
+    await newRank("WilmingtonFriendsD","CaravelB",220,140);
+    await newRank("NewarkCharterC","WilmingtonFriendsE",260,240);
+    await newRank("MethactonA","WilmingtonFriendsC",460,80);
+    await newRank("WilmingtonFriendsA","FriendsCentralA",290,150);
+    await newRank("MethactonC","WilmingtonFriendsK",470,40);
+    await newRank("NewarkCharterA","WilmingtonFriendsG",360,90);
+    await newRank("WilmingtonFriendsF","NewarkCharterB",200,180);
+    await newRank("WilmingtonFriendsI","WilmingtonFriendsL",290,100);
+    await newRank("DickinsonA","CaravelA",280,100);
+    await newRank("WilmingtonFriendsH","WilmingtonFriendsM",350,70);
+    await newRank("TowerHillC","WilmingtonFriendsJ",200,80);
+    await newRank("WilmingtonFriendsB","TowerHillB",270,190);
+    await newRank("TowerHillA","MethactonB",290,220);
     //Round 2
-    await newRank("TowerHillAV","CaravelBV",340,80);
-    await newRank("GreatValleyAV","DickinsonAV",470,80);
-    await newRank("WilmingtonFriendsAV","NewarkCharterCV",240,200);
-    await newRank("MethactonBV","FriendsCentralAV",270,160);
-    await newRank("MethactonCJV","WilmingtonFriendsJJV",460,50);
-    await newRank("MethactonAV","WilmingtonFriendsFV",390,70);
-    await newRank("WilmingtonFriendsIJV","WilmingtonFriendsMJV",290,150);
-    await newRank("TowerHillBV","WilmingtonFriendsCV",210,140);
-    await newRank("NewarkCharterAV","WilmingtonFriendsEV",250,180);
-    await newRank("WilmingtonFriendsHJV","WilmingtonFriendsLJV",300,130);
-    await newRank("TowerHillCJV","WilmingtonFriendsKJV",250,90);
-    await newRank("WilmingtonFriendsDV","WilmingtonFriendsGV",160,130);
-    await newRank("WilmingtonFriendsBV","CaravelAV",250,110);
+    await newRank("TowerHillA","CaravelB",340,80);
+    await newRank("GreatValleyA","DickinsonA",470,80);
+    await newRank("WilmingtonFriendsA","NewarkCharterC",240,200);
+    await newRank("MethactonB","FriendsCentralA",270,160);
+    await newRank("MethactonC","WilmingtonFriendsJ",460,50);
+    await newRank("MethactonA","WilmingtonFriendsF",390,70);
+    await newRank("WilmingtonFriendsI","WilmingtonFriendsM",290,150);
+    await newRank("TowerHillB","WilmingtonFriendsC",210,140);
+    await newRank("NewarkCharterA","WilmingtonFriendsE",250,180);
+    await newRank("WilmingtonFriendsH","WilmingtonFriendsL",300,130);
+    await newRank("TowerHillC","WilmingtonFriendsK",250,90);
+    await newRank("WilmingtonFriendsD","WilmingtonFriendsG",160,130);
+    await newRank("WilmingtonFriendsB","CaravelA",250,110);
     //Round 3
-    await newRank("GreatValleyAV","WilmingtonFriendsFV",480,30);
-    await newRank("NewarkCharterCV","WilmingtonFriendsGV",330,90);
-    await newRank("NewarkCharterAV","CaravelBV",320,30);
-    await newRank("TowerHillAV","WilmingtonFriendsAV",370,150);
-    await newRank("WilmingtonFriendsIJV","WilmingtonFriendsJJV",180,170);
-    await newRank("MethactonBV","WilmingtonFriendsDV",390,90);
-    await newRank("DickinsonAV","TowerHillBV",230,150);
-    await newRank("WilmingtonFriendsHJV","WilmingtonFriendsKJV",420,60);
-    await newRank("MethactonCJV","TowerHillCJV",430,80);
-    await newRank("MethactonAV","WilmingtonFriendsBV",350,170);
-    await newRank("NewarkCharterBV","WilmingtonFriendsCV",240,110);
-    await newRank("NewarkCharterBV","WilmingtonFriendsCV",240,110);
-    await newRank("FriendsCentralAV","WilmingtonFriendsEV",250,170);
+    await newRank("GreatValleyA","WilmingtonFriendsF",480,30);
+    await newRank("NewarkCharterC","WilmingtonFriendsG",330,90);
+    await newRank("NewarkCharterA","CaravelB",320,30);
+    await newRank("TowerHillA","WilmingtonFriendsA",370,150);
+    await newRank("WilmingtonFriendsI","WilmingtonFriendsJ",180,170);
+    await newRank("MethactonB","WilmingtonFriendsD",390,90);
+    await newRank("DickinsonA","TowerHillB",230,150);
+    await newRank("WilmingtonFriendsH","WilmingtonFriendsK",420,60);
+    await newRank("MethactonC","TowerHillC",430,80);
+    await newRank("MethactonA","WilmingtonFriendsB",350,170);
+    await newRank("NewarkCharterB","WilmingtonFriendsC",240,110);
+    await newRank("NewarkCharterB","WilmingtonFriendsC",240,110);
+    await newRank("FriendsCentralA","WilmingtonFriendsE",250,170);
     //Round 4
-    await newRank("WilmingtonFriendsMJV","WilmingtonFriendsJJV",190,40);
-    await newRank("WilmingtonFriendsLJV","WilmingtonFriendsKJV",140,70);
-    await newRank("GreatValleyAV","WilmingtonFriendsBV",470,90);
-    await newRank("WilmingtonFriendsEV","WilmingtonFriendsDV",190,180);
-    await newRank("TowerHillAV","WilmingtonFriendsGV",440,30);
-    await newRank("MethactonBV","NewarkCharterCV",380,190);
-    await newRank("WilmingtonFriendsHJV","TowerHillCJV",360,70);
-    await newRank("FriendsCentralAV","CaravelBV",280,110);
-    await newRank("DickinsonAV","NewarkCharterBV",200,160);
-    await newRank("MethactonCJV","WilmingtonFriendsIJV",450,70);
-    await newRank("NewarkCharterAV","WilmingtonFriendsAV",300,200);
-    await newRank("TowerHillBV","WilmingtonFriendsFV",250,150);
-    await newRank("CaravelAV","WilmingtonFriendsCV",140,100);
+    await newRank("WilmingtonFriendsM","WilmingtonFriendsJ",190,40);
+    await newRank("WilmingtonFriendsL","WilmingtonFriendsK",140,70);
+    await newRank("GreatValleyA","WilmingtonFriendsB",470,90);
+    await newRank("WilmingtonFriendsE","WilmingtonFriendsD",190,180);
+    await newRank("TowerHillA","WilmingtonFriendsG",440,30);
+    await newRank("MethactonB","NewarkCharterC",380,190);
+    await newRank("WilmingtonFriendsH","TowerHillC",360,70);
+    await newRank("FriendsCentralA","CaravelB",280,110);
+    await newRank("DickinsonA","NewarkCharterB",200,160);
+    await newRank("MethactonC","WilmingtonFriendsI",450,70);
+    await newRank("NewarkCharterA","WilmingtonFriendsA",300,200);
+    await newRank("TowerHillB","WilmingtonFriendsF",250,150);
+    await newRank("CaravelA","WilmingtonFriendsC",140,100);
     //Round 5
-    await newRank("WilmingtonFriendsJJV","WilmingtonFriendsKJV",180,60);
-    await newRank("MethactonCJV","WilmingtonFriendsMJV",400,60);
-    await newRank("CaravelAV","WilmingtonFriendsFV",190,10);
-    await newRank("WilmingtonFriendsBV","NewarkCharterBV",170,100);
-    await newRank("NewarkCharterCV","CaravelBV",250,80);
-    await newRank("FriendsCentralAV","WilmingtonFriendsGV",240,100);
-    await newRank("WilmingtonFriendsHJV","WilmingtonFriendsIJV",350,80);
-    await newRank("WilmingtonFriendsAV","WilmingtonFriendsDV",210,100);
-    await newRank("TowerHillCJV","WilmingtonFriendsLJV",220,90);
-    await newRank("TowerHillAV","WilmingtonFriendsEV",280,130);
-    await newRank("MethactonAV","NewarkCharterAV",280,120);
-    await newRank("GreatValleyAV","WilmingtonFriendsCV",580,0);
+    await newRank("WilmingtonFriendsJ","WilmingtonFriendsK",180,60);
+    await newRank("MethactonC","WilmingtonFriendsM",400,60);
+    await newRank("CaravelA","WilmingtonFriendsF",190,10);
+    await newRank("WilmingtonFriendsB","NewarkCharterB",170,100);
+    await newRank("NewarkCharterC","CaravelB",250,80);
+    await newRank("FriendsCentralA","WilmingtonFriendsG",240,100);
+    await newRank("WilmingtonFriendsH","WilmingtonFriendsI",350,80);
+    await newRank("WilmingtonFriendsA","WilmingtonFriendsD",210,100);
+    await newRank("TowerHillC","WilmingtonFriendsL",220,90);
+    await newRank("TowerHillA","WilmingtonFriendsE",280,130);
+    await newRank("MethactonA","NewarkCharterA",280,120);
+    await newRank("GreatValleyA","WilmingtonFriendsC",580,0);
     //Varsity Playoffs
     //Quarterfinals
-    await newRank("NewarkCharterAV","MethactonBV",280,180);
-    //await newRank("MethactonAV","WilmingtonFriendsAV",1,0);
-    await newRank("GreatValleyAV","FriendsCentralAV",420,80);
-    await newRank("TowerHillAV","NewarkCharterCV",280,140);
+    await newRank("NewarkCharterA","MethactonB",280,180);
+    //await newRank("MethactonA","WilmingtonFriendsA",1,0);
+    await newRank("GreatValleyA","FriendsCentralA",420,80);
+    await newRank("TowerHillA","NewarkCharterC",280,140);
     //Semifinals
-    await newRank("GreatValleyAV","NewarkCharterAV",330,160);
-    await newRank("MethactonAV","TowerHillAV",390,100);
+    await newRank("GreatValleyA","NewarkCharterA",330,160);
+    await newRank("MethactonA","TowerHillA",390,100);
     //Finals
-    await newRank("GreatValleyAV","MethactonAV",370,160);
+    await newRank("GreatValleyA","MethactonA",370,160);
     //JV Playoffs
     //Semifinals
-    await newRank("MethactonCJV","WilmingtonFriendsIJV",400,50);
-    await newRank("WilmingtonFriendsHJV","TowerHillCJV",280,60);
+    await newRank("MethactonC","WilmingtonFriendsI",400,50);
+    await newRank("WilmingtonFriendsH","TowerHillC",280,60);
     //Finals
-    await newRank("MethactonCJV","WilmingtonFriendsHJV",340,110);
+    await newRank("MethactonC","WilmingtonFriendsH",340,110);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -6116,33 +6119,33 @@ async function cSetData(){
     //Florida Panhandle C-Set
     //Prelims
     //Round 1
-    await newRank("ChoctawhatcheeAV","WashingtonAV",280,140);
-    await newRank("TateAV","WashingtonBV",310,60);
-    await newRank("RansomGJV","RansomFJV",81,80);
+    await newRank("ChoctawhatcheeA","WashingtonA",280,140);
+    await newRank("TateA","WashingtonB",310,60);
+    await newRank("RansomG","RansomF",81,80);
     //Round 2
-    await newRank("CollegiateAV","TateAV",400,180);
-    await newRank("WashingtonAV","WashingtonBV",250,100);
-    await newRank("RansomFJV","RansomEJV",100,80);
+    await newRank("CollegiateA","TateA",400,180);
+    await newRank("WashingtonA","WashingtonB",250,100);
+    await newRank("RansomF","RansomE",100,80);
     //Round 3
-    await newRank("CollegiateAV","WashingtonAV",360,120);
-    await newRank("ChoctawhatcheeAV","WashingtonBV",390,20);
-    await newRank("RansomGJV","RansomEJV",140,70);
+    await newRank("CollegiateA","WashingtonA",360,120);
+    await newRank("ChoctawhatcheeA","WashingtonB",390,20);
+    await newRank("RansomG","RansomE",140,70);
     //Round 4
-    await newRank("TateAV","ChoctawhatcheeAV",290,220);
-    await newRank("CollegiateAV","WashingtonBV",460,60);
-    await newRank("RansomGJV","RansomEJV",80,40);
+    await newRank("TateA","ChoctawhatcheeA",290,220);
+    await newRank("CollegiateA","WashingtonB",460,60);
+    await newRank("RansomG","RansomE",80,40);
     //Round 5
-    await newRank("TateAV","WashingtonAV",210,80);
-    await newRank("CollegiateAV","ChoctawhatcheeAV",460,110);
-    await newRank("RansomEJV","RansomFJV",70,50);
+    await newRank("TateA","WashingtonA",210,80);
+    await newRank("CollegiateA","ChoctawhatcheeA",460,110);
+    await newRank("RansomE","RansomF",70,50);
     //Round 6
-    await newRank("RansomGJV","RansomFJV",80,40);
+    await newRank("RansomG","RansomF",80,40);
     //Varsity Playoofs
     //Varsity Semifinals
-    await newRank("CollegiateAV","WashingtonAV",390,50);
-    await newRank("ChoctawhatcheeAV","TateAV",221,220);
+    await newRank("CollegiateA","WashingtonA",390,50);
+    await newRank("ChoctawhatcheeA","TateA",221,220);
     //Varsity Finals
-    await newRank("CollegiateAV","ChoctawhatcheeAV",420,120);
+    await newRank("CollegiateA","ChoctawhatcheeA",420,120);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -6152,41 +6155,41 @@ async function cSetData(){
     
     //Southwestern Illinois C-Set
     //Round 1
-    await newRank("LindseyAV","GraniteCityAV",400,130);
-    await newRank("AltonAV","SouthwesternAV",360,140);
-    await newRank("KeithCountyDayAJV","SouthwesternCJV",330,130);
-    await newRank("RochesterAJV","SouthwesternBJV",260,180);
+    await newRank("LindseyA","GraniteCityA",400,130);
+    await newRank("AltonA","SouthwesternA",360,140);
+    await newRank("KeithCountyDayA","SouthwesternC",330,130);
+    await newRank("RochesterA","SouthwesternB",260,180);
     //Round 2
-    await newRank("GraniteCityAV","SouthwesternAV",320,110);
-    await newRank("AltonAV","LindseyAV",340,260);
-    await newRank("RochesterAJV","SouthwesternCJV",240,200);
-    await newRank("KeithCountyDayAJV","SouthwesternBJV",250,200);
+    await newRank("GraniteCityA","SouthwesternA",320,110);
+    await newRank("AltonA","LindseyA",340,260);
+    await newRank("RochesterA","SouthwesternC",240,200);
+    await newRank("KeithCountyDayA","SouthwesternB",250,200);
     //Round 3
-    await newRank("AltonAV","GraniteCityAV",380,140);
-    await newRank("LindseyAV","SouthwesternAV",410,90);
-    await newRank("SouthwesternBJV","SouthwesternCJV",320,150);
-    await newRank("RochesterAJV","KeithCountyDayAJV",310,150);
+    await newRank("AltonA","GraniteCityA",380,140);
+    await newRank("LindseyA","SouthwesternA",410,90);
+    await newRank("SouthwesternB","SouthwesternC",320,150);
+    await newRank("RochesterA","KeithCountyDayA",310,150);
     //Round 4
-    await newRank("LindseyAV","SouthwesternAV",480,60);
-    await newRank("AltonAV","GraniteCityAV",370,180);
-    await newRank("KeithCountyDayAJV","RochesterAJV",260,160);
-    await newRank("SouthwesternBJV","SouthwesternCJV",240,100);
+    await newRank("LindseyA","SouthwesternA",480,60);
+    await newRank("AltonA","GraniteCityA",370,180);
+    await newRank("KeithCountyDayA","RochesterA",260,160);
+    await newRank("SouthwesternB","SouthwesternC",240,100);
     //Round 5
-    await newRank("GraniteCityAV","SouthwesternAV",240,100);
-    await newRank("LindseyAV","AltonAV",310,190);
-    await newRank("KeithCountyDayAJV","SouthwesternBJV",310,180);
-    await newRank("RochesterAJV","SouthwesternCJV",260,120);
+    await newRank("GraniteCityA","SouthwesternA",240,100);
+    await newRank("LindseyA","AltonA",310,190);
+    await newRank("KeithCountyDayA","SouthwesternB",310,180);
+    await newRank("RochesterA","SouthwesternC",260,120);
     //Round 6
-    await newRank("LindseyAV","GraniteCityAV",410,110);
-    await newRank("AltonAV","SouthwesternAV",310,70);
-    await newRank("RochesterAJV","SouthwesternBJV",280,150);
-    await newRank("KeithCountyDayAJV","SouthwesternCJV",250,100);
+    await newRank("LindseyA","GraniteCityA",410,110);
+    await newRank("AltonA","SouthwesternA",310,70);
+    await newRank("RochesterA","SouthwesternB",280,150);
+    await newRank("KeithCountyDayA","SouthwesternC",250,100);
     //Varsity Playoffs
     //Varsity Final
-    await newRank("LindseyAV","AltonAV",280,200);
+    await newRank("LindseyA","AltonA",280,200);
     //JV Playoffs
     //JV Final
-    await newRank("KeithCountyDayAJV","RochesterAJV",210,150);
+    await newRank("KeithCountyDayA","RochesterA",210,150);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -6197,52 +6200,52 @@ async function cSetData(){
     //Western Pennsylvania C-Set
     //Prelims
     //Round 1
-    await newRank("KiskiAV","AllderdiceBV",450,70);
-    await newRank("NorthmontAV","SaegertownAV",480,80);
-    await newRank("NAlleghenyHSAV","NCatholicAV",261,260);
-    await newRank("AllderdiceAV","SouthSideAV",400,30);
-    await newRank("NAlleghenyIntAJV","SouthSideBJV",270,220);
-    await newRank("AlagarAJV","NAlleghenyIntBJV",250,220);
+    await newRank("KiskiA","AllderdiceB",450,70);
+    await newRank("NorthmontA","SaegertownA",480,80);
+    await newRank("NAlleghenyHSA","NCatholicA",261,260);
+    await newRank("AllderdiceA","SouthSideA",400,30);
+    await newRank("NAlleghenyIntA","SouthSideB",270,220);
+    await newRank("AlagarA","NAlleghenyIntB",250,220);
     //Round 2
-    await newRank("NorthmontAV","AllderdiceBV",470,80);
-    await newRank("KiskiAV","SaegertownAV",480,70);
-    await newRank("NCatholicAV","AllderdiceAV",310,200);
-    await newRank("NAlleghenyHSAV","SouthSideAV",280,70);
-    await newRank("SouthSideBJV","AlagarAJV",300,190);
-    await newRank("NAlleghenyIntAJV","NAlleghenyIntBJV",340,130);
+    await newRank("NorthmontA","AllderdiceB",470,80);
+    await newRank("KiskiA","SaegertownA",480,70);
+    await newRank("NCatholicA","AllderdiceA",310,200);
+    await newRank("NAlleghenyHSA","SouthSideA",280,70);
+    await newRank("SouthSideB","AlagarA",300,190);
+    await newRank("NAlleghenyIntA","NAlleghenyIntB",340,130);
     //Round 3
-    await newRank("AllderdiceBV","SouthSideAV",260,80);
-    await newRank("KiskiAV","NAlleghenyHSAV",280,240);
-    await newRank("NCatholicAV","AllderdiceAV",300,160);
-    await newRank("NorthmontAV","SaegertownAV",480,80);
-    await newRank("SouthSideBJV","NAlleghenyIntBJV",250,160);
-    await newRank("NAlleghenyIntAJV","AlagarAJV",320,210);
+    await newRank("AllderdiceB","SouthSideA",260,80);
+    await newRank("KiskiA","NAlleghenyHSA",280,240);
+    await newRank("NCatholicA","AllderdiceA",300,160);
+    await newRank("NorthmontA","SaegertownA",480,80);
+    await newRank("SouthSideB","NAlleghenyIntB",250,160);
+    await newRank("NAlleghenyIntA","AlagarA",320,210);
     //Round 4
-    await newRank("NCatholicAV","SaegertownAV",300,110);
-    await newRank("KiskiAV","AllderdiceBV",370,120);
-    await newRank("NAlleghenyHSAV","SouthSideAV",370,80);
-    await newRank("NorthmontAV","AllderdiceAV",440,80);
-    await newRank("SouthSideBJV","AlagarAJV",220,210);
-    await newRank("NAlleghenyIntAJV","NAlleghenyIntBJV",390,150);
+    await newRank("NCatholicA","SaegertownA",300,110);
+    await newRank("KiskiA","AllderdiceB",370,120);
+    await newRank("NAlleghenyHSA","SouthSideA",370,80);
+    await newRank("NorthmontA","AllderdiceA",440,80);
+    await newRank("SouthSideB","AlagarA",220,210);
+    await newRank("NAlleghenyIntA","NAlleghenyIntB",390,150);
     //Round 5
-    await newRank("SaegertownAV","SouthSideAV",161,160);
-    await newRank("KiskiAV","AllderdiceAV",370,150);
-    await newRank("NCatholicAV","AllderdiceBV",240,110);
-    await newRank("NorthmontAV","NAlleghenyHSAV",420,110);
-    await newRank("AlagarAJV","NAlleghenyIntBJV",230,140);
-    await newRank("NAlleghenyIntAJV","SouthSideBJV",270,160);
+    await newRank("SaegertownA","SouthSideA",161,160);
+    await newRank("KiskiA","AllderdiceA",370,150);
+    await newRank("NCatholicA","AllderdiceB",240,110);
+    await newRank("NorthmontA","NAlleghenyHSA",420,110);
+    await newRank("AlagarA","NAlleghenyIntB",230,140);
+    await newRank("NAlleghenyIntA","SouthSideB",270,160);
     //Round 6
-    await newRank("NAlleghenyIntAJV","AlagarAJV",270,150);
-    await newRank("SouthSideBJV","NAlleghenyIntBJV",270,90);
+    await newRank("NAlleghenyIntA","AlagarA",270,150);
+    await newRank("SouthSideB","NAlleghenyIntB",270,90);
     //Varsity Playoffs
     //Varsity Semifinals
-    await newRank("NorthmontAV","NAlleghenyHSAV",350,90);
-    await newRank("KiskiAV","NCatholicAV",270,130);
+    await newRank("NorthmontA","NAlleghenyHSA",350,90);
+    await newRank("KiskiA","NCatholicA",270,130);
     //Varsity Finals
-    await newRank("NorthmontAV","KiskiAV",310,230);
+    await newRank("NorthmontA","KiskiA",310,230);
     //JV PLayoffs
     //JV Finals
-    await newRank("NAlleghenyIntAJV","SouthSideBJV",270,140);
+    await newRank("NAlleghenyIntA","SouthSideB",270,140);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -6253,61 +6256,61 @@ async function cSetData(){
     //Mississippi Winter C-Set
     //Prelims
     //Round 1
-    await newRank("MadisonAV","MadisonBV",340,100);
-    await newRank("HancockAV","PetalBV",230,180);
-    await newRank("HancockCV","HancockBV",120,100);
-    await newRank("ClintonAV","WestJonesAV",210,190);
-    await newRank("PetalAV","RichtonAV",390,60);
-    await newRank("CHECHAJV","RichtonBJV",200,190);
-    await newRank("MadisonCJV","ClintonBJV",221,220);
+    await newRank("MadisonA","MadisonB",340,100);
+    await newRank("HancockA","PetalB",230,180);
+    await newRank("HancockC","HancockB",120,100);
+    await newRank("ClintonA","WestJonesA",210,190);
+    await newRank("PetalA","RichtonA",390,60);
+    await newRank("CHECHA","RichtonB",200,190);
+    await newRank("MadisonC","ClintonB",221,220);
     //Round 2
-    await newRank("MadisonAV","HancockBV",470,30);
-    await newRank("PetalAV","WestJonesAV",270,120);
-    await newRank("PetalBV","RichtonAV",260,90);
-    await newRank("HancockAV","HancockCV",280,110);
-    await newRank("ClintonBJV","RichtonBJV",240,80);
-    await newRank("MadisonCJV","RosaScottAJV",260,160);
+    await newRank("MadisonA","HancockB",470,30);
+    await newRank("PetalA","WestJonesA",270,120);
+    await newRank("PetalB","RichtonA",260,90);
+    await newRank("HancockA","HancockC",280,110);
+    await newRank("ClintonB","RichtonB",240,80);
+    await newRank("MadisonC","RosaScottA",260,160);
     //Round 3
-    await newRank("PetalBV","HancockBV",260,70);
-    await newRank("MadisonBV","HancockCV",390,50);
-    await newRank("MadisonAV","WestJonesAV",360,120);
-    await newRank("PetalAV","HancockAV",310,150);
-    await newRank("ClintonAV","RichtonAV",330,40);
-    await newRank("CHECHAJV","ClintonBJV",240,150);
-    await newRank("RosaScottAJV","RichtonBJV",360,40);
+    await newRank("PetalB","HancockB",260,70);
+    await newRank("MadisonB","HancockC",390,50);
+    await newRank("MadisonA","WestJonesA",360,120);
+    await newRank("PetalA","HancockA",310,150);
+    await newRank("ClintonA","RichtonA",330,40);
+    await newRank("CHECHA","ClintonB",240,150);
+    await newRank("RosaScottA","RichtonB",360,40);
     //Round 4
-    await newRank("MadisonAV","HancockAV",300,120);
-    await newRank("HancockCV","RichtonAV",140,110);
-    await newRank("ClintonAV","HancockBV",180,50);
-    await newRank("PetalAV","MadisonBV",290,130);
-    await newRank("PetalBV","WestJonesAV",250,120);
-    await newRank("RosaScottAJV","ClintonBJV",260,150);
-    await newRank("CHECHAJV","MadisonCJV",260,140);
+    await newRank("MadisonA","HancockA",300,120);
+    await newRank("HancockC","RichtonA",140,110);
+    await newRank("ClintonA","HancockB",180,50);
+    await newRank("PetalA","MadisonB",290,130);
+    await newRank("PetalB","WestJonesA",250,120);
+    await newRank("RosaScottA","ClintonB",260,150);
+    await newRank("CHECHA","MadisonC",260,140);
     //Round 5
-    await newRank("HancockAV","ClintonAV",200,160);
-    await newRank("WestJonesAV","HancockCV",210,20);
-    await newRank("MadisonBV","PetalBV",190,150);
-    await newRank("PetalAV","HancockBV",270,40);
-    await newRank("MadisonAV","RichtonAV",310,30);
-    await newRank("RosaScottAJV","CHECHAJV",240,170);
-    await newRank("MadisonCJV","RichtonBJV",290,40);
+    await newRank("HancockA","ClintonA",200,160);
+    await newRank("WestJonesA","HancockC",210,20);
+    await newRank("MadisonB","PetalB",190,150);
+    await newRank("PetalA","HancockB",270,40);
+    await newRank("MadisonA","RichtonA",310,30);
+    await newRank("RosaScottA","CHECHA",240,170);
+    await newRank("MadisonC","RichtonB",290,40);
     //Varsity Playoffs
     //Varsity Quarterfinals
-    await newRank("MadisonAV","HancockCV",290,20);
-    await newRank("PetalAV","WestJonesAV",300,60);
-    await newRank("PetalBV","ClintonAV",240,130);
-    await newRank("HancockAV","MadisonBV",200,130);
+    await newRank("MadisonA","HancockC",290,20);
+    await newRank("PetalA","WestJonesA",300,60);
+    await newRank("PetalB","ClintonA",240,130);
+    await newRank("HancockA","MadisonB",200,130);
     //Varsity Semifinals
-    await newRank("MadisonAV","HancockAV",360,50);
-    await newRank("PetalAV","PetalBV",190,120);
+    await newRank("MadisonA","HancockA",360,50);
+    await newRank("PetalA","PetalB",190,120);
     //Varsity Finals
-    await newRank("MadisonAV","PetalAV",290,90);
+    await newRank("MadisonA","PetalA",290,90);
     //JV Playoffs
     //JV Semifinals
-    await newRank("RosaScottAJV","ClintonBJV",190,140);
-    await newRank("CHECHAJV","MadisonCJV",220,100);
+    await newRank("RosaScottA","ClintonB",190,140);
+    await newRank("CHECHA","MadisonC",220,100);
     //JV Final
-    await newRank("RosaScottAJV","CHECHAJV",190,140);
+    await newRank("RosaScottA","CHECHA",190,140);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -6317,14 +6320,14 @@ async function cSetData(){
     
     //Nevada C-Set
     //Round 1
-    await newRank("ClarkBJV","LibertyAV",430,0);
-    await newRank("ClarkAV","LibertyBJV",480,60);
+    await newRank("ClarkB","LibertyA",430,0);
+    await newRank("ClarkA","LibertyB",480,60);
     //Round 2
-    await newRank("LibertyBJV","LibertyAV",290,0);
-    await newRank("ClarkAV","ClarkBJV",540,90);
+    await newRank("LibertyB","LibertyA",290,0);
+    await newRank("ClarkA","ClarkB",540,90);
     //Round 3
-    await newRank("ClarkBJV","LibertyBJV",300,130);
-    await newRank("ClarkAV","LibertyAV",580,0);
+    await newRank("ClarkB","LibertyB",300,130);
+    await newRank("ClarkA","LibertyA",580,0);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -6334,17 +6337,17 @@ async function cSetData(){
     //Eastern Iowa C-Set
     //Prelims
     //Round 1
-    await newRank("PleasantValleyAV","CentralAV",280,270);
-    await newRank("PleasantValleyBJV","CentralBJV",230,160);
+    await newRank("PleasantValleyA","CentralA",280,270);
+    await newRank("PleasantValleyB","CentralB",230,160);
     //Round 2
-    await newRank("PleasantValleyAV","SherrardAV",320,160);
-    await newRank("CentralBJV","PleasantValleyBJV",280,130);
+    await newRank("PleasantValleyA","SherrardA",320,160);
+    await newRank("CentralB","PleasantValleyB",280,130);
     //Round 3
-    await newRank("CentralAV","SherrardAV",370,170);
-    await newRank("CentralBJV","PleasantValleyBJV",220,140);
+    await newRank("CentralA","SherrardA",370,170);
+    await newRank("CentralB","PleasantValleyB",220,140);
     //Playoffs
     //Varsity Final
-    await newRank("PleasantValleyAV","CentralAV",320,250);
+    await newRank("PleasantValleyA","CentralA",320,250);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -6354,29 +6357,29 @@ async function cSetData(){
     //Upper Hudson C-Set
     //Prelims
     //Round 1
-    await newRank("BethlehemAV","BerlinBJV",490,80);
-    await newRank("BethlehemBJV","LaurensAV",370,80);
-    await newRank("LoyolaAV","BethlehemMSAJV",310,220);
+    await newRank("BethlehemA","BerlinB",490,80);
+    await newRank("BethlehemB","LaurensA",370,80);
+    await newRank("LoyolaA","BethlehemMSA",310,220);
     //Round 2
-    await newRank("BethlehemBJV","BerlinBJV",260,140);
-    await newRank("BethlehemAV","LoyolaAV",360,190);
-    await newRank("BerlinAV","LaurensAV",360,190);
+    await newRank("BethlehemB","BerlinB",260,140);
+    await newRank("BethlehemA","LoyolaA",360,190);
+    await newRank("BerlinA","LaurensA",360,190);
     //Round 3
-    await newRank("BethlehemBJV","BerlinAV",430,70);
-    await newRank("BethlehemMSAJV","BerlinBJV",360,110);
-    await newRank("LoyolaAV","LaurensAV",340,70);
+    await newRank("BethlehemB","BerlinA",430,70);
+    await newRank("BethlehemMSA","BerlinB",360,110);
+    await newRank("LoyolaA","LaurensA",340,70);
     //Round 4
-    await newRank("LoyolaAV","BerlinBJV",280,80);
-    await newRank("BethlehemAV","BethlehemBJV",400,160);
-    await newRank("BethlehemMSAJV","BerlinAV",280,120);
+    await newRank("LoyolaA","BerlinB",280,80);
+    await newRank("BethlehemA","BethlehemB",400,160);
+    await newRank("BethlehemMSA","BerlinA",280,120);
     //Round 5
-    await newRank("BethlehemAV","LaurensAV",390,90);
-    await newRank("LoyolaAV","BerlinAV",280,140);
-    await newRank("BethlehemBJV","BethlehemMSAJV",360,90);
+    await newRank("BethlehemA","LaurensA",390,90);
+    await newRank("LoyolaA","BerlinA",280,140);
+    await newRank("BethlehemB","BethlehemMSA",360,90);
     //Playoffs
     //Varsity Final
-    await newRank("BethlehemAV","LoyolaAV",210,170);
-    await newRank("BethlehemBJV","BethlehemMSAJV",240,110);
+    await newRank("BethlehemA","LoyolaA",210,170);
+    await newRank("BethlehemB","BethlehemMSA",240,110);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -6386,23 +6389,23 @@ async function cSetData(){
     //Northern Pennsylvania C-Set
     //Prelims
     //Round 1
-    await newRank("WyomingBV","NanticokeAV",230,190);
-    await newRank("ParklandAV","WyomingAV",260,170);
+    await newRank("WyomingB","NanticokeA",230,190);
+    await newRank("ParklandA","WyomingA",260,170);
     //Round 2
-    await newRank("WyomingBV","WyomingCV",250,130);
-    await newRank("WyomingAV","NanticokeAV",270,140);
+    await newRank("WyomingB","WyomingC",250,130);
+    await newRank("WyomingA","NanticokeA",270,140);
     //Round 3
-    await newRank("WyomingAV","WyomingCV",210,170);
-    await newRank("ParklandAV","NanticokeAV",230,200);
+    await newRank("WyomingA","WyomingC",210,170);
+    await newRank("ParklandA","NanticokeA",230,200);
     //Round 4
-    await newRank("ParklandAV","WyomingCV",300,120);
-    await newRank("WyomingAV","WyomingBV",210,200);
+    await newRank("ParklandA","WyomingC",300,120);
+    await newRank("WyomingA","WyomingB",210,200);
     //Round 5
-    await newRank("WyomingBV","ParklandAV",230,200);
-    await newRank("NanticokeAV","WyomingCV",220,120);
+    await newRank("WyomingB","ParklandA",230,200);
+    await newRank("NanticokeA","WyomingC",220,120);
     //Playoffs
     //Finals
-    await newRank("ParklandAV","WyomingBV",220,110);
+    await newRank("ParklandA","WyomingB",220,110);
     allV.push(teamAvgV);
     teamAvgV = [];
     console.log("NorPenn C");
@@ -6410,43 +6413,43 @@ async function cSetData(){
     
     //New Hampshire C-Set
     //Round 1
-    await newRank("PlymouthBJV","NewtonSouthBV",210,170);
-    await newRank("SouthBurlingtonAV","NewtonSouthCJV",400,120);
-    await newRank("HanoverAV","NewtonNorthBV",390,150);
-    await newRank("NewtonNorthAV","NewtonSouthAV",440,110);
-    await newRank("PlymouthAV","NewtonNorthCV",410,140);
+    await newRank("PlymouthB","NewtonSouthB",210,170);
+    await newRank("SouthBurlingtonA","NewtonSouthC",400,120);
+    await newRank("HanoverA","NewtonNorthB",390,150);
+    await newRank("NewtonNorthA","NewtonSouthA",440,110);
+    await newRank("PlymouthA","NewtonNorthC",410,140);
     //Round 2
-    await newRank("NewtonNorthBV","NewtonSouthAV",230,190);
-    await newRank("NewtonNorthCV","NewtonSouthBV",230,170);
-    await newRank("NewtonNorthAV","PlymouthBJV",350,160);
-    await newRank("HanoverAV","NewtonSouthCJV",390,100);
-    await newRank("PlymouthAV","SouthBurlingtonAV",380,170);
+    await newRank("NewtonNorthB","NewtonSouthA",230,190);
+    await newRank("NewtonNorthC","NewtonSouthB",230,170);
+    await newRank("NewtonNorthA","PlymouthB",350,160);
+    await newRank("HanoverA","NewtonSouthC",390,100);
+    await newRank("PlymouthA","SouthBurlingtonA",380,170);
     //Round 3
-    await newRank("NewtonNorthAV","HanoverAV",290,250);
-    await newRank("PlymouthAV","NewtonNorthAV",300,170);
-    await newRank("NewtonNorthBV","NewtonSouthBV",390,60);
-    await newRank("SouthBurlingtonAV","NewtonNorthCV",260,250);
-    await newRank("NewtonSouthCJV","PlymouthBJV",260,160);
+    await newRank("NewtonNorthA","HanoverA",290,250);
+    await newRank("PlymouthA","NewtonNorthA",300,170);
+    await newRank("NewtonNorthB","NewtonSouthB",390,60);
+    await newRank("SouthBurlingtonA","NewtonNorthC",260,250);
+    await newRank("NewtonSouthC","PlymouthB",260,160);
     //Round 4
-    await newRank("PlymouthAV","NewtonSouthCJV",420,110);
-    await newRank("HanoverAV","NewtonNorthCV",470,110);
-    await newRank("NewtonNorthAV","NewtonSouthBV",490,90);
-    await newRank("NewtonSouthAV","PlymouthBJV",360,140);
-    await newRank("SouthBurlingtonAV","NewtonNorthBV",260,240);
+    await newRank("PlymouthA","NewtonSouthC",420,110);
+    await newRank("HanoverA","NewtonNorthC",470,110);
+    await newRank("NewtonNorthA","NewtonSouthB",490,90);
+    await newRank("NewtonSouthA","PlymouthB",360,140);
+    await newRank("SouthBurlingtonA","NewtonNorthB",260,240);
     //Round 5
-    await newRank("SouthBurlingtonAV","NewtonSouthAV",300,170);
-    await newRank("NewtonNorthBV","PlymouthBJV",320,120);
-    await newRank("NewtonNorthCV","NewtonSouthCJV",200,180);
-    await newRank("NewtonNorthAV","PlymouthAV",370,140);
-    await newRank("HanoverAV","NewtonSouthBV",350,70);
+    await newRank("SouthBurlingtonA","NewtonSouthA",300,170);
+    await newRank("NewtonNorthB","PlymouthB",320,120);
+    await newRank("NewtonNorthC","NewtonSouthC",200,180);
+    await newRank("NewtonNorthA","PlymouthA",370,140);
+    await newRank("HanoverA","NewtonSouthB",350,70);
     //Playoffs
     //Semifinals
-    await newRank("NewtonNorthAV","SouthBurlingtonAV",380,150);
-    await newRank("PlymouthAV","HanoverAV",280,250);
+    await newRank("NewtonNorthA","SouthBurlingtonA",380,150);
+    await newRank("PlymouthA","HanoverA",280,250);
     //Varsity Finals
-    await newRank("NewtonNorthAV","PlymouthAV",330,160);
+    await newRank("NewtonNorthA","PlymouthA",330,160);
     //JV Finals
-    await newRank("PlymouthBJV","NewtonSouthCJV",160,110);
+    await newRank("PlymouthB","NewtonSouthC",160,110);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -6456,60 +6459,60 @@ async function cSetData(){
     //Arkansas C-Set
     //Prelims
     //Round 1
-    await newRank("RussellvilleBJV","EpiscopalAV",220,140);
-    await newRank("FayettevilleAV","VanBurenAV",330,140);
-    await newRank("RussellvilleAV","ChesterCountyBV",490,50);
-    await newRank("ChesterCountyAV","FortSmithSouthsideBV",290,160);
-    await newRank("MountainViewARAV","FortSmithSouthsideAV",390,140);
-    await newRank("DeQueenAV","ConwayChristianBV",270,100);
-    await newRank("ConwayChristianBV","FortSmithSouthsideCJV",200,180);
+    await newRank("RussellvilleB","EpiscopalA",220,140);
+    await newRank("FayettevilleA","VanBurenA",330,140);
+    await newRank("RussellvilleA","ChesterCountyB",490,50);
+    await newRank("ChesterCountyA","FortSmithSouthsideB",290,160);
+    await newRank("MountainViewARA","FortSmithSouthsideA",390,140);
+    await newRank("DeQueenA","ConwayChristianB",270,100);
+    await newRank("ConwayChristianB","FortSmithSouthsideC",200,180);
     //Round 2
-    await newRank("MountainViewARAV","ChesterCountyAV",350,150);
-    await newRank("RussellvilleAV","ConwayChristianBV",520,30);
-    await newRank("RussellvilleBJV","VanBurenAV",300,100);
-    await newRank("EpiscopalAV","ChesterCountyBV",210,140);
-    await newRank("FortSmithSouthsideAV","FortSmithSouthsideCJV",310,120);
-    await newRank("DeQueenAV","ConwayChristianAV",350,120);
-    await newRank("FayettevilleAV","FortSmithSouthsideBV",250,220);
+    await newRank("MountainViewARA","ChesterCountyA",350,150);
+    await newRank("RussellvilleA","ConwayChristianB",520,30);
+    await newRank("RussellvilleB","VanBurenA",300,100);
+    await newRank("EpiscopalA","ChesterCountyB",210,140);
+    await newRank("FortSmithSouthsideA","FortSmithSouthsideC",310,120);
+    await newRank("DeQueenA","ConwayChristianA",350,120);
+    await newRank("FayettevilleA","FortSmithSouthsideB",250,220);
     //Round 3
-    await newRank("RussellvilleAV","EpiscopalAV",510,50);
-    await newRank("FayettevilleAV","ConwayChristianBV",380,80);
-    await newRank("FortSmithSouthsideCJV","MountainViewARAV",340,120);
-    await newRank("FortSmithSouthsideAV","ConwayChristianAV",370,140);
-    await newRank("DeQueenAV","ChesterCountyAV",260,250);
-    await newRank("ChesterCountyBV","VanBurenAV",180,170);
-    await newRank("FortSmithSouthsideBV","RussellvilleBJV",250,190);
+    await newRank("RussellvilleA","EpiscopalA",510,50);
+    await newRank("FayettevilleA","ConwayChristianB",380,80);
+    await newRank("FortSmithSouthsideC","MountainViewARA",340,120);
+    await newRank("FortSmithSouthsideA","ConwayChristianA",370,140);
+    await newRank("DeQueenA","ChesterCountyA",260,250);
+    await newRank("ChesterCountyB","VanBurenA",180,170);
+    await newRank("FortSmithSouthsideB","RussellvilleB",250,190);
     //Round 4
-    await newRank("FortSmithSouthsideCJV","ConwayChristianBV",210,110);
-    await newRank("ChesterCountyAV","FortSmithSouthsideAV",260,220);
-    await newRank("MountainViewARAV","DeQueenAV",380,180);
-    await newRank("RussellvilleAV","FayettevilleAV",370,250);
-    await newRank("EpiscopalAV","VanBurenAV",230,90);
-    await newRank("RussellvilleBJV","ChesterCountyBV",230,90);
-    await newRank("ConwayChristianAV","FortSmithSouthsideBV",230,140);
+    await newRank("FortSmithSouthsideC","ConwayChristianB",210,110);
+    await newRank("ChesterCountyA","FortSmithSouthsideA",260,220);
+    await newRank("MountainViewARA","DeQueenA",380,180);
+    await newRank("RussellvilleA","FayettevilleA",370,250);
+    await newRank("EpiscopalA","VanBurenA",230,90);
+    await newRank("RussellvilleB","ChesterCountyB",230,90);
+    await newRank("ConwayChristianA","FortSmithSouthsideB",230,140);
     //Round 5
-    await newRank("FayettevilleAV","DeQueenAV",260,220);
-    await newRank("ConwayChristianAV","VanBurenAV",180,90);
-    await newRank("RussellvilleAV","ChesterCountyAV",440,110);
-    await newRank("RussellvilleBJV","FortSmithSouthsideCJV",180,160);
-    await newRank("MountainViewARAV","FortSmithSouthsideBV",230,190);
-    await newRank("ConwayChristianBV","ChesterCountyBV",140,110);
-    await newRank("FortSmithSouthsideAV","EpiscopalAV",350,70);
+    await newRank("FayettevilleA","DeQueenA",260,220);
+    await newRank("ConwayChristianA","VanBurenA",180,90);
+    await newRank("RussellvilleA","ChesterCountyA",440,110);
+    await newRank("RussellvilleB","FortSmithSouthsideC",180,160);
+    await newRank("MountainViewARA","FortSmithSouthsideB",230,190);
+    await newRank("ConwayChristianB","ChesterCountyB",140,110);
+    await newRank("FortSmithSouthsideA","EpiscopalA",350,70);
     //Playoffs
     //Varsity Playoffs
     //Varsity Quarterfinals
-    await newRank("RussellvilleAV","EpiscopalAV",400,90);
-    await newRank("FortSmithSouthsideAV","DeQueenAV",250,200);
-    await newRank("FayettevilleAV","ConwayChristianAV",240,110);
-    await newRank("MountainViewARAV","ChesterCountyAV",360,130);
+    await newRank("RussellvilleA","EpiscopalA",400,90);
+    await newRank("FortSmithSouthsideA","DeQueenA",250,200);
+    await newRank("FayettevilleA","ConwayChristianA",240,110);
+    await newRank("MountainViewARA","ChesterCountyA",360,130);
     //Varsity Semifinals
-    await newRank("RussellvilleAV","FortSmithSouthsideAV",340,120);
-    await newRank("MountainViewARAV","FayettevilleAV",270,140);
+    await newRank("RussellvilleA","FortSmithSouthsideA",340,120);
+    await newRank("MountainViewARA","FayettevilleA",270,140);
     //Varsity Final
-    await newRank("RussellvilleAV","MountainViewARAV",350,160);
+    await newRank("RussellvilleA","MountainViewARA",350,160);
     //JV Playoffs (Best of 3 Final)
-    await newRank("RussellvilleBJV","FortSmithSouthsideCJV",170,100);
-    await newRank("RussellvilleBJV","FortSmithSouthsideCJV",200,130);
+    await newRank("RussellvilleB","FortSmithSouthsideC",170,100);
+    await newRank("RussellvilleB","FortSmithSouthsideC",200,130);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -6519,61 +6522,61 @@ async function cSetData(){
     //SoCal C-Set
     //Prelims
     //Round 1
-    await newRank("SantaMonicaAV","WhitneyAV",450,140);
-    await newRank("CanyonCrestAV","ArcadiaCV",410,160);
-    await newRank("ArcadiaAV","ScrippsRanchAV",420,130);
-    await newRank("ArcadiaBV","TroyAV",330,220);
-    await newRank("StMargaretsAJV","LaCanadaAJV",470,70);
-    await newRank("SantiagoAJV","ArcadiaDJV",240,210);
-    await newRank("PegasusAJV","VistaVerdeAJV",240,210);
+    await newRank("SantaMonicaA","WhitneyA",450,140);
+    await newRank("CanyonCrestA","ArcadiaC",410,160);
+    await newRank("ArcadiaA","ScrippsRanchA",420,130);
+    await newRank("ArcadiaB","TroyA",330,220);
+    await newRank("StMargaretsA","LaCanadaA",470,70);
+    await newRank("SantiagoA","ArcadiaD",240,210);
+    await newRank("PegasusA","VistaVerdeA",240,210);
     //Round 2
-    await newRank("SantaMonicaAV","ScrippsRanchAV",420,200);
-    await newRank("CanyonCrestAV","ArcadiaBV",310,250);
-    await newRank("ArcadiaAV","CanyonCrestBV",530,110);
-    await newRank("ArcadiaDJV","LaCanadaAJV",260,150);
-    await newRank("StMargaretsAJV","VistaVerdeAJV",520,70);
-    await newRank("SantiagoAJV","PegasusAJV",240,220);
-    await newRank("TroyAV","WhitneyAV",390,120);
+    await newRank("SantaMonicaA","ScrippsRanchA",420,200);
+    await newRank("CanyonCrestA","ArcadiaB",310,250);
+    await newRank("ArcadiaA","CanyonCrestB",530,110);
+    await newRank("ArcadiaD","LaCanadaA",260,150);
+    await newRank("StMargaretsA","VistaVerdeA",520,70);
+    await newRank("SantiagoA","PegasusA",240,220);
+    await newRank("TroyA","WhitneyA",390,120);
     //Round 3
-    await newRank("SantaMonicaAV","CanyonCrestBV",340,230);
-    await newRank("ScrippsRanchAV","TroyAV",280,240);
-    await newRank("CanyonCrestAV","WhitneyAV",390,160);
-    await newRank("ArcadiaAV","ArcadiaCV",410,170);
-    await newRank("PegasusAJV","ArcadiaDJV",330,180);
-    await newRank("VistaVerdeAJV","LaCanadaAJV",250,160);
-    await newRank("StMargaretsAJV","SantiagoAJV",370,140);
+    await newRank("SantaMonicaA","CanyonCrestB",340,230);
+    await newRank("ScrippsRanchA","TroyA",280,240);
+    await newRank("CanyonCrestA","WhitneyA",390,160);
+    await newRank("ArcadiaA","ArcadiaC",410,170);
+    await newRank("PegasusA","ArcadiaD",330,180);
+    await newRank("VistaVerdeA","LaCanadaA",250,160);
+    await newRank("StMargaretsA","SantiagoA",370,140);
     //Round 4
-    await newRank("SantaMonicaAV","ArcadiaCV",520,70);
-    await newRank("ArcadiaAV","ArcadiaBV",330,230);
-    await newRank("StMargaretsAJV","PegasusAJV",300,250);
-    await newRank("TroyAV","CanyonCrestBV",310,300);
-    await newRank("SantiagoAJV","LaCanadaAJV",390,150);
-    await newRank("CanyonCrestAV","ScrippsRanchAV",390,180);
+    await newRank("SantaMonicaA","ArcadiaC",520,70);
+    await newRank("ArcadiaA","ArcadiaB",330,230);
+    await newRank("StMargaretsA","PegasusA",300,250);
+    await newRank("TroyA","CanyonCrestB",310,300);
+    await newRank("SantiagoA","LaCanadaA",390,150);
+    await newRank("CanyonCrestA","ScrippsRanchA",390,180);
     //Round 5
-    await newRank("CanyonCrestAV","CanyonCrestBV",450,140);
-    await newRank("TroyAV","ArcadiaCV",290,180);
-    await newRank("SantaMonicaAV","ArcadiaBV",360,190);
-    await newRank("ArcadiaAV","WhitneyAV",530,60);
-    await newRank("LaCanadaAJV","PegasusAJV",230,220);
-    await newRank("StMargaretsAJV","ArcadiaDJV",380,110);
+    await newRank("CanyonCrestA","CanyonCrestB",450,140);
+    await newRank("TroyA","ArcadiaC",290,180);
+    await newRank("SantaMonicaA","ArcadiaB",360,190);
+    await newRank("ArcadiaA","WhitneyA",530,60);
+    await newRank("LaCanadaA","PegasusA",230,220);
+    await newRank("StMargaretsA","ArcadiaD",380,110);
     //Playoffs
     //Varsity Playoffs
     //Varsity Quarterfinals
-    await newRank("ArcadiaAV","ArcadiaCV",420,140);
-    await newRank("SantaMonicaAV","CanyonCrestBV",390,170);
-    await newRank("CanyonCrestAV","ScrippsRanchAV",430,110);
-    await newRank("ArcadiaBV","TroyAV",300,210);
+    await newRank("ArcadiaA","ArcadiaC",420,140);
+    await newRank("SantaMonicaA","CanyonCrestB",390,170);
+    await newRank("CanyonCrestA","ScrippsRanchA",430,110);
+    await newRank("ArcadiaB","TroyA",300,210);
     //Varsity Semifinals
-    await newRank("ArcadiaAV","ArcadiaBV",470,120);
-    await newRank("CanyonCrestAV","SantaMonicaAV",320,240);
+    await newRank("ArcadiaA","ArcadiaB",470,120);
+    await newRank("CanyonCrestA","SantaMonicaA",320,240);
     //Varsity Finals
-    await newRank("ArcadiaAV","CanyonCrestAV",350,180);
+    await newRank("ArcadiaA","CanyonCrestA",350,180);
     //JV Playoffs
     //JV Semifinals
-    await newRank("StMargaretsAJV","ArcadiaDJV",450,70);
-    await newRank("SantiagoAJV","PegasusAJV",320,120);
+    await newRank("StMargaretsA","ArcadiaD",450,70);
+    await newRank("SantiagoA","PegasusA",320,120);
     //JV Finals
-    await newRank("StMargaretsAJV","SantiagoAJV",280,140);
+    await newRank("StMargaretsA","SantiagoA",280,140);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -6597,79 +6600,79 @@ async function cSetData(){
     c2 = c2+1;
     //Prelims
     //Round 1
-    await newRank("MissionSanJoseAJV","SaratogaEJV",450,70);
-    await newRank("HomesteadAJV","MountainViewCAAJV",390,130);
-    await newRank("SaggitariusAJV","SantaClaraAJV",390,180);
-    await newRank("SaratogaDJV","CaliforniaAJV",340,210);
-    await newRank("HarkerAJV","EriksenBJV",370,150);
+    await newRank("MissionSanJoseA","SaratogaE",450,70);
+    await newRank("HomesteadA","MountainViewCAA",390,130);
+    await newRank("SaggitariusA","SantaClaraA",390,180);
+    await newRank("SaratogaD","CaliforniaA",340,210);
+    await newRank("HarkerA","EriksenB",370,150);
     await newRank("AlmadenMSA","JLSMSA",360,200);
-    await newRank("LynbrookAV","LesQuizAV",450,90);
-    await newRank("PiedmontHillsAV","SaratogaCV",280,230);
-    await newRank("GundersonAV","EriksenAV",300,280);
-    await newRank("SaratogaAV","FoothillAV",440,190);
-    await newRank("PioneersAV","SaratogaBV",350,290);
+    await newRank("LynbrookA","LesQuizA",450,90);
+    await newRank("PiedmontHillsA","SaratogaC",280,230);
+    await newRank("GundersonA","EriksenA",300,280);
+    await newRank("SaratogaA","FoothillA",440,190);
+    await newRank("PioneersA","SaratogaB",350,290);
     //Round 2
-    await newRank("LynbrookAV","SaratogaCV",490,80);
-    await newRank("PioneersAV","GundersonAV",430,210);
-    await newRank("FoothillAV","PiedmontHillsAV",310,300);
-    await newRank("HomesteadAJV","SaratogaEJV",300,150);
-    await newRank("SantaClaraAJV","HarkerAJV",320,250);
-    await newRank("MissionSanJoseAJV","SaratogaDJV",330,270);
-    await newRank("SaggitariusAJV","MountainViewCAAJV",370,170);
-    await newRank("CaliforniaAJV","EriksenBJV",400,130);
-    await newRank("SaratogaBV","EriksenAV",340,310);
-    await newRank("SaratogaAV","LesQuizAV",540,90);
+    await newRank("LynbrookA","SaratogaC",490,80);
+    await newRank("PioneersA","GundersonA",430,210);
+    await newRank("FoothillA","PiedmontHillsA",310,300);
+    await newRank("HomesteadA","SaratogaE",300,150);
+    await newRank("SantaClaraA","HarkerA",320,250);
+    await newRank("MissionSanJoseA","SaratogaD",330,270);
+    await newRank("SaggitariusA","MountainViewCAA",370,170);
+    await newRank("CaliforniaA","EriksenB",400,130);
+    await newRank("SaratogaB","EriksenA",340,310);
+    await newRank("SaratogaA","LesQuizA",540,90);
     await newRank("AlmadenMSA","HarvestParkMSA",320,270);
     //Round 3
-    await newRank("SaratogaDJV","HomesteadAJV",330,210);
-    await newRank("SaggitariusAJV","SaratogaEJV",400,160);
-    await newRank("SantaClaraAJV","CaliforniaAJV",270,240);
-    await newRank("SaratogaCV","LesQuizAV",280,230);
-    await newRank("SaratogaAV","SaratogaBV",360,220);
-    await newRank("EriksenAV","PiedmontHillsAV",370,180);
-    await newRank("PioneersAV","LynbrookAV",370,210);
-    await newRank("GundersonAV","FoothillAV",260,240);
-    await newRank("MissionSanJoseAJV","EriksenBJV",400,100);
-    await newRank("HarkerAJV","MountainViewCAAJV",360,120);
+    await newRank("SaratogaD","HomesteadA",330,210);
+    await newRank("SaggitariusA","SaratogaE",400,160);
+    await newRank("SantaClaraA","CaliforniaA",270,240);
+    await newRank("SaratogaC","LesQuizA",280,230);
+    await newRank("SaratogaA","SaratogaB",360,220);
+    await newRank("EriksenA","PiedmontHillsA",370,180);
+    await newRank("PioneersA","LynbrookA",370,210);
+    await newRank("GundersonA","FoothillA",260,240);
+    await newRank("MissionSanJoseA","EriksenB",400,100);
+    await newRank("HarkerA","MountainViewCAA",360,120);
     await newRank("JLSMSA","HarvestParkMSA",260,220);
     //Round 4
-    await newRank("SaratogaAV","GundersonAV",350,170);
-    await newRank("MissionSanJoseAJV","SantaClaraAJV",340,240);
-    await newRank("PioneersAV","LesQuizAV",560,50)
-    await newRank("LynbrookAV","FoothillAV",390,200);
-    await newRank("HomesteadAJV","EriksenBJV",400,80);
-    await newRank("SaratogaBV","PiedmontHillsAV",440,140);
-    await newRank("CaliforniaAJV","MountainViewCAAJV",420,80);
-    await newRank("EriksenAV","SaratogaCV",440,150);
+    await newRank("SaratogaA","GundersonA",350,170);
+    await newRank("MissionSanJoseA","SantaClaraA",340,240);
+    await newRank("PioneersA","LesQuizA",560,50)
+    await newRank("LynbrookA","FoothillA",390,200);
+    await newRank("HomesteadA","EriksenB",400,80);
+    await newRank("SaratogaB","PiedmontHillsA",440,140);
+    await newRank("CaliforniaA","MountainViewCAA",420,80);
+    await newRank("EriksenA","SaratogaC",440,150);
     await newRank("AlmadenMSA","JLSMSA",410,160);
-    await newRank("HarkerAJV","SaratogaEJV",320,170);
-    await newRank("SaggitariusAJV","SaratogaDJV",330,180);
+    await newRank("HarkerA","SaratogaE",320,170);
+    await newRank("SaggitariusA","SaratogaD",330,180);
     //Round 5
-    await newRank("FoothillAV","LesQuizAV",380,130);
-    await newRank("SaratogaBV","GundersonAV",290,280);
-    await newRank("SaratogaAV","EriksenAV",320,290);
-    await newRank("CaliforniaAJV","SaratogaEJV",320,140);
-    await newRank("PioneersAV","SaratogaCV",490,110);
-    await newRank("LynbrookAV","PiedmontHillsAV",390,180);
-    await newRank("SaggitariusAJV","EriksenBJV",440,90);
-    await newRank("MissionSanJoseAJV","MountainViewCAAJV",270,150);
+    await newRank("FoothillA","LesQuizA",380,130);
+    await newRank("SaratogaB","GundersonA",290,280);
+    await newRank("SaratogaA","EriksenA",320,290);
+    await newRank("CaliforniaA","SaratogaE",320,140);
+    await newRank("PioneersA","SaratogaC",490,110);
+    await newRank("LynbrookA","PiedmontHillsA",390,180);
+    await newRank("SaggitariusA","EriksenB",440,90);
+    await newRank("MissionSanJoseA","MountainViewCAA",270,150);
     await newRank("AlmadenMSA","HarvestParkMSA",390,230);
-    await newRank("SaratogaDJV","HarkerAJV",300,180);
-    await newRank("SantaClaraAJV","HomesteadAJV",300,170);
+    await newRank("SaratogaD","HarkerA",300,180);
+    await newRank("SantaClaraA","HomesteadA",300,170);
     //Round 6
     await newRank("HarvestParkMSA","JLSMSA",270,150)
     //Varsity Playoffs
     //Semifinals
-    await newRank("PioneersAV","SaratogaBV",370,210);
-    await newRank("SaratogaAV","LynbrookAV",390,170);
+    await newRank("PioneersA","SaratogaB",370,210);
+    await newRank("SaratogaA","LynbrookA",390,170);
     //Finals
-    await newRank("PioneersAV","SaratogaAV",360,230);
+    await newRank("PioneersA","SaratogaA",360,230);
     //JV Playoffs
     //Semifinals
-    await newRank("SaggitariusAJV","HarkerAJV",310,170);
-    await newRank("MissionSanJoseAJV","CaliforniaAJV",250,220);
+    await newRank("SaggitariusA","HarkerA",310,170);
+    await newRank("MissionSanJoseA","CaliforniaA",250,220);
     //Finals
-    await newRank("MissionSanJoseAJV","SaggitariusAJV",280,210);
+    await newRank("MissionSanJoseA","SaggitariusA",280,210);
     console.log("NorCal C q V: "+qV[a2]);
     console.log("NorCal C q JV: "+qJV[b2]);
     console.log("NorCal C q MS: "+qMS[c2]);
@@ -6683,60 +6686,60 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("GonzagaAV","MtSpokaneAV",300,180);
-    await newRank("StGeorgesAV","FrenchtownAV",250,140);
-    await newRank("EastValleyAV","FrenchtownBV",370,70);
-    await newRank("MtSpokaneBV","EastValleyBV",330,100);
-    await newRank("LibbyAJV","EastValleyCJV",300,70);
-    await newRank("MtSpokaneCJV","MtSpokaneDJV",260,130);
+    await newRank("GonzagaA","MtSpokaneA",300,180);
+    await newRank("StGeorgesA","FrenchtownA",250,140);
+    await newRank("EastValleyA","FrenchtownB",370,70);
+    await newRank("MtSpokaneB","EastValleyB",330,100);
+    await newRank("LibbyA","EastValleyC",300,70);
+    await newRank("MtSpokaneC","MtSpokaneD",260,130);
     //Round 2
-    await newRank("MtSpokaneAV","FrenchtownAV",320,60);
-    await newRank("StGeorgesAV","MtSpokaneBV",200,180);
-    await newRank("GonzagaAV","FrenchtownBV",350,70);
-    await newRank("EastValleyBV","EastValleyAV",190,180);
-    await newRank("MtSpokaneDJV","EastValleyCJV",170,140);
-    await newRank("LibbyAJV","MtSpokaneCJV",220,130);
+    await newRank("MtSpokaneA","FrenchtownA",320,60);
+    await newRank("StGeorgesA","MtSpokaneB",200,180);
+    await newRank("GonzagaA","FrenchtownB",350,70);
+    await newRank("EastValleyB","EastValleyA",190,180);
+    await newRank("MtSpokaneD","EastValleyC",170,140);
+    await newRank("LibbyA","MtSpokaneC",220,130);
     //Round 3
-    await newRank("MtSpokaneBV","MtSpokaneAV",240,210);
-    await newRank("FrenchtownAV","FrenchtownBV",250,90);
-    await newRank("GonzagaAV","EastValleyBV",340,120);
-    await newRank("StGeorgesAV","EastValleyAV",310,100);
-    await newRank("MtSpokaneCJV","EastValleyCJV",210,100);
-    await newRank("LibbyAJV","MtSpokaneDJV",240,110);
+    await newRank("MtSpokaneB","MtSpokaneA",240,210);
+    await newRank("FrenchtownA","FrenchtownB",250,90);
+    await newRank("GonzagaA","EastValleyB",340,120);
+    await newRank("StGeorgesA","EastValleyA",310,100);
+    await newRank("MtSpokaneC","EastValleyC",210,100);
+    await newRank("LibbyA","MtSpokaneD",240,110);
     //Round 4
-    await newRank("MtSpokaneBV","FrenchtownBV",410,40);
-    await newRank("EastValleyAV","MtSpokaneAV",250,210);
-    await newRank("EastValleyBV","FrenchtownAV",220,150);
-    await newRank("GonzagaAV","StGeorgesAV",340,180);
-    await newRank("LibbyAJV","MtSpokaneDJV",220,80);
-    await newRank("MtSpokaneCJV"," EastValleyCJV",150,110);
+    await newRank("MtSpokaneB","FrenchtownB",410,40);
+    await newRank("EastValleyA","MtSpokaneA",250,210);
+    await newRank("EastValleyB","FrenchtownA",220,150);
+    await newRank("GonzagaA","StGeorgesA",340,180);
+    await newRank("LibbyA","MtSpokaneD",220,80);
+    await newRank("MtSpokaneC"," EastValleyC",150,110);
     //Round 5
-    await newRank("MtSpokaneBV","EastValleyAV",240,160);
-    await newRank("StGeorgesAV","EastValleyBV",200,150);
-    await newRank("MtSpokaneAV","FrenchtownBV",290,60);
-    await newRank("GonzagaAV","FrenchtownAV",280,70);
-    await newRank("LibbyAJV","MtSpokaneCJV",290,50);
-    await newRank("MtSpokaneDJV","EastValleyCJV",140,100);
+    await newRank("MtSpokaneB","EastValleyA",240,160);
+    await newRank("StGeorgesA","EastValleyB",200,150);
+    await newRank("MtSpokaneA","FrenchtownB",290,60);
+    await newRank("GonzagaA","FrenchtownA",280,70);
+    await newRank("LibbyA","MtSpokaneC",290,50);
+    await newRank("MtSpokaneD","EastValleyC",140,100);
     //Round 6
-    await newRank("LibbyAJV","EastValleyCJV",180,70);
-    await newRank("MtSpokaneDJV","MtSpokaneCJV",120,110);
+    await newRank("LibbyA","EastValleyC",180,70);
+    await newRank("MtSpokaneD","MtSpokaneC",120,110);
     //Varsity Playoffs
     //Quarterfinals
-    await newRank("GonzagaAV","FrenchtownBV",340,80);
-    await newRank("MtSpokaneAV","EastValleyAV",231,230);
-    await newRank("StGeorgesAV","EastValleyBV",210,100);
-    await newRank("MtSpokaneBV","FrenchtownAV",230,90);
+    await newRank("GonzagaA","FrenchtownB",340,80);
+    await newRank("MtSpokaneA","EastValleyA",231,230);
+    await newRank("StGeorgesA","EastValleyB",210,100);
+    await newRank("MtSpokaneB","FrenchtownA",230,90);
     //Semifinals
-    await newRank("MtSpokaneBV","StGeorgesAV",200,160);
-    await newRank("GonzagaAV","MtSpokaneAV",320,120);
+    await newRank("MtSpokaneB","StGeorgesA",200,160);
+    await newRank("GonzagaA","MtSpokaneA",320,120);
     //Finals
-    await newRank("GonzagaAV","MtSpokaneBV",260,70)
+    await newRank("GonzagaA","MtSpokaneB",260,70)
     //JV Playoffs
     //Semifinals
-    await newRank("LibbyAJV","EastValleyCJV",210,100);
-    await newRank("MtSpokaneCJV","MtSpokaneDJV",140,90);
+    await newRank("LibbyA","EastValleyC",210,100);
+    await newRank("MtSpokaneC","MtSpokaneD",140,90);
     //Finals
-    //await newRank("await newRank("LibbyAJV","MtSpokaneCJV",1,0);
+    //await newRank("await newRank("LibbyA","MtSpokaneC",1,0);
     console.log("East WA C q V: "+qV[a2]);
     console.log("East WA C q JV: "+qJV[b2]);
     a = 0;
@@ -6750,44 +6753,44 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("StarrsMillAV","StarrsMillBV",440,90);
-    await newRank("CreeksideAV","StarrsMillCV",190,170);
-    await newRank("ChambleeAJV","VeteransAV",270,220);
-    await newRank("OakMountainAV","StarrsMillDV",300,140);
-    await newRank("StarrsMillEV","VeteransBJV",240,120);
+    await newRank("StarrsMillA","StarrsMillB",440,90);
+    await newRank("CreeksideA","StarrsMillC",190,170);
+    await newRank("ChambleeA","VeteransA",270,220);
+    await newRank("OakMountainA","StarrsMillD",300,140);
+    await newRank("StarrsMillE","VeteransB",240,120);
     //Round 2
-    await newRank("OakMountainAV","StarrsMillEV",340,90);
-    await newRank("ChambleeAJV","StarrsMillCV",340,60);
-    await newRank("CreeksideAV","VeteransBJV",160,150);
-    await newRank("StarrsMillAV","StarrsMillDV",430,90);
-    await newRank("StarrsMillBV","VeteransAV",240,200);
+    await newRank("OakMountainA","StarrsMillE",340,90);
+    await newRank("ChambleeA","StarrsMillC",340,60);
+    await newRank("CreeksideA","VeteransB",160,150);
+    await newRank("StarrsMillA","StarrsMillD",430,90);
+    await newRank("StarrsMillB","VeteransA",240,200);
     //Round 3
-    await newRank("VeteransAV","StarrsMillEV",310,140);
-    await newRank("OakMountainAV","ChambleeAJV",250,220);
-    await newRank("StarrsMillCV","StarrsMillDV",210,180);
-    await newRank("StarrsMillBV","VeteransBJV",370,80);
-    await newRank("StarrsMillAV","CreeksideAV",390,100);
+    await newRank("VeteransA","StarrsMillE",310,140);
+    await newRank("OakMountainA","ChambleeA",250,220);
+    await newRank("StarrsMillC","StarrsMillD",210,180);
+    await newRank("StarrsMillB","VeteransB",370,80);
+    await newRank("StarrsMillA","CreeksideA",390,100);
     //Round 4
-    await newRank("OakMountainAV","StarrsMillBV",210,150);
-    await newRank("StarrsMillAV","ChambleeAJV",390,170);
-    await newRank("VeteransAV","CreeksideAV",310,40);
-    await newRank("StarrsMillDV","VeteransBJV",290,90);
-    await newRank("StarrsMillCV","StarrsMillEV",210,150);
+    await newRank("OakMountainA","StarrsMillB",210,150);
+    await newRank("StarrsMillA","ChambleeA",390,170);
+    await newRank("VeteransA","CreeksideA",310,40);
+    await newRank("StarrsMillD","VeteransB",290,90);
+    await newRank("StarrsMillC","StarrsMillE",210,150);
     //Round 5
-    await newRank("StarrsMillBV","StarrsMillCV",340,80);
-    await newRank("VeteransAV","StarrsMillDV",240,180);
-    await newRank("OakMountainAV","CreeksideAV",320,40);
-    await newRank("ChambleeAJV","VeteransBJV",280,40);
-    await newRank("StarrsMillAV","StarrsMillEV",390,80);
+    await newRank("StarrsMillB","StarrsMillC",340,80);
+    await newRank("VeteransA","StarrsMillD",240,180);
+    await newRank("OakMountainA","CreeksideA",320,40);
+    await newRank("ChambleeA","VeteransB",280,40);
+    await newRank("StarrsMillA","StarrsMillE",390,80);
     //Varsity Playoffs
     //Semifinals
-    await newRank("StarrsMillAV","StarrsMillBV",380,100);
-    await newRank("OakMountainAV","VeteransAV",260,140);
+    await newRank("StarrsMillA","StarrsMillB",380,100);
+    await newRank("OakMountainA","VeteransA",260,140);
     //Finals
-    await newRank("StarrsMillAV","OakMountainAV",260,150);
+    await newRank("StarrsMillA","OakMountainA",260,150);
     //JV Playoffs
     //Finals
-    await newRank("ChambleeAJV","VeteransBJV",250,40);//Chamblee Charter
+    await newRank("ChambleeA","VeteransB",250,40);//Chamblee Charter
     console.log("Central GA C q V: "+qV[a2]);
     console.log("Central GA C q JV: "+qJV[b2]);
     a = 0;
@@ -6799,54 +6802,54 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("BillingsSeniorAV","SkyviewBV",250,200);
-    await newRank("BozemanBV","BillingsWestAV",300,140);
-    await newRank("BozemanAV","SkyviewCV",230,80);
-    await newRank("BillingsWestBV","RiversideAV",140,130);
-    await newRank("SkyviewAV","SkyviewDJV",430,50);
-    await newRank("BillingsSeniorBJV","ParkCityBJV",150,80);
-    await newRank("BozemanCJV","ParkCityAJV",260,80);
+    await newRank("BillingsSeniorA","SkyviewB",250,200);
+    await newRank("BozemanB","BillingsWestA",300,140);
+    await newRank("BozemanA","SkyviewC",230,80);
+    await newRank("BillingsWestB","RiversideA",140,130);
+    await newRank("SkyviewA","SkyviewD",430,50);
+    await newRank("BillingsSeniorB","ParkCityB",150,80);
+    await newRank("BozemanC","ParkCityA",260,80);
     //Round 2
-    await newRank("BozemanAV","RiversideAV",240,90);
-    await newRank("SkyviewAV","BillingsSeniorAV",250,190);
-    await newRank("BillingsWestAV","BillingsWestBV",210,110);
-    await newRank("SkyviewBV","SkyviewCV",300,80);
-    await newRank("BozemanBV","BozemanCJV",250,90);
-    await newRank("BillingsSeniorBJV","ParkCityAJV",190,30);
-    await newRank("SkyviewDJV","ParkCityBJV",190,110);
+    await newRank("BozemanA","RiversideA",240,90);
+    await newRank("SkyviewA","BillingsSeniorA",250,190);
+    await newRank("BillingsWestA","BillingsWestB",210,110);
+    await newRank("SkyviewB","SkyviewC",300,80);
+    await newRank("BozemanB","BozemanC",250,90);
+    await newRank("BillingsSeniorB","ParkCityA",190,30);
+    await newRank("SkyviewD","ParkCityB",190,110);
     //Round 3
-    await newRank("BozemanBV","SkyviewCV",340,50);
-    await newRank("SkyviewAV","RiversideAV",360,70);
-    await newRank("BillingsSeniorAV","BillingsWestBV",380,70);
-    await newRank("BillingsWestAV","SkyviewDJV",240,180);
-    await newRank("BozemanAV","ParkCityBJV",340,100);
-    await newRank("SkyviewDJV","ParkCityAJV",310,60);
-    await newRank("BozemanCJV","BillingsSeniorBJV",250,30);
+    await newRank("BozemanB","SkyviewC",340,50);
+    await newRank("SkyviewA","RiversideA",360,70);
+    await newRank("BillingsSeniorA","BillingsWestB",380,70);
+    await newRank("BillingsWestA","SkyviewD",240,180);
+    await newRank("BozemanA","ParkCityB",340,100);
+    await newRank("SkyviewD","ParkCityA",310,60);
+    await newRank("BozemanC","BillingsSeniorB",250,30);
     //Round 4
-    await newRank("SkyviewAV","BillingsWestAV",380,80);
-    await newRank("BillingsWestBV","SkyviewCV",110,100);
-    await newRank("BozemanBV","RiversideAV",340,40);
-    await newRank("BillingsSeniorAV","BozemanAV",240,170);
-    await newRank("SkyviewBV","BillingsSeniorBJV",210,90);
-    await newRank("BozemanCJV","SkyviewDJV",140,110);
-    await newRank("ParkCityBJV","ParkCityAJV",120,50);
+    await newRank("SkyviewA","BillingsWestA",380,80);
+    await newRank("BillingsWestB","SkyviewC",110,100);
+    await newRank("BozemanB","RiversideA",340,40);
+    await newRank("BillingsSeniorA","BozemanA",240,170);
+    await newRank("SkyviewB","BillingsSeniorB",210,90);
+    await newRank("BozemanC","SkyviewD",140,110);
+    await newRank("ParkCityB","ParkCityA",120,50);
     //Round 5
-    await newRank("SkyviewBV","RiversideAV",170,70);
-    await newRank("BozemanBV","BillingsSeniorAV",220,150);
-    await newRank("BillingsWestAV","BozemanAV",180,170);
-    await newRank("SkyviewAV","SkyviewCV",310,50);
-    await newRank("BillingsWestBV","ParkCityAJV",120,60);
-    await newRank("BozemanCJV","ParkCityBJV",190,40);
-    await newRank("SkyviewDJV","BillingsSeniorBJV",150,90);
+    await newRank("SkyviewB","RiversideA",170,70);
+    await newRank("BozemanB","BillingsSeniorA",220,150);
+    await newRank("BillingsWestA","BozemanA",180,170);
+    await newRank("SkyviewA","SkyviewC",310,50);
+    await newRank("BillingsWestB","ParkCityA",120,60);
+    await newRank("BozemanC","ParkCityB",190,40);
+    await newRank("SkyviewD","BillingsSeniorB",150,90);
     //Varsity Playoffs
     //Semifinals
-    await newRank("BozemanBV","BillingsSeniorAV",260,110);
-    await newRank("SkyviewAV","SkyviewBV",350,70);
+    await newRank("BozemanB","BillingsSeniorA",260,110);
+    await newRank("SkyviewA","SkyviewB",350,70);
     //Finals
-    await newRank("SkyviewAV","BozemanBV",240,90);
+    await newRank("SkyviewA","BozemanB",240,90);
     //JV Playoffs
     //Finals
-    await newRank("BozemanCJV","SkyviewDJV",110,80);
+    await newRank("BozemanC","SkyviewD",110,80);
     console.log("MT C q V: "+qV[a2]);
     console.log("MT C q JV: "+qJV[b2]);
     a = 0;
@@ -6859,49 +6862,49 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("PocaAV","CharlestonBV",280,170);
-    await newRank("CharlestonAV","PocaBV",430,10);
-    await newRank("GeorgeWashingtonBV","NitroBV",280,140);
-    await newRank("StAlbansAV","NitroAV",260,200);
-    await newRank("JohnAdamsAJV","CharlestonCJV",310,70);
-    await newRank("MorgantownAJV","CharlestonDJV",240,110);
+    await newRank("PocaA","CharlestonB",280,170);
+    await newRank("CharlestonA","PocaB",430,10);
+    await newRank("GeorgeWashingtonB","NitroB",280,140);
+    await newRank("StAlbansA","NitroA",260,200);
+    await newRank("JohnAdamsA","CharlestonC",310,70);
+    await newRank("MorgantownA","CharlestonD",240,110);
     //Round 2
-    await newRank("StAlbansAV","PocaBV",290,110);
-    await newRank("GeorgeWashingtonBV","PocaAV",280,180);
-    await newRank("CharlestonBV","NitroBV",240,160);
-    await newRank("CharlestonAV","NitroAV",260,220);
-    await newRank("CharlestonDJV","CharlestonCJV",170,130);
-    await newRank("MorgantownAJV","JohnAdamsAJV",260,160);
+    await newRank("StAlbansA","PocaB",290,110);
+    await newRank("GeorgeWashingtonB","PocaA",280,180);
+    await newRank("CharlestonB","NitroB",240,160);
+    await newRank("CharlestonA","NitroA",260,220);
+    await newRank("CharlestonD","CharlestonC",170,130);
+    await newRank("MorgantownA","JohnAdamsA",260,160);
     //Round 3
-    await newRank("GeorgeWashingtonBV","PocaBV",410,20);
-    await newRank("StAlbansAV","CharlestonBV",240,170);
-    await newRank("NitroAV","PocaAV",290,180);
-    await newRank("CharlestonAV","NitroBV",330,160);
-    await newRank("JohnAdamsAJV","CharlestonDJV",290,100);
-    await newRank("MorgantownAJV","CharlestonCJV",280,110);
+    await newRank("GeorgeWashingtonB","PocaB",410,20);
+    await newRank("StAlbansA","CharlestonB",240,170);
+    await newRank("NitroA","PocaA",290,180);
+    await newRank("CharlestonA","NitroB",330,160);
+    await newRank("JohnAdamsA","CharlestonD",290,100);
+    await newRank("MorgantownA","CharlestonC",280,110);
     //Round 4
-    await newRank("PocaAV","NitroBV",220,170);
-    await newRank("GeorgeWashingtonBV","CharlestonBV",300,140);
-    await newRank("CharlestonAV","StAlbansAV",350,90);
-    await newRank("NitroAV","PocaBV",360,10);
-    await newRank("JohnAdamsAJV","CharlestonDJV",200,160);
-    await newRank("MorgantownAJV","CharlestonCJV",220,130);
+    await newRank("PocaA","NitroB",220,170);
+    await newRank("GeorgeWashingtonB","CharlestonB",300,140);
+    await newRank("CharlestonA","StAlbansA",350,90);
+    await newRank("NitroA","PocaB",360,10);
+    await newRank("JohnAdamsA","CharlestonD",200,160);
+    await newRank("MorgantownA","CharlestonC",220,130);
     //Round 5
-    await newRank("NitroBV","PocaBV",220,50);
-    await newRank("CharlestonBV","NitroAV",240,120);
-    await newRank("CharlestonAV","GeorgeWashingtonBV",250,150);
-    await newRank("StAlbansAV","PocaAV",230,140);
-    await newRank("CharlestonDJV","CharlestonCJV",200,80);
-    await newRank("MorgantownAJV","JohnAdamsAJV",240,130);
+    await newRank("NitroB","PocaB",220,50);
+    await newRank("CharlestonB","NitroA",240,120);
+    await newRank("CharlestonA","GeorgeWashingtonB",250,150);
+    await newRank("StAlbansA","PocaA",230,140);
+    await newRank("CharlestonD","CharlestonC",200,80);
+    await newRank("MorgantownA","JohnAdamsA",240,130);
     //Round 6
-    await newRank("JohnAdamsAJV","CharlestonCJV",260,80);
-    await newRank("MorgantownAJV","CharlestonDJV",200,60);
+    await newRank("JohnAdamsA","CharlestonC",260,80);
+    await newRank("MorgantownA","CharlestonD",200,60);
     //Varsity Playoffs
     //Semifinals
-    await newRank("CharlestonAV","NitroAV",230,110);
-    await newRank("StAlbansAV","GeorgeWashingtonBV",190,110);
+    await newRank("CharlestonA","NitroA",230,110);
+    await newRank("StAlbansA","GeorgeWashingtonB",190,110);
     //Finals
-    await newRank("CharlestonAV","StAlbansAV",240,130);
+    await newRank("CharlestonA","StAlbansA",240,130);
     console.log("WV C q V: "+qV[a2]);
     console.log("WV C q JV: "+qJV[b2]);
     a = 0;
@@ -6914,118 +6917,118 @@ async function cSetData(){
     c2 = c2+1;
     //Prelims
     //Round 1
-    await newRank("MillburnAV","StPetersAV",550,70);
-    await newRank("StJosephAV","ParamusAV",300,180);
-    await newRank("MillburnBV","StuyvesantAV",280,250);
-    await newRank("NewarkAV","HewlettBV",270,240);
-    await newRank("OratoryAV","MillburnCV",310,280);
-    await newRank("MountainLakesAV","StPetersBV",410,60);
-    await newRank("HewlettAV","HolmdelAV",400,100);
-    await newRank("KinnelonAJV","StPetersCJV",300,170);
-    await newRank("HewlettCJV","ChurchillNJBJV",310,200);
-    await newRank("ChurchillNJAJV","SouthBrunswickAJV",490,90);
-    await newRank("StJosephBJV","BASISBrooklynAJV",200,180);
-    await newRank("HunterBJV","HolmdelBJV",470,120);
-    await newRank("MillburnDJV","MountainLakesBJV",390,160);
-    await newRank("TenaflyBMS","IndianFieldsMSA",130,100);
-    await newRank("TenaflyCMS","BRIGHTMSA",130,100);
+    await newRank("MillburnA","StPetersA",550,70);
+    await newRank("StJosephA","ParamusA",300,180);
+    await newRank("MillburnB","StuyvesantA",280,250);
+    await newRank("NewarkA","HewlettB",270,240);
+    await newRank("OratoryA","MillburnC",310,280);
+    await newRank("MountainLakesA","StPetersB",410,60);
+    await newRank("HewlettA","HolmdelA",400,100);
+    await newRank("KinnelonA","StPetersC",300,170);
+    await newRank("HewlettC","ChurchillNJB",310,200);
+    await newRank("ChurchillNJA","SouthBrunswickA",490,90);
+    await newRank("StJosephB","BASISBrooklynA",200,180);
+    await newRank("HunterB","HolmdelB",470,120);
+    await newRank("MillburnD","MountainLakesB",390,160);
+    await newRank("TenaflyB","IndianFieldsMSA",130,100);
+    await newRank("TenaflyC","BRIGHTMSA",130,100);
     //Round 2
-    await newRank("HewlettBV","ParamusAV",250,170);
-    await newRank("MountainLakesAV","NewarkAV",280,210);
-    await newRank("HunterAV","StuyvesantAV",450,120);
-    await newRank("MillburnCV","HolmdelAV",520,80);
-    await newRank("MillburnBV","HewlettAV",320,250);
-    await newRank("OratoryAV","StPetersBV",390,60);
-    await newRank("KinnelonAJV","StJosephBJV",260,150);
-    await newRank("MillburnAV","StJosephAV",510,110);
-    await newRank("HolmdelBJV","StPetersCJV",340,140);
-    await newRank("ChurchillNJAJV","BASISBrooklynAJV",550,80);
-    await newRank("MountainLakesBJV","ChurchillNJBJV",370,70);
-    await newRank("HunterBJV","MillburnDJV",410,180);
-    await newRank("HewlettCJV","SouthBrunswickAJV",240,200);
-    await newRank("TenaflyAMS","TenaflyBMS",400,60);
+    await newRank("HewlettB","ParamusA",250,170);
+    await newRank("MountainLakesA","NewarkA",280,210);
+    await newRank("HunterA","StuyvesantA",450,120);
+    await newRank("MillburnC","HolmdelA",520,80);
+    await newRank("MillburnB","HewlettA",320,250);
+    await newRank("OratoryA","StPetersB",390,60);
+    await newRank("KinnelonA","StJosephB",260,150);
+    await newRank("MillburnA","StJosephA",510,110);
+    await newRank("HolmdelB","StPetersC",340,140);
+    await newRank("ChurchillNJA","BASISBrooklynA",550,80);
+    await newRank("MountainLakesB","ChurchillNJB",370,70);
+    await newRank("HunterB","MillburnD",410,180);
+    await newRank("HewlettC","SouthBrunswickA",240,200);
+    await newRank("TenaflyA","TenaflyB",400,60);
     await newRank("IndianFieldsMSA","BRIGHTMSA",130,80);
     //Round 3
-    await newRank("MillburnCV","StPetersBV",450,100);
-    await newRank("MountainLakesAV","ParamusAV",280,180);
-    await newRank("StuyvesantAV","StPetersAV",360,130);
-    await newRank("OratoryAV","NewarkAV",370,170);
-    await newRank("HunterBJV","ChurchillNJBJV",530,60);
-    await newRank("MillburnBV","HolmdelAV",430,80);
-    await newRank("HunterAV","HewlettAV",370,180);
-    await newRank("MillburnAV","HewlettBV",470,100);
-    await newRank("ChurchillNJAJV","KinnelonAJV",430,90);
-    await newRank("HewlettCJV","BASISBrooklynAJV",360,90);
-    await newRank("HolmdelBJV","StJosephBJV",360,130);
-    await newRank("MillburnDJV","StPetersCJV",360,200);
-    await newRank("MountainLakesBJV","SouthBrunswickAJV",290,150);
-    await newRank("TenaflyAMS","TenaflyCMS",410,10);
-    await newRank("TenaflyBMS","BRIGHTMSA",290,40);
+    await newRank("MillburnC","StPetersB",450,100);
+    await newRank("MountainLakesA","ParamusA",280,180);
+    await newRank("StuyvesantA","StPetersA",360,130);
+    await newRank("OratoryA","NewarkA",370,170);
+    await newRank("HunterB","ChurchillNJB",530,60);
+    await newRank("MillburnB","HolmdelA",430,80);
+    await newRank("HunterA","HewlettA",370,180);
+    await newRank("MillburnA","HewlettB",470,100);
+    await newRank("ChurchillNJA","KinnelonA",430,90);
+    await newRank("HewlettC","BASISBrooklynA",360,90);
+    await newRank("HolmdelB","StJosephB",360,130);
+    await newRank("MillburnD","StPetersC",360,200);
+    await newRank("MountainLakesB","SouthBrunswickA",290,150);
+    await newRank("TenaflyA","TenaflyC",410,10);
+    await newRank("TenaflyB","BRIGHTMSA",290,40);
     //Round 4
-    await newRank("StuyvesantAV","StJosephAV",340,140);
-    await newRank("OratoryAV","ParamusAV",500,100);
-    await newRank("HunterAV","MillburnCV",410,230);
-    await newRank("MillburnAV","MountainLakesAV",540,70);
-    await newRank("HewlettAV","StPetersAV",400,90);
-    await newRank("NewarkAV","HolmdelAV",340,150);
-    await newRank("MillburnBV","StPetersBV",460,80);
-    await newRank("ChurchillNJAJV","HolmdelBJV",380,210);
-    await newRank("HunterBJV","SouthBrunswickAJV",480,100);
-    await newRank("MillburnDJV","StJosephBJV",420,90);
-    await newRank("StPetersCJV","ChurchillNJBJV",240,130);
-    await newRank("MountainLakesBJV","BASISBrooklynAJV",320,50);
-    await newRank("KinnelonAJV","HewlettCJV",240,210);
-    await newRank("TenaflyCMS","IndianFieldsMSA",110,60);
-    await newRank("TenaflyAMS","BRIGHTMSA",380,20);
+    await newRank("StuyvesantA","StJosephA",340,140);
+    await newRank("OratoryA","ParamusA",500,100);
+    await newRank("HunterA","MillburnC",410,230);
+    await newRank("MillburnA","MountainLakesA",540,70);
+    await newRank("HewlettA","StPetersA",400,90);
+    await newRank("NewarkA","HolmdelA",340,150);
+    await newRank("MillburnB","StPetersB",460,80);
+    await newRank("ChurchillNJA","HolmdelB",380,210);
+    await newRank("HunterB","SouthBrunswickA",480,100);
+    await newRank("MillburnD","StJosephB",420,90);
+    await newRank("StPetersC","ChurchillNJB",240,130);
+    await newRank("MountainLakesB","BASISBrooklynA",320,50);
+    await newRank("KinnelonA","HewlettC",240,210);
+    await newRank("TenaflyC","IndianFieldsMSA",110,60);
+    await newRank("TenaflyA","BRIGHTMSA",380,20);
     //Round 5
-    await newRank("MillburnAV","OratoryAV",490,130);
-    await newRank("StuyvesantAV","HewlettBV",380,110);
-    await newRank("ParamusAV","HolmdelAV",190,180);
-    await newRank("HunterAV","StPetersBV",450,40);
-    await newRank("MillburnBV","NewarkAV",320,190);
-    await newRank("MillburnCV","StPetersAV",460,80);
-    await newRank("HewlettAV","StJosephAV",330,180);
-    await newRank("SouthBrunswickAJV","StPetersCJV",240,160);
-    await newRank("HunterBJV","BASISBrooklynAJV",440,70);
-    await newRank("ChurchillNJBJV","StJosephBJV",170,90);
-    await newRank("MountainLakesBJV","KinnelonAJV",190,180);
-    await newRank("ChurchillNJAJV","MillburnDJV",370,210);
-    await newRank("HolmdelBJV","HewlettCJV",240,180);
-    await newRank("TenaflyAMS","IndianFieldsMSA",250,50);
-    await newRank("TenaflyBMS","TenaflyCMS",190,60);
+    await newRank("MillburnA","OratoryA",490,130);
+    await newRank("StuyvesantA","HewlettB",380,110);
+    await newRank("ParamusA","HolmdelA",190,180);
+    await newRank("HunterA","StPetersB",450,40);
+    await newRank("MillburnB","NewarkA",320,190);
+    await newRank("MillburnC","StPetersA",460,80);
+    await newRank("HewlettA","StJosephA",330,180);
+    await newRank("SouthBrunswickA","StPetersC",240,160);
+    await newRank("HunterB","BASISBrooklynA",440,70);
+    await newRank("ChurchillNJB","StJosephB",170,90);
+    await newRank("MountainLakesB","KinnelonA",190,180);
+    await newRank("ChurchillNJA","MillburnD",370,210);
+    await newRank("HolmdelB","HewlettC",240,180);
+    await newRank("TenaflyA","IndianFieldsMSA",250,50);
+    await newRank("TenaflyB","TenaflyC",190,60);
     //Varsity Playoffs
     //Octofinals
-    await newRank("OratoryAV","ParamusAV",310,160);
-    await newRank("HewlettBV","HewlettAV",221,220);
-    await newRank("StuyvesantAV","StJosephAV",270,150);
-    await newRank("MountainLakesAV","NewarkAV",220,210);
+    await newRank("OratoryA","ParamusA",310,160);
+    await newRank("HewlettB","HewlettA",221,220);
+    await newRank("StuyvesantA","StJosephA",270,150);
+    await newRank("MountainLakesA","NewarkA",220,210);
     //Quarterfinals
-    await newRank("MillburnAV","MountainLakesAV",420,90);
-    await newRank("HunterAV","StuyvesantAV",410,140);
-    await newRank("MillburnCV","HewlettBV",330,110);
-    await newRank("MillburnBV","OratoryAV",240,230);
+    await newRank("MillburnA","MountainLakesA",420,90);
+    await newRank("HunterA","StuyvesantA",410,140);
+    await newRank("MillburnC","HewlettB",330,110);
+    await newRank("MillburnB","OratoryA",240,230);
     //Semifinals
-    await newRank("MillburnAV","MillburnBV",400,120);
-    await newRank("HunterAV","MillburnCV",300,210);
+    await newRank("MillburnA","MillburnB",400,120);
+    await newRank("HunterA","MillburnC",300,210);
     //Finals
-    await newRank("MillburnAV","HunterAV",280,260);
+    await newRank("MillburnA","HunterA",280,260);
     //JV Playoffs
     //Quarterfinals
-    await newRank("HunterBJV","StPetersCJV",500,40);
-    await newRank("ChurchillNJAJV","KinnelonAJV",350,110);
-    await newRank("HolmdelBJV","MountainLakesBJV",290,140);
-    await newRank("MillburnDJV","HewlettCJV",300,140);
+    await newRank("HunterB","StPetersC",500,40);
+    await newRank("ChurchillNJA","KinnelonA",350,110);
+    await newRank("HolmdelB","MountainLakesB",290,140);
+    await newRank("MillburnD","HewlettC",300,140);
     //Semifinals
-    await newRank("HunterBJV","MillburnDJV",360,170);
-    await newRank("ChurchillNJAJV","HolmdelBJV",350,170);
+    await newRank("HunterB","MillburnD",360,170);
+    await newRank("ChurchillNJA","HolmdelB",350,170);
     //Finals
-    await newRank("HunterBJV","ChurchillNJAJV",290,260);
+    await newRank("HunterB","ChurchillNJA",290,260);
     //MS Playoffs
     //Semifinals
-    //await newRank("TenaflyAMS","IndianFieldsMSA",1,0)
-    await newRank("TenaflyBMS","TenaflyCMS",160,20);
+    //await newRank("TenaflyA","IndianFieldsMSA",1,0)
+    await newRank("TenaflyB","TenaflyC",160,20);
     //Finals
-    await newRank("TenaflyAMS","TenaflyBMS",200,90);
+    await newRank("TenaflyA","TenaflyB",200,90);
     console.log("Northern NJ C q V: "+qV[a2]);
     console.log("Northern NJ C q JV: "+qJV[b2]);
     console.log("Northern NJ C q MS: "+qMS[c2]);
@@ -7038,56 +7041,56 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("StevensonAV","StevensonCV",340,300);
-    await newRank("BarringtonAV","BarringtonBV",490,90);
-    await newRank("SandburgAV","MarmionAV",320,230);
-    await newRank("StevensonBV","HinsdaleAV",350,210);
-    await newRank("StevensonEJV","StevensonFJV",400,120);
-    await newRank("StevensonDJV","AptakisicAJV",360,150);
+    await newRank("StevensonA","StevensonC",340,300);
+    await newRank("BarringtonA","BarringtonB",490,90);
+    await newRank("SandburgA","MarmionA",320,230);
+    await newRank("StevensonB","HinsdaleA",350,210);
+    await newRank("StevensonE","StevensonF",400,120);
+    await newRank("StevensonD","AptakisicA",360,150);
     //Round 2
-    await newRank("MarmionAV","BarringtonBV",360,180);
-    await newRank("HinsdaleAV","SandburgAV",300,290);
-    await newRank("StevensonAV"," StevensonBV",470,170);
-    await newRank("StevensonCV","BarringtonAV",340,330);
-    await newRank("StevensonFJV","AptakisicAJV",270,160);
-    await newRank("StevensonEJV","SandburgBJV",470,140);
+    await newRank("MarmionA","BarringtonB",360,180);
+    await newRank("HinsdaleA","SandburgA",300,290);
+    await newRank("StevensonA"," StevensonB",470,170);
+    await newRank("StevensonC","BarringtonA",340,330);
+    await newRank("StevensonF","AptakisicA",270,160);
+    await newRank("StevensonE","SandburgB",470,140);
     //Round 3
-    await newRank("StevensonAV","MarmionAV",460,180);
-    await newRank("StevensonCV","SandburgAV",420,160);
-    await newRank("HinsdaleAV","BarringtonBV",450,120);
-    await newRank("StevensonBV","BarringtonAV",280,260);
-    await newRank("SandburgBJV","StevensonFJV",340,160);
-    await newRank("StevensonEJV","StevensonDJV",370,220);
+    await newRank("StevensonA","MarmionA",460,180);
+    await newRank("StevensonC","SandburgA",420,160);
+    await newRank("HinsdaleA","BarringtonB",450,120);
+    await newRank("StevensonB","BarringtonA",280,260);
+    await newRank("SandburgB","StevensonF",340,160);
+    await newRank("StevensonE","StevensonD",370,220);
     //Round 4
-    await newRank("SandburgAV","BarringtonAV",350,280);
-    await newRank("StevensonAV","BarringtonBV",530,40);
-    await newRank("StevensonCV","StevensonBV",380,230);
-    await newRank("HinsdaleAV","MarmionAV",400,190);
-    await newRank("SandburgBJV","AptakisicAJV",310,180);
-    await newRank("StevensonDJV","StevensonFJV",430,100);
+    await newRank("SandburgA","BarringtonA",350,280);
+    await newRank("StevensonA","BarringtonB",530,40);
+    await newRank("StevensonC","StevensonB",380,230);
+    await newRank("HinsdaleA","MarmionA",400,190);
+    await newRank("SandburgB","AptakisicA",310,180);
+    await newRank("StevensonD","StevensonF",430,100);
     //Round 5
-    await newRank("StevensonBV","BarringtonBV",390,140);
-    await newRank("BarringtonAV","HinsdaleAV",320,270);
-    await newRank("StevensonCV","MarmionAV",510,130);
-    await newRank("StevensonAV","SandburgAV",440,160);
-    await newRank("StevensonDJV","SandburgBJV",380,160);
-    await newRank("StevensonEJV","AptakisicAJV",360,140);
+    await newRank("StevensonB","BarringtonB",390,140);
+    await newRank("BarringtonA","HinsdaleA",320,270);
+    await newRank("StevensonC","MarmionA",510,130);
+    await newRank("StevensonA","SandburgA",440,160);
+    await newRank("StevensonD","SandburgB",380,160);
+    await newRank("StevensonE","AptakisicA",360,140);
     //Round 6
-    await newRank("StevensonAV","HinsdaleAV",410,200);
-    await newRank("BarringtonAV","MarmionAV",380,200);
-    await newRank("StevensonCV","BarringtonBV",520,60);
-    await newRank("SandburgAV","SandburgBJV",270,240);
+    await newRank("StevensonA","HinsdaleA",410,200);
+    await newRank("BarringtonA","MarmionA",380,200);
+    await newRank("StevensonC","BarringtonB",520,60);
+    await newRank("SandburgA","SandburgB",270,240);
     //Round 7
-    await newRank("StevensonBV","MarmionAV",340,170);
-    await newRank("SandburgAV","BarringtonBV",370,70);
-    await newRank("StevensonAV","BarringtonAV",320,240);
-    await newRank("StevensonCV","HinsdaleAV",410,130);
+    await newRank("StevensonB","MarmionA",340,170);
+    await newRank("SandburgA","BarringtonB",370,70);
+    await newRank("StevensonA","BarringtonA",320,240);
+    await newRank("StevensonC","HinsdaleA",410,130);
     //Varsity Playoffs
     //Finals
-    await newRank("StevensonAV","StevensonCV",390,210);
+    await newRank("StevensonA","StevensonC",390,210);
     //JV Playoffs
     //Finals
-    await newRank("StevensonEJV","StevensonDJV",290,220);
+    await newRank("StevensonE","StevensonD",290,220);
     console.log("Northern IL C q V: "+qV[a2]);
     console.log("Northern IL C q JV: "+qJV[b2]);
     a = 0;
@@ -7098,32 +7101,32 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("TippecanoeAV","TippecanoeBJV",300,60);
-    await newRank("GeorgeWashingtonAV","BeavercreekCJV",530,70);
-    await newRank("BeavercreekAV","BeavercreekBV",520,90);
+    await newRank("TippecanoeA","TippecanoeB",300,60);
+    await newRank("GeorgeWashingtonNJA","BeavercreekC",530,70);
+    await newRank("BeavercreekA","BeavercreekB",520,90);
     //Round 2
-    await newRank("BeavercreekBV","TippecanoeBJV",310,80);
-    await newRank("GeorgeWashingtonAV","TippecanoeAV",460,140);
-    await newRank("BeavercreekAV","BeavercreekCJV",590,60);
+    await newRank("BeavercreekB","TippecanoeB",310,80);
+    await newRank("GeorgeWashingtonNJA","TippecanoeA",460,140);
+    await newRank("BeavercreekA","BeavercreekC",590,60);
     //Round 3
-    await newRank("GeorgeWashingtonAV","BeavercreekBV",450,120);
-    await newRank("TippecanoeAV","BeavercreekCJV",220,160);
-    await newRank("BeavercreekAV","TippecanoeBJV",270,240);
+    await newRank("GeorgeWashingtonNJA","BeavercreekB",450,120);
+    await newRank("TippecanoeA","BeavercreekC",220,160);
+    await newRank("BeavercreekA","TippecanoeB",270,240);
     //Round 4
-    await newRank("BeavercreekBV","BeavercreekCJV",400,120);
-    await newRank("GeorgeWashingtonAV","TippecanoeBJV",560,20);
-    await newRank("BeavercreekAV","TippecanoeAV",500,70);
+    await newRank("BeavercreekB","BeavercreekC",400,120);
+    await newRank("GeorgeWashingtonNJA","TippecanoeB",560,20);
+    await newRank("BeavercreekA","TippecanoeA",500,70);
     //Round 5
-    await newRank("BeavercreekAV","GeorgeWashingtonAV",340,320);
-    await newRank("TippecanoeAV","BeavercreekBV",280,80);
-    await newRank("BeavercreekCJV","TippecanoeBJV",120,80);
+    await newRank("BeavercreekA","GeorgeWashingtonNJA",340,320);
+    await newRank("TippecanoeA","BeavercreekB",280,80);
+    await newRank("BeavercreekC","TippecanoeB",120,80);
     //Varsity Playoffs
     //Finals
-    await newRank("GeorgeWashingtonAV","BeavercreekAV",310,300);//Beavercreek with advantage
-    await newRank("BeavercreekAV","GeorgeWashingtonAV",320,290);
+    await newRank("GeorgeWashingtonNJA","BeavercreekA",310,300);//Beavercreek with advantage
+    await newRank("BeavercreekA","GeorgeWashingtonNJA",320,290);
     //JV Playoffs
     //Finals
-    await newRank("BeavercreekCJV","TippecanoeBJV",220,20);
+    await newRank("BeavercreekC","TippecanoeB",220,20);
     console.log("Dayton C q V: "+qV[a2]);
     console.log("Dayton C q JV: "+qJV[b2]);
     a = 0;
@@ -7135,38 +7138,38 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("NicholsAV","AmherstAV",270,240);
-    await newRank("NicholsBV","AmherstBV",320,180);
-    await newRank("IroquoisAV","NicholsCV",340,210);
-    await newRank("NicholsDJV","IroquoisBJV",250,70);
+    await newRank("NicholsA","AmherstA",270,240);
+    await newRank("NicholsB","AmherstB",320,180);
+    await newRank("IroquoisA","NicholsC",340,210);
+    await newRank("NicholsD","IroquoisB",250,70);
     //Round 2
-    await newRank("NicholsAV","AmherstBV",250,210);
-    await newRank("NicholsBV","IroquoisAV",350,110);
-    await newRank("NicholsCV","AmherstAV",290,140);
-    await newRank("NicholsEJV","IroquoisBJV",220,90);
+    await newRank("NicholsA","AmherstB",250,210);
+    await newRank("NicholsB","IroquoisA",350,110);
+    await newRank("NicholsC","AmherstA",290,140);
+    await newRank("NicholsE","IroquoisB",220,90);
     //Round 3
-    await newRank("NicholsAV","NicholsCV",250,210);
-    await newRank("NicholsBV","AmherstAV",390,120);
-    await newRank("IroquoisAV","AmherstBV",350,110);
-    await newRank("NicholsDJV","NicholsEJV",260,140);
+    await newRank("NicholsA","NicholsC",250,210);
+    await newRank("NicholsB","AmherstA",390,120);
+    await newRank("IroquoisA","AmherstB",350,110);
+    await newRank("NicholsD","NicholsE",260,140);
     //Round 4
-    await newRank("IroquoisAV","NicholsAV",280,170);
-    await newRank("NicholsBV","NicholsCV",370,100);
-    await newRank("AmherstBV","AmherstAV",290,180);
-    await newRank("NicholsDJV","IroquoisBJV",290,40);
+    await newRank("IroquoisA","NicholsA",280,170);
+    await newRank("NicholsB","NicholsC",370,100);
+    await newRank("AmherstB","AmherstA",290,180);
+    await newRank("NicholsD","IroquoisB",290,40);
     //Round5
-    await newRank("NicholsBV","NicholsAV",250,180);
-    await newRank("NicholsCV","AmherstBV",170,150);
-    await newRank("IroquoisAV","AmherstAV",270,130);
-    await newRank("NicholsEJV","IroquoisBJV",140,60);
+    await newRank("NicholsB","NicholsA",250,180);
+    await newRank("NicholsC","AmherstB",170,150);
+    await newRank("IroquoisA","AmherstA",270,130);
+    await newRank("NicholsE","IroquoisB",140,60);
     //Round 6
-    await newRank("NicholsDJV","NicholsEJV",190,90);
+    await newRank("NicholsD","NicholsE",190,90);
     //Varsity Playoffs
     //Semifinals
-    await newRank("NicholsBV","NicholsCV",350,180);
-    await newRank("IroquoisAV","NicholsAV",200,180);
+    await newRank("NicholsB","NicholsC",350,180);
+    await newRank("IroquoisA","NicholsA",200,180);
     //Finals
-    await newRank("NicholsBV","IroquoisAV",250,140);
+    await newRank("NicholsB","IroquoisA",250,140);
     console.log("Buffalo C q V: "+qV[a2]);
     console.log("Buffalo C q JV: "+qJV[b2]);
     a = 0;
@@ -7177,128 +7180,128 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("RansomAV","PalmettoDV",520,30);
-    await newRank("ArchimedeanAV","PalmettoEV",330,130);
-    await newRank("ArchimedeanCV","PalmettoFV",220,90);
-    await newRank("CoralReefAV","PalmettoJV",360,70);
-    await newRank("PalmettoBV","BelenBV",280,210);
-    await newRank("ArchimedeanEV","PalmettoHV",220,60);
-    await newRank("BelenAV","PalmettoIV",420,40);
-    await newRank("DoralAV","ArchimedeanDV",330,50);
-    await newRank("ArchimedeanBV","PalmettoAV",240,180);
-    await newRank("PalmettoCV","WestminsterAV",310,160);
-    await newRank("CoralReefBV","PalmettoGV",300,120);
-    await newRank("RansomBV","PalmettoMJV",280,190);
-    await newRank("PalmettoPJV","PalmettoOJV",310,160);
-    await newRank("BelenCJV","PalmettonAJV",330,110);
-    await newRank("PalmettoLJV","PalmettoQJV",310,50);
-    await newRank("DoralBJV","PalmettoRJV",270,140);
-    await newRank("RansomCJV","PalmettoKJV",460,90);
-    await newRank("ArchimedeanFJV","RansomDJV",180,170);
+    await newRank("RansomA","PalmettoD",520,30);
+    await newRank("ArchimedeanA","PalmettoE",330,130);
+    await newRank("ArchimedeanC","PalmettoF",220,90);
+    await newRank("CoralReefA","Palmetto",360,70);
+    await newRank("PalmettoB","BelenB",280,210);
+    await newRank("ArchimedeanE","PalmettoH",220,60);
+    await newRank("BelenA","PalmettoI",420,40);
+    await newRank("DoralA","ArchimedeanD",330,50);
+    await newRank("ArchimedeanB","PalmettoA",240,180);
+    await newRank("PalmettoC","WestminsterA",310,160);
+    await newRank("CoralReefB","PalmettoG",300,120);
+    await newRank("RansomB","PalmettoM",280,190);
+    await newRank("PalmettoP","PalmettoO",310,160);
+    await newRank("BelenC","PalmettonA",330,110);
+    await newRank("PalmettoL","PalmettoQ",310,50);
+    await newRank("DoralB","PalmettoR",270,140);
+    await newRank("RansomC","PalmettoK",460,90);
+    await newRank("ArchimedeanF","RansomD",180,170);
     //Round 2
-    await newRank("RansomBV","PalmettoCV",230,230);
-    await newRank("RansomAV","CoralReefBV",410,90);
-    await newRank("PalmettoEV","PalmettoDV",260,100);
-    await newRank("ArchimedeanAV","ArchimedeanCV",280,150);
-    await newRank("PalmettoJV","PalmettoFV",180,170);
-    await newRank("CoralReefAV","BelenBV",300,210);
-    await newRank("PalmettoBV","PalmettoHV",290,140);
-    await newRank("BelenAV","ArchimedeanEV",360,40);
-    await newRank("ArchimedeanDV","PalmettoIV",120,120);
-    await newRank("DoralAV","PalmettoAV",230,190);
-    await newRank("ArchimedeanBV","WestminsterAV",240,180);
-    await newRank("RansomDJV","PalmettoGV",210,150);
-    await newRank("PalmettoMJV","PalmettoOJV",290,150);
-    await newRank("PalmettoPJV","PalmettonAJV",260,140);
-    await newRank("PalmettoLJV","BelenCJV",250,190);
-    await newRank("DoralBJV","PalmettoQJV",260,90);
-    await newRank("RansomCJV","PalmettoRJV",450,90);
-    await newRank("ArchimedeanFJV","PalmettoKJV",250,120);
+    await newRank("RansomB","PalmettoC",230,230);
+    await newRank("RansomA","CoralReefB",410,90);
+    await newRank("PalmettoE","PalmettoD",260,100);
+    await newRank("ArchimedeanA","ArchimedeanC",280,150);
+    await newRank("Palmetto","PalmettoF",180,170);
+    await newRank("CoralReefA","BelenB",300,210);
+    await newRank("PalmettoB","PalmettoH",290,140);
+    await newRank("BelenA","ArchimedeanE",360,40);
+    await newRank("ArchimedeanD","PalmettoI",120,120);
+    await newRank("DoralA","PalmettoA",230,190);
+    await newRank("ArchimedeanB","WestminsterA",240,180);
+    await newRank("RansomD","PalmettoG",210,150);
+    await newRank("PalmettoM","PalmettoO",290,150);
+    await newRank("PalmettoP","PalmettonA",260,140);
+    await newRank("PalmettoL","BelenC",250,190);
+    await newRank("DoralB","PalmettoQ",260,90);
+    await newRank("RansomC","PalmettoR",450,90);
+    await newRank("ArchimedeanF","PalmettoK",250,120);
     //Round 3
-    await newRank("WestminsterAV","DoralAV",280,160);
-    await newRank("ArchimedeanBV","PalmettoGV",240,150);
-    await newRank("RansomAV","PalmettoCV",330,180);
-    await newRank("CoralReefBV","RansomBV",250,220);
-    await newRank("ArchimedeanCV","PalmettoDV",220,150);
-    await newRank("ArchimedeanAV","PalmettoJV",390,80);
-    await newRank("BelenBV","PalmettoFV",370,110);
-    await newRank("CoralReefAV","PalmettoHV",410,40);
-    await newRank("PalmettoBV","BelenAV",340,210);
-    await newRank("ArchimedeanDV","ArchimedeanEV",130,120);
-    await newRank("PalmettoAV","PalmettoIV",410,90);
-    await newRank("PalmettoEV","PalmettoKJV",270,170);
-    await newRank("ArchimedeanFJV","PalmettoRJV",220,140);
-    await newRank("RansomDJV","PalmettoOJV",250,150);
-    await newRank("PalmettoMJV","PalmettonAJV",330,130);
-    await newRank("PalmettoPJV","PalmettoLJV",270,180);
-    await newRank("BelenCJV","DoralBJV",240,200);
-    await newRank("RansomCJV","PalmettoQJV",460,50);
+    await newRank("WestminsterA","DoralA",280,160);
+    await newRank("ArchimedeanB","PalmettoG",240,150);
+    await newRank("RansomA","PalmettoC",330,180);
+    await newRank("CoralReefB","RansomB",250,220);
+    await newRank("ArchimedeanC","PalmettoD",220,150);
+    await newRank("ArchimedeanA","Palmetto",390,80);
+    await newRank("BelenB","PalmettoF",370,110);
+    await newRank("CoralReefA","PalmettoH",410,40);
+    await newRank("PalmettoB","BelenA",340,210);
+    await newRank("ArchimedeanD","ArchimedeanE",130,120);
+    await newRank("PalmettoA","PalmettoI",410,90);
+    await newRank("PalmettoE","PalmettoK",270,170);
+    await newRank("ArchimedeanF","PalmettoR",220,140);
+    await newRank("RansomD","PalmettoO",250,150);
+    await newRank("PalmettoM","PalmettonA",330,130);
+    await newRank("PalmettoP","PalmettoL",270,180);
+    await newRank("BelenC","DoralB",240,200);
+    await newRank("RansomC","PalmettoQ",460,50);
     //Round 4
-    await newRank("PalmettoAV","ArchimedeanEV",410,50);
-    await newRank("WestminsterAV","PalmettoIV",290,40);
-    await newRank("DoralAV","PalmettoGV",210,160);
-    await newRank("RansomAV","ArchimedeanBV",450,110);
-    await newRank("PalmettoCV","PalmettoEV",240,230);
-    await newRank("CoralReefBV","ArchimedeanCV",230,130);
-    await newRank("PalmettoLJV","PalmettoDV",140,70);
-    await newRank("ArchimedeanAV","BelenBV",330,240);
-    await newRank("PalmettoFV","PalmettoHV",160,70);
-    await newRank("BelenAV","CoralReefAV",280,270);
-    await newRank("PalmettoBV","RansomBV",370,130);
-    await newRank("PalmettoRJV","ArchimedeanDV",160,130);
-    await newRank("RansomCJV","BelenCJV",520,110);
-    await newRank("ArchimedeanFJV","PalmettoQJV",320,40);
-    await newRank("PalmettoOJV","PalmettoKJV",170,150);
-    await newRank("RansomDJV","PalmettonAJV",280,80);
-    await newRank("PalmettoMJV","PalmettoLJV",190,130);
-    await newRank("PalmettoPJV","DoralBJV",300,140);
+    await newRank("PalmettoA","ArchimedeanE",410,50);
+    await newRank("WestminsterA","PalmettoI",290,40);
+    await newRank("DoralA","PalmettoG",210,160);
+    await newRank("RansomA","ArchimedeanB",450,110);
+    await newRank("PalmettoC","PalmettoE",240,230);
+    await newRank("CoralReefB","ArchimedeanC",230,130);
+    await newRank("PalmettoL","PalmettoD",140,70);
+    await newRank("ArchimedeanA","BelenB",330,240);
+    await newRank("PalmettoF","PalmettoH",160,70);
+    await newRank("BelenA","CoralReefA",280,270);
+    await newRank("PalmettoB","RansomB",370,130);
+    await newRank("PalmettoR","ArchimedeanD",160,130);
+    await newRank("RansomC","BelenC",520,110);
+    await newRank("ArchimedeanF","PalmettoQ",320,40);
+    await newRank("PalmettoO","PalmettoK",170,150);
+    await newRank("RansomD","PalmettonA",280,80);
+    await newRank("PalmettoM","PalmettoL",190,130);
+    await newRank("PalmettoP","DoralB",300,140);
     //Round 5
-    await newRank("PalmettoBV","CoralReefAV",260,190);
-    await newRank("PalmettoAV","ArchimedeanDV",290,40);
-    await newRank("WestminsterAV","ArchimedeanEV",250,50);
-    await newRank("RansomAV","PalmettoGV",360,80);
-    await newRank("DoralAV","PalmettoIV",250,80);
-    await newRank("ArchimedeanBV","PalmettoEV",230,210);
-    await newRank("PalmettoCV","ArchimedeanCV",230,150);
-    await newRank("CoralReefBV","PalmettoJV",260,80);
-    await newRank("RansomBV","PalmettoDV",320,80);
-    await newRank("ArchimedeanAV","PalmettoHV",330,40);
-    await newRank("BelenBV","PalmettoQJV",350,60);
-    await newRank("PalmettoMJV","DoralBJV",290,90);
-    await newRank("RansomCJV","PalmettoPJV",390,130);
-    await newRank("ArchimedeanFJV","BelenCJV",170,170);
-    await newRank("PalmettoRJV","PalmettoOJV",180,140);
-    await newRank("PalmettoKJV","PalmettonAJV",150,110);
-    await newRank("PalmettoLJV","RansomDJV",180,170);
+    await newRank("PalmettoB","CoralReefA",260,190);
+    await newRank("PalmettoA","ArchimedeanD",290,40);
+    await newRank("WestminsterA","ArchimedeanE",250,50);
+    await newRank("RansomA","PalmettoG",360,80);
+    await newRank("DoralA","PalmettoI",250,80);
+    await newRank("ArchimedeanB","PalmettoE",230,210);
+    await newRank("PalmettoC","ArchimedeanC",230,150);
+    await newRank("CoralReefB","Palmetto",260,80);
+    await newRank("RansomB","PalmettoD",320,80);
+    await newRank("ArchimedeanA","PalmettoH",330,40);
+    await newRank("BelenB","PalmettoQ",350,60);
+    await newRank("PalmettoM","DoralB",290,90);
+    await newRank("RansomC","PalmettoP",390,130);
+    await newRank("ArchimedeanF","BelenC",170,170);
+    await newRank("PalmettoR","PalmettoO",180,140);
+    await newRank("PalmettoK","PalmettonA",150,110);
+    await newRank("PalmettoL","RansomD",180,170);
     //Varsity Playoffs
     //Octofinals
-    //await newRank("RansomAV","PalmettoGV",1,0);
-    await newRank("PalmettoCV","DoralAV",200,150);
-    await newRank("PalmettoBV","ArchimedeanBV",320,150);
-    await newRank("CoralReefAV","RansomBV",200,190);
-    await newRank("ArchimedeanAV","ArchimedeanCV",280,70);
-    await newRank("BelenBV","WestminsterAV",300,90);
-    await newRank("BelenAV","PalmettoEV",270,150);
-    await newRank("PalmettoAV","CoralReefBV",210,190);
+    //await newRank("RansomA","PalmettoG",1,0);
+    await newRank("PalmettoC","DoralA",200,150);
+    await newRank("PalmettoB","ArchimedeanB",320,150);
+    await newRank("CoralReefA","RansomB",200,190);
+    await newRank("ArchimedeanA","ArchimedeanC",280,70);
+    await newRank("BelenB","WestminsterA",300,90);
+    await newRank("BelenA","PalmettoE",270,150);
+    await newRank("PalmettoA","CoralReefB",210,190);
     //Quarterfinals
-    await newRank("RansomAV","PalmettoCV",310,150);
-    await newRank("BelenBV","ArchimedeanAV",270,220);
-    await newRank("BelenAV","PalmettoAV",230,200);
-    await newRank("PalmettoBV","CoralReefAV",200,140);
+    await newRank("RansomA","PalmettoC",310,150);
+    await newRank("BelenB","ArchimedeanA",270,220);
+    await newRank("BelenA","PalmettoA",230,200);
+    await newRank("PalmettoB","CoralReefA",200,140);
     //Semifinals
-    await newRank("RansomAV","PalmettoBV",220,190);
-    await newRank("BelenBV","BelenAV",180,170);
+    await newRank("RansomA","PalmettoB",220,190);
+    await newRank("BelenB","BelenA",180,170);
     //Finals
-    await newRank("RansomAV","BelenBV",260,170)
+    await newRank("RansomA","BelenB",260,170)
     //JV Playoffs
     //Quarterfinals
-    await newRank("RansomCJV","DoralBJV",330,140);
-    await newRank("RansomDJV","ArchimedeanFJV",180,130);
-    await newRank("PalmettoPJV","PalmettoLJV",250,70);
-    await newRank("BelenCJV","PalmettoMJV",200,180);
+    await newRank("RansomC","DoralB",330,140);
+    await newRank("RansomD","ArchimedeanF",180,130);
+    await newRank("PalmettoP","PalmettoL",250,70);
+    await newRank("BelenC","PalmettoM",200,180);
     //Semifinals
-    await newRank("PalmettoPJV","BelenCJV",240,70);
-    await newRank("RansomCJV","PalmettoPJV",340,90);
+    await newRank("PalmettoP","BelenC",240,70);
+    await newRank("RansomC","PalmettoP",340,90);
     console.log("South FL C q V: "+qV[a2]);
     console.log("South FL C q JV: "+qJV[b2]);
     a = 0;
@@ -7311,23 +7314,23 @@ async function cSetData(){
     a2 = a2+1;
     //Prelims
     //Round 1
-    await newRank("IolaniBV","PunahouBJV",400,130);
-    await newRank("IolaniAV","PunahouAV",270,260);
+    await newRank("IolaniB","PunahouB",400,130);
+    await newRank("IolaniA","PunahouA",270,260);
     //Round 2
-    await newRank("IolaniBV","IolaniAV",410,160);
-    await newRank("PunahouAV","PunahouBJV",320,150);
+    await newRank("IolaniB","IolaniA",410,160);
+    await newRank("PunahouA","PunahouB",320,150);
     //Round 3
-    await newRank("IolaniBV","PunahouAV",350,210);
-    await newRank("IolaniAV","PunahouBJV",330,190);
+    await newRank("IolaniB","PunahouA",350,210);
+    await newRank("IolaniA","PunahouB",330,190);
     //Round 4
-    await newRank("IolaniBV","PunahouBJV",370,130);
-    await newRank("IolaniAV","PunahouAV",280,280);
+    await newRank("IolaniB","PunahouB",370,130);
+    await newRank("IolaniA","PunahouA",280,280);
     //Round 5
-    await newRank("IolaniBV","PunahouAV",380,120);
-    await newRank("IolaniAV","PunahouBJV",380,120);
+    await newRank("IolaniB","PunahouA",380,120);
+    await newRank("IolaniA","PunahouB",380,120);
     //Round 6
-    await newRank("PunahouAV","PunahouBJV",200,160);
-    await newRank("IolaniAV","IolaniBV",260,210);
+    await newRank("PunahouA","PunahouB",200,160);
+    await newRank("IolaniA","IolaniB",260,210);
     console.log("Oahu C q V: "+qV[a2]);
     a = 0;
     b = 0;
@@ -7338,31 +7341,31 @@ async function cSetData(){
     a2 = a2+1;
     //Prelims
     //Round 3
-    await newRank("SeymourAV","PigeonForgeAV",230,210);
-    await newRank("MaryvilleAV","MorristownAV",370,140);
-    await newRank("GatlinburgBV","MorristownBV",170,110);
+    await newRank("SeymourA","PigeonForgeA",230,210);
+    await newRank("MaryvilleA","MorristownA",370,140);
+    await newRank("GatlinburgB","MorristownB",170,110);
     //Round 2
-    await newRank("MaryvilleAV","MorristownBV",460,40);
-    await newRank("GatlinburgAV","MorristownAV",270,140);
-    await newRank("SeymourAV","GatlinburgBV",280,60);
+    await newRank("MaryvilleA","MorristownB",460,40);
+    await newRank("GatlinburgA","MorristownA",270,140);
+    await newRank("SeymourA","GatlinburgB",280,60);
     //Round 3
-    await newRank("GatlinburgAV","MorristownBV",370,60);
-    await newRank("MaryvilleAV","SeymourAV",320,140);
-    await newRank("PigeonForgeAV","MorristownAV",230,190);
+    await newRank("GatlinburgA","MorristownB",370,60);
+    await newRank("MaryvilleA","SeymourA",320,140);
+    await newRank("PigeonForgeA","MorristownA",230,190);
     //Round 4
-    await newRank("GatlinburgAV","SeymourAV",330,90);
-    await newRank("PigeonForgeAV","MorristownBV",250,70);
-    await newRank("MorristownAV","GatlinburgBV",310,30);
+    await newRank("GatlinburgA","SeymourA",330,90);
+    await newRank("PigeonForgeA","MorristownB",250,70);
+    await newRank("MorristownA","GatlinburgB",310,30);
     //Round 5
-    await newRank("PigeonForgeAV","GatlinburgBV",310,20);
-    await newRank("GatlinburgAV","MaryvilleAV",220,210);
-    await newRank("MorristownAV","SeymourAV",190,130);
+    await newRank("PigeonForgeA","GatlinburgB",310,20);
+    await newRank("GatlinburgA","MaryvilleA",220,210);
+    await newRank("MorristownA","SeymourA",190,130);
     //Varsity Playoffs
     //Semifinals
-    await newRank("GatlinburgAV","MorristownAV",230,100);
-    await newRank("MaryvilleAV","PigeonForgeAV",400,160);
+    await newRank("GatlinburgA","MorristownA",230,100);
+    await newRank("MaryvilleA","PigeonForgeA",400,160);
     //Finals
-    await newRank("MaryvilleAV","GatlinburgAV",230,140);
+    await newRank("MaryvilleA","GatlinburgA",230,140);
     console.log("Knoxville C q V: "+qV[a2]);
     a = 0;
     
@@ -7372,72 +7375,72 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("BrookwoodAV","NewnanAV",241,240);
-    await newRank("LambertAV","ChattahoocheeAV",310,280);
-    await newRank("WoodstockAV","WoodwardAV",350,90);
-    await newRank("CambridgeAV","JohnsCreekAV",340,210);
-    await newRank("CommerceAV","ApalacheeAV",300,180);
-    await newRank("NewnanCJV","BrookwoodBJV",230,170);
-    await newRank("ChattahoocheeBJV","NewnanBJV",240,220);
-    await newRank("HermannAJV","CherokeeBluffJV",290,220);
-    await newRank("FultonAJV","GeorgeWaltonBJV",410,40);
+    await newRank("BrookwoodA","NewnanA",241,240);
+    await newRank("LambertA","ChattahoocheeA",310,280);
+    await newRank("WoodstockA","WoodwardA",350,90);
+    await newRank("CambridgeA","JohnsCreekA",340,210);
+    await newRank("CommerceA","ApalacheeA",300,180);
+    await newRank("NewnanC","BrookwoodB",230,170);
+    await newRank("ChattahoocheeB","NewnanB",240,220);
+    await newRank("HermannA","CherokeeBluff",290,220);
+    await newRank("FultonA","GeorgeWaltonB",410,40);
     //Round 2
-    await newRank("LambertAV","NewnanAV",430,200);
-    await newRank("BrookwoodAV","WoodstockAV",350,160);
-    await newRank("ChattahoocheeAV","WoodwardAV",410,140);
-    await newRank("ApalacheeAV","GeorgeWaltonAV",220,190);
-    await newRank("CambridgeAV","CommerceAV",510,110);
-    await newRank("ChattahoocheeBJV","ApalacheeBJV",360,60);
-    await newRank("NewnanCJV","CherokeeBluffJV",240,190);
-    await newRank("NewnanBJV","FultonAJV",210,150);
-    await newRank("HermannAJV","GeorgeWaltonBJV",450,40);
+    await newRank("LambertA","NewnanA",430,200);
+    await newRank("BrookwoodA","WoodstockA",350,160);
+    await newRank("ChattahoocheeA","WoodwardA",410,140);
+    await newRank("ApalacheeA","GeorgeWaltonA",220,190);
+    await newRank("CambridgeA","CommerceA",510,110);
+    await newRank("ChattahoocheeB","ApalacheeB",360,60);
+    await newRank("NewnanC","CherokeeBluff",240,190);
+    await newRank("NewnanB","FultonA",210,150);
+    await newRank("HermannA","GeorgeWaltonB",450,40);
     //Round 3
-    await newRank("BrookwoodAV","WoodwardAV",360,110);
-    await newRank("LambertAV","WoodstockAV",380,120);
-    await newRank("ChattahoocheeAV","NewnanAV",370,170);
-    await newRank("CommerceAV","GeorgeWaltonAV",250,220);
-    await newRank("JohnsCreekAV","ApalacheeAV",340,130);
-    await newRank("CherokeeBluffJV","BrookwoodBJV",240,220);
-    await newRank("FultonAJV","ApalacheeBJV",330,100);
-    await newRank("NewnanCJV","GeorgeWaltonBJV",230,200);
-    await newRank("HermannAJV","NewnanBJV",310,170);
+    await newRank("BrookwoodA","WoodwardA",360,110);
+    await newRank("LambertA","WoodstockA",380,120);
+    await newRank("ChattahoocheeA","NewnanA",370,170);
+    await newRank("CommerceA","GeorgeWaltonA",250,220);
+    await newRank("JohnsCreekA","ApalacheeA",340,130);
+    await newRank("CherokeeBluff","BrookwoodB",240,220);
+    await newRank("FultonA","ApalacheeB",330,100);
+    await newRank("NewnanC","GeorgeWaltonB",230,200);
+    await newRank("HermannA","NewnanB",310,170);
     //Round 4
-    await newRank("LambertAV","WoodwardAV",460,140);
-    await newRank("ChattahoocheeAV","BrookwoodAV",400,150);
-    await newRank("NewnanAV","WoodstockAV",320,180);
-    await newRank("CambridgeAV","GeorgeWaltonAV",490,80);
-    await newRank("JohnsCreekAV","CommerceAV",280,140);
-    await newRank("CherokeeBluffJV","GeorgeWaltonBJV",320,70);
-    await newRank("HermannAJV","ChattahoocheeBJV",260,200);
-    await newRank("BrookwoodBJV","NewnanBJV",200,190);
-    await newRank("NewnanCJV","ApalacheeBJV",170,110);
+    await newRank("LambertA","WoodwardA",460,140);
+    await newRank("ChattahoocheeA","BrookwoodA",400,150);
+    await newRank("NewnanA","WoodstockA",320,180);
+    await newRank("CambridgeA","GeorgeWaltonA",490,80);
+    await newRank("JohnsCreekA","CommerceA",280,140);
+    await newRank("CherokeeBluff","GeorgeWaltonB",320,70);
+    await newRank("HermannA","ChattahoocheeB",260,200);
+    await newRank("BrookwoodB","NewnanB",200,190);
+    await newRank("NewnanC","ApalacheeB",170,110);
     //Round 5
-    await newRank("ChattahoocheeAV","WoodstockAV",370,200);
-    await newRank("WoodwardAV","NewnanAV",200,180);
-    await newRank("LambertAV","BrookwoodAV",380,200);
-    await newRank("CambridgeAV","ApalacheeAV",510,60);
-    await newRank("JohnsCreekAV","GeorgeWaltonAV",310,150);
-    await newRank("HermannAJV","FultonAJV",270,200);
-    await newRank("CherokeeBluffJV","NewnanBJV",230,180);
-    await newRank("ChattahoocheeBJV","NewnanCJV",230,180);
-    await newRank("BrookwoodBJV","ApalacheeBJV",250,80);
+    await newRank("ChattahoocheeA","WoodstockA",370,200);
+    await newRank("WoodwardA","NewnanA",200,180);
+    await newRank("LambertA","BrookwoodA",380,200);
+    await newRank("CambridgeA","ApalacheeA",510,60);
+    await newRank("JohnsCreekA","GeorgeWaltonA",310,150);
+    await newRank("HermannA","FultonA",270,200);
+    await newRank("CherokeeBluff","NewnanB",230,180);
+    await newRank("ChattahoocheeB","NewnanC",230,180);
+    await newRank("BrookwoodB","ApalacheeB",250,80);
     //Varsity Playoffs
     //Quarterfinals
-    await newRank("CambridgeAV","CommerceAV",340,130);
-    await newRank("LambertAV","WoodstockAV",370,160);
-    await newRank("ChattahoocheeAV","NewnanAV",350,160);
-    await newRank("BrookwoodAV","JohnsCreekAV",220,190);
+    await newRank("CambridgeA","CommerceA",340,130);
+    await newRank("LambertA","WoodstockA",370,160);
+    await newRank("ChattahoocheeA","NewnanA",350,160);
+    await newRank("BrookwoodA","JohnsCreekA",220,190);
     //Semifinals
-    await newRank("CambridgeAV","BrookwoodAV",320,150);
-    await newRank("LambertAV","ChattahoocheeAV",271,270);
+    await newRank("CambridgeA","BrookwoodA",320,150);
+    await newRank("LambertA","ChattahoocheeA",271,270);
     //Finals
-    await newRank("CambridgeAV","LambertAV",310,250);
+    await newRank("CambridgeA","LambertA",310,250);
     //JV Playoffs
     //Semifinals
-    await newRank("HermannAJV","CherokeeBluffJV",370,80);
-    await newRank("ChattahoocheeBJV","FultonAJV",210,160);
+    await newRank("HermannA","CherokeeBluff",370,80);
+    await newRank("ChattahoocheeB","FultonA",210,160);
     //Finals
-    await newRank("ChattahoocheeBJV","HermannAJV",280,140);
+    await newRank("ChattahoocheeB","HermannA",280,140);
     console.log("Eastern GA C q V: "+qV[a2]);
     console.log("Eastern GA C q JV: "+qJV[b2]);
     a = 0;
@@ -7449,109 +7452,109 @@ async function cSetData(){
     c2 = c2+1;
     //Prelims
     //Round 1
-    await newRank("PineViewAV","RiverviewEV",270,220);
-    await newRank("RiverviewAV","LargoBV",280,240);
-    await newRank("BerkeleyBV","KingAV",270,240);
-    await newRank("TrinityBV","ClassicalAV",290,180);
-    await newRank("TrinityAV","RiverviewDV",450,70);
-    await newRank("LargoAV","RiverviewBV",380,160);
-    await newRank("KingBV","BerkeleyAV",340,190);
-    await newRank("ManateeAV","RiverviewCV",320,200);
-    await newRank("RiverviewHJV","LargoCJV",230,170);
-    await newRank("BerkeleyCJV","RiverviewIJV",330,20);
-    await newRank("RiverviewFJV","RiverviewGJV",310,50);
-    await newRank("ManateeBJV","RiverviewJJV",330,30);
-    await newRank("ClassicalBJV","BerkeleyDJV",140,110);
-    await newRank("ClassicalBJV","BerkeleyDJV",140,110);
-    await newRank("ClassicalCMS","ClassicalEMS",190,30);
-    await newRank("TrinityDMS","ClassicalDMS",220,40);
+    await newRank("PineViewA","RiverviewE",270,220);
+    await newRank("RiverviewA","LargoB",280,240);
+    await newRank("BerkeleyB","KingA",270,240);
+    await newRank("TrinityB","ClassicalA",290,180);
+    await newRank("TrinityA","RiverviewD",450,70);
+    await newRank("LargoA","RiverviewB",380,160);
+    await newRank("KingB","BerkeleyA",340,190);
+    await newRank("ManateeA","RiverviewC",320,200);
+    await newRank("RiverviewH","LargoC",230,170);
+    await newRank("BerkeleyC","RiverviewI",330,20);
+    await newRank("RiverviewF","RiverviewG",310,50);
+    await newRank("ManateeB","RiverviewJ",330,30);
+    await newRank("ClassicalB","BerkeleyD",140,110);
+    await newRank("ClassicalB","BerkeleyD",140,110);
+    await newRank("ClassicalC","ClassicalE",190,30);
+    await newRank("TrinityD","ClassicalD",220,40);
     //Round 2
-    await newRank("RiverviewCV","ClassicalAV",260,220);
-    await newRank("KingAV","RiverviewDV",320,120);
-    await newRank("TrinityAV","BerkeleyBV",320,310);
-    await newRank("KingBV","RiverviewAV",230,220);
-    await newRank("LargoAV","RiverviewEV",350,130);
-    await newRank("ManateeAV","TrinityBV",240,220);
-    await newRank("LargoBV","BerkeleyAV",340,140);
-    await newRank("PineViewAV","RiverviewBV",250,200);
-    await newRank("RiverviewFJV","RiverviewIJV",360,60);
-    await newRank("RiverviewGJV","RiverviewJJV",280,70);
-    await newRank("ManateeBJV","BerkeleyDJV",170,130);
-    await newRank("LargoCJV","ClassicalBJV",240,100);
-    await newRank("BerkeleyCJV","RiverviewHJV",240,180);
-    await newRank("TrinityCMS","ClassicalEMS",430,10);
-    await newRank("ClassicalCMS","TrinityDMS",150,140);
+    await newRank("RiverviewC","ClassicalA",260,220);
+    await newRank("KingA","RiverviewD",320,120);
+    await newRank("TrinityA","BerkeleyB",320,310);
+    await newRank("KingB","RiverviewA",230,220);
+    await newRank("LargoA","RiverviewE",350,130);
+    await newRank("ManateeA","TrinityB",240,220);
+    await newRank("LargoB","BerkeleyA",340,140);
+    await newRank("PineViewA","RiverviewB",250,200);
+    await newRank("RiverviewF","RiverviewI",360,60);
+    await newRank("RiverviewG","RiverviewJ",280,70);
+    await newRank("ManateeB","BerkeleyD",170,130);
+    await newRank("LargoC","ClassicalB",240,100);
+    await newRank("BerkeleyC","RiverviewH",240,180);
+    await newRank("TrinityC","ClassicalE",430,10);
+    await newRank("ClassicalC","TrinityD",150,140);
     //Round 3
-    await newRank("TrinityAV","ManateeAV",510,80);
-    await newRank("TrinityBV","RiverviewDV",330,130);
-    await newRank("KingAV","ClassicalAV",360,140);
-    await newRank("BerkeleyAV","PineViewAV",230,220);
-    await newRank("RiverviewCV","BerkeleyBV",320,250);
-    await newRank("TrinityCMS","ClassicalDMS",490,10);
-    await newRank("LargoBV","RiverviewEV",260,160);
-    await newRank("RiverviewFJV","RiverviewHJV",210,150);
-    await newRank("LargoAV","RiverviewAV",370,150);
-    await newRank("KingBV","RiverviewBV",270,220);
-    await newRank("ManateeBJV","LargoCJV",230,190);
-    await newRank("RiverviewIJV","RiverviewJJV",140,120);
-    await newRank("BerkeleyCJV","ClassicalBJV",190,170);
-    await newRank("TrinityCMS","ClassicalDMS",490,10);
-    await newRank("TrinityDMS","ClassicalEMS",230,40);
+    await newRank("TrinityA","ManateeA",510,80);
+    await newRank("TrinityB","RiverviewD",330,130);
+    await newRank("KingA","ClassicalA",360,140);
+    await newRank("BerkeleyA","PineViewA",230,220);
+    await newRank("RiverviewC","BerkeleyB",320,250);
+    await newRank("TrinityC","ClassicalD",490,10);
+    await newRank("LargoB","RiverviewE",260,160);
+    await newRank("RiverviewF","RiverviewH",210,150);
+    await newRank("LargoA","RiverviewA",370,150);
+    await newRank("KingB","RiverviewB",270,220);
+    await newRank("ManateeB","LargoC",230,190);
+    await newRank("RiverviewI","RiverviewJ",140,120);
+    await newRank("BerkeleyC","ClassicalB",190,170);
+    await newRank("TrinityC","ClassicalD",490,10);
+    await newRank("TrinityD","ClassicalE",230,40);
     //Round 4
-    await newRank("KingBV","RiverviewEV",330,110);
-    await newRank("BerkeleyBV","TrinityBV",340,160);
-    await newRank("BerkeleyCJV","ManateeBJV",250,130);
-    await newRank("TrinityCMS","ClassicalCMS",410,40);
-    await newRank("RiverviewAV","PineViewAV",290,200);
-    await newRank("LargoAV","BerkeleyAV",330,170);
-    await newRank("LargoBV","RiverviewBV",290,150);
-    await newRank("LargoCJV","RiverviewGJV",190,110);
-    await newRank("BerkeleyDJV","RiverviewIJV",160,70);
-    await newRank("ClassicalDMS","ClassicalEMS",60,50);
-    await newRank("RiverviewCV","RiverviewDV",470,110);
-    await newRank("RiverviewHJV","RiverviewJJV",180,90);
-    await newRank("RiverviewFJV","ClassicalBJV",340,130);
-    await newRank("KingAV","ManateeAV",270,160);
-    await newRank("TrinityAV","ClassicalAV",500,70);
+    await newRank("KingB","RiverviewE",330,110);
+    await newRank("BerkeleyB","TrinityB",340,160);
+    await newRank("BerkeleyC","ManateeB",250,130);
+    await newRank("TrinityC","ClassicalC",410,40);
+    await newRank("RiverviewA","PineViewA",290,200);
+    await newRank("LargoA","BerkeleyA",330,170);
+    await newRank("LargoB","RiverviewB",290,150);
+    await newRank("LargoC","RiverviewG",190,110);
+    await newRank("BerkeleyD","RiverviewI",160,70);
+    await newRank("ClassicalD","ClassicalE",60,50);
+    await newRank("RiverviewC","RiverviewD",470,110);
+    await newRank("RiverviewH","RiverviewJ",180,90);
+    await newRank("RiverviewF","ClassicalB",340,130);
+    await newRank("KingA","ManateeA",270,160);
+    await newRank("TrinityA","ClassicalA",500,70);
     //Round 5
-    await newRank("TrinityAV","LargoAV",310,230);
-    await newRank("RiverviewAV","ManateeAV",300,140);
-    await newRank("ClassicalAV","BerkeleyAV",210,160);
-    await newRank("BerkeleyBV","RiverviewBV",220,150);
-    await newRank("TrinityCMS","TrinityDMS",330,60);
-    await newRank("ClassicalBJV","RiverviewJJV",220,60);
-    await newRank("KingBV","RiverviewCV",320,150);
-    await newRank("RiverviewFJV","ManateeBJV",210,90);
-    await newRank("KingAV","PineViewAV",290,140);
-    await newRank("LargoCJV","RiverviewIJV",150,80);
-    await newRank("BerkeleyCJV","RiverviewGJV",260,70);
-    await newRank("RiverviewEV","RiverviewDV",190,150);
-    await newRank("RiverviewHJV","BerkeleyDJV",240,100);
-    await newRank("TrinityBV","LargoBV",230,190);
-    await newRank("ClassicalCMS","ClassicalDMS",120,50);
+    await newRank("TrinityA","LargoA",310,230);
+    await newRank("RiverviewA","ManateeA",300,140);
+    await newRank("ClassicalA","BerkeleyA",210,160);
+    await newRank("BerkeleyB","RiverviewB",220,150);
+    await newRank("TrinityC","TrinityD",330,60);
+    await newRank("ClassicalB","RiverviewJ",220,60);
+    await newRank("KingB","RiverviewC",320,150);
+    await newRank("RiverviewF","ManateeB",210,90);
+    await newRank("KingA","PineViewA",290,140);
+    await newRank("LargoC","RiverviewI",150,80);
+    await newRank("BerkeleyC","RiverviewG",260,70);
+    await newRank("RiverviewE","RiverviewD",190,150);
+    await newRank("RiverviewH","BerkeleyD",240,100);
+    await newRank("TrinityB","LargoB",230,190);
+    await newRank("ClassicalC","ClassicalD",120,50);
     //Varsity Playoffs
     //Quarterfinals
-    await newRank("TrinityAV","RiverviewAV",370,100);
-    await newRank("LargoAV","BerkeleyBV",280,130);
-    await newRank("KingBV","LargoBV",190,170);
-    await newRank("KingAV","RiverviewCV",290,150);
+    await newRank("TrinityA","RiverviewA",370,100);
+    await newRank("LargoA","BerkeleyB",280,130);
+    await newRank("KingB","LargoB",190,170);
+    await newRank("KingA","RiverviewC",290,150);
     //Semifinals
-    await newRank("LargoAV","KingBV",280,150);
-    await newRank("TrinityAV","KingAV",310,180);
+    await newRank("LargoA","KingB",280,150);
+    await newRank("TrinityA","KingA",310,180);
     //Finals
-    await newRank("TrinityAV","LargoAV",330,170);
+    await newRank("TrinityA","LargoA",330,170);
     //JV Playoffs
     //Quarterfinals
-    //await newRank("RiverviewFJV","BerkeleyDJV",1,0);
-    await newRank("BerkeleyCJV","RiverviewGJV",260,50);
-    await newRank("LargoCJV","ManateeBJV",180,80);
-    await newRank("RiverviewHJV","ClassicalBJV",210,80);
+    //await newRank("RiverviewF","BerkeleyD",1,0);
+    await newRank("BerkeleyC","RiverviewG",260,50);
+    await newRank("LargoC","ManateeB",180,80);
+    await newRank("RiverviewH","ClassicalB",210,80);
     //Semifinals
-    await newRank("RiverviewHJV","BerkeleyCJV",170,130);
-    await newRank("RiverviewFJV","LargoCJV",200,100);
-    await newRank("RiverviewHJV","RiverviewFJV",121,120);
+    await newRank("RiverviewH","BerkeleyC",170,130);
+    await newRank("RiverviewF","LargoC",200,100);
+    await newRank("RiverviewH","RiverviewF",121,120);
     //MS Final
-    await newRank("TrinityCMS","TrinityDMS",310,40);
+    await newRank("TrinityC","TrinityD",310,40);
     console.log("Central FL C q V: "+qV[a2]);
     console.log("Central FL C q JV: "+qJV[b2]);
     console.log("Central FL C q MS: "+qMS[c2]);
@@ -7565,30 +7568,30 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("CentralKitsapAV","HolyNamesAV",320,200);
-    await newRank("OdleAJV","JohnPaulIIBJV",250,120);
-    await newRank("TeslaAJV","DuvallJV",400,70);
+    await newRank("CentralKitsapA","HolyNamesA",320,200);
+    await newRank("OdleA","JohnPaulIIB",250,120);
+    await newRank("TeslaA","Duvall",400,70);
     //Round 2
-    await newRank("HolyNamesAV","JohnPaulIIAV",240,200);
-    await newRank("TeslaAJV","JohnPaulIIBJV",390,70);
-    await newRank("OdleAJV","DuvallJV",230,130);
+    await newRank("HolyNamesA","JohnPaulIIA",240,200);
+    await newRank("TeslaA","JohnPaulIIB",390,70);
+    await newRank("OdleA","Duvall",230,130);
     //Round 3
-    await newRank("CentralKitsapAV","JohnPaulIIAV",330,80);
-    await newRank("TeslaAJV","OdleAJV",330,140);
-    await newRank("JohnPaulIIBJV","DuvallJV",190,120);
+    await newRank("CentralKitsapA","JohnPaulIIA",330,80);
+    await newRank("TeslaA","OdleA",330,140);
+    await newRank("JohnPaulIIB","Duvall",190,120);
     //Round 4
-    await newRank("HolyNamesAV","JohnPaulIIAV",330,110);
-    await newRank("TeslaAJV","JohnPaulIIBJV",430,80);
-    await newRank("OdleAJV","DuvallJV",190,60);
+    await newRank("HolyNamesA","JohnPaulIIA",330,110);
+    await newRank("TeslaA","JohnPaulIIB",430,80);
+    await newRank("OdleA","Duvall",190,60);
     //Round 5
-    await newRank("CentralKitsapAV","JohnPaulIIAV",320,90);
-    await newRank("TeslaAJV","OdleAJV",360,110);
-    await newRank("JohnPaulIIBJV","DuvallJV",160,90);
+    await newRank("CentralKitsapA","JohnPaulIIA",320,90);
+    await newRank("TeslaA","OdleA",360,110);
+    await newRank("JohnPaulIIB","Duvall",160,90);
     //Round 6
-    await newRank("HolyNamesAV","CentralKitsapAV",300,160);
+    await newRank("HolyNamesA","CentralKitsapA",300,160);
     //Varsity Playoffs
     //Finals
-    await newRank("CentralKitsapAV","HolyNamesAV",250,150);
+    await newRank("CentralKitsapA","HolyNamesA",250,150);
     console.log("West WA C q V: "+qV[a2]);
     console.log("West WA C q JV: "+qJV[b2]);
     a = 0;
@@ -7601,44 +7604,44 @@ async function cSetData(){
     c2 = c2+1;
     //Prelims
     //Round 1
-    await newRank("JesuitAV","LincolnAV",340,180);
-    await newRank("ColumbiaRiverAV","WestviewAV",270,270);//Columbia River wins on
-    await newRank("LewisandClarkAV","WestviewBV",340,110);
-    await newRank("JesuitBV","ColumbiaRiverBV",340,110);
-    await newRank("StollerKMS","StollerTMS",340,140);
-    await newRank("StollerHMS","StollerWMS",410,70);
+    await newRank("JesuitA","LincolnA",340,180);
+    await newRank("ColumbiaRiverA","WestviewA",270,270);//Columbia River wins on
+    await newRank("LewisandClarkA","WestviewB",340,110);
+    await newRank("JesuitB","ColumbiaRiverB",340,110);
+    await newRank("StollerK","StollerT",340,140);
+    await newRank("StollerH","StollerW",410,70);
     //Round 2
-    await newRank("LewisandClarkAV","JesuitBV",220,140);
-    await newRank("JesuitAV","ColumbiaRiverAV",360,180);
-    await newRank("WestviewAV","ColumbiaRiverAV",380,100);
+    await newRank("LewisandClarkA","JesuitB",220,140);
+    await newRank("JesuitA","ColumbiaRiverA",360,180);
+    await newRank("WestviewA","ColumbiaRiverA",380,100);
     //Round 3
-    await newRank("JesuitAV","ColumbiaRiverBV",430,70);
-    await newRank("WestviewAV","LewisandClarkAV",330,200);
-    await newRank("JesuitBV","LincolnAV",260,210);
-    await newRank("ColumbiaRiverAV","WestviewBV",410,120);
-    await newRank("StollerKMS","StollerWMS",450,70);
-    await newRank("StollerHMS","StollerTMS",380,90);
+    await newRank("JesuitA","ColumbiaRiverB",430,70);
+    await newRank("WestviewA","LewisandClarkA",330,200);
+    await newRank("JesuitB","LincolnA",260,210);
+    await newRank("ColumbiaRiverA","WestviewB",410,120);
+    await newRank("StollerK","StollerW",450,70);
+    await newRank("StollerH","StollerT",380,90);
     //Round 4
-    await newRank("ColumbiaRiverAV","JesuitBV",410,130);
-    await newRank("WestviewAV","LincolnAV",350,220);
-    await newRank("JesuitAV","LewisandClarkAV",350,130);
-    await newRank("WestviewBV","ColumbiaRiverBV",250,70);
-    await newRank("StollerKMS","StollerHMS",350,200);
-    await newRank("StollerWMS","StollerTMS",210,110);
+    await newRank("ColumbiaRiverA","JesuitB",410,130);
+    await newRank("WestviewA","LincolnA",350,220);
+    await newRank("JesuitA","LewisandClarkA",350,130);
+    await newRank("WestviewB","ColumbiaRiverB",250,70);
+    await newRank("StollerK","StollerH",350,200);
+    await newRank("StollerW","StollerT",210,110);
     //Round 5
-    await newRank("LincolnAV","ColumbiaRiverBV",300,110);
-    await newRank("WestviewAV","JesuitBV",340,110);
-    await newRank("ColumbiaRiverAV","LewisandClarkAV",300,160);
-    await newRank("JesuitAV","WestviewBV",430,80);
+    await newRank("LincolnA","ColumbiaRiverB",300,110);
+    await newRank("WestviewA","JesuitB",340,110);
+    await newRank("ColumbiaRiverA","LewisandClarkA",300,160);
+    await newRank("JesuitA","WestviewB",430,80);
     //Varsity Playoffs
     //Semifinals
-    await newRank("WestviewAV","ColumbiaRiverAV",250,170);
-    await newRank("JesuitAV","LincolnAV",320,130);
+    await newRank("WestviewA","ColumbiaRiverA",250,170);
+    await newRank("JesuitA","LincolnA",320,130);
     //Finals
-    await newRank("JesuitAV","WestviewAV",220,180);
+    await newRank("JesuitA","WestviewA",220,180);
     //MS Playoffs
     //Finals
-    await newRank("StollerHMS","StollerKMS",240,200);
+    await newRank("StollerH","StollerK",240,200);
     console.log("South WA C q V: "+qV[a2]);
     console.log("South WA C q MS: "+qMS[c2]);
     a = 0;
@@ -7650,52 +7653,52 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("SalemBV","NorthfieldMtHermonAV",231,230);
-    await newRank("BostonLatinAV","TantasquaBV",430,110);
-    await newRank("PhillipsExeterAV","SalemAV",380,130);
-    await newRank("LexingtonAV","TantasquaAV",380,150);
-    await newRank("LexingtonBJV","BromfieldAJV",450,60);
-    await newRank("PhillipsExeterBJV","PhillipsAndoverAJV",440,60);
+    await newRank("SalemB","NorthfieldMtHermonA",231,230);
+    await newRank("BostonLatinA","TantasquaB",430,110);
+    await newRank("PhillipsExeterA","SalemA",380,130);
+    await newRank("LexingtonA","TantasquaA",380,150);
+    await newRank("LexingtonB","BromfieldA",450,60);
+    await newRank("PhillipsExeterB","PhillipsAndoverA",440,60);
     //Round 2
-    await newRank("TantasquaAV","SalemBV",230,210);
-    await newRank("PhillipsExeterAV","NorthfieldMtHermonAV",370,150);
-    await newRank("SalemAV","TantasquaBV",340,150);
-    await newRank("BostonLatinAV","LexingtonAV",320,240);
-    await newRank("BromfieldAJV","PhillipsAndoverAJV",180,170);
-    await newRank("PhillipsExeterBJV","LexingtonBJV",310,280);
+    await newRank("TantasquaA","SalemB",230,210);
+    await newRank("PhillipsExeterA","NorthfieldMtHermonA",370,150);
+    await newRank("SalemA","TantasquaB",340,150);
+    await newRank("BostonLatinA","LexingtonA",320,240);
+    await newRank("BromfieldA","PhillipsAndoverA",180,170);
+    await newRank("PhillipsExeterB","LexingtonB",310,280);
     //Round 3
-    await newRank("BostonLatinAV","TantasquaAV",470,120);
-    await newRank("LexingtonAV","SalemAV",370,130);
-    await newRank("NorthfieldMtHermonAV","TantasquaBV",280,220);
-    await newRank("PhillipsExeterAV","SalemBV",350,150);
-    await newRank("LexingtonBJV","PhillipsAndoverAJV",410,110);
-    await newRank("PhillipsExeterBJV","BromfieldAJV",360,120);
+    await newRank("BostonLatinA","TantasquaA",470,120);
+    await newRank("LexingtonA","SalemA",370,130);
+    await newRank("NorthfieldMtHermonA","TantasquaB",280,220);
+    await newRank("PhillipsExeterA","SalemB",350,150);
+    await newRank("LexingtonB","PhillipsAndoverA",410,110);
+    await newRank("PhillipsExeterB","BromfieldA",360,120);
     //Round 4
-    await newRank("LexingtonAV","NorthfieldMtHermonAV",420,140);
-    await newRank("PhillipsExeterAV","TantasquaBV",450,90);
-    await newRank("SalemAV","TantasquaBV",230,200);
-    await newRank("BostonLatinAV","SalemBV",370,180);
-    await newRank("LexingtonBJV","BromfieldAJV",440,80);
-    await newRank("PhillipsExeterBJV","PhillipsAndoverAJV",450,110);
+    await newRank("LexingtonA","NorthfieldMtHermonA",420,140);
+    await newRank("PhillipsExeterA","TantasquaB",450,90);
+    await newRank("SalemA","TantasquaB",230,200);
+    await newRank("BostonLatinA","SalemB",370,180);
+    await newRank("LexingtonB","BromfieldA",440,80);
+    await newRank("PhillipsExeterB","PhillipsAndoverA",450,110);
     //Round 5
-    await newRank("PhillipsExeterAV","LexingtonAV",370,210);
-    await newRank("TantasquaAV","NorthfieldMtHermonAV",200,180);
-    await newRank("BostonLatinAV","SalemAV",510,70);
-    await newRank("SalemBV","TantasquaBV",280,110);
-    await newRank("PhillipsAndoverAJV","BromfieldAJV",150,140);
-    await newRank("LexingtonBJV","PhillipsExeterBJV",270,230);
+    await newRank("PhillipsExeterA","LexingtonA",370,210);
+    await newRank("TantasquaA","NorthfieldMtHermonA",200,180);
+    await newRank("BostonLatinA","SalemA",510,70);
+    await newRank("SalemB","TantasquaB",280,110);
+    await newRank("PhillipsAndoverA","BromfieldA",150,140);
+    await newRank("LexingtonB","PhillipsExeterB",270,230);
     //Round 6
-    await newRank("LexingtonBJV","PhillipsAndoverAJV",300,130);
-    await newRank("PhillipsExeterBJV","BromfieldAJV",330,130);
+    await newRank("LexingtonB","PhillipsAndoverA",300,130);
+    await newRank("PhillipsExeterB","BromfieldA",330,130);
     //Varsity Playoffs
     //Semifinals
-    await newRank("BostonLatinAV","SalemBV",290,180);
-    await newRank("PhillipsExeterAV","LexingtonAV",260,250);
+    await newRank("BostonLatinA","SalemB",290,180);
+    await newRank("PhillipsExeterA","LexingtonA",260,250);
     //Finals
-    await newRank("BostonLatinAV","PhillipsExeterAV",300,170);
+    await newRank("BostonLatinA","PhillipsExeterA",300,170);
     //JV Playoffs
     //Finals
-    await newRank("PhillipsExeterBJV","LexingtonBJV",240,180);
+    await newRank("PhillipsExeterB","LexingtonB",240,180);
     console.log("Boston C q V: "+qV[a2]);
     console.log("Boston C q JV: "+qJV[b2]);
     a = 0;
@@ -7708,186 +7711,186 @@ async function cSetData(){
     c2 = c2+1;
     //Prelims
     //Round
-    await newRank("CentennialAV","GeorgetownDayAV",330,310);
-    await newRank("ThomasJeffersonAV","MountVernonAV",490,110);
-    await newRank("BASISMcLeanAV","ThomasJeffersonBV",320,290);
-    await newRank("MontgomeryBlairAV","GlenelgAV",420,150);
-    await newRank("StAnselmsAV","CentennialBV",380,190);
-    await newRank("MontgomeryBlairCJV","CentennialEJV",260,190);
-    await newRank("CentennialCJV","CentennialDJV",390,160);
-    await newRank("MontgomeryBlairBJV","ThomasJeffersonDJV",390,180);
-    await newRank("ThomasJeffersonCJV","GeorgetownDayBJV",400,160);
-    await newRank("McLeanAJV","StAnselmsBJV",350,190);
-    await newRank("CentennialLaneAMS","BurleighManorDMS",330,160);
-    await newRank("BurleighManorAMS","NysmithBMS",410,60);
-    await newRank("BurleighManorCMS","CentennialLaneBMS",210,180);
-    await newRank("CompassMSA","CentennialLaneCMS",270,130);
-    await newRank("NysmithAMS","RipponBMS",310,90);
-    await newRank("BurleighManorBMS","RipponAMS",330,170);
+    await newRank("CentennialA","GeorgetownDayA",330,310);
+    await newRank("ThomasJeffersonA","MountVernonA",490,110);
+    await newRank("BASISMcLeanA","ThomasJeffersonB",320,290);
+    await newRank("MontgomeryBlairA","GlenelgA",420,150);
+    await newRank("StAnselmsA","CentennialB",380,190);
+    await newRank("MontgomeryBlairC","CentennialE",260,190);
+    await newRank("CentennialC","CentennialD",390,160);
+    await newRank("MontgomeryBlairB","ThomasJeffersonD",390,180);
+    await newRank("ThomasJeffersonC","GeorgetownDayB",400,160);
+    await newRank("McLeanA","StAnselmsB",350,190);
+    await newRank("CentennialLaneA","BurleighManorD",330,160);
+    await newRank("BurleighManorA","NysmithB",410,60);
+    await newRank("BurleighManorC","CentennialLaneB",210,180);
+    await newRank("CompassMSA","CentennialLaneC",270,130);
+    await newRank("NysmithA","RipponB",310,90);
+    await newRank("BurleighManorB","RipponA",330,170);
     //Round 2
-    await newRank("GeorgetownDayAV","GlenelgAV",410,180);
-    await newRank("RichardMontgomeryAV","BASISMcLeanAV",390,290);
-    await newRank("ThomasJeffersonBV","MountVernonAV",540,80);
-    await newRank("MontgomeryBlairAV","CentennialBV",470,140);
-    await newRank("ThomasJeffersonAV","StAnselmsAV",420,230);
-    await newRank("RichardMontgomeryBJV","StAnselmsBJV",450,100);
-    await newRank("MontgomeryBlairBJV","CentennialEJV",510,90);
-    await newRank("ThomasJeffersonCJV","ThomasJeffersonDJV",300,280);
-    await newRank("CentennialCJV","MontgomeryBlairCJV",320,170);
-    await newRank("McLeanAJV","CentennialDJV",300,150);
-    await newRank("BurleighManorCMS","RipponBMS",230,140);
-    await newRank("CentennialLaneAMS","CentennialLaneBMS",370,90);
-    await newRank("BurleighManorBMS","BurleighManorDMS",340,150);
-    await newRank("BurleighManorAMS","CentennialLaneCMS",350,90);
-    await newRank("NysmithAMS","CompassMSA",300,200);
-    await newRank("RipponAMS","NysmithBMS",260,140);
+    await newRank("GeorgetownDayA","GlenelgA",410,180);
+    await newRank("RichardMontgomeryA","BASISMcLeanA",390,290);
+    await newRank("ThomasJeffersonB","MountVernonA",540,80);
+    await newRank("MontgomeryBlairA","CentennialB",470,140);
+    await newRank("ThomasJeffersonA","StAnselmsA",420,230);
+    await newRank("RichardMontgomeryB","StAnselmsB",450,100);
+    await newRank("MontgomeryBlairB","CentennialE",510,90);
+    await newRank("ThomasJeffersonC","ThomasJeffersonD",300,280);
+    await newRank("CentennialC","MontgomeryBlairC",320,170);
+    await newRank("McLeanA","CentennialD",300,150);
+    await newRank("BurleighManorC","RipponB",230,140);
+    await newRank("CentennialLaneA","CentennialLaneB",370,90);
+    await newRank("BurleighManorB","BurleighManorD",340,150);
+    await newRank("BurleighManorA","CentennialLaneC",350,90);
+    await newRank("NysmithA","CompassMSA",300,200);
+    await newRank("RipponA","NysmithB",260,140);
     //Round 3
-    await newRank("MontgomeryBlairAV","ThomasJeffersonBV",430,210);
-    await newRank("StAnselmsAV","MountVernonAV",470,70);
-    await newRank("GlenelgAV","CentennialBV",290,220);
-    await newRank("CentennialAV","BASISMcLeanAV",350,250);
-    await newRank("RichardMontgomeryAV","ThomasJeffersonAV",380,230);
-    await newRank("GeorgetownDayBJV","StAnselmsBJV",300,250);
-    await newRank("MontgomeryBlairBJV","McLeanAJV",350,220);
-    await newRank("ThomasJeffersonDJV","CentennialEJV",290,210);
-    await newRank("RichardMontgomeryBJV","CentennialLaneCMS",330,230);
-    await newRank("MontgomeryBlairCJV","CentennialDJV",350,140);
-    await newRank("RipponAMS","BurleighManorDMS",250,200);
-    await newRank("BurleighManorBMS","CentennialLaneBMS",330,120);
-    await newRank("NysmithBMS","CentennialLaneCMS",310,80);
-    await newRank("NysmithAMS","CentennialLaneAMS",350,170);
-    await newRank("BurleighManorAMS","BurleighManorCMS",430,70);
+    await newRank("MontgomeryBlairA","ThomasJeffersonB",430,210);
+    await newRank("StAnselmsA","MountVernonA",470,70);
+    await newRank("GlenelgA","CentennialB",290,220);
+    await newRank("CentennialA","BASISMcLeanA",350,250);
+    await newRank("RichardMontgomeryA","ThomasJeffersonA",380,230);
+    await newRank("GeorgetownDayB","StAnselmsB",300,250);
+    await newRank("MontgomeryBlairB","McLeanA",350,220);
+    await newRank("ThomasJeffersonD","CentennialE",290,210);
+    await newRank("RichardMontgomeryB","CentennialLaneC",330,230);
+    await newRank("MontgomeryBlairC","CentennialD",350,140);
+    await newRank("RipponA","BurleighManorD",250,200);
+    await newRank("BurleighManorB","CentennialLaneB",330,120);
+    await newRank("NysmithB","CentennialLaneC",310,80);
+    await newRank("NysmithA","CentennialLaneA",350,170);
+    await newRank("BurleighManorA","BurleighManorC",430,70);
     //Round 4
-    await newRank("GeorgetownDayAV","MontgomeryBlairAV",380,290);
-    await newRank("ThomasJeffersonBV","CentennialBV",520,100);
-    await newRank("RichardMontgomeryAV","MountVernonAV",500,80);
-    await newRank("StAnselmsAV","GlenelgAV",340,290);
-    await newRank("McLeanAJV","CentennialEJV",360,120);
-    await newRank("ThomasJeffersonDJV","MontgomeryBlairCJV",400,200);
-    await newRank("GeorgetownDayBJV","CentennialCJV",280,250);
-    await newRank("MontgomeryBlairBJV","ThomasJeffersonCJV",350,280);
-    await newRank("BurleighManorDMS","CentennialLaneBMS",230,270);
-    await newRank("CompassMSA","NysmithBMS",200,190);
-    await newRank("CentennialLaneAMS","RipponBMS",340,70);
-    await newRank("BurleighManorBMS","NysmithAMS",270,210);
-    await newRank("BurleighManorAMS","RipponAMS",370,140);
-    await newRank("BurleighManorCMS","CentennialLaneCMS",240,70);
+    await newRank("GeorgetownDayA","MontgomeryBlairA",380,290);
+    await newRank("ThomasJeffersonB","CentennialB",520,100);
+    await newRank("RichardMontgomeryA","MountVernonA",500,80);
+    await newRank("StAnselmsA","GlenelgA",340,290);
+    await newRank("McLeanA","CentennialE",360,120);
+    await newRank("ThomasJeffersonD","MontgomeryBlairC",400,200);
+    await newRank("GeorgetownDayB","CentennialC",280,250);
+    await newRank("MontgomeryBlairB","ThomasJeffersonC",350,280);
+    await newRank("BurleighManorD","CentennialLaneB",230,270);
+    await newRank("CompassMSA","NysmithB",200,190);
+    await newRank("CentennialLaneA","RipponB",340,70);
+    await newRank("BurleighManorB","NysmithA",270,210);
+    await newRank("BurleighManorA","RipponA",370,140);
+    await newRank("BurleighManorC","CentennialLaneC",240,70);
     //Round 5
-    await newRank("BASISMcLeanAV","StAnselmsAV",350,240);
-    await newRank("CentennialBV","MountVernonAV",380,80);
-    await newRank("RichardMontgomeryAV","MontgomeryBlairAV",430,200);
-    await newRank("CentennialAV","GlenelgAV",410,120);
-    await newRank("GeorgetownDayAV","ThomasJeffersonAV",400,240);
-    await newRank("CentennialEJV","CentennialDJV",240,180);
-    await newRank("ThomasJeffersonDJV","GeorgetownDayBJV",360,180);
-    await newRank("MontgomeryBlairBJV","RichardMontgomeryBJV",340,270);
-    await newRank("ThomasJeffersonCJV","CentennialCJV",360,180);
-    await newRank("StAnselmsBJV","MontgomeryBlairCJV",250,170);
-    await newRank("CompassMSA","CentennialLaneBMS",320,80);
-    await newRank("BurleighManorBMS","NysmithBMS",290,150);
-    await newRank("CentennialLaneCMS","RipponBMS",180,100);
-    await newRank("NysmithAMS","RipponAMS",270,120);
-    await newRank("BurleighManorAMS","CentennialLaneAMS",270,230);
-    await newRank("BurleighManorDMS","BurleighManorCMS",250,100);
+    await newRank("BASISMcLeanA","StAnselmsA",350,240);
+    await newRank("CentennialB","MountVernonA",380,80);
+    await newRank("RichardMontgomeryA","MontgomeryBlairA",430,200);
+    await newRank("CentennialA","GlenelgA",410,120);
+    await newRank("GeorgetownDayA","ThomasJeffersonA",400,240);
+    await newRank("CentennialE","CentennialD",240,180);
+    await newRank("ThomasJeffersonD","GeorgetownDayB",360,180);
+    await newRank("MontgomeryBlairB","RichardMontgomeryB",340,270);
+    await newRank("ThomasJeffersonC","CentennialC",360,180);
+    await newRank("StAnselmsB","MontgomeryBlairC",250,170);
+    await newRank("CompassMSA","CentennialLaneB",320,80);
+    await newRank("BurleighManorB","NysmithB",290,150);
+    await newRank("CentennialLaneC","RipponB",180,100);
+    await newRank("NysmithA","RipponA",270,120);
+    await newRank("BurleighManorA","CentennialLaneA",270,230);
+    await newRank("BurleighManorD","BurleighManorC",250,100);
     //Varsity Playoffs
     //Semifinals
-    await newRank("RichardMontgomeryAV","MontgomeryBlairAV",360,260);
-    await newRank("GeorgetownDayAV","ThomasJeffersonAV",390,200);
+    await newRank("RichardMontgomeryA","MontgomeryBlairA",360,260);
+    await newRank("GeorgetownDayA","ThomasJeffersonA",390,200);
     //Finals
-    await newRank("GeorgetownDayAV","RichardMontgomeryAV",300,280);
+    await newRank("GeorgetownDayA","RichardMontgomeryA",300,280);
     //JV Playoffs
     //Semifinals
-    await newRank("MontgomeryBlairBJV","ThomasJeffersonDJV",360,190);
-    await newRank("RichardMontgomeryBJV","ThomasJeffersonCJV",340,200);
+    await newRank("MontgomeryBlairB","ThomasJeffersonD",360,190);
+    await newRank("RichardMontgomeryB","ThomasJeffersonC",340,200);
     //Finals
-    await newRank("MontgomeryBlairBJV","RichardMontgomeryBJV",360,160);
+    await newRank("MontgomeryBlairB","RichardMontgomeryB",360,160);
     //MS Playoffs
     //Semifinals
-    await newRank("BurleighManorBMS","NysmithAMS",220,190);
-    await newRank("BurleighManorAMS","CompassMSA",220,190);
+    await newRank("BurleighManorB","NysmithA",220,190);
+    await newRank("BurleighManorA","CompassMSA",220,190);
     //Finals
-    await newRank("BurleighManorAMS","BurleighManorBMS",220,140);
+    await newRank("BurleighManorA","BurleighManorB",220,140);
     console.log("DC C q V: "+qV[a2]);
     console.log("DC C q JV: "+qJV[b2]);
     console.log("DC C q MS: "+qMS[c2]);
     a = 0;
     b = 0;
     c = 0;
-    console.log(qV,qJV);
+    
     
     //Southern New Jersey C-Set
     a2 = a2+1;
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("RanneyAV","MoorestownBV",260,210);
-    await newRank("PrincetonBV","MoorestownAV",360,170);
-    await newRank("HighTechAV","FontbonneAV",400,120);
-    await newRank("MoravianAV","FontbonneBV",440,70);
-    await newRank("PrincetonAV","DonovanCatholicAV",480,30);
-    await newRank("EastBrunswickAV","EastBrunswickBV",370,160);
-    await newRank("RanneyBJV","FordhamBJV",270,180);
-    await newRank("WiltonAnjoAJV","DonovanCatholicBJV",280,190);
-    await newRank("PrincetonCJV","PrincetonDJV",340,150);
-    await newRank("MillburnMSAJV","FontbonneCJV",350,80);
+    await newRank("RanneyA","MoorestownB",260,210);
+    await newRank("PrincetonB","MoorestownA",360,170);
+    await newRank("HighTechA","FontbonneA",400,120);
+    await newRank("MoravianA","FontbonneB",440,70);
+    await newRank("PrincetonA","DonovanCatholicA",480,30);
+    await newRank("EastBrunswickA","EastBrunswickB",370,160);
+    await newRank("RanneyB","FordhamB",270,180);
+    await newRank("WiltonAnjoA","DonovanCatholicB",280,190);
+    await newRank("PrincetonC","PrincetonD",340,150);
+    await newRank("MillburnMSA","FontbonneC",350,80);
     //Round 2
-    await newRank("EastBrunswickBV","FontbonneAV",290,200);
-    await newRank("MoravianAV","DonovanCatholicAV",480,40);
-    await newRank("EastBrunswickAV","PrincetonBV",350,210);
-    await newRank("MoorestownAV","MoorestownBV",310,140);
-    await newRank("HighTechAV","FontbonneBV",470,40);
-    await newRank("RanneyAV","FordhamAV",400,160);
-    await newRank("WiltonAnjoAJV","HighTechBJV",360,120);
-    await newRank("MillburnMSAJV","FordhamBJV",250,180);
-    await newRank("FontbonneCJV","DonovanCatholicBJV",270,240);
-    await newRank("PrincetonCJV","RanneyBJV",270,220);
+    await newRank("EastBrunswickB","FontbonneA",290,200);
+    await newRank("MoravianA","DonovanCatholicA",480,40);
+    await newRank("EastBrunswickA","PrincetonB",350,210);
+    await newRank("MoorestownA","MoorestownB",310,140);
+    await newRank("HighTechA","FontbonneB",470,40);
+    await newRank("RanneyA","FordhamA",400,160);
+    await newRank("WiltonAnjoA","HighTechB",360,120);
+    await newRank("MillburnMSA","FordhamB",250,180);
+    await newRank("FontbonneC","DonovanCatholicB",270,240);
+    await newRank("PrincetonC","RanneyB",270,220);
     //Round 3
-    await newRank("PrincetonBV","FontbonneAV",330,140);
-    await newRank("HighTechAV","MoorestownBV",460,100);
-    await newRank("EastBrunswickBV","FontbonneBV",380,60);
-    await newRank("MoravianAV","RanneyAV",270,250);
-    await newRank("PrincetonAV","FordhamAV",340,130);
-    await newRank("RanneyBJV","FontbonneCJV",280,100);
-    await newRank("WiltonAnjoAJV","MillburnMSAJV",250,230);
-    await newRank("PrincetonCJV","HighTechBJV",330,140);
-    await newRank("FordhamBJV","PrincetonDJV",230,200);
+    await newRank("PrincetonB","FontbonneA",330,140);
+    await newRank("HighTechA","MoorestownB",460,100);
+    await newRank("EastBrunswickB","FontbonneB",380,60);
+    await newRank("MoravianA","RanneyA",270,250);
+    await newRank("PrincetonA","FordhamA",340,130);
+    await newRank("RanneyB","FontbonneC",280,100);
+    await newRank("WiltonAnjoA","MillburnMSA",250,230);
+    await newRank("PrincetonC","HighTechB",330,140);
+    await newRank("FordhamB","PrincetonD",230,200);
     //Round 4
-    await newRank("PrincetonAV","MoravianAV",320,220);
-    await newRank("RanneyAV","DonovanCatholicAV",450,30);
-    await newRank("EastBrunswickAV","FontbonneAV",460,30);
-    await newRank("EastBrunswickBV","PrincetonBV",270,260);
-    await newRank("HighTechAV","MoorestownAV",480,90);
-    await newRank("FordhamBJV","FontbonneBV",380,40);
-    await newRank("FordhamBJV","DonovanCatholicBJV",330,100);
-    await newRank("WiltonAnjoAJV","PrincetonDJV",290,220);
-    await newRank("PrincetonCJV","MillburnMSAJV",340,190);
-    await newRank("HighTechBJV","FontbonneCJV",250,100);
+    await newRank("PrincetonA","MoravianA",320,220);
+    await newRank("RanneyA","DonovanCatholicA",450,30);
+    await newRank("EastBrunswickA","FontbonneA",460,30);
+    await newRank("EastBrunswickB","PrincetonB",270,260);
+    await newRank("HighTechA","MoorestownA",480,90);
+    await newRank("FordhamB","FontbonneB",380,40);
+    await newRank("FordhamB","DonovanCatholicB",330,100);
+    await newRank("WiltonAnjoA","PrincetonD",290,220);
+    await newRank("PrincetonC","MillburnMSA",340,190);
+    await newRank("HighTechB","FontbonneC",250,100);
     //Round 5
-    await newRank("HighTechAV","RanneyAV",350,160);
-    await newRank("FontbonneBV","DonovanCatholicAV",160,50);
-    await newRank("EastBrunswickAV","PrincetonAV",320,260);
-    await newRank("MoravianAV","FordhamAV",260,180);
-    await newRank("MoorestownAV","FontbonneAV",210,160);
-    await newRank("PrincetonBV","MoorestownBV",250,190);
-    await newRank("WiltonAnjoAJV","RanneyBJV",300,190);
-    await newRank("HighTechBJV","FordhamBJV",240,170);
-    await newRank("PrincetonCJV","DonovanCatholicBJV",300,80);
+    await newRank("HighTechA","RanneyA",350,160);
+    await newRank("FontbonneB","DonovanCatholicA",160,50);
+    await newRank("EastBrunswickA","PrincetonA",320,260);
+    await newRank("MoravianA","FordhamA",260,180);
+    await newRank("MoorestownA","FontbonneA",210,160);
+    await newRank("PrincetonB","MoorestownB",250,190);
+    await newRank("WiltonAnjoA","RanneyB",300,190);
+    await newRank("HighTechB","FordhamB",240,170);
+    await newRank("PrincetonC","DonovanCatholicB",300,80);
     //Varsity Playoffs
     //Quarterfinals
-    //await newRank("HighTechAV","FordhamAV",1,0);
-    await newRank("EastBrunswickAV","PrincetonAV",250,230);
-    await newRank("MoravianAV","EastBrunswickBV",220,150);
-    await newRank("RanneyAV","PrincetonBV",320,130);
+    //await newRank("HighTechA","FordhamA",1,0);
+    await newRank("EastBrunswickA","PrincetonA",250,230);
+    await newRank("MoravianA","EastBrunswickB",220,150);
+    await newRank("RanneyA","PrincetonB",320,130);
     //Semifinals
-    await newRank("EastBrunswickAV","MoravianAV",240,150);
-    await newRank("HighTechAV","RanneyAV",290,150);
+    await newRank("EastBrunswickA","MoravianA",240,150);
+    await newRank("HighTechA","RanneyA",290,150);
     //Finals
-    await newRank("HighTechAV","EastBrunswickAV",300,190);
+    await newRank("HighTechA","EastBrunswickA",300,190);
     //JV Playoffs
     //Semifinals
-    await newRank("PrincetonCJV","RanneyBJV",280,130);
-    await newRank("WiltonAnjoAJV","MillburnMSAJV",200,120);
-    await newRank("PrincetonCJV","WiltonAnjoAJV",290,170);
+    await newRank("PrincetonC","RanneyB",280,130);
+    await newRank("WiltonAnjoA","MillburnMSA",200,120);
+    await newRank("PrincetonC","WiltonAnjoA",290,170);
     console.log("South NJ C q V: "+qV[a2]);
     console.log("South NJ C q JV: "+qJV[b2]);
     a = 0;
@@ -7900,57 +7903,57 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("HomewoodFlossmoorAV","WinnebagoAV",310,150);
-    await newRank("WilliamsBayAV","WilliamsBayCV",410,60);
-    await newRank("GlenbardWestAV","WilliamsBayBV",390,150);
-    await newRank("AuburnAV","ElginAV",410,170);
-    await newRank("AuburnBJV","WilliamsBayDJV",360,50);
-    await newRank("HomewoodFlossmoorBJV","WinnebagoBJV",270,130);
+    await newRank("HomewoodFlossmoorA","WinnebagoA",310,150);
+    await newRank("WilliamsBayA","WilliamsBayC",410,60);
+    await newRank("GlenbardWestA","WilliamsBayB",390,150);
+    await newRank("AuburnA","ElginA",410,170);
+    await newRank("AuburnB","WilliamsBayD",360,50);
+    await newRank("HomewoodFlossmoorB","WinnebagoB",270,130);
     //Round 2
-    await newRank("ElginAV","WilliamsBayCV",340,100);
-    await newRank("AuburnAV","WinnebagoAV",400,140);
-    await newRank("GlenbardWestAV","WilliamsBayAV",420,110);
-    await newRank("HomewoodFlossmoorAV","WilliamsBayBV",340,110);
-    await newRank("AuburnBJV","HomewoodFlossmoorBJV",280,160);
-    await newRank("WinnebagoBJV","WilliamsBayDJV",180,90);
+    await newRank("ElginA","WilliamsBayC",340,100);
+    await newRank("AuburnA","WinnebagoA",400,140);
+    await newRank("GlenbardWestA","WilliamsBayA",420,110);
+    await newRank("HomewoodFlossmoorA","WilliamsBayB",340,110);
+    await newRank("AuburnB","HomewoodFlossmoorB",280,160);
+    await newRank("WinnebagoB","WilliamsBayD",180,90);
     //Round 3
-    await newRank("AuburnAV","GlenbardWestAV",330,250);
-    await newRank("WinnebagoAV","WilliamsBayCV",300,120);
-    await newRank("ElginAV","WilliamsBayBV",330,130);
-    await newRank("WilliamsBayAV","HomewoodFlossmoorAV",290,240);
-    await newRank("AuburnBJV","WinnebagoBJV",430,60);
-    await newRank("HomewoodFlossmoorBJV","WilliamsBayDJV",330,20);
+    await newRank("AuburnA","GlenbardWestA",330,250);
+    await newRank("WinnebagoA","WilliamsBayC",300,120);
+    await newRank("ElginA","WilliamsBayB",330,130);
+    await newRank("WilliamsBayA","HomewoodFlossmoorA",290,240);
+    await newRank("AuburnB","WinnebagoB",430,60);
+    await newRank("HomewoodFlossmoorB","WilliamsBayD",330,20);
     //Round 4
-    await newRank("GlenbardWestAV","WinnebagoAV",360,120);
-    await newRank("HomewoodFlossmoorAV","ElginAV",270,240);
-    await newRank("AuburnAV","WilliamsBayCV",440,70);
-    await newRank("WilliamsBayAV","WilliamsBayBV",290,110);
-    await newRank("HomewoodFlossmoorBJV","WinnebagoBJV",200,130);
-    await newRank("AuburnBJV","WilliamsBayDJV",350,60);
+    await newRank("GlenbardWestA","WinnebagoA",360,120);
+    await newRank("HomewoodFlossmoorA","ElginA",270,240);
+    await newRank("AuburnA","WilliamsBayC",440,70);
+    await newRank("WilliamsBayA","WilliamsBayB",290,110);
+    await newRank("HomewoodFlossmoorB","WinnebagoB",200,130);
+    await newRank("AuburnB","WilliamsBayD",350,60);
     //Round5
-    await newRank("AuburnAV","WilliamsBayBV",430,80);
-    await newRank("HomewoodFlossmoorAV","WilliamsBayCV",320,70);
-    await newRank("GlenbardWestAV","ElginAV",241,240);
-    await newRank("WilliamsBayAV","WinnebagoAV",210,160);
-    await newRank("AuburnBJV","HomewoodFlossmoorBJV",290,90);
-    await newRank("WinnebagoBJV","WilliamsBayDJV",150,90);
+    await newRank("AuburnA","WilliamsBayB",430,80);
+    await newRank("HomewoodFlossmoorA","WilliamsBayC",320,70);
+    await newRank("GlenbardWestA","ElginA",241,240);
+    await newRank("WilliamsBayA","WinnebagoA",210,160);
+    await newRank("AuburnB","HomewoodFlossmoorB",290,90);
+    await newRank("WinnebagoB","WilliamsBayD",150,90);
     //Round6
-    await newRank("GlenbardWestAV","WilliamsBayCV",320,80);
-    await newRank("AuburnAV","HomewoodFlossmoorAV",390,110);
-    await newRank("ElginAV","WilliamsBayAV",290,160);
-    await newRank("WinnebagoAV","WilliamsBayBV",170,120);
-    await newRank("AuburnBJV","WinnebagoBJV",290,90);
-    await newRank("HomewoodFlossmoorBJV","WilliamsBayDJV",150,60);
+    await newRank("GlenbardWestA","WilliamsBayC",320,80);
+    await newRank("AuburnA","HomewoodFlossmoorA",390,110);
+    await newRank("ElginA","WilliamsBayA",290,160);
+    await newRank("WinnebagoA","WilliamsBayB",170,120);
+    await newRank("AuburnB","WinnebagoB",290,90);
+    await newRank("HomewoodFlossmoorB","WilliamsBayD",150,60);
     //Round 7
-    await newRank("GlenbardWestAV","HomewoodFlossmoorBJV",280,160);
-    await newRank("WilliamsBayBV","WilliamsBayCV",110,100);
-    await newRank("AuburnAV","WilliamsBayAV",320,150);
-    await newRank("ElginAV","WinnebagoAV",480,50);
+    await newRank("GlenbardWestA","HomewoodFlossmoorB",280,160);
+    await newRank("WilliamsBayB","WilliamsBayC",110,100);
+    await newRank("AuburnA","WilliamsBayA",320,150);
+    await newRank("ElginA","WinnebagoA",480,50);
     //Varsity Playoffs
     //Finals
-    await newRank("AuburnAV","GlenbardWestAV",250,240);
+    await newRank("AuburnA","GlenbardWestA",250,240);
     //4th Place Game
-    await newRank("HomewoodFlossmoorAV","WilliamsBayAV",260,120);
+    await newRank("HomewoodFlossmoorA","WilliamsBayA",260,120);
     console.log("NW IL C q V: "+qV[a2]);
     console.log("NW IL C q JV: "+qJV[b2]);
     a = 0;
@@ -7961,31 +7964,31 @@ async function cSetData(){
     a2 = a2+1;
     //Prelims
     //Round 1
-    await newRank("BatonRougeMagnetAV","NorthwesternAV",290,140);
-    await newRank("ZacharyAV","ZacharyBV",260,170);
-    await newRank("BatonRougeEpiscopalAV","ZacharyCV",290,110);
+    await newRank("BatonRougeMagnetA","NorthwesternA",290,140);
+    await newRank("ZacharyA","ZacharyB",260,170);
+    await newRank("BatonRougeEpiscopalA","ZacharyC",290,110);
     //Round 2
-    await newRank("ZacharyAV","NorthwesternAV",320,80);
-    await newRank("BatonRougeMagnetAV","ZacharyCV",350,60);
-    await newRank("ZacharyBV","BatonRougeEpiscopalAV",270,180);
+    await newRank("ZacharyA","NorthwesternA",320,80);
+    await newRank("BatonRougeMagnetA","ZacharyC",350,60);
+    await newRank("ZacharyB","BatonRougeEpiscopalA",270,180);
     //Round 3
-    await newRank("BatonRougeMagnetAV","ZacharyAV",280,220);
-    await newRank("ZacharyBV","ZacharyCV",280,130);
-    await newRank("BatonRougeEpiscopalAV","NorthwesternAV",290,140);
+    await newRank("BatonRougeMagnetA","ZacharyA",280,220);
+    await newRank("ZacharyB","ZacharyC",280,130);
+    await newRank("BatonRougeEpiscopalA","NorthwesternA",290,140);
     //Round 4
-    await newRank("BatonRougeMagnetAV","BatonRougeEpiscopalAV",310,180);
-    await newRank("ZacharyAV","ZacharyCV",330,70);
-    await newRank("ZacharyBV","NorthwesternAV",300,110);
+    await newRank("BatonRougeMagnetA","BatonRougeEpiscopalA",310,180);
+    await newRank("ZacharyA","ZacharyC",330,70);
+    await newRank("ZacharyB","NorthwesternA",300,110);
     //Round 5
-    await newRank("ZacharyBV","BatonRougeMagnetAV",240,190);
-    await newRank("BatonRougeEpiscopalAV","ZacharyAV",240,140);
-    await newRank("NorthwesternAV","ZacharyCV",220,150);
+    await newRank("ZacharyB","BatonRougeMagnetA",240,190);
+    await newRank("BatonRougeEpiscopalA","ZacharyA",240,140);
+    await newRank("NorthwesternA","ZacharyC",220,150);
     //Varsity Playoffs
     //Semifinals
-    await newRank("ZacharyBV","ZacharyAV",200,140);
-    await newRank("BatonRougeEpiscopalAV","BatonRougeMagnetAV",210,190);
+    await newRank("ZacharyB","ZacharyA",200,140);
+    await newRank("BatonRougeEpiscopalA","BatonRougeMagnetA",210,190);
     //Finals
-    await newRank("ZacharyBV","BatonRougeEpiscopalAV",210,160);
+    await newRank("ZacharyB","BatonRougeEpiscopalA",210,160);
     console.log("LA C q V: "+qV[a2]);
     a = 0;
     
@@ -7994,31 +7997,31 @@ async function cSetData(){
     a2 = a2+1;
     //Prelims
     //Round 1
-    await newRank("BlazerAV","RussellAV",340,160);
-    await newRank("JohnsonAV","JohnsonCV",410,70);
-    await newRank("DunbarAV","JohnsonBV",410,80);
+    await newRank("BlazerA","RussellA",340,160);
+    await newRank("JohnsonA","JohnsonC",410,70);
+    await newRank("DunbarA","JohnsonB",410,80);
     //Round 2
-    await newRank("BlazerAV","DunbarAV",320,260);
-    await newRank("JohnsonBV","JohnsonCV",300,110);
-    await newRank("JohnsonAV","RussellAV",370,180);
+    await newRank("BlazerA","DunbarA",320,260);
+    await newRank("JohnsonB","JohnsonC",300,110);
+    await newRank("JohnsonA","RussellA",370,180);
     //Round 3
-    await newRank("JohnsonAV","BlazerAV",370,190);
-    await newRank("RussellAV","JohnsonBV",250,200);
-    await newRank("DunbarAV","JohnsonCV",390,70);
+    await newRank("JohnsonA","BlazerA",370,190);
+    await newRank("RussellA","JohnsonB",250,200);
+    await newRank("DunbarA","JohnsonC",390,70);
     //Round 4
-    await newRank("JohnsonAV","DunbarAV",380,140);
-    await newRank("BlazerAV","JohnsonBV",390,120);
-    await newRank("RussellAV","JohnsonCV",290,150);
+    await newRank("JohnsonA","DunbarA",380,140);
+    await newRank("BlazerA","JohnsonB",390,120);
+    await newRank("RussellA","JohnsonC",290,150);
     //Round 5
-    await newRank("DunbarAV","RussellAV",250,190);
-    await newRank("JohnsonAV","JohnsonBV",350,90);
-    await newRank("BlazerAV","JohnsonCV",390,70);
+    await newRank("DunbarA","RussellA",250,190);
+    await newRank("JohnsonA","JohnsonB",350,90);
+    await newRank("BlazerA","JohnsonC",390,70);
     //Varsity Playoffs
     //Semifinals
-    await newRank("JohnsonAV","RussellAV",270,160);
-    await newRank("BlazerAV","DunbarAV",211,210);
+    await newRank("JohnsonA","RussellA",270,160);
+    await newRank("BlazerA","DunbarA",211,210);
     //Finals
-    await newRank("BlazerAV","JohnsonAV",270,160);
+    await newRank("BlazerA","JohnsonA",270,160);
     console.log("East KY C q V: "+qV[a2]);
     a = 0;
     
@@ -8028,50 +8031,50 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("RidgewoodAV","GothamAV",410,210);
-    await newRank("ColdhugAV","LeoniaAV",470,160);
-    await newRank("TenaflyAV","TenaflyBV",430,100);
-    await newRank("ColdhugBJV","ChurchillNJBJV",290,280);
-    await newRank("TenaflyCJV","LeoniaBJV",310,200);
-    await newRank("RidgewoodDJV","GeorgeWashingtonAJV",270,160);
+    await newRank("RidgewoodA","GothamA",410,210);
+    await newRank("ColdhugA","LeoniaA",470,160);
+    await newRank("TenaflyA","TenaflyB",430,100);
+    await newRank("ColdhugB","ChurchillNJB",290,280);
+    await newRank("TenaflyC","LeoniaB",310,200);
+    await newRank("RidgewoodD","GeorgeWashingtonNJA",270,160);
     //Round 2
-    await newRank("RidgewoodAV","TenaflyBV",530,70);
-    await newRank("ColdhugAV","GothamAV",430,180);
-    await newRank("TenaflyAV","LeoniaAV",280,240);
-    await newRank("ChurchillMDAJV","RidgewoodCJV",280,240);
-    await newRank("TenaflyCJV","GeorgeWashingtonAJV",400,100);
-    await newRank("LeoniaBJV","RidgewoodDJV",220,210);
+    await newRank("RidgewoodA","TenaflyB",530,70);
+    await newRank("ColdhugA","GothamA",430,180);
+    await newRank("TenaflyA","LeoniaA",280,240);
+    await newRank("ChurchillMDA","RidgewoodC",280,240);
+    await newRank("TenaflyC","GeorgeWashingtonNJA",400,100);
+    await newRank("LeoniaB","RidgewoodD",220,210);
     //Round 3
-    await newRank("RidgewoodAV","TenaflyAV",400,200);
-    await newRank("ColdhugAV","TenaflyBV",510,70);
-    await newRank("GothamAV","LeoniaAV",280,260);
-    await newRank("RidgewoodCJV","GeorgeWashingtonAJV",480,60);
-    await newRank("ColdhugBJV","LeoniaBJV",380,180);
-    await newRank("TenaflyCJV","RidgewoodDJV",400,160);
+    await newRank("RidgewoodA","TenaflyA",400,200);
+    await newRank("ColdhugA","TenaflyB",510,70);
+    await newRank("GothamA","LeoniaA",280,260);
+    await newRank("RidgewoodC","GeorgeWashingtonNJA",480,60);
+    await newRank("ColdhugB","LeoniaB",380,180);
+    await newRank("TenaflyC","RidgewoodD",400,160);
     //Round 4
-    await newRank("RidgewoodAV","LeoniaAV",350,170);
-    await newRank("ColdhugAV","TenaflyAV",450,130);
-    await newRank("GothamAV","TenaflyBV",360,30);
-    await newRank("RidgewoodCJV","RidgewoodDJV",380,110);
-    await newRank("ColdhugBJV","TenaflyCJV",290,180);
-    await newRank("ChurchillMDAJV","LeoniaBJV",350,140);
+    await newRank("RidgewoodA","LeoniaA",350,170);
+    await newRank("ColdhugA","TenaflyA",450,130);
+    await newRank("GothamA","TenaflyB",360,30);
+    await newRank("RidgewoodC","RidgewoodD",380,110);
+    await newRank("ColdhugB","TenaflyC",290,180);
+    await newRank("ChurchillMDA","LeoniaB",350,140);
     //Round 5
-    await newRank("ColdhugAV","RidgewoodAV",400,220);
-    await newRank("TenaflyAV","GothamAV",300,260);
-    await newRank("LeoniaAV","TenaflyBV",350,130);
-    await newRank("RidgewoodCJV","ColdhugBJV",280,240);
-    await newRank("ChurchillMDAJV","RidgewoodDJV",370,80);
+    await newRank("ColdhugA","RidgewoodA",400,220);
+    await newRank("TenaflyA","GothamA",300,260);
+    await newRank("LeoniaA","TenaflyB",350,130);
+    await newRank("RidgewoodC","ColdhugB",280,240);
+    await newRank("ChurchillMDA","RidgewoodD",370,80);
     //Varsity Playoffs
     //Semifinals
-    await newRank("ColdhugAV","GothamAV",440,100);
-    await newRank("RidgewoodAV","TenaflyAV",290,210);
+    await newRank("ColdhugA","GothamA",440,100);
+    await newRank("RidgewoodA","TenaflyA",290,210);
     //Finals
-    await newRank("ColdhugAV","RidgewoodAV",360,180);
+    await newRank("ColdhugA","RidgewoodA",360,180);
     //JV Playoffs
-    await newRank("RidgewoodCJV","ColdhugBJV",350,120);
-    await newRank("ChurchillMDAJV","TenaflyCJV",400,130);
+    await newRank("RidgewoodC","ColdhugB",350,120);
+    await newRank("ChurchillMDA","TenaflyC",400,130);
     //Finals
-    await newRank("RidgewoodCJV","ChurchillMDAJV",270,150);
+    await newRank("RidgewoodC","ChurchillMDA",270,150);
     console.log("Bergen C q V: "+qV[a2]);
     console.log("Bergen C q JV: "+qJV[b2]);
     a = 0;
@@ -8083,61 +8086,61 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("DarienAV","HoraceGreeleyAV",450,90);
-    await newRank("GreensFarmsAV","WhitePlainsAV",360,140);
-    await newRank("WiltonAlexAV","DaltonAV",320,230);
-    await newRank("IrvingtonAV","ArdsleyAV",370,160);
-    await newRank("WiltonLukasAJV","YonkersAJV",350,210);
-    await newRank("HoraceGreeleyBJV","GreensFarmsBJV",380,120);
-    await newRank("ScarsdaleAV","YonkersBJV",380,180);
+    await newRank("DarienA","HoraceGreeleyA",450,90);
+    await newRank("GreensFarmsA","WhitePlainsA",360,140);
+    await newRank("WiltonAlexA","DaltonA",320,230);
+    await newRank("IrvingtonA","ArdsleyA",370,160);
+    await newRank("WiltonLukasA","YonkersA",350,210);
+    await newRank("HoraceGreeleyB","GreensFarmsB",380,120);
+    await newRank("ScarsdaleA","YonkersB",380,180);
     //Round 2
-    await newRank("WiltonAlexAV","WhitePlainsAV",440,100);
-    await newRank("DaltonAV","HoraceGreeleyAV",330,130);
-    await newRank("GreensFarmsAV","ArdsleyAV",260,250);
-    await newRank("IrvingtonAV","ScarsdaleAV",290,250);
-    await newRank("YonkersBJV","GreensFarmsBJV",300,170);
-    await newRank("YonkersAJV","HoraceGreeleyBJV",350,170);
-    await newRank("DarienAV","WiltonLukasAJV",340,290);
+    await newRank("WiltonAlexA","WhitePlainsA",440,100);
+    await newRank("DaltonA","HoraceGreeleyA",330,130);
+    await newRank("GreensFarmsA","ArdsleyA",260,250);
+    await newRank("IrvingtonA","ScarsdaleA",290,250);
+    await newRank("YonkersB","GreensFarmsB",300,170);
+    await newRank("YonkersA","HoraceGreeleyB",350,170);
+    await newRank("DarienA","WiltonLukasA",340,290);
     //Round 3
-    await newRank("ScarsdaleAV","GreensFarmsAV",280,230);
-    await newRank("WiltonAlexAV","ArdsleyAV",460,100);
-    await newRank("DarienAV","IrvingtonAV",330,260);
-    await newRank("WhitePlainsAV","HoraceGreeleyAV",280,150);
-    await newRank("HoraceGreeleyBJV","WiltonLukasAJV",290,270);
-    await newRank("YonkersAJV","YonkersBJV",330,170);
-    await newRank("DaltonAV","GreensFarmsBJV",360,110);
+    await newRank("ScarsdaleA","GreensFarmsA",280,230);
+    await newRank("WiltonAlexA","ArdsleyA",460,100);
+    await newRank("DarienA","IrvingtonA",330,260);
+    await newRank("WhitePlainsA","HoraceGreeleyA",280,150);
+    await newRank("HoraceGreeleyB","WiltonLukasA",290,270);
+    await newRank("YonkersA","YonkersB",330,170);
+    await newRank("DaltonA","GreensFarmsB",360,110);
     //Round 4
-    await newRank("DarienAV","GreensFarmsAV",281,280);//Darien wins on TB
-    await newRank("DaltonAV","IrvingtonAV",310,270);
-    await newRank("WiltonAlexAV","ScarsdaleAV",360,200);
-    await newRank("ArdsleyAV","HoraceGreeleyAV",270,160);
-    await newRank("HoraceGreeleyBJV","YonkersBJV",370,190);
-    await newRank("WiltonLukasAJV","GreensFarmsBJV",470,90);
-    await newRank("YonkersAJV","WhitePlainsAV",420,150);
+    await newRank("DarienA","GreensFarmsA",281,280);//Darien wins on TB
+    await newRank("DaltonA","IrvingtonA",310,270);
+    await newRank("WiltonAlexA","ScarsdaleA",360,200);
+    await newRank("ArdsleyA","HoraceGreeleyA",270,160);
+    await newRank("HoraceGreeleyB","YonkersB",370,190);
+    await newRank("WiltonLukasA","GreensFarmsB",470,90);
+    await newRank("YonkersA","WhitePlainsA",420,150);
     //Round 5
-    await newRank("ScarsdaleAV","HoraceGreeleyAV",450,60);
-    await newRank("IrvingtonAV","WhitePlainsAV",320,170);
-    await newRank("GreensFarmsAV","DaltonAV",310,170);
-    await newRank("DarienAV","WiltonAlexAV",320,290);
-    await newRank("WiltonLukasAJV","HoraceGreeleyBJV",310,180);
-    await newRank("YonkersAJV","GreensFarmsBJV",340,80);
-    await newRank("HoraceGreeleyBJV","ArdsleyAV",250,140);
+    await newRank("ScarsdaleA","HoraceGreeleyA",450,60);
+    await newRank("IrvingtonA","WhitePlainsA",320,170);
+    await newRank("GreensFarmsA","DaltonA",310,170);
+    await newRank("DarienA","WiltonAlexA",320,290);
+    await newRank("WiltonLukasA","HoraceGreeleyB",310,180);
+    await newRank("YonkersA","GreensFarmsB",340,80);
+    await newRank("HoraceGreeleyB","ArdsleyA",250,140);
     //Varsity Playoffs
     //Quarterfinals
-    await newRank("WiltonAlexAV","WhitePlainsAV",300,180);
-    await newRank("DarienAV","ArdsleyAV",310,180);
-    await newRank("DaltonAV","IrvingtonAV",230,210);
-    await newRank("ScarsdaleAV","GreensFarmsBJV",270,220);
+    await newRank("WiltonAlexA","WhitePlainsA",300,180);
+    await newRank("DarienA","ArdsleyA",310,180);
+    await newRank("DaltonA","IrvingtonA",230,210);
+    await newRank("ScarsdaleA","GreensFarmsB",270,220);
     //Semifinals
-    await newRank("ScarsdaleAV","WiltonAlexAV",260,240);
-    await newRank("DarienAV","DaltonAV",320,160);
+    await newRank("ScarsdaleA","WiltonAlexA",260,240);
+    await newRank("DarienA","DaltonA",320,160);
     //Finals
-    await newRank("DarienAV","ScarsdaleAV",260,230);
+    await newRank("DarienA","ScarsdaleA",260,230);
     //JV Playoffs
     //JV Semifinals
-    await newRank("WiltonLukasAJV","YonkersBJV",380,90);
-    await newRank("HoraceGreeleyBJV","YonkersAJV",270,200);
-    await newRank("WiltonLukasAJV","HoraceGreeleyBJV",210,190);
+    await newRank("WiltonLukasA","YonkersB",380,90);
+    await newRank("HoraceGreeleyB","YonkersA",270,200);
+    await newRank("WiltonLukasA","HoraceGreeleyB",210,190);
     console.log("Lower Hudson C q V: "+qV[a2]);
     console.log("Lower Hudson C q JV: "+qJV[b2]);
     a = 0;
@@ -8149,91 +8152,91 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("WilmingtonFriendsDV","CaravelBV",220,140);
-    await newRank("NewarkCharterCV","WilmingtonFriendsEV",260,240);
-    await newRank("MethactonAV","WilmingtonFriendsCV",460,80);
-    await newRank("WilmingtonFriendsAV","FriendsCentralAV",290,150);
-    await newRank("MethactonCJV","WilmingtonFriendsKJV",470,40);
-    await newRank("NewarkCharterAV","WilmingtonFriendsGV",360,90);
-    await newRank("WilmingtonFriendsFV","NewarkCharterBV",200,180);
-    await newRank("WilmingtonFriendsIJV","WilmingtonFriendsLJV",290,100);
-    await newRank("DickinsonAV","CaravelAV",280,100);
-    await newRank("WilmingtonFriendsHJV","WilmingtonFriendsMJV",350,70);
-    await newRank("TowerHillCJV","WilmingtonFriendsJJV",200,80);
-    await newRank("WilmingtonFriendsBV","TowerHillBV",270,190);
-    await newRank("TowerHillAV","MethactonBV",290,220);
+    await newRank("WilmingtonFriendsD","CaravelB",220,140);
+    await newRank("NewarkCharterC","WilmingtonFriendsE",260,240);
+    await newRank("MethactonA","WilmingtonFriendsC",460,80);
+    await newRank("WilmingtonFriendsA","FriendsCentralA",290,150);
+    await newRank("MethactonC","WilmingtonFriendsK",470,40);
+    await newRank("NewarkCharterA","WilmingtonFriendsG",360,90);
+    await newRank("WilmingtonFriendsF","NewarkCharterB",200,180);
+    await newRank("WilmingtonFriendsI","WilmingtonFriendsL",290,100);
+    await newRank("DickinsonA","CaravelA",280,100);
+    await newRank("WilmingtonFriendsH","WilmingtonFriendsM",350,70);
+    await newRank("TowerHillC","WilmingtonFriendsJ",200,80);
+    await newRank("WilmingtonFriendsB","TowerHillB",270,190);
+    await newRank("TowerHillA","MethactonB",290,220);
     //Round 2
-    await newRank("TowerHillAV","CaravelBV",340,80);
-    await newRank("GreatValleyAV","DickinsonAV",470,80);
-    await newRank("WilmingtonFriendsAV","NewarkCharterCV",240,200);
-    await newRank("MethactonBV","FriendsCentralAV",270,160);
-    await newRank("MethactonCJV","WilmingtonFriendsJJV",460,50);
-    await newRank("MethactonAV","WilmingtonFriendsFV",390,70);
-    await newRank("WilmingtonFriendsIJV","WilmingtonFriendsMJV",290,150);
-    await newRank("TowerHillBV","WilmingtonFriendsCV",210,140);
-    await newRank("NewarkCharterAV","WilmingtonFriendsEV",250,180);
-    await newRank("WilmingtonFriendsHJV","WilmingtonFriendsLJV",300,130);
-    await newRank("TowerHillCJV","WilmingtonFriendsKJV",250,90);
-    await newRank("WilmingtonFriendsDV","WilmingtonFriendsGV",160,130);
-    await newRank("WilmingtonFriendsBV","CaravelAV",250,110);
+    await newRank("TowerHillA","CaravelB",340,80);
+    await newRank("GreatValleyA","DickinsonA",470,80);
+    await newRank("WilmingtonFriendsA","NewarkCharterC",240,200);
+    await newRank("MethactonB","FriendsCentralA",270,160);
+    await newRank("MethactonC","WilmingtonFriendsJ",460,50);
+    await newRank("MethactonA","WilmingtonFriendsF",390,70);
+    await newRank("WilmingtonFriendsI","WilmingtonFriendsM",290,150);
+    await newRank("TowerHillB","WilmingtonFriendsC",210,140);
+    await newRank("NewarkCharterA","WilmingtonFriendsE",250,180);
+    await newRank("WilmingtonFriendsH","WilmingtonFriendsL",300,130);
+    await newRank("TowerHillC","WilmingtonFriendsK",250,90);
+    await newRank("WilmingtonFriendsD","WilmingtonFriendsG",160,130);
+    await newRank("WilmingtonFriendsB","CaravelA",250,110);
     //Round 3
-    await newRank("GreatValleyAV","WilmingtonFriendsFV",480,30);
-    await newRank("NewarkCharterCV","WilmingtonFriendsGV",330,90);
-    await newRank("NewarkCharterAV","CaravelBV",320,30);
-    await newRank("TowerHillAV","WilmingtonFriendsAV",370,150);
-    await newRank("WilmingtonFriendsIJV","WilmingtonFriendsJJV",180,170);
-    await newRank("MethactonBV","WilmingtonFriendsDV",390,90);
-    await newRank("DickinsonAV","TowerHillBV",230,150);
-    await newRank("WilmingtonFriendsHJV","WilmingtonFriendsKJV",420,60);
-    await newRank("MethactonCJV","TowerHillCJV",430,80);
-    await newRank("MethactonAV","WilmingtonFriendsBV",350,170);
-    await newRank("NewarkCharterBV","WilmingtonFriendsCV",240,110);
-    await newRank("NewarkCharterBV","WilmingtonFriendsCV",240,110);
-    await newRank("FriendsCentralAV","WilmingtonFriendsEV",250,170);
+    await newRank("GreatValleyA","WilmingtonFriendsF",480,30);
+    await newRank("NewarkCharterC","WilmingtonFriendsG",330,90);
+    await newRank("NewarkCharterA","CaravelB",320,30);
+    await newRank("TowerHillA","WilmingtonFriendsA",370,150);
+    await newRank("WilmingtonFriendsI","WilmingtonFriendsJ",180,170);
+    await newRank("MethactonB","WilmingtonFriendsD",390,90);
+    await newRank("DickinsonA","TowerHillB",230,150);
+    await newRank("WilmingtonFriendsH","WilmingtonFriendsK",420,60);
+    await newRank("MethactonC","TowerHillC",430,80);
+    await newRank("MethactonA","WilmingtonFriendsB",350,170);
+    await newRank("NewarkCharterB","WilmingtonFriendsC",240,110);
+    await newRank("NewarkCharterB","WilmingtonFriendsC",240,110);
+    await newRank("FriendsCentralA","WilmingtonFriendsE",250,170);
     //Round 4
-    await newRank("WilmingtonFriendsMJV","WilmingtonFriendsJJV",190,40);
-    await newRank("WilmingtonFriendsLJV","WilmingtonFriendsKJV",140,70);
-    await newRank("GreatValleyAV","WilmingtonFriendsBV",470,90);
-    await newRank("WilmingtonFriendsEV","WilmingtonFriendsDV",190,180);
-    await newRank("TowerHillAV","WilmingtonFriendsGV",440,30);
-    await newRank("MethactonBV","NewarkCharterCV",380,190);
-    await newRank("WilmingtonFriendsHJV","TowerHillCJV",360,70);
-    await newRank("FriendsCentralAV","CaravelBV",280,110);
-    await newRank("DickinsonAV","NewarkCharterBV",200,160);
-    await newRank("MethactonCJV","WilmingtonFriendsIJV",450,70);
-    await newRank("NewarkCharterAV","WilmingtonFriendsAV",300,200);
-    await newRank("TowerHillBV","WilmingtonFriendsFV",250,150);
-    await newRank("CaravelAV","WilmingtonFriendsCV",140,100);
+    await newRank("WilmingtonFriendsM","WilmingtonFriendsJ",190,40);
+    await newRank("WilmingtonFriendsL","WilmingtonFriendsK",140,70);
+    await newRank("GreatValleyA","WilmingtonFriendsB",470,90);
+    await newRank("WilmingtonFriendsE","WilmingtonFriendsD",190,180);
+    await newRank("TowerHillA","WilmingtonFriendsG",440,30);
+    await newRank("MethactonB","NewarkCharterC",380,190);
+    await newRank("WilmingtonFriendsH","TowerHillC",360,70);
+    await newRank("FriendsCentralA","CaravelB",280,110);
+    await newRank("DickinsonA","NewarkCharterB",200,160);
+    await newRank("MethactonC","WilmingtonFriendsI",450,70);
+    await newRank("NewarkCharterA","WilmingtonFriendsA",300,200);
+    await newRank("TowerHillB","WilmingtonFriendsF",250,150);
+    await newRank("CaravelA","WilmingtonFriendsC",140,100);
     //Round 5
-    await newRank("WilmingtonFriendsJJV","WilmingtonFriendsKJV",180,60);
-    await newRank("MethactonCJV","WilmingtonFriendsMJV",400,60);
-    await newRank("CaravelAV","WilmingtonFriendsFV",190,10);
-    await newRank("WilmingtonFriendsBV","NewarkCharterBV",170,100);
-    await newRank("NewarkCharterCV","CaravelBV",250,80);
-    await newRank("FriendsCentralAV","WilmingtonFriendsGV",240,100);
-    await newRank("WilmingtonFriendsHJV","WilmingtonFriendsIJV",350,80);
-    await newRank("WilmingtonFriendsAV","WilmingtonFriendsDV",210,100);
-    await newRank("TowerHillCJV","WilmingtonFriendsLJV",220,90);
-    await newRank("TowerHillAV","WilmingtonFriendsEV",280,130);
-    await newRank("MethactonAV","NewarkCharterAV",280,120);
-    await newRank("GreatValleyAV","WilmingtonFriendsCV",580,0);
+    await newRank("WilmingtonFriendsJ","WilmingtonFriendsK",180,60);
+    await newRank("MethactonC","WilmingtonFriendsM",400,60);
+    await newRank("CaravelA","WilmingtonFriendsF",190,10);
+    await newRank("WilmingtonFriendsB","NewarkCharterB",170,100);
+    await newRank("NewarkCharterC","CaravelB",250,80);
+    await newRank("FriendsCentralA","WilmingtonFriendsG",240,100);
+    await newRank("WilmingtonFriendsH","WilmingtonFriendsI",350,80);
+    await newRank("WilmingtonFriendsA","WilmingtonFriendsD",210,100);
+    await newRank("TowerHillC","WilmingtonFriendsL",220,90);
+    await newRank("TowerHillA","WilmingtonFriendsE",280,130);
+    await newRank("MethactonA","NewarkCharterA",280,120);
+    await newRank("GreatValleyA","WilmingtonFriendsC",580,0);
     //Varsity Playoffs
     //Quarterfinals
-    await newRank("NewarkCharterAV","MethactonBV",280,180);
-    //await newRank("MethactonAV","WilmingtonFriendsAV",1,0);
-    await newRank("GreatValleyAV","FriendsCentralAV",420,80);
-    await newRank("TowerHillAV","NewarkCharterCV",280,140);
+    await newRank("NewarkCharterA","MethactonB",280,180);
+    //await newRank("MethactonA","WilmingtonFriendsA",1,0);
+    await newRank("GreatValleyA","FriendsCentralA",420,80);
+    await newRank("TowerHillA","NewarkCharterC",280,140);
     //Semifinals
-    await newRank("GreatValleyAV","NewarkCharterAV",330,160);
-    await newRank("MethactonAV","TowerHillAV",390,100);
+    await newRank("GreatValleyA","NewarkCharterA",330,160);
+    await newRank("MethactonA","TowerHillA",390,100);
     //Finals
-    await newRank("GreatValleyAV","MethactonAV",370,160);
+    await newRank("GreatValleyA","MethactonA",370,160);
     //JV Playoffs
     //Semifinals
-    await newRank("MethactonCJV","WilmingtonFriendsIJV",400,50);
-    await newRank("WilmingtonFriendsHJV","TowerHillCJV",280,60);
+    await newRank("MethactonC","WilmingtonFriendsI",400,50);
+    await newRank("WilmingtonFriendsH","TowerHillC",280,60);
     //Finals
-    await newRank("MethactonCJV","WilmingtonFriendsHJV",340,110);
+    await newRank("MethactonC","WilmingtonFriendsH",340,110);
     console.log("Delaware C q V: "+qV[a2]);
     console.log("Delaware C q JV: "+qJV[b2]);
     a = 0;
@@ -8245,33 +8248,33 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("ChoctawhatcheeAV","WashingtonAV",280,140);
-    await newRank("TateAV","WashingtonBV",310,60);
-    await newRank("RansomGJV","RansomFJV",81,80);
+    await newRank("ChoctawhatcheeA","WashingtonA",280,140);
+    await newRank("TateA","WashingtonB",310,60);
+    await newRank("RansomG","RansomF",81,80);
     //Round 2
-    await newRank("CollegiateAV","TateAV",400,180);
-    await newRank("WashingtonAV","WashingtonBV",250,100);
-    await newRank("RansomFJV","RansomEJV",100,80);
+    await newRank("CollegiateA","TateA",400,180);
+    await newRank("WashingtonA","WashingtonB",250,100);
+    await newRank("RansomF","RansomE",100,80);
     //Round 3
-    await newRank("CollegiateAV","WashingtonAV",360,120);
-    await newRank("ChoctawhatcheeAV","WashingtonBV",390,20);
-    await newRank("RansomGJV","RansomEJV",140,70);
+    await newRank("CollegiateA","WashingtonA",360,120);
+    await newRank("ChoctawhatcheeA","WashingtonB",390,20);
+    await newRank("RansomG","RansomE",140,70);
     //Round 4
-    await newRank("TateAV","ChoctawhatcheeAV",290,220);
-    await newRank("CollegiateAV","WashingtonBV",460,60);
-    await newRank("RansomGJV","RansomEJV",80,40);
+    await newRank("TateA","ChoctawhatcheeA",290,220);
+    await newRank("CollegiateA","WashingtonB",460,60);
+    await newRank("RansomG","RansomE",80,40);
     //Round 5
-    await newRank("TateAV","WashingtonAV",210,80);
-    await newRank("CollegiateAV","ChoctawhatcheeAV",460,110);
-    await newRank("RansomEJV","RansomFJV",70,50);
+    await newRank("TateA","WashingtonA",210,80);
+    await newRank("CollegiateA","ChoctawhatcheeA",460,110);
+    await newRank("RansomE","RansomF",70,50);
     //Round 6
-    await newRank("RansomGJV","RansomFJV",80,40);
+    await newRank("RansomG","RansomF",80,40);
     //Varsity Playoofs
     //Varsity Semifinals
-    await newRank("CollegiateAV","WashingtonAV",390,50);
-    await newRank("ChoctawhatcheeAV","TateAV",221,220);
+    await newRank("CollegiateA","WashingtonA",390,50);
+    await newRank("ChoctawhatcheeA","TateA",221,220);
     //Varsity Finals
-    await newRank("CollegiateAV","ChoctawhatcheeAV",420,120);
+    await newRank("CollegiateA","ChoctawhatcheeA",420,120);
     console.log("FL Panhandle C q V: "+qV[a2]);
     console.log("FL Panhandle C q JV: "+qJV[b2]);
     a = 0;
@@ -8283,41 +8286,41 @@ async function cSetData(){
     a2 = a2+1;
     b2 = b2+1;
     //Round 1
-    await newRank("LindseyAV","GraniteCityAV",400,130);
-    await newRank("AltonAV","SouthwesternAV",360,140);
-    await newRank("KeithCountyDayAJV","SouthwesternCJV",330,130);
-    await newRank("RochesterAJV","SouthwesternBJV",260,180);
+    await newRank("LindseyA","GraniteCityA",400,130);
+    await newRank("AltonA","SouthwesternA",360,140);
+    await newRank("KeithCountyDayA","SouthwesternC",330,130);
+    await newRank("RochesterA","SouthwesternB",260,180);
     //Round 2
-    await newRank("GraniteCityAV","SouthwesternAV",320,110);
-    await newRank("AltonAV","LindseyAV",340,260);
-    await newRank("RochesterAJV","SouthwesternCJV",240,200);
-    await newRank("KeithCountyDayAJV","SouthwesternBJV",250,200);
+    await newRank("GraniteCityA","SouthwesternA",320,110);
+    await newRank("AltonA","LindseyA",340,260);
+    await newRank("RochesterA","SouthwesternC",240,200);
+    await newRank("KeithCountyDayA","SouthwesternB",250,200);
     //Round 3
-    await newRank("AltonAV","GraniteCityAV",380,140);
-    await newRank("LindseyAV","SouthwesternAV",410,90);
-    await newRank("SouthwesternBJV","SouthwesternCJV",320,150);
-    await newRank("RochesterAJV","KeithCountyDayAJV",310,150);
+    await newRank("AltonA","GraniteCityA",380,140);
+    await newRank("LindseyA","SouthwesternA",410,90);
+    await newRank("SouthwesternB","SouthwesternC",320,150);
+    await newRank("RochesterA","KeithCountyDayA",310,150);
     //Round 4
-    await newRank("LindseyAV","SouthwesternAV",480,60);
-    await newRank("AltonAV","GraniteCityAV",370,180);
-    await newRank("KeithCountyDayAJV","RochesterAJV",260,160);
-    await newRank("SouthwesternBJV","SouthwesternCJV",240,100);
+    await newRank("LindseyA","SouthwesternA",480,60);
+    await newRank("AltonA","GraniteCityA",370,180);
+    await newRank("KeithCountyDayA","RochesterA",260,160);
+    await newRank("SouthwesternB","SouthwesternC",240,100);
     //Round 5
-    await newRank("GraniteCityAV","SouthwesternAV",240,100);
-    await newRank("LindseyAV","AltonAV",310,190);
-    await newRank("KeithCountyDayAJV","SouthwesternBJV",310,180);
-    await newRank("RochesterAJV","SouthwesternCJV",260,120);
+    await newRank("GraniteCityA","SouthwesternA",240,100);
+    await newRank("LindseyA","AltonA",310,190);
+    await newRank("KeithCountyDayA","SouthwesternB",310,180);
+    await newRank("RochesterA","SouthwesternC",260,120);
     //Round 6
-    await newRank("LindseyAV","GraniteCityAV",410,110);
-    await newRank("AltonAV","SouthwesternAV",310,70);
-    await newRank("RochesterAJV","SouthwesternBJV",280,150);
-    await newRank("KeithCountyDayAJV","SouthwesternCJV",250,100);
+    await newRank("LindseyA","GraniteCityA",410,110);
+    await newRank("AltonA","SouthwesternA",310,70);
+    await newRank("RochesterA","SouthwesternB",280,150);
+    await newRank("KeithCountyDayA","SouthwesternC",250,100);
     //Varsity Playoffs
     //Varsity Final
-    await newRank("LindseyAV","AltonAV",280,200);
+    await newRank("LindseyA","AltonA",280,200);
     //JV Playoffs
     //JV Final
-    await newRank("KeithCountyDayAJV","RochesterAJV",210,150);
+    await newRank("KeithCountyDayA","RochesterA",210,150);
     console.log("SW IL C q V: "+qV[a2]);
     console.log("SW IL C q JV: "+qJV[b2]);
     a = 0;
@@ -8329,52 +8332,52 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("KiskiAV","AllderdiceBV",450,70);
-    await newRank("NorthmontAV","SaegertownAV",480,80);
-    await newRank("NAlleghenyHSAV","NCatholicAV",261,260);
-    await newRank("AllderdiceAV","SouthSideAV",400,30);
-    await newRank("NAlleghenyIntAJV","SouthSideBJV",270,220);
-    await newRank("AlagarAJV","NAlleghenyIntBJV",250,220);
+    await newRank("KiskiA","AllderdiceB",450,70);
+    await newRank("NorthmontA","SaegertownA",480,80);
+    await newRank("NAlleghenyHSA","NCatholicA",261,260);
+    await newRank("AllderdiceA","SouthSideA",400,30);
+    await newRank("NAlleghenyIntA","SouthSideB",270,220);
+    await newRank("AlagarA","NAlleghenyIntB",250,220);
     //Round 2
-    await newRank("NorthmontAV","AllderdiceBV",470,80);
-    await newRank("KiskiAV","SaegertownAV",480,70);
-    await newRank("NCatholicAV","AllderdiceAV",310,200);
-    await newRank("NAlleghenyHSAV","SouthSideAV",280,70);
-    await newRank("SouthSideBJV","AlagarAJV",300,190);
-    await newRank("NAlleghenyIntAJV","NAlleghenyIntBJV",340,130);
+    await newRank("NorthmontA","AllderdiceB",470,80);
+    await newRank("KiskiA","SaegertownA",480,70);
+    await newRank("NCatholicA","AllderdiceA",310,200);
+    await newRank("NAlleghenyHSA","SouthSideA",280,70);
+    await newRank("SouthSideB","AlagarA",300,190);
+    await newRank("NAlleghenyIntA","NAlleghenyIntB",340,130);
     //Round 3
-    await newRank("AllderdiceBV","SouthSideAV",260,80);
-    await newRank("KiskiAV","NAlleghenyHSAV",280,240);
-    await newRank("NCatholicAV","AllderdiceAV",300,160);
-    await newRank("NorthmontAV","SaegertownAV",480,80);
-    await newRank("SouthSideBJV","NAlleghenyIntBJV",250,160);
-    await newRank("NAlleghenyIntAJV","AlagarAJV",320,210);
+    await newRank("AllderdiceB","SouthSideA",260,80);
+    await newRank("KiskiA","NAlleghenyHSA",280,240);
+    await newRank("NCatholicA","AllderdiceA",300,160);
+    await newRank("NorthmontA","SaegertownA",480,80);
+    await newRank("SouthSideB","NAlleghenyIntB",250,160);
+    await newRank("NAlleghenyIntA","AlagarA",320,210);
     //Round 4
-    await newRank("NCatholicAV","SaegertownAV",300,110);
-    await newRank("KiskiAV","AllderdiceBV",370,120);
-    await newRank("NAlleghenyHSAV","SouthSideAV",370,80);
-    await newRank("NorthmontAV","AllderdiceAV",440,80);
-    await newRank("SouthSideBJV","AlagarAJV",220,210);
-    await newRank("NAlleghenyIntAJV","NAlleghenyIntBJV",390,150);
+    await newRank("NCatholicA","SaegertownA",300,110);
+    await newRank("KiskiA","AllderdiceB",370,120);
+    await newRank("NAlleghenyHSA","SouthSideA",370,80);
+    await newRank("NorthmontA","AllderdiceA",440,80);
+    await newRank("SouthSideB","AlagarA",220,210);
+    await newRank("NAlleghenyIntA","NAlleghenyIntB",390,150);
     //Round 5
-    await newRank("SaegertownAV","SouthSideAV",161,160);
-    await newRank("KiskiAV","AllderdiceAV",370,150);
-    await newRank("NCatholicAV","AllderdiceBV",240,110);
-    await newRank("NorthmontAV","NAlleghenyHSAV",420,110);
-    await newRank("AlagarAJV","NAlleghenyIntBJV",230,140);
-    await newRank("NAlleghenyIntAJV","SouthSideBJV",270,160);
+    await newRank("SaegertownA","SouthSideA",161,160);
+    await newRank("KiskiA","AllderdiceA",370,150);
+    await newRank("NCatholicA","AllderdiceB",240,110);
+    await newRank("NorthmontA","NAlleghenyHSA",420,110);
+    await newRank("AlagarA","NAlleghenyIntB",230,140);
+    await newRank("NAlleghenyIntA","SouthSideB",270,160);
     //Round 6
-    await newRank("NAlleghenyIntAJV","AlagarAJV",270,150);
-    await newRank("SouthSideBJV","NAlleghenyIntBJV",270,90);
+    await newRank("NAlleghenyIntA","AlagarA",270,150);
+    await newRank("SouthSideB","NAlleghenyIntB",270,90);
     //Varsity Playoffs
     //Varsity Semifinals
-    await newRank("NorthmontAV","NAlleghenyHSAV",350,90);
-    await newRank("KiskiAV","NCatholicAV",270,130);
+    await newRank("NorthmontA","NAlleghenyHSA",350,90);
+    await newRank("KiskiA","NCatholicA",270,130);
     //Varsity Finals
-    await newRank("NorthmontAV","KiskiAV",310,230);
+    await newRank("NorthmontA","KiskiA",310,230);
     //JV PLayoffs
     //JV Finals
-    await newRank("NAlleghenyIntAJV","SouthSideBJV",270,140);
+    await newRank("NAlleghenyIntA","SouthSideB",270,140);
     console.log("W PA C q V: "+qV[a2]);
     console.log("W PA C q JV: "+qJV[b2]);
     a = 0;
@@ -8387,61 +8390,61 @@ async function cSetData(){
     b2 = b2+1;
     //Prelims
     //Round 1
-    await newRank("MadisonAV","MadisonBV",340,100);
-    await newRank("HancockAV","PetalBV",230,180);
-    await newRank("HancockCV","HancockBV",120,100);
-    await newRank("ClintonAV","WestJonesAV",210,190);
-    await newRank("PetalAV","RichtonAV",390,60);
-    await newRank("CHECHAJV","RichtonBJV",200,190);
-    await newRank("MadisonCJV","ClintonBJV",221,220);
+    await newRank("MadisonA","MadisonB",340,100);
+    await newRank("HancockA","PetalB",230,180);
+    await newRank("HancockC","HancockB",120,100);
+    await newRank("ClintonA","WestJonesA",210,190);
+    await newRank("PetalA","RichtonA",390,60);
+    await newRank("CHECHA","RichtonB",200,190);
+    await newRank("MadisonC","ClintonB",221,220);
     //Round 2
-    await newRank("MadisonAV","HancockBV",470,30);
-    await newRank("PetalAV","WestJonesAV",270,120);
-    await newRank("PetalBV","RichtonAV",260,90);
-    await newRank("HancockAV","HancockCV",280,110);
-    await newRank("ClintonBJV","RichtonBJV",240,80);
-    await newRank("MadisonCJV","RosaScottAJV",260,160);
+    await newRank("MadisonA","HancockB",470,30);
+    await newRank("PetalA","WestJonesA",270,120);
+    await newRank("PetalB","RichtonA",260,90);
+    await newRank("HancockA","HancockC",280,110);
+    await newRank("ClintonB","RichtonB",240,80);
+    await newRank("MadisonC","RosaScottA",260,160);
     //Round 3
-    await newRank("PetalBV","HancockBV",260,70);
-    await newRank("MadisonBV","HancockCV",390,50);
-    await newRank("MadisonAV","WestJonesAV",360,120);
-    await newRank("PetalAV","HancockAV",310,150);
-    await newRank("ClintonAV","RichtonAV",330,40);
-    await newRank("CHECHAJV","ClintonBJV",240,150);
-    await newRank("RosaScottAJV","RichtonBJV",360,40);
+    await newRank("PetalB","HancockB",260,70);
+    await newRank("MadisonB","HancockC",390,50);
+    await newRank("MadisonA","WestJonesA",360,120);
+    await newRank("PetalA","HancockA",310,150);
+    await newRank("ClintonA","RichtonA",330,40);
+    await newRank("CHECHA","ClintonB",240,150);
+    await newRank("RosaScottA","RichtonB",360,40);
     //Round 4
-    await newRank("MadisonAV","HancockAV",300,120);
-    await newRank("HancockCV","RichtonAV",140,110);
-    await newRank("ClintonAV","HancockBV",180,50);
-    await newRank("PetalAV","MadisonBV",290,130);
-    await newRank("PetalBV","WestJonesAV",250,120);
-    await newRank("RosaScottAJV","ClintonBJV",260,150);
-    await newRank("CHECHAJV","MadisonCJV",260,140);
+    await newRank("MadisonA","HancockA",300,120);
+    await newRank("HancockC","RichtonA",140,110);
+    await newRank("ClintonA","HancockB",180,50);
+    await newRank("PetalA","MadisonB",290,130);
+    await newRank("PetalB","WestJonesA",250,120);
+    await newRank("RosaScottA","ClintonB",260,150);
+    await newRank("CHECHA","MadisonC",260,140);
     //Round 5
-    await newRank("HancockAV","ClintonAV",200,160);
-    await newRank("WestJonesAV","HancockCV",210,20);
-    await newRank("MadisonBV","PetalBV",190,150);
-    await newRank("PetalAV","HancockBV",270,40);
-    await newRank("MadisonAV","RichtonAV",310,30);
-    await newRank("RosaScottAJV","CHECHAJV",240,170);
-    await newRank("MadisonCJV","RichtonBJV",290,40);
+    await newRank("HancockA","ClintonA",200,160);
+    await newRank("WestJonesA","HancockC",210,20);
+    await newRank("MadisonB","PetalB",190,150);
+    await newRank("PetalA","HancockB",270,40);
+    await newRank("MadisonA","RichtonA",310,30);
+    await newRank("RosaScottA","CHECHA",240,170);
+    await newRank("MadisonC","RichtonB",290,40);
     //Varsity Playoffs
     //Varsity Quarterfinals
-    await newRank("MadisonAV","HancockCV",290,20);
-    await newRank("PetalAV","WestJonesAV",300,60);
-    await newRank("PetalBV","ClintonAV",240,130);
-    await newRank("HancockAV","MadisonBV",200,130);
+    await newRank("MadisonA","HancockC",290,20);
+    await newRank("PetalA","WestJonesA",300,60);
+    await newRank("PetalB","ClintonA",240,130);
+    await newRank("HancockA","MadisonB",200,130);
     //Varsity Semifinals
-    await newRank("MadisonAV","HancockAV",360,50);
-    await newRank("PetalAV","PetalBV",190,120);
+    await newRank("MadisonA","HancockA",360,50);
+    await newRank("PetalA","PetalB",190,120);
     //Varsity Finals
-    await newRank("MadisonAV","PetalAV",290,90);
+    await newRank("MadisonA","PetalA",290,90);
     //JV Playoffs
     //JV Semifinals
-    await newRank("RosaScottAJV","ClintonBJV",190,140);
-    await newRank("CHECHAJV","MadisonCJV",220,100);
+    await newRank("RosaScottA","ClintonB",190,140);
+    await newRank("CHECHA","MadisonC",220,100);
     //JV Final
-    await newRank("RosaScottAJV","CHECHAJV",190,140);
+    await newRank("RosaScottA","CHECHA",190,140);
     console.log("Miss C q V: "+qV[a2]);
     console.log("Miss C q JV: "+qJV[b2]);
     a = 0;
@@ -8452,14 +8455,14 @@ async function cSetData(){
     b2 = b2+1;
     //Nevada C-Set
     //Round 1
-    await newRank("ClarkBJV","LibertyAV",430,0);
-    await newRank("ClarkAV","LibertyBJV",480,60);
+    await newRank("ClarkB","LibertyA",430,0);
+    await newRank("ClarkA","LibertyB",480,60);
     //Round 2
-    await newRank("LibertyBJV","LibertyAV",290,0);
-    await newRank("ClarkAV","ClarkBJV",540,90);
+    await newRank("LibertyB","LibertyA",290,0);
+    await newRank("ClarkA","ClarkB",540,90);
     //Round 3
-    await newRank("ClarkBJV","LibertyBJV",300,130);
-    await newRank("ClarkAV","LibertyAV",580,0);
+    await newRank("ClarkB","LibertyB",300,130);
+    await newRank("ClarkA","LibertyA",580,0);
     console.log("Nevada C q V: "+qV[a2]);
     console.log("Nevada C q JV: "+qJV[b2]);
     a = 0;
@@ -8470,16 +8473,16 @@ async function cSetData(){
     b2 = b2+1;
     //Eastern Iowa C-Set
     //Round 1
-    await newRank("PleasantValleyAV","CentralAV",280,270);
-    await newRank("PleasantValleyBJV","CentralBJV",230,160);
+    await newRank("PleasantValleyA","CentralA",280,270);
+    await newRank("PleasantValleyB","CentralB",230,160);
     //Round 2
-    await newRank("PleasantValleyAV","SherrardAV",320,160);
-    await newRank("CentralBJV","PleasantValleyBJV",280,130);
+    await newRank("PleasantValleyA","SherrardA",320,160);
+    await newRank("CentralB","PleasantValleyB",280,130);
     //Round 3
-    await newRank("CentralAV","SherrardAV",370,170);
-    await newRank("CentralBJV","PleasantValleyBJV",220,140);
+    await newRank("CentralA","SherrardA",370,170);
+    await newRank("CentralB","PleasantValleyB",220,140);
     //Varsity Final
-    await newRank("PleasantValleyAV","CentralAV",320,250);
+    await newRank("PleasantValleyA","CentralA",320,250);
     console.log("Eastern Iowa C q V: "+qV[a2]);
     console.log("Eastern Iowa C q JV: "+qJV[b2]);
     a = 0;
@@ -8490,29 +8493,29 @@ async function cSetData(){
     b2 = b2+1;
     //Upper Hudson C-Set
     //Round 1
-    await newRank("BethlehemAV","BerlinBJV",490,80);
-    await newRank("BethlehemBJV","LaurensAV",370,80);
-    await newRank("LoyolaAV","BethlehemMSAJV",310,220);
+    await newRank("BethlehemA","BerlinB",490,80);
+    await newRank("BethlehemB","LaurensA",370,80);
+    await newRank("LoyolaA","BethlehemMSA",310,220);
     //Round 2
-    await newRank("BethlehemBJV","BerlinBJV",260,140);
-    await newRank("BethlehemAV","LoyolaAV",360,190);
-    await newRank("BerlinAV","LaurensAV",360,190);
+    await newRank("BethlehemB","BerlinB",260,140);
+    await newRank("BethlehemA","LoyolaA",360,190);
+    await newRank("BerlinA","LaurensA",360,190);
     //Round 3
-    await newRank("BethlehemBJV","BerlinAV",430,70);
-    await newRank("BethlehemMSAJV","BerlinBJV",360,110);
-    await newRank("LoyolaAV","LaurensAV",340,70);
+    await newRank("BethlehemB","BerlinA",430,70);
+    await newRank("BethlehemMSA","BerlinB",360,110);
+    await newRank("LoyolaA","LaurensA",340,70);
     //Round 4
-    await newRank("LoyolaAV","BerlinBJV",280,80);
-    await newRank("BethlehemAV","BethlehemBJV",400,160);
-    await newRank("BethlehemMSAJV","BerlinAV",280,120);
+    await newRank("LoyolaA","BerlinB",280,80);
+    await newRank("BethlehemA","BethlehemB",400,160);
+    await newRank("BethlehemMSA","BerlinA",280,120);
     //Round 5
-    await newRank("BethlehemAV","LaurensAV",390,90);
-    await newRank("LoyolaAV","BerlinAV",280,140);
-    await newRank("BethlehemBJV","BethlehemMSAJV",360,90);
+    await newRank("BethlehemA","LaurensA",390,90);
+    await newRank("LoyolaA","BerlinA",280,140);
+    await newRank("BethlehemB","BethlehemMSA",360,90);
     //Playoffs
     //Varsity Final
-    await newRank("BethlehemAV","LoyolaAV",210,170);
-    await newRank("BethlehemBJV","BethlehemMSAJV",240,110);
+    await newRank("BethlehemA","LoyolaA",210,170);
+    await newRank("BethlehemB","BethlehemMSA",240,110);
     console.log("Upper Hudson C q V: "+qV[a2]);
     console.log("Upper Hudson C q JV: "+qJV[b2]);
     a = 0;
@@ -8523,23 +8526,23 @@ async function cSetData(){
     //Northern Pennsylvania C-Set
     //Prelims
     //Round 1
-    await newRank("WyomingBV","NanticokeAV",230,190);
-    await newRank("ParklandAV","WyomingAV",260,170);
+    await newRank("WyomingB","NanticokeA",230,190);
+    await newRank("ParklandA","WyomingA",260,170);
     //Round 2
-    await newRank("WyomingBV","WyomingCV",250,130);
-    await newRank("WyomingAV","NanticokeAV",270,140);
+    await newRank("WyomingB","WyomingC",250,130);
+    await newRank("WyomingA","NanticokeA",270,140);
     //Round 3
-    await newRank("WyomingAV","WyomingCV",210,170);
-    await newRank("ParklandAV","NanticokeAV",230,200);
+    await newRank("WyomingA","WyomingC",210,170);
+    await newRank("ParklandA","NanticokeA",230,200);
     //Round 4
-    await newRank("ParklandAV","WyomingCV",300,120);
-    await newRank("WyomingAV","WyomingBV",210,200);
+    await newRank("ParklandA","WyomingC",300,120);
+    await newRank("WyomingA","WyomingB",210,200);
     //Round 5
-    await newRank("WyomingBV","ParklandAV",230,200);
-    await newRank("NanticokeAV","WyomingCV",220,120);
+    await newRank("WyomingB","ParklandA",230,200);
+    await newRank("NanticokeA","WyomingC",220,120);
     //Playoffs
     //Finals
-    await newRank("ParklandAV","WyomingBV",220,110);
+    await newRank("ParklandA","WyomingB",220,110);
     console.log("Northern Pennsylvania C q V: "+qV[a2]);
     a = 0;
     
@@ -8548,43 +8551,43 @@ async function cSetData(){
     b2 = b2+1;
     //New Hampshire C-Set
     //Round 1
-    await newRank("PlymouthBJV","NewtonSouthBV",210,170);
-    await newRank("SouthBurlingtonAV","NewtonSouthCJV",400,120);
-    await newRank("HanoverAV","NewtonNorthBV",390,150);
-    await newRank("NewtonNorthAV","NewtonSouthAV",440,110);
-    await newRank("PlymouthAV","NewtonNorthCV",410,140);
+    await newRank("PlymouthB","NewtonSouthB",210,170);
+    await newRank("SouthBurlingtonA","NewtonSouthC",400,120);
+    await newRank("HanoverA","NewtonNorthB",390,150);
+    await newRank("NewtonNorthA","NewtonSouthA",440,110);
+    await newRank("PlymouthA","NewtonNorthC",410,140);
     //Round 2
-    await newRank("NewtonNorthBV","NewtonSouthAV",230,190);
-    await newRank("NewtonNorthCV","NewtonSouthBV",230,170);
-    await newRank("NewtonNorthAV","PlymouthBJV",350,160);
-    await newRank("HanoverAV","NewtonSouthCJV",390,100);
-    await newRank("PlymouthAV","SouthBurlingtonAV",380,170);
+    await newRank("NewtonNorthB","NewtonSouthA",230,190);
+    await newRank("NewtonNorthC","NewtonSouthB",230,170);
+    await newRank("NewtonNorthA","PlymouthB",350,160);
+    await newRank("HanoverA","NewtonSouthC",390,100);
+    await newRank("PlymouthA","SouthBurlingtonA",380,170);
     //Round 3
-    await newRank("NewtonNorthAV","HanoverAV",290,250);
-    await newRank("PlymouthAV","NewtonNorthAV",300,170);
-    await newRank("NewtonNorthBV","NewtonSouthBV",390,60);
-    await newRank("SouthBurlingtonAV","NewtonNorthCV",260,250);
-    await newRank("NewtonSouthCJV","PlymouthBJV",260,160);
+    await newRank("NewtonNorthA","HanoverA",290,250);
+    await newRank("PlymouthA","NewtonNorthA",300,170);
+    await newRank("NewtonNorthB","NewtonSouthB",390,60);
+    await newRank("SouthBurlingtonA","NewtonNorthC",260,250);
+    await newRank("NewtonSouthC","PlymouthB",260,160);
     //Round 4
-    await newRank("PlymouthAV","NewtonSouthCJV",420,110);
-    await newRank("HanoverAV","NewtonNorthCV",470,110);
-    await newRank("NewtonNorthAV","NewtonSouthBV",490,90);
-    await newRank("NewtonSouthAV","PlymouthBJV",360,140);
-    await newRank("SouthBurlingtonAV","NewtonNorthBV",260,240);
+    await newRank("PlymouthA","NewtonSouthC",420,110);
+    await newRank("HanoverA","NewtonNorthC",470,110);
+    await newRank("NewtonNorthA","NewtonSouthB",490,90);
+    await newRank("NewtonSouthA","PlymouthB",360,140);
+    await newRank("SouthBurlingtonA","NewtonNorthB",260,240);
     //Round 5
-    await newRank("SouthBurlingtonAV","NewtonSouthAV",300,170);
-    await newRank("NewtonNorthBV","PlymouthBJV",320,120);
-    await newRank("NewtonNorthCV","NewtonSouthCJV",200,180);
-    await newRank("NewtonNorthAV","PlymouthAV",370,140);
-    await newRank("HanoverAV","NewtonSouthBV",350,70);
+    await newRank("SouthBurlingtonA","NewtonSouthA",300,170);
+    await newRank("NewtonNorthB","PlymouthB",320,120);
+    await newRank("NewtonNorthC","NewtonSouthC",200,180);
+    await newRank("NewtonNorthA","PlymouthA",370,140);
+    await newRank("HanoverA","NewtonSouthB",350,70);
     //Playoffs
     //Semifinals
-    await newRank("NewtonNorthAV","SouthBurlingtonAV",380,150);
-    await newRank("PlymouthAV","HanoverAV",280,250);
+    await newRank("NewtonNorthA","SouthBurlingtonA",380,150);
+    await newRank("PlymouthA","HanoverA",280,250);
     //Varsity Finals
-    await newRank("NewtonNorthAV","PlymouthAV",330,160);
+    await newRank("NewtonNorthA","PlymouthA",330,160);
     //JV Finals
-    await newRank("PlymouthBJV","NewtonSouthCJV",160,110);
+    await newRank("PlymouthB","NewtonSouthC",160,110);
     console.log("NH C q V: "+qV[a2]);
     console.log("NH C q JV: "+qJV[b2]);
     a = 0;
@@ -8595,60 +8598,60 @@ async function cSetData(){
     //Arkansas C-Set
     //Prelims
     //Round 1
-    await newRank("RussellvilleBJV","EpiscopalAV",220,140);
-    await newRank("FayettevilleAV","VanBurenAV",330,140);
-    await newRank("RussellvilleAV","ChesterCountyBV",490,50);
-    await newRank("ChesterCountyAV","FortSmithSouthsideBV",290,160);
-    await newRank("MountainViewARAV","FortSmithSouthsideAV",390,140);
-    await newRank("DeQueenAV","ConwayChristianBV",270,100);
-    await newRank("ConwayChristianBV","FortSmithSouthsideCJV",200,180);
+    await newRank("RussellvilleB","EpiscopalA",220,140);
+    await newRank("FayettevilleA","VanBurenA",330,140);
+    await newRank("RussellvilleA","ChesterCountyB",490,50);
+    await newRank("ChesterCountyA","FortSmithSouthsideB",290,160);
+    await newRank("MountainViewARA","FortSmithSouthsideA",390,140);
+    await newRank("DeQueenA","ConwayChristianB",270,100);
+    await newRank("ConwayChristianB","FortSmithSouthsideC",200,180);
     //Round 2
-    await newRank("MountainViewARAV","ChesterCountyAV",350,150);
-    await newRank("RussellvilleAV","ConwayChristianBV",520,30);
-    await newRank("RussellvilleBJV","VanBurenAV",300,100);
-    await newRank("EpiscopalAV","ChesterCountyBV",210,140);
-    await newRank("FortSmithSouthsideAV","FortSmithSouthsideCJV",310,120);
-    await newRank("DeQueenAV","ConwayChristianAV",350,120);
-    await newRank("FayettevilleAV","FortSmithSouthsideBV",250,220);
+    await newRank("MountainViewARA","ChesterCountyA",350,150);
+    await newRank("RussellvilleA","ConwayChristianB",520,30);
+    await newRank("RussellvilleB","VanBurenA",300,100);
+    await newRank("EpiscopalA","ChesterCountyB",210,140);
+    await newRank("FortSmithSouthsideA","FortSmithSouthsideC",310,120);
+    await newRank("DeQueenA","ConwayChristianA",350,120);
+    await newRank("FayettevilleA","FortSmithSouthsideB",250,220);
     //Round 3
-    await newRank("RussellvilleAV","EpiscopalAV",510,50);
-    await newRank("FayettevilleAV","ConwayChristianBV",380,80);
-    await newRank("FortSmithSouthsideCJV","MountainViewARAV",340,120);
-    await newRank("FortSmithSouthsideAV","ConwayChristianAV",370,140);
-    await newRank("DeQueenAV","ChesterCountyAV",260,250);
-    await newRank("ChesterCountyBV","VanBurenAV",180,170);
-    await newRank("FortSmithSouthsideBV","RussellvilleBJV",250,190);
+    await newRank("RussellvilleA","EpiscopalA",510,50);
+    await newRank("FayettevilleA","ConwayChristianB",380,80);
+    await newRank("FortSmithSouthsideC","MountainViewARA",340,120);
+    await newRank("FortSmithSouthsideA","ConwayChristianA",370,140);
+    await newRank("DeQueenA","ChesterCountyA",260,250);
+    await newRank("ChesterCountyB","VanBurenA",180,170);
+    await newRank("FortSmithSouthsideB","RussellvilleB",250,190);
     //Round 4
-    await newRank("FortSmithSouthsideCJV","ConwayChristianBV",210,110);
-    await newRank("ChesterCountyAV","FortSmithSouthsideAV",260,220);
-    await newRank("MountainViewARAV","DeQueenAV",380,180);
-    await newRank("RussellvilleAV","FayettevilleAV",370,250);
-    await newRank("EpiscopalAV","VanBurenAV",230,90);
-    await newRank("RussellvilleBJV","ChesterCountyBV",230,90);
-    await newRank("ConwayChristianAV","FortSmithSouthsideBV",230,140);
+    await newRank("FortSmithSouthsideC","ConwayChristianB",210,110);
+    await newRank("ChesterCountyA","FortSmithSouthsideA",260,220);
+    await newRank("MountainViewARA","DeQueenA",380,180);
+    await newRank("RussellvilleA","FayettevilleA",370,250);
+    await newRank("EpiscopalA","VanBurenA",230,90);
+    await newRank("RussellvilleB","ChesterCountyB",230,90);
+    await newRank("ConwayChristianA","FortSmithSouthsideB",230,140);
     //Round 5
-    await newRank("FayettevilleAV","DeQueenAV",260,220);
-    await newRank("ConwayChristianAV","VanBurenAV",180,90);
-    await newRank("RussellvilleAV","ChesterCountyAV",440,110);
-    await newRank("RussellvilleBJV","FortSmithSouthsideCJV",180,160);
-    await newRank("MountainViewARAV","FortSmithSouthsideBV",230,190);
-    await newRank("ConwayChristianBV","ChesterCountyBV",140,110);
-    await newRank("FortSmithSouthsideAV","EpiscopalAV",350,70);
+    await newRank("FayettevilleA","DeQueenA",260,220);
+    await newRank("ConwayChristianA","VanBurenA",180,90);
+    await newRank("RussellvilleA","ChesterCountyA",440,110);
+    await newRank("RussellvilleB","FortSmithSouthsideC",180,160);
+    await newRank("MountainViewARA","FortSmithSouthsideB",230,190);
+    await newRank("ConwayChristianB","ChesterCountyB",140,110);
+    await newRank("FortSmithSouthsideA","EpiscopalA",350,70);
     //Playoffs
     //Varsity Playoffs
     //Varsity Quarterfinals
-    await newRank("RussellvilleAV","EpiscopalAV",400,90);
-    await newRank("FortSmithSouthsideAV","DeQueenAV",250,200);
-    await newRank("FayettevilleAV","ConwayChristianAV",240,110);
-    await newRank("MountainViewARAV","ChesterCountyAV",360,130);
+    await newRank("RussellvilleA","EpiscopalA",400,90);
+    await newRank("FortSmithSouthsideA","DeQueenA",250,200);
+    await newRank("FayettevilleA","ConwayChristianA",240,110);
+    await newRank("MountainViewARA","ChesterCountyA",360,130);
     //Varsity Semifinals
-    await newRank("RussellvilleAV","FortSmithSouthsideAV",340,120);
-    await newRank("MountainViewARAV","FayettevilleAV",270,140);
+    await newRank("RussellvilleA","FortSmithSouthsideA",340,120);
+    await newRank("MountainViewARA","FayettevilleA",270,140);
     //Varsity Final
-    await newRank("RussellvilleAV","MountainViewARAV",350,160);
+    await newRank("RussellvilleA","MountainViewARA",350,160);
     //JV Playoffs (Best of 3 Final)
-    await newRank("RussellvilleBJV","FortSmithSouthsideCJV",170,100);
-    await newRank("RussellvilleBJV","FortSmithSouthsideCJV",200,130);
+    await newRank("RussellvilleB","FortSmithSouthsideC",170,100);
+    await newRank("RussellvilleB","FortSmithSouthsideC",200,130);
     console.log("Arkansas C q V: "+qV[a2]);
     console.log("Arkansas C q JV: "+qJV[b2]);
     a = 0;
@@ -8660,61 +8663,61 @@ async function cSetData(){
     //SoCal C-Set
     //Prelims
     //Round 1
-    await newRank("SantaMonicaAV","WhitneyAV",450,140);
-    await newRank("CanyonCrestAV","ArcadiaCV",410,160);
-    await newRank("ArcadiaAV","ScrippsRanchAV",420,130);
-    await newRank("ArcadiaBV","TroyAV",330,220);
-    await newRank("StMargaretsAJV","LaCanadaAJV",470,70);
-    await newRank("SantiagoAJV","ArcadiaDJV",240,210);
-    await newRank("PegasusAJV","VistaVerdeAJV",240,210);
+    await newRank("SantaMonicaA","WhitneyA",450,140);
+    await newRank("CanyonCrestA","ArcadiaC",410,160);
+    await newRank("ArcadiaA","ScrippsRanchA",420,130);
+    await newRank("ArcadiaB","TroyA",330,220);
+    await newRank("StMargaretsA","LaCanadaA",470,70);
+    await newRank("SantiagoA","ArcadiaD",240,210);
+    await newRank("PegasusA","VistaVerdeA",240,210);
     //Round 2
-    await newRank("SantaMonicaAV","ScrippsRanchAV",420,200);
-    await newRank("CanyonCrestAV","ArcadiaBV",310,250);
-    await newRank("ArcadiaAV","CanyonCrestBV",530,110);
-    await newRank("ArcadiaDJV","LaCanadaAJV",260,150);
-    await newRank("StMargaretsAJV","VistaVerdeAJV",520,70);
-    await newRank("SantiagoAJV","PegasusAJV",240,220);
-    await newRank("TroyAV","WhitneyAV",390,120);
+    await newRank("SantaMonicaA","ScrippsRanchA",420,200);
+    await newRank("CanyonCrestA","ArcadiaB",310,250);
+    await newRank("ArcadiaA","CanyonCrestB",530,110);
+    await newRank("ArcadiaD","LaCanadaA",260,150);
+    await newRank("StMargaretsA","VistaVerdeA",520,70);
+    await newRank("SantiagoA","PegasusA",240,220);
+    await newRank("TroyA","WhitneyA",390,120);
     //Round 3
-    await newRank("SantaMonicaAV","CanyonCrestBV",340,230);
-    await newRank("ScrippsRanchAV","TroyAV",280,240);
-    await newRank("CanyonCrestAV","WhitneyAV",390,160);
-    await newRank("ArcadiaAV","ArcadiaCV",410,170);
-    await newRank("PegasusAJV","ArcadiaDJV",330,180);
-    await newRank("VistaVerdeAJV","LaCanadaAJV",250,160);
-    await newRank("StMargaretsAJV","SantiagoAJV",370,140);
+    await newRank("SantaMonicaA","CanyonCrestB",340,230);
+    await newRank("ScrippsRanchA","TroyA",280,240);
+    await newRank("CanyonCrestA","WhitneyA",390,160);
+    await newRank("ArcadiaA","ArcadiaC",410,170);
+    await newRank("PegasusA","ArcadiaD",330,180);
+    await newRank("VistaVerdeA","LaCanadaA",250,160);
+    await newRank("StMargaretsA","SantiagoA",370,140);
     //Round 4
-    await newRank("SantaMonicaAV","ArcadiaCV",520,70);
-    await newRank("ArcadiaAV","ArcadiaBV",330,230);
-    await newRank("StMargaretsAJV","PegasusAJV",300,250);
-    await newRank("TroyAV","CanyonCrestBV",310,300);
-    await newRank("SantiagoAJV","LaCanadaAJV",390,150);
-    await newRank("CanyonCrestAV","ScrippsRanchAV",390,180);
+    await newRank("SantaMonicaA","ArcadiaC",520,70);
+    await newRank("ArcadiaA","ArcadiaB",330,230);
+    await newRank("StMargaretsA","PegasusA",300,250);
+    await newRank("TroyA","CanyonCrestB",310,300);
+    await newRank("SantiagoA","LaCanadaA",390,150);
+    await newRank("CanyonCrestA","ScrippsRanchA",390,180);
     //Round 5
-    await newRank("CanyonCrestAV","CanyonCrestBV",450,140);
-    await newRank("TroyAV","ArcadiaCV",290,180);
-    await newRank("SantaMonicaAV","ArcadiaBV",360,190);
-    await newRank("ArcadiaAV","WhitneyAV",530,60);
-    await newRank("LaCanadaAJV","PegasusAJV",230,220);
-    await newRank("StMargaretsAJV","ArcadiaDJV",380,110);
+    await newRank("CanyonCrestA","CanyonCrestB",450,140);
+    await newRank("TroyA","ArcadiaC",290,180);
+    await newRank("SantaMonicaA","ArcadiaB",360,190);
+    await newRank("ArcadiaA","WhitneyA",530,60);
+    await newRank("LaCanadaA","PegasusA",230,220);
+    await newRank("StMargaretsA","ArcadiaD",380,110);
     //Playoffs
     //Varsity Playoffs
     //Varsity Quarterfinals
-    await newRank("ArcadiaAV","ArcadiaCV",420,140);
-    await newRank("SantaMonicaAV","CanyonCrestBV",390,170);
-    await newRank("CanyonCrestAV","ScrippsRanchAV",430,110);
-    await newRank("ArcadiaBV","TroyAV",300,210);
+    await newRank("ArcadiaA","ArcadiaC",420,140);
+    await newRank("SantaMonicaA","CanyonCrestB",390,170);
+    await newRank("CanyonCrestA","ScrippsRanchA",430,110);
+    await newRank("ArcadiaB","TroyA",300,210);
     //Varsity Semifinals
-    await newRank("ArcadiaAV","ArcadiaBV",470,120);
-    await newRank("CanyonCrestAV","SantaMonicaAV",320,240);
+    await newRank("ArcadiaA","ArcadiaB",470,120);
+    await newRank("CanyonCrestA","SantaMonicaA",320,240);
     //Varsity Finals
-    await newRank("ArcadiaAV","CanyonCrestAV",350,180);
+    await newRank("ArcadiaA","CanyonCrestA",350,180);
     //JV Playoffs
     //JV Semifinals
-    await newRank("StMargaretsAJV","ArcadiaDJV",450,70);
-    await newRank("SantiagoAJV","PegasusAJV",320,120);
+    await newRank("StMargaretsA","ArcadiaD",450,70);
+    await newRank("SantiagoA","PegasusA",320,120);
     //JV Finals
-    await newRank("StMargaretsAJV","SantiagoAJV",280,140);
+    await newRank("StMargaretsA","SantiagoA",280,140);
     console.log("SoCal C q V: "+qV[a2]);
     console.log("SoCal C q JV: "+qJV[b2]);
     a = 0;
@@ -8730,52 +8733,53 @@ async function cSetData(){
 };
 
 async function bSetData() {
+    y = false;
     K = 100;
     bSet = true
     
     //Western New York B-Set
     //Prelims
     //Round 1
-    await newRank("FayettevilleManliusAV","IroquoisAV",250,240);
-    await newRank("IthacaAV","IroquoisBV",410,60);
-    await newRank("NicholsAV","NicholsBV",360,70);
-    await newRank("IthacaBJV","SacredHeartAJV",380,20);
-    await newRank("ParkSchoolAJV","IroquoisCJV",320,40);
+    await newRank("FayettevilleManliusA","IroquoisA",250,240);
+    await newRank("IthacaA","IroquoisB",410,60);
+    await newRank("NicholsA","NicholsB",360,70);
+    await newRank("IthacaB","SacredHeartA",380,20);
+    await newRank("ParkSchoolA","IroquoisC",320,40);
     //Round 2
-    await newRank("FayettevilleManliusAV","IroquoisBV",410,60);
-    await newRank("IthacaAV","NicholsAV",350,160);
-    await newRank("IroquoisAV","NicholsBV",260,160);
-    await newRank("IthacaBJV","ParkSchoolAJV",240,200);
-    await newRank("IroquoisCJV","SacredHeartBJV",90,80);
+    await newRank("FayettevilleManliusA","IroquoisB",410,60);
+    await newRank("IthacaA","NicholsA",350,160);
+    await newRank("IroquoisA","NicholsB",260,160);
+    await newRank("IthacaB","ParkSchoolA",240,200);
+    await newRank("IroquoisC","SacredHeartB",90,80);
     //Round 3
-    await newRank("NicholsAV","IroquoisAV",260,230);
-    await newRank("IthacaAV","FayettevilleManliusAV",370,150);
-    await newRank("NicholsBV","IroquoisBV",250,150);
-    await newRank("SacredHeartAJV","SacredHeartBJV",150,100);
-    await newRank("IthacaBJV","IroquoisCJV",380,30);
+    await newRank("NicholsA","IroquoisA",260,230);
+    await newRank("IthacaA","FayettevilleManliusA",370,150);
+    await newRank("NicholsB","IroquoisB",250,150);
+    await newRank("SacredHeartA","SacredHeartB",150,100);
+    await newRank("IthacaB","IroquoisC",380,30);
     //Round 4
-    await newRank("IthacaAV","IroquoisAV",330,190);
-    await newRank("NicholsAV","IroquoisBV",250,110);
-    await newRank("FayettevilleManliusAV","NicholsBV",270,110);
-    await newRank("SacredHeartAJV","IroquoisCJV",100,20);
-    await newRank("ParkSchoolAJV","SacredHeartBJV",210,40);
+    await newRank("IthacaA","IroquoisA",330,190);
+    await newRank("NicholsA","IroquoisB",250,110);
+    await newRank("FayettevilleManliusA","NicholsB",270,110);
+    await newRank("SacredHeartA","IroquoisC",100,20);
+    await newRank("ParkSchoolA","SacredHeartB",210,40);
     //Round 5
-    await newRank("NicholsAV","FayettevilleManliusAV",250,180);
-    await newRank("IroquoisAV","IroquoisBV",230,180);
-    await newRank("IthacaAV","NicholsBV",400,60);
-    await newRank("IthacaBJV","SacredHeartBJV",230,30);
-    await newRank("ParkSchoolAJV","SacredHeartAJV",230,50);
+    await newRank("NicholsA","FayettevilleManliusA",250,180);
+    await newRank("IroquoisA","IroquoisB",230,180);
+    await newRank("IthacaA","NicholsB",400,60);
+    await newRank("IthacaB","SacredHeartB",230,30);
+    await newRank("ParkSchoolA","SacredHeartA",230,50);
     //Playoffs
     //Varsity Semifinals
-    await newRank("IthacaAV","IroquoisAV",420,80);
-    await newRank("FayettevilleManliusAV","NicholsAV",220,210);
+    await newRank("IthacaA","IroquoisA",420,80);
+    await newRank("FayettevilleManliusA","NicholsA",220,210);
     //Varsity Finals
-    await newRank("IthacaAV","FayettevilleManliusAV",360,110);
+    await newRank("IthacaA","FayettevilleManliusA",360,110);
     //JV Semifinals
-    await newRank("IthacaBJV","IroquoisCJV",210,30);
-    await newRank("ParkSchoolAJV","SacredHeartAJV",160,40);
+    await newRank("IthacaB","IroquoisC",210,30);
+    await newRank("ParkSchoolA","SacredHeartA",160,40);
     //JV Finals
-    await newRank("IthacaBJV","ParkSchoolAJV",180,140);
+    await newRank("IthacaB","ParkSchoolA",180,140);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -8785,33 +8789,33 @@ async function bSetData() {
     //Hawaii State B-Set
     //Prelims
     //Round 1
-    await newRank("IolaniBV","PunahouBJV",340,60);
-    await newRank("IolaniAV","PunahouAV",320,200);
-    await newRank("McKinleyAV","IolaniCJV",220,140);
+    await newRank("IolaniB","PunahouB",340,60);
+    await newRank("IolaniA","PunahouA",320,200);
+    await newRank("McKinleyA","IolaniC",220,140);
     //Round 2
-    await newRank("IolaniAV","IolaniBV",370,140);
-    await newRank("McKinleyAV","PunahouBJV",150,110);
-    await newRank("PunahouAV","IolaniCJV",320,90);
+    await newRank("IolaniA","IolaniB",370,140);
+    await newRank("McKinleyA","PunahouB",150,110);
+    await newRank("PunahouA","IolaniC",320,90);
     //Round 3
-    await newRank("PunahouAV","PunahouBJV",380,50);
-    await newRank("IolaniAV","IolaniCJV",370,70);
-    await newRank("IolaniBV","McKinleyAV",300,120);
+    await newRank("PunahouA","PunahouB",380,50);
+    await newRank("IolaniA","IolaniC",370,70);
+    await newRank("IolaniB","McKinleyA",300,120);
     //Round 4
-    await newRank("PunahouAV","IolaniBV",290,120);
-    await newRank("IolaniCJV","PunahouBJV",100,80);
-    await newRank("IolaniAV","McKinleyAV",540,40);
+    await newRank("PunahouA","IolaniB",290,120);
+    await newRank("IolaniC","PunahouB",100,80);
+    await newRank("IolaniA","McKinleyA",540,40);
     //Round 5
-    await newRank("IolaniAV","PunahouBJV",400,60);
-    await newRank("IolaniBV","IolaniCJV",250,20);
-    await newRank("PunahouAV","McKinleyAV",350,70);
+    await newRank("IolaniA","PunahouB",400,60);
+    await newRank("IolaniB","IolaniC",250,20);
+    await newRank("PunahouA","McKinleyA",350,70);
     //Playoffs
     //Varsity Semifinals
-    await newRank("IolaniAV","McKinleyAV",430,20);
-    await newRank("PunahouAV","IolaniBV",270,150);
+    await newRank("IolaniA","McKinleyA",430,20);
+    await newRank("PunahouA","IolaniB",270,150);
     //Varsity Finals
-    await newRank("IolaniAV","PunahouAV",320,120);
+    await newRank("IolaniA","PunahouA",320,120);
     //JV Finals
-    await newRank("IolaniCJV","PunahouBJV",110,90);
+    await newRank("IolaniC","PunahouB",110,90);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -8822,43 +8826,43 @@ async function bSetData() {
     //Northern Virginia B-Set
     //Prelims
     //Round 1
-    await newRank("RichardMontgomeryAV","OaktonAV",390,170);
-    await newRank("WhitmanAV","OaktonBV",430,100);
-    await newRank("ThomasJeffersonAV","PotomacAV",360,200);
-    await newRank("ThomasJeffersonBV","ThomasJeffersonCV",350,160);
-    await newRank("RichardMontgomeryBJV","ThomasJeffersonDJV",360,200);
+    await newRank("RichardMontgomeryA","OaktonA",390,170);
+    await newRank("WhitmanA","OaktonB",430,100);
+    await newRank("ThomasJeffersonA","PotomacA",360,200);
+    await newRank("ThomasJeffersonB","ThomasJeffersonC",350,160);
+    await newRank("RichardMontgomeryB","ThomasJeffersonD",360,200);
     //Round 2
-    await newRank("ThomasJeffersonBV","WoodsonAV",310,200);
-    await newRank("RichardMontgomeryAV","PotomacAV",400,180);
-    await newRank("WhitmanAV","ThomasJeffersonCV",370,130);
-    await newRank("OaktonBV","OaktonAV",210,160);
-    await newRank("RichardMontgomeryBJV","ThomasJeffersonEJV",400,140);
+    await newRank("ThomasJeffersonB","WoodsonA",310,200);
+    await newRank("RichardMontgomeryA","PotomacA",400,180);
+    await newRank("WhitmanA","ThomasJeffersonC",370,130);
+    await newRank("OaktonB","OaktonA",210,160);
+    await newRank("RichardMontgomeryB","ThomasJeffersonE",400,140);
     //Round 3
-    await newRank("ThomasJeffersonAV","OaktonAV",490,90);
-    await newRank("RichardMontgomeryAV","WhitmanAV",420,170);
-    await newRank("PotomacAV","WoodsonAV",270,240);
-    await newRank("ThomasJeffersonBV","OaktonBV",330,130);
-    await newRank("ThomasJeffersonDJV","ThomasJeffersonEJV",340,210);
+    await newRank("ThomasJeffersonA","OaktonA",490,90);
+    await newRank("RichardMontgomeryA","WhitmanA",420,170);
+    await newRank("PotomacA","WoodsonA",270,240);
+    await newRank("ThomasJeffersonB","OaktonB",330,130);
+    await newRank("ThomasJeffersonD","ThomasJeffersonE",340,210);
     //Round 4
-    await newRank("PotomacAV","OaktonBV",320,100);
-    await newRank("ThomasJeffersonAV","ThomasJeffersonBV",380,150);
-    await newRank("ThomasJeffersonCV","OaktonAV",210,110);
-    await newRank("WhitmanAV","WoodsonAV",320,160);
-    await newRank("ThomasJeffersonDJV","RichardMontgomeryBJV",270,250);
+    await newRank("PotomacA","OaktonB",320,100);
+    await newRank("ThomasJeffersonA","ThomasJeffersonB",380,150);
+    await newRank("ThomasJeffersonC","OaktonA",210,110);
+    await newRank("WhitmanA","WoodsonA",320,160);
+    await newRank("ThomasJeffersonD","RichardMontgomeryB",270,250);
     //Round 5
-    await newRank("ThomasJeffersonAV","WhitmanAV",290,220);
-    await newRank("PotomacAV","ThomasJeffersonCV",320,130);
-    await newRank("RichardMontgomeryAV","ThomasJeffersonBV",390,160);
-    await newRank("WoodsonAV","OaktonAV",340,110);
-    await newRank("RichardMontgomeryBJV","ThomasJeffersonEJV",280,220);
+    await newRank("ThomasJeffersonA","WhitmanA",290,220);
+    await newRank("PotomacA","ThomasJeffersonC",320,130);
+    await newRank("RichardMontgomeryA","ThomasJeffersonB",390,160);
+    await newRank("WoodsonA","OaktonA",340,110);
+    await newRank("RichardMontgomeryB","ThomasJeffersonE",280,220);
     //Playoffs
     //Varsity Semifinals
-    await newRank("ThomasJeffersonAV","WhitmanAV",400,160);
-    await newRank("RichardMontgomeryAV","ThomasJeffersonBV",450,90);
+    await newRank("ThomasJeffersonA","WhitmanA",400,160);
+    await newRank("RichardMontgomeryA","ThomasJeffersonB",450,90);
     //Varsity Finals
-    await newRank("RichardMontgomeryAV","ThomasJeffersonAV",290,280);
+    await newRank("RichardMontgomeryA","ThomasJeffersonA",290,280);
     //JV Finals
-    await newRank("RichardMontgomeryBJV","ThomasJeffersonDJV",300,200);
+    await newRank("RichardMontgomeryB","ThomasJeffersonD",300,200);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -8868,31 +8872,31 @@ async function bSetData() {
     //Idaho Falls B-Set
     //Prelims
     //Round 1
-    await newRank("HillcrestAV","ThunderRidgeBV",201,200);
-    await newRank("ThunderRidgeAV","IdahoFallsAV",270,200);
-    await newRank("ThunderRidgeCV","HillcrestBV",220,90);
+    await newRank("HillcrestA","ThunderRidgeB",201,200);
+    await newRank("ThunderRidgeA","IdahoFallsA",270,200);
+    await newRank("ThunderRidgeC","HillcrestB",220,90);
     //Round 2
-    await newRank("IdahoFallsAV","HillcrestAV",210,110);
-    await newRank("ThunderRidgeBV","HillcrestBV",330,20);
-    await newRank("ThunderRidgeAV","ThunderRidgeCV",290,20);
+    await newRank("IdahoFallsA","HillcrestA",210,110);
+    await newRank("ThunderRidgeB","HillcrestB",330,20);
+    await newRank("ThunderRidgeA","ThunderRidgeC",290,20);
     //Round 3
-    await newRank("HillcrestAV","HillcrestBV",280,30);
-    await newRank("IdahoFallsAV","ThunderRidgeCV",330,80);
-    await newRank("ThunderRidgeBV","ThunderRidgeAV",220,150);
+    await newRank("HillcrestA","HillcrestB",280,30);
+    await newRank("IdahoFallsA","ThunderRidgeC",330,80);
+    await newRank("ThunderRidgeB","ThunderRidgeA",220,150);
     //Round 4
-    await newRank("HillcrestAV","ThunderRidgeCV",220,110);
-    await newRank("ThunderRidgeAV","HillcrestBV",160,40);
-    await newRank("ThunderRidgeBV","IdahoFallsAV",210,140);
+    await newRank("HillcrestA","ThunderRidgeC",220,110);
+    await newRank("ThunderRidgeA","HillcrestB",160,40);
+    await newRank("ThunderRidgeB","IdahoFallsA",210,140);
     //Round 5
-    await newRank("ThunderRidgeBV","ThunderRidgeCV",130,110);
-    await newRank("IdahoFallsAV","HillcrestBV",290,70);
-    await newRank("ThunderRidgeAV","HillcrestAV",180,140);
+    await newRank("ThunderRidgeB","ThunderRidgeC",130,110);
+    await newRank("IdahoFallsA","HillcrestB",290,70);
+    await newRank("ThunderRidgeA","HillcrestA",180,140);
     //Playoffs
     //Semifinals
-    await newRank("ThunderRidgeAV","IdahoFallsAV",170,140);
-    await newRank("ThunderRidgeBV","HillcrestAV",110,70);
+    await newRank("ThunderRidgeA","IdahoFallsA",170,140);
+    await newRank("ThunderRidgeB","HillcrestA",110,70);
     //Finals
-    await newRank("ThunderRidgeAV","ThunderRidgeBV",180,50);
+    await newRank("ThunderRidgeA","ThunderRidgeB",180,50);
     allV.push(teamAvgV);
     teamAvgV = [];
     console.log("Idaho Falls B");
@@ -8901,14 +8905,14 @@ async function bSetData() {
     //Chattanooga B-Set
     //Prelims
     //Round 1
-    await newRank("RedBankAV","RedBankBV",210,30);
-    await newRank("SignalMountainBMS","SignalMountainDMS",170,150);
+    await newRank("RedBankA","RedBankB",210,30);
+    await newRank("SignalMountainB","SignalMountainD",170,150);
     //Round 2
-    await newRank("SignalMountainAV","RedBankAV",250,80);
-    await newRank("SignalMountainDMS","SignalMountainCMS",100,80);
+    await newRank("SignalMountainA","RedBankA",250,80);
+    await newRank("SignalMountainD","SignalMountainC",100,80);
     //Round 3
-    await newRank("SignalMountainAV","RedBankBV",290,30);
-    await newRank("SignalMountainBMS","SignalMountainCMS",190,90);
+    await newRank("SignalMountainA","RedBankB",290,30);
+    await newRank("SignalMountainB","SignalMountainC",190,90);
     allV.push(teamAvgV);
     allMS.push(teamAvgMS);
     teamAvgV = [];
@@ -8918,37 +8922,37 @@ async function bSetData() {
     //Spokane B-Set
     //Prelims
     //Round 1
-    await newRank("GonzagaAV","EastValleyDJV",430,10);
-    await newRank("MtSpokaneBV","EastValleyBV",260,90);
-    await newRank("LewisandClarkAV","EastValleyAV",230,130);
-    await newRank("MtSpokaneAV","EastValleyCJV",250,50);
+    await newRank("GonzagaA","EastValleyD",430,10);
+    await newRank("MtSpokaneB","EastValleyB",260,90);
+    await newRank("LewisandClarkA","EastValleyA",230,130);
+    await newRank("MtSpokaneA","EastValleyC",250,50);
     //Round 2
-    await newRank("GonzagaAV","EastValleyCJV",270,80);
-    await newRank("MtSpokaneBV","EastValleyAV",250,170);
-    await newRank("LewisandClarkAV","EastValleyBV",310,70);
-    await newRank("MtSpokaneAV","EastValleyDJV",300,30);
+    await newRank("GonzagaA","EastValleyC",270,80);
+    await newRank("MtSpokaneB","EastValleyA",250,170);
+    await newRank("LewisandClarkA","EastValleyB",310,70);
+    await newRank("MtSpokaneA","EastValleyD",300,30);
     //Round 3
-    await newRank("EastValleyBV","EastValleyCJV",180,90);
-    await newRank("GonzagaAV","MtSpokaneAV",340,140);
-    await newRank("EastValleyAV","EastValleyDJV",340,50);
-    await newRank("MtSpokaneBV","LewisandClarkAV",250,220);
+    await newRank("EastValleyB","EastValleyC",180,90);
+    await newRank("GonzagaA","MtSpokaneA",340,140);
+    await newRank("EastValleyA","EastValleyD",340,50);
+    await newRank("MtSpokaneB","LewisandClarkA",250,220);
     //Round 4
-    await newRank("MtSpokaneBV","EastValleyDJV",280,0);
-    await newRank("LewisandClarkAV","EastValleyCJV",300,40);
-    await newRank("GonzagaAV","EastValleyBV",310,80);
-    await newRank("MtSpokaneAV","EastValleyAV",230,140);
+    await newRank("MtSpokaneB","EastValleyD",280,0);
+    await newRank("LewisandClarkA","EastValleyC",300,40);
+    await newRank("GonzagaA","EastValleyB",310,80);
+    await newRank("MtSpokaneA","EastValleyA",230,140);
     //Round 5
-    await newRank("EastValleyAV","EastValleyBV",190,70);
-    await newRank("MtSpokaneAV","MtSpokaneBV",250,170);
-    await newRank("GonzagaAV","LewisandClarkAV",310,150);
-    await newRank("EastValleyCJV","EastValleyDJV",80,60);
+    await newRank("EastValleyA","EastValleyB",190,70);
+    await newRank("MtSpokaneA","MtSpokaneB",250,170);
+    await newRank("GonzagaA","LewisandClarkA",310,150);
+    await newRank("EastValleyC","EastValleyD",80,60);
     //Playoffs
     //Varsity Semifinals
-    await newRank("GonzagaAV","LewisandClarkAV",360,80);
-    await newRank("MtSpokaneAV","MtSpokaneBV",160,110);
-    await newRank("GonzagaAV","MtSpokaneAV",150,110);
+    await newRank("GonzagaA","LewisandClarkA",360,80);
+    await newRank("MtSpokaneA","MtSpokaneB",160,110);
+    await newRank("GonzagaA","MtSpokaneA",150,110);
     //JV Finals
-    await newRank("EastValleyCJV","EastValleyDJV",80,60);
+    await newRank("EastValleyC","EastValleyD",80,60);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -8959,211 +8963,211 @@ async function bSetData() {
     //New Jersey State B-Set
     //Prelims
     //Round 1
-    await newRank("GeorgeWashingtonAV","OratoryAV",440,180);
-    await newRank("HunterAV","MillburnCV",420,160);
-    await newRank("RanneyAV","WestMilfordAV",370,150);
-    await newRank("EastBrunswickAV","ParamusAV",390,150);
-    await newRank("EastBrunswickBV","DemarestBV",260,230);
-    await newRank("DemarestAV","TenaflyBV",300,180);
-    await newRank("MillburnAV","WestMilfordBV",520,60);
-    await newRank("RidgewoodBV","HewlettAV",500,120);
-    await newRank("RidgewoodAV","NorthHighlandsAV",290,170);
-    await newRank("MillburnBV","MCABV",280,240);
-    await newRank("HighTechAV","PascackHillsAV",490,70);
-    await newRank("RamseyAV","MCAAV",280,230);
-    await newRank("SetonHallAV","TenaflyAV",350,250);
-    await newRank("BethlehemAV","HewlettBV",320,210);
-    await newRank("HunterBJV","MillburnEJV",510,80);
-    await newRank("ChurchillNJAJV","HewlettDJV",420,170);
-    await newRank("BethlehemMSAJV","RidgewoodFJV",400,20);
-    await newRank("BergenAJV","HewlettCJV",380,120);
-    await newRank("KinnelonAJV","SetonHallBJV",280,170);
-    await newRank("HunterCJV","MillburnDJV",350,240);
-    await newRank("RidgewoodCJV","HighTechBJV",330,110);
-    await newRank("TenaflyCJV","RidgewoodDJV",350,150);
-    await newRank("RanneyBJV","RidgewoodEJV",270,60);
-    await newRank("TenaflyBMS","CavalliniBMS",161,160);
-    await newRank("TenaflyAMS","BenFranklinAMS",250,110);
-    await newRank("PEARLSAMS","TenaflyCMS",310,20);
-    await newRank("PrimorisAMS","HomeschoolAMS",160,90);
-    await newRank("CavalliniAMS","NyackAMS",120,70);
+    await newRank("GeorgeWashingtonWVA","OratoryA",440,180);
+    await newRank("HunterA","MillburnC",420,160);
+    await newRank("RanneyA","WestMilfordA",370,150);
+    await newRank("EastBrunswickA","ParamusA",390,150);
+    await newRank("EastBrunswickB","DemarestB",260,230);
+    await newRank("DemarestA","TenaflyB",300,180);
+    await newRank("MillburnA","WestMilfordB",520,60);
+    await newRank("RidgewoodB","HewlettA",500,120);
+    await newRank("RidgewoodA","NorthHighlandsA",290,170);
+    await newRank("MillburnB","MCAB",280,240);
+    await newRank("HighTechA","PascackHillsA",490,70);
+    await newRank("RamseyA","MCAA",280,230);
+    await newRank("SetonHallA","TenaflyA",350,250);
+    await newRank("BethlehemA","HewlettB",320,210);
+    await newRank("HunterB","MillburnE",510,80);
+    await newRank("ChurchillNJA","HewlettD",420,170);
+    await newRank("BethlehemMSA","RidgewoodF",400,20);
+    await newRank("BergenA","HewlettC",380,120);
+    await newRank("KinnelonA","SetonHallB",280,170);
+    await newRank("HunterC","MillburnD",350,240);
+    await newRank("RidgewoodC","HighTechB",330,110);
+    await newRank("TenaflyC","RidgewoodD",350,150);
+    await newRank("RanneyB","RidgewoodE",270,60);
+    await newRank("TenaflyB","CavalliniB",161,160);
+    await newRank("TenaflyA","BenFranklinA",250,110);
+    await newRank("PEARLSA","TenaflyC",310,20);
+    await newRank("PrimorisA","HomeschoolA",160,90);
+    await newRank("CavalliniA","NyackA",120,70);
     //Round 2
-    await newRank("HewlettBV","WestMilfordAV",320,130);
-    await newRank("GeorgeWashingtonAV","RanneyAV",370,210);
-    await newRank("OratoryAV","MillburnCV",340,150);
-    await newRank("HunterAV","PascackHillsAV",490,100);
-    await newRank("EastBrunswickAV","RamseyAV",410,160);
-    await newRank("ParamusAV","DemarestBV",200,150);
-    await newRank("EastBrunswickBV","TenaflyBV",210,170);
-    await newRank("MillburnAV","DemarestAV",540,90);
-    await newRank("RidgewoodBV","WestMilfordBV",470,70);
-    await newRank("HewlettAV","NorthHighlandsAV",250,130);
-    await newRank("MCABV","RidgewoodAV",220,210);
-    await newRank("HighTechAV","MillburnBV",400,130);
-    await newRank("TenaflyAV","BethlehemAV",300,220);
-    await newRank("SetonHallAV","MCAAV",410,130);
-    await newRank("RidgewoodDJV","RidgewoodEJV",290,70);
-    await newRank("HunterBJV","RanneyBJV",480,50);
-    await newRank("HewlettDJV","MillburnEJV",250,120);
-    await newRank("ChurchillNJAJV","BethlehemMSAJV",460,110);
-    await newRank("BergenAJV","RidgewoodFJV",380,30);
-    await newRank("HewlettCJV","SetonHallBJV",240,110);
-    await newRank("MillburnDJV","KinnelonAJV",300,150);
-    await newRank("HunterCJV","RidgewoodCJV",390,130);
-    await newRank("TenaflyCJV","HolmdelAJV",241,240);
-    await newRank("PrimorisAMS","CavalliniAMS",120,90);
-    await newRank("TenaflyBMS","NyackAMS",170,70);
-    await newRank("BenFranklinAMS","CavalliniBMS",150,90);
-    await newRank("TenaflyAMS","PEARLSAMS",160,130);
-    await newRank("MillburnAMS","HomeschoolAMS",210,40);
+    await newRank("HewlettB","WestMilfordA",320,130);
+    await newRank("GeorgeWashingtonWVA","RanneyA",370,210);
+    await newRank("OratoryA","MillburnC",340,150);
+    await newRank("HunterA","PascackHillsA",490,100);
+    await newRank("EastBrunswickA","RamseyA",410,160);
+    await newRank("ParamusA","DemarestB",200,150);
+    await newRank("EastBrunswickB","TenaflyB",210,170);
+    await newRank("MillburnA","DemarestA",540,90);
+    await newRank("RidgewoodB","WestMilfordB",470,70);
+    await newRank("HewlettA","NorthHighlandsA",250,130);
+    await newRank("MCAB","RidgewoodA",220,210);
+    await newRank("HighTechA","MillburnB",400,130);
+    await newRank("TenaflyA","BethlehemA",300,220);
+    await newRank("SetonHallA","MCAA",410,130);
+    await newRank("RidgewoodD","RidgewoodE",290,70);
+    await newRank("HunterB","RanneyB",480,50);
+    await newRank("HewlettD","MillburnE",250,120);
+    await newRank("ChurchillNJA","BethlehemMSA",460,110);
+    await newRank("BergenA","RidgewoodF",380,30);
+    await newRank("HewlettC","SetonHallB",240,110);
+    await newRank("MillburnD","KinnelonA",300,150);
+    await newRank("HunterC","RidgewoodC",390,130);
+    await newRank("TenaflyC","HolmdelA",241,240);
+    await newRank("PrimorisA","CavalliniA",120,90);
+    await newRank("TenaflyB","NyackA",170,70);
+    await newRank("BenFranklinA","CavalliniB",150,90);
+    await newRank("TenaflyA","PEARLSA",160,130);
+    await newRank("MillburnA","HomeschoolA",210,40);
     //Round 3
-    await newRank("BethlehemAV","MCAAV",310,240);
-    await newRank("TenaflyAV","WestMilfordAV",390,180);
-    await newRank("GeorgeWashingtonAV","HewlettBV",500,150);
-    await newRank("RanneyAV","MillburnCV",270,240);
-    await newRank("OratoryAV","PascackHillsAV",250,190);
-    await newRank("HunterAV","EastBrunswickAV",330,230);
-    await newRank("SetonHallAV","DemarestBV",340,150);
-    await newRank("ParamusAV","TenaflyBV",260,200);
-    await newRank("MillburnAV","EastBrunswickBV",490,160);
-    await newRank("RidgewoodBV","DemarestAV",400,160);
-    await newRank("NorthHighlandsAV","WestMilfordBV",210,170);
-    await newRank("MCABV","HewlettAV",260,240);
-    await newRank("HighTechAV","RidgewoodAV",460,100);
-    await newRank("RamseyAV","MillburnBV",300,240);
-    await newRank("TenaflyCJV","HighTechBJV",390,120);
-    await newRank("HolmdelAJV","RidgewoodEJV",360,50);
-    await newRank("HunterBJV","RidgewoodDJV",450,100);
-    await newRank("HewlettDJV","RanneyBJV",230,190);
-    await newRank("BethlehemMSAJV","MillburnEJV",250,210);
-    await newRank("ChurchillNJAJV","BergenAJV",330,170);
-    await newRank("SetonHallBJV","RidgewoodFJV",230,60);
-    await newRank("MillburnDJV","HewlettCJV",370,170);
-    await newRank("RidgewoodCJV","KinnelonAJV",220,210);
-    await newRank("TenaflyCMS","HomeschoolAMS",140,130);
-    await newRank("MillburnAMS","CavalliniAMS",310,80);
-    await newRank("PrimorisAMS","TenaflyBMS",210,130);
-    await newRank("BenFranklinAMS","NyackAMS",210,70);
-    await newRank("PEARLSAMS","CavalliniBMS",250,110);
-    await newRank("JohnAdamsAMS","TenaflyAMS",220,190);
+    await newRank("BethlehemA","MCAA",310,240);
+    await newRank("TenaflyA","WestMilfordA",390,180);
+    await newRank("GeorgeWashingtonWVA","HewlettB",500,150);
+    await newRank("RanneyA","MillburnC",270,240);
+    await newRank("OratoryA","PascackHillsA",250,190);
+    await newRank("HunterA","EastBrunswickA",330,230);
+    await newRank("SetonHallA","DemarestB",340,150);
+    await newRank("ParamusA","TenaflyB",260,200);
+    await newRank("MillburnA","EastBrunswickB",490,160);
+    await newRank("RidgewoodB","DemarestA",400,160);
+    await newRank("NorthHighlandsA","WestMilfordB",210,170);
+    await newRank("MCAB","HewlettA",260,240);
+    await newRank("HighTechA","RidgewoodA",460,100);
+    await newRank("RamseyA","MillburnB",300,240);
+    await newRank("TenaflyC","HighTechB",390,120);
+    await newRank("HolmdelA","RidgewoodE",360,50);
+    await newRank("HunterB","RidgewoodD",450,100);
+    await newRank("HewlettD","RanneyB",230,190);
+    await newRank("BethlehemMSA","MillburnE",250,210);
+    await newRank("ChurchillNJA","BergenA",330,170);
+    await newRank("SetonHallB","RidgewoodF",230,60);
+    await newRank("MillburnD","HewlettC",370,170);
+    await newRank("RidgewoodC","KinnelonA",220,210);
+    await newRank("TenaflyC","HomeschoolA",140,130);
+    await newRank("MillburnA","CavalliniA",310,80);
+    await newRank("PrimorisA","TenaflyB",210,130);
+    await newRank("BenFranklinA","NyackA",210,70);
+    await newRank("PEARLSA","CavalliniB",250,110);
+    await newRank("JohnAdamsA","TenaflyA",220,190);
     //Round 4
-    await newRank("SetonHallAV","MillburnBV",260,240);
-    await newRank("BethlehemAV","TenaflyBV",310,120);
-    await newRank("MCAAV","WestMilfordAV",270,160);
-    await newRank("GeorgeWashingtonAV","TenaflyAV",480,120);
-    await newRank("HewlettBV","MillburnCJV",240,150);
-    await newRank("RanneyAV","PascackHillsAV",320,120);
-    await newRank("EastBrunswickAV","OratoryAV",360,200);
-    await newRank("HunterAV","DemarestBV",530,70);
-    await newRank("RamseyAV","RidgewoodAV",230,190);
-    await newRank("MillburnAV","ParamusAV",440,140);
-    await newRank("RidgewoodBV","EastBrunswickBV",540,40);
-    await newRank("DemarestAV","NorthHighlandsAV",290,90);
-    await newRank("HighTechAV","HewlettAV",380,150);
-    await newRank("MCABV","WestMilfordBV",290,70);
-    await newRank("MillburnDJV","RidgewoodFJV",360,20);
-    await newRank("HunterCJV","TenaflyCJV",360,190);
-    await newRank("HewlettCJV","RidgewoodCJV",180,170);
-    await newRank("HunterBJV","HolmdelAJV",350,210);
-    await newRank("HewlettDJV","RidgewoodDJV",290,170);
-    await newRank("BethlehemMSAJV","RanneyBJV",190,100);
-    await newRank("BergenAJV","MillburnEJV",240,140);
-    await newRank("ChurchillNJAJV","SetonHallBJV",490,30);
-    await newRank("JohnAdamsAMS","CavalliniBMS",210,60);
-    await newRank("TenaflyAMS","HomeschoolAMS",210,60);
-    await newRank("CavalliniAMS","TenaflyCMS",90,50);
-    await newRank("MillburnAMS","TenaflyBMS",210,50);
-    await newRank("BenFranklinAMS","PrimorisAMS",140,90);
-    await newRank("PEARLSAMS","NyackAMS",220,40);
+    await newRank("SetonHallA","MillburnB",260,240);
+    await newRank("BethlehemA","TenaflyB",310,120);
+    await newRank("MCAA","WestMilfordA",270,160);
+    await newRank("GeorgeWashingtonWVA","TenaflyA",480,120);
+    await newRank("HewlettB","MillburnC",240,150);
+    await newRank("RanneyA","PascackHillsA",320,120);
+    await newRank("EastBrunswickA","OratoryA",360,200);
+    await newRank("HunterA","DemarestB",530,70);
+    await newRank("RamseyA","RidgewoodA",230,190);
+    await newRank("MillburnA","ParamusA",440,140);
+    await newRank("RidgewoodB","EastBrunswickB",540,40);
+    await newRank("DemarestA","NorthHighlandsA",290,90);
+    await newRank("HighTechA","HewlettA",380,150);
+    await newRank("MCAB","WestMilfordB",290,70);
+    await newRank("MillburnD","RidgewoodF",360,20);
+    await newRank("HunterC","TenaflyC",360,190);
+    await newRank("HewlettC","RidgewoodC",180,170);
+    await newRank("HunterB","HolmdelA",350,210);
+    await newRank("HewlettD","RidgewoodD",290,170);
+    await newRank("BethlehemMSA","RanneyB",190,100);
+    await newRank("BergenA","MillburnE",240,140);
+    await newRank("ChurchillNJA","SetonHallB",490,30);
+    await newRank("JohnAdamsA","CavalliniB",210,60);
+    await newRank("TenaflyA","HomeschoolA",210,60);
+    await newRank("CavalliniA","TenaflyC",90,50);
+    await newRank("MillburnA","TenaflyB",210,50);
+    await newRank("BenFranklinA","PrimorisA",140,90);
+    await newRank("PEARLSA","NyackA",220,40);
     //Round 5
-    await newRank("HewlettAV","RamseyAV",250,170);
-    await newRank("SetonHallAV","RidgewoodAV",440,120);
-    await newRank("MillburnBV","BethlehemAV",280,250);
-    await newRank("HighTechAV","WestMilfordBV",440,60);
-    await newRank("GeorgeWashingtonAV","MCAAV",510,110);
-    await newRank("TenaflyAV","MillburnCV",300,160);
-    await newRank("HewlettBV","PascackHillsAV",330,80);
-    await newRank("EastBrunswickAV","RanneyAV",360,130);
-    await newRank("OratoryAV","DemarestBV",230,190);
-    await newRank("HunterAV","TenaflyBV",380,140);
-    await newRank("MillburnAV","SetonHallBJV",480,70);
-    await newRank("RidgewoodBV","ParamusAV",430,90);
-    await newRank("EastBrunswickBV","NorthHighlandsAV",200,100);
-    await newRank("MCABV","DemarestAV",270,170);
-    await newRank("HewlettCJV","RidgewoodFJV",280,40);
-    await newRank("KinnelonAJV","TenaflyCJV",280,210);
-    await newRank("HunterBJV","HighTechBJV",410,80);
-    await newRank("HolmdelAJV","HewlettDJV",260,150);
-    await newRank("BethlehemMSAJV","RidgewoodDJV",240,200);
-    await newRank("BergenAJV","RanneyBJV",310,130);
-    await newRank("MillburnEJV","SetonHallBJV",230,150);
-    await newRank("ChurchillNJAJV","MillburnDJV",400,210);
-    await newRank("PEARLSAMS","PrimorisAMS",180,100);
-    await newRank("JohnAdamsAMS","NyackAMS",240,30);
-    await newRank("CavalliniBMS","HomeschoolAMS",190,40);
-    await newRank("TenaflyAMS","CavalliniAMS",310,60);
-    await newRank("BenFranklinAMS","TenaflyBMS",150,90);
-    await newRank("MillburnAMS","TenaflyCMS",200,60);
+    await newRank("HewlettA","RamseyA",250,170);
+    await newRank("SetonHallA","RidgewoodA",440,120);
+    await newRank("MillburnB","BethlehemA",280,250);
+    await newRank("HighTechA","WestMilfordB",440,60);
+    await newRank("GeorgeWashingtonWVA","MCAA",510,110);
+    await newRank("TenaflyA","MillburnC",300,160);
+    await newRank("HewlettB","PascackHillsA",330,80);
+    await newRank("EastBrunswickA","RanneyA",360,130);
+    await newRank("OratoryA","DemarestB",230,190);
+    await newRank("HunterA","TenaflyB",380,140);
+    await newRank("MillburnA","SetonHallB",480,70);
+    await newRank("RidgewoodB","ParamusA",430,90);
+    await newRank("EastBrunswickB","NorthHighlandsA",200,100);
+    await newRank("MCAB","DemarestA",270,170);
+    await newRank("HewlettC","RidgewoodF",280,40);
+    await newRank("KinnelonA","TenaflyC",280,210);
+    await newRank("HunterB","HighTechB",410,80);
+    await newRank("HolmdelA","HewlettD",260,150);
+    await newRank("BethlehemMSA","RidgewoodD",240,200);
+    await newRank("BergenA","RanneyB",310,130);
+    await newRank("MillburnE","SetonHallB",230,150);
+    await newRank("ChurchillNJA","MillburnD",400,210);
+    await newRank("PEARLSA","PrimorisA",180,100);
+    await newRank("JohnAdamsA","NyackA",240,30);
+    await newRank("CavalliniB","HomeschoolA",190,40);
+    await newRank("TenaflyA","CavalliniA",310,60);
+    await newRank("BenFranklinA","TenaflyB",150,90);
+    await newRank("MillburnA","TenaflyC",200,60);
     //Playoffs
     //Varsity Playoffs
     //Round of 26
-    await newRank("EastBrunswickAV","WestMilfordAV",390,60);
-    await newRank("MCABV","DemarestBV",200,120);
-    await newRank("BethlehemAV","TenaflyBV",270,90);
-    await newRank("TenaflyAV","MillburnCV",380,70);
-    await newRank("RanneyAV","NorthernHighlandsAV",300,50);
-    await newRank("HewlettBV","RidgewoodAV",250,90);
-    await newRank("OratoryAV","MCAAV",210,200);
-    await newRank("RamseyAV","ParamusAV",290,170);
-    await newRank("DemarestAV","EastBrunswickBV",310,90);
-    await newRank("MillburnBV","HewlettAV",240,180);
+    await newRank("EastBrunswickA","WestMilfordA",390,60);
+    await newRank("MCAB","DemarestB",200,120);
+    await newRank("BethlehemA","TenaflyB",270,90);
+    await newRank("TenaflyA","MillburnC",380,70);
+    await newRank("RanneyA","NorthernHighlandsA",300,50);
+    await newRank("HewlettB","RidgewoodA",250,90);
+    await newRank("OratoryA","MCAA",210,200);
+    await newRank("RamseyA","ParamusA",290,170);
+    await newRank("DemarestA","EastBrunswickB",310,90);
+    await newRank("MillburnB","HewlettA",240,180);
     //Octofinals
-    await newRank("MillburnAV","MillburnBV",400,120);
-    await newRank("RidgewoodBV","DemarestAV",330,160);
-    await newRank("GeorgeWashingtonAV","RamseyAV",490,100);
-    await newRank("HighTechAV","OratoryAV",320,190);
-    await newRank("HunterAV","HewlettBV",400,80);
-    await newRank("SetonHallAV","RanneyAV",240,170);
-    await newRank("EastBrunswickAV","TenaflyAV",290,200);
-    await newRank("BethlehemAV","MCABV",230,160);
+    await newRank("MillburnA","MillburnB",400,120);
+    await newRank("RidgewoodB","DemarestA",330,160);
+    await newRank("GeorgeWashingtonWVA","RamseyA",490,100);
+    await newRank("HighTechA","OratoryA",320,190);
+    await newRank("HunterA","HewlettB",400,80);
+    await newRank("SetonHallA","RanneyA",240,170);
+    await newRank("EastBrunswickA","TenaflyA",290,200);
+    await newRank("BethlehemA","MCAB",230,160);
     //Quarterfinals
-    await newRank("MillburnAV","BethlehemAV",360,150);
-    await newRank("RidgewoodBV","EastBrunswickAV",250,210);
-    await newRank("GeorgeWashingtonAV","SetonHallAV",370,130);
-    await newRank("HunterAV","HighTechAV",290,220);
+    await newRank("MillburnA","BethlehemA",360,150);
+    await newRank("RidgewoodB","EastBrunswickA",250,210);
+    await newRank("GeorgeWashingtonWVA","SetonHallA",370,130);
+    await newRank("HunterA","HighTechA",290,220);
     //Semifinals
-    await newRank("HunterAV","MillburnAV",270,260);
-    await newRank("GeorgeWashingtonAV","RidgewoodAV",350,180);
+    await newRank("HunterA","MillburnA",270,260);
+    await newRank("GeorgeWashingtonWVA","RidgewoodA",350,180);
     //Finals
-    await newRank("HunterAV","GeorgeWashingtonAV",330,260);
+    await newRank("HunterA","GeorgeWashingtonWVA",330,260);
     //JV Playoffs
     //Octofinals
-    //await newRank("HunterCJV","MillburnEJV",1,0);
-    await newRank("MillburnDJV","RidgewoodDJV",300,80);
-    await newRank("BergenAJV","HewlettCJV",310,110);
-    await newRank("TenaflyCJV","RidgewoodCJV",340,60);
-    await newRank("HolmdelAJV","HewlettDJV",240,180);
-    await newRank("BethlehemMSAJV","KinnelonAJV",200,140);
+    //await newRank("HunterC","MillburnE",1,0);
+    await newRank("MillburnD","RidgewoodD",300,80);
+    await newRank("BergenA","HewlettC",310,110);
+    await newRank("TenaflyC","RidgewoodC",340,60);
+    await newRank("HolmdelA","HewlettD",240,180);
+    await newRank("BethlehemMSA","KinnelonA",200,140);
     //Quarterfinals
-    await newRank("HunterBJV","BethlehemMSAJV",340,150);
-    await newRank("ChurchillNJAJV","HolmdelAJV",360,140);
-    await newRank("HunterCJV","TenaflyCJV",380,130);
-    await newRank("MillburnDJV","BergenAJV",310,110);
+    await newRank("HunterB","BethlehemMSA",340,150);
+    await newRank("ChurchillNJA","HolmdelA",360,140);
+    await newRank("HunterC","TenaflyC",380,130);
+    await newRank("MillburnD","BergenA",310,110);
     //Semifinals
-    await newRank("HunterBJV","MillburnDJV",280,190);
-    await newRank("HunterCJV","ChurchillNJAJV",280,230);
+    await newRank("HunterB","MillburnD",280,190);
+    await newRank("HunterC","ChurchillNJA",280,230);
     //Finals
-    await newRank("HunterBJV","HunterCJV",280,220);
+    await newRank("HunterB","HunterC",280,220);
     //MS Playoffs
     //Quarterfinals
-    await newRank("TenaflyAMS","TenaflyBMS",340,80);
-    await newRank("MillburnAMS","CavalliniBMS",220,50);
-    await newRank("PEARLSAMS","PrimorisAMS",200,70);
-    await newRank("JohnAdamsAMS","BenFranklinAMS",230,70);
+    await newRank("TenaflyA","TenaflyB",340,80);
+    await newRank("MillburnA","CavalliniB",220,50);
+    await newRank("PEARLSA","PrimorisA",200,70);
+    await newRank("JohnAdamsA","BenFranklinA",230,70);
     //Semifinals
-    await newRank("MillburnAMS","PEARLSAMS",140,120);
-    await newRank("JohnAdamsAMS","TenaflyAMS",180,120);
-    await newRank("JohnAdamsAMS","MillburnAMS",140,120);
+    await newRank("MillburnA","PEARLSA",140,120);
+    await newRank("JohnAdamsA","TenaflyA",180,120);
+    await newRank("JohnAdamsA","MillburnA",140,120);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     allMS.push(teamAvgMS);
@@ -9177,41 +9181,41 @@ async function bSetData() {
     //Central Georgia Winter B-Set
     //Prelims
     //Round 1
-    await newRank("StarrsMillAV","DeerfieldWindsorAV",380,90);
-    await newRank("StarrsMillBV","JacksonAV",350,80);
-    await newRank("TJClassicAV","StarrsMillEV",450,90);
-    await newRank("WandoAJV","StarrsMillCV",260,150);
-    await newRank("StarrsMillDV","NortheastAJV");
+    await newRank("StarrsMillA","DeerfieldWindsorA",380,90);
+    await newRank("StarrsMillB","JacksonA",350,80);
+    await newRank("TJClassicA","StarrsMillE",450,90);
+    await newRank("WandoA","StarrsMillC",260,150);
+    await newRank("StarrsMillD","NortheastA");
     //Round 2
-    await newRank("StarrsMillDV","JacksonAV",200,120);
-    await newRank("StarrsMillBV","StarrsMillCV",240,100);
-    await newRank("StarrsMillAV","StarrsMillEV",390,90);
-    await newRank("TJClassicAV","NortheastAJV",390,20);
-    await newRank("WandoAJV","DeerfieldWindsorAV",240,100);
+    await newRank("StarrsMillD","JacksonA",200,120);
+    await newRank("StarrsMillB","StarrsMillC",240,100);
+    await newRank("StarrsMillA","StarrsMillE",390,90);
+    await newRank("TJClassicA","NortheastA",390,20);
+    await newRank("WandoA","DeerfieldWindsorA",240,100);
     //Round 3
-    await newRank("StarrsMillBV","JacksonAV",280,100);
-    await newRank("StarrsMillAV","StarrsMillDV",400,80);
-    await newRank("DeerfieldWindsorAV","StarrsMillCV",260,160);
-    await newRank("StarrsMillEV","NortheastAJV",260,50);
-    await newRank("TJClassicAV","WandoAJV",20,130);
+    await newRank("StarrsMillB","JacksonA",280,100);
+    await newRank("StarrsMillA","StarrsMillD",400,80);
+    await newRank("DeerfieldWindsorA","StarrsMillC",260,160);
+    await newRank("StarrsMillE","NortheastA",260,50);
+    await newRank("TJClassicA","WandoA",20,130);
     //Round 4
-    await newRank("StarrsMillCV","StarrsMillDV",130,110);
-    await newRank("StarrsMillAV","JacksonAV",370,20);
-    await newRank("DeerfieldWindsorAV","StarrsMillEV",190,130);
-    await newRank("TJClassicAV","StarrsMillBV",360,130);
-    await newRank("WandoAJV","NortheastAJV",260,30);
+    await newRank("StarrsMillC","StarrsMillD",130,110);
+    await newRank("StarrsMillA","JacksonA",370,20);
+    await newRank("DeerfieldWindsorA","StarrsMillE",190,130);
+    await newRank("TJClassicA","StarrsMillB",360,130);
+    await newRank("WandoA","NortheastA",260,30);
     //Round 5
-    await newRank("DeerfieldWindsorAV","JacksonAV",230,20);
-    await newRank("StarrsMillBV","StarrsMillCV",330,60);
-    await newRank("StarrsMillAV","TJClassicAV",250,220);
-    await newRank("StarrsMillDV","StarrsMillEV",140,130);
-    await newRank("WandoAJV","NortheastAJV",280,50);
+    await newRank("DeerfieldWindsorA","JacksonA",230,20);
+    await newRank("StarrsMillB","StarrsMillC",330,60);
+    await newRank("StarrsMillA","TJClassicA",250,220);
+    await newRank("StarrsMillD","StarrsMillE",140,130);
+    await newRank("WandoA","NortheastA",280,50);
     //Playoffs
     //Varsity Semifinals
-    await newRank("StarrsMillAV","DeerfieldWindsorAV",350,50);
-    await newRank("TJClassicAV","StarrsMillBV",310,130);
+    await newRank("StarrsMillA","DeerfieldWindsorA",350,50);
+    await newRank("TJClassicA","StarrsMillB",310,130);
     //Varsity Finals
-    await newRank("TJClassicAV","StarrsMillAV",240,190);
+    await newRank("TJClassicA","StarrsMillA",240,190);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
@@ -9231,46 +9235,46 @@ async function bSetData() {
     //Western New York B-Set
     //Prelims
     //Round 1
-    await newRank("FayettevilleManliusAV","IroquoisAV",250,240);
-    await newRank("IthacaAV","IroquoisBV",410,60);
-    await newRank("NicholsAV","NicholsBV",360,70);
-    await newRank("IthacaBJV","SacredHeartAJV",380,20);
-    await newRank("ParkSchoolAJV","IroquoisCJV",320,40);
+    await newRank("FayettevilleManliusA","IroquoisA",250,240);
+    await newRank("IthacaA","IroquoisB",410,60);
+    await newRank("NicholsA","NicholsB",360,70);
+    await newRank("IthacaB","SacredHeartA",380,20);
+    await newRank("ParkSchoolA","IroquoisC",320,40);
     //Round 2
-    await newRank("FayettevilleManliusAV","IroquoisBV",410,60);
-    await newRank("IthacaAV","NicholsAV",350,160);
-    await newRank("IroquoisAV","NicholsBV",260,160);
-    await newRank("IthacaBJV","ParkSchoolAJV",240,200);
-    await newRank("IroquoisCJV","SacredHeartBJV",90,80);
+    await newRank("FayettevilleManliusA","IroquoisB",410,60);
+    await newRank("IthacaA","NicholsA",350,160);
+    await newRank("IroquoisA","NicholsB",260,160);
+    await newRank("IthacaB","ParkSchoolA",240,200);
+    await newRank("IroquoisC","SacredHeartB",90,80);
     //Round 3
-    await newRank("NicholsAV","IroquoisAV",260,230);
-    await newRank("IthacaAV","FayettevilleManliusAV",370,150);
-    await newRank("NicholsBV","IroquoisBV",250,150);
-    await newRank("SacredHeartAJV","SacredHeartBJV",150,100);
-    await newRank("IthacaBJV","IroquoisCJV",380,30);
+    await newRank("NicholsA","IroquoisA",260,230);
+    await newRank("IthacaA","FayettevilleManliusA",370,150);
+    await newRank("NicholsB","IroquoisB",250,150);
+    await newRank("SacredHeartA","SacredHeartB",150,100);
+    await newRank("IthacaB","IroquoisC",380,30);
     //Round 4
-    await newRank("IthacaAV","IroquoisAV",330,190);
-    await newRank("NicholsAV","IroquoisBV",250,110);
-    await newRank("FayettevilleManliusAV","NicholsBV",270,110);
-    await newRank("SacredHeartAJV","IroquoisCJV",100,20);
-    await newRank("ParkSchoolAJV","SacredHeartBJV",210,40);
+    await newRank("IthacaA","IroquoisA",330,190);
+    await newRank("NicholsA","IroquoisB",250,110);
+    await newRank("FayettevilleManliusA","NicholsB",270,110);
+    await newRank("SacredHeartA","IroquoisC",100,20);
+    await newRank("ParkSchoolA","SacredHeartB",210,40);
     //Round 5
-    await newRank("NicholsAV","FayettevilleManliusAV",250,180);
-    await newRank("IroquoisAV","IroquoisBV",230,180);
-    await newRank("IthacaAV","NicholsBV",400,60);
-    await newRank("IthacaBJV","SacredHeartBJV",230,30);
-    await newRank("ParkSchoolAJV","SacredHeartAJV",230,50);
+    await newRank("NicholsA","FayettevilleManliusA",250,180);
+    await newRank("IroquoisA","IroquoisB",230,180);
+    await newRank("IthacaA","NicholsB",400,60);
+    await newRank("IthacaB","SacredHeartB",230,30);
+    await newRank("ParkSchoolA","SacredHeartA",230,50);
     //Playoffs
     //Varsity Semifinals
-    await newRank("IthacaAV","IroquoisAV",420,80);
-    await newRank("FayettevilleManliusAV","NicholsAV",220,210);
+    await newRank("IthacaA","IroquoisA",420,80);
+    await newRank("FayettevilleManliusA","NicholsA",220,210);
     //Varsity Finals
-    await newRank("IthacaAV","FayettevilleManliusAV",360,110);
+    await newRank("IthacaA","FayettevilleManliusA",360,110);
     //JV Semifinals
-    await newRank("IthacaBJV","IroquoisCJV",210,30);
-    await newRank("ParkSchoolAJV","SacredHeartAJV",160,40);
+    await newRank("IthacaB","IroquoisC",210,30);
+    await newRank("ParkSchoolA","SacredHeartA",160,40);
     //JV Finals
-    await newRank("IthacaBJV","ParkSchoolAJV",180,140);
+    await newRank("IthacaB","ParkSchoolA",180,140);
     console.log("WestNY B q V: "+qV[a2]);
     console.log("WestNY B q JV: "+qJV[b2]);
     a = 0;
@@ -9281,33 +9285,33 @@ async function bSetData() {
     //Hawaii State B-Set
     //Prelims
     //Round 1
-    await newRank("IolaniBV","PunahouBJV",340,60);
-    await newRank("IolaniAV","PunahouAV",320,200);
-    await newRank("McKinleyAV","IolaniCJV",220,140);
+    await newRank("IolaniB","PunahouB",340,60);
+    await newRank("IolaniA","PunahouA",320,200);
+    await newRank("McKinleyA","IolaniC",220,140);
     //Round 2
-    await newRank("IolaniAV","IolaniBV",370,140);
-    await newRank("McKinleyAV","PunahouBJV",150,110);
-    await newRank("PunahouAV","IolaniCJV",320,90);
+    await newRank("IolaniA","IolaniB",370,140);
+    await newRank("McKinleyA","PunahouB",150,110);
+    await newRank("PunahouA","IolaniC",320,90);
     //Round 3
-    await newRank("PunahouAV","PunahouBJV",380,50);
-    await newRank("IolaniAV","IolaniCJV",370,70);
-    await newRank("IolaniBV","McKinleyAV",300,120);
+    await newRank("PunahouA","PunahouB",380,50);
+    await newRank("IolaniA","IolaniC",370,70);
+    await newRank("IolaniB","McKinleyA",300,120);
     //Round 4
-    await newRank("PunahouAV","IolaniBV",290,120);
-    await newRank("IolaniCJV","PunahouBJV",100,80);
-    await newRank("IolaniAV","McKinleyAV",540,40);
+    await newRank("PunahouA","IolaniB",290,120);
+    await newRank("IolaniC","PunahouB",100,80);
+    await newRank("IolaniA","McKinleyA",540,40);
     //Round 5
-    await newRank("IolaniAV","PunahouBJV",400,60);
-    await newRank("IolaniBV","IolaniCJV",250,20);
-    await newRank("PunahouAV","McKinleyAV",350,70);
+    await newRank("IolaniA","PunahouB",400,60);
+    await newRank("IolaniB","IolaniC",250,20);
+    await newRank("PunahouA","McKinleyA",350,70);
     //Playoffs
     //Varsity Semifinals
-    await newRank("IolaniAV","McKinleyAV",430,20);
-    await newRank("PunahouAV","IolaniBV",270,150);
+    await newRank("IolaniA","McKinleyA",430,20);
+    await newRank("PunahouA","IolaniB",270,150);
     //Varsity Finals
-    await newRank("IolaniAV","PunahouAV",320,120);
+    await newRank("IolaniA","PunahouA",320,120);
     //JV Finals
-    await newRank("IolaniCJV","PunahouBJV",110,90);
+    await newRank("IolaniC","PunahouB",110,90);
     console.log("Hawaii B q V: "+qV[a2]);
     console.log("Hawaii B q JV: "+qJV[b2]);
     a = 0;
@@ -9318,43 +9322,43 @@ async function bSetData() {
     //Northern Virginia B-Set
     //Prelims
     //Round 1
-    await newRank("RichardMontgomeryAV","OaktonAV",390,170);
-    await newRank("WhitmanAV","OaktonBV",430,100);
-    await newRank("ThomasJeffersonAV","PotomacAV",360,200);
-    await newRank("ThomasJeffersonBV","ThomasJeffersonCV",350,160);
-    await newRank("RichardMontgomeryBJV","ThomasJeffersonDJV",360,200);
+    await newRank("RichardMontgomeryA","OaktonA",390,170);
+    await newRank("WhitmanA","OaktonB",430,100);
+    await newRank("ThomasJeffersonA","PotomacA",360,200);
+    await newRank("ThomasJeffersonB","ThomasJeffersonC",350,160);
+    await newRank("RichardMontgomeryB","ThomasJeffersonD",360,200);
     //Round 2
-    await newRank("ThomasJeffersonBV","WoodsonAV",310,200);
-    await newRank("RichardMontgomeryAV","PotomacAV",400,180);
-    await newRank("WhitmanAV","ThomasJeffersonCV",370,130);
-    await newRank("OaktonBV","OaktonAV",210,160);
-    await newRank("RichardMontgomeryBJV","ThomasJeffersonEJV",400,140);
+    await newRank("ThomasJeffersonB","WoodsonA",310,200);
+    await newRank("RichardMontgomeryA","PotomacA",400,180);
+    await newRank("WhitmanA","ThomasJeffersonC",370,130);
+    await newRank("OaktonB","OaktonA",210,160);
+    await newRank("RichardMontgomeryB","ThomasJeffersonE",400,140);
     //Round 3
-    await newRank("ThomasJeffersonAV","OaktonAV",490,90);
-    await newRank("RichardMontgomeryAV","WhitmanAV",420,170);
-    await newRank("PotomacAV","WoodsonAV",270,240);
-    await newRank("ThomasJeffersonBV","OaktonBV",330,130);
-    await newRank("ThomasJeffersonDJV","ThomasJeffersonEJV",340,210);
+    await newRank("ThomasJeffersonA","OaktonA",490,90);
+    await newRank("RichardMontgomeryA","WhitmanA",420,170);
+    await newRank("PotomacA","WoodsonA",270,240);
+    await newRank("ThomasJeffersonB","OaktonB",330,130);
+    await newRank("ThomasJeffersonD","ThomasJeffersonE",340,210);
     //Round 4
-    await newRank("PotomacAV","OaktonBV",320,100);
-    await newRank("ThomasJeffersonAV","ThomasJeffersonBV",380,150);
-    await newRank("ThomasJeffersonCV","OaktonAV",210,110);
-    await newRank("WhitmanAV","WoodsonAV",320,160);
-    await newRank("ThomasJeffersonDJV","RichardMontgomeryBJV",270,250);
+    await newRank("PotomacA","OaktonB",320,100);
+    await newRank("ThomasJeffersonA","ThomasJeffersonB",380,150);
+    await newRank("ThomasJeffersonC","OaktonA",210,110);
+    await newRank("WhitmanA","WoodsonA",320,160);
+    await newRank("ThomasJeffersonD","RichardMontgomeryB",270,250);
     //Round 5
-    await newRank("ThomasJeffersonAV","WhitmanAV",290,220);
-    await newRank("PotomacAV","ThomasJeffersonCV",320,130);
-    await newRank("RichardMontgomeryAV","ThomasJeffersonBV",390,160);
-    await newRank("WoodsonAV","OaktonAV",340,110);
-    await newRank("RichardMontgomeryBJV","ThomasJeffersonEJV",280,220);
+    await newRank("ThomasJeffersonA","WhitmanA",290,220);
+    await newRank("PotomacA","ThomasJeffersonC",320,130);
+    await newRank("RichardMontgomeryA","ThomasJeffersonB",390,160);
+    await newRank("WoodsonA","OaktonA",340,110);
+    await newRank("RichardMontgomeryB","ThomasJeffersonE",280,220);
     //Playoffs
     //Varsity Semifinals
-    await newRank("ThomasJeffersonAV","WhitmanAV",400,160);
-    await newRank("RichardMontgomeryAV","ThomasJeffersonBV",450,90);
+    await newRank("ThomasJeffersonA","WhitmanA",400,160);
+    await newRank("RichardMontgomeryA","ThomasJeffersonB",450,90);
     //Varsity Finals
-    await newRank("RichardMontgomeryAV","ThomasJeffersonAV",290,280);
+    await newRank("RichardMontgomeryA","ThomasJeffersonA",290,280);
     //JV Finals
-    await newRank("RichardMontgomeryBJV","ThomasJeffersonDJV",300,200);
+    await newRank("RichardMontgomeryB","ThomasJeffersonD",300,200);
     console.log("NoVa B q V: "+qV[a2]);
     console.log("NoVa B q JV: "+qJV[b2]);
     a = 0;
@@ -9364,31 +9368,31 @@ async function bSetData() {
     //Idaho Falls B-Set
     //Prelims
     //Round 1
-    await newRank("HillcrestAV","ThunderRidgeBV",201,200);
-    await newRank("ThunderRidgeAV","IdahoFallsAV",270,200);
-    await newRank("ThunderRidgeCV","HillcrestBV",220,90);
+    await newRank("HillcrestA","ThunderRidgeB",201,200);
+    await newRank("ThunderRidgeA","IdahoFallsA",270,200);
+    await newRank("ThunderRidgeC","HillcrestB",220,90);
     //Round 2
-    await newRank("IdahoFallsAV","HillcrestAV",210,110);
-    await newRank("ThunderRidgeBV","HillcrestBV",330,20);
-    await newRank("ThunderRidgeAV","ThunderRidgeCV",290,20);
+    await newRank("IdahoFallsA","HillcrestA",210,110);
+    await newRank("ThunderRidgeB","HillcrestB",330,20);
+    await newRank("ThunderRidgeA","ThunderRidgeC",290,20);
     //Round 3
-    await newRank("HillcrestAV","HillcrestBV",280,30);
-    await newRank("IdahoFallsAV","ThunderRidgeCV",330,80);
-    await newRank("ThunderRidgeBV","ThunderRidgeAV",220,150);
+    await newRank("HillcrestA","HillcrestB",280,30);
+    await newRank("IdahoFallsA","ThunderRidgeC",330,80);
+    await newRank("ThunderRidgeB","ThunderRidgeA",220,150);
     //Round 4
-    await newRank("HillcrestAV","ThunderRidgeCV",220,110);
-    await newRank("ThunderRidgeAV","HillcrestBV",160,40);
-    await newRank("ThunderRidgeBV","IdahoFallsAV",210,140);
+    await newRank("HillcrestA","ThunderRidgeC",220,110);
+    await newRank("ThunderRidgeA","HillcrestB",160,40);
+    await newRank("ThunderRidgeB","IdahoFallsA",210,140);
     //Round 5
-    await newRank("ThunderRidgeBV","ThunderRidgeCV",130,110);
-    await newRank("IdahoFallsAV","HillcrestBV",290,70);
-    await newRank("ThunderRidgeAV","HillcrestAV",180,140);
+    await newRank("ThunderRidgeB","ThunderRidgeC",130,110);
+    await newRank("IdahoFallsA","HillcrestB",290,70);
+    await newRank("ThunderRidgeA","HillcrestA",180,140);
     //Playoffs
     //Semifinals
-    await newRank("ThunderRidgeAV","IdahoFallsAV",170,140);
-    await newRank("ThunderRidgeBV","HillcrestAV",110,70);
+    await newRank("ThunderRidgeA","IdahoFallsA",170,140);
+    await newRank("ThunderRidgeB","HillcrestA",110,70);
     //Finals
-    await newRank("ThunderRidgeAV","ThunderRidgeBV",180,50);
+    await newRank("ThunderRidgeA","ThunderRidgeB",180,50);
     console.log("Idaho Falls B q V: "+qV[a2]);
     a = 0;
 
@@ -9397,14 +9401,14 @@ async function bSetData() {
     //Chattanooga B-Set
     //Prelims
     //Round 1
-    await newRank("RedBankAV","RedBankBV",210,30);
-    await newRank("SignalMountainBMS","SignalMountainDMS",170,150);
+    await newRank("RedBankA","RedBankB",210,30);
+    await newRank("SignalMountainB","SignalMountainD",170,150);
     //Round 2
-    await newRank("SignalMountainAV","RedBankAV",250,80);
-    await newRank("SignalMountainDMS","SignalMountainCMS",100,80);
+    await newRank("SignalMountainA","RedBankA",250,80);
+    await newRank("SignalMountainD","SignalMountainC",100,80);
     //Round 3
-    await newRank("SignalMountainAV","RedBankBV",290,30);
-    await newRank("SignalMountainBMS","SignalMountainCMS",190,90);
+    await newRank("SignalMountainA","RedBankB",290,30);
+    await newRank("SignalMountainB","SignalMountainC",190,90);
     console.log("Chattanooga B q V: "+qV[a2]);
     console.log("Chattanooga B q MS: "+qMS[c2]);
     a = 0;
@@ -9415,37 +9419,37 @@ async function bSetData() {
     //Spokane B-Set
     //Prelims
     //Round 1
-    await newRank("GonzagaAV","EastValleyDJV",430,10);
-    await newRank("MtSpokaneBV","EastValleyBV",260,90);
-    await newRank("LewisandClarkAV","EastValleyAV",230,130);
-    await newRank("MtSpokaneAV","EastValleyCJV",250,50);
+    await newRank("GonzagaA","EastValleyD",430,10);
+    await newRank("MtSpokaneB","EastValleyB",260,90);
+    await newRank("LewisandClarkA","EastValleyA",230,130);
+    await newRank("MtSpokaneA","EastValleyC",250,50);
     //Round 2
-    await newRank("GonzagaAV","EastValleyCJV",270,80);
-    await newRank("MtSpokaneBV","EastValleyAV",250,170);
-    await newRank("LewisandClarkAV","EastValleyBV",310,70);
-    await newRank("MtSpokaneAV","EastValleyDJV",300,30);
+    await newRank("GonzagaA","EastValleyC",270,80);
+    await newRank("MtSpokaneB","EastValleyA",250,170);
+    await newRank("LewisandClarkA","EastValleyB",310,70);
+    await newRank("MtSpokaneA","EastValleyD",300,30);
     //Round 3
-    await newRank("EastValleyBV","EastValleyCJV",180,90);
-    await newRank("GonzagaAV","MtSpokaneAV",340,140);
-    await newRank("EastValleyAV","EastValleyDJV",340,50);
-    await newRank("MtSpokaneBV","LewisandClarkAV",250,220);
+    await newRank("EastValleyB","EastValleyC",180,90);
+    await newRank("GonzagaA","MtSpokaneA",340,140);
+    await newRank("EastValleyA","EastValleyD",340,50);
+    await newRank("MtSpokaneB","LewisandClarkA",250,220);
     //Round 4
-    await newRank("MtSpokaneBV","EastValleyDJV",280,0);
-    await newRank("LewisandClarkAV","EastValleyCJV",300,40);
-    await newRank("GonzagaAV","EastValleyBV",310,80);
-    await newRank("MtSpokaneAV","EastValleyAV",230,140);
+    await newRank("MtSpokaneB","EastValleyD",280,0);
+    await newRank("LewisandClarkA","EastValleyC",300,40);
+    await newRank("GonzagaA","EastValleyB",310,80);
+    await newRank("MtSpokaneA","EastValleyA",230,140);
     //Round 5
-    await newRank("EastValleyAV","EastValleyBV",190,70);
-    await newRank("MtSpokaneAV","MtSpokaneBV",250,170);
-    await newRank("GonzagaAV","LewisandClarkAV",310,150);
-    await newRank("EastValleyCJV","EastValleyDJV",80,60);
+    await newRank("EastValleyA","EastValleyB",190,70);
+    await newRank("MtSpokaneA","MtSpokaneB",250,170);
+    await newRank("GonzagaA","LewisandClarkA",310,150);
+    await newRank("EastValleyC","EastValleyD",80,60);
     //Playoffs
     //Varsity Semifinals
-    await newRank("GonzagaAV","LewisandClarkAV",360,80);
-    await newRank("MtSpokaneAV","MtSpokaneBV",160,110);
-    await newRank("GonzagaAV","MtSpokaneAV",150,110);
+    await newRank("GonzagaA","LewisandClarkA",360,80);
+    await newRank("MtSpokaneA","MtSpokaneB",160,110);
+    await newRank("GonzagaA","MtSpokaneA",150,110);
     //JV Finals
-    await newRank("EastValleyCJV","EastValleyDJV",80,60);
+    await newRank("EastValleyC","EastValleyD",80,60);
     console.log("Spokane B q V: "+qV[a2]);
     console.log("Spokane B q JV: "+qJV[b2]);
     a = 0;
@@ -9457,211 +9461,211 @@ async function bSetData() {
     //New Jersey State B-Set
     //Prelims
     //Round 1
-    await newRank("GeorgeWashingtonAV","OratoryAV",440,180);
-    await newRank("HunterAV","MillburnCV",420,160);
-    await newRank("RanneyAV","WestMilfordAV",370,150);
-    await newRank("EastBrunswickAV","ParamusAV",390,150);
-    await newRank("EastBrunswickBV","DemarestBV",260,230);
-    await newRank("DemarestAV","TenaflyBV",300,180);
-    await newRank("MillburnAV","WestMilfordBV",520,60);
-    await newRank("RidgewoodBV","HewlettAV",500,120);
-    await newRank("RidgewoodAV","NorthHighlandsAV",290,170);
-    await newRank("MillburnBV","MCABV",280,240);
-    await newRank("HighTechAV","PascackHillsAV",490,70);
-    await newRank("RamseyAV","MCAAV",280,230);
-    await newRank("SetonHallAV","TenaflyAV",350,250);
-    await newRank("BethlehemAV","HewlettBV",320,210);
-    await newRank("HunterBJV","MillburnEJV",510,80);
-    await newRank("ChurchillNJAJV","HewlettDJV",420,170);
-    await newRank("BethlehemMSAJV","RidgewoodFJV",400,20);
-    await newRank("BergenAJV","HewlettCJV",380,120);
-    await newRank("KinnelonAJV","SetonHallBJV",280,170);
-    await newRank("HunterCJV","MillburnDJV",350,240);
-    await newRank("RidgewoodCJV","HighTechBJV",330,110);
-    await newRank("TenaflyCJV","RidgewoodDJV",350,150);
-    await newRank("RanneyBJV","RidgewoodEJV",270,60);
-    await newRank("TenaflyBMS","CavalliniBMS",161,160);
-    await newRank("TenaflyAMS","BenFranklinAMS",250,110);
-    await newRank("PEARLSAMS","TenaflyCMS",310,20);
-    await newRank("PrimorisAMS","HomeschoolAMS",160,90);
-    await newRank("CavalliniAMS","NyackAMS",120,70);
+    await newRank("GeorgeWashingtonWVA","OratoryA",440,180);
+    await newRank("HunterA","MillburnC",420,160);
+    await newRank("RanneyA","WestMilfordA",370,150);
+    await newRank("EastBrunswickA","ParamusA",390,150);
+    await newRank("EastBrunswickB","DemarestB",260,230);
+    await newRank("DemarestA","TenaflyB",300,180);
+    await newRank("MillburnA","WestMilfordB",520,60);
+    await newRank("RidgewoodB","HewlettA",500,120);
+    await newRank("RidgewoodA","NorthHighlandsA",290,170);
+    await newRank("MillburnB","MCAB",280,240);
+    await newRank("HighTechA","PascackHillsA",490,70);
+    await newRank("RamseyA","MCAA",280,230);
+    await newRank("SetonHallA","TenaflyA",350,250);
+    await newRank("BethlehemA","HewlettB",320,210);
+    await newRank("HunterB","MillburnE",510,80);
+    await newRank("ChurchillNJA","HewlettD",420,170);
+    await newRank("BethlehemMSA","RidgewoodF",400,20);
+    await newRank("BergenA","HewlettC",380,120);
+    await newRank("KinnelonA","SetonHallB",280,170);
+    await newRank("HunterC","MillburnD",350,240);
+    await newRank("RidgewoodC","HighTechB",330,110);
+    await newRank("TenaflyC","RidgewoodD",350,150);
+    await newRank("RanneyB","RidgewoodE",270,60);
+    await newRank("TenaflyB","CavalliniB",161,160);
+    await newRank("TenaflyA","BenFranklinA",250,110);
+    await newRank("PEARLSA","TenaflyC",310,20);
+    await newRank("PrimorisA","HomeschoolA",160,90);
+    await newRank("CavalliniA","NyackA",120,70);
     //Round 2
-    await newRank("HewlettBV","WestMilfordAV",320,130);
-    await newRank("GeorgeWashingtonAV","RanneyAV",370,210);
-    await newRank("OratoryAV","MillburnCV",340,150);
-    await newRank("HunterAV","PascackHillsAV",490,100);
-    await newRank("EastBrunswickAV","RamseyAV",410,160);
-    await newRank("ParamusAV","DemarestBV",200,150);
-    await newRank("EastBrunswickBV","TenaflyBV",210,170);
-    await newRank("MillburnAV","DemarestAV",540,90);
-    await newRank("RidgewoodBV","WestMilfordBV",470,70);
-    await newRank("HewlettAV","NorthHighlandsAV",250,130);
-    await newRank("MCABV","RidgewoodAV",220,210);
-    await newRank("HighTechAV","MillburnBV",400,130);
-    await newRank("TenaflyAV","BethlehemAV",300,220);
-    await newRank("SetonHallAV","MCAAV",410,130);
-    await newRank("RidgewoodDJV","RidgewoodEJV",290,70);
-    await newRank("HunterBJV","RanneyBJV",480,50);
-    await newRank("HewlettDJV","MillburnEJV",250,120);
-    await newRank("ChurchillNJAJV","BethlehemMSAJV",460,110);
-    await newRank("BergenAJV","RidgewoodFJV",380,30);
-    await newRank("HewlettCJV","SetonHallBJV",240,110);
-    await newRank("MillburnDJV","KinnelonAJV",300,150);
-    await newRank("HunterCJV","RidgewoodCJV",390,130);
-    await newRank("TenaflyCJV","HolmdelAJV",241,240);
-    await newRank("PrimorisAMS","CavalliniAMS",120,90);
-    await newRank("TenaflyBMS","NyackAMS",170,70);
-    await newRank("BenFranklinAMS","CavalliniBMS",150,90);
-    await newRank("TenaflyAMS","PEARLSAMS",160,130);
-    await newRank("MillburnAMS","HomeschoolAMS",210,40);
+    await newRank("HewlettB","WestMilfordA",320,130);
+    await newRank("GeorgeWashingtonWVA","RanneyA",370,210);
+    await newRank("OratoryA","MillburnC",340,150);
+    await newRank("HunterA","PascackHillsA",490,100);
+    await newRank("EastBrunswickA","RamseyA",410,160);
+    await newRank("ParamusA","DemarestB",200,150);
+    await newRank("EastBrunswickB","TenaflyB",210,170);
+    await newRank("MillburnA","DemarestA",540,90);
+    await newRank("RidgewoodB","WestMilfordB",470,70);
+    await newRank("HewlettA","NorthHighlandsA",250,130);
+    await newRank("MCAB","RidgewoodA",220,210);
+    await newRank("HighTechA","MillburnB",400,130);
+    await newRank("TenaflyA","BethlehemA",300,220);
+    await newRank("SetonHallA","MCAA",410,130);
+    await newRank("RidgewoodD","RidgewoodE",290,70);
+    await newRank("HunterB","RanneyB",480,50);
+    await newRank("HewlettD","MillburnE",250,120);
+    await newRank("ChurchillNJA","BethlehemMSA",460,110);
+    await newRank("BergenA","RidgewoodF",380,30);
+    await newRank("HewlettC","SetonHallB",240,110);
+    await newRank("MillburnD","KinnelonA",300,150);
+    await newRank("HunterC","RidgewoodC",390,130);
+    await newRank("TenaflyC","HolmdelA",241,240);
+    await newRank("PrimorisA","CavalliniA",120,90);
+    await newRank("TenaflyB","NyackA",170,70);
+    await newRank("BenFranklinA","CavalliniB",150,90);
+    await newRank("TenaflyA","PEARLSA",160,130);
+    await newRank("MillburnA","HomeschoolA",210,40);
     //Round 3
-    await newRank("BethlehemAV","MCAAV",310,240);
-    await newRank("TenaflyAV","WestMilfordAV",390,180);
-    await newRank("GeorgeWashingtonAV","HewlettBV",500,150);
-    await newRank("RanneyAV","MillburnCV",270,240);
-    await newRank("OratoryAV","PascackHillsAV",250,190);
-    await newRank("HunterAV","EastBrunswickAV",330,230);
-    await newRank("SetonHallAV","DemarestBV",340,150);
-    await newRank("ParamusAV","TenaflyBV",260,200);
-    await newRank("MillburnAV","EastBrunswickBV",490,160);
-    await newRank("RidgewoodBV","DemarestAV",400,160);
-    await newRank("NorthHighlandsAV","WestMilfordBV",210,170);
-    await newRank("MCABV","HewlettAV",260,240);
-    await newRank("HighTechAV","RidgewoodAV",460,100);
-    await newRank("RamseyAV","MillburnBV",300,240);
-    await newRank("TenaflyCJV","HighTechBJV",390,120);
-    await newRank("HolmdelAJV","RidgewoodEJV",360,50);
-    await newRank("HunterBJV","RidgewoodDJV",450,100);
-    await newRank("HewlettDJV","RanneyBJV",230,190);
-    await newRank("BethlehemMSAJV","MillburnEJV",250,210);
-    await newRank("ChurchillNJAJV","BergenAJV",330,170);
-    await newRank("SetonHallBJV","RidgewoodFJV",230,60);
-    await newRank("MillburnDJV","HewlettCJV",370,170);
-    await newRank("RidgewoodCJV","KinnelonAJV",220,210);
-    await newRank("TenaflyCMS","HomeschoolAMS",140,130);
-    await newRank("MillburnAMS","CavalliniAMS",310,80);
-    await newRank("PrimorisAMS","TenaflyBMS",210,130);
-    await newRank("BenFranklinAMS","NyackAMS",210,70);
-    await newRank("PEARLSAMS","CavalliniBMS",250,110);
-    await newRank("JohnAdamsAMS","TenaflyAMS",220,190);
+    await newRank("BethlehemA","MCAA",310,240);
+    await newRank("TenaflyA","WestMilfordA",390,180);
+    await newRank("GeorgeWashingtonWVA","HewlettB",500,150);
+    await newRank("RanneyA","MillburnC",270,240);
+    await newRank("OratoryA","PascackHillsA",250,190);
+    await newRank("HunterA","EastBrunswickA",330,230);
+    await newRank("SetonHallA","DemarestB",340,150);
+    await newRank("ParamusA","TenaflyB",260,200);
+    await newRank("MillburnA","EastBrunswickB",490,160);
+    await newRank("RidgewoodB","DemarestA",400,160);
+    await newRank("NorthHighlandsA","WestMilfordB",210,170);
+    await newRank("MCAB","HewlettA",260,240);
+    await newRank("HighTechA","RidgewoodA",460,100);
+    await newRank("RamseyA","MillburnB",300,240);
+    await newRank("TenaflyC","HighTechB",390,120);
+    await newRank("HolmdelA","RidgewoodE",360,50);
+    await newRank("HunterB","RidgewoodD",450,100);
+    await newRank("HewlettD","RanneyB",230,190);
+    await newRank("BethlehemMSA","MillburnE",250,210);
+    await newRank("ChurchillNJA","BergenA",330,170);
+    await newRank("SetonHallB","RidgewoodF",230,60);
+    await newRank("MillburnD","HewlettC",370,170);
+    await newRank("RidgewoodC","KinnelonA",220,210);
+    await newRank("TenaflyC","HomeschoolA",140,130);
+    await newRank("MillburnA","CavalliniA",310,80);
+    await newRank("PrimorisA","TenaflyB",210,130);
+    await newRank("BenFranklinA","NyackA",210,70);
+    await newRank("PEARLSA","CavalliniB",250,110);
+    await newRank("JohnAdamsA","TenaflyA",220,190);
     //Round 4
-    await newRank("SetonHallAV","MillburnBV",260,240);
-    await newRank("BethlehemAV","TenaflyBV",310,120);
-    await newRank("MCAAV","WestMilfordAV",270,160);
-    await newRank("GeorgeWashingtonAV","TenaflyAV",480,120);
-    await newRank("HewlettBV","MillburnCJV",240,150);
-    await newRank("RanneyAV","PascackHillsAV",320,120);
-    await newRank("EastBrunswickAV","OratoryAV",360,200);
-    await newRank("HunterAV","DemarestBV",530,70);
-    await newRank("RamseyAV","RidgewoodAV",230,190);
-    await newRank("MillburnAV","ParamusAV",440,140);
-    await newRank("RidgewoodBV","EastBrunswickBV",540,40);
-    await newRank("DemarestAV","NorthHighlandsAV",290,90);
-    await newRank("HighTechAV","HewlettAV",380,150);
-    await newRank("MCABV","WestMilfordBV",290,70);
-    await newRank("MillburnDJV","RidgewoodFJV",360,20);
-    await newRank("HunterCJV","TenaflyCJV",360,190);
-    await newRank("HewlettCJV","RidgewoodCJV",180,170);
-    await newRank("HunterBJV","HolmdelAJV",350,210);
-    await newRank("HewlettDJV","RidgewoodDJV",290,170);
-    await newRank("BethlehemMSAJV","RanneyBJV",190,100);
-    await newRank("BergenAJV","MillburnEJV",240,140);
-    await newRank("ChurchillNJAJV","SetonHallBJV",490,30);
-    await newRank("JohnAdamsAMS","CavalliniBMS",210,60);
-    await newRank("TenaflyAMS","HomeschoolAMS",210,60);
-    await newRank("CavalliniAMS","TenaflyCMS",90,50);
-    await newRank("MillburnAMS","TenaflyBMS",210,50);
-    await newRank("BenFranklinAMS","PrimorisAMS",140,90);
-    await newRank("PEARLSAMS","NyackAMS",220,40);
+    await newRank("SetonHallA","MillburnB",260,240);
+    await newRank("BethlehemA","TenaflyB",310,120);
+    await newRank("MCAA","WestMilfordA",270,160);
+    await newRank("GeorgeWashingtonWVA","TenaflyA",480,120);
+    await newRank("HewlettB","MillburnC",240,150);
+    await newRank("RanneyA","PascackHillsA",320,120);
+    await newRank("EastBrunswickA","OratoryA",360,200);
+    await newRank("HunterA","DemarestB",530,70);
+    await newRank("RamseyA","RidgewoodA",230,190);
+    await newRank("MillburnA","ParamusA",440,140);
+    await newRank("RidgewoodB","EastBrunswickB",540,40);
+    await newRank("DemarestA","NorthHighlandsA",290,90);
+    await newRank("HighTechA","HewlettA",380,150);
+    await newRank("MCAB","WestMilfordB",290,70);
+    await newRank("MillburnD","RidgewoodF",360,20);
+    await newRank("HunterC","TenaflyC",360,190);
+    await newRank("HewlettC","RidgewoodC",180,170);
+    await newRank("HunterB","HolmdelA",350,210);
+    await newRank("HewlettD","RidgewoodD",290,170);
+    await newRank("BethlehemMSA","RanneyB",190,100);
+    await newRank("BergenA","MillburnE",240,140);
+    await newRank("ChurchillNJA","SetonHallB",490,30);
+    await newRank("JohnAdamsA","CavalliniB",210,60);
+    await newRank("TenaflyA","HomeschoolA",210,60);
+    await newRank("CavalliniA","TenaflyC",90,50);
+    await newRank("MillburnA","TenaflyB",210,50);
+    await newRank("BenFranklinA","PrimorisA",140,90);
+    await newRank("PEARLSA","NyackA",220,40);
     //Round 5
-    await newRank("HewlettAV","RamseyAV",250,170);
-    await newRank("SetonHallAV","RidgewoodAV",440,120);
-    await newRank("MillburnBV","BethlehemAV",280,250);
-    await newRank("HighTechAV","WestMilfordBV",440,60);
-    await newRank("GeorgeWashingtonAV","MCAAV",510,110);
-    await newRank("TenaflyAV","MillburnCV",300,160);
-    await newRank("HewlettBV","PascackHillsAV",330,80);
-    await newRank("EastBrunswickAV","RanneyAV",360,130);
-    await newRank("OratoryAV","DemarestBV",230,190);
-    await newRank("HunterAV","TenaflyBV",380,140);
-    await newRank("MillburnAV","SetonHallBJV",480,70);
-    await newRank("RidgewoodBV","ParamusAV",430,90);
-    await newRank("EastBrunswickBV","NorthHighlandsAV",200,100);
-    await newRank("MCABV","DemarestAV",270,170);
-    await newRank("HewlettCJV","RidgewoodFJV",280,40);
-    await newRank("KinnelonAJV","TenaflyCJV",280,210);
-    await newRank("HunterBJV","HighTechBJV",410,80);
-    await newRank("HolmdelAJV","HewlettDJV",260,150);
-    await newRank("BethlehemMSAJV","RidgewoodDJV",240,200);
-    await newRank("BergenAJV","RanneyBJV",310,130);
-    await newRank("MillburnEJV","SetonHallBJV",230,150);
-    await newRank("ChurchillNJAJV","MillburnDJV",400,210);
-    await newRank("PEARLSAMS","PrimorisAMS",180,100);
-    await newRank("JohnAdamsAMS","NyackAMS",240,30);
-    await newRank("CavalliniBMS","HomeschoolAMS",190,40);
-    await newRank("TenaflyAMS","CavalliniAMS",310,60);
-    await newRank("BenFranklinAMS","TenaflyBMS",150,90);
-    await newRank("MillburnAMS","TenaflyCMS",200,60);
+    await newRank("HewlettA","RamseyA",250,170);
+    await newRank("SetonHallA","RidgewoodA",440,120);
+    await newRank("MillburnB","BethlehemA",280,250);
+    await newRank("HighTechA","WestMilfordB",440,60);
+    await newRank("GeorgeWashingtonWVA","MCAA",510,110);
+    await newRank("TenaflyA","MillburnC",300,160);
+    await newRank("HewlettB","PascackHillsA",330,80);
+    await newRank("EastBrunswickA","RanneyA",360,130);
+    await newRank("OratoryA","DemarestB",230,190);
+    await newRank("HunterA","TenaflyB",380,140);
+    await newRank("MillburnA","SetonHallB",480,70);
+    await newRank("RidgewoodB","ParamusA",430,90);
+    await newRank("EastBrunswickB","NorthHighlandsA",200,100);
+    await newRank("MCAB","DemarestA",270,170);
+    await newRank("HewlettC","RidgewoodF",280,40);
+    await newRank("KinnelonA","TenaflyC",280,210);
+    await newRank("HunterB","HighTechB",410,80);
+    await newRank("HolmdelA","HewlettD",260,150);
+    await newRank("BethlehemMSA","RidgewoodD",240,200);
+    await newRank("BergenA","RanneyB",310,130);
+    await newRank("MillburnE","SetonHallB",230,150);
+    await newRank("ChurchillNJA","MillburnD",400,210);
+    await newRank("PEARLSA","PrimorisA",180,100);
+    await newRank("JohnAdamsA","NyackA",240,30);
+    await newRank("CavalliniB","HomeschoolA",190,40);
+    await newRank("TenaflyA","CavalliniA",310,60);
+    await newRank("BenFranklinA","TenaflyB",150,90);
+    await newRank("MillburnA","TenaflyC",200,60);
     //Playoffs
     //Varsity Playoffs
     //Round of 26
-    await newRank("EastBrunswickAV","WestMilfordAV",390,60);
-    await newRank("MCABV","DemarestBV",200,120);
-    await newRank("BethlehemAV","TenaflyBV",270,90);
-    await newRank("TenaflyAV","MillburnCV",380,70);
-    await newRank("RanneyAV","NorthernHighlandsAV",300,50);
-    await newRank("HewlettBV","RidgewoodAV",250,90);
-    await newRank("OratoryAV","MCAAV",210,200);
-    await newRank("RamseyAV","ParamusAV",290,170);
-    await newRank("DemarestAV","EastBrunswickBV",310,90);
-    await newRank("MillburnBV","HewlettAV",240,180);
+    await newRank("EastBrunswickA","WestMilfordA",390,60);
+    await newRank("MCAB","DemarestB",200,120);
+    await newRank("BethlehemA","TenaflyB",270,90);
+    await newRank("TenaflyA","MillburnC",380,70);
+    await newRank("RanneyA","NorthernHighlandsA",300,50);
+    await newRank("HewlettB","RidgewoodA",250,90);
+    await newRank("OratoryA","MCAA",210,200);
+    await newRank("RamseyA","ParamusA",290,170);
+    await newRank("DemarestA","EastBrunswickB",310,90);
+    await newRank("MillburnB","HewlettA",240,180);
     //Octofinals
-    await newRank("MillburnAV","MillburnBV",400,120);
-    await newRank("RidgewoodBV","DemarestAV",330,160);
-    await newRank("GeorgeWashingtonAV","RamseyAV",490,100);
-    await newRank("HighTechAV","OratoryAV",320,190);
-    await newRank("HunterAV","HewlettBV",400,80);
-    await newRank("SetonHallAV","RanneyAV",240,170);
-    await newRank("EastBrunswickAV","TenaflyAV",290,200);
-    await newRank("BethlehemAV","MCABV",230,160);
+    await newRank("MillburnA","MillburnB",400,120);
+    await newRank("RidgewoodB","DemarestA",330,160);
+    await newRank("GeorgeWashingtonWVA","RamseyA",490,100);
+    await newRank("HighTechA","OratoryA",320,190);
+    await newRank("HunterA","HewlettB",400,80);
+    await newRank("SetonHallA","RanneyA",240,170);
+    await newRank("EastBrunswickA","TenaflyA",290,200);
+    await newRank("BethlehemA","MCAB",230,160);
     //Quarterfinals
-    await newRank("MillburnAV","BethlehemAV",360,150);
-    await newRank("RidgewoodBV","EastBrunswickAV",250,210);
-    await newRank("GeorgeWashingtonAV","SetonHallAV",370,130);
-    await newRank("HunterAV","HighTechAV",290,220);
+    await newRank("MillburnA","BethlehemA",360,150);
+    await newRank("RidgewoodB","EastBrunswickA",250,210);
+    await newRank("GeorgeWashingtonWVA","SetonHallA",370,130);
+    await newRank("HunterA","HighTechA",290,220);
     //Semifinals
-    await newRank("HunterAV","MillburnAV",270,260);
-    await newRank("GeorgeWashingtonAV","RidgewoodAV",350,180);
+    await newRank("HunterA","MillburnA",270,260);
+    await newRank("GeorgeWashingtonWVA","RidgewoodA",350,180);
     //Finals
-    await newRank("HunterAV","GeorgeWashingtonAV",330,260);
+    await newRank("HunterA","GeorgeWashingtonWVA",330,260);
     //JV Playoffs
     //Octofinals
-    //await newRank("HunterCJV","MillburnEJV",1,0);
-    await newRank("MillburnDJV","RidgewoodDJV",300,80);
-    await newRank("BergenAJV","HewlettCJV",310,110);
-    await newRank("TenaflyCJV","RidgewoodCJV",340,60);
-    await newRank("HolmdelAJV","HewlettDJV",240,180);
-    await newRank("BethlehemMSAJV","KinnelonAJV",200,140);
+    //await newRank("HunterC","MillburnE",1,0);
+    await newRank("MillburnD","RidgewoodD",300,80);
+    await newRank("BergenA","HewlettC",310,110);
+    await newRank("TenaflyC","RidgewoodC",340,60);
+    await newRank("HolmdelA","HewlettD",240,180);
+    await newRank("BethlehemMSA","KinnelonA",200,140);
     //Quarterfinals
-    await newRank("HunterBJV","BethlehemMSAJV",340,150);
-    await newRank("ChurchillNJAJV","HolmdelAJV",360,140);
-    await newRank("HunterCJV","TenaflyCJV",380,130);
-    await newRank("MillburnDJV","BergenAJV",310,110);
+    await newRank("HunterB","BethlehemMSA",340,150);
+    await newRank("ChurchillNJA","HolmdelA",360,140);
+    await newRank("HunterC","TenaflyC",380,130);
+    await newRank("MillburnD","BergenA",310,110);
     //Semifinals
-    await newRank("HunterBJV","MillburnDJV",280,190);
-    await newRank("HunterCJV","ChurchillNJAJV",280,230);
+    await newRank("HunterB","MillburnD",280,190);
+    await newRank("HunterC","ChurchillNJA",280,230);
     //Finals
-    await newRank("HunterBJV","HunterCJV",280,220);
+    await newRank("HunterB","HunterC",280,220);
     //MS Playoffs
     //Quarterfinals
-    await newRank("TenaflyAMS","TenaflyBMS",340,80);
-    await newRank("MillburnAMS","CavalliniBMS",220,50);
-    await newRank("PEARLSAMS","PrimorisAMS",200,70);
-    await newRank("JohnAdamsAMS","BenFranklinAMS",230,70);
+    await newRank("TenaflyA","TenaflyB",340,80);
+    await newRank("MillburnA","CavalliniB",220,50);
+    await newRank("PEARLSA","PrimorisA",200,70);
+    await newRank("JohnAdamsA","BenFranklinA",230,70);
     //Semifinals
-    await newRank("MillburnAMS","PEARLSAMS",140,120);
-    await newRank("JohnAdamsAMS","TenaflyAMS",180,120);
-    await newRank("JohnAdamsAMS","MillburnAMS",140,120);
+    await newRank("MillburnA","PEARLSA",140,120);
+    await newRank("JohnAdamsA","TenaflyA",180,120);
+    await newRank("JohnAdamsA","MillburnA",140,120);
     console.log("New Jersey State B q V: "+qV[a2]);
     console.log("New Jersey State B q JV: "+qJV[b2]);
     console.log("New Jersey State B q MS: "+qMS[c2]);
@@ -9674,41 +9678,41 @@ async function bSetData() {
     //Central Georgia Winter B-Set
     //Prelims
     //Round 1
-    await newRank("StarrsMillAV","DeerfieldWindsorAV",380,90);
-    await newRank("StarrsMillBV","JacksonAV",350,80);
-    await newRank("TJClassicAV","StarrsMillEV",450,90);
-    await newRank("WandoAJV","StarrsMillCV",260,150);
-    await newRank("StarrsMillDV","NortheastAJV");
+    await newRank("StarrsMillA","DeerfieldWindsorA",380,90);
+    await newRank("StarrsMillB","JacksonA",350,80);
+    await newRank("TJClassicA","StarrsMillE",450,90);
+    await newRank("WandoA","StarrsMillC",260,150);
+    await newRank("StarrsMillD","NortheastA");
     //Round 2
-    await newRank("StarrsMillDV","JacksonAV",200,120);
-    await newRank("StarrsMillBV","StarrsMillCV",240,100);
-    await newRank("StarrsMillAV","StarrsMillEV",390,90);
-    await newRank("TJClassicAV","NortheastAJV",390,20);
-    await newRank("WandoAJV","DeerfieldWindsorAV",240,100);
+    await newRank("StarrsMillD","JacksonA",200,120);
+    await newRank("StarrsMillB","StarrsMillC",240,100);
+    await newRank("StarrsMillA","StarrsMillE",390,90);
+    await newRank("TJClassicA","NortheastA",390,20);
+    await newRank("WandoA","DeerfieldWindsorA",240,100);
     //Round 3
-    await newRank("StarrsMillBV","JacksonAV",280,100);
-    await newRank("StarrsMillAV","StarrsMillDV",400,80);
-    await newRank("DeerfieldWindsorAV","StarrsMillCV",260,160);
-    await newRank("StarrsMillEV","NortheastAJV",260,50);
-    await newRank("TJClassicAV","WandoAJV",20,130);
+    await newRank("StarrsMillB","JacksonA",280,100);
+    await newRank("StarrsMillA","StarrsMillD",400,80);
+    await newRank("DeerfieldWindsorA","StarrsMillC",260,160);
+    await newRank("StarrsMillE","NortheastA",260,50);
+    await newRank("TJClassicA","WandoA",20,130);
     //Round 4
-    await newRank("StarrsMillCV","StarrsMillDV",130,110);
-    await newRank("StarrsMillAV","JacksonAV",370,20);
-    await newRank("DeerfieldWindsorAV","StarrsMillEV",190,130);
-    await newRank("TJClassicAV","StarrsMillBV",360,130);
-    await newRank("WandoAJV","NortheastAJV",260,30);
+    await newRank("StarrsMillC","StarrsMillD",130,110);
+    await newRank("StarrsMillA","JacksonA",370,20);
+    await newRank("DeerfieldWindsorA","StarrsMillE",190,130);
+    await newRank("TJClassicA","StarrsMillB",360,130);
+    await newRank("WandoA","NortheastA",260,30);
     //Round 5
-    await newRank("DeerfieldWindsorAV","JacksonAV",230,20);
-    await newRank("StarrsMillBV","StarrsMillCV",330,60);
-    await newRank("StarrsMillAV","TJClassicAV",250,220);
-    await newRank("StarrsMillDV","StarrsMillEV",140,130);
-    await newRank("WandoAJV","NortheastAJV",280,50);
+    await newRank("DeerfieldWindsorA","JacksonA",230,20);
+    await newRank("StarrsMillB","StarrsMillC",330,60);
+    await newRank("StarrsMillA","TJClassicA",250,220);
+    await newRank("StarrsMillD","StarrsMillE",140,130);
+    await newRank("WandoA","NortheastA",280,50);
     //Playoffs
     //Varsity Semifinals
-    await newRank("StarrsMillAV","DeerfieldWindsorAV",350,50);
-    await newRank("TJClassicAV","StarrsMillBV",310,130);
+    await newRank("StarrsMillA","DeerfieldWindsorA",350,50);
+    await newRank("TJClassicA","StarrsMillB",310,130);
     //Varsity Finals
-    await newRank("TJClassicAV","StarrsMillAV",240,190);
+    await newRank("TJClassicA","StarrsMillA",240,190);
     console.log("Central GA B q V: "+qV[a2]);
     console.log("Central GA B q JV: "+qJV[b2]);
     a = 0;
@@ -9726,7 +9730,7 @@ async function allSets() {
     console.log("Overall Rankings")
     await printRanks("Varsity");
     await printRanks("Junior Varsity");
-    await printRanks("Middle School");
+    //await printRanks("Middle School");
 }
     
 allSets();
