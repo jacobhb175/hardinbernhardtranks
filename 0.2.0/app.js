@@ -1,4 +1,4 @@
-var admin = require("firebase-admin");
+/*var admin = require("firebase-admin");
 
 var serviceAccount = require("./hardinbernhardtranks-170e9a2580ff.json");
 
@@ -6,8 +6,15 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://hardinbernhardtranks.firebaseio.com"
 });
+*/
 
-const db = admin.firestore();
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+const database = firebase.database();
 
 // Teams
 
@@ -327,6 +334,20 @@ db.collection("teams").doc("CommerceA").set({
 rank:1200,
 games:0
 }),
+db.collection("teams").doc("NotCoralReef").set({
+    name:"Not Coral Reef",
+    state:"Florida",
+    division:"Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("CoralSprings").set({
+    name:"Coral Springs",
+    state:"Florida",
+    division:"Varsity",
+rank:1200,
+games:0
+}),
 db.collection("teams").doc("CoralReefA").set({
     name:"Coral Reef A",
     state:"Florida",
@@ -337,6 +358,13 @@ games:0
 db.collection("teams").doc("CoralReefB").set({
     name:"Coral Reef B",
     state:"Georgia",
+    division:"Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("Dreyfoos").set({
+    name:"Dreyfoos",
+    state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
@@ -1090,17 +1118,31 @@ db.collection("teams").doc("PalmettoH").set({
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoI").set({
+db.collection("teams").doc("PalmettoIV").set({
     name:"Miami Palmetto I",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("Palmetto").set({
+db.collection("teams").doc("PalmettoIJV").set({
+    name:"Miami Palmetto I",
+    state:"Florida",
+    division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("PalmettoJV").set({
     name:"Miami Palmetto J",
     state:"Florida",
     division:"Varsity",
+    rank:1200,
+games:0
+}),
+db.collection("teams").doc("PalmettoJJV").set({
+    name:"Miami Palmetto J",
+    state:"Florida",
+    division:"Junior Varsity",
     rank:1200,
 games:0
 }),
@@ -1125,8 +1167,8 @@ db.collection("teams").doc("PiedmontHillsA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PigeonForgeA").set({
-    name:"Pigeon Forge A",
+db.collection("teams").doc("Pigeon Forge").set({
+    name:"Pigeon Forge",
     state:"Tennessee",
     division:"Varsity",
 rank:1200,
@@ -1209,10 +1251,23 @@ db.collection("teams").doc("RansomA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomB").set({
+db.collection("teams").doc("RansomBV").set({
     name:"Ransom Everglades B",
     state:"Florida",
     division:"Varsity",
+rank:1200,
+games:0
+}),db.collection("teams").doc("RansomBJV").set({
+    name:"Ransom Everglades B",
+    state:"Florida",
+    division:"Junior Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("RansomMS").set({
+    name:"Ransom Middle",
+    state:"Florida",
+    division:"Junior Varsity",
 rank:1200,
 games:0
 }),
@@ -1335,8 +1390,8 @@ db.collection("teams").doc("ScarsdaleA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SeymourA").set({
-    name:"Seymour A",
+db.collection("teams").doc("Seymour").set({
+    name:"Seymour",
     state:"Tennessee",
     division:"Varsity",
 rank:1200,
@@ -2060,7 +2115,7 @@ db.collection("teams").doc("HolmdelA").set({
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("HomesteadA").set({
+db.collection("teams").doc("Homestead").set({
     name:"Homestead A",
     state:"California",
     division:"Junior Varsity",
@@ -2214,7 +2269,7 @@ db.collection("teams").doc("MillburnE").set({
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("MissionSanJoseA").set({
+db.collection("teams").doc("Mission San Jose").set({
     name:"Mission San Jose",
     state:"California",
     division:"Junior Varsity",
@@ -2515,231 +2570,231 @@ db.collection("teams").doc("RiverviewJ").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SaggitariusA").set({
+db.collection("teams").doc("Saggitarius").set({
     name:"Saggitarius A",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SandburgB").set({
+db.collection("teams").doc("Sandburg B").set({
     name:"Stanburg B",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SantaClaraA").set({
+db.collection("teams").doc("SantaClara A").set({
     name:"Santa Clara A",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SaratogaD").set({
+db.collection("teams").doc("Saratoga D").set({
     name:"Saratoga D",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SaratogaE").set({
+db.collection("teams").doc("Saratoga E").set({
     name:"Saratoga E",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SkyviewD").set({
+db.collection("teams").doc("Skyview D").set({
     name:"Skyview D",
     state:"Montana",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SouthBrunswickA").set({
+db.collection("teams").doc("South Brunswick A").set({
     name:"South Brunswick A",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StevensonD").set({
+db.collection("teams").doc("Stevenson D").set({
     name:"Stevenson D",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StevensonE").set({
+db.collection("teams").doc("Stevenson E").set({
     name:"Stevenson E",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StAnselmsB").set({
+db.collection("teams").doc("St Anselms B").set({
     name:"St. Anselm's B",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StevensonF").set({
+db.collection("teams").doc("Stevenson F").set({
     name:"Stevenson F",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StJosephB").set({
+db.collection("teams").doc("St Joseph B").set({
     name:"St. Joseph B",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StPetersC").set({
+db.collection("teams").doc("St Peters C").set({
     name:"St. Peter's Prep C",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TenaflyC").set({
+db.collection("teams").doc("Tenafly C").set({
     name:"Tenafly C",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TeslaA").set({
-    name:"Tesla STEM A",
+db.collection("teams").doc("Tesla").set({
+    name:"Tesla STEM",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ThomasJeffersonC").set({
+db.collection("teams").doc("Thomas Jefferson C").set({
     name:"Thomas Jefferson C",
     state:"Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ThomasJeffersonD").set({
+db.collection("teams").doc("Thomas Jefferson D").set({
     name:"Thomas Jefferson D",
     state:"Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ThomasJeffersonE").set({
+db.collection("teams").doc("Thomas Jefferson E").set({
     name:"Thomas Jefferson E",
     state:"Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TippecanoeB").set({
+db.collection("teams").doc("Tippecanoe B").set({
     name:"Tippecanoe B",
     state:"Ohio",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("TowerHillC").set({
+db.collection("teams").doc("Tower HillC ").set({
     name:"Tower Hill C",
     state:"Delaware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("VeteransB").set({
+db.collection("teams").doc("Veterans B").set({
     name:"Veterans B",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilliamsBayD").set({
+db.collection("teams").doc("Williams Bay D").set({
     name:"Williams Bay D",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WinnebagoB").set({
+db.collection("teams").doc("Winnebago B").set({
     name:"Winnebago B",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsH").set({
+db.collection("teams").doc("Wilmington Friends H").set({
     name:"Wilmington Friends H",
     state:"Deleware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsI").set({
+db.collection("teams").doc("Wilmington Friends I").set({
     name:"Wilmington Friends I",
     state:"Deleware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsJ").set({
+db.collection("teams").doc("Wilmington Friends J").set({
     name:"Wilmington Friends J",
     state:"Deleware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsK").set({
+db.collection("teams").doc("Wilmington Friends K").set({
     name:"Wilmington Friends K",
     state:"Deleware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsL").set({
+db.collection("teams").doc("Wilmington Friends L").set({
     name:"Wilmington Friends L",
     state:"Deleware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WilmingtonFriendsM").set({
+db.collection("teams").doc("Wilmington Friends M").set({
     name:"Wilmington Friends M",
     state:"Deleware",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WiltonAnjoA").set({
+db.collection("teams").doc("Wilton Anjo").set({
     name:"Wilton Anjo",
     state:"Connecticut",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WiltonLukasA").set({
+db.collection("teams").doc("Wilton Lukas").set({
     name:"Wilton Lukas",
     state:"Connecticut",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("YonkersA").set({
+db.collection("teams").doc("Yonkers A").set({
     name:"Yonkers A",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("YonkersB").set({
+db.collection("teams").doc("Yonkers B").set({
     name:"Yonkers B",
     state:"New York",
     division:"Junior Varsity",
@@ -2749,35 +2804,35 @@ games:0
 
 
 //MS Teams
-db.collection("teams").doc("AlmadenMSA").set({
+db.collection("teams").doc("Challenger-Almaden A").set({
     name:"Challenger-Almaden A",
     state:"California",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BRIGHTMSA").set({
+db.collection("teams").doc("BRIGHT Homeschool A").set({
     name:"BRIGHT Homeschool A",
     state:"New Jersey",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BurleighManorA").set({
+db.collection("teams").doc("Burleigh Manor A").set({
     name:"Burleigh Manor A",
     state:"Maryland",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BurleighManorB").set({
+db.collection("teams").doc("Burleigh Manor B").set({
     name:"Burleigh Manor B",
     state:"Maryland",
     division:"Middle School",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BurleighManorC").set({
+db.collection("teams").doc("Burleigh Manor C").set({
     name:"Burleigh Manor C",
     state:"Maryland",
     division:"Middle School",
@@ -2953,28 +3008,28 @@ rank:1200,
 games:0
 }),
 //Later teams added
-db.collection("teams").doc("LindseyA").set({
+db.collection("teams").doc("Lindsey Homeschool A").set({
     name:"Lindsey Homeschool A",
     state:"Missouri",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("AltonA").set({
+db.collection("teams").doc("Alton A").set({
     name:"Alton A",
     state:"Illinois",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("GraniteCityA").set({
+db.collection("teams").doc("Granite City A").set({
     name:"Granite City A",
     state:"Illinois",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("SouthwesternA").set({
+db.collection("teams").doc("Southwestern A").set({
     name:"Southwestern A",
     state:"Illinois",
     division:"Varsity",
@@ -3926,7 +3981,7 @@ db.collection("teams").doc("HomeschoolA").set({
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("TJClassicA").set({
+db.collection("teams").doc("TJClassicalA").set({
     name:"Thomas Jefferson Classic",
     state:"Georgia",
     division:"Varsity",
@@ -4502,11 +4557,35 @@ function printRanks(div){
         });
 }
 
+async function gameData(startId,endId,tournamentId){
+    for(let Id = startId; Id < endId; Id++) {
+        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+            A = (snapshot.val() && snapshot.val().A);
+            //console.log(A);
+        });
+        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+            AScore = (snapshot.val() && snapshot.val().AScore)
+            //console.log(AScore);
+        });
+        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+            B = (snapshot.val() && snapshot.val().B)
+        });
+        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+            BScore = (snapshot.val() && snapshot.val().BScore)
+        });
+        await console.log(A,B,AScore,BScore);
+        await newRank(A,B,AScore,BScore);
+    }
+}
+
+
+
+
 async function cSetData(){
     K = 100;
     y = false;
     cSet = true;
-    
+    /*
     //Northern California Fall C-Set
     //Prelims
     //Round 1
@@ -4583,6 +4662,11 @@ async function cSetData(){
     await newRank("MissionSanJoseA","CaliforniaA",250,220);
     //Finals
     await newRank("MissionSanJoseA","SaggitariusA",280,210);
+    */
+    async function NorCalC() {
+        gameData(1,62,"NorCalC");
+    }
+    NorCalC();
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     allMS.push(teamAvgMS);
@@ -5077,15 +5161,15 @@ async function cSetData(){
     await newRank("RansomA","PalmettoD",520,30);
     await newRank("ArchimedeanA","PalmettoE",330,130);
     await newRank("ArchimedeanC","PalmettoF",220,90);
-    await newRank("CoralReefA","Palmetto",360,70);
+    await newRank("CoralReefA","PalmettoJV",360,70);
     await newRank("PalmettoB","BelenB",280,210);
     await newRank("ArchimedeanE","PalmettoH",220,60);
-    await newRank("BelenA","PalmettoI",420,40);
+    await newRank("BelenA","PalmettoIV",420,40);
     await newRank("DoralA","ArchimedeanD",330,50);
     await newRank("ArchimedeanB","PalmettoA",240,180);
     await newRank("PalmettoC","WestminsterA",310,160);
     await newRank("CoralReefB","PalmettoG",300,120);
-    await newRank("RansomB","PalmettoM",280,190);
+    await newRank("RansomBV","PalmettoM",280,190);
     await newRank("PalmettoP","PalmettoO",310,160);
     await newRank("BelenC","PalmettonA",330,110);
     await newRank("PalmettoL","PalmettoQ",310,50);
@@ -5093,15 +5177,15 @@ async function cSetData(){
     await newRank("RansomC","PalmettoK",460,90);
     await newRank("ArchimedeanF","RansomD",180,170);
     //Round 2
-    await newRank("RansomB","PalmettoC",230,230);
+    await newRank("RansomBV","PalmettoC",230,230);
     await newRank("RansomA","CoralReefB",410,90);
     await newRank("PalmettoE","PalmettoD",260,100);
     await newRank("ArchimedeanA","ArchimedeanC",280,150);
-    await newRank("Palmetto","PalmettoF",180,170);
+    await newRank("PalmettoJV","PalmettoF",180,170);
     await newRank("CoralReefA","BelenB",300,210);
     await newRank("PalmettoB","PalmettoH",290,140);
     await newRank("BelenA","ArchimedeanE",360,40);
-    await newRank("ArchimedeanD","PalmettoI",120,120);
+    await newRank("ArchimedeanD","PalmettoIV",120,120);
     await newRank("DoralA","PalmettoA",230,190);
     await newRank("ArchimedeanB","WestminsterA",240,180);
     await newRank("RansomD","PalmettoG",210,150);
@@ -5115,14 +5199,14 @@ async function cSetData(){
     await newRank("WestminsterA","DoralA",280,160);
     await newRank("ArchimedeanB","PalmettoG",240,150);
     await newRank("RansomA","PalmettoC",330,180);
-    await newRank("CoralReefB","RansomB",250,220);
+    await newRank("CoralReefB","RansomBV",250,220);
     await newRank("ArchimedeanC","PalmettoD",220,150);
-    await newRank("ArchimedeanA","Palmetto",390,80);
+    await newRank("ArchimedeanA","PalmettoJV",390,80);
     await newRank("BelenB","PalmettoF",370,110);
     await newRank("CoralReefA","PalmettoH",410,40);
     await newRank("PalmettoB","BelenA",340,210);
     await newRank("ArchimedeanD","ArchimedeanE",130,120);
-    await newRank("PalmettoA","PalmettoI",410,90);
+    await newRank("PalmettoA","PalmettoIV",410,90);
     await newRank("PalmettoE","PalmettoK",270,170);
     await newRank("ArchimedeanF","PalmettoR",220,140);
     await newRank("RansomD","PalmettoO",250,150);
@@ -5132,7 +5216,7 @@ async function cSetData(){
     await newRank("RansomC","PalmettoQ",460,50);
     //Round 4
     await newRank("PalmettoA","ArchimedeanE",410,50);
-    await newRank("WestminsterA","PalmettoI",290,40);
+    await newRank("WestminsterA","PalmettoIV",290,40);
     await newRank("DoralA","PalmettoG",210,160);
     await newRank("RansomA","ArchimedeanB",450,110);
     await newRank("PalmettoC","PalmettoE",240,230);
@@ -5141,7 +5225,7 @@ async function cSetData(){
     await newRank("ArchimedeanA","BelenB",330,240);
     await newRank("PalmettoF","PalmettoH",160,70);
     await newRank("BelenA","CoralReefA",280,270);
-    await newRank("PalmettoB","RansomB",370,130);
+    await newRank("PalmettoB","RansomBV",370,130);
     await newRank("PalmettoR","ArchimedeanD",160,130);
     await newRank("RansomC","BelenC",520,110);
     await newRank("ArchimedeanF","PalmettoQ",320,40);
@@ -5154,11 +5238,11 @@ async function cSetData(){
     await newRank("PalmettoA","ArchimedeanD",290,40);
     await newRank("WestminsterA","ArchimedeanE",250,50);
     await newRank("RansomA","PalmettoG",360,80);
-    await newRank("DoralA","PalmettoI",250,80);
+    await newRank("DoralA","PalmettoIV",250,80);
     await newRank("ArchimedeanB","PalmettoE",230,210);
     await newRank("PalmettoC","ArchimedeanC",230,150);
-    await newRank("CoralReefB","Palmetto",260,80);
-    await newRank("RansomB","PalmettoD",320,80);
+    await newRank("CoralReefB","PalmettoJV",260,80);
+    await newRank("RansomBV","PalmettoD",320,80);
     await newRank("ArchimedeanA","PalmettoH",330,40);
     await newRank("BelenB","PalmettoQ",350,60);
     await newRank("PalmettoM","DoralB",290,90);
@@ -5172,7 +5256,7 @@ async function cSetData(){
     //await newRank("RansomA","PalmettoG",1,0);
     await newRank("PalmettoC","DoralA",200,150);
     await newRank("PalmettoB","ArchimedeanB",320,150);
-    await newRank("CoralReefA","RansomB",200,190);
+    await newRank("CoralReefA","RansomBV",200,190);
     await newRank("ArchimedeanA","ArchimedeanC",280,70);
     await newRank("BelenB","WestminsterA",300,90);
     await newRank("BelenA","PalmettoE",270,150);
@@ -6598,6 +6682,7 @@ async function cSetData(){
     a2 = a2+1;
     b2 = b2+1;
     c2 = c2+1;
+    /*
     //Prelims
     //Round 1
     await newRank("MissionSanJoseA","SaratogaE",450,70);
@@ -6672,7 +6757,8 @@ async function cSetData(){
     await newRank("SaggitariusA","HarkerA",310,170);
     await newRank("MissionSanJoseA","CaliforniaA",250,220);
     //Finals
-    await newRank("MissionSanJoseA","SaggitariusA",280,210);
+    await newRank("MissionSanJoseA","SaggitariusA",280,210);*/
+    NorCalC();
     console.log("NorCal C q V: "+qV[a2]);
     console.log("NorCal C q JV: "+qJV[b2]);
     console.log("NorCal C q MS: "+qMS[c2]);
@@ -7183,15 +7269,15 @@ async function cSetData(){
     await newRank("RansomA","PalmettoD",520,30);
     await newRank("ArchimedeanA","PalmettoE",330,130);
     await newRank("ArchimedeanC","PalmettoF",220,90);
-    await newRank("CoralReefA","Palmetto",360,70);
+    await newRank("CoralReefA","PalmettoJV",360,70);
     await newRank("PalmettoB","BelenB",280,210);
     await newRank("ArchimedeanE","PalmettoH",220,60);
-    await newRank("BelenA","PalmettoI",420,40);
+    await newRank("BelenA","PalmettoIV",420,40);
     await newRank("DoralA","ArchimedeanD",330,50);
     await newRank("ArchimedeanB","PalmettoA",240,180);
     await newRank("PalmettoC","WestminsterA",310,160);
     await newRank("CoralReefB","PalmettoG",300,120);
-    await newRank("RansomB","PalmettoM",280,190);
+    await newRank("RansomBV","PalmettoM",280,190);
     await newRank("PalmettoP","PalmettoO",310,160);
     await newRank("BelenC","PalmettonA",330,110);
     await newRank("PalmettoL","PalmettoQ",310,50);
@@ -7199,15 +7285,15 @@ async function cSetData(){
     await newRank("RansomC","PalmettoK",460,90);
     await newRank("ArchimedeanF","RansomD",180,170);
     //Round 2
-    await newRank("RansomB","PalmettoC",230,230);
+    await newRank("RansomBV","PalmettoC",230,230);
     await newRank("RansomA","CoralReefB",410,90);
     await newRank("PalmettoE","PalmettoD",260,100);
     await newRank("ArchimedeanA","ArchimedeanC",280,150);
-    await newRank("Palmetto","PalmettoF",180,170);
+    await newRank("PalmettoJV","PalmettoF",180,170);
     await newRank("CoralReefA","BelenB",300,210);
     await newRank("PalmettoB","PalmettoH",290,140);
     await newRank("BelenA","ArchimedeanE",360,40);
-    await newRank("ArchimedeanD","PalmettoI",120,120);
+    await newRank("ArchimedeanD","PalmettoIV",120,120);
     await newRank("DoralA","PalmettoA",230,190);
     await newRank("ArchimedeanB","WestminsterA",240,180);
     await newRank("RansomD","PalmettoG",210,150);
@@ -7221,14 +7307,14 @@ async function cSetData(){
     await newRank("WestminsterA","DoralA",280,160);
     await newRank("ArchimedeanB","PalmettoG",240,150);
     await newRank("RansomA","PalmettoC",330,180);
-    await newRank("CoralReefB","RansomB",250,220);
+    await newRank("CoralReefB","RansomBV",250,220);
     await newRank("ArchimedeanC","PalmettoD",220,150);
-    await newRank("ArchimedeanA","Palmetto",390,80);
+    await newRank("ArchimedeanA","PalmettoJV",390,80);
     await newRank("BelenB","PalmettoF",370,110);
     await newRank("CoralReefA","PalmettoH",410,40);
     await newRank("PalmettoB","BelenA",340,210);
     await newRank("ArchimedeanD","ArchimedeanE",130,120);
-    await newRank("PalmettoA","PalmettoI",410,90);
+    await newRank("PalmettoA","PalmettoIV",410,90);
     await newRank("PalmettoE","PalmettoK",270,170);
     await newRank("ArchimedeanF","PalmettoR",220,140);
     await newRank("RansomD","PalmettoO",250,150);
@@ -7238,7 +7324,7 @@ async function cSetData(){
     await newRank("RansomC","PalmettoQ",460,50);
     //Round 4
     await newRank("PalmettoA","ArchimedeanE",410,50);
-    await newRank("WestminsterA","PalmettoI",290,40);
+    await newRank("WestminsterA","PalmettoIV",290,40);
     await newRank("DoralA","PalmettoG",210,160);
     await newRank("RansomA","ArchimedeanB",450,110);
     await newRank("PalmettoC","PalmettoE",240,230);
@@ -7247,7 +7333,7 @@ async function cSetData(){
     await newRank("ArchimedeanA","BelenB",330,240);
     await newRank("PalmettoF","PalmettoH",160,70);
     await newRank("BelenA","CoralReefA",280,270);
-    await newRank("PalmettoB","RansomB",370,130);
+    await newRank("PalmettoB","RansomBV",370,130);
     await newRank("PalmettoR","ArchimedeanD",160,130);
     await newRank("RansomC","BelenC",520,110);
     await newRank("ArchimedeanF","PalmettoQ",320,40);
@@ -7260,11 +7346,11 @@ async function cSetData(){
     await newRank("PalmettoA","ArchimedeanD",290,40);
     await newRank("WestminsterA","ArchimedeanE",250,50);
     await newRank("RansomA","PalmettoG",360,80);
-    await newRank("DoralA","PalmettoI",250,80);
+    await newRank("DoralA","PalmettoIV",250,80);
     await newRank("ArchimedeanB","PalmettoE",230,210);
     await newRank("PalmettoC","ArchimedeanC",230,150);
-    await newRank("CoralReefB","Palmetto",260,80);
-    await newRank("RansomB","PalmettoD",320,80);
+    await newRank("CoralReefB","PalmettoJV",260,80);
+    await newRank("RansomBV","PalmettoD",320,80);
     await newRank("ArchimedeanA","PalmettoH",330,40);
     await newRank("BelenB","PalmettoQ",350,60);
     await newRank("PalmettoM","DoralB",290,90);
@@ -7278,7 +7364,7 @@ async function cSetData(){
     //await newRank("RansomA","PalmettoG",1,0);
     await newRank("PalmettoC","DoralA",200,150);
     await newRank("PalmettoB","ArchimedeanB",320,150);
-    await newRank("CoralReefA","RansomB",200,190);
+    await newRank("CoralReefA","RansomBV",200,190);
     await newRank("ArchimedeanA","ArchimedeanC",280,70);
     await newRank("BelenB","WestminsterA",300,90);
     await newRank("BelenA","PalmettoE",270,150);
@@ -9183,49 +9269,122 @@ async function bSetData() {
     //Round 1
     await newRank("StarrsMillA","DeerfieldWindsorA",380,90);
     await newRank("StarrsMillB","JacksonA",350,80);
-    await newRank("TJClassicA","StarrsMillE",450,90);
+    await newRank("TJClassicalA","StarrsMillE",450,90);
     await newRank("WandoA","StarrsMillC",260,150);
     await newRank("StarrsMillD","NortheastA");
     //Round 2
     await newRank("StarrsMillD","JacksonA",200,120);
     await newRank("StarrsMillB","StarrsMillC",240,100);
     await newRank("StarrsMillA","StarrsMillE",390,90);
-    await newRank("TJClassicA","NortheastA",390,20);
+    await newRank("TJClassicalA","NortheastA",390,20);
     await newRank("WandoA","DeerfieldWindsorA",240,100);
     //Round 3
     await newRank("StarrsMillB","JacksonA",280,100);
     await newRank("StarrsMillA","StarrsMillD",400,80);
     await newRank("DeerfieldWindsorA","StarrsMillC",260,160);
     await newRank("StarrsMillE","NortheastA",260,50);
-    await newRank("TJClassicA","WandoA",20,130);
+    await newRank("TJClassicalA","WandoA",20,130);
     //Round 4
     await newRank("StarrsMillC","StarrsMillD",130,110);
     await newRank("StarrsMillA","JacksonA",370,20);
     await newRank("DeerfieldWindsorA","StarrsMillE",190,130);
-    await newRank("TJClassicA","StarrsMillB",360,130);
+    await newRank("TJClassicalA","StarrsMillB",360,130);
     await newRank("WandoA","NortheastA",260,30);
     //Round 5
     await newRank("DeerfieldWindsorA","JacksonA",230,20);
     await newRank("StarrsMillB","StarrsMillC",330,60);
-    await newRank("StarrsMillA","TJClassicA",250,220);
+    await newRank("StarrsMillA","TJClassicalA",250,220);
     await newRank("StarrsMillD","StarrsMillE",140,130);
     await newRank("WandoA","NortheastA",280,50);
     //Playoffs
     //Varsity Semifinals
     await newRank("StarrsMillA","DeerfieldWindsorA",350,50);
-    await newRank("TJClassicA","StarrsMillB",310,130);
+    await newRank("TJClassicalA","StarrsMillB",310,130);
     //Varsity Finals
-    await newRank("TJClassicA","StarrsMillA",240,190);
+    await newRank("TJClassicalA","StarrsMillA",240,190);
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
     teamAvgJV = [];
     console.log("Central Georgia Winter B");
 
+    //South Florida Winter B-Set
+    //Prelims
+    //Round 1
+    await newRank("NotCoralReef","PalmettoH",390,40);
+    await newRank("BelenB","PalmettoG",390,120);
+    await newRank("BelenA","PalmettoF",310,90);
+    await newRank("RansomMS","DoralB",380,80);
+    await newRank("PalmettoIJV","PalmettoM",170,150);
+    await newRank("PalmettoE","PalmettoC",180,150);
+    await newRank("RansomA","ArchimedeanC",420,40);
+    await newRank("ArchimedeanA","CoralSprings",260,140);
+    await newRank("RansomB","PalmettoJJV",260,140);
+    await newRank("PalmettoB","ArchimedeanB",300,90);
+    await newRank("ArchimedeanD","BelenD",260,210);
+    await newRank("PalmettoA","DoralA",280,180);
+    await newRank("PalmettoK","BelenC",250,240);
+    await newRank("Dreyfoos","PalmettoD",250,230);
+    //Round 2
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    await newRank();
+    allV.push(teamAvgV);
+    allJV.push(teamAvgJV);
+    teamAvgV = [];
+    teamAvgJV = [];
+    console.log("South Florida Winter");
+
 
 
     y = true
-    console.log(y);
     
     
     
@@ -9680,39 +9839,39 @@ async function bSetData() {
     //Round 1
     await newRank("StarrsMillA","DeerfieldWindsorA",380,90);
     await newRank("StarrsMillB","JacksonA",350,80);
-    await newRank("TJClassicA","StarrsMillE",450,90);
+    await newRank("TJClassicalA","StarrsMillE",450,90);
     await newRank("WandoA","StarrsMillC",260,150);
     await newRank("StarrsMillD","NortheastA");
     //Round 2
     await newRank("StarrsMillD","JacksonA",200,120);
     await newRank("StarrsMillB","StarrsMillC",240,100);
     await newRank("StarrsMillA","StarrsMillE",390,90);
-    await newRank("TJClassicA","NortheastA",390,20);
+    await newRank("TJClassicalA","NortheastA",390,20);
     await newRank("WandoA","DeerfieldWindsorA",240,100);
     //Round 3
     await newRank("StarrsMillB","JacksonA",280,100);
     await newRank("StarrsMillA","StarrsMillD",400,80);
     await newRank("DeerfieldWindsorA","StarrsMillC",260,160);
     await newRank("StarrsMillE","NortheastA",260,50);
-    await newRank("TJClassicA","WandoA",20,130);
+    await newRank("TJClassicalA","WandoA",20,130);
     //Round 4
     await newRank("StarrsMillC","StarrsMillD",130,110);
     await newRank("StarrsMillA","JacksonA",370,20);
     await newRank("DeerfieldWindsorA","StarrsMillE",190,130);
-    await newRank("TJClassicA","StarrsMillB",360,130);
+    await newRank("TJClassicalA","StarrsMillB",360,130);
     await newRank("WandoA","NortheastA",260,30);
     //Round 5
     await newRank("DeerfieldWindsorA","JacksonA",230,20);
     await newRank("StarrsMillB","StarrsMillC",330,60);
-    await newRank("StarrsMillA","TJClassicA",250,220);
+    await newRank("StarrsMillA","TJClassicalA",250,220);
     await newRank("StarrsMillD","StarrsMillE",140,130);
     await newRank("WandoA","NortheastA",280,50);
     //Playoffs
     //Varsity Semifinals
     await newRank("StarrsMillA","DeerfieldWindsorA",350,50);
-    await newRank("TJClassicA","StarrsMillB",310,130);
+    await newRank("TJClassicalA","StarrsMillB",310,130);
     //Varsity Finals
-    await newRank("TJClassicA","StarrsMillA",240,190);
+    await newRank("TJClassicalA","StarrsMillA",240,190);
     console.log("Central GA B q V: "+qV[a2]);
     console.log("Central GA B q JV: "+qJV[b2]);
     a = 0;
@@ -9733,7 +9892,9 @@ async function allSets() {
     //await printRanks("Middle School");
 }
     
-allSets();
+//allSets();
+let cSet=true;
+gameData(1,62,"NorCalC");
 
 /*
 db.collection("teams").get().then((querySnapshot) => {
