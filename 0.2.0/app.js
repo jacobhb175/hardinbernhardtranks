@@ -8,9 +8,20 @@ admin.initializeApp({
 });
 */
 
+
+
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-
+var firebaseConfig = {
+    apiKey: "AIzaSyDXM_FBLEWgMGLFMbV_nL9ScHBqsE2D9Dk",
+    authDomain: "hardinbernhardtranks.firebaseapp.com",
+    databaseURL: "https://hardinbernhardtranks.firebaseio.com",
+    projectId: "hardinbernhardtranks",
+    storageBucket: "hardinbernhardtranks.appspot.com",
+    messagingSenderId: "498587943256",
+    appId: "1:498587943256:web:979cc52a0053224122a52d",
+    measurementId: "G-FHXST7T8VQ"
+};
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
@@ -19,343 +30,343 @@ const database = firebase.database();
 // Teams
 
 //Varsity Teams
-db.collection("teams").doc("AmherstA").set({
+db.collection("teams").doc("Amherst A").set({
     name:"Amherst A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("AmherstB").set({
+db.collection("teams").doc("Amherst B").set({
     name:"Amherst B",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ApalacheeA").set({
+db.collection("teams").doc("Apalachee A").set({
     name:"Apalachee A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArchimedeanA").set({
+db.collection("teams").doc("Archimedean A").set({
     name:"Archimedean A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArchimedeanB").set({
+db.collection("teams").doc("Archimedean B").set({
     name:"Archimedean B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArchimedeanC").set({
+db.collection("teams").doc("Archimedean C").set({
     name:"Archimedean C",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArchimedeanD").set({
+db.collection("teams").doc("Archimedean D").set({
     name:"Archimedean D",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArchimedeanE").set({
+db.collection("teams").doc("Archimedean E").set({
     name:"Archimedean E",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArdsleyA").set({
+db.collection("teams").doc("Ardsley A").set({
     name:"Ardsley A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("AuburnA").set({
+db.collection("teams").doc("Auburn A").set({
     name:"Auburn A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BASISMcLeanA").set({
+db.collection("teams").doc("BASIS McLean A").set({
     name:"BASIS McLean A",
     state:"Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BarringtonA").set({
+db.collection("teams").doc("Barrington A").set({
     name:"Barrington A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BarringtonB").set({
+db.collection("teams").doc("Barrington B").set({
     name:"Barrington B",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BatonRougeEpiscopalA").set({
+db.collection("teams").doc("Baton Rouge Episcopal A").set({
     name:"Baton Rouge Episcopal A",
     state:"Louisiana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BatonRougeMagnetA").set({
+db.collection("teams").doc("Baton Rouge Magnet A").set({
     name:"Baton Rouge Magnet A",
     state:"Louisiana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BeavercreekA").set({
+db.collection("teams").doc("Beavercreek A").set({
     name:"Beavercreek A",
     state:"Ohio",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BeavercreekB").set({
+db.collection("teams").doc("Beavercreek B").set({
     name:"Beavercreek B",
     state:"Ohio",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BelenA").set({
+db.collection("teams").doc("Belen Jesuit A").set({
     name:"Belen Jesuit A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BelenB").set({
+db.collection("teams").doc("Belen Jesuit B").set({
     name:"Belen Jesuit B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BerkeleyA").set({
+db.collection("teams").doc("Berkeley Prep A").set({
     name:"Berkeley Prep A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BerkeleyB").set({
+db.collection("teams").doc("Berkeley Prep B").set({
     name:"Berkeley Prep B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BillingsSeniorA").set({
+db.collection("teams").doc("Billings Senior A").set({
     name:"Billings Senior A",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BillingsWestA").set({
+db.collection("teams").doc("Billings West A").set({
     name:"Billings West A",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BillingsWestB").set({
+db.collection("teams").doc("Billings West B").set({
     name:"Billings West B",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BlazerA").set({
+db.collection("teams").doc("Blazer A").set({
     name:"Blazer A",
     state:"Kentucky",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BostonLatinA").set({
+db.collection("teams").doc("Boston Latin A").set({
     name:"Boston Latin A",
     state:"Massachusetts",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BozemanA").set({
+db.collection("teams").doc("Bozeman A").set({
     name:"Bozeman A",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BozemanB").set({
+db.collection("teams").doc("Bozeman B").set({
     name:"Bozeman B",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BrookwoodA").set({
+db.collection("teams").doc("Brookwood A").set({
     name:"Brookwood A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CambridgeA").set({
+db.collection("teams").doc("Cambridge A").set({
     name:"Cambridge",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CaravelA").set({
+db.collection("teams").doc("Caravel A").set({
     name:"Caravel A",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CaravelB").set({
+db.collection("teams").doc("Caravel B").set({
     name:"Caravel B",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentennialA").set({
+db.collection("teams").doc("Centennial HS A").set({
     name:"Centennial HS A",
     state:"Maryland",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentennialB").set({
+db.collection("teams").doc("Centennial HS B").set({
     name:"Centennial HS B",
     state:"Maryland",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentralKitsapA").set({
+db.collection("teams").doc("Central Kitsap A").set({
     name:"Central Kitsap A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CharlestonA").set({
+db.collection("teams").doc("Charleston A").set({
     name:"Charleston Catholic A",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CharlestonB").set({
+db.collection("teams").doc("Charleston B").set({
     name:"Charleston Catholic B",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChattahoocheeA").set({
+db.collection("teams").doc("Chattahoochee A").set({
     name:"Chattahoochee A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChoctawhatcheeA").set({
+db.collection("teams").doc("Choctawhatchee A").set({
     name:"Choctawhatchee A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ClassicalA").set({
+db.collection("teams").doc("Classical A").set({
     name:"Classical Prep A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ColdhugA").set({
-    name:"Team Coldhug A",
+db.collection("teams").doc("Coldhug A").set({
+    name:"Hotchkiss A",
     state:"Connecticut",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CollegiateA").set({
+db.collection("teams").doc("Collegiate A").set({
     name:"Collegiate",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ColumbiaRiverA").set({
+db.collection("teams").doc("Columbia River A").set({
     name:"Columbia River A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ColumbiaRiverB").set({
+db.collection("teams").doc("Columbia River B").set({
     name:"Columbia River B",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CommerceA").set({
+db.collection("teams").doc("Commerce A").set({
     name:"Commerce A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NotCoralReef").set({
+db.collection("teams").doc("Not Coral Reef").set({
     name:"Not Coral Reef",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CoralSprings").set({
+db.collection("teams").doc("Coral Springs").set({
     name:"Coral Springs",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CoralReefA").set({
+db.collection("teams").doc("Coral Reef A").set({
     name:"Coral Reef A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CoralReefB").set({
+db.collection("teams").doc("Coral Reef B").set({
     name:"Coral Reef B",
     state:"Georgia",
     division:"Varsity",
@@ -369,120 +380,120 @@ db.collection("teams").doc("Dreyfoos").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CreeksideA").set({
+db.collection("teams").doc("Creekside A").set({
     name:"Creekside A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DaltonA").set({
+db.collection("teams").doc("Dalton A").set({
     name:"Dalton A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DarienA").set({
+db.collection("teams").doc("Darien A").set({
     name:"Darien A",
     state:"Connecticut",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DickinsonA").set({
+db.collection("teams").doc("Dickinson A").set({
     name:"Dickinson A",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DonovanCatholicA").set({
+db.collection("teams").doc("Donovan Catholic A").set({
     name:"Donovan Catholic A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NorthHighlandsA").set({
+db.collection("teams").doc("North Highlands").set({
     name:"North Highlands",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DoralA").set({
+db.collection("teams").doc("Doral Academy A").set({
     name:"Doral Academy A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DunbarA").set({
+db.collection("teams").doc("Dunbar A").set({
     name:"Dunbar A",
     state:"Kentucky",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EastBrunswickA").set({
+db.collection("teams").doc("East Brunswick A").set({
     name:"East Brunswick A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EastBrunswickB").set({
+db.collection("teams").doc("East Brunswick B").set({
     name:"East Brunswick B",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EastValleyA").set({
+db.collection("teams").doc("East Valley A").set({
     name:"East Valley A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EastValleyB").set({
+db.collection("teams").doc("East Valley B").set({
     name:"East Valley B",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ElginA").set({
+db.collection("teams").doc("Elgin Academy A").set({
     name:"Elgin Academy A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EriksenA").set({
+db.collection("teams").doc("Eriksen A").set({
     name:"Eriksen A",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FontbonneA").set({
+db.collection("teams").doc("Fontbonne A").set({
     name:"Fordham Hall Academy A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FontbonneB").set({
+db.collection("teams").doc("Fontbonne B").set({
     name:"Fordham Hall Academy B",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FoothillA").set({
-    name:"Foothill A",
+db.collection("teams").doc("Foothill").set({
+    name:"Foothill",
     state:"California",
     division:"Varsity",
 rank:1200,
@@ -495,14 +506,14 @@ db.collection("teams").doc("FordhamA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FrenchtownA").set({
+db.collection("teams").doc("Frenchtown A").set({
     name:"Frenchtown A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FrenchtownB").set({
+db.collection("teams").doc("Frenchtown B").set({
     name:"Frenchtown B",
     state:"Washington",
     division:"Varsity",
@@ -572,8 +583,8 @@ db.collection("teams").doc("GlenelgA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GonzagaA").set({
-    name:"Gonzaga Prep A",
+db.collection("teams").doc("Gonzaga Prep").set({
+    name:"Gonzaga Prep",
     state:"Washington",
     division:"Varsity",
 rank:1200,
@@ -600,8 +611,8 @@ db.collection("teams").doc("GreensFarmsA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GundersonA").set({
-    name:"Gunderson A",
+db.collection("teams").doc("Gunderson").set({
+    name:"Gunderson",
     state:"California",
     division:"Varsity",
 rank:1200,
@@ -705,463 +716,456 @@ db.collection("teams").doc("IrvingtonA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JesuitA").set({
+db.collection("teams").doc("Jesuit A").set({
     name:"Jesuit A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JesuitB").set({
+db.collection("teams").doc("Jesuit B").set({
     name:"Jesuit B",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnPaulIIA").set({
+db.collection("teams").doc("John Paul II A").set({
     name:"John Paul II A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnsCreekA").set({
+db.collection("teams").doc("Johns Creek A").set({
     name:"Johns Creek A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnsonA").set({
+db.collection("teams").doc("Johnson A").set({
     name:"Johnson A",
     state:"Kentucky",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnsonB").set({
+db.collection("teams").doc("Johnson B").set({
     name:"Johnson B",
     state:"Kentucky",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnsonC").set({
+db.collection("teams").doc("Johnson C").set({
     name:"Johnson C",
     state:"Kentucky",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("KingA").set({
+db.collection("teams").doc("King A").set({
     name:"King A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("KingB").set({
+db.collection("teams").doc("King B").set({
     name:"King B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LambertA").set({
+db.collection("teams").doc("Lambert A").set({
     name:"Lambert A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LargoA").set({
+db.collection("teams").doc("Largo A").set({
     name:"Largo A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LargoB").set({
+db.collection("teams").doc("Largo B").set({
     name:"Largo B",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LeoniaA").set({
+db.collection("teams").doc("Leonia A").set({
     name:"Leonia A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LesQuizA").set({
-    name:"Les Quiz A",
+db.collection("teams").doc("Les Quiz").set({
+    name:"Les Quiz",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LewisandClarkA").set({
+db.collection("teams").doc("Lewis and Clark A").set({
     name:"Lewis and Clark A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LexingtonA").set({
+db.collection("teams").doc("Lexington A").set({
     name:"Lexington A",
     state:"Massachusetts",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LincolnA").set({
+db.collection("teams").doc("Lincoln A").set({
     name:"Lincoln A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LynbrookA").set({
-    name:"Lynbrook A",
+db.collection("teams").doc("Lynbrook").set({
+    name:"Lynbrook",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ManateeA").set({
+db.collection("teams").doc("Manatee A").set({
     name:"Manatee A",
     state:"Florida",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MarmionA").set({
+db.collection("teams").doc("Marmion Academy A").set({
     name:"Marmion Academy A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MaryvilleA").set({
+db.collection("teams").doc("Maryville Jr. High A").set({
     name:"Maryville Jr. High A",
     state:"Tennessee",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MethactonA").set({
+db.collection("teams").doc("Methacton A").set({
     name:"Methacton A",
     state:"Pennsylvania",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MethactonB").set({
+db.collection("teams").doc("Methacton B").set({
     name:"Methacton B",
     state:"Pennsylvania",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnA").set({
+db.collection("teams").doc("Millburn A").set({
     name:"Millburn A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnB").set({
+db.collection("teams").doc("Millburn B").set({
     name:"Millburn B",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnC").set({
+db.collection("teams").doc("Millburn C").set({
     name:"Millburn C",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnC").set({
-    name:"Millburn C",
-    state:"New Jersey",
-    division:"Varsity",
-rank:1200,
-games:0
-}),
-db.collection("teams").doc("MontgomeryBlairA").set({
+db.collection("teams").doc("Montgomery Blair A").set({
     name:"Montgomery Blair A",
     state:"Maryland",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MoorestownA").set({
+db.collection("teams").doc("Moorestown Friends A").set({
     name:"Moorestown Friends A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MoorestownB").set({
+db.collection("teams").doc("Moorestown Friends B").set({
     name:"Moorestown Friends B",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MoravianA").set({
+db.collection("teams").doc("Moravian Academy A").set({
     name:"Moravian Academy A",
     state:"Pennsylvania",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MorristownA").set({
+db.collection("teams").doc("Morristown East A").set({
     name:"Morristown East A",
     state:"Tennessee",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MorristownB").set({
+db.collection("teams").doc("Morristown East B").set({
     name:"Morristown East B",
     state:"Tennessee",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MountainLakesA").set({
+db.collection("teams").doc("Mountain Lakes A").set({
     name:"Mountain Lakes A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MtSpokaneA").set({
+db.collection("teams").doc("Mt. Spokane A").set({
     name:"Mt. Spokane A",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MtSpokaneB").set({
+db.collection("teams").doc("Mt. Spokane B").set({
     name:"Mt. Spokane B",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MountVernonA").set({
-    name:"Mount Vernon A",
+db.collection("teams").doc("MountV ernon").set({
+    name:"Mount Vernon",
     state:"Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewarkA").set({
+db.collection("teams").doc("Newark Academy A").set({
     name:"Newark Academy A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewarkCharterA").set({
+db.collection("teams").doc("Newark Charter A").set({
     name:"Newark Charter A",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewarkCharterB").set({
+db.collection("teams").doc("Newark Charter B").set({
     name:"Newark Charter B",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewarkCharterC").set({
+db.collection("teams").doc("Newark Charter C").set({
     name:"Newark Charter C",
     state:"Deleware",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewnanA").set({
+db.collection("teams").doc("Newnan A").set({
     name:"Newnan A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NicholsA").set({
+db.collection("teams").doc("Nichols A").set({
     name:"Nichols A",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NicholsB").set({
+db.collection("teams").doc("Nichols B").set({
     name:"Nichols B",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NicholsC").set({
+db.collection("teams").doc("Nichols C").set({
     name:"Nichols C",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NitroA").set({
+db.collection("teams").doc("Nitro A").set({
     name:"Nitro A",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NitroB").set({
+db.collection("teams").doc("Nitro B").set({
     name:"Nitro B",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NorthfieldMtHermonA").set({
-    name:"Northfield Mt. Hermon A",
+db.collection("teams").doc("Northfield Mt. Hermon").set({
+    name:"Northfield Mt. Hermon",
     state:"Massachusetts",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NorthwesternA").set({
-    name:"Northwestern Middle A",
+db.collection("teams").doc("Northwestern Middle").set({
+    name:"Northwestern Middle",
     state:"Louisiana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("OakMountainA").set({
-    name:"Oak Mountain A",
+db.collection("teams").doc("Oak Mountain").set({
+    name:"Oak Mountain",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("OratoryA").set({
+db.collection("teams").doc("Oratory Prep A").set({
     name:"Oratory Prep A",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoA").set({
+db.collection("teams").doc("Miami Palmetto A").set({
     name:"Miami Palmetto A",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoB").set({
+db.collection("teams").doc("Miami Palmetto B").set({
     name:"Miami Palmetto B",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoC").set({
+db.collection("teams").doc("Miami Palmetto C").set({
     name:"Miami Palmetto C",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoD").set({
+db.collection("teams").doc("Miami Palmetto D").set({
     name:"Miami Palmetto D",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoE").set({
+db.collection("teams").doc("Miami Palmetto E").set({
     name:"Miami Palmetto E",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoF").set({
+db.collection("teams").doc("Miami Palmetto F").set({
     name:"Miami Palmetto F",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoG").set({
+db.collection("teams").doc("Miami Palmetto G").set({
     name:"Miami Palmetto G",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoH").set({
+db.collection("teams").doc("Miami Palmetto H").set({
     name:"Miami Palmetto H",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoIV").set({
+db.collection("teams").doc("Miami Palmetto I Varsity").set({
     name:"Miami Palmetto I",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoIJV").set({
+db.collection("teams").doc("Miami Palmetto I Junior Varsity").set({
     name:"Miami Palmetto I",
     state:"Florida",
-    division:"Varsity",
+    division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoJV").set({
+db.collection("teams").doc("Miami Palmetto J Varsity").set({
     name:"Miami Palmetto J",
     state:"Florida",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoJJV").set({
+db.collection("teams").doc("Miami Palmetto J Junior").set({
     name:"Miami Palmetto J",
     state:"Florida",
     division:"Junior Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("ParamusA").set({
+db.collection("teams").doc("Paramus A").set({
     name:"Paramus A",
     state:"New Jersey",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PhillipsExeterA").set({
+db.collection("teams").doc("Phillips Exeter A").set({
     name:"Phillips Exeter A",
     state:"New Hampshire",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("PiedmontHillsA").set({
-    name:"Piedmont Hills A",
+db.collection("teams").doc("Piedmont Hills").set({
+    name:"Piedmont Hills",
     state:"California",
     division:"Varsity",
 rank:1200,
@@ -1181,7 +1185,7 @@ db.collection("teams").doc("PineViewA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PioneersA").set({
+db.collection("teams").doc("Team Pi-oneers").set({
     name:"Team Pi-oneers",
     state:"California",
     division:"Varsity",
@@ -1341,49 +1345,49 @@ db.collection("teams").doc("RussellA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SalemA").set({
+db.collection("teams").doc("Salem A").set({
     name:"Salem A",
     state:"Massachusetts",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SalemB").set({
+db.collection("teams").doc("Salem B").set({
     name:"Salem B",
     state:"Massachusetts",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SandburgA").set({
+db.collection("teams").doc("SandburgA ").set({
     name:"Stanburg A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SaratogaA").set({
+db.collection("teams").doc("Saratoga A").set({
     name:"Saratoga A",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SaratogaB").set({
+db.collection("teams").doc("Saratoga B").set({
     name:"Saratoga B",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SaratogaC").set({
+db.collection("teams").doc("Saratoga C").set({
     name:"Saratoga C",
     state:"California",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ScarsdaleA").set({
+db.collection("teams").doc("Scarsdale A").set({
     name:"Scarsdale A",
     state:"New York",
     division:"Varsity",
@@ -1397,119 +1401,119 @@ db.collection("teams").doc("Seymour").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SkyviewA").set({
+db.collection("teams").doc("SkyviewA ").set({
     name:"Skyview A",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SkyviewB").set({
+db.collection("teams").doc("Skyview B").set({
     name:"Skyview B",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SkyviewC").set({
+db.collection("teams").doc("Skyview C").set({
     name:"Skyview C",
     state:"Montana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StAlbansA").set({
+db.collection("teams").doc("St. Alban's A").set({
     name:"St. Albans A",
     state:"West Virginia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StAnselmsA").set({
+db.collection("teams").doc("St. Anselm's A").set({
     name:"St. Anselm's A",
     state:"Maryland",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StarrsMillA").set({
+db.collection("teams").doc("Starr's Mill A").set({
     name:"Starr's Mill A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StarrsMillB").set({
+db.collection("teams").doc("Starr's Mill B").set({
     name:"Starr's Mill B",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StarrsMillC").set({
+db.collection("teams").doc("Starr's Mill C").set({
     name:"Starr's Mill C",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StarrsMillD").set({
+db.collection("teams").doc("Starr's Mill D").set({
     name:"Starr's Mill D",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StarrsMillE").set({
+db.collection("teams").doc("Starr's Mill E").set({
     name:"Starr's Mill E",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StevensonA").set({
+db.collection("teams").doc("Stevenson A").set({
     name:"Stevenson A",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StevensonB").set({
+db.collection("teams").doc("Stevenson B").set({
     name:"Stevenson B",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StevensonC").set({
+db.collection("teams").doc("Stevenson C").set({
     name:"Stevenson C",
     state:"Illinois",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StGeorgesA").set({
-    name:"St. George's A",
+db.collection("teams").doc("St. Georges").set({
+    name:"St. George's",
     state:"Washington",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StJosephA").set({
+db.collection("teams").doc("St. Joseph A").set({
     name:"St. Joseph A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StPetersA").set({
+db.collection("teams").doc("St. Peter's Prep A").set({
     name:"St. Peter's Prep A",
     state:"New Jersey",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("StPetersB").set({
+db.collection("teams").doc("St. Peter's Prep A").set({
     name:"St. Peter's Prep B",
     state:"New Jersey",
     division:"Varsity",
@@ -1754,28 +1758,28 @@ db.collection("teams").doc("WoodstockA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("WoodwardA").set({
+db.collection("teams").doc("Woodward Academy A").set({
     name:"Woodward Academy A",
     state:"Georgia",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ZacharyA").set({
+db.collection("teams").doc("Zachary A").set({
     name:"Zachary A",
     state:"Louisiana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ZacharyB").set({
+db.collection("teams").doc("Zachary B").set({
     name:"Zachary B",
     state:"Louisiana",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ZacharyC").set({
+db.collection("teams").doc("Zachary C").set({
     name:"Zachary C",
     state:"Louisiana",
     division:"Varsity",
@@ -1786,203 +1790,203 @@ games:0
 
 //JV Teams
 
-db.collection("teams").doc("ApalacheeB").set({
+db.collection("teams").doc("Apalachee B").set({
     name:"Apalachee B",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("AptakisicA").set({
+db.collection("teams").doc("Aptakisic A").set({
     name:"Aptakisic A",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ArchimedeanF").set({
+db.collection("teams").doc("Archimedean F").set({
     name:"Archimedean F",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("AuburnB").set({
+db.collection("teams").doc("Auburn B").set({
     name:"Auburn B",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BASISBrooklynA").set({
-    name:"BASIS Brooklyn A",
+db.collection("teams").doc("BASIS Brooklyn").set({
+    name:"BASIS Brooklyn",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BeavercreekC").set({
+db.collection("teams").doc("Beavercreek C").set({
     name:"Beavercreek C",
     state:"Ohio",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BelenC").set({
+db.collection("teams").doc("Belen Jesuit C").set({
     name:"Belen Jesuit C",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BerkeleyC").set({
+db.collection("teams").doc("Berkeley Prep C").set({
     name:"Berkeley Prep C",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BerkeleyD").set({
+db.collection("teams").doc("Berkeley Prep D").set({
     name:"Berkeley Prep D",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BillingsSeniorB").set({
+db.collection("teams").doc("Billings Senior B").set({
     name:"Billings Senior B",
     state:"Montana",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BozemanC").set({
+db.collection("teams").doc("Bozeman C").set({
     name:"Bozeman C",
     state:"Montana",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BromfieldA").set({
+db.collection("teams").doc("Bromfield A").set({
     name:"Bromfield A",
     state:"Massachusetts",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("BrookwoodB").set({
+db.collection("teams").doc("Brookwood B").set({
     name:"Brookwood B",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CaliforniaA").set({
-    name:"California A",
+db.collection("teams").doc("California").set({
+    name:"California",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentennialC").set({
+db.collection("teams").doc("Centennial HS C").set({
     name:"Centennial HS C",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentennialD").set({
+db.collection("teams").doc("Centennial HS D").set({
     name:"Centennial HS D",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CentennialE").set({
+db.collection("teams").doc("Centennial HS E").set({
     name:"Centennial HS E",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChambleeA").set({
+db.collection("teams").doc("Chamblee Charter").set({
     name:"Chamblee Charter A",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CharlestonC").set({
+db.collection("teams").doc("Charleston Catholic C").set({
     name:"Charleston Catholic C",
     state:"West Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CharlestonD").set({
+db.collection("teams").doc("Charleston Catholic D").set({
     name:"Charleston Catholic D",
     state:"West Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChattahoocheeB").set({
+db.collection("teams").doc("Chattahoochee B").set({
     name:"Chattahoochee B",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("CherokeeBluff").set({
+db.collection("teams").doc("Cherokee Bluff").set({
     name:"Cherokee Bluff",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChurchillNJA").set({
+db.collection("teams").doc("Churchill A New Jersey").set({
     name:"Churchill A",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChurchillNJB").set({
+db.collection("teams").doc("Churchill B New Jersey").set({
     name:"Churchill B",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ChurchillMDA").set({
+db.collection("teams").doc("Churchill A Maryland").set({
     name:"Churchill",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ClassicalB").set({
+db.collection("teams").doc("Classical B").set({
     name:"Classical Prep B",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ColdhugB").set({
-    name:"Team Coldhug B",
+db.collection("teams").doc("Coldhug B").set({
+    name:"Hotchkiss B",
     state:"Connecticut",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DonovanCatholicB").set({
+db.collection("teams").doc("Donovan Catholic B").set({
     name:"Donovan Catholic B",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("DoralB").set({
+db.collection("teams").doc("Doral B").set({
     name:"Doral Academy B",
     state:"Florida",
     division:"Junior Varsity",
@@ -1996,119 +2000,119 @@ db.collection("teams").doc("Duvall").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EastValleyC").set({
+db.collection("teams").doc("East Valley C").set({
     name:"East Valley C",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EastValleyD").set({
+db.collection("teams").doc("East Valley D").set({
     name:"East Valley C",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("EriksenB").set({
+db.collection("teams").doc("Eriksen B").set({
     name:"Eriksen B",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GeorgeWaltonB").set({
+db.collection("teams").doc("George Walton B").set({
     name:"George Walton B",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FontbonneC").set({
-    name:"Fordham Hall Academy C",
+db.collection("teams").doc("Fontbonne C").set({
+    name:"Fontbonne C",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FordhamB").set({
+db.collection("teams").doc("Fordham Prep B").set({
     name:"Fordham Prep B",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("FultonA").set({
+db.collection("teams").doc("Fulton Science Academy A").set({
     name:"Fulton Science Academy A",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GeorgetownDayB").set({
+db.collection("teams").doc("Georgetown Day B").set({
     name:"Georgetown Day B",
     state:"DC",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GeorgeWashingtonNJA").set({
+db.collection("teams").doc("George Washington A New Jersey").set({
     name:"George Washington A",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("GreensFarmsB").set({
+db.collection("teams").doc("Greens Farms B").set({
     name:"Greens Farms B",
     state:"Connecticut",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HarkerA").set({
-    name:"Harker A",
+db.collection("teams").doc("Harker").set({
+    name:"Harker",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HermannA").set({
+db.collection("teams").doc("Hermann Homeschool A").set({
     name:"Hermann Homeschool A",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HewlettC").set({
+db.collection("teams").doc("Hewlett C").set({
     name:"Hewlett C",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("HewlettD").set({
+db.collection("teams").doc("Hewlett D").set({
     name:"Hewlett D",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("HighTechB").set({
+db.collection("teams").doc("High Tech B").set({
     name:"High Tech B",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HolmdelB").set({
+db.collection("teams").doc("Team Holmdel B").set({
     name:"Team Holmdel B",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("HolmdelA").set({
+db.collection("teams").doc("Holmdel A").set({
     name:"Holmdel",
     state:"New Jersey",
     division:"Junior Varsity",
@@ -2116,146 +2120,139 @@ db.collection("teams").doc("HolmdelA").set({
     games:0
 }),
 db.collection("teams").doc("Homestead").set({
-    name:"Homestead A",
+    name:"Homestead",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HomewoodFlossmoorB").set({
+db.collection("teams").doc("Homewood-Flossmoor B").set({
     name:"Homewood-Flossmoor B",
     state:"Illinois",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HoraceGreeleyB").set({
+db.collection("teams").doc("Horace Greeley B").set({
     name:"Horace Greeley B",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HunterB").set({
+db.collection("teams").doc("Hunter College High B").set({
     name:"Hunter College High B",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HunterC").set({
+db.collection("teams").doc("Hunter College High C").set({
     name:"Hunter College High C",
     state:"New York",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("IroquoisB").set({
+db.collection("teams").doc("Iroquois B Varsity").set({
     name:"Iroquois B",
     state:"New York",
     division:"Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("IroquoisB").set({
+db.collection("teams").doc("Iroquois B Junior Varsity").set({
     name:"Iroquois B",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("IroquoisC").set({
+db.collection("teams").doc("Iroquois C").set({
     name:"Iroquois C",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnAdamsA").set({
+db.collection("teams").doc("John Adams A").set({
     name:"John Adams A",
     state:"West Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JohnPaulIIB").set({
+db.collection("teams").doc("John Paul II B").set({
     name:"John Paul II B",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("KinnelonA").set({
+db.collection("teams").doc("Kinnelon A").set({
     name:"Kinnelon A",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LargoC").set({
+db.collection("teams").doc("Largo C").set({
     name:"Largo C",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LeoniaB").set({
+db.collection("teams").doc("Leonia B").set({
     name:"Leonia A",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LibbyA").set({
-    name:"Libby Middle School A",
+db.collection("teams").doc("Libby").set({
+    name:"Libby Middle School",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("LexingtonB").set({
+db.collection("teams").doc("Lexington B").set({
     name:"Lexington B",
     state:"Massachusetts",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ManateeB").set({
+db.collection("teams").doc("Manatee B").set({
     name:"Manatee B",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnMSA").set({
+db.collection("teams").doc("Millburn Middle School A").set({
     name:"Millburn Middle School A",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnA").set({
-    name:"Millburn Middle School A",
-    state:"New Jersey",
-    division:"Middle School",
-rank:1200,
-games:0
-}),
-db.collection("teams").doc("McLeanA").set({
+db.collection("teams").doc("McLean A").set({
     name:"McLean A",
     state:"Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MethactonC").set({
+db.collection("teams").doc("Methacton C").set({
     name:"Methacton C",
     state:"Pennsylvania",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MillburnD").set({
+db.collection("teams").doc("Millburn D").set({
     name:"Millburn D",
     state:"New Jersey",
     division:"Junior Varsity",
@@ -2276,302 +2273,302 @@ db.collection("teams").doc("Mission San Jose").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MontgomeryBlairB").set({
+db.collection("teams").doc("Montgomery Blair B").set({
     name:"Montgomery Blair B",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MontgomeryBlairC").set({
+db.collection("teams").doc("Montgomery Blair C").set({
     name:"Montgomery Blair C",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MorgantownA").set({
+db.collection("teams").doc("Morgantown A").set({
     name:"Morgantown A",
     state:"West Virginia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MountainLakesB").set({
+db.collection("teams").doc("Mountain Lakes B").set({
     name:"Mountain Lakes",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MountainViewCAA").set({
-    name:"Mountain View California A",
+db.collection("teams").doc("Mountain View California").set({
+    name:"Mountain View California",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MtSpokaneC").set({
+db.collection("teams").doc("Mt. Spokane C").set({
     name:"Mt. Spokane C",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("MtSpokaneD").set({
+db.collection("teams").doc("Mt. Spokane D").set({
     name:"Mt. Spokane D",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewnanB").set({
+db.collection("teams").doc("Newnan B").set({
     name:"Newnan B",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NewnanC").set({
+db.collection("teams").doc("Newnan C").set({
     name:"Newnan C",
     state:"Georgia",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NicholsD").set({
+db.collection("teams").doc("Nichols D").set({
     name:"Nichols D",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("NicholsE").set({
+db.collection("teams").doc("Nichols E").set({
     name:"Nichols E",
     state:"New York",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("OdleA").set({
+db.collection("teams").doc("Odle Middle A").set({
     name:"Odle Middle A",
     state:"Washington",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoK").set({
+db.collection("teams").doc("Miami Palmetto K").set({
     name:"Miami Palmetto K",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoL").set({
+db.collection("teams").doc("Miami Palmetto L").set({
     name:"Miami Palmetto L",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoM").set({
+db.collection("teams").doc("Miami Palmetto M").set({
     name:"Miami Palmetto M",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettonA").set({
+db.collection("teams").doc("Miami Palmetto N").set({
     name:"Miami Palmetto N",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoO").set({
+db.collection("teams").doc("Miami Palmetto O").set({
     name:"Miami Palmetto O",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoP").set({
+db.collection("teams").doc("Miami Palmetto P").set({
     name:"Miami Palmetto P",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoQ").set({
+db.collection("teams").doc("Miami Palmetto Q").set({
     name:"Miami Palmetto Q",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PalmettoR").set({
+db.collection("teams").doc("Miami Palmetto R").set({
     name:"Miami Palmetto R",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ParkCityA").set({
+db.collection("teams").doc("Park City A").set({
     name:"Park City A",
     state:"Montana",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("ParkCityB").set({
+db.collection("teams").doc("Park City B").set({
     name:"Park City B",
     state:"Montana",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PhillipsAndoverA").set({
+db.collection("teams").doc("Phillips Andover A").set({
     name:"Phillips Andover A",
     state:"Massachusetts",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PhillipsExeterB").set({
+db.collection("teams").doc("Phillips Exeter B").set({
     name:"Phillips Exeter B",
     state:"New Hampshire",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PrincetonC").set({
+db.collection("teams").doc("Princeton C").set({
     name:"Princeton C",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("PrincetonD").set({
+db.collection("teams").doc("Princeton D").set({
     name:"Princeton D",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RanneyB").set({
+db.collection("teams").doc("Ranney B").set({
     name:"Ranney B",
     state:"New Jersey",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomC").set({
+db.collection("teams").doc("Ransom Everglades C").set({
     name:"Ransom Everglades C",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomD").set({
+db.collection("teams").doc("Ransom Everglades D").set({
     name:"Ransom Everglades D",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomE").set({
+db.collection("teams").doc("Ransom Everglades E").set({
     name:"Ransom Everglades E",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomF").set({
+db.collection("teams").doc("Ransom Everglades F").set({
     name:"Ransom Everglades F",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomG").set({
+db.collection("teams").doc("Ransom Everglades G").set({
     name:"Ransom Everglades G",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RichardMontgomeryB").set({
+db.collection("teams").doc("Richard Montgomery B").set({
     name:"Richard Montgomery B",
     state:"Maryland",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RidgewoodC").set({
+db.collection("teams").doc("Ridgewood C").set({
     name:"Ridgewood C",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("RidgewoodD").set({
+db.collection("teams").doc("Ridgewood D").set({
     name:"Ridgewood D",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("RidgewoodE").set({
+db.collection("teams").doc("Ridgewood E").set({
     name:"Ridgewood E",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("RidgewoodF").set({
+db.collection("teams").doc("Ridgewood F").set({
     name:"Ridgewood F",
     state:"New Jersey",
     division:"Junior Varsity",
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("RiverviewF").set({
+db.collection("teams").doc("Riverview F").set({
     name:"Riverview F",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiverviewG").set({
+db.collection("teams").doc("Riverview G").set({
     name:"Riverview G",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiverviewH").set({
+db.collection("teams").doc("Riverview H").set({
     name:"Riverview H",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiverviewI").set({
+db.collection("teams").doc("Riverview I").set({
     name:"Riverview I",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RiverviewJ").set({
+db.collection("teams").doc("Riverview J").set({
     name:"Riverview J",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("Saggitarius").set({
-    name:"Saggitarius A",
+db.collection("teams").doc("Sagittarius").set({
+    name:"Sagittarius",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
@@ -2584,8 +2581,8 @@ db.collection("teams").doc("Sandburg B").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("SantaClara A").set({
-    name:"Santa Clara A",
+db.collection("teams").doc("Santa Clara").set({
+    name:"Santa Clara",
     state:"California",
     division:"Junior Varsity",
 rank:1200,
@@ -2703,7 +2700,7 @@ db.collection("teams").doc("Tippecanoe B").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("Tower HillC ").set({
+db.collection("teams").doc("Tower Hill C").set({
     name:"Tower Hill C",
     state:"Delaware",
     division:"Junior Varsity",
@@ -2804,8 +2801,8 @@ games:0
 
 
 //MS Teams
-db.collection("teams").doc("Challenger-Almaden A").set({
-    name:"Challenger-Almaden A",
+db.collection("teams").doc("Challenger Almaden").set({
+    name:"Challenger Almaden",
     state:"California",
     division:"Middle School",
 rank:1200,
@@ -2895,8 +2892,8 @@ db.collection("teams").doc("CompassMSA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("HarvestParkMSA").set({
-    name:"Harvest Park A",
+db.collection("teams").doc("Harvest Park").set({
+    name:"Harvest Park",
     state:"California",
     division:"Middle School",
 rank:1200,
@@ -2909,8 +2906,8 @@ db.collection("teams").doc("IndianFieldsMSA").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("JLSMSA").set({
-    name:"JLS A",
+db.collection("teams").doc("JLS").set({
+    name:"JLS",
     state:"California",
     division:"Middle School",
 rank:1200,
@@ -4239,8 +4236,9 @@ async function newRank(A, B, AScore, BScore) {
         if (cSet == true){
             if (evalV == true) {
                 //push game results to array
-                teamAvgV.push(AScore,BScore)
+                teamAvgV.push(AScore,BScore);
                 teamAvgC.push(AScore,BScore);
+                //console.log(teamAvgV);
             }
             else if (evalJV == true) {
                 //push game results to array
@@ -4663,10 +4661,8 @@ async function cSetData(){
     //Finals
     await newRank("MissionSanJoseA","SaggitariusA",280,210);
     */
-    async function NorCalC() {
-        gameData(1,62,"NorCalC");
-    }
-    NorCalC();
+    console.log("hello world");
+    await gameData(1,63,"NorCalC");
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     allMS.push(teamAvgMS);
@@ -4674,7 +4670,7 @@ async function cSetData(){
     teamAvgJV = [];
     teamAvgMS = [];
     console.log("NorCal Fall C");
-    
+    /*
     
     //Eastern Washington C-Set
     //Prelims
@@ -4732,12 +4728,13 @@ async function cSetData(){
     await newRank("LibbyA","EastValleyC",210,100);
     await newRank("MtSpokaneC","MtSpokaneD",140,90);
     //Finals
-    //await newRank("LibbyA","MtSpokaneC",1,0);
+    //await newRank("LibbyA","MtSpokaneC",1,0);*/
+    await gameData(1,42,"EastWAC")
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
     teamAvgJV = [];
-    console.log("East WA C");
+    console.log("East WA C");/*
     
     
     //Central Georgia Fall C-Set
@@ -4780,14 +4777,15 @@ async function cSetData(){
     await newRank("StarrsMillA","OakMountainA",260,150);
     //JV Playoffs
     //Finals
-    await newRank("ChambleeA","VeteransB",250,40);//Chamblee Charter
+    await newRank("ChambleeA","VeteransB",250,40);//Chamblee Charter*/
+    gameData(1,30,"CGAC");
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
     teamAvgJV = [];
     console.log("Central GA C");
     
-    
+    /*
     //Montana C-Set
     //Prelims
     //Round 1
@@ -4838,13 +4836,14 @@ async function cSetData(){
     await newRank("SkyviewA","BozemanB",240,90);
     //JV Playoffs
     //Finals
-    await newRank("BozemanC","SkyviewD",110,80);
+    await newRank("BozemanC","SkyviewD",110,80);*/
+    gameData(1,40,"MontanaC");
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     teamAvgV = [];
     teamAvgJV = [];
     console.log("MT C");
-    
+    /*
     //West Virginia Fall C-Set
     //Prelims
     //Round 1
@@ -5011,14 +5010,15 @@ async function cSetData(){
     //await newRank("TenaflyA","IndianFieldsMSA",1,0)
     await newRank("TenaflyB","TenaflyC",160,20);
     //Finals
-    await newRank("TenaflyA","TenaflyB",200,90);
+    await newRank("TenaflyA","TenaflyB",200,90);*/
+    gameData(1,96,"NJNC");
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     allMS.push(teamAvgMS);
     teamAvgV = [];
     teamAvgJV = [];
     teamAvgMS = [];
-    console.log("North NJ C");
+    console.log("North NJ C");/*
     
     //Northern Illinois C-Set
     //Prelims
@@ -6666,7 +6666,7 @@ async function cSetData(){
     teamAvgV = [];
     teamAvgJV = [];
     console.log("SoCal C");
-    
+    */
     
     
     y = true;
@@ -6758,7 +6758,7 @@ async function cSetData(){
     await newRank("MissionSanJoseA","CaliforniaA",250,220);
     //Finals
     await newRank("MissionSanJoseA","SaggitariusA",280,210);*/
-    NorCalC();
+    await gameData(1,63,"NorCalC");
     console.log("NorCal C q V: "+qV[a2]);
     console.log("NorCal C q JV: "+qJV[b2]);
     console.log("NorCal C q MS: "+qMS[c2]);
@@ -6769,7 +6769,7 @@ async function cSetData(){
     
     //Eastern Washington C-Set
     a2 = a2+1;
-    b2 = b2+1;
+    b2 = b2+1;/*
     //Prelims
     //Round 1
     await newRank("GonzagaA","MtSpokaneA",300,180);
@@ -6825,9 +6825,10 @@ async function cSetData(){
     await newRank("LibbyA","EastValleyC",210,100);
     await newRank("MtSpokaneC","MtSpokaneD",140,90);
     //Finals
-    //await newRank("await newRank("LibbyA","MtSpokaneC",1,0);
-    console.log("East WA C q V: "+qV[a2]);
-    console.log("East WA C q JV: "+qJV[b2]);
+    //await newRank("await newRank("LibbyA","MtSpokaneC",1,0);*/
+    await gameData(1,42,"EastWAC")
+    await console.log("East WA C q V: "+qV[a2]);
+    await console.log("East WA C q JV: "+qJV[b2]);
     a = 0;
     b = 0;
     c = 0;
@@ -6836,7 +6837,7 @@ async function cSetData(){
     
     //Central Georgia Fall C-Set
     a2 = a2+1;
-    b2 = b2+1;
+    b2 = b2+1;/*
     //Prelims
     //Round 1
     await newRank("StarrsMillA","StarrsMillB",440,90);
@@ -6877,6 +6878,8 @@ async function cSetData(){
     //JV Playoffs
     //Finals
     await newRank("ChambleeA","VeteransB",250,40);//Chamblee Charter
+    */
+    gameData(1,30,"CGAC");
     console.log("Central GA C q V: "+qV[a2]);
     console.log("Central GA C q JV: "+qJV[b2]);
     a = 0;
@@ -6885,7 +6888,7 @@ async function cSetData(){
     
     //Montana C-Set
     a2 = a2+1;
-    b2 = b2+1;
+    b2 = b2+1;/*
     //Prelims
     //Round 1
     await newRank("BillingsSeniorA","SkyviewB",250,200);
@@ -6935,14 +6938,15 @@ async function cSetData(){
     await newRank("SkyviewA","BozemanB",240,90);
     //JV Playoffs
     //Finals
-    await newRank("BozemanC","SkyviewD",110,80);
+    await newRank("BozemanC","SkyviewD",110,80);*/
+    gameData(1,40,"MontanaC");
     console.log("MT C q V: "+qV[a2]);
     console.log("MT C q JV: "+qJV[b2]);
     a = 0;
     b = 0;
     c = 0;
     
-    
+    /*
     //West Virginia Fall C-Set
     a2 = a2+1;
     b2 = b2+1;
@@ -6995,12 +6999,12 @@ async function cSetData(){
     console.log("WV C q JV: "+qJV[b2]);
     a = 0;
     b = 0;
-    c = 0;
+    c = 0;*/
     
     //Northern New Jersey C-Set
     a2 = a2+1;
     b2 = b2+1;
-    c2 = c2+1;
+    c2 = c2+1;/*
     //Prelims
     //Round 1
     await newRank("MillburnA","StPetersA",550,70);
@@ -7114,13 +7118,14 @@ async function cSetData(){
     //await newRank("TenaflyA","IndianFieldsMSA",1,0)
     await newRank("TenaflyB","TenaflyC",160,20);
     //Finals
-    await newRank("TenaflyA","TenaflyB",200,90);
+    await newRank("TenaflyA","TenaflyB",200,90);*/
+    gameData(1,96,"NJNC");
     console.log("Northern NJ C q V: "+qV[a2]);
     console.log("Northern NJ C q JV: "+qJV[b2]);
     console.log("Northern NJ C q MS: "+qMS[c2]);
     a = 0;
     b = 0;
-    c = 0;
+    c = 0;/*
     
     //Northern Illinois C-Set
     a2 = a2+1;
@@ -8808,6 +8813,7 @@ async function cSetData(){
     console.log("SoCal C q JV: "+qJV[b2]);
     a = 0;
     b = 0;
+    */
     
     cSet = false;
     y = false;
@@ -9892,9 +9898,7 @@ async function allSets() {
     //await printRanks("Middle School");
 }
     
-//allSets();
-let cSet=true;
-gameData(1,62,"NorCalC");
+cSetData();
 
 /*
 db.collection("teams").get().then((querySnapshot) => {

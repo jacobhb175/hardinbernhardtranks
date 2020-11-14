@@ -309,7 +309,7 @@ rank:1200,
 games:0
 }),
 db.collection("teams").doc("ColdhugAV").set({
-    name:"Team Coldhug A",
+    name:"Hotchkiss A",
     state:"Connecticut",
     division:"Varsity",
 rank:1200,
@@ -1930,7 +1930,7 @@ rank:1200,
 games:0
 }),
 db.collection("teams").doc("ColdhugBJV").set({
-    name:"Team Coldhug B",
+    name:"Hotchkiss B",
     state:"Connecticut",
     division:"Junior Varsity",
 rank:1200,
