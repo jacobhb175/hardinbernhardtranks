@@ -11,6 +11,7 @@ admin.initializeApp({
 
 
 
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
@@ -4092,7 +4093,7 @@ let qV = [];
 let qJV = [];
 let qMS = [];
 let z = 0;
-let artemis;
+let artemis = "Hunter B";
 
 //K Rank
 //C Set = 100
@@ -4531,11 +4532,11 @@ async function nRank(A,B,AScore,BScore){
                                     //console.log("q,Ka,Kb,avgTA,avgTB ",q,Ka,Kb,avgTA,avgTB);
                                     //console.log("rankA,rankB ",rankA,rankB);
                                     if (artemis == teamA || artemis == teamB){
-                                        console.log("teamA","rankA","teamB","rankB");
+                                        console.log(teamA,rankA,teamB,rankB);
                                         console.log(A,B,AScore,BScore);
                                         rankA = rankA + q*Ka*(AScore/(AScore+BScore)-expScoreA);
                                         rankB = rankB + q*Kb*(BScore/(AScore+BScore)-expScoreB);
-                                        console.log("teamA","rankA","teamB","rankB");
+                                        console.log(teamA,rankA,teamB,rankB);
                                     }
                                     else {
                                         rankA = rankA + q*Ka*(AScore/(AScore+BScore)-expScoreA);
