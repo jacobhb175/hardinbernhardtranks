@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>HardinBernhardtRanks by jacobhb175</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>HardinBernhardtRanks update</h1>
+        <h2>National History Bowl Rankings</h2>
+        <a href="https://github.com/jacobhb175/hardinbernhardtranks" class="button"><small>View project on</small> GitHub</a>
+      </div>
+      <!--
+      <div class="topnav">
+        <a class="active" href="#rankings">Rankings</a>
+        <a href="#tournaments">List of Tournaments</a>
+        <a href="#analysis">Analysis</a>
+        <a href="#contact">Contact</a>
+      </div>
+      -->
+
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="hardin-bernhardt-ranks" class="anchor" href="#hardin-bernhardt-ranks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hardin-Bernhardt Ranks</h1>
+<p>Hardin-Bernhardt Ranks is a new way of ranking NHBB teams using a modified version of the Go Elo formula that takes into account strength of field and margin of victory.</p>
+<h2>
+<a id="the-formulas" class="anchor" href="#the-formulas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Formulas</h2>
+<h3>Expected Score Formula</h3>
+<p>This formula uses the Elo ratings (R) of a given lower-rated Team A and higher-rated Team B to calculate what percentage of the total points Team A would be expected to score in a game against Team B. This formula will always result in a value for the expected score of A (S<sub>E</sub>(A)) between 0 and 1.</p>
+<p>
+  \[S_E(A) = {1\over e^{(R_B-R_A)/R_A}+1}\]
+</p>
+<h3>New Rating Formula</h3>
+<p>Following a game between Team A and Team B, this formula calculates the new Elo rating of Team A. The new rating formula takes the percentage of the game’s points scored by Team A, multiplies it by T to adjust for conversion issues, and compares it to the expected score for A (S<sub>E</sub>(A)). That result is then multiplied by the variables q and K to adjust for strength of field, and games played respectively.</p>
+<p>
+  \[R_n(A) = {R_o(A)+qK[T({S_A\over S_A+S_B})-S_E(A)]}\]
+  R<sub>n</sub> = new rating</br>
+  R<sub>o</sub> = old rating</br>
+  q = strength of field</br>
+  K = (800/gA)</br>
+  g = games played</br>
+  S = score</br>
+  S<sub>E</sub> = expected score</br>
+</p>
+
+<h2>
+<a id="the-variables" class="anchor" href="#the-variables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Variables</h2>
+<h3>
+<a id="q-value" class="anchor" href="#q-value" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>q-Value</h3>
+<p>The q-value is used to represent strength of field at a tournament and intended to help improve elo as a measure of skill unaffected by the field a team is up against, and thus more useful and accurate as a comparison between teams from different regions. It is calculated as a ratio of average total points scored per game at a given tournament : average total points scored per game on a given set, and is calculated independently for the Varsity and JV fields.</p>
+<h3>
+<a id="t-value" class="anchor" href="#t-value" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>T-Value</h3>
+<p>The T-value is used to account for the inherent issues in equating the percent chance of a given winning to the percent of total points that team will score. It is calculated as a ratio of the percent of total points scored by a given team : the percent chance given to that team to win.</p>
+<h3>
+<a id="K-value" class="anchor" href="#g-value" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>K-Value</h3>
+<p>The K-value is a multiplier to adjust for the different formats of tournaments which lead some teams to play more or fewer games. It is set equal to 800/the number of games played by the team (not counting byes or crossover matches).</p>
+<h2>
+<a id="list-of-tournaments" class="anchor" href="#list-of-tournaments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List of Tournaments</h2>
+
+<table>
+<thead>
+<tr>
+<th>Tournament</th>
+<th>Date</th>
+<th>Set Played</th>
+<th>Status</th>
+<th>Varsity q-Value</th>
+<th>JV q-Value</th>
+<th>MS q-Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Southern California</td>
+<td>3/1/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.188</td>
+<td>1.147</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Arkansas</td>
+<td>2/29/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.959</td>
+<td>0.743</td>
+<td>---</td>
+</tr>
+<tr>
+<td>New Hampshire</td>
+<td>2/29/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.066</td>
+<td>0.818</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Northern Pennsylvania</td>
+<td>2/1/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.841</td>
+<td>--</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Upper Hudson</td>
+<td>2/1/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.982</td>
+<td>0.990</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Eastern Iowa</td>
+<td>1/28/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.130</td>
+<td>0.917</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Nevada</td>
+<td>1/26/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.225</td>
+<td>1.020</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Mississippi Winter</td>
+<td>1/25/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.775</td>
+<td>0.892</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Western Pennsylvania</td>
+<td>1/25/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.996</td>
+<td>1.062</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Southwestern Illinois</td>
+<td>1/20/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.038</td>
+<td>1.001</td>
+<td>---</td>
+</tr>
+<tr>
+  <td>New Jersey State</td>
+  <td>1/19/2020</td>
+  <td>B</td>
+  <td>Complete</td>
+  <td>1.090</td>
+  <td>1.080</td>
+  <td>1.004</td>
+</tr>
+<tr>
+<td>Florida Panhandle</td>
+<td>1/18/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.962</td>
+<td>0.360</td>
+<td>---</td>
+</tr>
+<tr>
+  <td>Spokane</td>
+  <td>1/18/2020</td>
+  <td>B</td>
+  <td>Complete</td>
+  <td>0.838</td>
+  <td>0.337</td>
+  <td>---</td>
+</tr>
+<tr>
+  <td>Chattanooga</td>
+  <td>1/11/2020</td>
+  <td>B</td>
+  <td>Complete</td>
+  <td>0.653</td>
+  <td>---</td>
+  <td>0.925</td>
+</tr>
+<tr>
+<td>Deleware</td>
+<td>1/11/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.896</td>
+<td>0.941</td>
+<td>---</td>
+</tr>
+<tr>
+  <td>Idaho Falls</td>
+  <td>1/11/2020</td>
+  <td>B</td>
+  <td>Complete</td>
+  <td>0.705</td>
+  <td>---</td>
+  <td>---</td>
+</tr>
+<tr>
+<td>Lower Hudson</td>
+<td>1/11/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.085</td>
+<td>1.182</td>
+<td>---</td>
+</tr>
+<tr>
+  <td>Northern Virginia</td>
+  <td>1/11/2020</td>
+  <td>B</td>
+  <td>Complete</td>
+  <td>1.114</td>
+  <td>1.275</td>
+  <td>---</td>
+</tr>
+<tr>
+<td>Bergen County</td>
+<td>1/5/2020</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.169</td>
+<td>1.180</td>
+<td>---</td>
+</tr>
+<tr>
+  <td>Hawaii State</td>
+  <td>1/4/2020</td>
+  <td>B</td>
+  <td>Complete</td>
+  <td>1.020</td>
+  <td>0.458</td>
+  <td>---</td>
+</tr>
+<tr>
+  <td>Western New York</td>
+  <td>1/4/2020</td>
+  <td>B</td>
+  <td>Complete</td>
+  <td>0.998</td>
+  <td>0.687</td>
+  <td>---</td>
+</tr>
+<tr>
+<td>Eastern Kentucky</td>
+<td>12/14/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.006</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Louisiana Fall</td>
+<td>12/14/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.874</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Northwest Illinois</td>
+<td>12/14/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.974</td>
+<td>0.852</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Southern New Jersey</td>
+<td>12/14/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.019</td>
+<td>1.056</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Washington DC</td>
+<td>12/7/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.267</td>
+<td>1.261</td>
+<td>1.071</td>
+</tr>
+<tr>
+<td>Boston Fall</td>
+<td>11/23/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.065</td>
+<td>1.118</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Southern Washington</td>
+<td>11/23/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.997</td>
+<td>--</td>
+<td>1.160</td>
+</tr>
+<tr>
+<td>Western Washington</td>
+<td>11/23/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.929</td>
+<td>0.929</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Central Florida Fall</td>
+<td>11/16/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.007</td>
+<td>0.767</td>
+<td>0.820</td>
+</tr>
+<tr>
+<td>Eastern Georgia Fall</td>
+<td>11/16/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.083</td>
+<td>1.000</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Greater Knoxville Fall</td>
+<td>11/16/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.846</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Oahu</td>
+<td>11/16/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.068</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td>South Florida Fall</td>
+<td>11/16/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.880</td>
+<td>0.959</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Buffalo</td>
+<td>11/9/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.960</td>
+<td>0.727</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Greater Dayton</td>
+<td>11/9/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.212</td>
+<td>0.521</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Northern Illinois</td>
+<td>11/9/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.228</td>
+<td>1.235</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Northern New Jersey</td>
+<td>11/9/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.092</td>
+<td>1.154</td>
+<td>0.720</td>
+</tr>
+<tr>
+<td>West Viginia Fall</td>
+<td>11/9/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.860</td>
+<td>0.828</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Montana</td>
+<td>11/5/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.779</td>
+<td>0.608</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Central Georgia Fall</td>
+<td>11/2/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.898</td>
+<td>0.723</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Eastern Washington</td>
+<td>11/2/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>0.848</td>
+<td>0.718</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Northern California Fall</td>
+<td>10/27/2019</td>
+<td>C</td>
+<td>Complete</td>
+<td>1.222</td>
+<td>1.213</td>
+<td>1.346</td>
+</tr>
+</tbody>
+</table>
+<h2>
+<a id="the-rankings" class="anchor" href="#the-rankings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Rankings</h2>
+<h3>
+<a id="varsity-rankings" class="anchor" href="#varsity-rankings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Varsity C-Set Rankings</h3>
+<table>
+<thead>
+<tr>
+<th>Ranking</th>
+<th>Team</th>
+<th>State</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+    <td>1.</td>
+    <td>Millburn A</td>
+    <td>New Jersey</td>
+    <td>2104.275</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>Arcadia A</td>
+    <td>California</td>
+    <td>2072.387</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>Russellville A</td>
+    <td>Arkansas</td>
+    <td>2060.707</td>
+  </tr>
+  <tr>
+    <td>4.</td>
+    <td>Team Coldhug A</td>
+    <td>Connecticut</td>
+    <td>1996.221</td>
+  </tr>
+  <tr>
+    <td>5.</td>
+    <td>Team Pi-oneers</td>
+    <td>California</td>
+    <td>1983.979</td>
+  </tr>
+  <tr>
+    <td>6.</td>
+    <td>Collegiate</td>
+    <td>Florida</td>
+    <td>1981.544</td>
+  </tr>
+  <tr>
+    <td>7.</td>
+    <td>Cambridge</td>
+    <td>Georgia</td>
+    <td>1966.800</td>
+  </tr>
+  <tr>
+    <td>8.</td>
+    <td>Stevenson A</td>
+    <td>Illinois</td>
+    <td>1939.301</td>
+    </tr>
+  <tr>
+    <td>9.</td>
+    <td>Richard Montgomery A</td>
+    <td>Maryland</td>
+    <td>1938.246</td>
+  </tr>
+  <tr>
+    <td>10.</td>
+    <td>Saratoga A</td>
+    <td>California</td>
+    <td>1925.474</td>
+  </tr>
+</tbody>
+</table>
+<h3>
+<a id="junior-varsity-rankings" class="anchor" href="#junior-varsity-rankings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Junior Varsity C-Set Rankings</h3>
+<table>
+<thead>
+<tr>
+<th>Ranking</th>
+<th>Team</th>
+<th>State</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+    <td>1.</td>
+    <td>Stevenson E</td>
+    <td>Illinois</td>
+    <td>2145.523</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>Hunter College High B</td>
+    <td>New York</td>
+    <td>2072.991</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>Churchill A</td>
+    <td>New Jersey</td>
+    <td>2040.958</td>
+  </tr>
+  <tr>
+    <td>4.</td>
+    <td>Ridgewood C</td>
+    <td>New Jersey</td>
+    <td>2040.198</td>
+  </tr>
+  <tr>
+    <td>5.</td>
+    <td>Ransom Everglades C</td>
+    <td>Florida</td>
+    <td>1997.725</td>
+  </tr>
+  <tr>
+    <td>6.</td>
+    <td>Methacton C</td>
+    <td>Pennsylvania</td>
+    <td>1990.755</td>
+  </tr>
+  <tr>
+    <td>7.</td>
+    <td>Montgomery Blair B</td>
+    <td>Maryland</td>
+    <td>1982.417</td>
+  </tr>
+  <tr>
+    <td>8.</td>
+    <td>McLean</td>
+    <td>Virginia</td>
+    <td>1977.806</td>
+  </tr>
+  <tr>
+    <td>9.</td>
+    <td>St. Margaret's</td>
+    <td>California</td>
+    <td>1973.390</td>
+  </tr>
+  <tr>
+    <td>10.</td>
+    <td>Phillips Exeter B</td>
+    <td>New Hampshire</td>
+    <td>1918.715</td>
+  </tr>
+</tbody>
+</table>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/jacobhb175/hardinbernhardtranks/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/jacobhb175/hardinbernhardtranks/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/jacobhb175/hardinbernhardtranks"></a> is maintained by <a href="https://github.com/jacobhb175">jacobhb175</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
