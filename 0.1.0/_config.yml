@@ -1,8 +1,0 @@
-title: HardinBernhardtRanks
-description: National History Bowl Rankings
-google_analytics: 
-show_downloads: true
-theme: jekyll-theme-architect
-
-gems:
-  - jekyll-mentions
