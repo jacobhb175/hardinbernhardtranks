@@ -34,3 +34,7 @@ yarn-debug.log*
 *.sw[a-zA-Z]
 
 .DS_Store
+
+/0.1.0/node_modules
+/0.2.0/node_modules
+/0.3.0/node_modules
