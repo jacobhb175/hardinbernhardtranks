@@ -4092,7 +4092,7 @@ let qV = [];
 let qJV = [];
 let qMS = [];
 let z = 0;
-let artemis = ["Hunter B"];
+let artemis = ["Hunter B","Phillips Exeter","West Brunswick","Wilton K"];
 let artemisTF = false;
 
 //K Rank
@@ -4189,6 +4189,13 @@ async function includes(A,B,div) {
 
 //Calculate expected score
 async function cExpScore(A,B){
+    for(i=0;i<artemis.length;i++){
+        if(artemis[i] == A || artemis[i] == B){
+            artemisTF = true;
+            //console.log(artemisTF);
+            i=100;
+        }
+    }
     //console.log("cExpScore");
     var docRefA = db.collection("teams").doc(A);
     var docRefB = db.collection("teams").doc(B);
@@ -4202,11 +4209,36 @@ async function cExpScore(A,B){
                     //console.log("rankB",rankB);  
                     //If A is lower
                     if (rankA<rankB){
-                        expScore = 1/(1+(Math.E^((rankB-rankA)/400)));
+                        if(rankB-400>=rankA){
+                            expScore = 0;
+                        }
+                        else {
+                            if(artemisTF==true){
+                                console.log(rankB-rankA);
+                                console.log((rankB-rankA)/400);
+                                console.log(Math.E^((rankB-rankA)/400));
+                                console.log(1+(Math.E^((rankB-rankA)/400)));
+                                console.log(1/(1+(Math.E^((rankB-rankA)/400))));
+                            }
+                            expScore = 1/(1+(Math.E^((rankB-rankA)/400)));
+                        }
                     }
                     //If B is lower
                     else if (rankB<rankA){
-                        expScore = 1-1/(1+(Math.E^((rankA-rankB)/400)));
+
+                        if(rankA-400>=rankB){
+                            expScore = 1;
+                        }
+                        else{
+                            if(artemisTF==true){
+                                console.log(rankA-rankB);
+                                console.log((rankA-rankB)/400);
+                                console.log(Math.E^((rankA-rankB)/400));
+                                console.log(1+(Math.E^((rankA-rankB)/400)));
+                                console.log(1/(1+(Math.E^((rankA-rankB)/400))));
+                            }
+                            expScore = 1-1/(1+(Math.E^((rankA-rankB)/400)));
+                        }
                     }
                     //If tie
                     else {
@@ -4214,6 +4246,10 @@ async function cExpScore(A,B){
                     };
                     expScoreA = expScore;
                     expScoreB = 1-expScoreA;
+                    if(artemisTF==true){
+                        console.log(A,B,"expSA",expScoreA,"expSB",expScoreB);
+                        artemisTF=false;
+                    }
                 } else {
                     // doc.data() will be undefined in this case
                     console.log("No such document!"+B);
@@ -4236,24 +4272,9 @@ async function cExpScore(A,B){
 
 //calculate new ranks
 async function newRank(A,B,AScore, BScore) {
-    for(i=0;i<artemis.length;i++){
-        if(artemis[i] == A || artemis[i] == B){
-            artemisTF = true;
-            console.log(artemisTF);
-            i=100;
-        }
-    }
-    //Calculate exp scores
-    await cExpScore(A,B);
-    if(artemisTF==true){
-        console.log(A,B,"expSA",expScoreA,"expSB",expScoreB);
-        console.log("AScore/(AScore+BScore)",AScore/(AScore+BScore));
-        console.log("BScore/(AScore+BScore)",BScore/(AScore+BScore));
-        artemisTF=false;
-    }
     //Update t value
-    t.push((AScore/(AScore+BScore))/expScoreA);
-    t.push((BScore/(AScore+BScore))/expScoreB);
+    //t.push((AScore/(AScore+BScore))/expScoreA);
+    //t.push((BScore/(AScore+BScore))/expScoreB);
     /*let sumT = 0;
     let l;
     let tLen = t.length;
@@ -4261,7 +4282,7 @@ async function newRank(A,B,AScore, BScore) {
         sumT += parseInt(t[l],10);
     };
     avgT = sumT/t.length;*/
-    avgT = average(t);
+    //avgT = average(t);
     //console.log(avgT);
     //console.log("avgTA,avgTB",avgTA,avgTB);
     //console.log("avgT, sumT, t.length",avgT, sumT, t.length);
@@ -4504,7 +4525,6 @@ async function newRank(A,B,AScore, BScore) {
 
 //calculate and update rank
 async function nRank(A,B,AScore,BScore){
-    //console.log("nRank");
     var docRefA = db.collection("teams").doc(A);
     var docRefB = db.collection("teams").doc(B);
     await docRefA.get().then(async function(doc) {
@@ -4538,8 +4558,6 @@ async function nRank(A,B,AScore,BScore){
                                     if (Kb>800){
                                         Kb = 800;
                                     }
-                                    //console.log("q,Ka,Kb,avgTA,avgTB ",q,Ka,Kb,avgTA,avgTB);
-                                    //console.log("rankA,rankB ",rankA,rankB);
                                     for(i=0;i<artemis.length;i++){
                                         if(artemis[i] == A || artemis[i] == B){
                                             artemisTF = true;
@@ -4548,6 +4566,8 @@ async function nRank(A,B,AScore,BScore){
                                         }
                                     }
                                     if(artemisTF === true){
+                                        //Calculate exp scores
+                                        await cExpScore(A,B);
                                         console.log(A,rankA,B,rankB);
                                         console.log(A,B,AScore,BScore);
                                         console.log("rankA",rankA,"q",q,"Ka",Ka,"expScoreA",expScoreA,"(AScore/(AScore+BScore)-expScoreA)",(AScore/(AScore+BScore)-expScoreA))
@@ -4557,6 +4577,8 @@ async function nRank(A,B,AScore,BScore){
                                         artemisTF = false;
                                     }
                                     else {
+                                        //Calculate exp scores
+                                        await cExpScore(A,B);
                                         rankA = rankA + q*Ka*(AScore/(AScore+BScore)-expScoreA);
                                         rankB = rankB + q*Kb*(BScore/(AScore+BScore)-expScoreB);
                                     }
