@@ -38,3 +38,4 @@ yarn-debug.log*
 /1.0.0/node_modules
 /2.0.0/node_modules
 /2.2.0/node_modules
+/3.0.0/node_modules
