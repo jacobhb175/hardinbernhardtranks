@@ -14,6 +14,8 @@ The q-value is a multiplier used to represent strength of field at a tournament 
 ### g-Value
 The g-Value is a multiplier to adjust for the different formats of tournaments which lead some teams to play more or fewer games. It is set equal to 800/the number of games played by the team (not counting byes or crossover matches).
 
+
+# Note: These statistics are from the 2019-2020 season. Rankings for the 2020-2021 season are currently in progress and will be released soon.
 ## List of Tournaments
 Tournament|Date|Set Played|Status|Varsity q-Value|JV q-Value
 ---|---|---|---|---|---
