@@ -1,19 +1,4 @@
-/*var admin = require("firebase-admin");
 
-var serviceAccount = require("./hardinbernhardtranks-170e9a2580ff.json");
-
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://hardinbernhardtranks.firebaseio.com"
-});
-*/
-
-
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
-const database = firebase.database();
 
 // Teams
 //Varsity Teams
@@ -927,7 +912,7 @@ db.collection("teams").doc("Lynbrook").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("Magee Secondary Academy").set({
+db.collection("teams").doc("Magee").set({
     name:"Magee Secondary Academy",
     state:"British Columbia",
     division:"Junior Varsity",
@@ -1410,6 +1395,13 @@ db.collection("teams").doc("Hoover").set({
 rank:1200,
 games:0
 }),
+db.collection("teams").doc("Vestavia Hills").set({
+    name:"Vestavia Hills",
+    state:"Alabama",
+    division:"Varsity",
+rank:1200,
+games:0
+}),
 db.collection("teams").doc("Ransom A").set({
     name:"Ransom Everglades A",
     state:"Florida",
@@ -1417,13 +1409,7 @@ db.collection("teams").doc("Ransom A").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("RansomBV").set({
-    name:"Ransom Everglades B",
-    state:"Florida",
-    division:"Varsity",
-rank:1200,
-games:0
-}),db.collection("teams").doc("RansomBJV").set({
+db.collection("teams").doc("Ransom B").set({
     name:"Ransom Everglades B",
     state:"Florida",
     division:"Junior Varsity",
@@ -2141,6 +2127,13 @@ db.collection("teams").doc("Chattahoochee B").set({
 rank:1200,
 games:0
 }),
+db.collection("teams").doc("Chattahoochee C").set({
+    name:"Chattahoochee C",
+    state:"Georgia",
+    division:"Junior Varsity",
+rank:1200,
+games:0
+}),
 db.collection("teams").doc("Cherokee Bluff").set({
     name:"Cherokee Bluff",
     state:"Georgia",
@@ -2178,6 +2171,13 @@ games:0
 }),
 db.collection("teams").doc("Doral B").set({
     name:"Doral Academy B",
+    state:"Florida",
+    division:"Junior Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("Doral C").set({
+    name:"Doral Academy C",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
@@ -2288,7 +2288,7 @@ db.collection("teams").doc("Penn-Trafford").set({
     rank:1200,
     games:0
 }),
-db.collection("teams").doc("Fox Chapel").set({
+db.collection("teams").doc("Fox Chapel A").set({
     name:"Fox Chapel A",
     state:"Pennsylvania",
     division:"Varsity",
@@ -2522,7 +2522,7 @@ games:0
 db.collection("teams").doc("Morgantown B").set({
     name:"Morgantown B",
     state:"West Virginia",
-    division:"Varsity",
+    division:"Junior Varsity",
 rank:1200,
 games:0
 }),
@@ -2708,36 +2708,56 @@ db.collection("teams").doc("Ranney B").set({
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("Ransom Everglades C").set({
+db.collection("teams").doc("Ransom C").set({
     name:"Ransom Everglades C",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("Ransom Everglades D").set({
+db.collection("teams").doc("Ransom D").set({
     name:"Ransom Everglades D",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("Ransom Everglades E").set({
+db.collection("teams").doc("Ransom E").set({
     name:"Ransom Everglades E",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("Ransom Everglades F").set({
+db.collection("teams").doc("Ransom F").set({
     name:"Ransom Everglades F",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
 games:0
 }),
-db.collection("teams").doc("Ransom Everglades G").set({
+db.collection("teams").doc("Ransom G").set({
     name:"Ransom Everglades G",
+    state:"Florida",
+    division:"Junior Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("Buchholz A").set({
+    name:"Buchholz A",
+    state:"Florida",
+    division:"Junior Varsity",
+rank:1200,
+games:0
+}),
+db.collection("teams").doc("Buchholz A").set({
+    name:"Buchholz A",
+    state:"Florida",
+    division:"Junior Varsity",
+rank:1200,
+games:0
+}),db.collection("teams").doc("Buchholz B").set({
+    name:"Buchholz B",
     state:"Florida",
     division:"Junior Varsity",
 rank:1200,
@@ -3418,21 +3438,21 @@ db.collection("teams").doc("NAlleghenyIntB").set({
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("MadisonA").set({
+db.collection("teams").doc("Madison A").set({
     name:"Madison Central A",
     state:"Mississippi",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("MadisonB").set({
+db.collection("teams").doc("Madison B").set({
     name:"Madison Central B",
     state:"Mississippi",
     division:"Varsity",
     rank:1200,
 games:0
 }),
-db.collection("teams").doc("MadisonC").set({
+db.collection("teams").doc("Madison C").set({
     name:"Madison Central C",
     state:"Mississippi",
     division:"Junior Varsity",
@@ -4083,6 +4103,13 @@ db.collection("teams").doc("HillcrestB").set({
     rank:1200,
     games:0
 }),
+db.collection("teams").doc("Hume Fogg").set({
+    name:"Hume-Fogg",
+    state:"Tennessee",
+    division:"Varsity",
+    rank:1200,
+    games:0
+}),
 db.collection("teams").doc("SignalMountainA").set({
     name:"Signal Mountain A",
     state:"Tennessee",
@@ -4374,7 +4401,13 @@ let qJV = [];
 let qMS = [];
 let z = 0;
 let artemis = [];
-let artemisTF = false;
+const artemisTF = true;
+
+let AoverABminusEA;
+let BoverABminusEB;
+let AoverAB;
+let BoverAB;
+
 
 //K Rank
 //C Set = 100
@@ -4496,11 +4529,11 @@ async function cExpScore(A,B,AScore,BScore){
                         }
                         else {
                             if(artemisTF==true){
-                                console.log(rankB-rankA);
+                                /*console.log(rankB-rankA);
                                 console.log((rankB-rankA)/400);
                                 console.log(Math.E^((rankB-rankA)/400));
-                                console.log(1+(Math.E^((rankB-rankA)/400)));
-                                console.log(1/(1+(Math.E^((rankB-rankA)/400))));
+                                console.log(1+(Math.E^((rankB-rankA)/400)));*/
+                                console.log(expScore,1/(1+(Math.E^((rankB-rankA)/400))));
                             }
                             expScore = 1/(1+(Math.E^((rankB-rankA)/400)));
                             //rankDiff = rankB-rankA;
@@ -4514,11 +4547,11 @@ async function cExpScore(A,B,AScore,BScore){
                         }
                         else{
                             if(artemisTF==true){
-                                console.log(rankA-rankB);
+                                /*console.log(rankA-rankB);
                                 console.log((rankA-rankB)/400);
                                 console.log(Math.E^((rankA-rankB)/400));
-                                console.log(1+(Math.E^((rankA-rankB)/400)));
-                                console.log(1/(1+(Math.E^((rankA-rankB)/400))));
+                                console.log(1+(Math.E^((rankA-rankB)/400)));*/
+                                //console.log(1/(1+(Math.E^((rankA-rankB)/400))));
                             }
                             expScore = 1-1/(1+(Math.E^((rankA-rankB)/400)));
                         }
@@ -4573,7 +4606,7 @@ async function cExpScore(A,B,AScore,BScore){
 //calculate new ranks
 async function newRank(A,B,AScore,BScore) {
     if(AScore==="Forfeit"||BScore==="Forfeit"){
-        console.log(A,B,AScore,BScore);
+        //console.log(A,B,AScore,BScore);
         return;
     }
     //check what division
@@ -4856,21 +4889,41 @@ async function nRank(A,B,AScore,BScore){
                                         }
                                     }
                                     if(artemisTF === true){
+
                                         //Calculate exp scores
                                         await cExpScore(A,B);
-                                        console.log(A,rankA,B,rankB);
-                                        console.log(A,B,AScore,BScore);
-                                        console.log("rankA",rankA,"q",q,"Ka",Ka,"expScoreA",expScoreA,"(AScore/(AScore+BScore)-expScoreA)",(AScore/(AScore+BScore)-expScoreA))
-                                        rankA = rankA + q*Ka*(AScore/(AScore+BScore)-expScoreA);
-                                        rankB = rankB + q*Kb*(BScore/(AScore+BScore)-expScoreB);
-                                        console.log(A,rankA,B,rankB);
+                                        console.log("A,rankA,B,rankB",A,rankA,B,rankB);
+                                        console.log("A,B,AScore,BScore",A,B,AScore,BScore);
+                                        console.log("q",q,"Ka",Ka,"expScoreA",expScoreA);
+                                        AoverAB = (parseInt(AScore)/(parseInt(AScore)+parseInt(BScore)));
+                                        BoverAB = (parseInt(BScore)/(parseInt(AScore)+parseInt(BScore)));
+                                        console.log("AScore",AScore,"BScore",BScore,"AScore+BScore",parseInt(AScore)+parseInt(BScore),"AScore/(AScore+BScore)",AoverAB);
+                                        if(AoverAB == expScoreA){
+                                            console.log("if AoverABminusEA")
+                                            AoverABminusEA = 0;
+                                            BoverABminusEB = 0;
+                                        }
+                                        else if((AoverAB-expScoreA) <= 0.00001 && (AoverAB-expScoreA) >= -0.00001){
+                                            console.log("if AoverABminusEA tiny")
+                                            AoverABminusEA = 0;
+                                            BoverABminusEB = 0;
+                                        }
+                                        else {
+                                            AoverABminusEA = AoverAB-expScoreA;
+                                            BoverABminusEB = BoverAB-expScoreB;
+                                        }
+                                        console.log("AoverABminusEA",AoverABminusEA,"BoverABminusEB",BoverABminusEB);
+                                        console.log("q",q,"Ka",Ka,"Kb",Kb)
+                                        rankA = rankA + q*Ka*AoverABminusEA;
+                                        rankB = rankB + q*Kb*BoverABminusEB;
+                                        console.log("A,rankA,B,rankB",A,rankA,B,rankB);
                                         artemisTF = false;
                                     }
                                     else {
                                         //Calculate exp scores
                                         await cExpScore(A,B);
-                                        rankA = rankA + q*Ka*(AScore/(AScore+BScore)-expScoreA);
-                                        rankB = rankB + q*Kb*(BScore/(AScore+BScore)-expScoreB);
+                                        rankA = rankA + q*Ka*(AoverABminusEA);
+                                        rankB = rankB + q*Kb*(BoverABminusEB);
                                     }
                                     //console.log("rankA,rankB "+rankA+rankB);
                                     //console.log("rankAB",rankA,rankB);
@@ -4951,7 +5004,7 @@ async function cSetData(){
     cSet = true;
 
     console.log("hello world");
-    await gameData(1,171,"NEC");
+    await gameData(1,233,"NEC");
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     //allMS.push(teamAvgMS);
@@ -4960,16 +5013,16 @@ async function cSetData(){
     //teamAvgMS = [];
     console.log("NEC");
 
-    await gameData(1,51,"MWC");
+    await gameData(1,66,"MC");
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     //allMS.push(teamAvgMS);
     teamAvgV = [];
     teamAvgJV = [];
     //teamAvgMS = [];
-    console.log("MWC");
+    console.log("MC");
 
-    await gameData(1,71,"WC");
+    await gameData(1,92,"WC");
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     //allMS.push(teamAvgMS);
@@ -4978,10 +5031,10 @@ async function cSetData(){
     //teamAvgMS = [];
     console.log("WC");
 
-    await gameData(1,81,"SC");
+    //await gameData(1,105,"SC");
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
-    //allMS.push(teamAvgMS);
+    allMS.push(teamAvgMS);
     teamAvgV = [];
     teamAvgJV = [];
     //teamAvgMS = [];
@@ -4994,7 +5047,7 @@ async function cSetData(){
     a2 = a2+1;
     b2 = b2+1;
     //c2 = c2+1;
-    await gameData(1,171,"NEC");
+    await gameData(1,233,"NEC");
     console.log("NEC q V: "+qV[a2]);
     console.log("NEC q JV: "+qJV[b2]);
     //console.log("NEC q MS: "+qMS[c2]);
@@ -5005,10 +5058,10 @@ async function cSetData(){
     a2 = a2+1;
     b2 = b2+1;
     //c2 = c2+1;
-    await gameData(1,51,"MWC");
-    console.log("MWC q V: "+qV[a2]);
-    console.log("MWC q JV: "+qJV[b2]);
-    //console.log("MWC q MS: "+qMS[c2]);
+    await gameData(1,66,"MC");
+    console.log("MC q V: "+qV[a2]);
+    console.log("MC q JV: "+qJV[b2]);
+    //console.log("MC q MS: "+qMS[c2]);
     a = 0;
     b = 0;
     //c = 0;
@@ -5016,7 +5069,7 @@ async function cSetData(){
     a2 = a2+1;
     b2 = b2+1;
     //c2 = c2+1;
-    await gameData(1,71,"WC");
+    await gameData(1,92,"WC");
     console.log("WC q V: "+qV[a2]);
     console.log("WC q JV: "+qJV[b2]);
     //console.log("WC q MS: "+qMS[c2]);
@@ -5027,7 +5080,7 @@ async function cSetData(){
     a2 = a2+1;
     b2 = b2+1;
     //c2 = c2+1;
-    await gameData(1,81,"SC");
+    await gameData(1,105,"SC");
     console.log("SC q V: "+qV[a2]);
     console.log("SC q JV: "+qJV[b2]);
     //console.log("SC q MS: "+qMS[c2]);
