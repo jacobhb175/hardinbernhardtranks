@@ -1,5 +1,10 @@
 
 
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+const database = firebase.database();
+
 // Teams
 //Varsity Teams
 db.collection("teams").doc("Amherst A").set({
@@ -4388,13 +4393,21 @@ let a2 = -1;
 let b2 = -1;
 let c2 = -1;
 
-let q = 0;
 let t100 = [];
+let t100TF = false;
 let t200 = [];
-let t300 = [];
+let t200TF = false;
 let t400 = [];
-let t400plus = [];
+let t400TF = false;
+let t800 = [];
+let t800TF = false;
+let t800plus = [];
+let t800plusTF = false;
+let rankDiff = 0;
 let avgT = 0;
+let t;
+
+let q = 0;
 let y = false;
 let qV = [];
 let qJV = [];
@@ -4407,6 +4420,7 @@ let AoverABminusEA;
 let BoverABminusEB;
 let AoverAB;
 let BoverAB;
+
 
 
 //K Rank
@@ -4505,12 +4519,11 @@ async function includes(A,B,div) {
 async function cExpScore(A,B,AScore,BScore){
     for(i=0;i<artemis.length;i++){
         if(artemis[i] == A || artemis[i] == B){
-            artemisTF = true;
+            //artemisTF = true;
             //console.log(artemisTF);
             i=100;
         }
     }
-    //console.log("cExpScore");
     var docRefA = db.collection("teams").doc(A);
     var docRefB = db.collection("teams").doc(B);
     await docRefA.get().then(async function(doc) {
@@ -4523,9 +4536,9 @@ async function cExpScore(A,B,AScore,BScore){
                     //console.log("rankB",rankB);  
                     //If A is lower
                     if (rankA<rankB){
-                        if(rankB-400>=rankA){
+                        if(rankB-800>=rankA){
                             expScore = 0;
-                            //rankDiff = 400
+                            //rankDiff = rankB-rankA;
                         }
                         else {
                             if(artemisTF==true){
@@ -4543,7 +4556,7 @@ async function cExpScore(A,B,AScore,BScore){
                     else if (rankB<rankA){
                         if(rankA-800>=rankB){
                             expScore = 1;
-                            //rankDiff = 400
+                            //rankDiff = rankA-rankB;
                         }
                         else{
                             if(artemisTF==true){
@@ -4564,24 +4577,43 @@ async function cExpScore(A,B,AScore,BScore){
                     expScoreB = 1-expScoreA;
                     if(artemisTF==true){
                         console.log(A,B,"expSA",expScoreA,"expSB",expScoreB);
-                        artemisTF=false;
-                    }
+                        //artemisTF=false;
+                    }/*
                     //Update t value
-                    //switch(rankDiff)
-                    //t.push((AScore/(AScore+BScore))/expScoreA);
-                    //t.push((BScore/(AScore+BScore))/expScoreB);
-    /*let sumT = 0;
-    let l;
-    let tLen = t.length;
-    for(l = 0; l < tLen; l++){
-        sumT += parseInt(t[l],10);
-    };
-    avgT = sumT/t.length;*/
-    //avgT = average(t);
-    //console.log(avgT);
-    //console.log("avgTA,avgTB",avgTA,avgTB);
-    //console.log("avgT, sumT, t.length",avgT, sumT, t.length);
-    //console.log("t",t);
+                    if(y == false){
+                        if(rankDiff<100){
+                            t100.push((AScore/(AScore+BScore))/expScoreA);
+                        }
+                        else if(rankDiff<200){
+                            t200.push((AScore/(AScore+BScore))/expScoreA);
+                        }
+                        else if(rankDiff<400){
+                            t400.push((AScore/(AScore+BScore))/expScoreA);
+                        }  
+                        else if(rankDiff<800){
+                            t800.push((AScore/(AScore+BScore))/expScoreA);
+                        }  
+                        else{
+                            t800plus.push((AScore/(AScore+BScore))/expScoreA);
+                        } 
+                    } 
+                    else if(y == true){
+                        if(rankDiff<100){
+                            t100TF = true;
+                        }
+                        else if(rankDiff<200){
+                            t200TF = true;
+                        }
+                        else if(rankDiff<400){
+                            t400TF = true;
+                        }  
+                        else if(rankDiff<800){
+                            t800TF = true;
+                        }  
+                        else{
+                            t800plusTF = true;
+                        } 
+                    } */
                     
                 } else {
                     // doc.data() will be undefined in this case
@@ -4755,7 +4787,7 @@ async function newRank(A,B,AScore,BScore) {
                 crossDiv = true;
                 console.log(A,B,"is cross-divisional");
             }
-            games(crossDiv,A,B);
+            //games(crossDiv,A,B);
         }
         //B-Set games
         else if (bSet == true) {
@@ -4841,13 +4873,45 @@ async function newRank(A,B,AScore,BScore) {
                 crossDiv = true;
                 console.log(A,B,"is cross-divisional");
             }
-            games(crossDiv,A,B);
+            //games(crossDiv,A,B);
         }    
     }
 };  
 
 //calculate and update rank
 async function nRank(A,B,AScore,BScore){
+    /*if(t100TF == true){
+        t = t100;
+    }
+    else if(t200TF == true){
+        t = t200;
+    }
+    else if(t400TF == true){
+        t = t400;
+    }  
+    else if(t800TF == true){
+        t = t800;
+    }  
+    else{
+        t = t800plus;
+    } 
+    let sumT = 0;
+    let l;
+    let tLen = t.length;
+    for(l = 0; l < tLen; l++){
+        sumT += parseInt(t[l],10);
+    };
+    avgT = sumT/t.length;
+    //avgT = average(t);
+    console.log(avgT);
+    avgTA = avgT;
+    avgTB = 1-avgTA;*/
+    //console.log("avgTA,avgTB",avgTA,avgTB);
+    //console.log("avgT, sumT, t.length",avgT, sumT, t.length);
+    //console.log("t",t);
+
+    //Update games played
+    games(false,A,B);
     var docRefA = db.collection("teams").doc(A);
     var docRefB = db.collection("teams").doc(B);
     await docRefA.get().then(async function(doc) {
@@ -4873,18 +4937,19 @@ async function nRank(A,B,AScore,BScore){
                                         gamesB = 1;
                                         db.collection("teams").doc(B).update({games:gamesB});
                                     }
-                                    let Ka = 800/gamesA;
-                                    let Kb = 800/gamesB;
-                                    if (Ka>800){
-                                        Ka = 800;
+                                    let Ka = 1000/(10-gamesA);
+                                    let Kb = 1000/(10-gamesB);
+                                    if (Ka>1000){
+                                        Ka = 1000;
                                     }
-                                    if (Kb>800){
-                                        Kb = 800;
+                                    if (Kb>1000){
+                                        Kb = 1000;
                                     }
+                                    console.log(Ka,Kb,10-gamesA,10-gamesB);
                                     for(i=0;i<artemis.length;i++){
                                         if(artemis[i] == A || artemis[i] == B){
-                                            artemisTF = true;
-                                            console.log(artemisTF);
+                                            //artemisTF = true;
+                                            //console.log(artemisTF);
                                             i=100;
                                         }
                                     }
@@ -4917,7 +4982,7 @@ async function nRank(A,B,AScore,BScore){
                                         rankA = rankA + q*Ka*AoverABminusEA;
                                         rankB = rankB + q*Kb*BoverABminusEB;
                                         console.log("A,rankA,B,rankB",A,rankA,B,rankB);
-                                        artemisTF = false;
+                                        //artemisTF = false;
                                     }
                                     else {
                                         //Calculate exp scores
@@ -5031,7 +5096,7 @@ async function cSetData(){
     //teamAvgMS = [];
     console.log("WC");
 
-    //await gameData(1,105,"SC");
+    await gameData(1,105,"SC");
     allV.push(teamAvgV);
     allJV.push(teamAvgJV);
     allMS.push(teamAvgMS);
