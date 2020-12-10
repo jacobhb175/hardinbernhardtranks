@@ -49,10 +49,11 @@
   \[R_n(A) = {R_o(A)+qK[({S_A\over S_A+S_B})-S_E(A)]}\]
   R<sub>n</sub> = new rating</br>
   R<sub>o</sub> = old rating</br>
-  q = strength of field</br>
-  K = (800/games played)</br>
+  q = strength of field value</br>
   S = score</br>
   S<sub>E</sub>(A) = expected score of A</br>
+  K = game weight value</br>
+  
 </p>
 
 <h2>
@@ -60,9 +61,15 @@
 <h3>
 <a id="q-value" class="anchor" href="#q-value" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>q-Value</h3>
 <p>The q-value is used to represent strength of field at a tournament and intended to help improve elo as a measure of skill unaffected by the field a team is up against, and thus more useful and accurate as a comparison between teams from different regions. It is calculated as a ratio of average total points scored per game at a given tournament : average total points scored per game on a given set, and is calculated independently for the Varsity and JV fields.</p>
+\[q = {cPPG_T\over cPPG_S}\]
+cPPG<sub>T</sub> = combined points per game overall all games played at the tournament</br>
+cPPG<sub>T</sub> = combined points per game over all games played on the set
 <h3>
 <a id="K-value" class="anchor" href="#k-value" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>K-Value</h3>
-<p>The K-value is a multiplier to adjust for the different formats of tournaments which lead some teams to play more or fewer games. It is set equal to 800 over the number of games played by the team (not counting byes or crossover matches).</p>
+<p>The K-value is a multiplier to adjust for the different formats of tournaments which lead some teams to play more or fewer games, as well as to account for the uncertainty inherent in early games before rankings are more finalized. It is set equal to 800 over the number of games played by the team (not counting byes or crossover matches), multiplied by the square root of the current number game.</p>
+\[K = {\sqrt G_C{800\over G_T}}\]
+G<sub>C</sub> = current games played</br>
+G<sub>T</sub> = total games played by the team
 </tbody>
 </table>
 <h3>
