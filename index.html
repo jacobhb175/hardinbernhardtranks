@@ -46,7 +46,7 @@
 <h3>New Rating Formula</h3>
 <p>Following a game between Team A and Team B, this formula calculates the new Elo rating of Team A. The new rating formula takes the percentage of the game’s points scored by Team A, multiplies it by T to adjust for conversion issues, and compares it to the expected score for A (S<sub>E</sub>(A)). That result is then multiplied by the variables q and K to adjust for strength of field, and games played respectively.</p>
 <p>
-  \[R_n(A) = {R_o(A)+qK[({S_A\over S_A+S_B})-S_E(A)]}\]
+  \[R_n(A) = {R_o(A)+K[({qS_A\over S_A+S_B})-S_E(A)]}\]
   R<sub>n</sub> = new rating</br>
   R<sub>o</sub> = old rating</br>
   q = strength of field value</br>
@@ -70,8 +70,108 @@ cPPG<sub>T</sub> = combined points per game over all games played on the set
 \[K = {\sqrt G_C{800\over G_T}}\]
 G<sub>C</sub> = current games played</br>
 G<sub>T</sub> = total games played by the team
-</tbody>
-</table>
+<h3>
+  <a id="varsity-rankings" class="anchor" href="#varsity-rankings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Varsity C-Set Rankings</h3>
+  <table>
+  <thead>
+  <tr>
+  <th>Ranking</th>
+  <th>Team</th>
+  <th>State</th>
+  <th>Score</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Montgomery Blair A</td>
+      <td>Maryland</td>
+      <td>1514.042</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Hunter A</td>
+      <td>New York</td>
+      <td>1496.982</td>
+    </tr>
+      <td>3</td>
+      <td>Lambert</td>
+      <td>Georgia</td>
+      <td>1455.941</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Newton North A</td>
+      <td>Massachusetts</td>
+      <td>1424.365</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Stevenson A</td>
+      <td>Illinois</td>
+      <td>1400.510</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Hotchkiss A</td>
+      <td>Connecticut</td>
+      <td>1395.248</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Ransom Everglades A</td>
+      <td>Florida</td>
+      <td>1392.356</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Holmdel</td>
+      <td>New Jersey</td>
+      <td>1389.857</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Northfield A</td>
+      <td>Minnesota</td>
+      <td>1388.321</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Lindsey Homeschool</td>
+      <td>Missouri</td>
+      <td>1365.450</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>James Clemens</td>
+      <td>Alabama</td>
+      <td>1362.185</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Newton North B</td>
+      <td>Massachusetts</td>
+      <td>1324.423</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Hoover</td>
+      <td>Alabama</td>
+      <td>1320.822</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Ridgewood A</td>
+      <td>New Jersey</td>
+      <td>1316.170</td>
+    <tr>
+      <td>15</td>
+      <td>Georgetown Day</td>
+      <td>DC</td>
+      <td>1304.895</td>
+    </tr>
+  </tbody>
+  </table>
 <h3>
 <a id="junior-varsity-rankings" class="anchor" href="#junior-varsity-rankings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Junior Varsity C-Set Rankings</h3>
 <table>
@@ -85,67 +185,136 @@ G<sub>T</sub> = total games played by the team
 </thead>
 <tbody>
   <tr>
-    <td>1.</td>
-    <td>Stevenson E</td>
-    <td>Illinois</td>
-    <td>2145.523</td>
+    <td>1</td>
+    <td>Detroit Country Day</td>
+    <td>Michigan</td>
+    <td>1790.302</td>
   </tr>
   <tr>
-    <td>2.</td>
-    <td>Hunter College High B</td>
+    <td>2</td>
+    <td>Hunter B</td>
     <td>New York</td>
-    <td>2072.991</td>
+    <td>1646.792</td>
   </tr>
   <tr>
-    <td>3.</td>
-    <td>Churchill A</td>
+    <td>4</td>
+    <td>East Brunswick</td>
     <td>New Jersey</td>
-    <td>2040.958</td>
+    <td>1629.067</td>
   </tr>
   <tr>
-    <td>4.</td>
-    <td>Ridgewood C</td>
-    <td>New Jersey</td>
-    <td>2040.198</td>
+    <td>4</td>
+    <td>Stevenson C</td>
+    <td>Illinois</td>
+    <td>1619.109</td>
   </tr>
   <tr>
-    <td>5.</td>
-    <td>Ransom Everglades C</td>
+    <td>5</td>
+    <td>Wilton K</td>
+    <td>Connecticut</td>
+    <td>1542.966</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Ransom Everglades B</td>
     <td>Florida</td>
-    <td>1997.725</td>
+    <td>1357.295</td>
   </tr>
   <tr>
-    <td>6.</td>
-    <td>Methacton C</td>
-    <td>Pennsylvania</td>
-    <td>1990.755</td>
+    <td>7</td>
+    <td>Buchholz A</td>
+    <td>Florida</td>
+    <td>1354.483</td>
   </tr>
   <tr>
-    <td>7.</td>
+    <td>8</td>
+    <td>Centennial B</td>
+    <td>Maryland</td>
+    <td>1277.657</td>
+  </tr>
+  <tr>
+    <td>9</td>
     <td>Montgomery Blair B</td>
     <td>Maryland</td>
-    <td>1982.417</td>
+    <td>1267.114</td>
   </tr>
   <tr>
-    <td>8.</td>
-    <td>McLean</td>
-    <td>Virginia</td>
-    <td>1977.806</td>
+    <td>10</td>
+    <td>Ransom Everglades C</td>
+    <td>Florida</td>
+    <td>1255.143</td>
   </tr>
   <tr>
-    <td>9.</td>
-    <td>St. Margaret's</td>
+    <td>11</td>
+    <td>Centennial B</td>
+    <td>Maryland</td>
+    <td>1253.450</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Millburn B</td>
+    <td>New Jersey</td>
+    <td>1225.620</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>IMSA</td>
+    <td>Illinois</td>
+    <td>1218.257</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Stevenson D</td>
+    <td>Illinois</td>
+    <td>1213.482</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Amador Valley B</td>
     <td>California</td>
-    <td>1973.390</td>
-  </tr>
-  <tr>
-    <td>10.</td>
-    <td>Phillips Exeter B</td>
-    <td>New Hampshire</td>
-    <td>1918.715</td>
+    <td>1206.147</td>
   </tr>
 </tbody>
 </table>
+<p>*Note: Due to allegations of cheating, certain teams have been excluded from these rankings pending further investigation.</p>
+<h3>
+  <a id="tournaments" class="anchor" href="#tournaments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tournaments</h3>
+  <table>
+  <thead>
+  <tr>
+  <th>Tournament</th>
+  <th>Set</th>
+  <th>Varsity q-Value</th>
+  <th>JV q-Value</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Southeast Fall</td>
+      <td>C</td>
+      <td>0.972</td>
+      <td>0.969</td>
+    </tr>
+    <tr>
+      <td>West Fall</td>
+      <td>C</td>
+      <td>0.999</td>
+      <td>0.965</td>
+    </tr>
+    <tr>
+      <td>Midwest Fall</td>
+      <td>C</td>
+      <td>1.011</td>
+      <td>1.109</td>
+    </tr>
+    <tr>
+      <td>Northeast Fall</td>
+      <td>C</td>
+      <td>1.011</td>
+      <td>1.006</td>
+    </tr>
+  </tbody>
+  </table>
 
         <aside id="sidebar">
           <a href="https://github.com/jacobhb175/hardinbernhardtranks/zipball/master" class="button">
