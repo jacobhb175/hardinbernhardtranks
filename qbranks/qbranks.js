@@ -9,11 +9,65 @@ db.collection("qbteams").doc("Ridgewood A").set({
 
 db.collection("tournaments").doc("LONESTAR Northeast").set({
     date:10.10,
-    year:2020,
-    set:LONESTAR,
+    set:"LONESTAR",
     playoffTeams:["Ridgewood A","Hunter A","High Tech A","Livingston A","Hunter B","Belmont A","Hotchkiss A","Phillips Academy A","Phillips Exeter","Ithaca A","Choate A"],
     opsNum:342
+}),
+db.collection("tournaments").doc("Earlybird").set({
+    date:10.03,
+    set:"RAFTII",
+    playoffTeams:["Buffalo Grove A","Stevenson A","Sandburg A","Auburn A","University Lab A","University Lab B","Hinsdale A","Barrington A","Barrington B","Fremd A","IMSA A","Naperville North A"],
+    opsNum:364
+}),
+db.collection("tournaments").doc("LONESTAR Mainsite").set({
+    date:11.14,
+    set:"LONESTAR",
+    playoffTeams:["Kinkaid","Lambert","Strake Jesuit A","St. Mark's A","Boulder","Russellville A","KJ Henry Math and Science Academy A","Strake Jesuit B"],
+    opsNum:144
+}),
+db.collection("tournaments").doc("Ithaca Fall").set({
+    date:11.21,
+    set:"IS197",
+    playoffTeams:["Ridgewood A","Hunter A","High Tech A","Livingston A","Hunter B","Phillips Exeter","Belmont A","Hunter C","High Tech B","JP Stevens A","Hempfield A","Adirondack"],
+    opsNum:398
+}),
+db.collection("tournaments").doc("ACF Fall at Ridgewood").set({
+    date:10.17,
+    set:"ACFFALL",
+    playoffTeams:["Belmont A","Barrington A","High Tech A","Detroit Country Day A","Detroit Country Day B","Raymore-Peculiar"],
+    opsNum:398
+}),
+db.collection("tournaments").doc("Prison Bowl Mainsite").set({
+    date:12.25,
+    set:"PBXIII",
+    playoffTeams:["Ridgewood A","East Brunswick B","High Tech A","Livingston A","Great Valley","High Tech B"],
+    opsNum:259
+}),
+db.collection("tournaments").doc("Hawk's Nest").set({
+    date:13.09,
+    set:"IS199",
+    playoffTeams:["East Brunswick A","East Brunswick B","Hunter A","Hunter B","Phillips Academy A","Wilton","Ridgewood A","MCA A","Edison A","Ithaca A","Hotchkiss A"],
+    opsNum:251
+}),
+db.collection("tournaments").doc("Maroon Bowl II").set({
+    date:13.17,
+    set:"SATURNALIA",
+    playoffTeams:["East Brunswick A","East Brunswick B","Hunter A","Hunter B","Phillips Academy A","Wilton","Ridgewood A","MCA A","Edison A","Ithaca A","Hotchkiss A"],
+    opsNum:251
+}),
+db.collection("tournaments").doc("Maroon Bowl Standard").set({
+    date:13.17,
+    set:"SATURNALIA",
+    playoffTeams:["Tower Hill","Concord-Carlisle","Bronx Science","Mount Lebanon","Wilmington Charter B","Newton South A","Brighton","Troy","West Windsor Plainsboro North B","Choate B","Wayne Hills A","Hightstown"],
+    opsNum:357
+}),
+db.collection("tournaments").doc("CC3C").set({
+    date:13.19,
+    set:"SATURNALIA",
+    playoffTeams:["Saratoga A","Mira Loma","Guilder A","Mission San Jose A","Stanford Online A","Eriksen A"],
+    opsNum:110
 })
+
 
 let evalV;
 let evalJV;
@@ -28,6 +82,8 @@ let allAvg = [];
 let teamAvgPBXIII = [];
 let teamAvgLONESTAR = [];
 let teamAvgACFFALL = [];
+let teamAvgSATURNALIA = [];
+let teamAvgRAFTII = [];
 let teamAvgIS195 = [];
 let teamAvgIS197 = [];
 let teamAvgIS199 = [];
@@ -38,13 +94,15 @@ let teamAvgConsolation = [];
 let tnmtAvg = 0;
 let setAvg = 0;
 let cAvg = 0;
-let cDiff = 0;
+let cDiff = 1;
 let pAvg = 0;
-let pDiff = 0;
+let pDiff = 1;
 
 let LONESTAR = false;
 let PBXIII = false;
 let ACFFALL = false;
+let SATURNALIA = false;
+let RAFTII = false;
 let IS195 = false;
 let IS197 = false;
 let IS199 = false;
@@ -125,6 +183,109 @@ let consolation = false;
 //calculate the average of an array
 function average(array) {
     return array.reduce((a, b) => (a + b)) / array.length;
+}
+
+async function inputTournament(id){
+    let docRefTournament=db.collection("tournaments").doc(id);
+    if(y==true){
+        RAFTII = true;
+        playoffTeams=["Buffalo Grove A","Stevenson A","Sandburg A","Auburn A","University Lab A","University Lab B","Hinsdale A","Barrington A","Barrington B","Fremd A","IMSA A","Naperville North A"];
+        await gameData(1,364,"Earlybird");
+        await all.push(teamAvg);
+        await allPlayoffs.push(teamAvgPlayoffs);
+        await allConsolation.push(teamAvgConsolation);
+        teamAvg = [];
+        await console.log("Earlybird");
+        RAFTII = false;
+        allGameInfo = [];
+        teamAvgPlayoffs = [];
+        teamAvgConsolation = [];
+    }
+    else if(y==false){
+        a = 0;
+        RAFTII = true;
+        await gameData(1,364,"Earlybird");
+        playoffTeams=["Buffalo Grove A","Stevenson A","Sandburg A","Auburn A","University Lab A","University Lab B","Hinsdale A","Barrington A","Barrington B","Fremd A","IMSA A","Naperville North A"];
+        await console.log("Earlybird q",tnmtq,setq);
+        allGameInfo = [];
+        RAFTII = false;
+    
+    }
+}
+
+async function inputTournament(tournamentId){
+    var docRefTournament = db.collection("tournaments").doc(tournamentId);
+    await docRefTournament.get().then(async function(doc) {
+        if(doc.exists) {
+            let set=doc.data().set;
+            let opsNum=doc.data().opsNum;
+            playoffTeams=doc.data().playoffTeams;
+            if(y==false){
+                a+=1;
+            }
+            switch (set) {
+                case "LONESTAR":
+                    LONESTAR = true;
+                    break;
+                case "ACFFALL":
+                    ACFFALL = true;
+                    break;
+                case "PBXIII":
+                    PBXIII = true;
+                    break;
+                case "SATURNALIA":
+                    SATURNALIA = true;
+                    break;
+                case "RAFTII":
+                    RAFTII = true;
+                    break;
+                case "IS197":
+                    IS197 = true;
+                    break;
+                case "IS199":
+                    IS199 = true;
+                    break;
+            }
+            await gameData(1,opsNum,tournamentId);
+            if(y==true){
+                await all.push(teamAvg);
+                await allPlayoffs.push(teamAvgPlayoffs);
+                await allConsolation.push(teamAvgConsolation);
+                teamAvg = [];
+            }
+            allGameInfo = [];
+            teamAvgPlayoffs = [];
+            teamAvgConsolation = [];
+            switch (set) {
+                case "LONESTAR":
+                    LONESTAR = false;
+                    break;
+                case "ACFFALL":
+                    ACFFALL = false;
+                    break;
+                case "PBXIII":
+                    PBXIII = false;
+                    break;
+                case "SATURNALIA":
+                    SATURNALIA = false;
+                    break;
+                case "RAFTII":
+                    RAFTII = false;
+                    break;
+                case "IS197":
+                    IS197 = false;
+                    break;
+                case "IS199":
+                    IS199 = false;
+                    break;
+            }
+        } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!"+A);
+        }
+    }).catch(function(error) {
+        console.log("Error getting document:", error);
+    });
 }
 
 async function games(A,B) {
@@ -365,6 +526,12 @@ async function newRank(A,B,AScore,BScore) {
         case "Choate Buffalo":
             A = "Choate A"
             break;
+        case "Choate Nebula":
+            A = "Choate A"
+            break;
+       case "Choate Juneau":
+            A = "Choate B"
+            break;
         case "Choate Coyote":
             A = "Choate B"
             break;
@@ -382,6 +549,42 @@ async function newRank(A,B,AScore,BScore) {
             break;
         case "Ridgewood":
             A = "Ridgewood A"
+            break;
+        case "Livingston":
+            A = "Livingston A"
+            break;
+        case "Biotech":
+            A = "Biotech A"
+            break;
+        case "JP Stevens":
+            A = "JP Stevens A"
+            break;
+        case "J. P. Stevens A":
+            A = "JP Stevens A"
+            break;
+        case "J. P. Stevens B":
+            A = "JP Stevens B"
+            break;
+        case "BG A":
+            A = "Buffalo Grove A"
+            break;
+        case "Uni A":
+            A = "University Lab A"
+            break;
+        case "Uni B":
+            A = "University Lab B"
+            break;
+        case "Uni C":
+            A = "University Lab C"
+            break;
+        case "Uni D":
+            A = "University Lab D"
+            break;
+        case "Uni E":
+            A = "University Lab E"
+            break;
+        case "Karl's Nursery":
+            A = "St. Mark's A"
             break;
     }
     switch(B){
@@ -427,10 +630,16 @@ async function newRank(A,B,AScore,BScore) {
         case "Choate Buffalo":
             B = "Choate A"
             break;
+       case "Choate Juneau":
+            B = "Choate B"
+            break;
         case "Choate Coyote":
             B = "Choate B"
             break;
         case "Choate H-9":
+            B = "Choate A"
+            break;
+        case "Choate Nebula":
             B = "Choate A"
             break;
         case "Choate Archerfish":
@@ -444,6 +653,42 @@ async function newRank(A,B,AScore,BScore) {
             break;
         case "Ridgewood":
             B = "Ridgewood A"
+            break;
+        case "Livingston":
+            B = "Livingston A"
+            break;
+        case "Biotech":
+            B = "Biotech A"
+            break;
+        case "JP Stevens":
+            B = "JP Stevens A"
+            break;
+        case "J. P. Stevens A":
+            B = "JP Stevens A"
+            break;
+        case "J. P. Stevens B":
+            B = "JP Stevens B"
+            break;
+        case "BG A":
+            B = "Buffalo Grove A"
+            break;
+        case "Uni A":
+            B = "University Lab A"
+            break;
+        case "Uni B":
+            B = "University Lab B"
+            break;
+        case "Uni C":
+            B = "University Lab C"
+            break;
+        case "Uni D":
+            B = "University Lab D"
+            break;
+        case "Uni E":
+            B = "University Lab E"
+            break;
+        case "Karl's Nursery":
+            B = "St. Mark's A"
             break;
     }
     if(AScore=="Forfeit"||BScore=="Forfeit"){
@@ -503,6 +748,12 @@ async function newRank(A,B,AScore,BScore) {
         else if (ACFFALL == true){
             teamAvgACFFALL.push(AScore,BScore);
         }
+        else if (SATURNALIA == true){
+            teamAvgSATURNALIA.push(AScore,BScore);
+        }
+        else if (RAFTII == true){
+            teamAvgRAFTII.push(AScore,BScore);
+        }
         allAvg.push(AScore,BScore)
         teamAvg.push(AScore,BScore);
         if(Round>5){
@@ -549,50 +800,66 @@ async function newRank(A,B,AScore,BScore) {
         if (PBXIII == true){
             //console.log("all",all);
             let aAvg = average(allAvg);
-            let pbAvg = average(teamAvgPBXIII);
+            let PBXIIIAvg = average(teamAvgPBXIII);
             tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/pbAvg;
-            setq = pbAvg/aAvg;
+            tnmtq = tnmtAvg/PBXIIIAvg;
+            setq = PBXIIIAvg/aAvg;
         }
         else if (LONESTAR == true){
             //console.log("all",all);
             let aAvg = average(allAvg);
-            let lonestarAvg = average(teamAvgLONESTAR);
+            let LONESTARAvg = average(teamAvgLONESTAR);
             tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/lonestarAvg;
-            setq = lonestarAvg/aAvg;
+            tnmtq = tnmtAvg/LONESTARAvg;
+            setq = LONESTARAvg/aAvg;
         }
         else if (IS195 == true){
             //console.log("all",all);
             let aAvg = average(allAvg);
-            let is195Avg = average(teamAvgIS195);
+            let IS195Avg = average(teamAvgIS195);
             tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/is195Avg;
-            setq = is195Avg/aAvg;
+            tnmtq = tnmtAvg/IS195Avg;
+            setq = IS195Avg/aAvg;
         }
         else if (IS197 == true){
             //console.log("all",all);
             let aAvg = average(allAvg);
-            let is197Avg = average(teamAvgIS197);
+            let IS197Avg = average(teamAvgIS197);
             tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/is197Avg;
-            setq = is197Avg/aAvg;
+            tnmtq = tnmtAvg/IS197Avg;
+            setq = IS197Avg/aAvg;
         }
         else if (IS199 == true){
             //console.log("all",all);
             let aAvg = average(allAvg);
-            let is199Avg = average(teamAvgIS199);
+            let IS199Avg = average(teamAvgIS199);
             tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/is199Avg;
-            setq = is199Avg/aAvg;
+            tnmtq = tnmtAvg/IS199Avg;
+            setq = IS199Avg/aAvg;
         }
         else if (ACFFALL == true){
             //console.log("all",all);
             let aAvg = average(allAvg);
-            let acffallAvg = average(teamAvgACFFALL);
+            let ACFFALLAvg = average(teamAvgACFFALL);
             tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/acffallAvg;
-            setq = acffallAvg/aAvg;
+            tnmtq = tnmtAvg/ACFFALLAvg;
+            setq = ACFFALLAvg/aAvg;
+        }
+        else if (SATURNALIA == true){
+            //console.log("all",all);
+            let aAvg = average(allAvg);
+            let SATURNALIAAvg = average(teamAvgSATURNALIA);
+            tnmtAvg = average(all[a]);
+            tnmtq = tnmtAvg/SATURNALIAAvg;
+            setq = SATURNALIAAvg/aAvg;
+        }
+        else if (RAFTII == true){
+            //console.log("all",all);
+            let aAvg = average(allAvg);
+            let RAFTIIAvg = average(teamAvgRAFTII);
+            tnmtAvg = average(all[a]);
+            tnmtq = tnmtAvg/RAFTIIAvg;
+            setq = RAFTIIAvg/aAvg;
         }
         if(Round>5){
             consolation = true;
@@ -858,7 +1125,8 @@ async function nRank(A,B,AScore,BScore){
                     }
                     /*let rootA = 1;
                     let rootB = 1;*/
-                    if(consolation==false){
+                    q2 = 1;
+                    if(consolation==false&&Round>5){
                         q2 = pDiff;
                         /*
                         if(totalGamesA<7){
@@ -884,9 +1152,10 @@ async function nRank(A,B,AScore,BScore){
                             rootB = Math.sqrt(gamesA);
                         }*/
                     }
-                    else if(consolation==true){
+                    else if(consolation==true&&Round>5){
                         q2 = cDiff;
                     }
+                    //Glicko game weighting
                     if(typeof(RDA)=="undefined"){
                         RDA=350
                     }
@@ -918,6 +1187,7 @@ async function nRank(A,B,AScore,BScore){
                         RDB = 1;
                     }
                     console.log("RDB",RDB);
+                    db.collection("qbteams").doc(B).update({RD:RDB});
                     /*if (Ka>800){
                         Ka = 800;
                     }
@@ -952,8 +1222,8 @@ async function nRank(A,B,AScore,BScore){
                     }
                     else {
                         console.log("q2",q2);
-                        AoverABminusEA = ((AoverAB*(tnmtq*q2))/setq)-expScoreA;
-                        BoverABminusEB = ((BoverAB*(tnmtq*q2))/setq)-expScoreB;
+                        AoverABminusEA = ((AoverAB*tnmtq*q2)/setq)-expScoreA;
+                        BoverABminusEB = ((BoverAB*tnmtq*q2)/setq)-expScoreB;
                     }
                     console.log("AoverABminusEA",AoverABminusEA,"BoverABminusEB",BoverABminusEB);
                     //console.log("q",q,"Ka",Ka,"Kb",Kb)
@@ -995,10 +1265,23 @@ async function nRank(A,B,AScore,BScore){
 }
 
 //Print ranked teams in a specific division
-function printRanks(div){
+/*async function printRanks(div){
     //let teamsRef = db.collection("qbteams");
     //console.log(teamsRef.where("division","==",div).orderBy("rank").limit(10));
-    db.collection("qbteams").orderBy("rank","desc").limit(25)
+    let teamArray = [];
+    let teamsRef=db.collection("qbteams").where("games",">",14);
+    await teamsRef.get().then(async function(doc) {
+        for (let i = 0; i < 100; i++) {
+            let teamObject = {
+                name:doc.data().name,
+                rank:doc.data().rank
+            }
+            teamArray.push(teamObject);
+        }
+    })
+    console.log(teamArray.sort(function(a,b){return b.rank - a.rank}));*/
+    /*
+    teamsRef.orderBy("rank","desc").limit(25)
         .get()
         .then(function(querySnapshot) {
             let i = 0;
@@ -1010,8 +1293,8 @@ function printRanks(div){
         })
         .catch(function(error) {
             console.log("Error getting documents: ", error);
-        });
-}
+        });*/
+//}
 
 async function gameData(startId,endId,tournamentId){
     round1 = [];
@@ -1220,32 +1503,6 @@ async function gameData(startId,endId,tournamentId){
         await newRank(A,B,AScore,BScore);
     }
 }
-async function tournament(tournamentId){
-    var docRefTournament = db.collection("tournaments").doc(tournamentId);
-    await docRefTournament.get().then(async function(doc) {
-        if(doc.exists) {
-            let set=doc.data().set;
-            let opsNum=doc.data().opsNum;
-            playoffTeams=doc.data().playoffTeams;
-            set = true;
-            await gameData(1,opsNum,tournamentId);
-            await all.push(teamAvg);
-            await allPlayoffs.push(teamAvgPlayoffs);
-            await allConsolation.push(teamAvgConsolation);
-            teamAvg = [];
-            await console.log("LONESTAR Northeast");
-            allGameInfo = [];
-            teamAvgPlayoffs = [];
-            teamAvgConsolation = [];
-            set = false;
-        } else {
-            // doc.data() will be undefined in this case
-            console.log("No such document!"+A);
-        }
-    }).catch(function(error) {
-        console.log("Error getting document:", error);
-    });
-}
 
 
 async function allData(){
@@ -1253,6 +1510,21 @@ async function allData(){
     y = false;
     allGameInfo = [];
 
+    //EARLYBIRD
+    RAFTII = true;
+    playoffTeams=["Buffalo Grove A","Stevenson A","Sandburg A","Auburn A","University Lab A","University Lab B","Hinsdale A","Barrington A","Barrington B","Fremd A","IMSA A","Naperville North A"];
+    await gameData(1,364,"Earlybird");
+    await all.push(teamAvg);
+    await allPlayoffs.push(teamAvgPlayoffs);
+    await allConsolation.push(teamAvgConsolation);
+    teamAvg = [];
+    await console.log("Earlybird");
+    RAFTII = false;
+    allGameInfo = [];
+    teamAvgPlayoffs = [];
+    teamAvgConsolation = [];
+
+    //LONESTAR NORTHEAST
     LONESTAR = true;
     playoffTeams=["Ridgewood A","Hunter A","High Tech A","Livingston A","Hunter B","Belmont A","Hotchkiss A","Phillips Academy A","Phillips Exeter","Ithaca A","Choate A"];
     await gameData(1,312,"LONESTAR Northeast");
@@ -1266,8 +1538,9 @@ async function allData(){
     teamAvgPlayoffs = [];
     teamAvgConsolation = [];
 
+    //ACF FALL RIDGEWOOD
     ACFFALL= true;
-    playoffTeams=["Belmont","Barrington A","High Tech A","Detroit Country Day A","Detroit Country Day B","Raymore-Peculiar"];
+    playoffTeams=["Belmont A","Barrington A","High Tech A","Detroit Country Day A","Detroit Country Day B","Raymore-Peculiar"];
     await gameData(1,178,"ACF Fall Ridgewood");
     await all.push(teamAvg);
     await allPlayoffs.push(teamAvgPlayoffs);
@@ -1279,6 +1552,7 @@ async function allData(){
     teamAvgPlayoffs = [];
     teamAvgConsolation = [];
 
+    //CLARKE FALL
     /*IS195 = true;
     playoffTeams=["High Tech A","Raymore-Peculiar","Choate A","Hotchkiss A","Wilmington Charter A","Teterboro","NCSSM A"];
     await gameData(1,256,"Clarke Fall");
@@ -1292,6 +1566,21 @@ async function allData(){
     teamAvgPlayoffs = [];
     teamAvgConsolation = [];*/
 
+    //LONESTAR MAINSITE
+    LONESTAR = true;
+    playoffTeams=["Kinkaid","Lambert","Strake Jesuit A","St. Mark's A","Boulder","Russellville A","KJ Henry Math and Science Academy A","Strake Jesuit B"];
+    await gameData(1,144,"LONESTAR Mainsite");
+    await all.push(teamAvg);
+    await allPlayoffs.push(teamAvgPlayoffs);
+    await allConsolation.push(teamAvgConsolation);
+    teamAvg = [];
+    await console.log("LONESTAR Mainsite");
+    LONESTAR = false;
+    allGameInfo = [];
+    teamAvgPlayoffs = [];
+    teamAvgConsolation = [];
+
+    //ITHACA FALL
     IS197 = true;
     playoffTeams=["Ridgewood A","Hunter A","High Tech A","Livingston A","Hunter B","Phillips Exeter","Belmont A","Hunter C","High Tech B","JP Stevens A","Hempfield A","Adirondack"];
     await gameData(1,398,"Ithaca Fall");
@@ -1305,6 +1594,7 @@ async function allData(){
     teamAvgPlayoffs = [];
     teamAvgConsolation = [];
 
+    //PRISON BOWL LEAGUE
     PBXIII = true;
     playoffTeams=["Ridgewood A","East Brunswick B","High Tech A","Livingston A","Great Valley","High Tech B"];
     await gameData(1,259,"Prison Bowl Mainsite");
@@ -1318,6 +1608,7 @@ async function allData(){
     teamAvgPlayoffs = [];
     teamAvgConsolation = [];
 
+    //JP STEVENS HAWKS NEST
     IS199 = true;
     playoffTeams=["East Brunswick A","East Brunswick B","Hunter A","Hunter B","Phillips Academy A","Wilton","Ridgewood A","MCA A","Edison A","Ithaca A","Hotchkiss A"];
     await gameData(1,251,"Hawk's Nest");
@@ -1331,18 +1622,72 @@ async function allData(){
     teamAvgPlayoffs = [];
     teamAvgConsolation = [];
 
+    //MAROON BOWL
+    SATURNALIA = true;
+    playoffTeams=["East Brunswick A","East Brunswick B","Hunter A","Hunter B","Millburn","Wilton","Darien","Wilmington Charter A","Choate A","High Tech A","Belmont A","Livingston A"];
+    await gameData(1,266,"Maroon Bowl II");
+    await all.push(teamAvg);
+    await allPlayoffs.push(teamAvgPlayoffs);
+    await allConsolation.push(teamAvgConsolation);
+    teamAvg = [];
+    await console.log("Maroon Bowl II");
+    SATURNALIA = false;
+    allGameInfo = [];
+    teamAvgPlayoffs = [];
+    teamAvgConsolation = [];
+
+    //MAROON BOWL STANDARD
+    a += 1;
+    SATURNALIA = true;
+    playoffTeams=["Tower Hill","Concord-Carlisle","Bronx Science","Mount Lebanon","Wilmington Charter B","Newton South A","Brighton","Troy","West Windsor Plainsboro North B","Choate B","Wayne Hills A","Hightstown"];
+    await gameData(1,357,"Maroon Bowl Standard");
+    await all.push(teamAvg);
+    await allPlayoffs.push(teamAvgPlayoffs);
+    await allConsolation.push(teamAvgConsolation);
+    teamAvg = [];
+    await console.log("Maroon Bowl Standard");
+    SATURNALIA = false;
+    SATURNALIA = false;
+    allGameInfo = [];
+    teamAvgPlayoffs = [];
+    teamAvgConsolation = [];
+
+    //CAL CUP 3 COMPETITIVE
+    a += 1;
+    SATURNALIA = true;
+    playoffTeams=["Saratoga A","Mira Loma","Guilder A","Mission San Jose A","Stanford Online A","Eriksen A"];
+    await gameData(1,110,"CC3C");
+    await all.push(teamAvg);
+    await allPlayoffs.push(teamAvgPlayoffs);
+    await allConsolation.push(teamAvgConsolation);
+    teamAvg = [];
+    await console.log("Cal Cup 3 Competitive");
+    SATURNALIA = false;
+    allGameInfo = [];
+    teamAvgPlayoffs = [];
+    teamAvgConsolation = [];
+
     y = true;
 
+    //EARLYBIRD
     a = 0;
+    RAFTII = true;
+    await gameData(1,364,"Earlybird");
+    playoffTeams=["Buffalo Grove A","Stevenson A","Sandburg A","Auburn A","University Lab A","University Lab B","Hinsdale A","Barrington A","Barrington B","Fremd A","IMSA A","Naperville North A"];
+    await console.log("Earlybird q",tnmtq,setq);
+    allGameInfo = [];
+    RAFTII = false;
+
+    //LONESTAR NORTHEAST
+    a += 1;
     LONESTAR=true;
     playoffTeams=["Ridgewood A","Hunter A","High Tech A","Livingston A","Hunter B","Belmont A","Hotchkiss A","Phillips Academy A","Phillips Exeter","Ithaca A","Choate A"];
     await gameData(1,312,"LONESTAR Northeast");
     await console.log("LONESTAR Northeast q",tnmtq,setq);
     allGameInfo = [];
     LONESTAR=false;
-    teamAvgPlayoffs = [];
-    teamAvgConsolation = [];
 
+    //ACF FALL RIDGEWOOD
     a += 1;
     ACFFALL = true;
     playoffTeams=["Belmont","Barrington A","High Tech A","Detroit Country Day A","Detroit Country Day B","Raymore-Peculiar"];
@@ -1351,7 +1696,7 @@ async function allData(){
     allGameInfo = [];
     ACFFALL = false
 
-    
+    //CLARKE FALL
     /*a += 1;
     IS195 = true;
     playoffTeams=["High Tech A","Raymore-Peculiar","Choate A","Hotchkiss A","Wilmington Charter A","Teterboro","NCSSM A"];
@@ -1360,6 +1705,16 @@ async function allData(){
     allGameInfo = [];
     IS195 = false;*/
 
+    //LONESTAR MAINSITE
+    a += 1;
+    LONESTAR = true;
+    playoffTeams=["Kinkaid","Lambert","Strake Jesuit A","St. Mark's A","Boulder","Russellville A","KJ Henry Math and Science Academy A","Strake Jesuit B"];
+    await gameData(1,144,"LONESTAR Mainsite");
+    await console.log("LONESTAR Mainsite q",tnmtq,setq);
+    allGameInfo = [];
+    LONESTAR = false;
+
+    //ITHACA FALL
     a += 1;
     IS197 = true;
     playoffTeams=["Ridgewood A","Hunter A","High Tech A","Livingston A","Hunter B","Phillips Exeter","Belmont A","Hunter C","High Tech B","JP Stevens A","Hempfield A","Adirondack"];
@@ -1368,6 +1723,7 @@ async function allData(){
     allGameInfo = [];
     IS197 = false;
 
+    //PRISON BOWL LEAGUE
     a += 1;
     PBXIII = true;
     playoffTeams=["Ridgewood A","East Brunswick B","High Tech A","Livingston A","Great Valley","High Tech B"];
@@ -1376,6 +1732,7 @@ async function allData(){
     allGameInfo = [];
     PBXIII = false;
 
+    //JP STEVENS HAWKS NEST
     a += 1;
     IS199 = true;
     playoffTeams=["East Brunswick A","East Brunswick B","Hunter A","Hunter B","Phillips Academy A","Wilton","Ridgewood A","MCA A","Edison A","Ithaca A","Hotchkiss A"];
@@ -1384,6 +1741,32 @@ async function allData(){
     allGameInfo = [];
     IS199 = false;
 
-    await printRanks();
+    //MAROON BOWL
+    a += 1;
+    SATURNALIA = true;
+    playoffTeams=["East Brunswick A","East Brunswick B","Hunter A","Hunter B","Millburn","Wilton","Darien","Wilmington Charter A","Choate A","High Tech A","Belmont A","Livingston A"];
+    await gameData(1,266,"Maroon Bowl II");
+    await console.log("Maroon Bowl II",tnmtq,setq);
+    SATURNALIA = false;
+
+    //MAROON BOWL STANDARD
+    a += 1;
+    SATURNALIA = true;
+    playoffTeams=["Tower Hill","Concord-Carlisle","Bronx Science","Mount Lebanon","Wilmington Charter B","Newton South A","Brighton","Troy","West Windsor Plainsboro North B","Choate B","Wayne Hills A","Hightstown"];
+    await gameData(1,357,"Maroon Bowl Standard");
+    await console.log("Maroon Bowl Standard",tnmtq,setq);
+    SATURNALIA = false;
+
+    //CAL CUP 3 COMPETITIVE
+    a += 1;
+    SATURNALIA = true;
+    playoffTeams=["Saratoga A","Mira Loma","Guilder A","Mission San Jose A","Stanford Online A","Eriksen A"];
+    await gameData(1,110,"CC3C");
+    await console.log("Cal Cup 3 Competitive",tnmtq,setq);
+    SATURNALIA = false;
 }
-allData();
+async function rankings(){
+    await allData();
+    setTimeout(printRanks(),5000);
+}
+rankings()
