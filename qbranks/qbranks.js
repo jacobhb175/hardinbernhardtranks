@@ -7,22 +7,34 @@ db.collection("qbteams").doc("Ridgewood A").set({
     RD:350
 });
 
-db.collection("tournaments").doc("LONESTAR Northeast").set({
-    date:10.10,
-    set:"LONESTAR",
-    playoffTeams:["Ridgewood A","Hunter A","High Tech A","Livingston A","Hunter B","Belmont A","Hotchkiss A","Phillips Academy A","Phillips Exeter","Ithaca A","Choate A"],
-    opsNum:342
-}),
 db.collection("tournaments").doc("Earlybird").set({
     date:10.03,
     set:"RAFTII",
     playoffTeams:["Buffalo Grove A","Stevenson A","Sandburg A","Auburn A","University Lab A","University Lab B","Hinsdale A","Barrington A","Barrington B","Fremd A","IMSA A","Naperville North A"],
     opsNum:364
 }),
+db.collection("tournaments").doc("LONESTAR Northeast").set({
+    date:10.10,
+    set:"LONESTAR",
+    playoffTeams:["Ridgewood A","Hunter A","High Tech A","Livingston A","Hunter B","Belmont A","Hotchkiss A","Phillips Academy A","Phillips Exeter","Ithaca A","Choate A"],
+    opsNum:342
+}),
+db.collection("tournaments").doc("ACF Fall Ridgewood").set({
+    date:10.17,
+    set:"ACFFALL",
+    playoffTeams:["Belmont A","Barrington A","High Tech A","Detroit Country Day A","Detroit Country Day B","Raymore-Peculiar"],
+    opsNum:398
+}),
+db.collection("tournaments").doc("LUKA").set({
+    date:10.17,
+    set:"MCMT",
+    playoffTeams:["Stanton College Prep B","St. Mark's A","Chattahoochee A","TAG Magnet A","Greenhill","Lambert A","Ladue A","Kinkaid"],
+    opsNum:398
+}),
 db.collection("tournaments").doc("LONESTAR Mainsite").set({
     date:11.14,
     set:"LONESTAR",
-    playoffTeams:["Kinkaid","Lambert","Strake Jesuit A","St. Mark's A","Boulder","Russellville A","KJ Henry Math and Science Academy A","Strake Jesuit B"],
+    playoffTeams:["Kinkaid","Lambert A","Strake Jesuit A","St. Mark's A","Boulder","Russellville A","KJ Henry Math and Science Academy A","Strake Jesuit B"],
     opsNum:144
 }),
 db.collection("tournaments").doc("Ithaca Fall").set({
@@ -31,11 +43,11 @@ db.collection("tournaments").doc("Ithaca Fall").set({
     playoffTeams:["Ridgewood A","Hunter A","High Tech A","Livingston A","Hunter B","Phillips Exeter","Belmont A","Hunter C","High Tech B","JP Stevens A","Hempfield A","Adirondack"],
     opsNum:398
 }),
-db.collection("tournaments").doc("ACF Fall at Ridgewood").set({
-    date:10.17,
-    set:"ACFFALL",
-    playoffTeams:["Belmont A","Barrington A","High Tech A","Detroit Country Day A","Detroit Country Day B","Raymore-Peculiar"],
-    opsNum:398
+db.collection("tournaments").doc("CC2C").set({
+    date:12.19,
+    set:"LONESTAR",
+    playoffTeams:["Saratoga A","Mira Loma","BASIS Silicon Valley","Mission San Jose A","Stanford Online A","Mission San Jose B","Sagittarius A","Sagittarius B"],
+    opsNum:162
 }),
 db.collection("tournaments").doc("Prison Bowl Mainsite").set({
     date:12.25,
@@ -46,8 +58,14 @@ db.collection("tournaments").doc("Prison Bowl Mainsite").set({
 db.collection("tournaments").doc("Hawk's Nest").set({
     date:13.09,
     set:"IS199",
-    playoffTeams:["East Brunswick A","East Brunswick B","Hunter A","Hunter B","Phillips Academy A","Wilton","Ridgewood A","MCA A","Edison A","Ithaca A","Hotchkiss A"],
+    playoffTeams:["East Brunswick A","East Brunswick B","Hunter A","Hunter B","Phillips Academy A","Wilton","Ridgewood A","MCA A","Edison A","Ithaca A","Hotchkiss A","TAG Magnet A"],
     opsNum:251
+}),
+db.collection("tournaments").doc("FALSE").set({
+    date:13.16,
+    set:"LONESTAR",
+    playoffTeams:["Stanton College Prep A","Stanton College Prep B","Stanton College Prep C","Stanton College Prep D","Ransom Everglades A","Community School of Naples","Knighthawks A","Knighthawks B","Buchholz A","Lake Highland Prep","Trinity Prep","The Phospholipid Tri-Layers"],
+    opsNum:266
 }),
 db.collection("tournaments").doc("Maroon Bowl II").set({
     date:13.17,
@@ -66,6 +84,24 @@ db.collection("tournaments").doc("CC3C").set({
     set:"SATURNALIA",
     playoffTeams:["Saratoga A","Mira Loma","Guilder A","Mission San Jose A","Stanford Online A","Eriksen A"],
     opsNum:110
+}),
+db.collection("tournaments").doc("LONESTAR Midwest").set({
+    date:13.23,
+    set:"LONESTAR",
+    playoffTeams:["Great Valley","Ladue A","Detroit Country Day A","Detroit Country Day B","Macomb A","Solon B","University Lab A","Solon A","Barrington A","Stevenson A","Detroit Catholic Central A","Raymore-Peculiar"],
+    opsNum:407
+}),
+db.collection("tournaments").doc("Saturnalia UIUC").set({
+    date:14.06,
+    set:"SATURNALIA",
+    playoffTeams:["Stevenson A","University Lab A","Sandburg A","Buffalo Grove A"],
+    opsNum:163
+}),
+db.collection("tournaments").doc("NKC").set({
+    date:14.06,
+    set:"PBXIII",
+    playoffTeams:["Ladue A","Georgetown Day A","Raymore-Peculiar","Parkway West A","Kickapoo A","NKC A","Fair Grove","Orchard Farm A"],
+    opsNum:324
 })
 
 
@@ -79,14 +115,33 @@ let expScoreB;
 let teamAvg = [];
 let all = [];
 let allAvg = [];
+let teamAvgMCMT = [];
+let MCMTAvg;
+let aMCMT;
 let teamAvgPBXIII = [];
+let PBXIIIAvg;
+let aPBXIII;
 let teamAvgLONESTAR = [];
+let LONESTARAvg
+let aLONESTAR;
 let teamAvgACFFALL = [];
+let ACFFALLAvg;
+let aACFFALL;
 let teamAvgSATURNALIA = [];
+let SATURNALIAAvg;
+let aSATURNALIA;
 let teamAvgRAFTII = [];
+let RAFTIIAvg;
+let aRAFTII;
 let teamAvgIS195 = [];
+let IS195Avg;
+let aIS195;
 let teamAvgIS197 = [];
+let IS197Avg;
+let aIS197;
 let teamAvgIS199 = [];
+let IS199Avg;
+let aIS199;
 let allPlayoffs = [];
 let allConsolation = [];
 let teamAvgPlayoffs = [];
@@ -103,6 +158,7 @@ let PBXIII = false;
 let ACFFALL = false;
 let SATURNALIA = false;
 let RAFTII = false;
+let MCMT = false;
 let IS195 = false;
 let IS197 = false;
 let IS199 = false;
@@ -184,35 +240,6 @@ let consolation = false;
 function average(array) {
     return array.reduce((a, b) => (a + b)) / array.length;
 }
-
-async function inputTournament(id){
-    let docRefTournament=db.collection("tournaments").doc(id);
-    if(y==true){
-        RAFTII = true;
-        playoffTeams=["Buffalo Grove A","Stevenson A","Sandburg A","Auburn A","University Lab A","University Lab B","Hinsdale A","Barrington A","Barrington B","Fremd A","IMSA A","Naperville North A"];
-        await gameData(1,364,"Earlybird");
-        await all.push(teamAvg);
-        await allPlayoffs.push(teamAvgPlayoffs);
-        await allConsolation.push(teamAvgConsolation);
-        teamAvg = [];
-        await console.log("Earlybird");
-        RAFTII = false;
-        allGameInfo = [];
-        teamAvgPlayoffs = [];
-        teamAvgConsolation = [];
-    }
-    else if(y==false){
-        a = 0;
-        RAFTII = true;
-        await gameData(1,364,"Earlybird");
-        playoffTeams=["Buffalo Grove A","Stevenson A","Sandburg A","Auburn A","University Lab A","University Lab B","Hinsdale A","Barrington A","Barrington B","Fremd A","IMSA A","Naperville North A"];
-        await console.log("Earlybird q",tnmtq,setq);
-        allGameInfo = [];
-        RAFTII = false;
-    
-    }
-}
-
 async function inputTournament(tournamentId){
     var docRefTournament = db.collection("tournaments").doc(tournamentId);
     await docRefTournament.get().then(async function(doc) {
@@ -220,9 +247,6 @@ async function inputTournament(tournamentId){
             let set=doc.data().set;
             let opsNum=doc.data().opsNum;
             playoffTeams=doc.data().playoffTeams;
-            if(y==false){
-                a+=1;
-            }
             switch (set) {
                 case "LONESTAR":
                     LONESTAR = true;
@@ -239,6 +263,9 @@ async function inputTournament(tournamentId){
                 case "RAFTII":
                     RAFTII = true;
                     break;
+                case "MCMT":
+                    MCMT = true;
+                    break;
                 case "IS197":
                     IS197 = true;
                     break;
@@ -247,38 +274,27 @@ async function inputTournament(tournamentId){
                     break;
             }
             await gameData(1,opsNum,tournamentId);
-            if(y==true){
+            if(y==false){
+                console.log("work"+y+tournamentId)
                 await all.push(teamAvg);
                 await allPlayoffs.push(teamAvgPlayoffs);
                 await allConsolation.push(teamAvgConsolation);
                 teamAvg = [];
+                console.log(tournamentId,all,allPlayoffs,allConsolation);
+            }
+            else if(y==true){
+                console.log(tournamentId,tnmtq,setq);
             }
             allGameInfo = [];
             teamAvgPlayoffs = [];
             teamAvgConsolation = [];
-            switch (set) {
-                case "LONESTAR":
-                    LONESTAR = false;
-                    break;
-                case "ACFFALL":
-                    ACFFALL = false;
-                    break;
-                case "PBXIII":
-                    PBXIII = false;
-                    break;
-                case "SATURNALIA":
-                    SATURNALIA = false;
-                    break;
-                case "RAFTII":
-                    RAFTII = false;
-                    break;
-                case "IS197":
-                    IS197 = false;
-                    break;
-                case "IS199":
-                    IS199 = false;
-                    break;
-            }
+            LONESTAR = false;
+            ACFFALL = false;
+            SATURNALIA = false;
+            RAFTII = false;
+            IS197 = false;
+            IS199 = false;
+            a+=1;
         } else {
             // doc.data() will be undefined in this case
             console.log("No such document!"+A);
@@ -370,11 +386,11 @@ async function cExpScore(A,B,AScore,BScore){
                     //console.log("rankB",rankB);  
                     //If A is lower
                     if (rankA<rankB){
-                        if(rankB-800>=rankA){
-                            expScore = 0;
+                        /*if(rankB-800>=rankA){
+                            //expScore = 0;
                             //rankDiff = rankB-rankA;
                         }
-                        else {
+                        else {*/
                             if(artemisTF==true){
                                 /*console.log(rankB-rankA);
                                 console.log((rankB-rankA)/400);
@@ -384,15 +400,15 @@ async function cExpScore(A,B,AScore,BScore){
                             }
                             expScore = 1/(1+(Math.E^((rankB-rankA)/400)));
                             //rankDiff = rankB-rankA;
-                        }
+                        //}
                     }
                     //If B is lower
                     else if (rankB<rankA){
-                        if(rankA-800>=rankB){
+                        /*if(rankA-800>=rankB){
                             expScore = 1;
                             //rankDiff = rankA-rankB;
                         }
-                        else{
+                        else{*/
                             if(artemisTF==true){
                                 /*console.log(rankA-rankB);
                                 console.log((rankA-rankB)/400);
@@ -401,7 +417,7 @@ async function cExpScore(A,B,AScore,BScore){
                                 //console.log(1/(1+(Math.E^((rankA-rankB)/400))));
                             }
                             expScore = 1-1/(1+(Math.E^((rankA-rankB)/400)));
-                        }
+                        //}
                     }
                     //If tie
                     else {
@@ -486,6 +502,8 @@ async function newRank(A,B,AScore,BScore) {
     switch(A){
         case "Phillips Exeter":
             return;
+        case "Gravesend":
+            A = "Phillips Exeter A"
             break;
         case "Democritus A":
             A = "High Tech A"; 
@@ -507,6 +525,9 @@ async function newRank(A,B,AScore,BScore) {
             break;
         case "Scalene Triangle":
             A = "Raymore-Peculiar"; 
+            break;
+        case "Raymore Peculiar":
+            B = "Raymore-Peculiar"; 
             break;
         case "Phillips Andover A":
             A = "Phillips Academy A"; 
@@ -583,13 +604,75 @@ async function newRank(A,B,AScore,BScore) {
         case "Uni E":
             A = "University Lab E"
             break;
+        case "Uni Lab A":
+            A = "University Lab A"
+            break;
+        case "Uni Lab B":
+            A = "University Lab B"
+            break;
         case "Karl's Nursery":
             A = "St. Mark's A"
+            break;
+        case "St. Mark's":
+            A = "St. Mark's A"
+            break;
+        case "DCDS A":
+            A = "Detroit Country Day A"
+            break;
+        case "DCDS B":
+            A = "Detroit Country Day B"
+            break;
+        case "DCC A":
+            A = "Detroit Catholic Central A"
+            break;
+        case "DCC B":
+            A = "Detroit Catholic Central B"
+            break;
+        case "DCC C":
+            A = "Detroit Catholic Central C"
+            break;
+        case "DCC D":
+            A = "Detroit Catholic Central D"
+            break;
+        case "DCC E":
+            A = "Detroit Catholic Central E"
+            break;
+        case "Enrique Trastamara":
+            A = "Lambert A"
+            break;
+        case "Lambert":
+            A = "Lambert A"
+            break;
+        case "GDS":
+            A = "Georgetown Day A"
+            break;
+        case "GDS A":
+            A = "Georgetown Day A"
+            break;
+        case "GDS B":
+            A = "Georgetown Day B"
+            break;
+        case "Georgetown Day School":
+            A = "Georgetown Day A"
+            break;
+        case "Georgetown Day":
+            A = "Georgetown Day A"
+            break;
+        case "TAG Magnet":
+            A = "TAG Magnet A"
+            break;
+        case "Greenhill":
+            A = "Greenhill A"
+            break;
+        case "Ladue":
+            A = "Ladue A"
             break;
     }
     switch(B){
         case "Phillips Exeter":
             return;
+        case "Gravesend":
+            B = "Phillips Exeter A"
             break;
         case "Democritus A":
             B = "High Tech A"; 
@@ -610,6 +693,9 @@ async function newRank(A,B,AScore,BScore) {
             B = "Belmont A"; 
             break;
         case "Scalene Triangle":
+            B = "Raymore-Peculiar"; 
+            break;
+        case "Raymore Peculiar":
             B = "Raymore-Peculiar"; 
             break;
         case "Phillips Andover A":
@@ -687,8 +773,68 @@ async function newRank(A,B,AScore,BScore) {
         case "Uni E":
             B = "University Lab E"
             break;
+        case "Uni Lab A":
+            B = "University Lab A"
+            break;
+        case "Uni Lab B":
+            B = "University Lab B"
+            break;
         case "Karl's Nursery":
             B = "St. Mark's A"
+            break;
+        case "St. Mark's":
+            B = "St. Mark's A"
+            break;
+        case "DCDS A":
+            B = "Detroit Country Day A"
+            break;
+        case "DCDS B":
+            B = "Detroit Country Day B"
+            break;
+        case "DCC A":
+            B = "Detroit Catholic Central A"
+            break;
+        case "DCC B":
+            B = "Detroit Catholic Central B"
+            break;
+        case "DCC C":
+            B = "Detroit Catholic Central C"
+            break;
+        case "DCC D":
+            B = "Detroit Catholic Central D"
+            break;
+        case "DCC E":
+            B = "Detroit Catholic Central E"
+            break;
+        case "Enrique Trastamara":
+            B = "Lambert A"
+            break;
+        case "Lambert":
+            A = "Lambert A"
+            break;
+        case "GDS":
+            B = "Georgetown Day A"
+            break;
+        case "GDS A":
+            B = "Georgetown Day A"
+            break;
+        case "GDS B":
+            B = "Georgetown Day B"
+            break;
+        case "Georgetown Day School":
+            B = "Georgetown Day A"
+            break;
+        case "Georgetown Day":
+            B = "Georgetown Day A"
+            break;
+        case "TAG Magnet":
+            B = "TAG Magnet A"
+            break;
+        case "Greenhill":
+            A = "Greenhill A"
+            break;
+        case "Ladue":
+            A = "Ladue A"
             break;
     }
     if(AScore=="Forfeit"||BScore=="Forfeit"){
@@ -754,6 +900,9 @@ async function newRank(A,B,AScore,BScore) {
         else if (RAFTII == true){
             teamAvgRAFTII.push(AScore,BScore);
         }
+        else if (MCMT == true){
+            teamAvgMCMT.push(AScore,BScore);
+        }
         allAvg.push(AScore,BScore)
         teamAvg.push(AScore,BScore);
         if(Round>5){
@@ -797,69 +946,71 @@ async function newRank(A,B,AScore,BScore) {
     }
     else if (y == true){
         crossDiv = false;
+        let aAvg = average(allAvg);
+        let LONESTARAvg = average(teamAvgLONESTAR);
+        console.log("aAvg",aAvg,"LONESTARAvg",LONESTARAvg);
         if (PBXIII == true){
-            //console.log("all",all);
-            let aAvg = average(allAvg);
-            let PBXIIIAvg = average(teamAvgPBXIII);
-            tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/PBXIIIAvg;
-            setq = PBXIIIAvg/aAvg;
+            console.log(PBXIIIAvg = average(teamAvgPBXIII));
+            console.log(aPBXIII = PBXIIIAvg/LONESTARAvg);
+            console.log(tnmtAvg = average(all[a]));
+            console.log(tnmtq = tnmtAvg/(aPBXIII*aAvg)); 
+            //tnmtq = (tnmtAvg*tnmtAvg)/(PBXIIIAvg*aAvg);
+        }
+        else if (MCMT == true){
+            console.log(MCMTAvg = average(teamAvgMCMT));
+            console.log(aMCMT = MCMTAvg/LONESTARAvg);
+            console.log(tnmtAvg = average(all[a]));
+            console.log(tnmtq = tnmtAvg/(aMCMT*aAvg)); 
         }
         else if (LONESTAR == true){
-            //console.log("all",all);
-            let aAvg = average(allAvg);
-            let LONESTARAvg = average(teamAvgLONESTAR);
-            tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/LONESTARAvg;
-            setq = LONESTARAvg/aAvg;
+            console.log(LONESTARAvg = average(teamAvgLONESTAR));
+            console.log(aLONESTAR = LONESTARAvg/LONESTARAvg);
+            console.log("aLONESTAR",aLONESTAR,"LONESTARAvg",LONESTARAvg);
+            console.log(tnmtAvg = average(all[a]));
+            console.log(tnmtq = tnmtAvg/(aLONESTAR*aAvg)); 
+            //tnmtq = (tnmtAvg*tnmtAvg)/(LONESTARAvg*aAvg);
         }
         else if (IS195 == true){
-            //console.log("all",all);
-            let aAvg = average(allAvg);
-            let IS195Avg = average(teamAvgIS195);
-            tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/IS195Avg;
-            setq = IS195Avg/aAvg;
+            console.log(IS195Avg = average(teamAvgIS195));
+            console.log(aIS195 = IS195Avg/LONESTARAvg);
+            console.log(tnmtAvg = average(all[a]));
+            console.log(tnmtq = tnmtAvg/(aIS195*aAvg)); 
+            //tnmtq = (tnmtAvg*tnmtAvg)/(IS195Avg*aAvg);
         }
         else if (IS197 == true){
-            //console.log("all",all);
-            let aAvg = average(allAvg);
-            let IS197Avg = average(teamAvgIS197);
-            tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/IS197Avg;
-            setq = IS197Avg/aAvg;
+            console.log(IS197Avg = average(teamAvgIS197));
+            console.log(aIS197 = IS197Avg/LONESTARAvg);
+            console.log(tnmtAvg = average(all[a]));
+            console.log(tnmtq = tnmtAvg/(aIS197*aAvg)); 
+            //tnmtq = (tnmtAvg*tnmtAvg)/(IS197Avg*aAvg);
         }
         else if (IS199 == true){
-            //console.log("all",all);
-            let aAvg = average(allAvg);
-            let IS199Avg = average(teamAvgIS199);
-            tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/IS199Avg;
-            setq = IS199Avg/aAvg;
+            console.log(IS199Avg = average(teamAvgIS199));
+            console.log(aIS199 = IS199Avg/LONESTARAvg);
+            console.log(tnmtAvg = average(all[a]));
+            console.log(tnmtq = tnmtAvg/(aIS199*aAvg));         
+            //tnmtq = (tnmtAvg*tnmtAvg)/(IS199Avg*aAvg);
         }
         else if (ACFFALL == true){
-            //console.log("all",all);
-            let aAvg = average(allAvg);
-            let ACFFALLAvg = average(teamAvgACFFALL);
-            tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/ACFFALLAvg;
-            setq = ACFFALLAvg/aAvg;
+            console.log(ACFFALLAvg = average(teamAvgACFFALL));
+            console.log(aACFFALL = ACFFALLAvg/LONESTARAvg);
+            console.log(tnmtAvg = average(all[a]));
+            console.log(tnmtq = tnmtAvg/(aACFFALL*aAvg));
+            //tnmtq = (tnmtAvg*tnmtAvg)/(ACFFALLAvg*aAvg);
         }
         else if (SATURNALIA == true){
-            //console.log("all",all);
-            let aAvg = average(allAvg);
-            let SATURNALIAAvg = average(teamAvgSATURNALIA);
-            tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/SATURNALIAAvg;
-            setq = SATURNALIAAvg/aAvg;
+            console.log(SATURNALIAAvg = average(teamAvgSATURNALIA));
+            console.log(aSATURNALIA = SATURNALIAAvg/LONESTARAvg)
+            console.log(tnmtAvg = average(all[a]));
+            console.log(tnmtq = tnmtAvg/(aSATURNALIA*aAvg));
+            //tnmtq = (tnmtAvg*tnmtAvg)/(SATURNALIAAvg*aAvg);
         }
         else if (RAFTII == true){
-            //console.log("all",all);
-            let aAvg = average(allAvg);
-            let RAFTIIAvg = average(teamAvgRAFTII);
-            tnmtAvg = average(all[a]);
-            tnmtq = tnmtAvg/RAFTIIAvg;
-            setq = RAFTIIAvg/aAvg;
+            console.log(RAFTIIAvg = average(teamAvgRAFTII));
+            console.log(aRAFTII = RAFTIIAvg/LONESTARAvg);
+            console.log(tnmtAvg = average(all[a]));
+            console.log(tnmtq = tnmtAvg/(aRAFTII*aAvg));
+            //tnmtq = (tnmtAvg*tnmtAvg)/(RAFTIIAvg*aAvg);
         }
         if(Round>5){
             consolation = true;
@@ -1222,8 +1373,8 @@ async function nRank(A,B,AScore,BScore){
                     }
                     else {
                         console.log("q2",q2);
-                        AoverABminusEA = ((AoverAB*tnmtq*q2)/setq)-expScoreA;
-                        BoverABminusEB = ((BoverAB*tnmtq*q2)/setq)-expScoreB;
+                        AoverABminusEA = (AoverAB*tnmtq*q2)-expScoreA;
+                        BoverABminusEB = (BoverAB*tnmtq*q2)-expScoreB;
                     }
                     console.log("AoverABminusEA",AoverABminusEA,"BoverABminusEB",BoverABminusEB);
                     //console.log("q",q,"Ka",Ka,"Kb",Kb)
@@ -1568,7 +1719,7 @@ async function allData(){
 
     //LONESTAR MAINSITE
     LONESTAR = true;
-    playoffTeams=["Kinkaid","Lambert","Strake Jesuit A","St. Mark's A","Boulder","Russellville A","KJ Henry Math and Science Academy A","Strake Jesuit B"];
+    playoffTeams=["Kinkaid","Lambert A","Strake Jesuit A","St. Mark's A","Boulder","Russellville A","KJ Henry Math and Science Academy A","Strake Jesuit B"];
     await gameData(1,144,"LONESTAR Mainsite");
     await all.push(teamAvg);
     await allPlayoffs.push(teamAvgPlayoffs);
@@ -1708,7 +1859,7 @@ async function allData(){
     //LONESTAR MAINSITE
     a += 1;
     LONESTAR = true;
-    playoffTeams=["Kinkaid","Lambert","Strake Jesuit A","St. Mark's A","Boulder","Russellville A","KJ Henry Math and Science Academy A","Strake Jesuit B"];
+    playoffTeams=["Kinkaid","Lambert A","Strake Jesuit A","St. Mark's A","Boulder","Russellville A","KJ Henry Math and Science Academy A","Strake Jesuit B"];
     await gameData(1,144,"LONESTAR Mainsite");
     await console.log("LONESTAR Mainsite q",tnmtq,setq);
     allGameInfo = [];
@@ -1765,8 +1916,54 @@ async function allData(){
     await console.log("Cal Cup 3 Competitive",tnmtq,setq);
     SATURNALIA = false;
 }
+async function hsTournaments(){
+    K = 100;
+    y = false;
+    allGameInfo = [];
+    await inputTournament("Earlybird");
+    await inputTournament("LONESTAR Northeast");
+    await inputTournament("ACF Fall Ridgewood");
+    await inputTournament("LUKA");
+    await inputTournament("LONESTAR Mainsite");
+    await inputTournament("Ithaca Fall");
+    await inputTournament("CC2C");
+    await inputTournament("Prison Bowl Mainsite");
+    await inputTournament("Hawk's Nest");
+    await inputTournament("FALSE");
+    await inputTournament("Maroon Bowl II");
+    await inputTournament("Maroon Bowl Standard");
+    await inputTournament("CC3C");
+    await inputTournament("LONESTAR Midwest");    
+    await inputTournament("Saturnalia UIUC");
+    await inputTournament("NKC");
+    y = true;
+    a = 0;
+    await inputTournament("Earlybird");
+    await inputTournament("LONESTAR Northeast");
+    await inputTournament("ACF Fall Ridgewood");
+    await inputTournament("LUKA");
+    await inputTournament("LONESTAR Mainsite");
+    await inputTournament("Ithaca Fall");
+    await inputTournament("CC2C");
+    await inputTournament("Prison Bowl Mainsite");
+    await inputTournament("Hawk's Nest");
+    await inputTournament("FALSE");
+    await inputTournament("Maroon Bowl II");
+    await inputTournament("Maroon Bowl Standard");
+    await inputTournament("CC3C");
+    await inputTournament("LONESTAR Midwest");
+    await inputTournament("Saturnalia UIUC");
+    await inputTournament("NKC");
+}
+async function msTournaments(){
+    K = 100;
+    y = false;
+    allGameInfo = [];
+    y = true;
+    a = 0;
+}
 async function rankings(){
-    await allData();
-    setTimeout(printRanks(),5000);
+    await allTournaments();
+    //setTimeout(printRanks(),5000);
 }
 rankings()
