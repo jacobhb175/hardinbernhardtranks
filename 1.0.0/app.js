@@ -15,7 +15,16 @@ server.listen(port, hostname, () => {
 });
 */
 
+var admin = require("firebase-admin");
 
+var serviceAccount = require("path/to/serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://hardinbernhardtranks.firebaseio.com",
+});
+
+const db = admin.firestore();
 
 
 //Varsity Teams
