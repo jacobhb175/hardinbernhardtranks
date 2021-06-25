@@ -1,4 +1,30 @@
+/*var admin = require("firebase-admin");
 
+var serviceAccount = require("./hardinbernhardtranks-170e9a2580ff.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://hardinbernhardtranks.firebaseio.com"
+});
+*/
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+var firebaseConfig = {
+    apiKey: "AIzaSyDXM_FBLEWgMGLFMbV_nL9ScHBqsE2D9Dk",
+    authDomain: "hardinbernhardtranks.firebaseapp.com",
+    databaseURL: "https://hardinbernhardtranks.firebaseio.com",
+    projectId: "hardinbernhardtranks",
+    storageBucket: "hardinbernhardtranks.appspot.com",
+    messagingSenderId: "498587943256",
+    appId: "1:498587943256:web:979cc52a0053224122a52d",
+    measurementId: "G-FHXST7T8VQ"
+  };
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  const database = firebase.database();
 
 db.collection("qbteams").doc("Ridgewood A").set({
     name:"Ridgewood A",
@@ -103,7 +129,20 @@ db.collection("tournaments").doc("NKC").set({
     playoffTeams:["Ladue A","Georgetown Day A","Raymore-Peculiar","Parkway West A","Kickapoo A","NKC A","Fair Grove","Orchard Farm A"],
     opsNum:324
 })
+db.collection("mstournaments").doc("TJMST").set({
+    date:13.21,
+    set:"MS35",
+    playoffTeams:["Longfellow A","Centennial Lane A","Burleigh Manor A","Colvin Run A","Cooper A","	BASIS McLean A"],
+    opsNum:242
+}),
+db.collection("mstournaments").doc("RMSI").set({
+    date:14.06,
+    set:"MS37",
+    playoffTeams:["Hunter A","Hunter B","Middlesex A","Middlesex B","Middlesex C","Middlesex D","Millburn","Chapin","Heritage A","Heritage B","Tenafly","Chenery","Berwick A","River Dell A","Benjamin Franklin A","John Adams"],
+    opsNum:492
+})
 
+let ms = false;
 
 let evalV;
 let evalJV;
@@ -115,6 +154,11 @@ let expScoreB;
 let teamAvg = [];
 let all = [];
 let allAvg = [];
+
+let msTeamAvg = [];
+let msAll = [];
+let msAllAvg = [];
+
 let teamAvgMCMT = [];
 let MCMTAvg;
 let aMCMT;
@@ -142,10 +186,24 @@ let aIS197;
 let teamAvgIS199 = [];
 let IS199Avg;
 let aIS199;
+
+let teamAvgMS35 = [];
+let MS35Avg;
+let aMS35; 
+let teamAvgMS37 = [];
+let MS37Avg;
+let aMS37; 
+
 let allPlayoffs = [];
 let allConsolation = [];
+
+let msAllPlayoffs = [];
+let msAllConsolation = [];
+
 let teamAvgPlayoffs = [];
 let teamAvgConsolation = [];
+
+
 let tnmtAvg = 0;
 let setAvg = 0;
 let cAvg = 0;
@@ -162,6 +220,9 @@ let MCMT = false;
 let IS195 = false;
 let IS197 = false;
 let IS199 = false;
+
+let MS35 = false;
+let MS37 = false;
 
 let a = 0;
 let b = 0;
@@ -241,46 +302,71 @@ function average(array) {
     return array.reduce((a, b) => (a + b)) / array.length;
 }
 async function inputTournament(tournamentId){
-    var docRefTournament = db.collection("tournaments").doc(tournamentId);
+    if(ms==false){
+        var docRefTournament = db.collection("tournaments").doc(tournamentId);
+    }
+    else if(ms==true){    
+        var docRefTournament = db.collection("mstournaments").doc(tournamentId);
+    }
     await docRefTournament.get().then(async function(doc) {
         if(doc.exists) {
             let set=doc.data().set;
             let opsNum=doc.data().opsNum;
             playoffTeams=doc.data().playoffTeams;
-            switch (set) {
-                case "LONESTAR":
-                    LONESTAR = true;
-                    break;
-                case "ACFFALL":
-                    ACFFALL = true;
-                    break;
-                case "PBXIII":
-                    PBXIII = true;
-                    break;
-                case "SATURNALIA":
-                    SATURNALIA = true;
-                    break;
-                case "RAFTII":
-                    RAFTII = true;
-                    break;
-                case "MCMT":
-                    MCMT = true;
-                    break;
-                case "IS197":
-                    IS197 = true;
-                    break;
-                case "IS199":
-                    IS199 = true;
-                    break;
+            if(ms==false){
+                switch (set) {
+                    case "LONESTAR":
+                        LONESTAR = true;
+                        break;
+                    case "ACFFALL":
+                        ACFFALL = true;
+                        break;
+                    case "PBXIII":
+                        PBXIII = true;
+                        break;
+                    case "SATURNALIA":
+                        SATURNALIA = true;
+                        break;
+                    case "RAFTII":
+                        RAFTII = true;
+                        break;
+                    case "MCMT":
+                        MCMT = true;
+                        break;
+                    case "IS197":
+                        IS197 = true;
+                        break;
+                    case "IS199":
+                        IS199 = true;
+                        break;
+                }
+            }
+            else if(ms==true){
+                switch (set) {
+                    case "MS35":
+                        MS35 = true;
+                        break;
+                    case "MS37":
+                        MS37 = true;
+                        break;
+                }
             }
             await gameData(1,opsNum,tournamentId);
             if(y==false){
-                console.log("work"+y+tournamentId)
-                await all.push(teamAvg);
-                await allPlayoffs.push(teamAvgPlayoffs);
-                await allConsolation.push(teamAvgConsolation);
+                console.log("work"+y+tournamentId);
+                if(ms==false){
+                    await all.push(teamAvg);
+                    await allPlayoffs.push(teamAvgPlayoffs);
+                    await allConsolation.push(teamAvgConsolation);
+                    console.log(tournamentId,all,allPlayoffs,allConsolation);
+                }
+                else if(ms==true){
+                    await msAll.push(msTeamAvg);
+                    await msAllPlayoffs.push(teamAvgPlayoffs);
+                    await msAllConsolation.push(teamAvgConsolation);
+                    console.log(tournamentId,msAll,msAllPlayoffs,msAllConsolation);
+                }
                 teamAvg = [];
-                console.log(tournamentId,all,allPlayoffs,allConsolation);
             }
             else if(y==true){
                 console.log(tournamentId,tnmtq,setq);
@@ -290,10 +376,13 @@ async function inputTournament(tournamentId){
             teamAvgConsolation = [];
             LONESTAR = false;
             ACFFALL = false;
+            PBXIII = false;
             SATURNALIA = false;
             RAFTII = false;
             IS197 = false;
             IS199 = false;
+            MS35 = false;
+            MS37 = false;
             a+=1;
         } else {
             // doc.data() will be undefined in this case
@@ -876,42 +965,53 @@ async function newRank(A,B,AScore,BScore) {
     }*/
     if (y == false){
         //if prison bowl games
-        if (PBXIII == true){
-            teamAvgPBXIII.push(AScore,BScore);
+        if(ms==false){
+            if (PBXIII == true){
+                teamAvgPBXIII.push(AScore,BScore);
+            }
+            else if (LONESTAR == true){
+                teamAvgLONESTAR.push(AScore,BScore);
+            }
+            else if (IS195 == true){
+                teamAvgIS195.push(AScore,BScore);
+            }
+            else if (IS197 == true){
+                teamAvgIS197.push(AScore,BScore);
+            }
+            else if (IS199 == true){
+                teamAvgIS199.push(AScore,BScore);
+            }
+            else if (ACFFALL == true){
+                teamAvgACFFALL.push(AScore,BScore);
+            }
+            else if (SATURNALIA == true){
+                teamAvgSATURNALIA.push(AScore,BScore);
+            }
+            else if (RAFTII == true){
+                teamAvgRAFTII.push(AScore,BScore);
+            }
+            else if (MCMT == true){
+                teamAvgMCMT.push(AScore,BScore);
+            }
+            allAvg.push(AScore,BScore)
+            teamAvg.push(AScore,BScore);
         }
-        else if (LONESTAR == true){
-            teamAvgLONESTAR.push(AScore,BScore);
+        else if(ms==true){
+            if (MS35 == true){
+                teamAvgMS35.push(AScore,BScore);
+            }
+            else if (MS37 == true){
+                teamAvgMS37.push(AScore,BScore);
+            }
+            msAllAvg.push(AScore,BScore)
+            msTeamAvg.push(AScore,BScore);
         }
-        else if (IS195 == true){
-            teamAvgIS195.push(AScore,BScore);
-        }
-        else if (IS197 == true){
-            teamAvgIS197.push(AScore,BScore);
-        }
-        else if (IS199 == true){
-            teamAvgIS199.push(AScore,BScore);
-        }
-        else if (ACFFALL == true){
-            teamAvgACFFALL.push(AScore,BScore);
-        }
-        else if (SATURNALIA == true){
-            teamAvgSATURNALIA.push(AScore,BScore);
-        }
-        else if (RAFTII == true){
-            teamAvgRAFTII.push(AScore,BScore);
-        }
-        else if (MCMT == true){
-            teamAvgMCMT.push(AScore,BScore);
-        }
-        allAvg.push(AScore,BScore)
-        teamAvg.push(AScore,BScore);
         if(Round>5){
             consolation = true;
             for (let j = 0; j < playoffTeams.length; j++) {
                 if(A==playoffTeams[j]||B==playoffTeams[j]){
                     consolation = false;
-                }
-                
+                }             
             }
             if(consolation==true){
                 console.log("Consolation",A,B);
@@ -945,276 +1045,133 @@ async function newRank(A,B,AScore,BScore) {
         } */
     }
     else if (y == true){
-        crossDiv = false;
-        let aAvg = average(allAvg);
-        let LONESTARAvg = average(teamAvgLONESTAR);
-        console.log("aAvg",aAvg,"LONESTARAvg",LONESTARAvg);
-        if (PBXIII == true){
-            console.log(PBXIIIAvg = average(teamAvgPBXIII));
-            console.log(aPBXIII = PBXIIIAvg/LONESTARAvg);
-            console.log(tnmtAvg = average(all[a]));
-            console.log(tnmtq = tnmtAvg/(aPBXIII*aAvg)); 
-            //tnmtq = (tnmtAvg*tnmtAvg)/(PBXIIIAvg*aAvg);
-        }
-        else if (MCMT == true){
-            console.log(MCMTAvg = average(teamAvgMCMT));
-            console.log(aMCMT = MCMTAvg/LONESTARAvg);
-            console.log(tnmtAvg = average(all[a]));
-            console.log(tnmtq = tnmtAvg/(aMCMT*aAvg)); 
-        }
-        else if (LONESTAR == true){
-            console.log(LONESTARAvg = average(teamAvgLONESTAR));
-            console.log(aLONESTAR = LONESTARAvg/LONESTARAvg);
-            console.log("aLONESTAR",aLONESTAR,"LONESTARAvg",LONESTARAvg);
-            console.log(tnmtAvg = average(all[a]));
-            console.log(tnmtq = tnmtAvg/(aLONESTAR*aAvg)); 
-            //tnmtq = (tnmtAvg*tnmtAvg)/(LONESTARAvg*aAvg);
-        }
-        else if (IS195 == true){
-            console.log(IS195Avg = average(teamAvgIS195));
-            console.log(aIS195 = IS195Avg/LONESTARAvg);
-            console.log(tnmtAvg = average(all[a]));
-            console.log(tnmtq = tnmtAvg/(aIS195*aAvg)); 
-            //tnmtq = (tnmtAvg*tnmtAvg)/(IS195Avg*aAvg);
-        }
-        else if (IS197 == true){
-            console.log(IS197Avg = average(teamAvgIS197));
-            console.log(aIS197 = IS197Avg/LONESTARAvg);
-            console.log(tnmtAvg = average(all[a]));
-            console.log(tnmtq = tnmtAvg/(aIS197*aAvg)); 
-            //tnmtq = (tnmtAvg*tnmtAvg)/(IS197Avg*aAvg);
-        }
-        else if (IS199 == true){
-            console.log(IS199Avg = average(teamAvgIS199));
-            console.log(aIS199 = IS199Avg/LONESTARAvg);
-            console.log(tnmtAvg = average(all[a]));
-            console.log(tnmtq = tnmtAvg/(aIS199*aAvg));         
-            //tnmtq = (tnmtAvg*tnmtAvg)/(IS199Avg*aAvg);
-        }
-        else if (ACFFALL == true){
-            console.log(ACFFALLAvg = average(teamAvgACFFALL));
-            console.log(aACFFALL = ACFFALLAvg/LONESTARAvg);
-            console.log(tnmtAvg = average(all[a]));
-            console.log(tnmtq = tnmtAvg/(aACFFALL*aAvg));
-            //tnmtq = (tnmtAvg*tnmtAvg)/(ACFFALLAvg*aAvg);
-        }
-        else if (SATURNALIA == true){
-            console.log(SATURNALIAAvg = average(teamAvgSATURNALIA));
-            console.log(aSATURNALIA = SATURNALIAAvg/LONESTARAvg)
-            console.log(tnmtAvg = average(all[a]));
-            console.log(tnmtq = tnmtAvg/(aSATURNALIA*aAvg));
-            //tnmtq = (tnmtAvg*tnmtAvg)/(SATURNALIAAvg*aAvg);
-        }
-        else if (RAFTII == true){
-            console.log(RAFTIIAvg = average(teamAvgRAFTII));
-            console.log(aRAFTII = RAFTIIAvg/LONESTARAvg);
-            console.log(tnmtAvg = average(all[a]));
-            console.log(tnmtq = tnmtAvg/(aRAFTII*aAvg));
-            //tnmtq = (tnmtAvg*tnmtAvg)/(RAFTIIAvg*aAvg);
-        }
-        if(Round>5){
-            consolation = true;
-            for (let j = 0; j < playoffTeams.length; j++) {
-                if(A==playoffTeams[j]||B==playoffTeams[j]){
-                    consolation = false;
-                    console.log("Playoff Game",A,B)
-                }     
+        if(ms == false){
+            let aAvg = average(allAvg);
+            let LONESTARAvg = average(teamAvgLONESTAR);
+            console.log("aAvg",aAvg,"LONESTARAvg",LONESTARAvg);
+            if (PBXIII == true){
+                console.log(PBXIIIAvg = average(teamAvgPBXIII));
+                console.log(aPBXIII = PBXIIIAvg/LONESTARAvg);
+                console.log(tnmtAvg = average(all[a]));
+                console.log(tnmtq = tnmtAvg/(aPBXIII*aAvg)); 
+                //tnmtq = (tnmtAvg*tnmtAvg)/(PBXIIIAvg*aAvg);
             }
-            if(consolation==true){
-                cAvg = average(allConsolation[a]);
-                cDiff = cAvg/tnmtAvg;
-                console.log("cAvg,tnmtAvg,cDiff",cAvg,tnmtAvg,cDiff);
+            else if (MCMT == true){
+                console.log(MCMTAvg = average(teamAvgMCMT));
+                console.log(aMCMT = MCMTAvg/LONESTARAvg);
+                console.log(tnmtAvg = average(all[a]));
+                console.log(tnmtq = tnmtAvg/(aMCMT*aAvg)); 
             }
-            else if(consolation==false){
-                pAvg = average(allPlayoffs[a]);
-                pDiff = pAvg/tnmtAvg;
-                console.log("pAvg,tnmtAvg,pDiff",pAvg,tnmtAvg,pDiff);
+            else if (LONESTAR == true){
+                /*console.log(LONESTARAvg = average(teamAvgLONESTAR));
+                console.log(aLONESTAR = LONESTARAvg/LONESTARAvg);
+                console.log("aLONESTAR",aLONESTAR,"LONESTARAvg",LONESTARAvg);*/
+                console.log(tnmtAvg = average(all[a]));
+                console.log(tnmtq = tnmtAvg/(aAvg)); 
+                //tnmtq = (tnmtAvg*tnmtAvg)/(LONESTARAvg*aAvg);
+            }
+            else if (IS195 == true){
+                console.log(IS195Avg = average(teamAvgIS195));
+                console.log(aIS195 = IS195Avg/LONESTARAvg);
+                console.log(tnmtAvg = average(all[a]));
+                console.log(tnmtq = tnmtAvg/(aIS195*aAvg)); 
+                //tnmtq = (tnmtAvg*tnmtAvg)/(IS195Avg*aAvg);
+            }
+            else if (IS197 == true){
+                console.log(IS197Avg = average(teamAvgIS197));
+                console.log(aIS197 = IS197Avg/LONESTARAvg);
+                console.log(tnmtAvg = average(all[a]));
+                console.log(tnmtq = tnmtAvg/(aIS197*aAvg)); 
+                //tnmtq = (tnmtAvg*tnmtAvg)/(IS197Avg*aAvg);
+            }
+            else if (IS199 == true){
+                console.log(IS199Avg = average(teamAvgIS199));
+                console.log(aIS199 = IS199Avg/LONESTARAvg);
+                console.log(tnmtAvg = average(all[a]));
+                console.log(tnmtq = tnmtAvg/(aIS199*aAvg));         
+                //tnmtq = (tnmtAvg*tnmtAvg)/(IS199Avg*aAvg);
+            }
+            else if (ACFFALL == true){
+                console.log(ACFFALLAvg = average(teamAvgACFFALL));
+                console.log(aACFFALL = ACFFALLAvg/LONESTARAvg);
+                console.log(tnmtAvg = average(all[a]));
+                console.log(tnmtq = tnmtAvg/(aACFFALL*aAvg));
+                //tnmtq = (tnmtAvg*tnmtAvg)/(ACFFALLAvg*aAvg);
+            }
+            else if (SATURNALIA == true){
+                console.log(SATURNALIAAvg = average(teamAvgSATURNALIA));
+                onsole.log(aSATURNALIA = SATURNALIAAvg/LONESTARAvg)
+                console.log(tnmtAvg = average(all[a]));
+                console.log(tnmtq = tnmtAvg/(aSATURNALIA*aAvg));
+                //tnmtq = (tnmtAvg*tnmtAvg)/(SATURNALIAAvg*aAvg);
+            }
+            else if (RAFTII == true){
+                console.log(RAFTIIAvg = average(teamAvgRAFTII));
+                console.log(aRAFTII = RAFTIIAvg/LONESTARAvg);
+                console.log(tnmtAvg = average(all[a]));
+                console.log(tnmtq = tnmtAvg/(aRAFTII*aAvg));
+                //tnmtq = (tnmtAvg*tnmtAvg)/(RAFTIIAvg*aAvg);
+            }
+            if(Round>5){
+                consolation = true;
+                for (let j = 0; j < playoffTeams.length; j++) {
+                    if(A==playoffTeams[j]||B==playoffTeams[j]){
+                        consolation = false;
+                        console.log("Playoff Game",A,B)
+                    }     
+                }
+                if(consolation==true){
+                    cAvg = average(allConsolation[a]);
+                    cDiff = cAvg/tnmtAvg;
+                    console.log("cAvg,tnmtAvg,cDiff",cAvg,tnmtAvg,cDiff);
+                }
+                else if(consolation==false){
+                    pAvg = average(allPlayoffs[a]);
+                    pDiff = pAvg/tnmtAvg;
+                    console.log("pAvg,tnmtAvg,pDiff",pAvg,tnmtAvg,pDiff);
+                }
+            }
+        }
+        else if(ms == true){
+            let aAvg = average(msAllAvg);
+            let MS35Avg = average(teamAvgMS35);
+            console.log("aAvg",aAvg,"MS35Avg",MS35Avg);
+            if (MS35 == true){
+                console.log(MS35Avg = average(teamAvgMS35));
+                console.log(aMS35 = MS35Avg/MS35Avg);
+                console.log(tnmtAvg = average(msAll[a]));
+                console.log(tnmtq = tnmtAvg/(aMS35*aAvg)); 
+                //tnmtq = (tnmtAvg*tnmtAvg)/(PBXIIIAvg*aAvg);
+            }
+            else if (MS37 == true){
+                console.log(MS37Avg = average(teamAvgMS37));
+                console.log(aMS37 = MS37Avg/MS37Avg);
+                console.log(tnmtAvg = average(msAll[a]));
+                console.log(tnmtq = tnmtAvg/(aMS37*aAvg)); 
+                //tnmtq = (tnmtAvg*tnmtAvg)/(PBXIIIAvg*aAvg);
+            }
+            if(Round>5){
+                consolation = true;
+                for (let j = 0; j < playoffTeams.length; j++) {
+                    if(A==playoffTeams[j]||B==playoffTeams[j]){
+                        consolation = false;
+                        console.log("Playoff Game",A,B)
+                    }     
+                }
+                if(consolation==true){
+                    cAvg = average(msAllConsolation[a]);
+                    cDiff = cAvg/tnmtAvg;
+                    console.log("cAvg,tnmtAvg,cDiff",cAvg,tnmtAvg,cDiff);
+                }
+                else if(consolation==false){
+                    pAvg = average(msAllPlayoffs[a]);
+                    pDiff = pAvg/tnmtAvg;
+                    console.log("pAvg,tnmtAvg,pDiff",pAvg,tnmtAvg,pDiff);
+                }
             }
         }
         console.log("q",tnmtq,setq);
         nRank(A,B,AScore,BScore);
-        //C-Set games
-        /*if (cSet == true) {
-            if (evalV == true) {
-                if (a == 0) {
-                    //only do once per tnmt
-                    a = a+1;
-                    //calculate avg points scored in a varsity game at a c set
-                    let sumC = 0;
-                    let m;
-                    let teamAvgCLen = teamAvgC.length;
-                    for(m = 0; m < teamAvgCLen; m++){
-                        sumC += parseInt(teamAvgC[m],10);
-                    };
-                    let avgC = sumC/teamAvgCLen;
-                    //calculate avg points scored in a varsity game at this tnmt
-                    let sum = 0;
-                    let n;
-                    let allVLen = allV[a2].length;
-                    for(n = 0; n < allVLen; n++){
-                        sum += parseInt(allV[a2][n],10);
-                    };
-                    let avgV = sum/allVLen;
-                    //calculate q value (varsity ppg at this tnmt:varsity ppg at all c-sets)
-                    q = avgV/avgC;
-                    //push q to array
-                    qV.push(q);
-                }
-                //find q for this tnmt
-                else {
-                    q = qV[a2];
-                }
-                nRank(A,B,AScore,BScore);
-            }
-            else if (evalJV == true) {
-                if (b == 0) {
-                //only do once per tnmt
-                b = b+1;
-                //calculate avg points scored in jv games at a c set
-                let sumCJV = 0;
-                let o;
-                let teamAvgCJVLen = teamAvgCJV.length;
-                for(o = 0; o < teamAvgCJVLen; o++){
-                    sumCJV += parseInt(teamAvgCJV[o],10);
-                };
-                //calculate avg points scored in jv games at this tnmt
-                let avgCJV = sumCJV/teamAvgCJVLen;
-                let sum = 0;
-                let p;
-                let allJVLen = allJV[b2].length;
-                for(p = 0; p < allJVLen; p++ ){
-                    sum += parseInt(allJV[b2][p],10);
-                };
-                let avgJV = sum/allJVLen;
-                //calculate q
-                q = avgJV/avgCJV;
-                //push q to array
-                qJV.push(q);
-                }
-                //find q for this tnmt
-                else {
-                    q = qJV[b2];
-                }
-                nRank(A,B,AScore,BScore);
-            }
-            else if (evalMS == true) {
-                if (c == 0) {
-                //calculate q value
-                c=c+1;
-                let sumCMS = 0;
-                let r;
-                let teamAvgCMSLen = teamAvgCMS.length;
-                for(r = 0; r < teamAvgCMSLen; r++){
-                    sumCMS += parseInt(teamAvgCMS[r],10);
-                };
-                let avgCMS = sumCMS/teamAvgCMS.length;
-                let sum = 0;
-                let s;
-                let allMSLen = allMS[c2].length;
-                for(s = 0; s < allMSLen; s++ ){
-                    sum += parseInt(allMS[c2][s],10);
-                };
-                let avgMS = sum/allMSLen;
-                q = avgMS/avgCMS;
-                qMS.push(q);
-                }
-                else {
-                    q = qMS[c2];
-                }
-                nRank(A,B,AScore,BScore);
-            }
-            else {
-                crossDiv = true;
-                console.log(A,B,"is cross-divisional");
-            }
-            //games(crossDiv,A,B);
-        }
-        //B-Set games
-        else if (bSet == true) {
-            if (evalV == true) {
-                if (a == 0) {
-                    a = a+1;
-                    //calculate q value
-                    let sumB = 0;
-                    let m;
-                    let teamAvgBLen = teamAvgB.length;
-                    for(m = 0; m < teamAvgBLen; m++){
-                        sumB += parseInt(teamAvgB[m],10);
-                    };
-                    let avgB = sumB/teamAvgBLen;
-                    let sum = 0;
-                    let n;
-                    let allVLen = allV[a2].length;
-                    for(n = 0; n < allVLen; n++){
-                        sum += parseInt(allV[a2][n],10);
-                    };
-                    let avgV = sum/allVLen;
-                    q = avgV/avgB;
-                    qV.push(q);
-                }
-                else {
-                    q = qV[a2];
-                }
-                nRank(A,B,AScore,BScore);
-            }
-            else if (evalJV == true) {
-                if (b == 0) {
-                //calculate q value
-                b = b+1;
-                let sumBJV = 0;
-                let o;
-                let teamAvgBJVLen = teamAvgBJV.length;
-                for(o = 0; o < teamAvgBJVLen; o++){
-                    sumBJV += parseInt(teamAvgBJV[o],10);
-                };
-                let avgBJV = sumBJV/teamAvgBJVLen;
-                let sum = 0;
-                let p;
-                let allJVLen = allJV[b2].length;
-                for(p = 0; p < allJVLen; p++ ){
-                    sum += parseInt(allJV[b2][p],10);
-                };
-                let avgJV = sum/allJVLen;
-                q = avgJV/avgBJV;
-                qJV.push(q);
-                }
-                else {
-                    q = qJV[b2];
-                }
-                nRank(A,B,AScore,BScore);
-            }
-            else if (evalMS == true) {
-                if (c == 0) {
-                    //calculate q value
-                    c=c+1;
-                    let sumBMS = 0;
-                    let r;
-                    let teamAvgBMSLen = teamAvgBMS.length;
-                    for(r = 0; r < teamAvgBMSLen; r++){
-                        sumBMS += parseInt(teamAvgBMS[r],10);
-                    };
-                    let avgBMS = sumBMS/teamAvgBMS.length;
-                    let sum = 0;
-                    let s;
-                    let allMSLen = allMS[c2].length;
-                    for(s = 0; s < allMSLen; s++ ){
-                        sum += parseInt(allMS[c2][s],10);
-                    };
-                    let avgMS = sum/allMSLen;
-                    q = avgMS/avgBMS;
-                    qMS.push(q);
-                }
-                else {
-                    q = qMS[c2];
-                }
-                nRank(A,B,AScore,BScore);
-            }
-            else {
-                crossDiv = true;
-                console.log(A,B,"is cross-divisional");
-            }
-            //games(crossDiv,A,B);
-        }*/    
     }
 };  
 
@@ -1378,9 +1335,17 @@ async function nRank(A,B,AScore,BScore){
                     }
                     console.log("AoverABminusEA",AoverABminusEA,"BoverABminusEB",BoverABminusEB);
                     //console.log("q",q,"Ka",Ka,"Kb",Kb)
-                    rankA = rankA + ((AoverABminusEA)*RDA);// /(1/(RDA*RDA)));
-                    rankB = rankB + ((BoverABminusEB)*RDB);// /(1/(RDB*RDB)));
-                    console.log("A,rankA,B,rankB",A,rankA,B,rankB);
+                    let rankAN = rankA + ((AoverABminusEA)*RDA);// /(1/(RDA*RDA)));
+                    let rankBN = rankB + ((BoverABminusEB)*RDB);// /(1/(RDB*RDB)));
+                    if(rankA>rankB){
+                        if(rankAN<(rankBN+(100*((parseInt(AScore)-parseInt(BScore))/(parseInt(AScore)+parseInt(BScore)))))){
+                            rankAN = (rankBN+(100*(parseInt(AScore)-parseInt(BScore))/(parseInt(AScore)+parseInt(BScore))));
+                        }
+                        if(rankBN>(rankAN-(100*(parseInt(AScore)-parseInt(BScore))/(parseInt(AScore)+parseInt(BScore))))){
+                            rankBN = (rankAN-(100*(parseInt(AScore)-parseInt(BScore))/(parseInt(AScore)+parseInt(BScore))));
+                        }
+                    }
+                    console.log("A,rankA,B,rankB",A,rankAN,B,rankBN);
                     /*if(artemisTF === true){
                         //artemisTF = false;
                     }
@@ -1394,11 +1359,11 @@ async function nRank(A,B,AScore,BScore){
                     Bq = 1;
                     Aq2 = 1;
                     Bq2 = 1;
-                    console.log("rankA,rankB "+rankA+rankB);
-                    console.log("rankAB",rankA,rankB);
+                    console.log("rankAN+rankBN ",rankAN+rankBN);
+                    console.log("rankAB",rankAN,rankBN);
                     //update rank
-                    db.collection("qbteams").doc(A).update({rank:rankA});
-                    db.collection("qbteams").doc(B).update({rank:rankB});          
+                    db.collection("qbteams").doc(A).update({rank:rankAN});
+                    db.collection("qbteams").doc(B).update({rank:rankBN});          
                 } else {
                     // doc.data() will be undefined in this case
                     console.log("No such document!"+B);
@@ -1956,14 +1921,15 @@ async function hsTournaments(){
     await inputTournament("NKC");
 }
 async function msTournaments(){
+    ms = true;
     K = 100;
     y = false;
     allGameInfo = [];
+    await inputTournament("TJMST");
+    await inputTournament("RMSI");
     y = true;
     a = 0;
+    await inputTournament("TJMST");
+    await inputTournament("RMSI");
 }
-async function rankings(){
-    await allTournaments();
-    //setTimeout(printRanks(),5000);
-}
-rankings()
+hsTournaments()
