@@ -1,0 +1,2518 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" />
+    <head>
+        <script src="./glicko2.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+        <script type="text/javascript">
+
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  const database = firebase.database();
+
+            var settings = {
+              tau : 0.5,
+              rating : 1500,
+              rd : 200,
+              vol : 0.06
+            };
+
+            var glicko = new glicko2.Glicko2(settings);
+
+var HunterA = glicko.makePlayer();
+var HunterB = glicko.makePlayer();
+var HunterC = glicko.makePlayer();
+var HunterD = glicko.makePlayer();
+var JPSA = glicko.makePlayer();
+var JPSB = glicko.makePlayer();
+var JPSC = glicko.makePlayer();
+var BiotechA = glicko.makePlayer();
+var BiotechB = glicko.makePlayer();
+var RidgewoodA = glicko.makePlayer();
+var RidgewoodB = glicko.makePlayer();
+var HighTechA = glicko.makePlayer();
+var HighTechB = glicko.makePlayer();
+var HighTechC = glicko.makePlayer();
+var RiverDellA = glicko.makePlayer();
+var RiverDellB = glicko.makePlayer();
+var IthacaA = glicko.makePlayer();
+var IthacaB = glicko.makePlayer();
+var IthacaC = glicko.makePlayer();
+var MCAA = glicko.makePlayer();
+var MCAB = glicko.makePlayer();
+var EastBrunswickA = glicko.makePlayer();
+var EastBrunswickB = glicko.makePlayer();
+var WoodbridgeA = glicko.makePlayer();
+var CooperstownA = glicko.makePlayer();
+var CooperstownB = glicko.makePlayer();
+var CooperstownC = glicko.makePlayer();
+var CooperstownD = glicko.makePlayer();
+var TroyA = glicko.makePlayer();
+var GenevaA = glicko.makePlayer();
+var GenevaB = glicko.makePlayer();
+var MedinaA = glicko.makePlayer();
+var SaratogaSpringsA = glicko.makePlayer();
+var AdirondackCentralA = glicko.makePlayer();
+var WILTONA = glicko.makePlayer();
+var StaplesA = glicko.makePlayer();
+var HopkinsA = glicko.makePlayer();
+var StamfordA = glicko.makePlayer();
+var DarienA = glicko.makePlayer();
+var DarienB = glicko.makePlayer();
+var ChoateA = glicko.makePlayer();
+var ChoateB = glicko.makePlayer();
+var HotchkissA = glicko.makePlayer();
+var HotchkissB = glicko.makePlayer();
+var WoodlandA = glicko.makePlayer();
+var WoodlandB = glicko.makePlayer();
+var BelmontA = glicko.makePlayer();
+var BelmontB = glicko.makePlayer();
+var LivingstonA = glicko.makePlayer();
+var LivingstonB = glicko.makePlayer();
+var HempfieldA = glicko.makePlayer();
+var AMSAA = glicko.makePlayer();
+var AMSAB = glicko.makePlayer();
+var LuddenA = glicko.makePlayer();
+var LuddenB = glicko.makePlayer();
+var EdisonA = glicko.makePlayer();
+var EdisonB = glicko.makePlayer();
+var EdisonC = glicko.makePlayer();
+var WallenpaupackA = glicko.makePlayer();
+var MoravianA = glicko.makePlayer();
+var MoravianB = glicko.makePlayer();
+var MarlboroA = glicko.makePlayer();
+var WWPNorthA = glicko.makePlayer();
+var WWPNorthB = glicko.makePlayer();
+var WWPNorthC = glicko.makePlayer();
+var PlymouthA = glicko.makePlayer();
+var PhillipsExeterA = glicko.makePlayer();
+
+/*var SEOULFOREIGNA = glicko.makePlayer();
+var YONGSANINTERNATIONALA = glicko.makePlayer();
+var KOREAINTERNATIONALA = glicko.makePlayer();
+var KOREAINTERNATIONALB = glicko.makePlayer();*/
+
+var SOLONA = glicko.makePlayer();
+var SOLONB = glicko.makePlayer();
+var BEAVERCREEKA = glicko.makePlayer();
+var MIAMIVALLEYA = glicko.makePlayer();
+var WALNUTHILLSA = glicko.makePlayer();
+var DUBLINSCIOTOA = glicko.makePlayer();
+var TIPPECANOEA = glicko.makePlayer();
+var INDIANHILLA = glicko.makePlayer();
+var BELLEFONTAINEA = glicko.makePlayer();
+
+var CISTERCIANA = glicko.makePlayer();
+var CISTERCIANB = glicko.makePlayer();
+var ZACHARYA = glicko.makePlayer();
+var BATONROUGEA = glicko.makePlayer();
+var BATONROUGEB = glicko.makePlayer();
+var JESUITA = glicko.makePlayer();
+var JESUITB = glicko.makePlayer();
+var ACADIANAA = glicko.makePlayer();
+var CATHOLICA = glicko.makePlayer();
+var CATHOLICB = glicko.makePlayer();
+var CADDOMIDDLE = glicko.makePlayer();
+var STPAULSA = glicko.makePlayer();
+var NEVILLEA = glicko.makePlayer();
+var CEBYRDA = glicko.makePlayer();
+var TEXASMATHSCIENCEA = glicko.makePlayer();
+
+var RALEIGHCHARTERA = glicko.makePlayer();
+var DUNBARA = glicko.makePlayer();
+var BAKERA = glicko.makePlayer();
+var TOWERHILLA = glicko.makePlayer();
+var ATHENSA = glicko.makePlayer();
+var HOOVERA = glicko.makePlayer();
+var OVERLAKEA = glicko.makePlayer();
+var ALMABRYANTA = glicko.makePlayer();
+var BEIJINGTWOA = glicko.makePlayer();
+var ALCANTAA = glicko.makePlayer();
+var CONWAYA = glicko.makePlayer();
+var CHAOYANGA = glicko.makePlayer();
+var HUIJAA = glicko.makePlayer();
+var TSINGLANA = glicko.makePlayer();
+var NANJINGFLSA = glicko.makePlayer();
+var ALCANTAA = glicko.makePlayer();
+var FOREIGNLANGA = glicko.makePlayer();
+var JINANA = glicko.makePlayer();
+var SHENZHENCIEA = glicko.makePlayer();
+var SCNUA = glicko.makePlayer();
+
+var HENDERSONA = glicko.makePlayer();
+var NORTHMONTA = glicko.makePlayer();
+var GRAYSONA = glicko.makePlayer();
+var DUNBARA = glicko.makePlayer();
+var DUNBARB = glicko.makePlayer();
+var OWENSBOROA = glicko.makePlayer();
+var DCCA = glicko.makePlayer();
+var DCCB = glicko.makePlayer();
+var WOODFORDA = glicko.makePlayer();
+var FLEMINGA = glicko.makePlayer();
+var DAVIESSA = glicko.makePlayer();
+
+var HARDINA = glicko.makePlayer();
+var SOUTHSIDEA = glicko.makePlayer();
+var PORTLANDA = glicko.makePlayer();
+var TRINITYA = glicko.makePlayer();
+var TRINITYB = glicko.makePlayer();
+var OWENSBOROA = glicko.makePlayer();
+var USNA = glicko.makePlayer();
+var USNB = glicko.makePlayer();
+var MARTINA = glicko.makePlayer();
+var COOKEVILLEA = glicko.makePlayer();
+var COOKEVILLEB = glicko.makePlayer();
+var EDMONSONA = glicko.makePlayer();
+
+var MANHEIMA = glicko.makePlayer();
+var MANHEIMB = glicko.makePlayer();
+var STJOSEPHA = glicko.makePlayer();
+var WILMINGTONA = glicko.makePlayer();
+var WILMINGTONB = glicko.makePlayer();
+var MILLBURNA = glicko.makePlayer();
+var DCDSA = glicko.makePlayer();
+
+var RMA = glicko.makePlayer();
+var RMB = glicko.makePlayer();
+var NAGA = glicko.makePlayer();
+var NAGB = glicko.makePlayer();
+var BASISMCLEANA = glicko.makePlayer();
+var BASISMCLEANB = glicko.makePlayer();
+var FREEMANA = glicko.makePlayer();
+var FORTDEFIANCEA = glicko.makePlayer();
+var ORANGECOUNTYA = glicko.makePlayer();
+var MAGGIEWALKERA = glicko.makePlayer();
+var MAGGIEWALKERB = glicko.makePlayer();
+var LANGLEYA = glicko.makePlayer();
+var CAVESPRINGA = glicko.makePlayer();
+var VESA = glicko.makePlayer();
+var VESB = glicko.makePlayer();
+var TJHSSTA = glicko.makePlayer();
+var TJHSSTB = glicko.makePlayer();
+var TJHSSTC = glicko.makePlayer();
+var TJHSSTD = glicko.makePlayer();
+
+var HERBERGERA = glicko.makePlayer();
+var BASISSCOTTSDALEA = glicko.makePlayer();
+var HAMILTONA = glicko.makePlayer();
+var HAMILTONB = glicko.makePlayer();
+var BROPHYA = glicko.makePlayer();
+
+var STRAKEA = glicko.makePlayer();
+var STRAKEB = glicko.makePlayer();
+var GREENHILLA = glicko.makePlayer();
+var GREENHILLB = glicko.makePlayer();
+var STMARKSA = glicko.makePlayer();
+var STMARKSB = glicko.makePlayer();
+var STMARKSC = glicko.makePlayer();
+var KINKAID = glicko.makePlayer();
+var SEVENLAKES = glicko.makePlayer();
+var STJOHNSA = glicko.makePlayer();
+var STJOHNSB = glicko.makePlayer();
+var TAYLORA = glicko.makePlayer();
+var VILLAGEA = glicko.makePlayer();
+var CINCORANCHA = glicko.makePlayer();
+var CINCORANCHB = glicko.makePlayer();
+var GEORGETOWNA = glicko.makePlayer();
+var TAGA = glicko.makePlayer();
+
+var HOOVERA = glicko.makePlayer();
+var HOOVERB = glicko.makePlayer();
+var HOOVERC = glicko.makePlayer();
+var WESTPOINTA = glicko.makePlayer();
+var WESTPOINTB = glicko.makePlayer();
+var BOBJONESA = glicko.makePlayer();
+var VESTAVIAHILLSA = glicko.makePlayer();
+var CYBERTECHA = glicko.makePlayer();
+var STBERNARDA = glicko.makePlayer();
+var LAMARA = glicko.makePlayer();
+var GOODHOPEA = glicko.makePlayer();
+var HOLYSPIRITA = glicko.makePlayer();
+
+var EDENA = glicko.makePlayer();
+var SOUTHWESTA = glicko.makePlayer();
+var IMSAA = glicko.makePlayer();
+var IMSAB = glicko.makePlayer();
+var PLANOA = glicko.makePlayer();
+var PLANOB = glicko.makePlayer();
+var WAYZATAA = glicko.makePlayer();
+var GREATVALLEYA = glicko.makePlayer();
+
+var SUMMITA = glicko.makePlayer();
+var HARKERA = glicko.makePlayer();
+var MLA = glicko.makePlayer();
+var MLB = glicko.makePlayer();
+var IRVINGTONA = glicko.makePlayer();
+var IRVINGTONB = glicko.makePlayer();
+var LAMBERTA = glicko.makePlayer();
+var LAMBERTB = glicko.makePlayer();
+var MSJA = glicko.makePlayer();
+var MSJB = glicko.makePlayer();
+var SAGITTARIUSA = glicko.makePlayer();
+var SOHSA = glicko.makePlayer();
+
+            var players = [
+                { name:'Hunter A', glicko: HunterA },
+                { name:'Hunter B', glicko: HunterB },
+                { name:'Hunter C', glicko: HunterC },
+                { name:'Hunter D', glicko: HunterD },
+                { name:'Biotech A', glicko: BiotechA },
+                { name:'Biotech B', glicko: BiotechB },
+                { name:'JPSA', glicko: JPSA },
+                { name:'JPSB', glicko: JPSB },
+                { name:'JPSC', glicko: JPSC },
+                { name:'MCAA', glicko: MCAA },
+                { name:'MCAB', glicko: MCAB },
+                { name:'East Brunswick A', glicko: EastBrunswickA },
+                { name:'East Brunswick B', glicko: EastBrunswickB },
+                { name:'Ridgewood A', glicko: RidgewoodA },
+                { name:'Ridgewood B', glicko: RidgewoodB },
+                { name:'High Tech A', glicko: HighTechA },
+                { name:'High Tech B', glicko: HighTechB },
+                { name:'High Tech C', glicko: HighTechC },
+                { name:'River Dell A', glicko: RiverDellA },
+                { name:'River Dell B', glicko: RiverDellB },
+                { name:'Woodbridge', glicko: WoodbridgeA },
+                { name:'Ithaca A', glicko: IthacaA },
+                { name:'Ithaca B', glicko: IthacaB },
+                { name:'Ithaca C', glicko: IthacaC },
+                { name:'Cooperstown A', glicko: CooperstownA },
+                { name:'Cooperstown B', glicko: CooperstownB },
+                { name:'Cooperstown C', glicko: CooperstownC },
+                { name:'Cooperstown D', glicko: CooperstownD },
+                { name:'Troy A', glicko: TroyA },
+                { name:'Geneva A', glicko: GenevaA },
+                { name:'Geneva B', glicko: GenevaB },
+                { name:'Medina A', glicko: MedinaA },
+                { name:'Saratoga Springs A', glicko: SaratogaSpringsA },
+                { name:'Adirondack Central A', glicko: AdirondackCentralA },
+                { name:'Darien A', glicko: DarienA },
+                { name:'Darien B', glicko: DarienB },
+                { name:'choate aardvark', glicko: ChoateA },
+                { name:'choate blueberry', glicko: ChoateB },
+                { name:'Hotchkiss A', glicko: HotchkissA },
+                { name:'Hotchkiss B', glicko: HotchkissB },
+                { name:'Woodland A', glicko: WoodlandA },
+                { name:'Woodland B', glicko: WoodlandB },
+                { name:'Staples', glicko: StaplesA },
+                { name:'Wilton', glicko: WILTONA },
+                { name:'Hopkins', glicko: HopkinsA },
+                { name:'King Stamford School', glicko: StamfordA },
+                { name:'Belmont A', glicko: BelmontA },
+                { name:'Belmont B', glicko: BelmontB },
+                { name:'Livingston A', glicko: LivingstonA },
+                { name:'Livingston B', glicko: LivingstonB },
+                { name:'Hempfield A', glicko: HempfieldA },
+                { name:'AMSA A', glicko: AMSAA },
+                { name:'AMSA B', glicko: AMSAB },
+                { name:'Bishop Ludden A', glicko: LuddenA },
+                { name:'Bishop Ludden B', glicko: LuddenB },
+                { name:'Edison A', glicko: EdisonA },
+                { name:'Edison B', glicko: EdisonB },
+                { name:'Edison C', glicko: EdisonC },
+                { name:'Wallenpaupack', glicko: WallenpaupackA },
+                { name:'Moravian Academy A', glicko: MoravianA },
+                { name:'Moravian Academy B', glicko: MoravianB },
+                { name:'Marlboro A', glicko: MarlboroA },
+                { name:'WWP-North A', glicko: WWPNorthA },
+                { name:'WWP-North B', glicko: WWPNorthB },
+                { name:'WWP-North C', glicko: WWPNorthC },
+                { name:'Plymouth', glicko: PlymouthA },
+                { name:'Invalid', glicko: PhillipsExeterA },
+                { name:'Solon A', glicko: SOLONA },
+                { name:'Solon B', glicko: SOLONB },
+                { name:'Beavercreek', glicko: BEAVERCREEKA },
+                { name:'Miami Valley', glicko: MIAMIVALLEYA },
+                { name:'Walnut Hills', glicko: WALNUTHILLSA },
+                { name:'Dublin Scioto', glicko: DUBLINSCIOTOA },
+                { name:'Tippecanoe', glicko: TIPPECANOEA },
+                { name:'Indian Hill', glicko: INDIANHILLA },
+                { name:'Bellefontaine', glicko: BELLEFONTAINEA },
+                { name:'Cistercian A', glicko: CISTERCIANA },
+                { name:'Cistercian B', glicko: CISTERCIANB },
+                { name:'Baton Rouge Episcopal A', glicko: BATONROUGEA },
+                { name:'Baton Rouge Episcopal B', glicko: BATONROUGEB },
+                { name:'Jesuit A', glicko: JESUITA },
+                { name:'Jesuit B', glicko: JESUITB },
+                { name:'Catholic A', glicko: CATHOLICA },
+                { name:'Catholic B', glicko: CATHOLICB },
+                { name:'Episcopal-Acadiana', glicko: ACADIANAA },
+                { name:'Texas Math and Science', glicko: TEXASMATHSCIENCEA },
+                { name:'Caddo Middle', glicko: CADDOMIDDLE },
+                { name:"St. Paul's", glicko: STPAULSA },
+                { name:'Neville', glicko: NEVILLEA },
+                { name:'Zachary', glicko: ZACHARYA },
+                { name:'C. E. Byrd', glicko: CEBYRDA },
+                { name:'Raleigh Charter', glicko: RALEIGHCHARTERA },
+                { name:'Dunbar A', glicko: DUNBARA },
+                { name:'Baker', glicko: BAKERA },
+                { name:'Tower Hill', glicko: TOWERHILLA },
+                { name:'Athens', glicko: ATHENSA },
+                { name:'Detroit Catholic Central A', glicko: DCCA },
+                { name:'Overlake', glicko: OVERLAKEA },
+                { name:'Alma Bryant', glicko: ALMABRYANTA },
+                { name:'International Department of Beijing No. 2 School', glicko: BEIJINGTWOA },
+                { name:'Shanghai-Alcanta-Beijing', glicko: ALCANTAA },
+                { name:'Conway', glicko: CONWAYA },
+                { name:'RDFZ Chaoyang', glicko: CHAOYANGA },
+                { name:'Beijing Huijia Private', glicko: HUIJAA },
+                { name:'Tsinglan School', glicko: TSINGLANA },
+                { name:'Nanjing FLS', glicko: NANJINGFLSA },
+                { name:'Beijing Foreign Languages', glicko: FOREIGNLANGA },
+                { name:'Jinan Foreign', glicko: JINANA },
+                { name:"Shenzhen CIE", glicko: SHENZHENCIEA },
+                { name:'Suzhou-Beijing-Chongqing-SCNU', glicko: SCNUA },
+                { name:'Detroit Catholic Central B', glicko: DCCB },
+                { name:'Northmont', glicko: NORTHMONTA },
+                { name:'Henderson County', glicko: HENDERSONA },
+                { name:'Grayson County', glicko: GRAYSONA },
+                { name:'Dunbar B', glicko: DUNBARB },
+                { name:'Owensboro', glicko: OWENSBOROA },
+                { name:'Fleming County', glicko: FLEMINGA },
+                { name:'Woodford County', glicko: WOODFORDA },
+                { name:'Daviess County', glicko: DAVIESSA },
+                { name:'Edmonson County', glicko: EDMONSONA },
+                { name:'Millburn', glicko: MILLBURNA },
+                { name:'Manheim Township A', glicko: MANHEIMA },
+                { name:'Manheim Township B', glicko: MANHEIMB },
+                { name:'St. Joseph Metuchen', glicko: STJOSEPHA },
+                { name:'Wilmington Charter A', glicko: WILMINGTONA },
+                { name:'Wilmington Charter B', glicko: WILMINGTONB },
+                { name:'Detroit Country Day', glicko: DCDSA },
+                { name:'Trinity A', glicko: TRINITYA },
+                { name:'Trinity B', glicko: TRINITYB },
+                { name:'Richard Montgomery A', glicko: RMA },
+                { name:'Richard Montgomery B', glicko: RMB },
+                { name:'Norfolk Academic Guild A', glicko: NAGA },
+                { name:'Norfolk Academic Guild B', glicko: NAGB },
+                { name:'BASIS McLean A', glicko: BASISMCLEANA },
+                { name:'BASIS McLean B', glicko: BASISMCLEANB },
+                { name:'Maggie Walker A', glicko: MAGGIEWALKERA },
+                { name:'Maggie Walker B', glicko: MAGGIEWALKERB },
+                { name:'Virginia Episcopal School A', glicko: VESA },
+                { name:'Virginia Episcopal School B', glicko: VESB },
+                { name:'TJHSST A', glicko: TJHSSTA },
+                { name:'TJHSST B', glicko: TJHSSTB },
+                { name:'TJHSST C', glicko: TJHSSTC },
+                { name:'TJHSST D', glicko: TJHSSTD},
+                { name:'Freeman', glicko: FREEMANA },
+                { name:'Fort Defiance', glicko: FORTDEFIANCEA },
+                { name:'Orange County', glicko: ORANGECOUNTYA },
+                { name:'Langley', glicko: LANGLEYA },
+                { name:'Cave Spring', glicko: CAVESPRINGA },
+                { name:'Herberger', glicko: HERBERGERA },
+                { name:'BASIS Scottsdale', glicko: BASISMCLEANA },
+                { name:'Hamilton A', glicko: HAMILTONA },
+                { name:'Hamilton B', glicko: HAMILTONB },
+                { name:'Brophy College Prep', glicko: BROPHYA },
+                { name:'Strake Jesuit A', glicko: STRAKEA },
+                { name:'Strake Jesuit B', glicko: STRAKEB },
+                { name:'Greenhill A', glicko: GREENHILLA },
+                { name:'Greenhill B', glicko: GREENHILLB },
+                { name:'Cinco Ranch A', glicko: CINCORANCHA },
+                { name:'Cinco Ranch B', glicko: CINCORANCHB },
+                { name:"St. Mark's School of Texas A", glicko: STMARKSA },
+                { name:"St. Mark's School of Texas B", glicko: STMARKSB },
+                { name:"St. Mark's School of Texas C", glicko: STMARKSC },
+                { name:'Kinkaid', glicko: KINKAID },
+                { name:'Seven Lakes', glicko: SEVENLAKES },
+                { name:'James E. Taylor', glicko: TAYLORA },
+                { name:"St. John's A", glicko: STJOHNSA },
+                { name:"St. John's B", glicko: STJOHNSB },
+                { name:'Village', glicko: VILLAGEA },
+                { name:'Georgetown Prep', glicko: GEORGETOWNA },
+                { name:'TAG Magnet A', glicko: TAGA },
+                { name:"Hoover A", glicko: HOOVERA },
+                { name:"Hoover B", glicko: HOOVERB },
+                { name:"Hoover C", glicko: HOOVERC },
+                { name:'Vestavia Hills', glicko: VESTAVIAHILLSA },
+                { name:'Alabama Cyber Tech', glicko: CYBERTECHA },
+                { name:"St. Bernard Prep", glicko: STBERNARDA },
+                { name:"West Point A", glicko: WESTPOINTA },
+                { name:"West Point B", glicko: WESTPOINTA },
+                { name:'Bob Jones', glicko: BOBJONESA },
+                { name:'Lamar', glicko: LAMARA },
+                { name:'Holy Spirit', glicko: HOLYSPIRITA },
+                { name:'Good Hope', glicko: GOODHOPEA },
+                { name:"IMSA A", glicko: IMSAA },
+                { name:"IMSA B", glicko: IMSAB },
+                { name:"Southwestern A", glicko: SOUTHWESTA },
+                { name:'Wayzata A', glicko: WAYZATAA },
+                { name:'Eden Praire A', glicko: EDENA },
+                { name:"Great Valley A", glicko: GREATVALLEYA },
+                { name:"Plano West A", glicko: PLANOA },
+                { name:"Plano West B", glicko: PLANOB },
+                { name:"Irvington A", glicko: IRVINGTONA },
+                { name:"Irvington B", glicko: IRVINGTONB },
+                { name:'Summit', glicko: SUMMITA },
+                { name:'Harker', glicko: HARKERA },
+                { name:'Stanford Online', glicko: SOHSA },
+                { name:'Sagittarius', glicko: SAGITTARIUSA },
+                { name:"Mira Loma A", glicko: MLA },
+                { name:"Mira Loma B", glicko: MLB },
+                { name:'Lambert A', glicko: LAMBERTA },
+                { name:"Lambert B", glicko: LAMBERTB },
+                { name:"Mission San Jose A", glicko: MSJA },
+                { name:"Mission San Jose B", glicko: MSJB }
+            ];
+
+            console.log(players)
+
+            function showRankings(){
+                //Sort players
+                players.sort(function(pl1, pl2){ return pl2.glicko.getRating() - pl1.glicko.getRating(); });
+
+                //Display ratings
+                for (var i=0,len= players.length;i<len;i++){
+                    player = players[i];
+                    if(player.glicko.getRating()!=1500){
+                        document.write(player.name + ' : ' + player.glicko.getRating() + ' (rd : ' + player.glicko.getRd() + ')<br>');
+                    }
+                }   
+            }
+       </script>
+    </head>
+
+    <body>
+        <h2>Initial rankings</h2>
+        <script>
+            showRankings();
+            async function gameData(startId,endId,tournamentId){
+                for(let Id = startId; Id < endId; Id++) {
+                    await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                        A = (snapshot.val() && snapshot.val().A);
+                        //console.log(A);
+                    });
+                    await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                        AScore = (snapshot.val() && snapshot.val().AScore)
+                        //console.log(AScore);
+                    });
+                    await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                        B = (snapshot.val() && snapshot.val().B)
+                    });
+                    await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                        BScore = (snapshot.val() && snapshot.val().BScore)
+                    });
+                
+        game = []
+        switch(A){
+            case "Hunter A":
+                game.push(HunterA)
+                break;
+            case "Hunter B":
+                game.push(HunterB)
+                break;
+            case "Hunter C":
+                game.push(HunterC)
+                break;
+            case "Hunter D":
+                game.push(HunterD)
+                break;
+            case "John P. Stevens":
+                game.push(JPSA)
+                break;
+            case "Stevens":
+                game.push(JPSA)
+                break;
+            case "John P. Stevens A":
+                game.push(JPSA)
+                break;
+            case "John P. Stevens B":
+                game.push(JPSB)
+                break;
+            case "John P. Stevens C":
+                game.push(JPSC)
+                break;
+            case "Biotech A":
+                game.push(BiotechA)
+                break;
+            case "Biotech B":
+                game.push(BiotechB)
+                break;
+            case "Ithaca":
+                game.push(IthacaA)
+                break;
+            case "Ithaca A":
+                game.push(IthacaA)
+                break;
+            case "Ithaca B":
+                game.push(IthacaB)
+                break;
+            case "Ithaca C":
+                game.push(IthacaC)
+                break;
+            case "Ridgewood":
+                game.push(RidgewoodA)
+                break;
+            case "Ridgewood A":
+                game.push(RidgewoodA)
+                break;
+            case "Ridgewood B":
+                game.push(RidgewoodB)
+                break;
+            case "Middlesex County Academy A":
+                game.push(MCAA)
+                break;
+            case "Middlesex County Academy B":
+                game.push(MCAB)
+                break;
+            case "High Tech":
+                game.push(HighTechA)
+                break;
+            case "High Tech A":
+                game.push(HighTechA)
+                break;
+            case "High Tech B":
+                game.push(HighTechB)
+                break;
+            case "High Tech C":
+                game.push(HighTechC)
+                break;
+            case "Woodbridge":
+                game.push(WoodbridgeA)
+                break;
+            case "East Brunswick":
+                game.push(EastBrunswickA)
+                break;
+            case "East Brunswick A":
+                game.push(EastBrunswickA)
+                break;
+            case "East Brunswick B":
+                game.push(EastBrunswickB)
+                break;
+            case "River Dell A":
+                game.push(RiverDellA)
+                break;
+            case "River Dell B":
+                game.push(RiverDellB)
+                break;
+            case "Cooperstown A":
+                game.push(CooperstownA)
+                break;
+            case "Cooperstown B":
+                game.push(CooperstownB)
+                break;
+            case "Cooperstown C":
+                game.push(CooperstownC)
+                break;
+            case "Cooperstown D":
+                game.push(CooperstownD)
+                break;
+            case "Troy":
+                game.push(TroyA)
+                break;
+            case "Geneva A":
+                game.push(GenevaA)
+                break;
+            case "Geneva B":
+                game.push(GenevaB)
+                break;
+            case "Medina":
+                game.push(MedinaA)
+                break;
+            case "Saratoga Springs":
+                game.push(SaratogaSpringsA)
+                break;
+            case "Adirondack Central":
+                game.push(AdirondackCentralA)
+                break;
+            case "Darien A":
+                game.push(DarienA)
+                break;
+            case "Darien B":
+                game.push(DarienB)
+                break;
+            case "Choate A":
+                game.push(ChoateA)
+                break;
+            case "Choate B":
+                game.push(ChoateB)
+                break;
+            case "Hotchkiss A":
+                game.push(HotchkissA)
+                break;
+            case "Hotchkiss B":
+                game.push(HotchkissB)
+                break;
+            case "Woodland A":
+                game.push(WoodlandA)
+                break;
+            case "Woodland B":
+                game.push(WoodlandB)
+                break;
+            case "Wilton":
+                game.push(WILTONA)
+                break;
+            case "Staples":
+                game.push(StaplesA)
+                break;
+            case "Hopkins":
+                game.push(HopkinsA)
+                break;
+            case "King School Stamford":
+                game.push(StamfordA)
+                break;
+            case "Takers of Ls":
+                game.push(LivingstonA);
+                break;
+            case "Livingston":
+                game.push(LivingstonA);
+                break;
+            case "Livingston A":
+                game.push(LivingstonA);
+                break;
+            case "Livingston B":
+                game.push(LivingstonB);
+                break;
+            case "Belmont":
+                game.push(BelmontA);
+                break;
+            case "Belmont A":
+                game.push(BelmontA);
+                break;
+            case "Belmont B":
+                game.push(BelmontB);
+                break;
+            case "Hempfield":
+                game.push(HempfieldA);
+                break;
+            case "Advanced Math & Science A":
+                game.push(AMSAA);
+                break;
+            case "Advanced Math & Science B":
+                game.push(AMSAB);
+                break;
+            case "Bishop Ludden A":
+                game.push(LuddenA);
+                break;
+            case "Bishop Ludden B":
+                game.push(LuddenB);
+                break;
+            case "Edison A":
+                game.push(EdisonA);
+                break;
+            case "Edison B":
+                game.push(EdisonB);
+                break;
+            case "Edison C":
+                game.push(EdisonC);
+                break;
+            case "Marlboro":
+                game.push(MarlboroA);
+                break;
+            case "Moravian Academy A":
+                game.push(MoravianA);
+                break;
+            case "Moravian Academy B":
+                game.push(MoravianB);
+                break;
+            case "West Windsor-Plainsboro North":
+                game.push(WWPNorthA);
+                break;
+            case "West Windsor-Plainsboro North A":
+                game.push(WWPNorthA);
+                break;
+            case "West Windsor-Plainsboro North B":
+                game.push(WWPNorthB);
+                break;
+            case "West Windsor-Plainsboro North C":
+                game.push(WWPNorthC);
+                break;
+            case "Plymouth":
+                game.push(PlymouthA);
+                break;
+            case "Wallenpaupack":
+                game.push(WallenpaupackA);
+                break;
+            case "Phillips Exeter":
+                game.push(PhillipsExeterA);
+                break;
+            case "Solon A":
+                game.push(SOLONA);
+                break;
+            case "Solon B":
+                game.push(SOLONB);
+                break;
+            case "Beavercreek":
+                game.push(BEAVERCREEKA);
+                break;
+            case "Miami Valley":
+                game.push(MIAMIVALLEYA);
+                break;
+            case "Walnut Hills":
+                game.push(WALNUTHILLSA);
+                break;
+            case "Dublin Scioto":
+                game.push(DUBLINSCIOTOA);
+                break;
+            case "Tippecanoe":
+                game.push(TIPPECANOEA);
+                break;
+            case "Indian Hill":
+                game.push(INDIANHILLA);
+                break;
+            case "Bellefontaine":
+                game.push(BELLEFONTAINEA);
+                break;
+            case "Cistercian A":
+                game.push(CISTERCIANA);
+                break;
+            case "Cistercian B":
+                game.push(CISTERCIANB);
+                break;
+            case "Baton Rouge Episcopal A":
+                game.push(BATONROUGEA);
+                break;
+            case "Baton Rouge Episcopal B":
+                game.push(BATONROUGEB);
+                break;
+            case "Jesuit A":
+                game.push(JESUITA);
+                break;
+            case "Jesuit B":
+                game.push(JESUITB);
+                break;
+            case "Catholic A":
+                game.push(CATHOLICA);
+                break;
+            case "Catholic B":
+                game.push(CATHOLICB);
+                break;
+            case "Episcopal-Acadiana":
+                game.push(ACADIANAA);
+                break;
+            case "Texas Math and Science":
+                game.push(TEXASMATHSCIENCEA);
+                break;
+            case "Caddo Middle":
+                game.push(CADDOMIDDLE);
+                break;
+            case "St. Paul's":
+                game.push(STPAULSA);
+                break;
+            case "Neville":
+                game.push(NEVILLEA);
+                break;
+            case "Zachary":
+                game.push(ZACHARYA);
+                break;
+            case "C. E. Byrd":
+                game.push(CEBYRDA);
+                break;
+            case "Raleigh Charter":
+                game.push(RALEIGHCHARTERA);
+                break;
+            case "Dunbar":
+                game.push(DUNBARA);
+                break;
+            case "Baker":
+                game.push(BAKERA);
+                break;
+            case "Tower":
+                game.push(TOWERHILLA);
+                break;
+            case "Tower Hill":
+                game.push(TOWERHILLA);
+                break;
+            case "Athens":
+                game.push(ATHENSA);
+                break;
+            case "Hoover":
+                game.push(HOOVERA);
+                break;
+            case "Detroit Catholic Central":
+                game.push(DCCA);
+                break;
+            case "Overlake":
+                game.push(OVERLAKEA);
+                break;
+            case "Alma Bryant":
+                game.push(ALMABRYANTA);
+                break;
+            case "International Department of Beijing No. 2 School":
+                game.push(BEIJINGTWOA);
+                break;
+            case "Shanghai-Alcanta-Beijing":
+                game.push(ALCANTAA);
+                break;
+            case "RDFZ Chaoyang":
+                game.push(CHAOYANGA);
+                break;
+            case "Beijing Huijia Private":
+                game.push(HUIJAA);
+                break;
+            case "Tsinglan School":
+                game.push(TSINGLANA);
+                break;
+            case "Nanjing FLS":
+                game.push(NANJINGFLSA);
+                break;
+            case "Beijing Foreign Languages":
+                game.push(FOREIGNLANGA);
+                break;
+            case "Jinan Foreign":
+                game.push(JINANA);
+                break;
+            case "Shenzhen CIE":
+                game.push(SHENZHENCIEA);
+                break;
+            case "Suzhou-Beijing-Chongqing-SCNU":
+                game.push(SCNUA);
+                break;
+            case "Conway":
+                game.push(CONWAYA);
+                break;
+            case "DCC A":
+                game.push(DCCA);
+                break;
+            case "DCC B":
+                game.push(DCCB);
+                break;
+            case "Detroit Catholic Central A":
+                game.push(DCCA);
+                break;
+            case "Detroit Catholic Central B":
+                game.push(DCCB);
+                break;   
+            case "Northmont":
+                game.push(NORTHMONTA);
+                break;
+            case "Henderson County":
+                game.push(HENDERSONA);
+                break;
+            case "Edmonson County":
+                game.push(EDMONSONA);
+                break;
+            case "Grayson County":
+                game.push(GRAYSONA);
+                break;
+            case "Dunbar A":
+                game.push(DUNBARA);
+                break;
+            case "Dunbar B":
+                game.push(DUNBARB);
+                break;
+            case "Owensboro":
+                game.push(OWENSBOROA);
+                break;
+            case "Fleming County":
+                game.push(FLEMINGA);
+                break;
+            case "Daviess County":
+                game.push(DAVIESSA);
+                break;
+            case "Woodford County":
+                game.push(WOODFORDA);
+                break;
+            case "Central Hardin":
+                game.push(HARDINA);
+                break;
+            case "Southside":
+                game.push(SOUTHSIDEA);
+                break;
+            case "Martin County":
+                game.push(MARTINA);
+                break;
+            case "Trinity A":
+                game.push(TRINITYA);
+                break;
+            case "Trinity B":
+                game.push(TRINITYB);
+                break;
+            case "USN A":
+                game.push(USNA);
+                break;
+            case "USN B":
+                game.push(USNB);
+                break;
+            case "Portland":
+                game.push(PORTLANDA);
+                break;
+            case "Cookeville A":
+                game.push(COOKEVILLEA);
+                break;
+            case "Cookeville B":
+                game.push(COOKEVILLEB);
+                break;   
+            case "Manheim Township A":
+                game.push(MANHEIMA);
+                break;
+            case "Manheim Township B":
+                game.push(MANHEIMB);
+                break;
+            case "Manheim Township":
+                game.push(MANHEIMA);
+                break;
+            case "Manheim A":
+                game.push(MANHEIMA);
+                break;
+            case "Manheim B":
+                game.push(MANHEIMA);
+                break;
+            case "Wilmington Charter A":
+                game.push(WILMINGTONA);
+                break;
+            case "Wilmington Charter B":
+                game.push(WILMINGTONB);
+                break;
+            case "St Joseph":
+                game.push(STJOSEPHA);
+                break;
+            case "Millburn A":
+                game.push(MILLBURNA);
+                break; 
+            case "Detroit Country Day":
+                game.push(DCDSA);
+                break; 
+            case "Richard Montgomery A":
+                game.push(RMA);
+                break;
+            case "Richard Montgomery B":
+                game.push(RMB);
+                break;
+            case "Norfolk Academic Guild A":
+                game.push(NAGA);
+                break;
+            case "Norfolk Academic Guild B":
+                game.push(NAGB);
+                break;
+            case "BASIS McLean A":
+                game.push(BASISMCLEANA);
+                break;
+            case "BASIS McLean B":
+                game.push(BASISMCLEANB);
+                break;
+            case "TJHSST A":
+                game.push(TJHSSTA);
+                break;
+            case "TJHSST B":
+                game.push(TJHSSTB);
+                break;
+            case "TJHSST C":
+                game.push(TJHSSTC);
+                break;
+            case "TJHSST D":
+                game.push(TJHSSTD);
+                break;
+            case "Virginia Episcopal School A":
+                game.push(VESA);
+                break;
+            case "Virginia Episcopal School B":
+                game.push(VESB);
+                break;
+            case "Maggie Walker A":
+                game.push(MAGGIEWALKERA);
+                break;
+            case "Maggie Walker B":
+                game.push(MAGGIEWALKERB);
+                break;
+            case "Cave Spring":
+                game.push(CAVESPRINGA);
+                break;
+            case "Freeman":
+                game.push(FREEMANA);
+                break;
+            case "Fort Defiance":
+                game.push(FORTDEFIANCEA);
+                break;
+            case "Langley":
+                game.push(LANGLEYA);
+                break;
+            case "Orange County":
+                game.push(ORANGECOUNTYA);
+                break;
+            case "Herberger":
+                game.push(HERBERGERA);
+                break;
+            case "BASIS Scottsdale":
+                game.push(BASISSCOTTSDALEA);
+                break;
+            case "Hamilton A":
+                game.push(HAMILTONA);
+                break;
+            case "Hamilton B":
+                game.push(HAMILTONB);
+                break;
+            case "Brophy College Prep":
+                game.push(BROPHYA);
+                break;
+                case "Strake Jesuit A":
+                game.push(STRAKEA);
+                break;
+            case "Strake Jesuit B":
+                game.push(STRAKEB);
+                break;
+            case "Greenhill A":
+                game.push(GREENHILLA);
+                break;
+            case "Greenhill B":
+                game.push(GREENHILLB);
+                break;
+            case "Cinco Ranch A":
+                game.push(CINCORANCHA);
+                break;
+            case "Cinco Ranch B":
+                game.push(CINCORANCHB);
+                break;
+            case "St. Mark's School of Texas A":
+                game.push(STMARKSA);
+                break;
+            case "St. Mark's School of Texas B":
+                game.push(STMARKSB);
+                break;
+            case "St. Mark's School of Texas C":
+                game.push(STMARKSC);
+                break;
+            case "Kinkaid":
+                game.push(KINKAID);
+                break;
+            case "Seven Lakes":
+                game.push(SEVENLAKES);
+                break;
+            case "James E. Taylor":
+                game.push(TAYLORA);
+                break;
+            case "St. John's A":
+                game.push(STJOHNSA);
+                break;
+            case "St. John's B":
+                game.push(STJOHNSB);
+                break;
+            case "Village":
+                game.push(VILLAGEA);
+                break;
+            case "Georgetown Prep":
+                game.push(GEORGETOWNA);
+                break;
+            case "TAG Magnet A":
+                game.push(TAGA);
+                break;
+            case "Hoover A":
+                game.push(HOOVERA);
+                break;
+            case "Hoover B":
+                game.push(HOOVERB);
+                break;
+            case "Hoover C":
+                game.push(HOOVERC);
+                break;
+            case "Bob Jones":
+                game.push(BOBJONESA);
+                break;
+            case "Alabama Cyber Tech":
+                game.push(CYBERTECHA);
+                break;
+            case "Vestavia Hills":
+                game.push(VESTAVIAHILLSA);
+                break;
+            case "West Point A":
+                game.push(WESTPOINTA);
+                break;
+            case "West Point B":
+                game.push(WESTPOINTB);
+                break;
+            case "Holy Spirit":
+                game.push(HOLYSPIRITA);
+                break;
+            case "Lamar":
+                game.push(LAMARA);
+                break;
+            case "St. Bernard Prep":
+                game.push(STBERNARDA);
+                break;
+            case "Good Hope":
+                game.push(GOODHOPEA);
+                break;
+            case "IMSA A":
+                game.push(IMSAA);
+                break;
+            case "IMSA B":
+                game.push(IMSAB);
+                break;
+            case "Great Valley":
+                game.push(GREATVALLEYA);
+                break;
+            case "Wayzata":
+                game.push(WAYZATAA);
+                break;
+            case "Southwestern":
+                game.push(SOUTHWESTA);
+                break;
+            case "Eden Prairie":
+                game.push(EDENA);
+                break;
+            case "Plano West A":
+                game.push(PLANOA);
+                break;
+            case "Plano West B":
+                game.push(PLANOB);
+                break;
+            case "Irvington A":
+                game.push(IRVINGTONA);
+                break;
+            case "Irvington B":
+                game.push(IRVINGTONB);
+                break;
+            case "Harker":
+                game.push(HARKERA);
+                break;
+            case "Summit":
+                game.push(SUMMITA);
+                break;
+            case "Sagittarius":
+                game.push(SAGITTARIUSA);
+                break;
+            case "Mira Loma A":
+                game.push(MLA);
+                break;
+            case "Mira Loma B":
+                game.push(MLB);
+                break;
+            case "Lambert A":
+                game.push(LAMBERTA);
+                break;
+            case "Lambert B":
+                game.push(LAMBERTB);
+                break;
+            case "Mission San Jose A":
+                game.push(MSJA);
+                break;
+            case "Mission San Jose B":
+                game.push(MSJB);
+                break;
+            case "Stanford Online":
+                game.push(SOHSA);
+                break;
+        }
+        switch(B){
+            case "Detroit Catholic Central A":
+                game.push(DCCA);
+                break;
+            case "Detroit Catholic Central B":
+                game.push(DCCB);
+                break;   
+            case "Hunter A":
+                game.push(HunterA)
+                break;
+            case "Hunter B":
+                game.push(HunterB)
+                break;
+            case "Hunter C":
+                game.push(HunterC)
+                break;
+            case "Hunter D":
+                game.push(HunterD)
+                break;
+            case "Stevens":
+                game.push(JPSA)
+                break;
+            case "John P. Stevens":
+                game.push(JPSA)
+                break;
+            case "John P. Stevens A":
+                game.push(JPSA)
+                break;
+            case "John P. Stevens B":
+                game.push(JPSB)
+                break;
+            case "John P. Stevens C":
+                game.push(JPSC)
+                break;
+            case "Biotech A":
+                game.push(BiotechA)
+                break;
+            case "Biotech B":
+                game.push(BiotechB)
+                break;
+            case "Ithaca":
+                game.push(IthacaA)
+                break;
+            case "Ithaca A":
+                game.push(IthacaA)
+                break;
+            case "Ithaca B":
+                game.push(IthacaB)
+                break;
+            case "Ithaca C":
+                game.push(IthacaC)
+                break;
+            case "Ridgewood":
+                game.push(RidgewoodA)
+                break;
+            case "Ridgewood A":
+                game.push(RidgewoodA)
+                break;
+            case "Ridgewood B":
+                game.push(RidgewoodB)
+                break;
+            case "Middlesex County Academy A":
+                game.push(MCAA)
+                break;
+            case "Middlesex County Academy B":
+                game.push(MCAB)
+                break;
+            case "High Tech":
+                game.push(HighTechA)
+                break;
+            case "High Tech A":
+                game.push(HighTechA)
+                break;
+            case "High Tech B":
+                game.push(HighTechB)
+                break;
+            case "High Tech C":
+                game.push(HighTechC)
+                break;
+            case "Woodbridge":
+                game.push(WoodbridgeA)
+                break;
+            case "East Brunswick":
+                game.push(EastBrunswickA)
+                break;
+            case "East Brunswick A":
+                game.push(EastBrunswickA)
+                break;
+            case "East Brunswick B":
+                game.push(EastBrunswickB)
+                break;
+            case "River Dell A":
+                game.push(RiverDellA)
+                break;
+            case "River Dell B":
+                game.push(RiverDellB)
+                break;
+            case "Cooperstown A":
+                game.push(CooperstownA)
+                break;
+            case "Cooperstown B":
+                game.push(CooperstownB)
+                break;
+            case "Cooperstown C":
+                game.push(CooperstownC)
+                break;
+            case "Cooperstown D":
+                game.push(CooperstownD)
+                break;
+            case "Troy":
+                game.push(TroyA)
+                break;
+            case "Geneva A":
+                game.push(GenevaA)
+                break;
+            case "Geneva B":
+                game.push(GenevaB)
+                break;
+            case "Medina":
+                game.push(MedinaA)
+                break;
+            case "Saratoga Springs":
+                game.push(SaratogaSpringsA)
+                break;
+            case "Adirondack Central":
+                game.push(AdirondackCentralA)
+                break;
+            case "Darien A":
+                game.push(DarienA)
+                break;
+            case "Darien B":
+                game.push(DarienB)
+                break;
+            case "Choate A":
+                game.push(ChoateA)
+                break;
+            case "Choate B":
+                game.push(ChoateB)
+                break;
+            case "Hotchkiss A":
+                game.push(HotchkissA)
+                break;
+            case "Hotchkiss B":
+                game.push(HotchkissB)
+                break;
+            case "Woodland A":
+                game.push(WoodlandA)
+                break;
+            case "Woodland B":
+                game.push(WoodlandB)
+                break;
+            case "Wilton":
+                game.push(WILTONA)
+                break;
+            case "Staples":
+                game.push(StaplesA)
+                break;
+            case "Hopkins":
+                game.push(HopkinsA)
+                break;
+            case "King School Stamford":
+                game.push(StamfordA)
+                break;
+            case "Takers of Ls":
+                game.push(LivingstonA);
+                break;
+            case "Livingston":
+                game.push(LivingstonA);
+                break;
+            case "Livingston A":
+                game.push(LivingstonA);
+                break;
+            case "Livingston B":
+                game.push(LivingstonB);
+                break;
+            case "Belmont A":
+                game.push(BelmontA);
+                break;
+            case "Belmont":
+                game.push(BelmontA);
+                break;
+            case "Belmont B":
+                game.push(BelmontB);
+                break;
+            case "Hempfield":
+                game.push(HempfieldA);
+                break;
+            case "Advanced Math & Science A":
+                game.push(AMSAA);
+                break;
+            case "Advanced Math & Science B":
+                game.push(AMSAB);
+                break;
+            case "Bishop Ludden A":
+                game.push(LuddenA);
+                break;
+            case "Bishop Ludden B":
+                game.push(LuddenB);
+                break;
+            case "Edison A":
+                game.push(EdisonA);
+                break;
+            case "Edison B":
+                game.push(EdisonB);
+                break;
+            case "Edison C":
+                game.push(EdisonC);
+                break;
+            case "Marlboro":
+                game.push(MarlboroA);
+                break;
+            case "Moravian Academy A":
+                game.push(MoravianA);
+                break;
+            case "Moravian Academy B":
+                game.push(MoravianB);
+                break;
+            case "West Windsor-Plainsboro North":
+                game.push(WWPNorthA);
+                break;
+            case "West Windsor-Plainsboro North A":
+                game.push(WWPNorthA);
+                break;
+            case "West Windsor-Plainsboro North B":
+                game.push(WWPNorthB);
+                break;
+            case "West Windsor-Plainsboro North C":
+                game.push(WWPNorthC);
+                break;
+            case "Plymouth":
+                game.push(PlymouthA);
+                break;
+            case "Wallenpaupack":
+                game.push(WallenpaupackA);
+                break;
+            case "Phillips Exeter":
+                game.push(PhillipsExeterA);
+                break;
+            case "Solon A":
+                game.push(SOLONA);
+                break;
+            case "Solon B":
+                game.push(SOLONB);
+                break;
+            case "Beavercreek":
+                game.push(BEAVERCREEKA);
+                break;
+            case "Miami Valley":
+                game.push(MIAMIVALLEYA);
+                break;
+            case "Walnut Hills":
+                game.push(WALNUTHILLSA);
+                break;
+            case "Dublin Scioto":
+                game.push(DUBLINSCIOTOA);
+                break;
+            case "Tippecanoe":
+                game.push(TIPPECANOEA);
+                break;
+            case "Indian Hill":
+                game.push(INDIANHILLA);
+                break;
+            case "Bellefontaine":
+                game.push(BELLEFONTAINEA);
+                break;
+            case "Cistercian A":
+                game.push(CISTERCIANA);
+                break;
+            case "Cistercian B":
+                game.push(CISTERCIANB);
+                break;
+            case "Baton Rouge Episcopal A":
+                game.push(BATONROUGEA);
+                break;
+            case "Baton Rouge Episcopal B":
+                game.push(BATONROUGEB);
+                break;
+            case "Jesuit A":
+                game.push(JESUITA);
+                break;
+            case "Jesuit B":
+                game.push(JESUITB);
+                break;
+            case "Catholic A":
+                game.push(CATHOLICA);
+                break;
+            case "Catholic B":
+                game.push(CATHOLICB);
+                break;
+            case "Episcopal-Acadiana":
+                game.push(ACADIANAA);
+                break;
+            case "Texas Math and Science":
+                game.push(TEXASMATHSCIENCEA);
+                break;
+            case "Caddo Middle":
+                game.push(CADDOMIDDLE);
+                break;
+            case "St. Paul's":
+                game.push(STPAULSA);
+                break;
+            case "Neville":
+                game.push(NEVILLEA);
+                break;
+            case "Zachary":
+                game.push(ZACHARYA);
+                break;
+            case "C. E. Byrd":
+                game.push(CEBYRDA);
+                break;
+            case "Raleigh Charter":
+                game.push(RALEIGHCHARTERA);
+                break;
+            case "Dunbar":
+                game.push(DUNBARA);
+                break;
+            case "Baker":
+                game.push(BAKERA);
+                break;
+            case "Tower":
+                game.push(TOWERHILLA);
+                break;
+            case "Tower Hill":
+                game.push(TOWERHILLA);
+                break;
+            case "Athens":
+                game.push(ATHENSA);
+                break;
+            case "Hoover":
+                game.push(HOOVERA);
+                break;
+            case "Detroit Catholic Central":
+                game.push(DCCA);
+                break;
+            case "Overlake":
+                game.push(OVERLAKEA);
+                break;
+            case "Alma Bryant":
+                game.push(ALMABRYANTA);
+                break;
+            case "International Department of Beijing No. 2 School":
+                game.push(BEIJINGTWOA);
+                break;
+            case "Shanghai-Alcanta-Beijing":
+                game.push(ALCANTAA);
+                break;
+            case "RDFZ Chaoyang":
+                game.push(CHAOYANGA);
+                break;
+            case "Beijing Huijia Private":
+                game.push(HUIJAA);
+                break;
+            case "Tsinglan School":
+                game.push(TSINGLANA);
+                break;
+            case "Nanjing FLS":
+                game.push(NANJINGFLSA);
+                break;
+            case "Beijing Foreign Languages":
+                game.push(FOREIGNLANGA);
+                break;
+            case "Jinan Foreign":
+                game.push(JINANA);
+                break;
+            case "Shenzhen CIE":
+                game.push(SHENZHENCIEA);
+                break;
+            case "Suzhou-Beijing-Chongqing-SCNU":
+                game.push(SCNUA);
+                break;
+            case "Conway":
+                game.push(CONWAYA);
+                break;
+            case "DCC A":
+                game.push(DCCA);
+                break;
+            case "DCC B":
+                game.push(DCCB);
+                break;
+            case "Northmont":
+                game.push(NORTHMONTA);
+                break;
+            case "Henderson County":
+                game.push(HENDERSONA);
+                break;
+            case "Edmonson County":
+                game.push(EDMONSONA);
+                break;
+            case "Grayson County":
+                game.push(GRAYSONA);
+                break;
+            case "Dunbar A":
+                game.push(DUNBARA);
+                break;
+            case "Dunbar B":
+                game.push(DUNBARB);
+                break;
+            case "Owensboro":
+                game.push(OWENSBOROA);
+                break;
+            case "Fleming County":
+                game.push(FLEMINGA);
+                break;
+            case "Daviess County":
+                game.push(DAVIESSA);
+                break;
+            case "Woodford County":
+                game.push(WOODFORDA);
+                break;
+            case "Central Hardin":
+                game.push(HARDINA);
+                break;
+            case "Southside":
+                game.push(SOUTHSIDEA);
+                break;
+            case "Martin County":
+                game.push(MARTINA);
+                break;
+            case "Trinity A":
+                game.push(TRINITYA);
+                break;
+            case "Trinity B":
+                game.push(TRINITYB);
+                break;
+            case "USN A":
+                game.push(USNA);
+                break;
+            case "USN B":
+                game.push(USNB);
+                break;
+            case "Portland":
+                game.push(PORTLANDA);
+                break;
+            case "Cookeville A":
+                game.push(COOKEVILLEA);
+                break;
+            case "Cookeville B":
+                game.push(COOKEVILLEB);
+                break;
+            case "Manheim Township A":
+                game.push(MANHEIMA);
+                break;
+            case "Manheim Township B":
+                game.push(MANHEIMB);
+                break;
+            case "Manheim Township":
+                game.push(MANHEIMA);
+                break;
+            case "Manheim A":
+                game.push(MANHEIMA);
+                break;
+            case "Manheim B":
+                game.push(MANHEIMA);
+                break;
+            case "Wilmington Charter A":
+                game.push(WILMINGTONA);
+                break;
+            case "Wilmington Charter B":
+                game.push(WILMINGTONB);
+                break;
+            case "St Joseph":
+                game.push(STJOSEPHA);
+                break;
+            case "Millburn A":
+                game.push(MILLBURNA);
+                break;
+            case "Detroit Country Day":
+                game.push(DCDSA);
+                break; 
+            case "Richard Montgomery A":
+                game.push(RMA);
+                break;
+            case "Richard Montgomery B":
+                game.push(RMB);
+                break;
+            case "Norfolk Academic Guild A":
+                game.push(NAGA);
+                break;
+            case "Norfolk Academic Guild B":
+                game.push(NAGB);
+                break;
+            case "BASIS McLean A":
+                game.push(BASISMCLEANA);
+                break;
+            case "BASIS McLean B":
+                game.push(BASISMCLEANB);
+                break;
+            case "TJHSST A":
+                game.push(TJHSSTA);
+                break;
+            case "TJHSST B":
+                game.push(TJHSSTB);
+                break;
+            case "TJHSST C":
+                game.push(TJHSSTC);
+                break;
+            case "TJHSST D":
+                game.push(TJHSSTD);
+                break;
+            case "Virginia Episcopal School A":
+                game.push(VESA);
+                break;
+            case "Virginia Episcopal School B":
+                game.push(VESB);
+                break;
+            case "Maggie Walker A":
+                game.push(MAGGIEWALKERA);
+                break;
+            case "Maggie Walker B":
+                game.push(MAGGIEWALKERB);
+                break;
+            case "Cave Spring":
+                game.push(CAVESPRINGA);
+                break;
+            case "Freeman":
+                game.push(FREEMANA);
+                break;
+            case "Fort Defiance":
+                game.push(FORTDEFIANCEA);
+                break;
+            case "Langley":
+                game.push(LANGLEYA);
+                break;
+            case "Orange County":
+                game.push(ORANGECOUNTYA);
+                break;
+            case "Herberger":
+                game.push(HERBERGERA);
+                break;
+            case "BASIS Scottsdale":
+                game.push(BASISSCOTTSDALEA);
+                break;
+            case "Hamilton A":
+                game.push(HAMILTONA);
+                break;
+            case "Hamilton B":
+                game.push(HAMILTONB);
+                break;
+            case "Brophy College Prep":
+                game.push(BROPHYA);
+                break;
+            case "Strake Jesuit A":
+                game.push(STRAKEA);
+                break;
+            case "Strake Jesuit B":
+                game.push(STRAKEB);
+                break;
+            case "Greenhill A":
+                game.push(GREENHILLA);
+                break;
+            case "Greenhill B":
+                game.push(GREENHILLB);
+                break;
+            case "Cinco Ranch A":
+                game.push(CINCORANCHA);
+                break;
+            case "Cinco Ranch B":
+                game.push(CINCORANCHB);
+                break;
+            case "St. Mark's School of Texas A":
+                game.push(STMARKSA);
+                break;
+            case "St. Mark's School of Texas B":
+                game.push(STMARKSB);
+                break;
+            case "St. Mark's School of Texas C":
+                game.push(STMARKSC);
+                break;
+            case "Kinkaid":
+                game.push(KINKAID);
+                break;
+            case "Seven Lakes":
+                game.push(SEVENLAKES);
+                break;
+            case "James E. Taylor":
+                game.push(TAYLORA);
+                break;
+                case "St. John's A":
+                game.push(STJOHNSA);
+                break;
+            case "St. John's B":
+                game.push(STJOHNSB);
+                break;
+            case "Village":
+                game.push(VILLAGEA);
+                break;
+            case "Georgetown Prep":
+                game.push(GEORGETOWNA);
+                break;
+            case "TAG Magnet A":
+                game.push(TAGA);
+                break;
+            case "Hoover A":
+                game.push(HOOVERA);
+                break;
+            case "Hoover B":
+                game.push(HOOVERB);
+                break;
+            case "Hoover C":
+                game.push(HOOVERC);
+                break;
+            case "Bob Jones":
+                game.push(BOBJONESA);
+                break;
+            case "Alabama Cyber Tech":
+                game.push(CYBERTECHA);
+                break;
+            case "Vestavia Hills":
+                game.push(VESTAVIAHILLSA);
+                break;
+            case "West Point A":
+                game.push(WESTPOINTA);
+                break;
+            case "West Point B":
+                game.push(WESTPOINTB);
+                break;
+            case "Holy Spirit":
+                game.push(HOLYSPIRITA);
+                break;
+            case "Lamar":
+                game.push(LAMARA);
+                break;
+            case "St. Bernard Prep":
+                game.push(STBERNARDA);
+                break;
+            case "Good Hope":
+                game.push(GOODHOPEA);
+                break;
+            case "IMSA A":
+                game.push(IMSAA);
+                break;
+            case "IMSA B":
+                game.push(IMSAB);
+                break;
+            case "Great Valley":
+                game.push(GREATVALLEYA);
+                break;
+            case "Wayzata":
+                game.push(WAYZATAA);
+                break;
+            case "Southwestern":
+                game.push(SOUTHWESTA);
+                break;
+            case "Eden Prairie":
+                game.push(EDENA);
+                break;
+            case "Plano West A":
+                game.push(PLANOA);
+                break;
+            case "Plano West B":
+                game.push(PLANOB);
+                break;
+            case "Irvington A":
+                game.push(IRVINGTONA);
+                break;
+            case "Irvington B":
+                game.push(IRVINGTONB);
+                break;
+            case "Harker":
+                game.push(HARKERA);
+                break;
+            case "Summit":
+                game.push(SUMMITA);
+                break;
+            case "Sagittarius":
+                game.push(SAGITTARIUSA);
+                break;
+            case "Mira Loma A":
+                game.push(MLA);
+                break;
+            case "Mira Loma B":
+                game.push(MLB);
+                break;
+            case "Lambert A":
+                game.push(LAMBERTA);
+                break;
+            case "Lambert B":
+                game.push(LAMBERTB);
+                break;
+            case "Mission San Jose A":
+                game.push(MSJA);
+                break;
+            case "Mission San Jose B":
+                game.push(MSJB);
+                break;
+            case "Stanford Online":
+                game.push(SOHSA);
+                break;
+        }
+        //TODO -- figure out if T/S are neccessarry & if so add them to glicko2.js somewhere
+        //addedum -- T/S cannot be a rerun, far too ineffecient, possible to just scrape AS/BS columns and analyze the values?
+        score = AScore/(AScore+BScore);
+        game.push(score);
+        console.log(A,B,score);
+        matches.push(game);
+    }
+}
+/*     
+            async function gameDataHSQB(startId,endId,tournamentId){
+                allGames = [];
+                finalGame = {};
+                for(let Id = startId; Id < endId; Id++) {
+                    A = "NA";
+                    B = "NA";
+                    await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                        Round = (snapshot.val() && snapshot.val().Round);
+                    });
+                    await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                        Result = (snapshot.val() && snapshot.val().Result);
+                    });
+                    if(Result=="W"){
+                        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                            B = (snapshot.val() && snapshot.val().Opponent)
+                        });
+                        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                            AScore = (snapshot.val() && snapshot.val().PF)
+                        });
+                        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                            BScore = (snapshot.val() && snapshot.val().PA)
+                        });
+                    }
+                    else if (Result=="L"){
+                        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                            A = (snapshot.val() && snapshot.val().Opponent)
+                        });
+                        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                            BScore = (snapshot.val() && snapshot.val().PF)
+                        });
+                        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                            AScore = (snapshot.val() && snapshot.val().PA)
+                        }); 
+                    }
+                    allGames.push({"Round":Round,"A":A,"AScore":AScore,"B":B,"BScore":BScore});
+                }
+                console.log(allGames)
+                for(let i = 0; i < allGames.length; i++){
+                    roundGames = []
+                    currentGame = []
+                    currentGame.push(allGames[i]);
+                    //console.log(currentGame);
+                    delete allGames[i];
+                    for(let j = 0; j < allGames.length; j++){
+                        allGames[i+j]=allGames[i+j+1];
+                    }
+                    for(let j = 0; j < allGames.length; j++){
+                        if (typeof allGames[j] === 'undefined' || typeof currentGame === 'undefined'){
+                            //console.log(j,"undefined");
+                        }
+                        else {
+                            if(allGames[j].Round === currentGame.Round){
+                                roundGames.push(allGames[j])
+                            }
+                        }
+                    }
+                    for(let j = 0; j < roundGames.length; j++){
+                        if (typeof allGames[j] === 'undefined' || typeof currentGame === 'undefined'){
+                            console.log(j,"undefined")
+                        }
+                        else {
+                            if(allGames[j].AScore === currentGame[0].AScore && allGames[j].BScore == currentGame[0].BScore){
+                                if(currentGame[0].A === "NA"){
+                                    finalGame={"A":allGames[j].A,"B":currentGame[0].B,"AScore":currentGame[0].AScore,"BScore":currentGame[0].BScore};
+                                    delete allGames[j];
+                                    console.log("allGames",allGames,currentGame[0]);
+                                }
+                                else if(currentGame[0].B === "NA"){
+                                    finalGame={"A":currentGame[0].A,"B":allGames[j].B,"AScore":currentGame[0].AScore,"BScore":currentGame[0].BScore};
+                                    delete allGames[j];
+                                    console.log("allGames",allGames,currentGame[0]);
+                                }
+                                else{
+                                    console.log(currentGame[0].A,currentGame[0].B);
+                                }
+                                game = []
+
+        switch(finalGame.A){
+            case "Hunter A":
+                game.push(HunterA)
+                break;
+            case "Hunter B":
+                game.push(HunterB)
+                break;
+            case "Hunter C":
+                game.push(HunterC)
+                break;
+            case "Hunter D":
+                game.push(HunterD)
+                break;
+            case "John P. Stevens":
+                game.push(JPSA)
+                break;
+            case "John P. Stevens A":
+                game.push(JPSA)
+                break;
+            case "John P. Stevens B":
+                game.push(JPSB)
+                break;
+            case "John P. Stevens C":
+                game.push(JPSC)
+                break;
+            case "Biotech A":
+                game.push(BiotechA)
+                break;
+            case "Biotech B":
+                game.push(BiotechB)
+                break;
+            case "Ithaca A":
+                game.push(IthacaA)
+                break;
+            case "Ithaca B":
+                game.push(IthacaB)
+                break;
+            case "Ithaca C":
+                game.push(IthacaC)
+                break;
+            case "Ridgewood":
+                game.push(RidgewoodA)
+                break;
+            case "Ridgewood A":
+                game.push(RidgewoodA)
+                break;
+            case "Ridgewood B":
+                game.push(RidgewoodB)
+                break;
+            case "Middlesex County Academy A":
+                game.push(MCAA)
+                break;
+            case "Middlesex County Academy B":
+                game.push(MCAB)
+                break;
+            case "High Tech":
+                game.push(HighTechA)
+                break;
+            case "High Tech A":
+                game.push(HighTechA)
+                break;
+            case "High Tech B":
+                game.push(HighTechB)
+                break;
+            case "High Tech C":
+                game.push(HighTechC)
+                break;
+            case "Woodbridge":
+                game.push(WoodbridgeA)
+                break;
+            case "East Brunswick":
+                game.push(EastBrunswickA)
+                break;
+            case "East Brunswick A":
+                game.push(EastBrunswickA)
+                break;
+            case "East Brunswick B":
+                game.push(EastBrunswickB)
+                break;
+            case "River Dell A":
+                game.push(RiverDellA)
+                break;
+            case "River Dell B":
+                game.push(RiverDellB)
+                break;
+            case "Cooperstown A":
+                game.push(CooperstownA)
+                break;
+            case "Cooperstown B":
+                game.push(CooperstownB)
+                break;
+            case "Cooperstown C":
+                game.push(CooperstownC)
+                break;
+            case "Cooperstown D":
+                game.push(CooperstownD)
+                break;
+            case "Troy":
+                game.push(TroyA)
+                break;
+            case "Geneva A":
+                game.push(GenevaA)
+                break;
+            case "Geneva B":
+                game.push(GenevaB)
+                break;
+            case "Medina":
+                game.push(MedinaA)
+                break;
+            case "Saratoga Springs":
+                game.push(SaratogaSpringsA)
+                break;
+            case "Adirondack Central":
+                game.push(AdirondackCentralA)
+                break;
+            case "Darien A":
+                game.push(DarienA)
+                break;
+            case "Darien B":
+                game.push(DarienB)
+                break;
+            case "Choate A":
+                game.push(ChoateA)
+                break;
+            case "Choate B":
+                game.push(ChoateB)
+                break;
+            case "Hotchkiss A":
+                game.push(HotchkissA)
+                break;
+            case "Hotchkiss B":
+                game.push(HotchkissB)
+                break;
+            case "Woodland A":
+                game.push(WoodlandA)
+                break;
+            case "Woodland B":
+                game.push(WoodlandB)
+                break;
+            case "Wilton":
+                game.push(WiltonA)
+                break;
+            case "Staples":
+                game.push(StaplesA)
+                break;
+            case "Hopkins":
+                game.push(HopkinsA)
+                break;
+            case "King School Stamford":
+                game.push(StamfordA)
+                break;
+            case "Livingston A":
+                game.push(LivingstonA);
+                break;
+            case "Livingston B":
+                game.push(LivingstonB);
+                break;
+            case "Belmont A":
+                game.push(BelmontA);
+                break;
+            case "Belmont B":
+                game.push(BelmontB);
+                break;
+            case "Hempfield":
+                game.push(HempfieldA);
+                break;
+            case "Advanced Math & Science A":
+                game.push(AMSAA);
+                break;
+            case "Advanced Math & Science B":
+                game.push(AMSAB);
+                break;
+            case "Bishop Ludden A":
+                game.push(LuddenA);
+                break;
+            case "Bishop Ludden B":
+                game.push(LuddenB);
+                break;
+            case "Edison A":
+                game.push(EdisonA);
+                break;
+            case "Edison B":
+                game.push(EdisonB);
+                break;
+            case "Edison C":
+                game.push(EdisonC);
+                break;
+            case "Marlboro":
+                game.push(MarlboroA);
+                break;
+            case "Moravian Academy A":
+                game.push(MoravianA);
+                break;
+            case "Moravian Academy B":
+                game.push(MoravianB);
+                break;
+            case "West Windsor-Plainsboro North A":
+                game.push(WWPNorthA);
+                break;
+            case "West Windsor-Plainsboro North B":
+                game.push(WWPNorthB);
+                break;
+            case "West Windsor-Plainsboro North C":
+                game.push(WWPNorthC);
+                break;
+            case "Plymouth":
+                game.push(PlymouthA);
+                break;
+            case "Wallenpaupack":
+                game.push(WallenpaupackA);
+                break;
+            case "Phillips Exeter":
+                game.push(PhillipsExeterA);
+                break;
+        }
+        switch(finalGame.B){
+            case "Hunter A":
+                game.push(HunterA)
+                break;
+            case "Hunter B":
+                game.push(HunterB)
+                break;
+            case "Hunter C":
+                game.push(HunterC)
+                break;
+            case "Hunter D":
+                game.push(HunterD)
+                break;
+            case "John P. Stevens":
+                game.push(JPSA)
+                break;
+            case "John P. Stevens A":
+                game.push(JPSA)
+                break;
+            case "John P. Stevens B":
+                game.push(JPSB)
+                break;
+            case "John P. Stevens C":
+                game.push(JPSC)
+                break;
+            case "Biotech A":
+                game.push(BiotechA)
+                break;
+            case "Biotech B":
+                game.push(BiotechB)
+                break;
+            case "Ithaca A":
+                game.push(IthacaA)
+                break;
+            case "Ithaca B":
+                game.push(IthacaB)
+                break;
+            case "Ithaca C":
+                game.push(IthacaC)
+                break;
+            case "Ridgewood":
+                game.push(RidgewoodA)
+                break;
+            case "Ridgewood A":
+                game.push(RidgewoodA)
+                break;
+            case "Ridgewood B":
+                game.push(RidgewoodB)
+                break;
+            case "Middlesex County Academy A":
+                game.push(MCAA)
+                break;
+            case "Middlesex County Academy B":
+                game.push(MCAB)
+                break;
+            case "High Tech":
+                game.push(HighTechA)
+                break;
+            case "High Tech A":
+                game.push(HighTechA)
+                break;
+            case "High Tech B":
+                game.push(HighTechB)
+                break;
+            case "High Tech C":
+                game.push(HighTechC)
+                break;
+            case "Woodbridge":
+                game.push(WoodbridgeA)
+                break;
+            case "East Brunswick":
+                game.push(EastBrunswickA)
+                break;
+            case "East Brunswick A":
+                game.push(EastBrunswickA)
+                break;
+            case "East Brunswick B":
+                game.push(EastBrunswickB)
+                break;
+            case "River Dell A":
+                game.push(RiverDellA)
+                break;
+            case "River Dell B":
+                game.push(RiverDellB)
+                break;
+            case "Cooperstown A":
+                game.push(CooperstownA)
+                break;
+            case "Cooperstown B":
+                game.push(CooperstownB)
+                break;
+            case "Cooperstown C":
+                game.push(CooperstownC)
+                break;
+            case "Cooperstown D":
+                game.push(CooperstownD)
+                break;
+            case "Troy":
+                game.push(TroyA)
+                break;
+            case "Geneva A":
+                game.push(GenevaA)
+                break;
+            case "Geneva B":
+                game.push(GenevaB)
+                break;
+            case "Medina":
+                game.push(MedinaA)
+                break;
+            case "Saratoga Springs":
+                game.push(SaratogaSpringsA)
+                break;
+            case "Adirondack Central":
+                game.push(AdirondackCentralA)
+                break;
+            case "Darien A":
+                game.push(DarienA)
+                break;
+            case "Darien B":
+                game.push(DarienB)
+                break;
+            case "Choate A":
+                game.push(ChoateA)
+                break;
+            case "Choate B":
+                game.push(ChoateB)
+                break;
+            case "Hotchkiss A":
+                game.push(HotchkissA)
+                break;
+            case "Hotchkiss B":
+                game.push(HotchkissB)
+                break;
+            case "Woodland A":
+                game.push(WoodlandA)
+                break;
+            case "Woodland B":
+                game.push(WoodlandB)
+                break;
+            case "Wilton":
+                game.push(WiltonA)
+                break;
+            case "Staples":
+                game.push(StaplesA)
+                break;
+            case "Hopkins":
+                game.push(HopkinsA)
+                break;
+            case "King School Stamford":
+                game.push(StamfordA)
+                break;
+            case "Livingston A":
+                game.push(LivingstonA);
+                break;
+            case "Livingston B":
+                game.push(LivingstonB);
+                break;
+            case "Belmont A":
+                game.push(BelmontA);
+                break;
+            case "Belmont B":
+                game.push(BelmontB);
+                break;
+            case "Hempfield":
+                game.push(HempfieldA);
+                break;
+            case "Advanced Math & Science A":
+                game.push(AMSAA);
+                break;
+            case "Advanced Math & Science B":
+                game.push(AMSAB);
+                break;
+            case "Bishop Ludden A":
+                game.push(LuddenA);
+                break;
+            case "Bishop Ludden B":
+                game.push(LuddenB);
+                break;
+            case "Edison A":
+                game.push(EdisonA);
+                break;
+            case "Edison B":
+                game.push(EdisonB);
+                break;
+            case "Edison C":
+                game.push(EdisonC);
+                break;
+            case "Marlboro":
+                game.push(MarlboroA);
+                break;
+            case "Moravian Academy A":
+                game.push(MoravianA);
+                break;
+            case "Moravian Academy B":
+                game.push(MoravianB);
+                break;
+            case "West Windsor-Plainsboro North A":
+                game.push(WWPNorthA);
+                break;
+            case "West Windsor-Plainsboro North B":
+                game.push(WWPNorthB);
+                break;
+            case "West Windsor-Plainsboro North C":
+                game.push(WWPNorthC);
+                break;
+            case "Plymouth":
+                game.push(PlymouthA);
+                break;
+            case "Wallenpaupack":
+                game.push(WallenpaupackA);
+                break;
+            case "Phillips Exeter":
+                game.push(PhillipsExeterA);
+                break;
+        }
+        console.log("game",game)
+                            score = finalGame.AScore/(finalGame.AScore+finalGame.BScore);
+                            game.push(score);
+                            console.log(finalGame.A,finalGame.B,score);
+                            matches.push(game);
+                        }
+                    }
+                }
+            }
+        }*/
+
+        </script>
+        <!--
+        <h2>Rankings after IFT</h2>
+        <script>
+            var matches = [];
+            async function IFT(){
+                await gameData(1,181,"IFT");
+                glicko.updateRatings(matches);
+                showRankings();
+            }
+            //IFT()
+        </script>
+
+        <h2>Rankings after Hawks Nest</h2>
+
+        <h2>Rankings after Charter</h2>
+
+        <h2>Rankings after Geneva</h2>
+        <script>
+        </script>
+
+        <h2>Rankings after EAST</h2>-->
+
+        <script>
+            var matches = [];
+            async function tournaments2021(){
+                //TODO -- if these manual alerts can ever be simplified and made easier
+                var matches = [];
+                //TODO -- test with more tournaments
+                await gameData(1,181,"IFT");
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                //setTimeout(function(){ alert(); }, 300);
+                //setTimeout(function(){ alert(); }, 3000);
+                await gameData(1,30,"Geneva");                
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                //setTimeout(function(){ alert(); }, 300);
+                //setTimeout(function(){ alert(); }, 3000);
+                await gameData(1,91,"EAST");                
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                //setTimeout(function(){ alert(); }, 300);
+                //setTimeout(function(){ alert(); }, 3000);
+                await gameData(1,50,"CT");                
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                setTimeout(function(){ alert("showRankings();"); }, 300);
+                //setTimeout(function(){ alert(); }, 3000);
+                //gameDataHSQB(1,252,"CORGI-DATA"); 
+            }
+            //tournaments2021();
+            async function tournaments2022IS(){
+                var matches = [];
+                await gameData(1,48,"SCOTTIE-DATA");
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,56,"UKY-DATA");
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,32,"MVS-DATA");
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,68,"KICKOFF-DATA"); 
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,132,"PHSAT-DATA");               
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,102,"CAV-DATA");  
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,18,"SUNDEVIL-DATA");        
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,60,"KING-DATA");        
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,54,"ACFFALL-DATA");        
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,50,"ACFCAGA-DATA");        
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                setTimeout(function(){ alert("showRankings();"); }, 300);
+            }
+            tournaments2022IS();
+            async function tournaments2022A(){
+                var matches = [];
+                await gameData(1,50,"SEOUL-DATA");                
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                setTimeout(function(){ alert("showRankings();"); }, 300);
+                await gameData(1,60,"TALATKINS-DATA");                
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                setTimeout(function(){ alert("showRankings();"); }, 300);
+            }
+            //tournaments2022A();
+            /*var matches = [];
+            function Geneva(){
+                gameData(1,30,"Geneva");
+            }
+            Geneva()*/
+            /*async function EAST(){
+                await setTimeout(function(){ alert("Update"); }, 0);
+                var matches = [];
+                await gameData(1,91,"EAST");
+                //glicko.updateRatings(matches);
+                //showRankings();
+            }
+            //EAST();
+            var matches = [];
+            gameData(1,30,"Geneva");
+            //setTimeout(function(){ alert("Update before proceeding"); }, 000);
+            var matches = [];
+            gameData(1,91,"EAST");
+            //setTimeout(function(){ alert("Update before proceeding"); }, 000);
+            var matches = [];
+            gameData(1,50,"CT");*/
+            /*
+            glicko.updateRatings(matches);
+            showRankings();
+            */
+        </script>
+     </body>
+</html>
