@@ -1,12 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8" />
     <title>Hardin-Bernhardt Ranks</title>
 </head>
 <body>
     <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
-    <script defer src="./qbranks.js"></script>
+    <script src="./glicko2.js"></script>
+    <script defer src="./qbranks3.js"></script>
+<!--<script>
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+  
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+const database = firebase.database();
+
+console.log("hello world");
+const NAQT = true;
+
+async function gameData(startId,endId,tournamentId){
+    for(let Id = startId; Id < endId; Id++) {
+        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+            A = (snapshot.val() && snapshot.val().A);
+            //console.log(A);
+        });
+        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+            AScore = (snapshot.val() && snapshot.val().AScore)
+            //console.log(AScore);
+        });
+        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+            B = (snapshot.val() && snapshot.val().B)
+        });
+        await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+            BScore = (snapshot.val() && snapshot.val().BScore)
+        });
+        switch(A){
+            case "Ridgewood":
+                A = RidgewoodA;
+                break;
+            case "East Brunswick":
+                A = EastBrunswickA;
+                break;
+            case "High Tech":
+                A = HighTechA;
+                break;
+            case "Woodbridge":
+                A = WoodbridgeA;
+                break;
+            case "Biotech A":
+                A = BiotechA;
+                break;
+            case "Biotech B":
+                A = BiotechB;
+                break;
+            case "Hunter A":
+                A = HunterA;
+                break;
+            case "Hunter B":
+                A = HunterB;
+                break;
+            case "River Dell A":
+                A = RiverDellA;
+                break;
+            case "River Dell B":
+                A = RiverDellB;
+                break;
+            case "Middlesex County Academy A":
+                A = MiddlesexCountyAcademyA;
+                break;
+            case "Middlesex County Academy B":
+                A = MiddlesexCountyAcademyB;
+                break;
+            case "Ithaca A":
+                A = IthacaA;
+                break;
+            case "Ithaca B":
+                A = IthacaB;
+                break;
+            case "Ithaca C":
+                A = IthacaC;
+                break;
+            case "John P. Stevens A":
+                A = JohnPStevensA;
+                break;
+            case "John P. Stevens B":
+                A = JohnPStevensB;
+                break;
+            case "John P. Stevens C":
+                A = JohnPStevensC;
+                break;
+        }
+        switch(B){
+    case "Ridgewood":
+        B = RidgewoodA;
+        break;
+    case "East Brunswick":
+        B = EastBrunswickA;
+        break;
+    case "High Tech":
+        B = HighTechA;
+        break;
+    case "Woodbridge":
+        B = WoodbridgeA;
+        break;
+    case "Biotech A":
+        B = BiotechA;
+        break;
+    case "Biotech B":
+        B = BiotechB;
+        break;
+    case "Hunter A":
+        B = HunterA;
+        break;
+    case "Hunter B":
+        B = HunterB;
+        break;
+    case "River Dell A":
+        B = RiverDellA;
+        break;
+    case "River Dell B":
+        B = RiverDellB;
+        break;
+    case "Middlesex County Academy A":
+        B = MiddlesexCountyAcademyA;
+        break;
+    case "Middlesex County Academy B":
+        B = MiddlesexCountyAcademyB;
+        break;
+    case "Ithaca A":
+        B = IthacaA;
+        break;
+    case "Ithaca B":
+        B = IthacaB;
+        break;
+    case "Ithaca C":
+        B = IthacaC;
+        break;
+    case "John P. Stevens A":
+        B = JohnPStevensA;
+        break;
+    case "John P. Stevens B":
+        B = JohnPStevensB;
+        break;
+    case "John P. Stevens C":
+        B = JohnPStevensC;
+        break;
+}
+        //await console.log(q);
+        //Make sure the team listed first is the winner
+        if(BScore>AScore){
+            let A2 = B;
+            let B2 = A;
+            let AScore2 = BScore;
+            let BScore2 = AScore;
+            A = A2;
+            B = B2;
+            AScore = AScore2;
+            BScore = BScore2;
+        }
+        //console.log(A,B,AScore/(AScore+BScore))
+        matches.push([A, B, AScore/(AScore+BScore)]); 
+    }
+}
+
+var settings = {
+    // tau : "Reasonable choices are between 0.3 and 1.2, though the system should
+    //      be tested to decide which value results in greatest predictive accuracy."
+    tau : 0.5,
+    // rating : default rating
+    rating : 1500,
+    //rd : Default rating deviation 
+    //     small number = good confidence on the rating accuracy
+    rd : 200,
+    //vol : Default volatility (expected fluctation on the player rating)
+    vol : 0.06
+};
+var ranking = new glicko2.Glicko2(settings);
+
+var HunterA = glicko.makePlayer();
+var HunterB = glicko.makePlayer();
+var IthacaA = glicko.makePlayer();
+var IthacaB = glicko.makePlayer();
+var IthacaC = glicko.makePlayer();
+var MiddlesexCountyAcademyA = glicko.makePlayer();
+var MiddlesexCountyAcademyB = glicko.makePlayer();
+var RidgewoodA = glicko.makePlayer();
+var EastBrunswickA = glicko.makePlayer();
+var JohnPStevensA = glicko.makePlayer();
+var JohnPStevensB = glicko.makePlayer();
+var JohnPStevensC = glicko.makePlayer();
+var HighTechA = glicko.makePlayer();
+var BiotechA = glicko.makePlayer();
+var BiotechB = glicko.makePlayer();
+var WoodbridgeA = glicko.makePlayer();
+var RiverDellA = glicko.makePlayer();
+var RiverDellB = glicko.makePlayer();
+
+var matches = [];
+gameData(1,90,"EAST");/*
+glicko.updateRatings(matches);
+
+var players = glicko.getPlayers();
+console.log(players)*/
+    </script>-->
 </body>
 </html>
