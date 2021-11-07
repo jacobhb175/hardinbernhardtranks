@@ -2,12 +2,13 @@
 <html>
     <meta charset="UTF-8" />
     <head>
-        <script src="./glicko2.js"></script>
+        <script type="module" src="./glicko2.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
 
         <script type="text/javascript">
+
 
   
   // Initialize Firebase
@@ -158,6 +159,7 @@ var DAVIESSA = glicko.makePlayer();
 
 var HARDINA = glicko.makePlayer();
 var SOUTHSIDEA = glicko.makePlayer();
+var SOUTHSIDEB = glicko.makePlayer();
 var PORTLANDA = glicko.makePlayer();
 var TRINITYA = glicko.makePlayer();
 var TRINITYB = glicko.makePlayer();
@@ -221,6 +223,14 @@ var CINCORANCHB = glicko.makePlayer();
 var GEORGETOWNA = glicko.makePlayer();
 var TAGA = glicko.makePlayer();
 
+var WAKELANDA = glicko.makePlayer();
+var ASTA = glicko.makePlayer();
+var BELLAIREA = glicko.makePlayer();
+var CYFAIRA = glicko.makePlayer();
+var CARNEGIEA = glicko.makePlayer();
+var WESTSIDEA = glicko.makePlayer();
+var CLARKA = glicko.makePlayer();
+
 var HOOVERA = glicko.makePlayer();
 var HOOVERB = glicko.makePlayer();
 var HOOVERC = glicko.makePlayer();
@@ -254,7 +264,76 @@ var LAMBERTB = glicko.makePlayer();
 var MSJA = glicko.makePlayer();
 var MSJB = glicko.makePlayer();
 var SAGITTARIUSA = glicko.makePlayer();
+var SAGITTARIUSB = glicko.makePlayer();
+var STFRANCISA = glicko.makePlayer();
+var FREMONTJFKA = glicko.makePlayer();
+var STRAWBERRYA = glicko.makePlayer();
+var VISTAA = glicko.makePlayer();
+var WASHINGTONCAA = glicko.makePlayer();
+var GRANITEBAYA = glicko.makePlayer();
+var SCDA = glicko.makePlayer();
+var SANJOSEA = glicko.makePlayer();
+var OVERLAKEA = glicko.makePlayer();
+var OVERLAKEB = glicko.makePlayer();
+var GUILDERA = glicko.makePlayer();
 var SOHSA = glicko.makePlayer();
+
+var COLLEGEHEIGHTSA = glicko.makePlayer();
+var LADUEA = glicko.makePlayer();
+var LADUEB = glicko.makePlayer();
+var NKCA = glicko.makePlayer();
+var CALVARYA = glicko.makePlayer();
+var CALVARYB = glicko.makePlayer();
+var MEXICOA = glicko.makePlayer();
+var ORCHARDFARMA = glicko.makePlayer();
+var PARKWAYWESTA = glicko.makePlayer();
+var WASHINGTONA = glicko.makePlayer();
+var WASHINGTONB = glicko.makePlayer();
+var WASHINGTONC = glicko.makePlayer();
+var EUGENEA = glicko.makePlayer();
+var HALLSVILLEA = glicko.makePlayer();
+var KICKAPOOA = glicko.makePlayer();
+var ELDONA = glicko.makePlayer();
+var MOBERLYA = glicko.makePlayer();
+var MOBERLYB = glicko.makePlayer();
+var JEFFERSONCITYA = glicko.makePlayer();
+var LUTHERANSTCHARLESA = glicko.makePlayer();
+var LUTHERANSTCHARLESB = glicko.makePlayer();
+var FTOSAGEA = glicko.makePlayer();
+var FTOSAGEB = glicko.makePlayer();
+var PILOTGROVEA = glicko.makePlayer();
+
+var VSSA = glicko.makePlayer();
+var VSSB = glicko.makePlayer();
+var SOUTH_SIDEA = glicko.makePlayer();
+var NORTHBABYLONA = glicko.makePlayer();
+var ISLANDTREESA = glicko.makePlayer();
+var KELLENBERGA = glicko.makePlayer();
+var KELLENBERGB = glicko.makePlayer();
+var CHOATEC = glicko.makePlayer();
+
+var CHATTAHOOCHEEA = glicko.makePlayer();
+var CHATTAHOOCHEEB = glicko.makePlayer();
+var CHATTAHOOCHEEC = glicko.makePlayer();
+var MIDTOWNA = glicko.makePlayer();
+var MERROLHYDEA = glicko.makePlayer();
+var ASCTEA = glicko.makePlayer();
+var ECGA = glicko.makePlayer();
+var ECGB = glicko.makePlayer();
+var CSNA = glicko.makePlayer();
+var CSNB = glicko.makePlayer();
+var HUMEFOGGA = glicko.makePlayer();
+var HUMEFOGGB = glicko.makePlayer();
+var CENTENNIALA = glicko.makePlayer();
+var CENTENNIALB = glicko.makePlayer();
+var BATTLEGROUNDA = glicko.makePlayer();
+var BATTLEGROUNDB = glicko.makePlayer();
+
+var DINWIDDIEA = glicko.makePlayer();
+var DINWIDDIEB = glicko.makePlayer();
+var THOMASEDISONA = glicko.makePlayer();
+var MAGGIEWALKERC = glicko.makePlayer();
+var MAGGIEWALKERD = glicko.makePlayer();
 
             var players = [
                 { name:'Hunter A', glicko: HunterA },
@@ -293,8 +372,9 @@ var SOHSA = glicko.makePlayer();
                 { name:'Adirondack Central A', glicko: AdirondackCentralA },
                 { name:'Darien A', glicko: DarienA },
                 { name:'Darien B', glicko: DarienB },
-                { name:'choate aardvark', glicko: ChoateA },
-                { name:'choate blueberry', glicko: ChoateB },
+                { name:'choate a', glicko: ChoateA },
+                { name:'choate b', glicko: ChoateB },
+                { name:'choate c', glicko: CHOATEC },
                 { name:'Hotchkiss A', glicko: HotchkissA },
                 { name:'Hotchkiss B', glicko: HotchkissB },
                 { name:'Woodland A', glicko: WoodlandA },
@@ -394,6 +474,8 @@ var SOHSA = glicko.makePlayer();
                 { name:'BASIS McLean B', glicko: BASISMCLEANB },
                 { name:'Maggie Walker A', glicko: MAGGIEWALKERA },
                 { name:'Maggie Walker B', glicko: MAGGIEWALKERB },
+                { name:'Maggie Walker C', glicko: MAGGIEWALKERA },
+                { name:'Maggie Walker D', glicko: MAGGIEWALKERB },
                 { name:'Virginia Episcopal School A', glicko: VESA },
                 { name:'Virginia Episcopal School B', glicko: VESB },
                 { name:'TJHSST A', glicko: TJHSSTA },
@@ -406,7 +488,7 @@ var SOHSA = glicko.makePlayer();
                 { name:'Langley', glicko: LANGLEYA },
                 { name:'Cave Spring', glicko: CAVESPRINGA },
                 { name:'Herberger', glicko: HERBERGERA },
-                { name:'BASIS Scottsdale', glicko: BASISMCLEANA },
+                { name:'BASIS Scottsdale', glicko: BASISSCOTTSDALEA },
                 { name:'Hamilton A', glicko: HAMILTONA },
                 { name:'Hamilton B', glicko: HAMILTONB },
                 { name:'Brophy College Prep', glicko: BROPHYA },
@@ -434,7 +516,7 @@ var SOHSA = glicko.makePlayer();
                 { name:'Alabama Cyber Tech', glicko: CYBERTECHA },
                 { name:"St. Bernard Prep", glicko: STBERNARDA },
                 { name:"West Point A", glicko: WESTPOINTA },
-                { name:"West Point B", glicko: WESTPOINTA },
+                { name:"West Point B", glicko: WESTPOINTB },
                 { name:'Bob Jones', glicko: BOBJONESA },
                 { name:'Lamar', glicko: LAMARA },
                 { name:'Holy Spirit', glicko: HOLYSPIRITA },
@@ -452,15 +534,84 @@ var SOHSA = glicko.makePlayer();
                 { name:'Summit', glicko: SUMMITA },
                 { name:'Harker', glicko: HARKERA },
                 { name:'Stanford Online', glicko: SOHSA },
-                { name:'Sagittarius', glicko: SAGITTARIUSA },
+                { name:'Sagittarius A', glicko: SAGITTARIUSA },
+                { name:'Sagittarius B', glicko: SAGITTARIUSB },
                 { name:"Mira Loma A", glicko: MLA },
                 { name:"Mira Loma B", glicko: MLB },
                 { name:'Lambert A', glicko: LAMBERTA },
                 { name:"Lambert B", glicko: LAMBERTB },
                 { name:"Mission San Jose A", glicko: MSJA },
-                { name:"Mission San Jose B", glicko: MSJB }
+                { name:"Mission San Jose B", glicko: MSJB },
+                { name:'North Kansas City A', glicko: NKCA },
+                { name:'College Heights Christian A', glicko: COLLEGEHEIGHTSA },
+                { name:'Orchard Farm A', glicko: ORCHARDFARMA },
+                { name:'Mexico A', glicko: MEXICOA },
+                { name:'Parkway West A', glicko: PARKWAYWESTA },
+                { name:"Ladue A", glicko: LADUEA },
+                { name:"Ladue B", glicko: LADUEB },
+                { name:"Eugene A", glicko: EUGENEA },
+                { name:'Hallsville A', glicko: HALLSVILLEA },
+                { name:'Kickapoo A', glicko: KICKAPOOA },
+                { name:"Eldon A", glicko: ELDONA },
+                { name:"Lutheran St. Charles A", glicko: LUTHERANSTCHARLESA },
+                { name:"Lutheran St. Charles B", glicko: LUTHERANSTCHARLESB },
+                { name:"Washington A", glicko: WASHINGTONA },
+                { name:"Washington B", glicko: WASHINGTONB },
+                { name:"Washington C", glicko: WASHINGTONC },
+                { name:'Jefferson City A', glicko: JEFFERSONCITYA },
+                { name:'Pilot Grove A', glicko: PILOTGROVEA },
+                { name:"Calvary Lutheran A", glicko: CALVARYA },
+                { name:"Calvary Lutheran B", glicko: CALVARYB },
+                { name:'Fort Osage A', glicko: FTOSAGEA },
+                { name:"Fort Osage B", glicko: FTOSAGEB },
+                { name:"Moberly A", glicko: MOBERLYA },
+                { name:"Moberly B", glicko: MOBERLYB },
+                { name:'Wakeland A', glicko: WAKELANDA },
+                { name:'Academy of Science and Tech A', glicko: ASTA },
+                { name:"Bellaire", glicko: BELLAIREA },
+                { name:"Cy-Fair", glicko: CYFAIRA },
+                { name:'Carnegie Vanguard', glicko: CARNEGIEA },
+                { name:"Clark A", glicko: CLARKA },
+                { name:"Westside A", glicko: WESTSIDEA },
+                { name:"Saint Francis", glicko: STFRANCISA },
+                { name:"Fremont JFK", glicko: FREMONTJFKA },
+                { name:'Challenger-Strawberry Park', glicko: STRAWBERRYA },
+                { name:"Vista Del Lago A", glicko: VISTAA },
+                { name:"Washington (CA)", glicko: WASHINGTONCAA },
+                { name:"Granite Bay A", glicko: GRANITEBAYA },
+                { name:'Sacramento Country Day A', glicko: SCDA },
+                { name:'San Jose Scholars', glicko: SANJOSEA },
+                { name:"Overlake A", glicko: OVERLAKEA },
+                { name:"Overlake B", glicko: OVERLAKEB },
+                { name:"Guilder A", glicko: GUILDERA },
+                { name:"Valley Stream South A", glicko: VSSA },
+                { name:'Valley Stream South B', glicko: VSSB },
+                { name:'South Side A', glicko: SOUTH_SIDEA },
+                { name:"Southside A", glicko: SOUTHSIDEA },
+                { name:'Southside B', glicko: SOUTHSIDEB },
+                { name:"North Babylon", glicko: NORTHBABYLONA },
+                { name:"Kellenberg A", glicko: KELLENBERGA },
+                { name:"Kellenberg B", glicko: KELLENBERGB },
+                { name:"Chattahoochee A", glicko: CHATTAHOOCHEEA },
+                { name:"Chattahoochee B", glicko: CHATTAHOOCHEEB },
+                { name:"Chattahoochee C", glicko: CHATTAHOOCHEEC },
+                { name:"Early College at Guilford A", glicko: ECGA },
+                { name:"Early College at Guilford B", glicko: ECGB },
+                { name:"Hume-Fogg A", glicko: HUMEFOGGA },
+                { name:"Hume-Fogg B", glicko: HUMEFOGGB },
+                { name:"Centennial A", glicko: CENTENNIALA },
+                { name:"Centennial B", glicko: CENTENNIALB },
+                { name:"Community School of Naples A", glicko: CSNA },
+                { name:"Community School of Naples B", glicko: CSNB },
+                { name:"Battle Ground A", glicko: BATTLEGROUNDA },
+                { name:"Battle Ground B", glicko: BATTLEGROUNDB },
+                { name:"Midtown A", glicko: MIDTOWNA },
+                { name:"Merrol Hyde", glicko: MERROLHYDEA },
+                { name:"ASCTE", glicko: ASCTEA },
+                { name:'Dinwiddie A', glicko: DINWIDDIEA },
+                { name:'Dinwiddie B', glicko: DINWIDDIEB },
+                { name:'Thomas Edison A', glicko: THOMASEDISONA }
             ];
-
             console.log(players)
 
             function showRankings(){
@@ -483,6 +634,22 @@ var SOHSA = glicko.makePlayer();
         <script>
             showRankings();
             async function gameData(startId,endId,tournamentId){
+                var docRef = db.collection("qbtournaments").doc(tournamentId);
+                await docRef.get().then(async function(doc) {
+                    if(doc.exists) {
+                        export let aPPG=doc.data().adjustedPPG;
+                        /*console.log("aPPG",aPPG);
+                        db.collection("currentadjustment").doc("cadjustment").set({
+                            adjustment: aPPG
+                        });*/
+                    } else {
+                        // doc.data() will be undefined in this case
+                        console.log("No such document!"+"tributes");
+                    }
+                }).catch(function(error) {
+                    console.log("Error getting document:", error);
+                });
+
                 for(let Id = startId; Id < endId; Id++) {
                     await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
                         A = (snapshot.val() && snapshot.val().A);
@@ -633,6 +800,9 @@ var SOHSA = glicko.makePlayer();
             case "Choate B":
                 game.push(ChoateB)
                 break;
+            case "Choate C":
+                game.push(CHOATEC)
+                break;
             case "Hotchkiss A":
                 game.push(HotchkissA)
                 break;
@@ -915,6 +1085,12 @@ var SOHSA = glicko.makePlayer();
             case "Southside":
                 game.push(SOUTHSIDEA);
                 break;
+            case "Southside A":
+                game.push(SOUTHSIDEA);
+                break;
+            case "Southside B":
+                game.push(SOUTHSIDEB);
+                break;
             case "Martin County":
                 game.push(MARTINA);
                 break;
@@ -932,6 +1108,9 @@ var SOHSA = glicko.makePlayer();
                 break;
             case "Portland":
                 game.push(PORTLANDA);
+                break;
+            case "Cookeville":
+                game.push(COOKEVILLEA);
                 break;
             case "Cookeville A":
                 game.push(COOKEVILLEA);
@@ -969,11 +1148,17 @@ var SOHSA = glicko.makePlayer();
             case "Detroit Country Day":
                 game.push(DCDSA);
                 break; 
+            case "Richard Montgomery":
+                game.push(RMA);
+                break;
             case "Richard Montgomery A":
                 game.push(RMA);
                 break;
             case "Richard Montgomery B":
                 game.push(RMB);
+                break;
+            case "Norfolk Academic Guild":
+                game.push(NAGA);
                 break;
             case "Norfolk Academic Guild A":
                 game.push(NAGA);
@@ -1010,6 +1195,27 @@ var SOHSA = glicko.makePlayer();
                 break;
             case "Maggie Walker B":
                 game.push(MAGGIEWALKERB);
+                break;
+            case "Maggie Walker Governor's School A":
+                game.push(MAGGIEWALKERA);
+                break;
+            case "Maggie Walker Governor's School B":
+                game.push(MAGGIEWALKERB);
+                break;
+            case "Maggie Walker Governor's School C":
+                game.push(MAGGIEWALKERC);
+                break;
+            case "Maggie Walker Governor's School D":
+                game.push(MAGGIEWALKERD);
+                break;
+            case "Thomas Edison":
+                game.push(THOMASEDISONA);
+                break;
+            case "Dinwiddie A":
+                game.push(DINWIDDIEA);
+                break;
+            case "Dinwiddie B":
+                game.push(DINWIDDIEB);
                 break;
             case "Cave Spring":
                 game.push(CAVESPRINGA);
@@ -1152,6 +1358,9 @@ var SOHSA = glicko.makePlayer();
             case "Plano West B":
                 game.push(PLANOB);
                 break;
+                case "Irvington":
+                game.push(IRVINGTONA);
+                break;
             case "Irvington A":
                 game.push(IRVINGTONA);
                 break;
@@ -1166,6 +1375,15 @@ var SOHSA = glicko.makePlayer();
                 break;
             case "Sagittarius":
                 game.push(SAGITTARIUSA);
+                break;
+            case "Sagittarius A":
+                game.push(SAGITTARIUSA);
+                break;
+            case "Sagittarius B":
+                game.push(SAGITTARIUSB);
+                break;
+            case "Mira Loma":
+                game.push(MLA);
                 break;
             case "Mira Loma A":
                 game.push(MLA);
@@ -1187,6 +1405,201 @@ var SOHSA = glicko.makePlayer();
                 break;
             case "Stanford Online":
                 game.push(SOHSA);
+                break;
+            case "College Heights Christian":
+                game.push(COLLEGEHEIGHTSA);
+                break;
+            case "Ladue A":
+                game.push(LADUEA);
+                break;
+            case "Ladue B":
+                game.push(LADUEB);
+                break;
+            case "North Kansas City":
+                game.push(NKCA);
+                break;
+            case "Calvary Lutheran A":
+                game.push(CALVARYA);
+                break;
+            case "Calvary Lutheran B":
+                game.push(CALVARYB);
+                break;
+            case "Mexico":
+                game.push(MEXICOA);
+                break;
+            case "Orchard Farm":
+                game.push(ORCHARDFARMA);
+                break;
+            case "Parkway West":
+                game.push(PARKWAYWESTA);
+                break;
+            case "Eugene":
+                game.push(EUGENEA);
+                break;
+            case "Washington A":
+                game.push(WASHINGTONA);
+                break;
+            case "Hallsville":
+                game.push(HALLSVILLEA);
+                break;
+            case "Kickapoo":
+                game.push(KICKAPOOA);
+                break;
+            case "Washington B":
+                game.push(WASHINGTONB);
+                break;
+            case "Washington C":
+                game.push(WASHINGTONC);
+                break;
+            case "Eldon":
+                game.push(ELDONA);
+                break;
+            case "Moberly A":
+                game.push(MOBERLYA);
+                break;
+            case "Moberly B":
+                game.push(MOBERLYB);
+                break;
+            case "Jefferson City":
+                game.push(JEFFERSONCITYA);
+                break;
+            case "Lutheran St. Charles A":
+                game.push(LUTHERANSTCHARLESA);
+                break;
+            case "Lutheran St. Charles B":
+                game.push(LUTHERANSTCHARLESB);
+                break;
+            case "Fort Osage A":
+                game.push(FTOSAGEA);
+                break;
+            case "Fort Osage B":
+                game.push(FTOSAGEB);
+                break;
+            case "Pilot Grove":
+                game.push(PILOTGROVEA);
+                break;
+            case "Wakeland":
+                game.push(WAKELANDA);
+                break;
+            case "Academy of Science and Tech A":
+                game.push(ASTA);
+                break;
+            case "Bellaire":
+                game.push(BELLAIREA);
+                break;
+            case "Cy-Fair":
+                game.push(CYFAIRA);
+                break;
+            case "Carnegie Vanguard":
+                game.push(CARNEGIEA);
+                break;
+            case "Westside A":
+                game.push(WESTSIDEA);
+                break;
+            case "Clark A":
+                game.push(CLARKA);
+                break;
+            case "Overlake A":
+                game.push(OVERLAKEA);
+                break;
+            case "Overlake B":
+                game.push(OVERLAKEB);
+                break;
+            case "Fremont JFK":
+                game.push(FREMONTJFKA);
+                break;
+            case "Challenger-Strawberry Park":
+                game.push(STRAWBERRYA);
+                break;
+            case "Guilder":
+                game.push(GUILDERA);
+                break;
+            case "Vista Del Lago A":
+                game.push(VISTAA);
+                break;
+            case "Washington":
+                game.push(WASHINGTONCAA);
+                break;
+            case "Granite Bay A":
+                game.push(GRANITEBAYA);
+                break;
+            case "Sacramento Country Day A":
+                game.push(SCDA);
+                break;
+            case "San Jose Scholars":
+                game.push(SANJOSEA);
+                break;
+            case "Saint Francis":
+                game.push(STFRANCISA);
+                break;
+            case "Valley Stream South A":
+                game.push(VSSB);
+                break;
+            case "Valley Stream South B":
+                game.push(VSSA);
+                break;
+            case "South Side":
+                game.push(SOUTH_SIDEA);
+                break;
+            case "Island Trees":
+                game.push(ISLANDTREESA);
+                break;
+            case "Kellenberg A":
+                game.push(KELLENBERGA);
+                break;
+            case "Kellenberg B":
+                game.push(KELLENBERGB);
+                break;
+            case "North Babylon":
+                game.push(NORTHBABYLONA);
+                break;
+            case "Chattahoochee A":
+                game.push(CHATTAHOOCHEEA);
+                break;
+            case "Chattahoochee B":
+                game.push(CHATTAHOOCHEEB);
+                break;
+            case "Chattahoochee C":
+                game.push(CHATTAHOOCHEEC);
+                break;
+            case "Early College at Guilford A":
+                game.push(ECGA);
+                break;
+            case "Early College at Guilford B":
+                game.push(ECGB);
+                break;
+            case "Hume Fogg A":
+                game.push(HUMEFOGGA);
+                break;
+            case "Hume Fogg B":
+                game.push(HUMEFOGGB);
+                break;
+            case "Centennial A":
+                game.push(CENTENNIALA);
+                break;
+            case "Centennial B":
+                game.push(CENTENNIALB);
+                break;
+            case "Community School of Naples A":
+                game.push(CSNA);
+                break;
+            case "Community School of Naples B":
+                game.push(CSNB);
+                break;
+            case "Midtown":
+                game.push(MIDTOWNA);
+                break;
+            case "Merrol Hyde":
+                game.push(MERROLHYDEA);
+                break;
+            case "ASCTE":
+                game.push(ASCTEA);
+                break;
+            case "Battle Ground Academy A":
+                game.push(BATTLEGROUNDA);
+                break;
+            case "Battle Ground Academy B":
+                game.push(BATTLEGROUNDB);
                 break;
         }
         switch(B){
@@ -1327,6 +1740,9 @@ var SOHSA = glicko.makePlayer();
                 break;
             case "Choate B":
                 game.push(ChoateB)
+                break;
+            case "Choate C":
+                game.push(CHOATEC)
                 break;
             case "Hotchkiss A":
                 game.push(HotchkissA)
@@ -1604,6 +2020,12 @@ var SOHSA = glicko.makePlayer();
             case "Southside":
                 game.push(SOUTHSIDEA);
                 break;
+            case "Southside A":
+                game.push(SOUTHSIDEA);
+                break;
+            case "Southside B":
+                game.push(SOUTHSIDEB);
+                break;
             case "Martin County":
                 game.push(MARTINA);
                 break;
@@ -1621,6 +2043,9 @@ var SOHSA = glicko.makePlayer();
                 break;
             case "Portland":
                 game.push(PORTLANDA);
+                break;
+            case "Cookeville":
+                game.push(COOKEVILLEA);
                 break;
             case "Cookeville A":
                 game.push(COOKEVILLEA);
@@ -1658,11 +2083,17 @@ var SOHSA = glicko.makePlayer();
             case "Detroit Country Day":
                 game.push(DCDSA);
                 break; 
+            case "Richard Montgomery":
+                game.push(RMA);
+                break;
             case "Richard Montgomery A":
                 game.push(RMA);
                 break;
             case "Richard Montgomery B":
                 game.push(RMB);
+                break;
+            case "Norfolk Academic Guild":
+                game.push(NAGA);
                 break;
             case "Norfolk Academic Guild A":
                 game.push(NAGA);
@@ -1699,6 +2130,27 @@ var SOHSA = glicko.makePlayer();
                 break;
             case "Maggie Walker B":
                 game.push(MAGGIEWALKERB);
+                break;
+            case "Maggie Walker Governor's School A":
+                game.push(MAGGIEWALKERA);
+                break;
+            case "Maggie Walker Governor's School B":
+                game.push(MAGGIEWALKERB);
+                break;
+            case "Maggie Walker Governor's School C":
+                game.push(MAGGIEWALKERC);
+                break;
+            case "Maggie Walker Governor's School D":
+                game.push(MAGGIEWALKERD);
+                break;
+            case "Thomas Edison":
+                game.push(THOMASEDISONA);
+                break;
+            case "Dinwiddie A":
+                game.push(DINWIDDIEA);
+                break;
+            case "Dinwiddie B":
+                game.push(DINWIDDIEB);
                 break;
             case "Cave Spring":
                 game.push(CAVESPRINGA);
@@ -1841,6 +2293,9 @@ var SOHSA = glicko.makePlayer();
             case "Plano West B":
                 game.push(PLANOB);
                 break;
+            case "Irvington":
+                game.push(IRVINGTONA);
+                break;
             case "Irvington A":
                 game.push(IRVINGTONA);
                 break;
@@ -1855,6 +2310,15 @@ var SOHSA = glicko.makePlayer();
                 break;
             case "Sagittarius":
                 game.push(SAGITTARIUSA);
+                break;
+            case "Sagittarius A":
+                game.push(SAGITTARIUSA);
+                break;
+            case "Sagittarius B":
+                game.push(SAGITTARIUSB);
+                break;
+            case "Mira Loma":
+                game.push(MLA);
                 break;
             case "Mira Loma A":
                 game.push(MLA);
@@ -1876,6 +2340,201 @@ var SOHSA = glicko.makePlayer();
                 break;
             case "Stanford Online":
                 game.push(SOHSA);
+                break;
+            case "College Heights Christian":
+                game.push(COLLEGEHEIGHTSA);
+                break;
+            case "Ladue A":
+                game.push(LADUEA);
+                break;
+            case "Ladue B":
+                game.push(LADUEB);
+                break;
+            case "North Kansas City":
+                game.push(NKCA);
+                break;
+            case "Calvary Lutheran A":
+                game.push(CALVARYA);
+                break;
+            case "Calvary Lutheran B":
+                game.push(CALVARYB);
+                break;
+            case "Mexico":
+                game.push(MEXICOA);
+                break;
+            case "Orchard Farm":
+                game.push(ORCHARDFARMA);
+                break;
+            case "Parkway West":
+                game.push(PARKWAYWESTA);
+                break;
+            case "Washington A":
+                game.push(WASHINGTONA);
+                break;
+            case "Eugene":
+                game.push(EUGENEA);
+                break;
+            case "Hallsville":
+                game.push(HALLSVILLEA);
+                break;
+            case "Kickapoo":
+                game.push(KICKAPOOA);
+                break;
+            case "Washington B":
+                game.push(WASHINGTONB);
+                break;
+            case "Washington C":
+                game.push(WASHINGTONC);
+                break;
+            case "Eldon":
+                game.push(ELDONA);
+                break;
+            case "Moberly A":
+                game.push(MOBERLYA);
+                break;
+            case "Moberly B":
+                game.push(MOBERLYB);
+                break;
+            case "Jefferson City":
+                game.push(JEFFERSONCITYA);
+                break;
+            case "Lutheran St. Charles A":
+                game.push(LUTHERANSTCHARLESA);
+                break;
+            case "Lutheran St. Charles B":
+                game.push(LUTHERANSTCHARLESB);
+                break;
+            case "Fort Osage A":
+                game.push(FTOSAGEA);
+                break;
+            case "Fort Osage B":
+                game.push(FTOSAGEB);
+                break;
+            case "Pilot Grove":
+                game.push(PILOTGROVEA);
+                break;
+            case "Wakeland":
+                game.push(WAKELANDA);
+                break;
+            case "Academy of Science and Tech A":
+                game.push(ASTA);
+                break;
+            case "Bellaire":
+                game.push(BELLAIREA);
+                break;
+            case "Cy-Fair":
+                game.push(CYFAIRA);
+                break;
+            case "Carnegie Vanguard":
+                game.push(CARNEGIEA);
+                break;
+            case "Westside A":
+                game.push(WESTSIDEA);
+                break;
+            case "Clark A":
+                game.push(CLARKA);
+                break;
+            case "Overlake A":
+                game.push(OVERLAKEA);
+                break;
+            case "Overlake B":
+                game.push(OVERLAKEB);
+                break;
+            case "Fremont JFK":
+                game.push(FREMONTJFKA);
+                break;
+            case "Challenger-Strawberry Park":
+                game.push(STRAWBERRYA);
+                break;
+            case "Guilder":
+                game.push(GUILDERA);
+                break;
+            case "Vista Del Lago A":
+                game.push(VISTAA);
+                break;
+            case "Washington":
+                game.push(WASHINGTONCAA);
+                break;
+            case "Granite Bay A":
+                game.push(GRANITEBAYA);
+                break;
+            case "Sacramento Country Day A":
+                game.push(SCDA);
+                break;
+            case "San Jose Scholars":
+                game.push(SANJOSEA);
+                break;
+            case "Saint Francis":
+                game.push(STFRANCISA);
+                break;
+            case "Valley Stream South A":
+                game.push(VSSB);
+                break;
+            case "Valley Stream South B":
+                game.push(VSSA);
+                break;
+            case "South Side":
+                game.push(SOUTH_SIDEA);
+                break;
+            case "Island Trees":
+                game.push(ISLANDTREESA);
+                break;
+            case "Kellenberg A":
+                game.push(KELLENBERGA);
+                break;
+            case "Kellenberg B":
+                game.push(KELLENBERGB);
+                break;
+            case "North Babylon":
+                game.push(NORTHBABYLONA);
+                break;
+            case "Chattahoochee A":
+                game.push(CHATTAHOOCHEEA);
+                break;
+            case "Chattahoochee B":
+                game.push(CHATTAHOOCHEEB);
+                break;
+            case "Chattahoochee C":
+                game.push(CHATTAHOOCHEEC);
+                break;
+            case "Early College at Guilford A":
+                game.push(ECGA);
+                break;
+            case "Early College at Guilford B":
+                game.push(ECGB);
+                break;
+            case "Hume Fogg A":
+                game.push(HUMEFOGGA);
+                break;
+            case "Hume Fogg B":
+                game.push(HUMEFOGGB);
+                break;
+            case "Centennial A":
+                game.push(CENTENNIALA);
+                break;
+            case "Centennial B":
+                game.push(CENTENNIALB);
+                break;
+            case "Community School of Naples A":
+                game.push(CSNA);
+                break;
+            case "Community School of Naples B":
+                game.push(CSNB);
+                break;
+            case "Midtown":
+                game.push(MIDTOWNA);
+                break;
+            case "Merrol Hyde":
+                game.push(MERROLHYDEA);
+                break;
+            case "ASCTE":
+                game.push(ASCTEA);
+                break;
+            case "Battle Ground Academy A":
+                game.push(BATTLEGROUNDA);
+                break;
+            case "Battle Ground Academy B":
+                game.push(BATTLEGROUNDB);
                 break;
         }
         //TODO -- figure out if T/S are neccessarry & if so add them to glicko2.js somewhere
@@ -2459,21 +3118,33 @@ var SOHSA = glicko.makePlayer();
                 setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
                 await gameData(1,56,"UKY-DATA");
                 setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
-                await gameData(1,32,"MVS-DATA");
+                await gameData(1,38,"MVS-DATA");
                 setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
                 await gameData(1,68,"KICKOFF-DATA"); 
                 setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
                 await gameData(1,132,"PHSAT-DATA");               
                 setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
-                await gameData(1,102,"CAV-DATA");  
+                await gameData(1,103,"CAV-DATA");  
                 setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
-                await gameData(1,18,"SUNDEVIL-DATA");        
+                await gameData(1,19,"SUNDEVIL-DATA");        
                 setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
-                await gameData(1,60,"KING-DATA");        
+                await gameData(1,61,"KING-DATA");        
                 setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
-                await gameData(1,54,"ACFFALL-DATA");        
+                await gameData(1,55,"ACFFALL-DATA");        
                 setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
-                await gameData(1,50,"ACFCAGA-DATA");        
+                await gameData(1,51,"ACFCAGA-DATA");        
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,123,"MFAT-DATA");        
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,50,"BIGTEX-DATA");     
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);  
+                await gameData(1,63,"SACFALL-DATA");  
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,48,"VCU-DATA");  
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,98,"ABC-DATA");
+                setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
+                await gameData(1,101,"LIFT-DATA");       
                 setTimeout(function(){ alert("glicko.updateRatings(matches);"); }, 000);
                 setTimeout(function(){ alert("showRankings();"); }, 300);
             }
