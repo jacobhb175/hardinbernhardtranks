@@ -7,14 +7,14 @@ import urllib.request
 user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'
 
 #url = "http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers"
-url = "https://hsquizbowl.org/db/tournaments/7094/stats/all_games/games/"
+url = "https://hsquizbowl.org/db/tournaments/6989/stats/all_games_%28no_finish_order%29/games/"
 headers={'User-Agent':user_agent,}
 
 def get_HSQBtournaments2(url):
     #html = urlopen(url)
     #bs = BeautifulSoup(html, 'html.parser')
-    csvFile = open('ACFCAGA-Data.csv', 'wt+')
-    htmlFile = open('ACFCAGA-Stats.html', 'w')
+    csvFile = open('ACFWINTER-Data.csv', 'wt+')
+    htmlFile = open('ACFWINTER-Stats.html', 'w')
     request=urllib.request.Request(url,None,headers) 
     response = urllib.request.urlopen(request)
     data = response.read() 
@@ -58,31 +58,7 @@ csvFile.close()'''
     td=soup.find_all('td')
     print(td)
 '''
-def get_tournaments(tournamentUrl):
-    newTournamentUrl = tournamentUrl.replace('standings', 'round')
-    csvFile = open('KING-Data.csv', 'wt+')
-    for x in range(1, 100):
-        roundUrl = newTournamentUrl + '&round=' + str(x)
-        html = urlopen(roundUrl)
-        bs = BeautifulSoup(html, 'html.parser')
 
-        table = bs.findAll('table')[1]
-        rows = table.findAll('tr')
-        writer = csv.writer(csvFile)
-        try:
-            for row in rows:
-                csvRow = []
-                for cell in row.findAll(['td', 'th']):
-                    csvRow.append(cell.get_text())
-                    # print(csvRow)
-                    # writer.writerow(csvRow)
-                    if len(csvRow) == 15:
-                        writer.writerow(csvRow)
-        finally:
-            print()
-    csvFile.close()
-
-#get_tournaments("https://www.naqt.com/stats/tournament/standings.jsp?tournament_id=12587")
 '''
 def get_HSQBtournaments(HSQBtournamentUrl):
     html = urlopen(HSQBtournamentUrl)
@@ -105,7 +81,7 @@ def get_HSQBtournaments(HSQBtournamentUrl):
     csvFile.close()
 '''
 
-get_HSQBtournaments2('https://hsquizbowl.org/db/tournaments/7094/stats/all_games/games/')
+get_HSQBtournaments2('https://hsquizbowl.org/db/tournaments/7211/stats/round_robin/')
 '''
 HTMLFileToBeOpened = open("UKY-Stats.html", "r")
 contents = HTMLFileToBeOpened.read()
@@ -133,14 +109,17 @@ for x in range(1, 49):
 csvFile.close()
 '''
 
-csvFile = open('ACFCAGA-Data.csv', 'wt+')
-with open('ACFCAGA-Stats.html') as f:
+
+
+csvFile = open('ACFWINTER-Data.csv', 'wt+')
+with open('ACFWINTER-Stats.html') as f:
     # read File
     content = f.read()
     # parse HTML
     soup = BeautifulSoup(content, 'html.parser')
     y = 0
-    '''for x in range(0, 200):
+
+    for x in range(0, 300):
         if x % 1 == 0:
             if x % 1 == 0:
                 font = soup.findAll('h3')[x]
@@ -148,29 +127,52 @@ with open('ACFCAGA-Stats.html') as f:
                 writer = csv.writer(csvFile)
                 csvRow = []
                 fontSplitZero = str(font).split("</span>")
-                fontSplitOne=str(fontSplitZero[1]).split("<")
-                print("fs1",fontSplitOne)
-                fontSplitTwo = fontSplitOne
-                #fontSplitTwo = str(fontSplitOne[1]).split(">")
-                #print(fontSplitTwo[1])
-                finalFontSplit = str(fontSplitTwo[0]).split(", ")
-                print("ffs",finalFontSplit)
-                rowArray = []
-                A=(str(finalFontSplit[0]).rpartition(" "))
-                B=(str(finalFontSplit[1]).rpartition(" "))
-                rowArray.append(A[0])
-                rowArray.append(A[2])
-                rowArray.append(B[0])
-                rowArray.append(B[2])
-                print(rowArray)
-                csvRow=rowArray
-                writer.writerow(csvRow)
+                print("fs0",fontSplitZero)
+                if x == 102:
+                    fontSplitOne=str(fontSplitZero[0]).split("<")
+                    print("fs1A", fontSplitOne)
+                    fontSplitOnePointFive=str(fontSplitOne[1]).split(">")
+                    print("fs1.5A", fontSplitOnePointFive)
+                    fontSplitTwo = fontSplitOnePointFive[1]
+                    print("fs2A", fontSplitTwo)
+                    finalFontSplit=str(fontSplitTwo).split(", ")
+                    print("ffsA", finalFontSplit)
+                    rowArray = []
+                    A = (str(finalFontSplit[0]).rpartition(" "))
+                    B = (str(finalFontSplit[1]).rpartition(" "))
+                    rowArray.append(A[0])
+                    rowArray.append(A[2])
+                    rowArray.append(B[0])
+                    rowArray.append(B[2])
+                    print("rA", rowArray)
+                    csvRow = rowArray
+                    writer.writerow(csvRow)
+                else:
+                    fontSplitOne=str(fontSplitZero[1]).split("<")
+                    print("fs1", fontSplitOne)
+                    fontSplitTwo = fontSplitOne
+                    # fontSplitTwo = str(fontSplitOne[1]).split(">")
+                    # print(fontSplitTwo[1])
+                    finalFontSplit = str(fontSplitTwo[0]).split(", ")
+                    print("ffs", finalFontSplit)
+                    rowArray = []
+                    A = (str(finalFontSplit[0]).rpartition(" "))
+                    B = (str(finalFontSplit[1]).rpartition(" "))
+                    rowArray.append(A[0])
+                    rowArray.append(A[2])
+                    rowArray.append(B[0])
+                    rowArray.append(B[2])
+                    print("rA", rowArray)
+                    csvRow = rowArray
+                    writer.writerow(csvRow)
         else:
             print("RED",x)
             if y == 1:
                 y = 0
             elif y == 0:
-                y = 1'''
+                y = 1
+'''
+
     for x in range(0, 200):
         if x % 13 != 0 and x != 89 and x != 101:
             #print(1, x, soup.findAll('font')[x])
@@ -202,6 +204,5 @@ with open('ACFCAGA-Stats.html') as f:
             if y == 1:
                 y = 0
             elif y == 0:
-                y = 1
+                y = 1'''
 csvFile.close()
-
