@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" />
+    <head>
+        <script src="./glicko2.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+        <script type="text/javascript">
+
+
+
+            var settings = {
+              tau : 0.5,
+              rating : 1500,
+              rd : 200,
+              vol : 0.06
+            };
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            let IS204 = {
+                points: 0,
+                games: 0,
+                PPG: 0
+            }
+            let IS206 = {
+                points: 0,
+                games: 0,
+                PPG: 0
+            }
+            let SSNCT21 = {
+                points: 0,
+                games: 0,
+                PPG: 0
+            }
+            let NEWT = {
+                points: 0,
+                games: 0,
+                PPG: 0
+            }
+            let DARTTWO = {
+                points: 0,
+                games: 0,
+                PPG: 0
+            }
+            let CALISTWO = {
+                points: 0,
+                games: 0,
+                PPG: 0
+            }
+            let ACFFALL = {
+                points: 0,
+                games: 0,
+                PPG: 0
+            }
+            let ACFWINTER = {
+                points: 0,
+                games: 0,
+                PPG: 0
+            }
+            let SCOTTIE = {
+                points: 0,
+                games: 0,
+                PPG: 0
+            }
+            let RAFTIII = {
+                points: 0,
+                games: 0,
+                PPG: 0
+            }
+            let ALL = {
+                points: 0,
+                games: 0,
+                PPG: 0
+            }
+            async function gameData(startId,endId,tournamentId,setId){
+                let totalScore = 0;
+                let totalGames = 0
+                for(let Id = startId; Id < endId; Id++) {
+                    await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                        totalScore+=(snapshot.val() && snapshot.val().AScore);
+                    });
+                    await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                        totalScore+=(snapshot.val() && snapshot.val().BScore);
+                        totalGames+=1;
+                        console.log(totalScore,totalGames)
+                    });
+                }
+                let PPG = totalScore/totalGames;
+                console.log(PPG)
+                db.collection("qbtournaments").doc(tournamentId).set({
+                    averagePPG: PPG,
+                    adjustedPPG: 0
+                })
+                ALL.points+=parseInt(totalScore);
+                ALL.games+=parseInt(totalGames);
+                ALL.PPG=(ALL.points/ALL.games);
+switch (setId) {
+case "IS204":
+    IS204.points+=parseInt(totalScore);
+    IS204.games+=parseInt(totalGames);
+    IS204.PPG=(IS204.points/IS204.games);
+    break;
+case "IS206":
+    IS206.points+=parseInt(totalScore);
+    IS206.games+=parseInt(totalGames);
+    IS206.PPG=(IS206.points/IS206.games);
+    break;
+case "SSNCT21":
+    SSNCT21.points+=parseInt(totalScore);
+    SSNCT21.games+=parseInt(totalGames);
+    SSNCT21.PPG=(SSNCT21.points/SSNCT21.games);
+    break;
+case "NEWT":
+    NEWT.points+=parseInt(totalScore);
+    NEWT.games+=parseInt(totalGames);
+    NEWT.PPG=(NEWT.points/NEWT.games);
+    break;
+case "DARTTWO":
+    DARTTWO.points+=parseInt(totalScore);
+    DARTTWO.games+=parseInt(totalGames);
+    DARTTWO.PPG=(DARTTWO.points/DARTTWO.games);
+    break;
+case "CALISTWO":
+    CALISTWO.points+=parseInt(totalScore);
+    CALISTWO.games+=parseInt(totalGames);
+    CALISTWO.PPG=(CALISTWO.points/CALISTWO.games);
+    break;
+case "SCOTTIE":
+    SCOTTIE.points+=parseInt(totalScore);
+    SCOTTIE.games+=parseInt(totalGames);
+    SCOTTIE.PPG=(SCOTTIE.points/SCOTTIE.games);
+    break;
+case "ACFFALL":
+    ACFFALL.points+=parseInt(totalScore);
+    ACFFALL.games+=parseInt(totalGames);
+    ACFFALL.PPG=(ACFFALL.points/ACFFALL.games);
+    break;
+case "ACFWINTER":
+    ACFWINTER.points+=parseInt(totalScore);
+    ACFWINTER.games+=parseInt(totalGames);
+    ACFWINTER.PPG=(ACFWINTER.points/ACFWINTER.games);
+    break;
+case "RAFTIII":
+    RAFTIII.points+=parseInt(totalScore);
+    RAFTIII.games+=parseInt(totalGames);
+    RAFTIII.PPG=(RAFTIII.points/RAFTIII.games);
+    break;
+}
+            }
+            
+            
+            async function adjustmentData(startId,endId,tournamentId,setId){
+                let sPPg = 0;
+switch (setId) {
+case "IS204":
+    sPPG = IS204.PPG;
+    break;
+case "IS206":
+    sPPG = IS206.PPG;    
+    break;
+case "SSNCT21":    
+    sPPG = SSNCT21.PPG;
+    break;
+case "NEWT":
+    sPPG = NEWT.PPG;
+    break;
+case "DARTTWO":
+    sPPG = DARTTWO.PPG;
+    break;
+case "CALISTWO":
+    sPPG = CALISTWO.PPG;
+    break;
+case "SCOTTIE":    
+    sPPG = SCOTTIE.PPG;
+    break;
+case "ACFFALL":
+    sPPG = ACFFALL.PPG;
+    break;
+case "ACFWINTER":    
+    sPPG = ACFWINTER.PPG;
+    break;
+case "RAFTIII":    
+    sPPG = RAFTIII.PPG;
+    break;
+}
+                console.log("sPPG",sPPG);
+                aS=sPPG/IS204.PPG;
+                console.log("aS",aS);
+                var docRef = db.collection("qbtournaments").doc(tournamentId);
+                await docRef.get().then(async function(doc) {
+                    if(doc.exists) {
+                        console.log(doc.data().averagePPG);
+                        let tPPG=doc.data().averagePPG;
+                        console.log(tPPG);
+                        db.collection("qbtournaments").doc(tournamentId).update({
+                            adjustedPPG: tPPG/(aS*ALL.PPG)
+                        });
+                    } else {
+                        // doc.data() will be undefined in this case
+                        console.log("No such document!");
+                    }
+                }).catch(function(error) {
+                    console.log("Error getting document:", error);
+                });
+            }
+
+            async function tournaments(){
+                console.log("tournaments");
+                await gameData(1,93,"SCOTTIE-DATA","SCOTTIE");
+                await gameData(1,56,"UKY-DATA","DARTTWO");
+                await gameData(1,38,"MVS-DATA","IS204");
+                await gameData(1,68,"KICKOFF-DATA","IS204"); 
+                await gameData(1,132,"PHSAT-DATA","IS204");               
+                await gameData(1,103,"CAV-DATA","IS204");  
+                await gameData(1,19,"SUNDEVIL-DATA","IS204");        
+                await gameData(1,61,"KING-DATA","IS204");        
+                await gameData(1,55,"ACFFALL-DATA","ACFFALL");        
+                await gameData(1,51,"ACFCAGA-DATA","ACFFALL");        
+                await gameData(1,123,"MFAT-DATA","IS206");        
+                await gameData(1,50,"BIGTEX-DATA","IS206");     
+                await gameData(1,63,"SACFALL-DATA","IS204");  
+                await gameData(1,48,"VCU-DATA","SSNCT21");  
+                await gameData(1,98,"ABC-DATA","NEWT");
+                await gameData(1,101,"LIFT-DATA","IS206"); 
+                await gameData(1,74,"MELLON-DATA","IS206");  
+                await gameData(1,82,"CALCLASSIC-DATA","IS206");   
+                await gameData(1,50,"PPT-DATA","IS206"); 
+                await gameData(1,80,"JHU-DATA","IS204");                     
+                await gameData(1,50,"ZACHARY-DATA","IS206");                  
+                await gameData(1,80,"JHU-DATA","IS204");                     
+                await gameData(1,50,"ZACHARY-DATA","IS206");                     
+                await gameData(1,59,"JENKS-DATA","IS206");                     
+                await gameData(1,82,"CATT-DATA","CALISTWO");                                        
+                await gameData(1,60,"WUFAT-DATA","RAFTIII");                                          
+                await gameData(1,56,"MIT-DATA","RAFTIII");            
+                await gameData(1,97,"TAZ-DATA","IS206");              
+                await gameData(1,81,"TRT-DATA","IS204");               
+                await gameData(1,13,"SUNDEVILNOV-DATA","IS206");      
+                await gameData(1,65,"IFT-DATA","IS206");         
+                await gameData(1,153,"AUBURN-DATA","IS206");   
+                await gameData(1,38,"CENTENNIAL-DATA","IS206");  
+                await gameData(1,28,"FAIRFIELD-DATA","IS206");   
+                await gameData(1,56,"GRANITECITY-DATA","IS206");                                    
+            }
+            async function tournamentAdjustments(){
+                await adjustmentData(1,93,"SCOTTIE-DATA","SCOTTIE");
+                await adjustmentData(1,56,"UKY-DATA","DARTTWO");
+                await adjustmentData(1,38,"MVS-DATA","IS204");
+                await adjustmentData(1,68,"KICKOFF-DATA","IS204"); 
+                await adjustmentData(1,132,"PHSAT-DATA","IS204");               
+                await adjustmentData(1,103,"CAV-DATA","IS204");  
+                await adjustmentData(1,19,"SUNDEVIL-DATA","IS204");        
+                await adjustmentData(1,61,"KING-DATA","IS204");        
+                await adjustmentData(1,55,"ACFFALL-DATA","ACFFALL");        
+                await adjustmentData(1,51,"ACFCAGA-DATA","ACFFALL");        
+                await adjustmentData(1,123,"MFAT-DATA","IS206");        
+                await adjustmentData(1,50,"BIGTEX-DATA","IS206");     
+                await adjustmentData(1,63,"SACFALL-DATA","IS204");  
+                await adjustmentData(1,48,"VCU-DATA","SSNCT21");  
+                await adjustmentData(1,98,"ABC-DATA","NEWT");
+                await adjustmentData(1,101,"LIFT-DATA","IS206");  
+                await adjustmentData(1,74,"MELLON-DATA","IS206");  
+                await adjustmentData(1,82,"CALCLASSIC-DATA","IS206");    
+                await adjustmentData(1,50,"PPT-DATA","IS206");   
+                await adjustmentData(1,80,"JHU-DATA","IS204");                     
+                await adjustmentData(1,50,"ZACHARY-DATA","IS206");   
+                await adjustmentData(1,59,"JENKS-DATA","IS206");                     
+                await adjustmentData(1,82,"CATT-DATA","CALISTWO");                     
+                await adjustmentData(1,60,"WUFAT-DATA","RAFTIII");                    
+                await adjustmentData(1,56,"MIT-DATA","RAFTIII");             
+                await adjustmentData(1,97,"TAZ-DATA","IS206");              
+                await adjustmentData(1,81,"TRT-DATA","IS204");      
+                await adjustmentData(1,13,"SUNDEVILNOV-DATA","IS206"); 
+                await adjustmentData(1,65,"IFT-DATA","IS206");     
+                await adjustmentData(1,153,"AUBURN-DATA","IS206");  
+                await adjustmentData(1,38,"CENTENNIAL-DATA","IS206");   
+                await adjustmentData(1,28,"FAIRFIELD-DATA","IS206");      
+                await adjustmentData(1,56,"GRANITECITY-DATA","IS206");                                       
+            }
+            async function getData(){
+                await tournaments();
+                await tournamentAdjustments();
+            }
+            getData();
+        </script>
+    </body>
+</html>
