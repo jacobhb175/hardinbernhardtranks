@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" />
+    <head>
+        <script src="./glicko2.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+        <script type="text/javascript">
+
+
+
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            let C = {
+                points: 0,
+                games: 0,
+                PPG: 0
+            }
+            let ALL = {
+                points: 0,
+                games: 0,
+                PPG: 0
+            }
+            async function gameData(startId,endId,tournamentId,setId){
+                let totalScore = 0;
+                let totalGames = 0
+                for(let Id = startId; Id < endId; Id++) {
+                    await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                        totalScore+=parseInt((snapshot.val() && snapshot.val().AScore));
+                    });
+                    await firebase.database().ref('1by_pavmhgpNXhU2bY4SsxgA9oxH6xgHfVF27JGZwo1I/'+tournamentId+'/'+Id).once('value').then(function(snapshot) {
+                        totalScore+=parseInt((snapshot.val() && snapshot.val().BScore));
+                        totalGames+=1;
+                        console.log(totalScore,totalGames)
+                    });
+                }
+                let PPG = totalScore/totalGames;
+                console.log(PPG)
+                db.collection("hbtournaments").doc(tournamentId).set({
+                    averagePPG: PPG,
+                    adjustedPPG: 0
+                })
+                ALL.points+=parseInt(totalScore);
+                ALL.games+=parseInt(totalGames);
+                ALL.PPG=(ALL.points/ALL.games);
+switch (setId) {
+case "C":
+    C.points+=parseInt(totalScore);
+    C.games+=parseInt(totalGames);
+    C.PPG=(C.points/C.games);
+    break;
+            }
+            }
+            
+            
+            async function adjustmentData(startId,endId,tournamentId,setId){
+                let sPPg = 0;
+switch (setId) {
+case "C":
+    sPPG = C.PPG;
+    break;
+}
+                console.log("sPPG",sPPG);
+                aS=sPPG/C.PPG;
+                console.log("aS",aS);
+                var docRef = db.collection("hbtournaments").doc(tournamentId);
+                await docRef.get().then(async function(doc) {
+                    if(doc.exists) {
+                        console.log(doc.data().averagePPG);
+                        let tPPG=doc.data().averagePPG;
+                        console.log(tPPG);
+                        db.collection("hbtournaments").doc(tournamentId).update({
+                            adjustedPPG: tPPG/(aS*ALL.PPG)
+                        });
+                    } else {
+                        // doc.data() will be undefined in this case
+                        console.log("No such document!");
+                    }
+                }).catch(function(error) {
+                    console.log("Error getting document:", error);
+                });
+            }
+
+            async function tournaments(){
+                console.log("tournaments");
+                await gameData(1,29,"H-V-NGF-DATA","C");     
+                await gameData(1,31,"H-V-CFF-DATA","C");     
+                await gameData(1,7,"H-V-EWA-DATA","C");    
+                await gameData(1,44,"H-V-SFF-DATA","C");  
+                await gameData(1,36,"H-V-NNJ-DATA","C");  
+                await gameData(1,17,"H-V-BUF-DATA","C");
+                await gameData(1,95,"H-V-ONL-DATA","C");  
+                await gameData(1,14,"H-V-NIL-DATA","C");  
+                await gameData(1,13,"H-V-OHU-DATA","C");       
+                await gameData(1,7,"H-V-ACA-DATA","C");                                        
+            }
+            async function tournamentAdjustments(){
+                await adjustmentData(1,29,"H-V-NGF-DATA","C");     
+                await adjustmentData(1,31,"H-V-CFF-DATA","C");     
+                await adjustmentData(1,7,"H-V-EWA-DATA","C");  
+                await adjustmentData(1,44,"H-V-SFF-DATA","C");   
+                await adjustmentData(1,36,"H-V-NNJ-DATA","C");   
+                await adjustmentData(1,17,"H-V-BUF-DATA","C");   
+                await adjustmentData(1,95,"H-V-ONL-DATA","C");   
+                await adjustmentData(1,14,"H-V-NIL-DATA","C");    
+                await adjustmentData(1,13,"H-V-OHU-DATA","C");     
+                await adjustmentData(1,7,"H-V-ACA-DATA","C");                               
+            }
+            async function getData(){
+                await tournaments();
+                await tournamentAdjustments();
+            }
+            getData();
+        </script>
+    </body>
+</html>
