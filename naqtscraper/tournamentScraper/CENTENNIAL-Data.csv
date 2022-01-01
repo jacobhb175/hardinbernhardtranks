@@ -1,0 +1,84 @@
+Winner,Score,P,TU,B,PPB,BB,BB%,Loser,Score,P,TU,B,PPB,BB
+"
+University Lab A",525,9,4,280,21.54,70,87.5%,Neoga,100,2,2,40,10.00,10
+"
+University Lab B",450,4,9,280,21.54,20,50.0%,University Lab C,40,0,2,20,10.00,0
+"
+Champaign Central",305,3,9,120,10.00,50,45.5%,Centennial B,70,0,4,10,2.50,20
+"
+Monticello",210,2,6,100,12.50,20,18.2%,Paxton-Buckley-Loda,150,0,5,40,8.00,60
+Winner,Score,P,TU,B,PPB,BB,BB%,Loser,Score,P,TU,B,PPB,BB
+"
+University Lab A",460,4,8,280,23.33,40,40.0%,Monticello,150,0,6,80,13.33,10
+"
+Centennial A",465,7,7,250,17.86,40,66.7%,Champaign Central,180,2,3,90,18.00,30
+"
+University Lab B",330,4,6,180,18.00,30,30.0%,Neoga,155,1,5,80,13.33,10
+"
+Paxton-Buckley-Loda",280,2,6,120,15.00,70,41.2%,University Lab C,190,2,6,70,8.75,30
+Winner,Score,P,TU,B,PPB,BB,BB%,Loser,Score,P,TU,B,PPB,BB
+"
+University Lab A",610,12,4,370,23.12,20,100.0%,University Lab C,75,1,1,40,20.00,10
+"
+University Lab B",505,7,8,290,19.33,30,75.0%,Centennial B,50,0,2,20,10.00,10
+"
+Centennial A",465,5,9,260,18.57,40,50.0%,Paxton-Buckley-Loda,115,1,3,40,10.00,30
+"
+Champaign Central",170,2,4,80,13.33,20,20.0%,Neoga,110,0,5,50,10.00,10
+Winner,Score,P,TU,B,PPB,BB,BB%,Loser,Score,P,TU,B,PPB,BB
+"
+University Lab A",630,12,5,360,21.18,40,80.0%,Champaign Central,90,0,3,40,13.33,20
+"
+Paxton-Buckley-Loda",335,1,11,200,16.67,10,11.1%,Centennial B,70,0,4,30,7.50,0
+"
+Monticello",245,1,8,100,11.11,50,50.0%,Neoga,70,0,4,20,5.00,10
+"
+Centennial A",420,6,8,220,15.71,30,33.3%,University Lab B,245,3,3,90,15.00,80
+Winner,Score,P,TU,B,PPB,BB,BB%,Loser,Score,P,TU,B,PPB,BB
+"
+University Lab B",330,4,7,180,16.36,20,22.2%,Monticello,130,0,5,60,12.00,20
+"
+University Lab A",425,7,4,240,21.82,40,57.1%,Centennial A,260,2,6,170,21.25,0
+"
+University Lab C",215,3,8,80,7.27,10,25.0%,Centennial B,80,0,2,20,10.00,40
+"
+Paxton-Buckley-Loda",215,1,7,80,10.00,50,38.5%,Champaign Central,140,0,6,50,8.33,30
+Winner,Score,P,TU,B,PPB,BB,BB%,Loser,Score,P,TU,B,PPB,BB
+"
+Centennial A",450,6,5,220,20.00,90,64.3%,Neoga,160,2,5,70,10.00,10
+"
+Monticello",335,1,12,190,14.62,10,25.0%,Centennial B,60,0,2,20,10.00,20
+"
+University Lab B",430,6,7,220,16.92,50,45.5%,Paxton-Buckley-Loda,175,1,5,70,11.67,40
+"
+Champaign Central",185,1,6,70,10.00,40,30.8%,University Lab C,155,3,3,50,8.33,30
+Winner,Score,P,TU,B,PPB,BB,BB%,Loser,Score,P,TU,B,PPB,BB
+"
+Centennial A",580,10,6,330,20.62,40,66.7%,University Lab C,25,1,1,0,0.00,0
+"
+University Lab A",425,7,6,250,19.23,10,25.0%,Paxton-Buckley-Loda,100,2,1,50,16.67,10
+"
+Monticello",240,4,5,100,11.11,30,37.5%,Champaign Central,90,0,4,40,10.00,10
+"
+Neoga",170,0,8,80,10.00,10,11.1%,Centennial B,80,0,4,30,7.50,10
+Winner,Score,P,TU,B,PPB,BB,BB%,Loser,Score,P,TU,B,PPB,BB
+"
+University Lab A",440,8,5,260,20.00,10,33.3%,Centennial B,30,0,1,0,0.00,20
+"
+Centennial A",485,5,10,300,20.00,10,20.0%,Monticello,95,1,2,40,13.33,20
+"
+University Lab B",415,5,8,230,17.69,30,50.0%,Champaign Central,120,0,4,60,15.00,20
+"
+Neoga",140,2,4,60,10.00,10,7.7%,University Lab C,120,0,6,50,8.33,10
+Winner,Score,P,TU,B,PPB,BB,BB%,Loser,Score,P,TU,B,PPB,BB
+"
+Centennial A",490,6,10,300,18.75,0,0.0%,Centennial B,30,0,2,10,5.00,0
+"
+University Lab A",495,9,4,270,20.77,50,55.6%,University Lab B,185,1,5,90,15.00,30
+"
+Monticello",305,1,9,130,13.00,70,43.8%,University Lab C,135,1,6,50,7.14,10
+"
+Paxton-Buckley-Loda",225,1,6,100,14.29,50,35.7%,Neoga,155,1,6,70,10.00,10
+Winner,Score,P,TU,B,PPB,BB,BB%,Loser,Score,P,TU,B,PPB,BB
+"
+University Lab A",535,7,7,320,22.86,40,66.7%,Centennial A,250,4,2,120,20.00,50
