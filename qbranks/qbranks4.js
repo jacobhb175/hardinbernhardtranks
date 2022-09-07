@@ -85,6 +85,11 @@ db.collection("tournaments").doc("CT").set({
     date:15.27,
     set:"IS201",
     opsNum:49
+}),
+db.collection("tournaments").doc("HSNCT22").set({
+    date:15.27,
+    set:"HSNCT",
+    opsNum:1518
 })
 
 //expected scores
@@ -1137,12 +1142,13 @@ async function tournaments(){
     await inputTournament("Maroon Bowl II");
     await inputTournament("Maroon Bowl Standard");*/
     NAQT = true;
-    await inputTournament("IFT");
+    /*await inputTournament("IFT");
     await inputTournament("Hawks");
     await inputTournament("Charter");
     await inputTournament("Geneva");
     await inputTournament("EAST");
-    await inputTournament("CT");
+    await inputTournament("CT");*/
+    await inputTournament("HSNCT");
     y = true;
     a = 0;
     /*await inputTournament("LONESTAR Northeast");
@@ -1153,12 +1159,13 @@ async function tournaments(){
     await inputTournament("Hawk's Nest");
     await inputTournament("Maroon Bowl II");
     await inputTournament("Maroon Bowl Standard");*/
-    NAQT = true;
+    NAQT = true;/*
     await inputTournament("IFT");
     await inputTournament("Hawks");
     await inputTournament("Charter");
     await inputTournament("Geneva");
     await inputTournament("EAST");
-    await inputTournament("CT");
+    await inputTournament("CT");*/
+    await inputTournament("HSNCT");
 }
 tournaments()

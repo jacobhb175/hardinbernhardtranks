@@ -1,0 +1,3069 @@
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Detroit Country Day A",655,7,12,2,440,23.16,Friends Select B,0,0,1,2,0,0.00,22
+"
+Lambert",610,12,5,6,410,24.12,"Troy (Fullerton, CA)",0,0,1,2,0,0.00,24
+"
+Wayzata A",590,6,12,4,400,22.22,Arab,25,1,1,0,0,0.00,23
+"
+Great Valley A",540,5,12,1,350,20.59,Cistercian C,-10,0,0,2,0,0.00,19
+"
+Okemos",560,4,15,2,360,18.95,North Kansas City,40,0,1,0,30,30.00,22
+"
+Eden Prairie A",515,1,15,2,360,22.50,Canyon Crest B,15,0,2,5,20,10.00,20
+"
+Raleigh Charter",505,5,11,2,330,20.62,Western Dubuque,65,0,3,1,40,13.33,21
+"
+Glasgow",480,3,13,1,310,19.38,Mandarin,40,0,2,0,20,10.00,18
+"
+McLean A",475,0,16,1,320,20.00,Oswego East,45,1,3,2,10,2.50,21
+"
+James E. Taylor",470,5,10,1,300,20.00,Wayzata G,40,0,3,0,10,3.33,19
+"
+Wilton",430,2,13,0,270,18.00,East Grand Rapids,15,1,1,4,10,5.00,18
+"
+Darien A",495,7,10,2,300,17.65,Berwick,80,0,3,0,50,16.67,22
+"
+East Chapel Hill A",470,6,9,4,310,20.67,Dutch Fork B,60,0,2,0,40,20.00,20
+"
+Beavercreek",450,8,7,4,280,18.67,Holton,45,0,3,1,20,6.67,21
+"
+Mira Loma",480,7,8,7,330,22.00,Wando B,80,0,4,0,40,10.00,22
+"
+Paideia",425,2,14,1,260,16.25,St. Vincent-St. Mary,40,0,3,2,20,6.67,20
+"
+Solon A",435,4,12,5,280,17.50,Flowery Branch,60,0,2,0,40,20.00,21
+"
+Greenhill",465,4,11,5,320,21.33,St. Joseph Central B,90,0,4,0,50,12.50,23
+"
+St. Louis Park",380,0,16,2,230,14.38,Johns Creek C,15,0,1,1,10,10.00,19
+"
+Wando A",450,6,9,4,290,19.33,Thales Academy-Rolesville,95,0,4,1,60,15.00,21
+"
+Silver Spring Scholars A",415,2,12,5,290,20.71,Coalgate,65,1,3,0,20,5.00,21
+"
+Dunbar A",420,4,10,2,270,19.29,Wayzata D,90,0,4,2,60,15.00,20
+"
+Chelsea",365,6,9,3,200,13.33,Vista Del Lago B,35,0,2,1,20,10.00,19
+"
+Livingston",400,6,8,0,230,16.43,Wade Hampton,85,0,5,3,50,10.00,19
+"
+Manheim Township A",390,4,9,2,250,19.23,Wayzata F,100,1,3,3,70,17.50,19
+"
+Richard Montgomery A",380,5,7,5,260,21.67,Cistercian B,95,0,4,1,60,15.00,17
+"
+Cedar Crest",385,2,12,1,240,17.14,Dutch Fork A,105,1,4,0,50,10.00,20
+"
+St. Joseph Central A",395,5,7,2,260,21.67,Fletcher,130,2,5,0,50,7.14,21
+"
+Staples",320,1,12,5,210,16.15,Ysleta,70,0,4,0,30,7.50,20
+"
+Ithaca",340,2,11,2,210,16.15,LAMP,95,0,5,3,60,12.00,19
+"
+Jesuit",325,2,11,1,190,14.62,Loyola Academy,100,0,4,0,60,15.00,20
+"
+Dunbar B",320,2,9,2,210,19.09,Edgewood,105,1,5,0,40,6.67,19
+"
+Champlain Valley",285,1,10,2,180,16.36,Centennial C,85,1,3,2,50,12.50,19
+"
+Saratoga",320,4,7,4,210,19.09,John Adams A,120,0,5,0,70,14.00,18
+"
+Northmont A",305,1,11,2,190,15.83,Grand Junction A,110,0,6,0,50,8.33,21
+"
+Lake Braddock",315,0,12,1,200,16.67,Eastlake,120,2,4,0,50,8.33,20
+"
+Harker A",400,4,8,0,260,21.67,Providence,210,1,7,1,130,16.25,21
+"
+Westminster A",325,1,10,2,220,20.00,Farmington Hills Mercy,135,1,6,0,60,8.57,19
+"
+Johns Creek B",280,1,11,5,180,15.00,Detroit Country Day B,95,1,3,0,50,12.50,19
+"
+White Station A",320,4,7,2,200,18.18,Grand Junction B,135,0,6,1,80,13.33,19
+"
+Copley",310,3,10,3,180,13.85,Eden Prairie B,145,0,5,1,100,20.00,18
+"
+Hewitt-Trussville",285,1,10,0,170,15.45,Friends Select A,125,0,7,1,60,8.57,19
+"
+Cinco Ranch A",350,4,7,4,240,21.82,Sparkman,200,2,7,2,110,12.22,21
+"
+Southside A",290,1,10,7,210,19.09,Northmont B,140,0,6,0,80,13.33,21
+"
+South Burlington",255,2,8,3,160,16.00,Manheim Township B,115,1,6,0,40,5.71,19
+"
+Strake Jesuit B",295,3,8,0,170,15.45,Cistercian A,175,3,3,0,100,16.67,18
+"
+Maine East",260,1,10,3,160,14.55,North Gwinnett,150,0,6,2,100,16.67,20
+"
+Canyon Crest A",285,4,6,5,190,19.00,Silver Spring Scholars B,175,1,6,2,110,15.71,20
+"
+Mounds Park",235,0,10,3,150,15.00,Darien B,140,1,5,3,90,15.00,17
+"
+Centennial B",270,3,7,1,160,16.00,Vista Del Lago A,175,3,4,2,100,14.29,19
+"
+McLean B",265,1,8,0,170,18.89,Thomas Jefferson Classical,190,0,8,2,120,15.00,17
+"
+Weston",235,1,7,2,160,20.00,Cinco Ranch B,165,3,6,2,70,7.78,20
+"
+Henderson County (Henderson, KY)",265,3,6,2,170,18.89,Carbondale,200,1,8,1,110,12.22,20
+"
+Macomb",170,1,7,3,100,12.50,Harker B,105,0,8,3,40,5.00,20
+"
+Centennial A",265,2,9,3,160,14.55,Westminster B,205,1,6,0,130,18.57,19
+"
+Central Hardin",200,2,7,4,120,13.33,DeLaSalle,145,0,7,1,80,11.43,17
+"
+BASIS McLean",150,1,7,1,70,8.75,Wayzata E,95,0,4,5,80,20.00,19
+"
+Myers Park",265,2,9,3,160,14.55,Wayzata B,215,4,5,5,130,14.44,21
+"
+Catholic",195,1,9,6,120,12.00,Southside B,145,1,5,0,80,13.33,20
+"
+Wissahickon",205,1,8,2,120,13.33,Wayzata C,160,1,6,1,90,12.86,19
+"
+Hopkins",250,1,9,1,150,15.00,Decatur,220,3,6,5,140,15.56,20
+"
+Benet Academy",170,2,5,0,90,12.86,Great Valley B,145,1,7,4,80,10.00,16
+"
+Johns Creek A",185,1,7,4,120,15.00,Northfield,160,3,6,1,60,6.67,18
+"
+Chamblee Charter",150,0,7,4,100,14.29,Emmaus,145,0,8,1,70,8.75,17
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Lambert",650,12,7,4,420,22.11,Strake Jesuit B,100,1,3,3,70,17.50,24
+"
+Wayzata A",580,10,7,4,380,22.35,Macomb,50,0,3,0,20,6.67,23
+"
+Saratoga",525,4,12,1,350,21.88,Maine East,95,0,3,1,70,23.33,19
+"
+North Gwinnett",440,4,13,0,250,14.71,John Adams A,15,0,1,1,10,10.00,22
+"
+White Station A",455,4,11,1,290,19.33,Hewitt-Trussville,75,1,3,4,50,12.50,20
+"
+Wayzata B",420,5,9,7,290,20.71,Eastlake,50,0,3,2,30,10.00,21
+"
+Great Valley A",475,9,6,2,290,19.33,Wando A,145,0,5,1,100,20.00,21
+"
+Darien A",440,6,9,6,290,19.33,Benet Academy,115,0,4,3,90,22.50,23
+"
+Carbondale",310,2,12,0,160,11.43,St. Vincent-St. Mary,-5,0,1,3,0,0.00,18
+"
+Ithaca",410,2,12,4,280,20.00,Dunbar A,105,2,2,1,60,15.00,23
+"
+Beavercreek",430,8,5,4,280,21.54,Johns Creek A,135,1,4,2,90,18.00,22
+"
+Decatur",335,2,11,3,210,16.15,Mandarin,55,2,0,1,30,15.00,21
+"
+Cinco Ranch A",380,7,5,1,230,19.17,Harker A,125,2,3,3,80,16.00,20
+"
+Cistercian A",265,2,9,3,160,14.55,"Troy (Fullerton, CA)",45,0,3,1,20,6.67,18
+"
+Dutch Fork A",305,2,10,1,180,15.00,Western Dubuque,90,0,4,0,50,12.50,18
+"
+Silver Spring Scholars A",310,4,6,2,200,20.00,Central Hardin,100,2,2,2,60,15.00,17
+"
+Detroit Country Day A",405,8,4,3,260,21.67,Centennial B,210,2,6,0,120,15.00,22
+"
+Manheim Township A",340,4,9,2,200,15.38,McLean B,145,1,4,2,100,20.00,22
+"
+Solon A",355,9,3,8,230,19.17,Jesuit,165,1,6,0,90,12.86,23
+"
+Vista Del Lago A",275,1,11,4,170,14.17,Friends Select B,85,1,2,0,50,16.67,23
+"
+Raleigh Charter",315,6,5,3,190,17.27,Cedar Crest,130,2,3,2,80,16.00,19
+"
+Chelsea",290,2,10,2,170,14.17,South Burlington,105,2,2,1,60,15.00,20
+"
+Staples",335,1,11,4,230,19.17,BASIS McLean,155,3,3,2,90,15.00,22
+"
+Westminster B",280,1,10,3,180,16.36,Edgewood,100,2,3,2,50,10.00,20
+"
+Johns Creek B",320,3,9,3,200,16.67,Wissahickon,145,1,5,0,80,13.33,19
+"
+Mira Loma",330,7,4,9,230,20.91,St. Louis Park,160,1,6,1,90,12.86,21
+"
+Centennial C",235,1,9,2,140,14.00,Farmington Hills Mercy,80,0,7,2,20,2.86,20
+"
+Southside B",240,0,10,0,140,14.00,Cistercian B,90,0,4,2,60,15.00,17
+"
+Providence",255,1,10,2,150,13.64,Sparkman,110,1,4,1,60,12.00,20
+"
+Okemos",325,1,10,4,230,20.91,Livingston,185,4,3,3,110,15.71,22
+"
+Copley",285,3,9,4,170,14.17,Chamblee Charter,145,2,3,1,90,18.00,21
+"
+East Chapel Hill A",370,5,6,1,240,21.82,St. Joseph Central A,235,3,5,2,150,18.75,22
+"
+Cinco Ranch B",255,0,10,1,160,16.00,East Grand Rapids,125,2,5,3,60,8.57,21
+"
+Great Valley B",210,1,8,3,130,14.44,Berwick,90,0,5,0,40,8.00,17
+"
+Thomas Jefferson Classical",230,3,7,5,140,14.00,Wayzata F,110,0,6,0,50,8.33,20
+"
+Northfield",230,1,9,1,130,13.00,Holton,110,1,5,1,50,8.33,19
+"
+Fletcher",195,3,5,0,100,12.50,Dutch Fork B,80,1,4,3,40,8.00,20
+"
+Grand Junction A",160,2,7,0,60,6.67,St. Joseph Central B,50,0,4,4,30,7.50,20
+"
+Darien B",290,3,7,1,180,18.00,Northmont B,180,0,7,0,110,15.71,20
+"
+Greenhill",325,6,5,5,210,19.09,Northmont A,225,1,8,0,130,14.44,23
+"
+Westminster A",280,3,7,3,180,18.00,Champlain Valley,185,1,6,2,120,17.14,20
+"
+Richard Montgomery A",315,6,4,7,220,22.00,Catholic,230,2,8,2,130,13.00,24
+"
+Glasgow",380,3,9,3,260,21.67,Hopkins,295,4,6,1,180,18.00,23
+"
+Centennial A",285,3,7,6,200,20.00,Dunbar B,200,1,6,1,130,18.57,21
+"
+McLean A",350,3,8,3,240,21.82,Eden Prairie A,270,2,8,2,170,17.00,21
+"
+North Kansas City",190,2,7,0,90,10.00,Wade Hampton,110,0,6,2,60,10.00,18
+"
+Emmaus",195,1,8,0,100,11.11,Eden Prairie B,115,0,6,5,80,13.33,21
+"
+Cistercian C",175,2,6,3,100,12.50,Thales Academy-Rolesville,100,0,5,0,50,10.00,17
+"
+Southside A",260,1,10,3,160,14.55,Mounds Park,190,4,3,2,110,15.71,21
+"
+Wilton",255,3,6,2,160,17.78,Weston,185,4,2,1,110,18.33,19
+"
+Detroit Country Day B",145,1,6,0,70,10.00,Wayzata C,75,0,4,3,50,12.50,17
+"
+Canyon Crest A",240,2,7,4,160,17.78,James E. Taylor,175,1,5,4,130,21.67,17
+"
+Harker B",170,1,7,3,100,12.50,Arab,105,1,5,0,40,6.67,20
+"
+Canyon Crest B",170,2,5,2,100,14.29,Oswego East,105,0,6,1,50,8.33,19
+"
+Loyola Academy",205,1,8,0,110,12.22,Flowery Branch,145,1,5,0,80,13.33,19
+"
+Silver Spring Scholars B",140,2,5,6,90,12.86,Wayzata G,85,1,3,0,40,10.00,16
+"
+Grand Junction B",195,1,6,2,130,18.57,Friends Select A,160,2,6,2,80,10.00,21
+"
+Lake Braddock",170,0,8,0,90,11.25,Myers Park,150,1,6,1,80,11.43,19
+"
+Coalgate",165,1,7,2,90,11.25,DeLaSalle,145,1,6,2,80,11.43,22
+"
+Ysleta",115,0,6,1,60,10.00,Wayzata E,100,0,6,0,40,6.67,17
+"
+Manheim Township B",180,1,6,3,120,17.14,Vista Del Lago B,165,2,5,1,90,12.86,20
+"
+LAMP",160,1,7,3,90,11.25,Wayzata D,150,1,7,1,70,8.75,20
+"
+Wando B",110,1,5,1,50,8.33,Johns Creek C,100,0,6,0,40,6.67,19
+"
+Paideia",275,4,6,1,160,16.00,"Henderson County (Henderson, KY)",270,1,9,3,180,18.00,22
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+James E. Taylor",475,2,13,1,320,21.33,Grand Junction B,30,1,1,3,20,10.00,20
+"
+Mira Loma",545,9,7,2,350,21.88,Paideia,115,4,0,3,70,17.50,23
+"
+Lambert",555,11,6,4,350,20.59,Ithaca,140,1,4,1,90,18.00,24
+"
+Sparkman",380,2,14,2,220,13.75,Northmont B,0,0,0,0,0,0.00,21
+"
+East Chapel Hill A",490,8,8,2,300,18.75,Chelsea,135,1,4,4,100,20.00,24
+"
+Central Hardin",350,2,11,2,220,16.92,Grand Junction A,5,1,0,4,10,10.00,20
+"
+Henderson County (Henderson, KY)",365,0,14,5,250,17.86,Wando B,55,0,3,1,30,10.00,24
+"
+Harker A",365,2,11,1,230,17.69,Darien B,65,1,3,2,30,7.50,21
+"
+South Burlington",355,5,10,2,190,12.67,Fletcher,60,1,2,1,30,10.00,23
+"
+Beavercreek",450,5,10,3,290,19.33,Raleigh Charter,175,0,6,1,120,20.00,21
+"
+Great Valley A",425,6,7,5,290,22.31,Westminster A,155,0,6,1,100,16.67,20
+"
+White Station A",380,2,10,2,260,21.67,Canyon Crest A,110,1,5,3,60,10.00,19
+"
+Northmont A",350,2,12,0,200,14.29,Coalgate,85,1,4,2,40,8.00,21
+"
+Wayzata A",345,4,8,3,220,18.33,Copley,90,0,4,2,60,15.00,18
+"
+Detroit Country Day A",365,6,7,5,230,17.69,Lake Braddock,120,0,5,0,70,14.00,19
+"
+Dunbar B",300,1,11,3,190,15.83,Detroit Country Day B,55,1,1,0,30,15.00,22
+"
+St. Joseph Central A",345,2,9,1,230,20.91,Manheim Township B,110,0,6,0,50,8.33,21
+"
+Manheim Township A",380,5,7,1,240,20.00,Saratoga,170,3,3,1,100,16.67,20
+"
+Wayzata B",330,5,7,5,210,17.50,Centennial B,125,0,5,3,90,18.00,21
+"
+Wando A",285,3,8,6,190,17.27,Centennial C,85,1,4,0,30,6.00,23
+"
+Cedar Crest",290,2,10,4,180,15.00,Northfield,95,1,4,2,50,10.00,19
+"
+Jesuit",270,2,9,4,170,15.45,Ysleta,85,0,5,1,40,8.00,19
+"
+Richard Montgomery A",365,5,6,6,260,23.64,Wilton,185,3,4,2,110,15.71,23
+"
+Cinco Ranch A",360,4,9,2,220,16.92,Southside A,185,3,3,4,130,21.67,20
+"
+Eden Prairie A",340,4,8,2,210,17.50,Decatur,170,3,4,1,90,12.86,20
+"
+Eden Prairie B",275,0,11,1,170,15.45,Arab,105,2,3,3,60,12.00,20
+"
+Hopkins",235,2,8,3,140,14.00,Canyon Crest B,75,0,4,3,50,12.50,19
+"
+Champlain Valley",245,1,10,2,140,12.73,Cistercian C,105,2,3,3,60,12.00,20
+"
+Wayzata E",180,0,10,2,90,9.00,Flowery Branch,40,0,2,0,20,10.00,21
+"
+Strake Jesuit B",280,4,6,4,180,18.00,LAMP,145,0,7,1,80,11.43,23
+"
+North Gwinnett",290,3,7,1,180,18.00,McLean B,165,0,9,1,80,8.89,22
+"
+Wayzata C",185,0,8,1,110,13.75,Edgewood,65,1,3,2,30,7.50,18
+"
+Centennial A",290,3,8,5,190,17.27,Johns Creek B,175,2,5,1,100,14.29,22
+"
+Weston",225,3,5,0,130,16.25,Southside B,110,0,7,2,50,7.14,17
+"
+Macomb",230,1,9,1,130,13.00,Emmaus,115,3,3,2,50,8.33,24
+"
+Vista Del Lago B",205,1,9,2,110,11.00,Dutch Fork B,95,0,4,1,60,15.00,19
+"
+Myers Park",190,1,8,1,100,11.11,Vista Del Lago A,85,1,5,8,60,10.00,20
+"
+John Adams A",175,0,8,1,100,12.50,Wayzata F,75,1,4,2,30,6.00,20
+"
+North Kansas City",190,2,7,0,90,10.00,Benet Academy,100,0,5,0,50,10.00,16
+"
+Mandarin",185,1,8,2,100,11.11,Oswego East,95,0,6,3,50,8.33,19
+"
+BASIS McLean",180,2,7,2,90,10.00,Loyola Academy,95,1,3,0,50,12.50,19
+"
+Okemos",310,2,8,2,210,21.00,Darien A,230,5,5,5,130,13.00,21
+"
+Carbondale",275,4,6,1,160,16.00,St. Louis Park,195,4,4,3,110,13.75,22
+"
+Hewitt-Trussville",175,1,6,0,100,14.29,Silver Spring Scholars B,105,0,6,5,70,11.67,20
+"
+Johns Creek C",125,0,6,1,70,11.67,St. Vincent-St. Mary,55,0,5,5,30,6.00,22
+"
+Solon A",295,4,6,1,180,18.00,Staples,230,4,4,4,150,18.75,20
+"
+McLean A",360,3,9,1,230,19.17,Glasgow,300,4,5,2,200,22.22,22
+"
+DeLaSalle",140,1,6,3,80,11.43,St. Joseph Central B,90,0,6,0,30,5.00,20
+"
+Providence",180,2,6,2,100,12.50,Mounds Park,135,3,4,2,60,8.57,19
+"
+Catholic",220,3,7,1,110,11.00,Cinco Ranch B,180,2,5,2,110,15.71,21
+"
+Chamblee Charter",200,2,5,0,120,17.14,Harker B,165,1,6,4,110,15.71,19
+"
+Livingston",175,2,6,3,100,12.50,Great Valley B,140,0,8,4,80,10.00,21
+"
+Cistercian A",235,4,7,3,120,10.91,Dunbar A,200,0,7,0,130,18.57,20
+"
+Western Dubuque",110,0,5,2,70,14.00,Holton,75,1,5,0,10,1.67,21
+"
+Friends Select B",180,2,7,0,80,8.89,Eastlake,145,1,6,2,80,11.43,23
+"
+Berwick",140,0,7,2,80,11.43,Wade Hampton,105,1,5,6,70,11.67,22
+"
+Dutch Fork A",185,1,7,0,100,12.50,Johns Creek A,155,2,5,5,100,14.29,18
+"
+Wissahickon",210,1,7,1,130,16.25,Westminster B,185,2,5,3,120,17.14,20
+"
+Maine East",230,1,8,1,140,15.56,Thomas Jefferson Classical,210,0,8,4,150,18.75,23
+"
+Thales Academy-Rolesville",140,0,7,0,70,10.00,Farmington Hills Mercy,130,0,8,0,50,6.25,21
+"
+Cistercian B",155,2,6,3,80,10.00,East Grand Rapids,145,0,7,1,80,11.43,25
+"
+Friends Select A",160,0,8,2,90,11.25,Wayzata G,150,3,4,1,70,10.00,19
+"
+Greenhill",325,6,3,3,220,24.44,Silver Spring Scholars A,320,4,8,4,200,16.67,22
+"
+Troy (Fullerton, CA) (OT)",70,0,6,4,30,6.00,Wayzata D,65,1,4,6,40,10.00,23
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Saratoga",490,6,11,2,300,17.65,Central Hardin,45,0,3,1,20,6.67,22
+"
+Thomas Jefferson Classical",340,1,14,1,190,12.67,Grand Junction A,-5,0,0,1,0,0.00,21
+"
+Dunbar A",365,4,9,1,220,16.92,Great Valley B,40,1,2,5,30,10.00,18
+"
+Benet Academy",325,2,13,1,170,11.33,"Troy (Fullerton, CA)",25,0,2,1,10,5.00,22
+"
+Johns Creek A",340,2,10,2,220,18.33,Friends Select A,85,1,3,4,60,15.00,19
+"
+Harker B",280,2,11,4,160,12.31,Cistercian B,60,0,4,2,30,7.50,20
+"
+Beavercreek",375,5,9,2,220,15.71,White Station A,160,2,4,6,120,20.00,20
+"
+Greenhill",415,5,7,0,270,22.50,Manheim Township A,200,4,4,2,110,13.75,20
+"
+Vista Del Lago A",300,1,10,1,190,17.27,Johns Creek C,85,1,4,0,30,6.00,17
+"
+Southside A",305,2,10,3,190,15.83,Wissahickon,110,2,3,2,60,12.00,20
+"
+Wilton",260,0,12,4,160,13.33,Macomb,65,0,4,1,30,7.50,19
+"
+Lambert",435,8,4,9,320,26.67,Okemos,245,0,9,3,170,18.89,22
+"
+McLean B",320,3,8,1,200,18.18,DeLaSalle,130,0,6,2,80,13.33,20
+"
+East Grand Rapids",210,0,11,4,120,10.91,Arab,35,0,4,3,10,2.50,21
+"
+Strake Jesuit B",290,4,6,4,190,19.00,North Kansas City,125,1,6,0,50,7.14,19
+"
+Canyon Crest B",235,1,8,4,160,17.78,Thales Academy-Rolesville,70,0,4,0,30,7.50,19
+"
+Sparkman",250,1,10,1,140,12.73,Detroit Country Day B,90,0,5,2,50,10.00,18
+"
+Manheim Township B",200,0,9,0,110,12.22,Ysleta,40,0,3,0,10,3.33,16
+"
+Raleigh Charter",300,2,10,2,180,15.00,Hewitt-Trussville,145,2,5,1,70,10.00,20
+"
+Wando A",315,3,8,2,200,18.18,Hopkins,160,2,5,4,100,14.29,21
+"
+Grand Junction B",210,0,11,2,110,10.00,Western Dubuque,55,1,2,4,40,13.33,19
+"
+Glasgow",315,3,8,0,190,17.27,Champlain Valley,165,1,6,2,100,14.29,20
+"
+Decatur",270,4,6,4,170,17.00,Cistercian C,125,1,5,2,70,11.67,21
+"
+Westminster A",280,3,8,3,170,15.45,Eden Prairie A,145,1,5,4,100,16.67,19
+"
+Northfield",220,3,8,1,100,9.09,Silver Spring Scholars B,90,2,3,4,50,10.00,19
+"
+Mira Loma",370,6,6,4,240,20.00,Detroit Country Day A,245,4,5,3,150,16.67,21
+"
+South Burlington",235,3,7,2,130,13.00,BASIS McLean,110,0,5,4,80,16.00,19
+"
+Richard Montgomery A",420,3,10,3,290,22.31,Wayzata A,300,6,4,6,200,20.00,23
+"
+Livingston",350,5,6,1,220,20.00,Ithaca,230,1,7,3,160,20.00,20
+"
+James E. Taylor",260,3,6,1,160,17.78,Dutch Fork A,140,1,5,1,80,13.33,15
+"
+Silver Spring Scholars A",250,5,3,3,160,20.00,Maine East,140,1,5,1,80,13.33,16
+"
+Paideia",305,3,8,4,200,18.18,Wayzata B,195,0,8,3,130,16.25,21
+"
+Henderson County (Henderson, KY)",245,2,8,3,150,15.00,Myers Park,140,3,4,3,70,10.00,20
+"
+LAMP",165,1,8,0,70,7.78,Berwick,65,0,4,1,30,7.50,17
+"
+Fletcher",200,1,7,1,120,15.00,Wayzata E,100,0,5,4,70,14.00,18
+"
+John Adams A",185,1,9,2,90,9.00,Coalgate,85,1,4,2,40,8.00,22
+"
+Cinco Ranch B",225,1,8,2,140,15.56,Emmaus,125,0,6,1,70,11.67,17
+"
+Cinco Ranch A",295,7,4,2,160,14.55,Centennial A,200,3,4,3,130,18.57,20
+"
+Northmont A",260,3,7,3,160,16.00,North Gwinnett,170,1,6,1,100,14.29,20
+"
+Edgewood",165,0,8,3,100,12.50,Northmont B,80,0,5,2,40,8.00,19
+"
+Friends Select B",155,0,8,1,80,10.00,Wando B,75,0,4,3,50,12.50,20
+"
+St. Joseph Central A",260,1,9,1,160,16.00,Staples,185,2,6,3,110,13.75,21
+"
+Centennial C",185,0,8,1,110,13.75,Mandarin,125,0,6,1,70,11.67,17
+"
+Wade Hampton",175,0,8,1,100,12.50,Wayzata D,115,0,6,3,70,11.67,19
+"
+Canyon Crest A",285,4,6,5,190,19.00,Cedar Crest,230,0,9,2,150,16.67,19
+"
+Jesuit",245,2,8,1,140,14.00,Chelsea,190,2,6,4,120,15.00,22
+"
+Vista Del Lago B",185,0,7,1,120,17.14,Loyola Academy,130,0,7,2,70,10.00,20
+"
+Copley",230,1,8,3,150,16.67,Catholic,180,3,6,3,90,10.00,20
+"
+Great Valley A",305,6,4,5,200,20.00,McLean A,260,1,9,1,160,16.00,21
+"
+Westminster B",215,0,9,3,140,15.56,Darien B,170,2,5,0,90,12.86,19
+"
+Wayzata G",105,0,5,5,80,16.00,Holton,60,0,4,2,30,7.50,20
+"
+Flowery Branch",150,0,6,0,90,15.00,Dutch Fork B,110,0,6,0,50,8.33,20
+"
+Darien A",235,5,5,4,130,13.00,Cistercian A,200,1,8,1,110,12.22,21
+"
+Chamblee Charter",215,1,8,2,130,14.44,Weston,180,3,4,1,100,14.29,18
+"
+Oswego East",105,1,5,2,50,8.33,Farmington Hills Mercy,70,1,3,1,30,7.50,18
+"
+Wayzata F",100,0,8,6,50,6.25,St. Joseph Central B,65,0,4,1,30,7.50,21
+"
+St. Vincent-St. Mary (OT)",160,2,9,4,60,7.50,Eastlake,125,0,7,3,70,10.00,25
+"
+Solon A",330,4,7,4,220,20.00,East Chapel Hill A,305,3,7,6,220,22.00,21
+"
+Harker A (OT)",250,2,9,2,140,15.56,Johns Creek B,235,1,9,4,150,16.67,22
+"
+Providence",235,3,8,2,120,10.91,Dunbar B,225,0,8,1,150,18.75,20
+"
+Southside B",150,1,7,1,70,8.75,Eden Prairie B,140,1,6,5,90,12.86,19
+"
+St. Louis Park",225,2,8,1,120,12.00,Centennial B,215,3,5,2,130,16.25,20
+"
+Carbondale",235,2,7,1,140,15.56,Lake Braddock,230,1,7,1,150,18.75,18
+"
+Mounds Park",130,0,7,4,80,11.43,Wayzata C,125,0,6,1,70,11.67,17
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Lambert",725,9,11,2,490,24.50,Mira Loma,125,1,3,2,90,22.50,24
+"
+Detroit Country Day A",605,4,15,1,400,21.05,Strake Jesuit B,105,1,3,2,70,17.50,23
+"
+Darien A",480,3,12,3,330,22.00,Carbondale,125,0,5,1,80,16.00,21
+"
+Wayzata A",440,3,10,1,300,23.08,Northmont A,95,1,3,0,50,12.50,18
+"
+Manheim Township A",445,2,13,1,290,19.33,Chamblee Charter,110,0,4,2,80,20.00,20
+"
+Dunbar A",400,1,13,1,260,18.57,Myers Park,70,0,4,4,50,12.50,21
+"
+Wayzata C",330,0,13,0,200,15.38,Thales Academy-Rolesville,20,0,1,2,20,20.00,19
+"
+Ithaca",385,3,11,2,240,17.14,Friends Select B,95,0,4,1,60,15.00,21
+"
+Livingston",405,3,10,0,260,20.00,Paideia,130,0,7,6,90,12.86,23
+"
+Cistercian C",385,2,11,1,250,19.23,Edgewood,110,0,5,0,60,12.00,20
+"
+East Grand Rapids",285,0,13,1,160,12.31,Grand Junction A,20,0,1,2,20,20.00,19
+"
+Thomas Jefferson Classical",335,1,11,0,210,17.50,Weston,80,0,4,2,50,12.50,18
+"
+St. Louis Park",315,0,12,1,200,16.67,North Kansas City,70,0,4,2,40,10.00,22
+"
+Eden Prairie B",255,0,11,1,150,13.64,Coalgate,40,0,2,2,30,15.00,20
+"
+Saratoga",370,1,11,3,260,21.67,Copley,160,1,6,1,90,12.86,21
+"
+Hewitt-Trussville",290,0,13,2,170,13.08,Vista Del Lago B,80,0,4,2,50,12.50,21
+"
+Southside A",410,4,9,0,260,20.00,Glasgow,210,2,5,2,140,20.00,22
+"
+Silver Spring Scholars A",415,3,9,2,290,24.17,Wilton,220,1,7,1,140,17.50,21
+"
+Chelsea",290,1,10,1,180,16.36,Grand Junction B,95,1,3,2,60,15.00,19
+"
+Eden Prairie A",335,0,11,1,230,20.91,Sparkman,145,0,6,1,90,15.00,19
+"
+Dutch Fork A",280,0,13,2,160,12.31,Manheim Township B,95,0,4,1,60,15.00,19
+"
+Great Valley A",415,4,9,1,270,20.77,Cinco Ranch A,245,3,5,0,150,18.75,22
+"
+Staples",295,2,10,1,170,14.17,Johns Creek A,130,0,5,2,90,18.00,19
+"
+Cedar Crest",305,1,10,2,200,18.18,Fletcher,140,0,6,0,80,13.33,20
+"
+Vista Del Lago A",320,2,9,2,210,19.09,Cistercian A,165,2,6,5,100,12.50,22
+"
+East Chapel Hill A",425,3,11,0,270,19.29,James E. Taylor,275,3,5,0,180,22.50,23
+"
+Canyon Crest A",275,0,10,3,190,19.00,Jesuit,130,0,6,2,80,13.33,18
+"
+Mandarin",240,1,11,1,120,10.00,Detroit Country Day B,95,0,5,1,50,10.00,23
+"
+Eastlake",215,0,9,1,130,14.44,Wayzata D,75,0,4,3,50,12.50,21
+"
+Okemos",345,2,9,1,230,20.91,"Henderson County (Henderson, KY)",210,1,8,5,140,15.56,21
+"
+White Station A",355,3,8,2,240,21.82,South Burlington,235,1,8,2,150,16.67,22
+"
+Emmaus",250,0,10,0,150,15.00,Wayzata F,130,0,6,2,80,13.33,21
+"
+Wayzata G",220,0,9,0,130,14.44,Ysleta,105,1,4,0,50,10.00,20
+"
+Berwick",170,1,7,3,100,12.50,Wando B,55,0,4,1,20,5.00,22
+"
+Friends Select A",230,0,10,0,130,13.00,Loyola Academy,115,0,6,3,70,11.67,19
+"
+DeLaSalle",205,0,9,3,130,14.44,Cistercian B,95,0,4,1,60,15.00,19
+"
+St. Joseph Central B",190,0,8,0,110,13.75,Arab,80,0,5,2,40,8.00,19
+"
+McLean A",320,1,10,3,220,20.00,Providence,215,0,8,1,140,17.50,21
+"
+Darien B",260,0,10,2,170,17.00,Oswego East,155,0,7,1,90,12.86,19
+"
+North Gwinnett",240,0,10,2,150,15.00,Cinco Ranch B,140,0,6,2,90,15.00,19
+"
+Southside B",235,1,9,2,140,14.00,Maine East,140,0,6,2,90,15.00,21
+"
+Centennial B",230,3,8,3,120,10.91,Wade Hampton,135,1,6,2,70,10.00,22
+"
+Johns Creek C",165,0,9,1,80,8.89,"Troy (Fullerton, CA)",70,0,5,2,30,6.00,20
+"
+McLean B",235,0,9,1,150,16.67,Catholic,145,0,7,3,90,12.86,19
+"
+Dutch Fork B",180,0,8,0,100,12.50,Holton,95,0,5,1,50,10.00,19
+"
+Farmington Hills Mercy",205,0,10,1,110,11.00,Northmont B,120,0,7,0,50,7.14,22
+"
+John Adams A",210,1,7,1,130,16.25,Macomb,130,0,8,0,50,6.25,22
+"
+Wayzata B",260,2,7,6,190,21.11,LAMP,180,0,8,0,100,12.50,19
+"
+Westminster A",265,0,10,1,170,17.00,Harker A,190,1,6,1,120,17.14,18
+"
+Benet Academy",225,1,9,0,120,12.00,Lake Braddock,155,2,3,1,100,20.00,21
+"
+Westminster B",235,1,8,0,140,15.56,Hopkins,170,0,7,2,110,15.71,20
+"
+Central Hardin",275,0,11,1,170,15.45,Harker B,210,1,7,1,130,16.25,19
+"
+Johns Creek B",200,0,8,2,130,16.25,Centennial C,135,0,6,3,90,15.00,21
+"
+Greenhill",355,2,9,3,250,22.73,Richard Montgomery A,300,2,7,4,220,24.44,22
+"
+Champlain Valley",225,0,9,1,140,15.56,Mounds Park,175,1,6,2,110,15.71,20
+"
+Decatur",255,0,11,1,150,13.64,Dunbar B,210,1,6,1,140,20.00,20
+"
+Centennial A",300,0,11,2,200,18.18,Wando A,260,1,8,3,180,20.00,20
+"
+Silver Spring Scholars B",215,0,9,1,130,14.44,Flowery Branch,180,0,7,0,110,15.71,20
+"
+Wayzata E",135,0,6,1,80,13.33,Western Dubuque,100,0,5,2,60,12.00,17
+"
+Solon A",340,4,7,2,220,20.00,Beavercreek,330,3,8,1,210,19.09,22
+"
+Canyon Crest B",210,0,8,0,130,16.25,Wissahickon,200,0,8,2,130,16.25,20
+"
+St. Joseph Central A",265,3,7,0,150,15.00,Raleigh Charter,260,1,8,1,170,18.89,20
+"
+Northfield",190,1,7,1,110,13.75,BASIS McLean,185,1,7,0,100,12.50,19
+"
+St. Vincent-St. Mary",180,0,8,2,110,13.75,Great Valley B,175,0,8,5,120,15.00,22
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+James E. Taylor",510,3,15,1,320,17.78,Central Hardin,35,0,2,3,30,15.00,20
+"
+Manheim Township A",455,6,9,1,280,18.67,Canyon Crest A,90,1,4,3,50,10.00,22
+"
+Detroit Country Day A",525,9,6,2,340,22.67,Southside A,225,2,6,1,140,17.50,23
+"
+Chelsea",340,1,12,3,220,16.92,Chamblee Charter,50,0,3,2,30,10.00,19
+"
+Harker B",305,1,11,2,190,15.83,Wayzata G,35,0,2,1,20,10.00,19
+"
+Richard Montgomery A",495,8,6,3,330,23.57,St. Joseph Central A,240,3,5,1,150,18.75,23
+"
+Dunbar B",365,3,9,0,230,19.17,North Kansas City,125,0,6,1,70,11.67,19
+"
+Great Valley B",300,4,8,2,170,14.17,Detroit Country Day B,70,0,5,0,20,4.00,20
+"
+Cedar Crest",320,4,8,2,190,15.83,Copley,105,0,6,5,70,11.67,20
+"
+Solon A",450,8,6,2,280,20.00,Greenhill,240,3,5,3,160,20.00,22
+"
+Henderson County (Henderson, KY)",350,2,11,0,210,16.15,Eden Prairie A,150,3,4,5,90,12.86,21
+"
+Raleigh Charter",320,2,10,2,200,16.67,Southside B,125,1,5,0,60,10.00,18
+"
+McLean A",370,2,9,0,250,22.73,Okemos,180,1,6,3,120,17.14,18
+"
+Wando A",310,1,10,3,210,19.09,Benet Academy,120,1,3,1,80,20.00,20
+"
+Cistercian B",235,0,11,1,130,11.82,Dutch Fork B,45,0,4,1,10,2.50,20
+"
+Edgewood",220,1,11,3,110,9.17,Wando B,40,0,3,4,30,10.00,21
+"
+Glasgow",380,3,9,1,250,20.83,Vista Del Lago A,205,1,7,4,140,17.50,20
+"
+South Burlington",315,4,8,3,190,15.83,John Adams A,140,0,6,0,80,13.33,24
+"
+Cistercian C",310,3,8,1,190,17.27,Friends Select B,135,0,6,1,80,13.33,20
+"
+Darien A",365,8,4,5,230,19.17,Centennial A,195,2,6,1,110,13.75,23
+"
+Strake Jesuit B",350,4,8,2,220,18.33,Canyon Crest B,185,1,7,2,110,13.75,23
+"
+Johns Creek A",255,3,7,2,150,15.00,Eden Prairie B,90,0,4,2,60,15.00,16
+"
+Beavercreek",365,7,5,2,220,18.33,Silver Spring Scholars A,205,1,6,2,140,20.00,19
+"
+Farmington Hills Mercy",215,1,10,0,100,9.09,"Troy (Fullerton, CA)",60,1,1,1,40,20.00,17
+"
+BASIS McLean",205,2,7,3,120,13.33,Weston,55,0,3,1,30,10.00,17
+"
+Decatur",280,4,6,2,170,17.00,St. Louis Park,135,1,5,2,80,13.33,22
+"
+Ysleta",180,0,9,0,90,10.00,Grand Junction A,40,0,4,4,20,5.00,21
+"
+Jesuit",250,1,10,3,150,13.64,McLean B,115,0,4,1,80,20.00,17
+"
+Wissahickon",280,2,10,0,150,12.50,Centennial B,145,1,5,2,90,15.00,19
+"
+Dunbar A",250,4,6,0,130,13.00,Westminster B,120,1,3,1,80,20.00,14
+"
+Wayzata C",245,1,9,2,150,15.00,Cistercian A,115,3,2,4,70,14.00,19
+"
+Oswego East",200,1,9,1,100,10.00,Wade Hampton,75,0,5,3,40,8.00,19
+"
+Wayzata A",370,7,4,3,240,21.82,White Station A,250,2,7,2,160,17.78,20
+"
+Mounds Park",200,2,7,2,110,12.22,Johns Creek C,85,0,5,1,40,8.00,21
+"
+Lambert",480,8,5,2,320,24.62,Great Valley A,370,6,5,2,240,21.82,24
+"
+Friends Select A",275,0,12,1,160,13.33,Maine East,165,0,7,1,100,14.29,22
+"
+East Chapel Hill A",340,6,5,2,210,19.09,Saratoga,240,3,4,1,160,22.86,21
+"
+Staples",255,0,9,3,180,20.00,Wilton,155,0,8,3,90,11.25,21
+"
+Thomas Jefferson Classical",290,1,10,1,180,16.36,Northfield,195,2,6,1,110,13.75,20
+"
+Hopkins",275,4,5,1,170,18.89,Myers Park,180,1,6,1,110,15.71,22
+"
+Ithaca",310,2,9,2,200,18.18,Providence,220,0,9,2,140,15.56,20
+"
+Sparkman",240,1,9,1,140,14.00,St. Vincent-St. Mary,150,0,7,4,100,14.29,20
+"
+Arab",140,0,8,2,70,8.75,Holton,50,0,4,0,10,2.50,18
+"
+Fletcher",160,1,6,1,90,12.86,DeLaSalle,80,0,5,4,50,10.00,16
+"
+Carbondale",240,1,9,3,150,15.00,Champlain Valley,165,0,8,1,90,11.25,19
+"
+East Grand Rapids",185,1,8,0,90,10.00,Grand Junction B,110,2,4,2,50,8.33,21
+"
+Thales Academy-Rolesville",175,0,9,1,90,10.00,Eastlake,105,1,4,2,60,12.00,19
+"
+Coalgate",165,1,8,0,70,7.78,Flowery Branch,100,0,6,0,40,6.67,19
+"
+Berwick",150,0,7,0,80,11.43,Centennial C,90,0,6,6,60,10.00,19
+"
+Harker A",250,1,9,1,150,15.00,Wayzata B,195,1,7,4,130,16.25,18
+"
+Lake Braddock",215,0,10,1,120,12.00,Darien B,160,1,6,3,100,14.29,19
+"
+Manheim Township B",190,2,6,0,100,12.50,Cinco Ranch B,135,1,6,2,70,10.00,19
+"
+Loyola Academy",180,0,7,0,110,15.71,Wayzata F,135,1,6,0,60,8.57,17
+"
+Paideia",250,1,9,1,150,15.00,Johns Creek B,210,2,6,2,130,16.25,22
+"
+Westminster A",305,2,8,1,200,20.00,Mira Loma,270,4,6,6,180,18.00,23
+"
+Northmont A",230,0,10,0,130,13.00,Hewitt-Trussville,200,1,7,1,120,15.00,18
+"
+Silver Spring Scholars B",215,1,9,2,120,12.00,Macomb,185,1,7,2,110,13.75,20
+"
+Wayzata D",120,0,6,0,60,10.00,Northmont B,95,0,6,1,40,6.67,17
+"
+Catholic",185,1,7,6,130,16.25,Wayzata E,165,0,8,3,100,12.50,21
+"
+St. Joseph Central B",115,0,7,1,50,7.14,Western Dubuque,95,0,5,1,50,10.00,18
+"
+Cinco Ranch A",320,7,4,3,190,17.27,Livingston,305,5,7,0,160,13.33,24
+"
+Emmaus",165,2,6,3,90,11.25,Vista Del Lago B,150,0,7,0,80,11.43,19
+"
+North Gwinnett (OT)",220,0,11,2,120,13.33,Dutch Fork A,210,2,7,2,120,15.00,21
+"
+LAMP",155,0,7,1,90,12.86,Mandarin,145,1,6,0,70,10.00,19
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Richard Montgomery A",500,6,10,2,320,20.00,Darien A,65,1,2,6,60,20.00,21
+"
+Copley",400,1,15,3,250,15.62,LAMP,50,0,2,2,40,20.00,21
+"
+McLean B",355,2,12,1,210,15.00,Berwick,50,0,2,0,30,15.00,20
+"
+Lambert",475,9,6,4,300,20.00,Solon A,175,2,4,3,120,20.00,21
+"
+Wilton",305,2,11,1,170,13.08,Wayzata C,55,0,3,3,40,13.33,21
+"
+Saratoga",450,9,5,3,280,20.00,"Henderson County (Henderson, KY)",215,2,5,3,150,21.43,23
+"
+Wissahickon",305,3,10,2,170,13.08,John Adams A,75,1,3,0,30,7.50,22
+"
+Providence",330,4,9,0,180,13.85,East Grand Rapids,110,1,2,1,80,26.67,23
+"
+Strake Jesuit B",330,4,9,2,190,14.62,Jesuit,115,0,4,1,80,20.00,19
+"
+East Chapel Hill A",390,3,10,1,250,19.23,Westminster A,180,2,5,2,110,15.71,20
+"
+Weston",250,1,10,1,140,12.73,Oswego East,40,1,2,1,10,3.33,18
+"
+Mandarin",225,0,9,1,140,15.56,Wayzata E,15,1,0,4,20,20.00,21
+"
+St. Louis Park",300,2,9,2,190,17.27,BASIS McLean,95,1,4,2,50,10.00,23
+"
+Eden Prairie B",265,2,10,3,150,12.50,Johns Creek C,60,0,3,2,40,13.33,20
+"
+Wayzata B",310,2,9,2,200,18.18,Fletcher,110,1,4,1,60,12.00,21
+"
+Beavercreek",475,6,8,1,310,22.14,Detroit Country Day A,295,6,4,5,190,19.00,24
+"
+Wando A",310,1,11,3,200,16.67,St. Joseph Central A,140,3,3,3,80,13.33,19
+"
+Loyola Academy",245,1,10,0,130,11.82,North Kansas City,80,0,4,2,50,12.50,19
+"
+Johns Creek B",270,1,10,3,170,15.45,Catholic,110,1,5,3,60,10.00,20
+"
+Vista Del Lago B",220,0,11,2,120,10.91,Farmington Hills Mercy,60,0,3,0,30,10.00,19
+"
+Centennial B",245,2,8,5,160,16.00,Coalgate,90,0,5,0,40,8.00,19
+"
+James E. Taylor",305,1,11,2,190,15.83,Carbondale,160,2,5,4,100,14.29,20
+"
+Vista Del Lago A",255,2,8,5,170,17.00,Johns Creek A,115,1,5,4,70,11.67,21
+"
+Grand Junction B",200,1,10,1,90,8.18,Thales Academy-Rolesville,60,0,4,0,20,5.00,20
+"
+Dutch Fork B",220,2,8,0,110,11.00,Detroit Country Day B,85,0,4,1,50,12.50,23
+"
+South Burlington",275,6,6,1,130,10.83,Southside A,155,4,3,5,90,12.86,21
+"
+Dunbar B",285,2,8,1,180,18.00,Northfield,165,0,9,1,80,8.89,20
+"
+Hewitt-Trussville",275,4,6,1,160,16.00,Lake Braddock,160,1,6,1,90,12.86,21
+"
+Hopkins",275,3,8,2,160,14.55,Dutch Fork A,165,1,7,4,100,12.50,23
+"
+Westminster B",225,1,7,2,150,18.75,Manheim Township B,120,1,5,1,60,10.00,18
+"
+Cistercian A",180,3,5,3,100,12.50,DeLaSalle,75,0,6,1,20,3.33,20
+"
+Wayzata D",200,0,8,2,130,16.25,Grand Junction A,95,2,3,1,40,8.00,22
+"
+Western Dubuque",200,1,9,1,100,10.00,Wando B,95,2,2,3,60,15.00,18
+"
+Centennial A",245,2,7,3,160,17.78,Thomas Jefferson Classical,145,1,6,2,80,11.43,18
+"
+Okemos",270,2,8,2,170,17.00,North Gwinnett,180,1,7,3,110,13.75,20
+"
+Chelsea",270,2,9,2,160,14.55,Livingston,185,2,6,3,110,13.75,22
+"
+Darien B",235,3,5,2,150,18.75,Cistercian B,150,0,8,2,80,10.00,22
+"
+Central Hardin",290,3,8,3,180,16.36,Sparkman,210,0,8,0,130,16.25,20
+"
+Benet Academy",205,1,8,2,120,13.33,Emmaus,125,1,5,4,80,13.33,22
+"
+Macomb",220,2,7,2,130,14.44,Centennial C,140,1,6,3,80,11.43,21
+"
+Wade Hampton",180,2,5,4,120,17.14,Arab,105,1,4,2,60,12.00,23
+"
+McLean A",350,5,7,1,210,17.50,Greenhill,285,4,6,3,180,18.00,23
+"
+Paideia",270,2,8,2,170,17.00,Cedar Crest,205,2,6,1,120,15.00,23
+"
+Champlain Valley",160,1,7,1,80,10.00,Friends Select A,100,1,3,3,70,17.50,20
+"
+Cinco Ranch B",180,1,7,1,100,12.50,Edgewood,120,1,4,1,70,14.00,19
+"
+Friends Select B",155,0,7,1,90,12.86,St. Joseph Central B,95,0,5,1,50,10.00,21
+"
+Cinco Ranch A",290,3,6,3,200,22.22,Manheim Township A,235,2,8,3,140,14.00,23
+"
+Canyon Crest A",260,2,8,0,150,15.00,Dunbar A,205,1,7,4,140,17.50,21
+"
+Raleigh Charter",320,6,4,2,200,20.00,Glasgow,265,4,5,1,160,17.78,20
+"
+Wayzata F",165,0,7,1,100,14.29,"Troy (Fullerton, CA)",110,0,6,2,60,10.00,21
+"
+Myers Park",155,1,6,2,90,12.86,Ysleta,105,1,4,0,50,10.00,19
+"
+Southside B",170,0,8,0,90,11.25,Mounds Park,125,1,5,4,80,13.33,22
+"
+Great Valley A",355,6,5,3,230,20.91,Wayzata A,315,5,5,2,200,20.00,22
+"
+Harker B",215,4,4,1,120,15.00,Eden Prairie A,180,2,6,6,120,15.00,22
+"
+Cistercian C",210,3,4,1,130,18.57,Chamblee Charter,180,2,7,2,90,10.00,20
+"
+Flowery Branch",150,0,7,0,80,11.43,Eastlake,120,1,5,1,60,10.00,21
+"
+Northmont B",85,1,4,2,40,8.00,Holton,60,0,4,0,20,5.00,23
+"
+White Station A",210,2,6,4,140,17.50,Decatur,190,1,7,1,110,13.75,18
+"
+Staples",260,2,8,4,170,17.00,Harker A,240,2,8,2,140,14.00,23
+"
+St. Vincent-St. Mary",165,2,5,1,90,12.86,Maine East,145,0,8,5,90,11.25,21
+"
+Northmont A",265,3,6,0,160,17.78,Mira Loma,250,2,7,4,170,18.89,21
+"
+Canyon Crest B",160,1,7,1,80,10.00,Silver Spring Scholars B,145,1,6,4,90,12.86,20
+"
+Ithaca",270,3,7,1,160,16.00,Silver Spring Scholars A,265,4,5,3,170,18.89,21
+"
+Wayzata G",125,0,7,3,70,10.00,Great Valley B,120,1,5,1,60,10.00,20
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Freeman",590,6,12,2,390,21.67,John Adams B,35,0,2,1,20,10.00,22
+"
+IMSA",580,4,14,2,390,21.67,Chattahoochee F,40,0,3,2,20,6.67,21
+"
+Buffalo Grove",555,5,13,4,370,20.56,North Oconee,25,0,2,1,10,5.00,22
+"
+Arcadia",580,10,7,4,380,22.35,Burnsville C,70,1,2,1,40,13.33,23
+"
+Ridgewood A",530,5,13,3,340,18.89,Innovation Academy B,30,0,1,0,20,20.00,21
+"
+Baker",505,5,12,2,320,18.82,Burnsville A,15,0,1,1,10,10.00,19
+"
+Detroit Catholic Central A",480,3,14,3,310,18.24,Athens,-5,0,0,1,0,0.00,20
+"
+Thomas Jefferson Science & Tech A",515,7,9,4,340,21.25,Burnsville B,35,1,1,0,10,5.00,21
+"
+Carmel A",555,7,10,2,360,21.18,Jasper B,80,1,3,1,40,10.00,23
+"
+High Tech",505,6,11,5,330,19.41,Dothan,30,0,2,2,20,10.00,23
+"
+Barrington A",505,4,13,3,330,19.41,Hunter B,35,0,2,1,20,10.00,20
+"
+Seven Lakes",475,2,16,1,290,16.11,Winnebago,10,0,1,2,10,10.00,20
+"
+Kinkaid",505,5,10,4,350,23.33,Lightridge B,50,0,3,0,20,6.67,21
+"
+Homestead",505,4,13,3,330,19.41,Plano West B,75,1,2,0,40,13.33,21
+"
+East Brunswick",495,5,12,2,310,18.24,Portsmouth,70,1,3,1,30,7.50,22
+"
+Caddo Magnet",450,3,13,3,290,18.12,Chattahoochee D,30,0,2,0,10,5.00,21
+"
+University Lab",460,5,10,3,300,20.00,Kickapoo B,50,0,3,2,30,10.00,20
+"
+Adlai E. Stevenson A",435,7,8,4,270,18.00,"Clarke (Westbury, NY)",30,0,2,0,10,5.00,21
+"
+Stanton College Prep A",470,7,8,3,300,20.00,Chattahoochee C,70,1,3,5,50,12.50,22
+"
+Hoover A",435,4,13,3,260,15.29,International Academy Okma,35,0,2,1,20,10.00,21
+"
+Chattahoochee B",480,9,6,3,300,20.00,Alma Bryant,85,0,6,1,30,5.00,22
+"
+Strake Jesuit A",420,4,10,6,290,20.71,Great Valley D,45,0,4,3,20,5.00,20
+"
+Bellarmine College Prep",420,3,12,3,270,18.00,Lightridge A,50,0,3,0,20,6.67,21
+"
+Thomas Jefferson Science & Tech B",405,6,9,3,240,16.00,Ridgewood B,40,0,3,0,10,3.33,19
+"
+Ladue",435,7,8,2,260,17.33,Greater Atlanta Christian,70,1,3,1,30,7.50,21
+"
+Mission San Jose",335,1,13,6,220,15.71,Irvin,0,0,0,0,0,0.00,21
+"
+Santa Monica",390,5,9,3,240,17.14,Osbourn Park,55,0,4,1,20,5.00,20
+"
+Chattahoochee A",480,7,9,3,300,18.75,Hunter A,160,2,5,2,90,12.86,24
+"
+Langley",360,4,10,2,210,15.00,"Midtown Classical (Tallahassee, FL)",65,0,4,1,30,7.50,18
+"
+Winston Churchill",340,1,13,3,210,15.00,Thomas Jefferson Science & Tech F,55,0,3,1,30,10.00,20
+"
+Midtown (Atlanta, GA)",375,4,9,1,230,17.69,Detroit Catholic Central E,95,1,3,0,50,12.50,17
+"
+Clark (Las Vegas, NV)",365,1,13,2,230,16.43,Franklin,95,0,6,1,40,6.67,21
+"
+Irvington",365,5,8,4,230,17.69,Great Valley C,100,1,4,1,50,10.00,20
+"
+Troy (Troy, MI)",340,1,11,3,230,19.17,Chattahoochee E,85,1,4,2,40,8.00,18
+"
+Alexandria City",280,3,9,1,150,12.50,Saint Agnes,60,2,2,4,30,7.50,20
+"
+Morgantown",340,1,12,1,210,16.15,Wilmington Charter,125,1,3,2,90,22.50,18
+"
+Thomas Jefferson Science & Tech D",295,0,12,1,180,15.00,Allderdice,85,0,5,3,50,10.00,21
+"
+Plano West A",300,2,9,2,190,17.27,Ward Melville,105,0,6,1,50,8.33,22
+"
+Beaconsfield Scholars",320,1,11,1,200,16.67,Innovation Academy A,130,1,6,1,60,8.57,21
+"
+Grosse Pointe North",255,1,11,4,150,12.50,Carmel C,75,1,3,2,40,10.00,20
+"
+Moravian Academy",280,0,12,2,170,14.17,White Station C,100,0,5,0,50,10.00,18
+"
+Onalaska",235,1,10,2,130,11.82,Grissom B,80,0,5,2,40,8.00,22
+"
+Francis Parker",260,3,8,5,160,14.55,Detroit Catholic Central C,120,0,7,0,50,7.14,20
+"
+Hoover B",295,3,8,0,170,15.45,Norfolk Academic Guild,160,2,5,2,90,12.86,21
+"
+Stanford Online",260,3,6,5,180,20.00,Detroit Catholic Central D,140,2,4,0,70,11.67,20
+"
+William Fremd A",245,2,8,5,160,16.00,Grand Ledge,130,1,5,1,70,11.67,22
+"
+Richard Montgomery B",265,4,7,3,150,13.64,Leland,155,1,6,0,80,11.43,21
+"
+St. John's",225,2,8,3,130,13.00,Savannah,120,2,4,0,50,8.33,21
+"
+Thomas Jefferson Science & Tech C",230,3,7,3,130,13.00,Jasper A,125,0,6,1,70,11.67,20
+"
+Alabama Cyber Tech",210,0,10,4,130,13.00,Stillwater,105,0,7,3,50,7.14,21
+"
+Detroit Catholic Central B",265,0,12,3,160,13.33,Greenville,170,2,5,2,100,14.29,21
+"
+Barrington B",200,1,8,5,130,14.44,Herron,115,0,6,1,60,10.00,20
+"
+Stanton College Prep B",230,0,10,4,150,15.00,Saline,150,3,4,1,70,10.00,21
+"
+Heights",200,2,8,2,100,10.00,East Chapel Hill B,125,2,5,3,60,8.57,20
+"
+White Station B",180,2,6,6,120,15.00,Northwest Guilford,120,0,7,0,50,7.14,20
+"
+Brunswick",210,4,4,4,130,16.25,Bellaire,155,0,9,1,70,7.78,21
+"
+Kickapoo A",230,1,11,1,110,9.17,Westview,175,2,4,1,110,18.33,21
+"
+Downingtown STEM",210,2,8,2,110,11.00,Solon B,160,0,6,2,110,18.33,19
+"
+Carmel B",270,1,9,3,180,18.00,Walnut Hills,220,2,6,0,130,16.25,21
+"
+Hume-Fogg",190,1,8,1,100,11.11,St. Paul Academy,140,2,6,6,80,10.00,21
+"
+North Carolina Science and Math",210,2,6,2,130,16.25,Chanhassen,165,0,9,1,80,8.89,18
+"
+William Fremd B",215,3,6,2,120,13.33,Thomas Jefferson Science & Tech E,185,0,9,1,100,11.11,20
+"
+Archbishop Mitty",205,0,9,5,140,15.56,Edmond North,175,1,6,0,100,14.29,19
+"
+Irondale",205,0,10,1,110,11.00,Holy Spirit,175,1,6,0,100,14.29,18
+"
+Herberger",230,1,8,3,150,16.67,Carlisle,205,3,7,2,100,10.00,21
+"
+Del Norte",235,1,8,4,160,17.78,Lake Highland,210,1,6,1,140,20.00,19
+"
+Adlai E. Stevenson B",205,3,6,4,120,13.33,Rock Bridge,185,0,8,1,110,13.75,19
+"
+Maggie Walker Governor's School",220,2,6,4,150,18.75,Christian Brothers,205,0,10,1,110,11.00,18
+"
+Phillips Academy",130,0,7,2,70,10.00,West Point,115,1,5,4,70,11.67,21
+"
+Edison",190,2,6,2,110,13.75,"Henderson (West Chester, PA)",180,1,7,1,100,12.50,18
+"
+Chaska",205,1,8,0,110,12.22,Grissom A,195,1,7,2,120,15.00,18
+"
+Minnetonka",190,0,7,2,130,18.57,Overland Park North Scholars,185,1,8,2,100,11.11,22
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Ridgewood A",555,6,11,1,360,21.18,Phillips Academy,20,0,1,0,10,10.00,19
+"
+Detroit Catholic Central A",610,8,11,2,390,20.53,Chattahoochee B,85,2,1,3,60,20.00,23
+"
+Carmel A",555,6,12,1,350,19.44,Beaconsfield Scholars,60,1,2,1,30,10.00,22
+"
+High Tech",560,10,7,2,350,20.59,William Fremd B,70,0,3,2,50,16.67,21
+"
+Adlai E. Stevenson A",445,4,11,1,280,18.67,Irondale,30,2,0,2,10,5.00,19
+"
+Buffalo Grove",475,10,5,1,280,18.67,Hume-Fogg,100,1,4,1,50,10.00,22
+"
+IMSA",455,6,9,1,280,18.67,Carmel B,95,0,4,1,60,15.00,20
+"
+Wilmington Charter",385,0,15,1,240,16.00,Burnsville C,55,0,3,1,30,10.00,20
+"
+Thomas Jefferson Science & Tech E",320,1,14,1,170,11.33,Dothan,0,0,1,4,10,10.00,21
+"
+Homestead",395,4,11,3,240,16.00,Chaska,95,2,3,1,40,8.00,22
+"
+Kinkaid",390,5,7,5,270,22.50,White Station B,100,0,5,0,50,10.00,19
+"
+Stanford Online",390,3,11,1,240,17.14,Del Norte,105,2,2,1,60,15.00,18
+"
+Chattahoochee A",385,3,12,2,230,15.33,Maggie Walker Governor's School,100,0,4,2,70,17.50,20
+"
+Holy Spirit",320,4,10,2,170,12.14,"Clarke (Westbury, NY)",35,1,2,0,0,0.00,18
+"
+Hoover A",415,7,6,0,250,19.23,Richard Montgomery B,135,3,3,0,60,10.00,19
+"
+Ladue",380,4,9,0,230,17.69,Alexandria City,100,0,6,2,50,8.33,20
+"
+Winston Churchill",410,5,8,1,260,20.00,William Fremd A,155,3,3,4,100,16.67,20
+"
+Franklin",260,0,13,2,140,10.77,Irvin,10,0,1,0,0,0.00,21
+"
+Leland",280,0,12,2,170,14.17,International Academy Okma,30,0,3,4,20,6.67,18
+"
+Irvington",370,3,10,1,230,17.69,Detroit Catholic Central B,125,2,4,1,60,10.00,19
+"
+Thomas Jefferson Science & Tech A",430,9,4,5,280,21.54,Edison,185,3,5,0,90,11.25,24
+"
+Baker",355,2,12,3,220,15.71,Onalaska,110,1,4,1,60,12.00,22
+"
+Thomas Jefferson Science & Tech B",390,4,9,4,260,20.00,Adlai E. Stevenson B,150,3,3,1,80,13.33,21
+"
+Lake Highland",290,3,9,1,160,13.33,Detroit Catholic Central D,50,0,3,4,40,13.33,19
+"
+Walnut Hills",250,1,11,3,140,11.67,Chattahoochee F,15,0,2,1,0,0.00,19
+"
+Alma Bryant",220,1,10,1,110,10.00,Athens,0,0,1,2,0,0.00,21
+"
+Saline",280,2,9,4,180,16.36,John Adams B,80,0,6,2,30,5.00,22
+"
+Arcadia",405,6,6,3,270,22.50,Morgantown,210,2,6,2,130,16.25,21
+"
+East Brunswick",365,5,9,2,210,15.00,Thomas Jefferson Science & Tech C,175,1,6,4,120,17.14,23
+"
+Bellarmine College Prep",300,3,8,3,190,17.27,North Carolina Science and Math,115,1,5,2,60,10.00,20
+"
+Jasper A",260,4,7,2,140,12.73,Portsmouth,75,0,5,1,30,6.00,21
+"
+Northwest Guilford",250,2,9,2,140,12.73,Lightridge B,70,0,5,4,40,8.00,23
+"
+Freeman",320,4,8,4,200,16.67,Stanton College Prep B,145,2,4,3,90,15.00,20
+"
+Hunter A",305,3,10,4,180,13.85,Christian Brothers,140,1,6,1,70,10.00,22
+"
+Strake Jesuit A",400,9,3,1,240,20.00,Brunswick,240,4,5,0,130,14.44,22
+"
+Chattahoochee C",265,3,10,2,130,10.00,White Station C,105,0,5,1,60,12.00,21
+"
+Detroit Catholic Central C",245,0,10,1,150,15.00,"Midtown Classical (Tallahassee, FL)",85,1,4,2,40,8.00,19
+"
+Rock Bridge",235,1,11,2,120,10.00,Ridgewood B,75,0,5,3,40,8.00,18
+"
+Stillwater",240,2,10,0,110,9.17,Kickapoo B,85,0,4,1,50,12.50,21
+"
+Greater Atlanta Christian",260,2,10,0,130,10.83,Saint Agnes,105,1,4,6,80,16.00,19
+"
+Ward Melville",240,1,9,1,140,14.00,Hunter B,100,0,5,2,60,12.00,19
+"
+Thomas Jefferson Science & Tech D",305,3,9,0,170,14.17,"Midtown (Atlanta, GA)",170,1,5,3,120,20.00,20
+"
+Grand Ledge",250,0,11,0,140,12.73,Thomas Jefferson Science & Tech F,115,0,5,7,100,20.00,21
+"
+St. Paul Academy",245,1,10,4,150,13.64,North Oconee,115,1,5,0,50,8.33,21
+"
+Grissom A",230,1,11,1,110,9.17,Plano West B,100,1,4,3,60,12.00,19
+"
+Westview",240,2,8,2,140,14.00,Chattahoochee E,115,0,7,3,60,8.57,21
+"
+Troy (Troy, MI)",290,3,9,3,170,14.17,Kickapoo A,170,1,5,1,110,18.33,19
+"
+West Point",195,0,11,1,90,8.18,Innovation Academy B,90,1,4,3,50,10.00,24
+"
+Allderdice",235,1,10,2,130,11.82,Detroit Catholic Central E,140,0,7,2,80,11.43,22
+"
+Lightridge A",235,0,10,3,150,15.00,Chanhassen,150,1,6,3,90,12.86,20
+"
+Greenville",190,0,9,2,110,12.22,Great Valley C,105,0,7,1,40,5.71,21
+"
+Barrington B",295,2,9,1,180,16.36,St. John's,215,2,7,1,120,13.33,22
+"
+Henderson (West Chester, PA)",185,0,10,5,110,11.00,Burnsville B,105,1,4,0,50,10.00,20
+"
+Burnsville A",145,0,7,5,100,14.29,Grissom B,70,0,6,2,20,3.33,22
+"
+Barrington A",335,5,6,4,220,20.00,Plano West A,265,2,7,3,180,20.00,22
+"
+Clark (Las Vegas, NV)",275,2,8,1,170,17.00,Mission San Jose,205,2,7,3,120,13.33,20
+"
+Great Valley D",150,0,7,0,80,11.43,Bellaire,80,1,5,5,40,6.67,21
+"
+University Lab",255,1,9,4,170,17.00,Alabama Cyber Tech,190,2,7,2,100,11.11,21
+"
+Caddo Magnet",240,3,6,3,150,16.67,Minnetonka,175,2,6,1,90,11.25,20
+"
+Carlisle",145,0,7,1,80,11.43,Winnebago,85,0,6,3,40,6.67,18
+"
+Carmel C",185,0,9,5,120,13.33,Edmond North,125,1,6,2,60,8.57,22
+"
+Santa Monica",260,4,5,2,160,17.78,Heights,205,1,8,2,120,13.33,19
+"
+Herron",170,1,8,3,90,10.00,Savannah,125,0,8,1,50,6.25,22
+"
+Norfolk Academic Guild",280,5,6,5,170,15.45,Solon B,240,1,9,1,140,14.00,22
+"
+Stanton College Prep A",285,3,7,4,190,19.00,Moravian Academy,260,3,7,1,150,15.00,23
+"
+Hoover B",240,3,8,1,120,10.91,Downingtown STEM,220,1,8,3,140,15.56,22
+"
+East Chapel Hill B (OT)",110,1,7,5,50,8.33,Osbourn Park,90,0,6,2,40,6.67,20
+"
+Francis Parker",245,4,6,3,140,14.00,Langley,230,1,8,1,140,15.56,19
+"
+Innovation Academy A",175,2,6,5,110,13.75,Jasper B,160,1,7,1,80,10.00,23
+"
+Grosse Pointe North",180,0,9,2,100,11.11,Archbishop Mitty,170,2,6,2,90,11.25,19
+"
+Seven Lakes",265,1,9,0,160,16.00,Herberger,260,1,10,1,150,13.64,22
+"
+Overland Park North Scholars",155,1,7,2,80,10.00,Chattahoochee D,150,0,8,2,80,10.00,22
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Buffalo Grove",695,12,9,1,430,20.48,"Clark (Las Vegas, NV)",35,0,2,3,30,15.00,24
+"
+Arcadia",565,11,5,2,360,22.50,Barrington B,85,1,2,0,50,16.67,21
+"
+Midtown (Atlanta, GA)",480,4,13,2,300,17.65,West Point,55,0,2,1,40,20.00,20
+"
+Barrington A",565,9,7,2,370,23.12,Stanton College Prep A,170,3,3,3,110,18.33,22
+"
+Homestead",445,7,8,0,260,17.33,Thomas Jefferson Science & Tech B,70,2,1,8,70,23.33,20
+"
+Herberger",415,2,14,1,250,15.62,Alma Bryant,80,1,2,1,50,16.67,21
+"
+Archbishop Mitty",345,3,11,2,200,14.29,Great Valley D,30,0,2,2,20,10.00,21
+"
+Thomas Jefferson Science & Tech A",475,9,5,2,300,21.43,Francis Parker,170,3,4,1,90,12.86,22
+"
+Ridgewood A",405,3,10,2,270,20.77,Thomas Jefferson Science & Tech D,110,1,4,3,70,14.00,18
+"
+Kickapoo A",365,4,10,1,210,15.00,Grand Ledge,70,0,4,2,40,10.00,21
+"
+Chattahoochee B",435,5,10,6,290,19.33,Carlisle,145,0,6,3,100,16.67,22
+"
+Alabama Cyber Tech",390,4,11,0,220,14.67,Innovation Academy A,120,2,3,2,70,14.00,20
+"
+High Tech",425,9,5,2,250,17.86,Caddo Magnet,175,1,6,4,120,17.14,22
+"
+Hunter A",440,9,4,7,300,23.08,Detroit Catholic Central B,200,1,7,1,120,15.00,22
+"
+Winston Churchill",400,3,10,1,260,20.00,"Troy (Troy, MI)",190,3,4,3,120,17.14,20
+"
+Christian Brothers",315,1,11,2,200,16.67,Great Valley C,110,0,6,4,70,11.67,19
+"
+Savannah",280,1,11,1,160,13.33,Burnsville C,85,0,5,1,40,8.00,19
+"
+Heights",320,4,8,0,180,15.00,Greater Atlanta Christian,140,1,5,1,80,13.33,19
+"
+North Oconee",255,1,11,2,140,11.67,Irvin,80,0,5,0,30,6.00,21
+"
+Carmel B",300,3,8,1,180,16.36,Jasper A,130,1,6,5,80,11.43,22
+"
+Morgantown",315,5,7,4,190,15.83,Herron,145,0,7,1,80,11.43,21
+"
+Winnebago",205,1,12,4,90,6.92,Athens,35,0,3,1,10,3.33,21
+"
+Chattahoochee D",245,1,10,2,140,12.73,Dothan,90,1,4,3,50,10.00,19
+"
+Kickapoo B",235,0,12,3,130,10.83,Jasper B,85,0,4,3,60,15.00,21
+"
+Lightridge B",200,1,10,1,90,8.18,Grissom B,50,0,3,0,20,6.67,18
+"
+Hoover A",405,6,8,3,250,17.86,Bellarmine College Prep,260,5,3,3,170,21.25,23
+"
+William Fremd B",270,2,9,4,170,15.45,Overland Park North Scholars,125,0,6,3,80,13.33,21
+"
+Hunter B",300,3,8,1,180,16.36,White Station C,155,1,6,2,90,12.86,21
+"
+Chattahoochee C",235,1,9,0,130,13.00,Plano West A,105,1,5,4,60,10.00,18
+"
+Strake Jesuit A",335,5,6,6,230,20.91,Grosse Pointe North,210,3,7,1,100,10.00,22
+"
+Solon B",245,1,9,4,160,16.00,John Adams B,120,1,6,1,50,7.14,20
+"
+Stanford Online",360,5,6,1,230,20.91,Adlai E. Stevenson A,240,5,4,5,150,16.67,22
+"
+Edison",290,2,9,2,180,16.36,Detroit Catholic Central C,170,1,7,1,90,11.25,20
+"
+Moravian Academy",310,1,10,3,210,19.09,Ward Melville,190,3,5,1,100,12.50,20
+"
+Irondale",255,0,10,1,160,16.00,Lake Highland,140,1,6,3,80,11.43,18
+"
+Freeman",375,6,5,5,260,23.64,Hoover B,270,4,6,2,160,16.00,24
+"
+Del Norte",255,2,8,3,160,16.00,Holy Spirit,150,0,7,2,90,12.86,17
+"
+Northwest Guilford",220,1,8,3,140,15.56,Onalaska,120,0,7,2,60,8.57,16
+"
+North Carolina Science and Math",235,4,6,3,130,13.00,Leland,140,2,5,2,70,10.00,19
+"
+Detroit Catholic Central A",355,5,6,2,230,20.91,Seven Lakes,265,4,5,1,160,17.78,20
+"
+Langley",255,4,6,3,150,15.00,"Henderson (West Chester, PA)",165,1,5,2,110,18.33,17
+"
+William Fremd A",335,4,7,3,220,20.00,Westview,245,3,6,2,150,16.67,20
+"
+Bellaire",220,3,6,1,120,13.33,Edmond North,130,1,6,3,70,10.00,17
+"
+Midtown Classical (Tallahassee, FL)",200,1,9,3,110,11.00,Burnsville B,115,0,7,1,50,7.14,21
+"
+IMSA",360,7,4,3,230,20.91,East Brunswick,280,7,3,1,150,15.00,23
+"
+Maggie Walker Governor's School",290,1,10,3,190,17.27,Greenville,210,3,6,1,110,12.22,23
+"
+Innovation Academy B",185,0,9,1,100,11.11,Detroit Catholic Central E,105,1,4,4,70,14.00,16
+"
+Baker",380,3,9,1,250,20.83,Kinkaid,305,7,3,2,180,18.00,22
+"
+Alexandria City",210,3,7,3,110,11.00,East Chapel Hill B,135,0,7,5,90,12.86,19
+"
+St. Paul Academy",260,2,9,2,150,13.64,Mission San Jose,185,0,8,5,130,16.25,20
+"
+Downingtown STEM",245,2,8,1,140,14.00,Saline,170,1,6,3,110,15.71,21
+"
+Burnsville A",210,0,10,0,110,11.00,White Station B,135,4,4,7,70,8.75,21
+"
+Stanton College Prep B",255,1,9,0,150,15.00,Norfolk Academic Guild,185,2,6,5,120,15.00,18
+"
+Brunswick",245,2,7,5,170,18.89,Carmel C,175,0,9,1,90,10.00,18
+"
+Thomas Jefferson Science & Tech F",220,2,7,2,130,14.44,Chattahoochee E,150,0,8,2,80,10.00,19
+"
+Hume-Fogg",245,1,9,4,160,16.00,Franklin,180,0,8,0,100,12.50,18
+"
+Ladue",355,6,5,1,220,20.00,Santa Monica,295,6,4,1,170,17.00,22
+"
+Minnetonka",195,0,9,5,130,14.44,Thomas Jefferson Science & Tech E,135,1,6,0,60,8.57,19
+"
+Stillwater",185,0,10,3,100,10.00,Beaconsfield Scholars,130,2,5,4,70,10.00,19
+"
+Wilmington Charter",255,2,8,1,150,15.00,St. John's,205,3,5,2,120,15.00,21
+"
+Thomas Jefferson Science & Tech C",250,2,8,2,150,15.00,Walnut Hills,200,1,7,3,130,16.25,19
+"
+Allderdice",220,2,7,2,130,14.44,Phillips Academy,170,0,8,2,100,12.50,23
+"
+Osbourn Park",205,1,8,2,120,13.33,Saint Agnes,160,1,7,7,110,13.75,20
+"
+Detroit Catholic Central D",180,1,8,3,100,11.11,"Clarke (Westbury, NY)",135,1,5,0,70,11.67,18
+"
+Rock Bridge",185,1,8,0,90,10.00,Chaska,150,3,4,5,90,12.86,18
+"
+Grissom A",250,3,7,1,140,14.00,Adlai E. Stevenson B,220,4,6,4,120,12.00,21
+"
+Chattahoochee F",185,1,8,0,90,10.00,Portsmouth,155,1,6,2,90,12.86,19
+"
+Plano West B",180,2,6,0,90,11.25,Ridgewood B,160,2,5,2,90,12.86,20
+"
+University Lab",335,6,6,1,190,15.83,Carmel A,320,4,6,4,220,22.00,22
+"
+Irvington",305,5,6,2,180,16.36,Chattahoochee A,290,6,3,4,190,21.11,21
+"
+Richard Montgomery B",210,2,8,4,120,12.00,Lightridge A,200,0,8,0,120,15.00,20
+"
+International Academy Okma",155,0,7,1,90,12.86,Chanhassen,150,1,6,5,100,14.29,18
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Thomas Jefferson Science & Tech A",655,12,8,1,400,20.00,University Lab,110,2,1,2,80,26.67,24
+"
+St. John's",405,2,12,1,260,18.57,Innovation Academy B,25,0,2,1,10,5.00,18
+"
+Irvington",530,6,10,0,340,21.25,Homestead,155,4,1,1,90,18.00,21
+"
+Norfolk Academic Guild",410,3,13,3,250,15.62,Franklin,40,0,3,0,10,3.33,21
+"
+Kickapoo A",380,3,13,1,210,13.12,Northwest Guilford,25,0,2,3,20,10.00,23
+"
+Arcadia",535,9,6,2,350,23.33,Ridgewood A,195,4,3,3,120,17.14,23
+"
+Saline",320,2,11,0,180,13.85,North Oconee,-10,1,0,7,10,10.00,20
+"
+Hunter A",505,8,5,3,350,26.92,Thomas Jefferson Science & Tech B,195,5,3,2,100,12.50,21
+"
+Adlai E. Stevenson A",455,4,10,1,300,21.43,Carmel B,160,4,2,4,100,16.67,22
+"
+Chattahoochee A",345,5,8,4,210,16.15,Rock Bridge,70,1,3,1,30,7.50,21
+"
+Beaconsfield Scholars",320,1,12,1,190,14.62,"Midtown Classical (Tallahassee, FL)",55,1,2,4,40,13.33,20
+"
+Del Norte",395,4,8,1,260,21.67,Thomas Jefferson Science & Tech C,135,2,4,5,90,15.00,20
+"
+Alabama Cyber Tech",385,3,10,0,240,18.46,Francis Parker,135,3,3,4,80,13.33,21
+"
+Maggie Walker Governor's School",345,1,11,0,220,18.33,Grissom A,95,0,5,3,60,12.00,19
+"
+Chattahoochee C",325,2,11,3,200,15.38,Richard Montgomery B,85,2,4,3,30,5.00,21
+"
+Henderson (West Chester, PA)",260,1,12,3,140,10.77,Kickapoo B,25,0,2,3,20,10.00,21
+"
+Chattahoochee D",255,1,11,2,140,11.67,Great Valley D,25,0,2,1,10,5.00,20
+"
+Hunter B",400,3,10,3,270,20.77,Lightridge A,180,1,5,1,120,20.00,20
+"
+Heights",345,4,8,1,210,17.50,Seven Lakes,130,1,5,3,80,13.33,18
+"
+East Brunswick",275,2,10,3,160,13.33,Irondale,60,0,3,4,50,16.67,19
+"
+Carmel A",390,5,7,7,280,23.33,Edison,175,0,7,3,120,17.14,21
+"
+Santa Monica",345,3,10,0,200,15.38,Herberger,140,2,3,2,90,18.00,20
+"
+West Point",270,0,12,0,150,12.50,Savannah,65,1,3,2,30,7.50,20
+"
+Strake Jesuit A",445,8,6,1,270,19.29,High Tech,255,3,5,2,170,21.25,23
+"
+Troy (Troy, MI)",285,3,8,4,180,16.36,Burnsville A,115,1,5,0,50,8.33,20
+"
+Plano West A",275,1,9,2,180,18.00,International Academy Okma,120,1,4,1,70,14.00,17
+"
+Detroit Catholic Central B",290,1,10,1,180,16.36,Chaska,140,0,7,0,70,10.00,19
+"
+Buffalo Grove",385,5,7,2,250,20.83,Freeman,245,0,9,3,170,18.89,22
+"
+Brunswick",335,4,9,1,190,14.62,Caddo Magnet,195,0,8,5,140,17.50,22
+"
+Phillips Academy",225,3,7,2,120,12.00,Herron,90,1,4,1,40,8.00,21
+"
+Saint Agnes",195,1,9,6,120,12.00,Athens,60,0,4,0,20,5.00,20
+"
+Chanhassen",195,2,8,3,100,10.00,White Station C,60,0,3,2,40,13.33,18
+"
+Hoover B",275,2,9,3,170,15.45,Hume-Fogg,145,0,7,3,90,12.86,21
+"
+Grand Ledge",225,2,9,1,110,10.00,Lightridge B,95,0,5,1,50,10.00,19
+"
+Westview",265,2,9,3,160,14.55,White Station B,140,0,6,0,80,13.33,22
+"
+Carlisle",240,1,8,1,150,16.67,Osbourn Park,120,0,6,0,60,10.00,18
+"
+Detroit Catholic Central E",225,1,8,0,130,14.44,Burnsville C,105,0,6,1,50,8.33,20
+"
+Bellaire",260,1,10,1,150,13.64,Overland Park North Scholars,145,3,5,2,60,7.50,24
+"
+Kinkaid",370,5,8,5,240,18.46,William Fremd A,270,2,7,0,170,18.89,23
+"
+Onalaska",220,1,10,1,110,10.00,Thomas Jefferson Science & Tech F,120,2,4,2,60,10.00,22
+"
+Minnetonka",285,3,6,2,190,21.11,Grosse Pointe North,190,1,8,5,120,13.33,21
+"
+Downingtown STEM",230,0,10,4,150,15.00,St. Paul Academy,135,2,5,5,80,11.43,19
+"
+Chattahoochee E",165,0,8,1,90,11.25,Grissom B,75,0,4,3,50,12.50,17
+"
+Hoover A",425,8,6,3,260,18.57,Barrington A,340,6,3,2,230,25.56,24
+"
+John Adams B",120,0,8,2,50,6.25,Irvin,35,0,4,3,10,2.50,24
+"
+Midtown (Atlanta, GA)",320,1,11,3,210,17.50,Wilmington Charter,240,1,8,1,150,16.67,23
+"
+Clark (Las Vegas, NV)",290,2,9,4,190,17.27,Stanton College Prep B,215,1,8,2,130,14.44,21
+"
+Langley",235,3,7,4,140,14.00,Stillwater,160,2,5,0,80,11.43,17
+"
+Archbishop Mitty",195,0,9,1,110,12.22,William Fremd B,120,1,5,3,70,11.67,18
+"
+Edmond North",160,0,8,4,100,12.50,Dothan,85,2,3,3,40,8.00,18
+"
+Mission San Jose",255,1,9,2,160,16.00,Solon B,185,3,5,0,90,11.25,20
+"
+Portsmouth",220,0,10,2,130,13.00,"Clarke (Westbury, NY)",150,0,7,2,90,12.86,22
+"
+Winnebago",195,4,5,1,90,10.00,East Chapel Hill B,140,1,6,1,70,10.00,20
+"
+Chattahoochee B",225,4,5,3,130,14.44,Alexandria City,175,0,8,1,100,12.50,21
+"
+Holy Spirit",145,0,8,3,80,10.00,Chattahoochee F,95,2,3,1,40,8.00,21
+"
+Christian Brothers",235,1,9,0,130,13.00,Adlai E. Stevenson B,185,3,5,6,120,15.00,20
+"
+IMSA",370,5,8,1,220,16.92,Stanford Online,325,4,7,1,200,18.18,24
+"
+Alma Bryant",205,1,7,0,120,15.00,Greater Atlanta Christian,160,1,6,3,100,14.29,21
+"
+Bellarmine College Prep",290,4,6,2,180,18.00,Moravian Academy,250,1,9,1,150,15.00,21
+"
+Walnut Hills",205,4,5,5,120,13.33,Detroit Catholic Central D,170,0,8,0,90,11.25,21
+"
+Carmel C",200,1,8,1,110,12.22,Thomas Jefferson Science & Tech E,165,2,5,3,100,14.29,21
+"
+Stanton College Prep A",275,0,11,5,190,17.27,North Carolina Science and Math,245,4,5,1,140,15.56,22
+"
+Jasper A",195,1,8,4,120,13.33,Lake Highland,165,1,7,2,90,11.25,20
+"
+Burnsville B",150,1,7,1,70,8.75,Jasper B,120,0,6,2,70,11.67,23
+"
+Detroit Catholic Central A",395,4,7,1,270,24.55,Ladue,370,8,4,2,220,18.33,23
+"
+Greenville",205,1,8,2,120,13.33,Plano West B,180,1,8,3,100,11.11,21
+"
+Innovation Academy A",170,1,8,3,90,10.00,Detroit Catholic Central C,145,0,7,3,90,12.86,21
+"
+Leland",190,0,9,2,110,12.22,Ward Melville,170,1,6,1,100,14.29,18
+"
+Thomas Jefferson Science & Tech D",240,2,7,2,150,16.67,Morgantown,225,3,5,2,140,17.50,21
+"
+Barrington B",205,2,7,5,130,14.44,Allderdice,195,2,5,1,120,17.14,21
+"
+Ridgewood B",130,0,7,0,60,8.57,Great Valley C,120,1,6,1,50,7.14,19
+"
+Winston Churchill",370,4,9,2,230,17.69,Baker,365,7,4,2,230,20.91,24
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Baker",525,4,12,3,360,22.50,Archbishop Mitty,75,1,2,2,50,16.67,22
+"
+Caddo Magnet",430,3,12,1,270,18.00,Onalaska,5,0,1,1,0,0.00,23
+"
+Arcadia",575,7,10,0,370,21.76,Buffalo Grove,220,5,1,3,150,25.00,23
+"
+Kinkaid",440,6,9,4,280,18.67,Brunswick,115,0,5,5,90,18.00,22
+"
+Hoover A",425,3,10,4,300,23.08,Downingtown STEM,120,1,3,1,80,20.00,21
+"
+Freeman",405,1,12,0,270,20.77,Chattahoochee C,110,2,3,4,70,14.00,20
+"
+Adlai E. Stevenson A",390,4,9,2,250,19.23,Heights,110,3,2,1,50,10.00,20
+"
+Mission San Jose",360,3,11,3,220,15.71,Morgantown,85,0,4,3,60,15.00,21
+"
+Richard Montgomery B",285,2,9,5,190,17.27,Herron,35,0,3,1,10,3.33,23
+"
+Thomas Jefferson Science & Tech B",370,4,9,4,240,18.46,Beaconsfield Scholars,120,0,5,2,80,16.00,24
+"
+Chattahoochee A",375,4,8,5,260,21.67,Alabama Cyber Tech,140,0,7,2,80,11.43,22
+"
+Midtown (Atlanta, GA)",360,1,11,3,250,20.83,Leland,140,0,6,0,80,13.33,19
+"
+Chaska",240,0,11,4,150,13.64,Burnsville B,20,0,1,0,10,10.00,21
+"
+Solon B",300,2,11,0,160,12.31,Lightridge A,80,0,3,0,50,16.67,19
+"
+Barrington A",405,3,10,0,260,20.00,Barrington B,190,2,5,4,130,18.57,20
+"
+Detroit Catholic Central A",385,4,9,3,250,19.23,IMSA,180,3,4,3,110,15.71,21
+"
+Wilmington Charter",300,3,8,1,180,16.36,Norfolk Academic Guild,110,0,5,4,80,16.00,20
+"
+Ladue",330,5,6,3,210,19.09,Del Norte,145,1,6,2,80,11.43,21
+"
+Thomas Jefferson Science & Tech F",235,1,10,0,120,10.91,Overland Park North Scholars,50,1,3,5,30,7.50,20
+"
+Adlai E. Stevenson B",240,0,10,8,180,18.00,"Midtown Classical (Tallahassee, FL)",55,0,4,1,20,5.00,20
+"
+St. Paul Academy",220,1,9,5,140,14.00,Phillips Academy,40,0,2,2,30,15.00,21
+"
+Hunter B",255,2,8,3,160,16.00,Stanton College Prep B,80,0,4,4,60,15.00,22
+"
+Troy (Troy, MI)",315,3,8,2,200,18.18,Minnetonka,150,1,6,1,80,11.43,23
+"
+Ward Melville",200,0,10,2,110,11.00,John Adams B,35,0,3,1,10,3.33,19
+"
+Carmel C",230,4,5,0,120,13.33,Northwest Guilford,70,0,4,0,30,7.50,23
+"
+Grosse Pointe North",260,1,10,3,160,14.55,Grand Ledge,105,0,5,1,60,12.00,19
+"
+Lake Highland",235,0,10,1,140,14.00,Saint Agnes,80,1,4,1,30,6.00,21
+"
+Detroit Catholic Central E",205,1,8,0,110,12.22,International Academy Okma,50,0,4,2,20,5.00,18
+"
+Clarke (Westbury, NY)",175,1,7,2,100,12.50,Athens,20,0,2,0,0,0.00,18
+"
+Grissom A",205,0,8,1,130,16.25,Innovation Academy A,55,1,3,6,40,10.00,23
+"
+Thomas Jefferson Science & Tech A",315,6,4,5,210,21.00,Irvington,170,1,6,1,100,14.29,18
+"
+Henderson (West Chester, PA)",235,1,9,4,150,15.00,Rock Bridge,90,1,3,1,50,12.50,23
+"
+North Carolina Science and Math",225,2,7,3,140,15.56,Saline,80,2,2,4,50,12.50,22
+"
+Strake Jesuit A",350,3,8,3,240,21.82,Winston Churchill,210,2,5,2,140,20.00,20
+"
+Ridgewood A",345,4,7,3,230,20.91,Bellarmine College Prep,205,3,4,2,130,18.57,21
+"
+Thomas Jefferson Science & Tech C",275,4,6,3,170,17.00,Alma Bryant,135,0,7,1,70,10.00,20
+"
+William Fremd A",275,2,8,1,170,17.00,Bellaire,135,0,7,3,80,11.43,18
+"
+Thomas Jefferson Science & Tech E",205,2,7,3,120,13.33,Chattahoochee E,65,0,4,3,40,10.00,20
+"
+Grissom B",175,0,9,1,90,10.00,Dothan,35,0,2,3,30,15.00,21
+"
+Edison",250,1,8,3,170,18.89,Christian Brothers,115,1,4,2,70,14.00,20
+"
+Lightridge B",160,0,8,0,80,10.00,Great Valley D,30,0,2,0,10,5.00,20
+"
+Detroit Catholic Central D",215,0,9,1,130,14.44,East Chapel Hill B,85,0,5,3,50,10.00,23
+"
+Jasper B",175,2,6,1,90,11.25,Great Valley C,45,0,4,5,30,7.50,23
+"
+High Tech",305,5,6,2,180,16.36,Kickapoo A,200,2,5,2,130,18.57,21
+"
+Franklin",165,1,6,0,90,12.86,White Station C,60,0,5,4,30,6.00,17
+"
+East Brunswick",295,1,10,2,190,17.27,Santa Monica,200,4,4,6,130,16.25,21
+"
+Homestead",345,2,9,1,230,20.91,Langley,260,4,6,0,140,14.00,22
+"
+Irondale",190,2,6,2,110,13.75,Winnebago,105,1,5,0,40,6.67,20
+"
+Burnsville C",105,1,5,2,50,8.33,Irvin,20,0,2,0,0,0.00,23
+"
+Detroit Catholic Central B",235,0,10,1,140,14.00,Stillwater,155,0,6,1,100,16.67,19
+"
+Plano West A",225,2,8,1,120,12.00,Allderdice,145,1,6,6,100,14.29,22
+"
+Innovation Academy B",165,2,7,1,70,7.78,North Oconee,85,0,4,3,60,15.00,22
+"
+Francis Parker",240,1,7,3,170,21.25,Greenville,170,0,8,4,110,13.75,22
+"
+Stanford Online",265,3,6,2,170,18.89,Chattahoochee B,205,3,6,2,110,12.22,18
+"
+Detroit Catholic Central C",195,0,8,1,120,15.00,Ridgewood B,135,0,6,1,80,13.33,18
+"
+Clark (Las Vegas, NV)",250,0,10,2,160,16.00,Thomas Jefferson Science & Tech D,195,0,8,3,130,16.25,20
+"
+St. John's",215,2,8,5,130,13.00,Hume-Fogg,160,0,6,2,110,18.33,22
+"
+Carmel A",455,6,6,1,310,25.83,Hunter A,405,8,4,5,270,22.50,24
+"
+William Fremd B",215,2,7,1,120,13.33,Westview,165,0,7,1,100,14.29,17
+"
+Chanhassen",180,0,9,2,100,11.11,Savannah,130,0,6,0,70,11.67,21
+"
+Osbourn Park",125,1,5,2,70,11.67,Chattahoochee F,75,0,5,3,40,8.00,19
+"
+University Lab",255,5,5,4,150,15.00,Maggie Walker Governor's School,215,2,5,1,140,20.00,21
+"
+Moravian Academy",205,1,8,2,120,13.33,West Point,165,2,5,1,90,12.86,19
+"
+White Station B",160,0,7,0,90,12.86,Edmond North,130,0,7,4,80,11.43,23
+"
+Jasper A",215,2,7,1,120,13.33,Alexandria City,190,0,8,0,110,13.75,19
+"
+Stanton College Prep A (OT)",255,6,4,3,140,20.00,Hoover B,240,2,8,0,130,14.44,23
+"
+Carlisle",180,1,7,3,110,13.75,Carmel B,165,0,7,1,100,14.29,19
+"
+Chattahoochee D",130,0,6,2,80,13.33,Burnsville A,115,1,5,2,60,10.00,21
+"
+Portsmouth",155,0,9,3,80,8.89,Greater Atlanta Christian,140,1,7,1,60,7.50,20
+"
+Kickapoo B",125,0,8,1,50,6.25,Plano West B,110,0,7,2,50,7.14,19
+"
+Herberger",135,2,4,1,70,11.67,Walnut Hills,130,0,6,4,90,15.00,17
+"
+Holy Spirit",205,0,10,1,110,11.00,Seven Lakes,200,0,7,2,140,20.00,21
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Morgantown",425,4,11,1,260,17.33,Kickapoo B,40,1,2,3,20,6.67,20
+"
+Hunter A",480,6,7,4,340,26.15,St. John's,100,0,5,0,50,10.00,20
+"
+Carmel A",525,6,9,3,360,24.00,Winston Churchill,210,3,5,1,120,15.00,23
+"
+Hoover A",415,4,11,1,250,16.67,East Brunswick,125,2,2,5,100,25.00,22
+"
+Detroit Catholic Central B",415,2,13,1,260,17.33,Carmel C,130,3,3,1,60,10.00,21
+"
+Lake Highland",325,1,12,0,190,14.62,West Point,85,1,3,6,70,17.50,20
+"
+Walnut Hills",315,2,9,1,200,18.18,Chanhassen,80,0,5,2,40,8.00,19
+"
+Arcadia",450,7,6,1,290,22.31,Strake Jesuit A,225,3,5,4,150,18.75,22
+"
+Del Norte",340,2,10,2,220,18.33,Plano West A,115,1,4,2,70,14.00,18
+"
+Moravian Academy",280,2,9,0,160,14.55,Archbishop Mitty,70,1,4,5,40,8.00,19
+"
+Adlai E. Stevenson B",325,4,7,1,200,18.18,Stanton College Prep B,120,0,6,4,80,13.33,18
+"
+Innovation Academy B",265,2,10,1,140,11.67,Burnsville A,70,0,4,2,40,10.00,19
+"
+Greenville",240,2,10,2,120,10.00,Lightridge B,50,0,3,2,30,10.00,22
+"
+Chaska",280,2,9,0,160,14.55,Carmel B,95,2,3,7,70,14.00,19
+"
+Midtown (Atlanta, GA)",400,4,9,4,270,20.77,Downingtown STEM,220,1,7,1,140,17.50,22
+"
+Grissom A",315,1,11,2,200,16.67,William Fremd B,135,1,5,4,90,15.00,20
+"
+Thomas Jefferson Science & Tech D",310,1,10,1,200,18.18,Caddo Magnet,135,1,6,8,100,14.29,21
+"
+Bellarmine College Prep",275,2,10,5,170,14.17,Chattahoochee D,100,1,4,1,50,10.00,20
+"
+Clark (Las Vegas, NV)",355,1,11,0,230,19.17,Stanford Online,195,3,4,6,140,20.00,22
+"
+Hoover B",310,4,7,2,190,17.27,Francis Parker,165,1,7,4,100,12.50,20
+"
+Saline",265,1,9,2,170,17.00,Osbourn Park,120,0,6,4,80,13.33,19
+"
+Adlai E. Stevenson A",365,4,7,1,240,21.82,Homestead,225,3,6,4,140,15.56,23
+"
+High Tech",385,4,9,3,250,19.23,University Lab,250,3,5,1,160,20.00,22
+"
+Edison",350,4,8,2,220,18.33,Kickapoo A,220,2,7,0,120,13.33,22
+"
+Bellaire",265,0,10,1,170,17.00,Ward Melville,140,0,6,0,80,13.33,18
+"
+Chattahoochee E",230,1,9,1,130,13.00,International Academy Okma,105,1,6,6,60,8.57,21
+"
+Saint Agnes",245,1,10,2,140,12.73,Savannah,120,0,7,0,50,7.14,18
+"
+Grand Ledge",275,0,11,1,170,15.45,Detroit Catholic Central C,155,2,5,5,100,14.29,22
+"
+Thomas Jefferson Science & Tech B",335,6,4,5,230,23.00,Brunswick,220,3,6,1,120,13.33,23
+"
+Portsmouth",235,1,9,0,130,13.00,Christian Brothers,120,0,7,2,60,8.57,21
+"
+Grosse Pointe North",280,2,10,2,160,13.33,Chattahoochee C,170,2,5,2,100,14.29,20
+"
+Seven Lakes",255,1,9,2,160,16.00,Thomas Jefferson Science & Tech F,145,0,7,3,90,12.86,19
+"
+Plano West B",205,0,10,1,110,11.00,Grissom B,95,1,4,2,50,10.00,20
+"
+Midtown Classical (Tallahassee, FL)",175,1,7,2,100,12.50,John Adams B,65,0,5,1,20,4.00,20
+"
+Barrington B",250,4,6,4,150,15.00,Carlisle,145,1,5,0,80,13.33,19
+"
+Alexandria City",210,0,9,2,130,14.44,Phillips Academy,105,0,8,3,40,5.00,19
+"
+Dothan",115,1,8,4,40,4.44,Irvin,10,0,1,0,0,0.00,17
+"
+Wilmington Charter",270,1,10,1,160,14.55,Thomas Jefferson Science & Tech C,170,3,4,5,110,15.71,19
+"
+Ladue",440,3,10,1,300,23.08,Barrington A,345,6,4,3,230,23.00,24
+"
+Thomas Jefferson Science & Tech E",225,2,7,1,130,14.44,Allderdice,130,1,6,3,70,10.00,19
+"
+Chattahoochee B",240,1,10,5,150,13.64,"Henderson (West Chester, PA)",150,1,7,1,70,8.75,20
+"
+Detroit Catholic Central A",345,6,5,3,220,20.00,Thomas Jefferson Science & Tech A,260,4,5,2,160,17.78,20
+"
+St. Paul Academy",255,0,10,3,170,17.00,Jasper A,170,2,6,4,100,12.50,22
+"
+Stillwater",185,1,9,4,100,10.00,Northwest Guilford,100,0,5,0,50,10.00,20
+"
+Ridgewood A",400,3,9,5,290,24.17,Baker,325,4,6,3,220,22.00,24
+"
+Norfolk Academic Guild",220,1,10,5,130,11.82,Alma Bryant,145,2,5,1,70,10.00,19
+"
+White Station C",195,0,11,3,100,9.09,Chattahoochee F,120,1,5,1,60,10.00,21
+"
+Herron",150,1,7,1,70,8.75,Franklin,80,0,5,4,50,10.00,20
+"
+Hunter B",265,3,7,4,170,17.00,Santa Monica,200,0,9,2,120,13.33,23
+"
+Leland",185,0,8,3,120,15.00,Winnebago,125,0,7,3,70,10.00,19
+"
+Troy (Troy, MI)",305,6,4,1,180,18.00,Irvington,255,3,6,4,170,18.89,21
+"
+Lightridge A",200,1,8,1,110,12.22,"Clarke (Westbury, NY)",150,1,5,1,90,15.00,16
+"
+Stanton College Prep A",360,5,7,1,220,18.33,IMSA,315,4,7,3,200,18.18,23
+"
+North Carolina Science and Math",210,1,8,1,120,13.33,Alabama Cyber Tech,165,2,6,5,100,12.50,20
+"
+Richard Montgomery B",210,1,8,3,130,14.44,Holy Spirit,165,0,8,1,90,11.25,17
+"
+Hume-Fogg",210,2,8,0,100,10.00,Detroit Catholic Central D,165,1,6,0,90,12.86,19
+"
+Burnsville C",145,1,6,2,80,11.43,Great Valley D,100,0,7,0,30,4.29,20
+"
+Edmond North",165,1,7,2,90,11.25,Burnsville B,125,1,6,0,50,7.14,18
+"
+Great Valley C",140,1,5,1,80,13.33,Athens,100,0,6,0,40,6.67,23
+"
+White Station B",185,1,7,2,110,13.75,Rock Bridge,155,0,7,1,90,12.86,19
+"
+Beaconsfield Scholars",195,0,9,1,110,12.22,Solon B,170,2,5,2,100,14.29,16
+"
+Maggie Walker Governor's School",280,2,9,0,160,14.55,Herberger,260,1,8,1,170,18.89,21
+"
+Kinkaid",385,4,8,3,260,21.67,Buffalo Grove,370,8,3,2,230,20.91,24
+"
+Chattahoochee A",335,1,10,4,240,21.82,Freeman,320,1,10,1,210,19.09,23
+"
+Heights",230,0,9,2,150,16.67,Mission San Jose,215,2,7,5,140,15.56,24
+"
+Minnetonka",190,1,7,3,120,15.00,Irondale,175,3,5,2,90,11.25,19
+"
+Langley",285,3,7,4,190,19.00,William Fremd A,270,2,8,2,170,17.00,21
+"
+Jasper B",150,0,9,4,80,8.89,Overland Park North Scholars,135,1,8,4,60,6.67,24
+"
+Ridgewood B",110,1,5,1,50,8.33,East Chapel Hill B,95,0,6,3,50,8.33,15
+"
+Detroit Catholic Central E",195,0,9,1,110,12.22,Onalaska,185,2,6,1,100,12.50,21
+"
+Westview",200,2,7,2,110,12.22,Innovation Academy A,190,1,8,3,110,12.22,22
+"
+Greater Atlanta Christian",145,1,8,4,70,7.78,North Oconee,135,0,7,3,80,11.43,20
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Stanford Online",450,3,13,1,280,17.50,Grissom A,95,1,3,0,50,12.50,20
+"
+Hunter A",465,5,10,6,320,21.33,Thomas Jefferson Science & Tech D,130,1,5,1,70,11.67,22
+"
+Strake Jesuit A",510,7,8,1,330,22.00,Ladue,180,3,4,1,100,14.29,22
+"
+Baker",470,7,8,1,290,19.33,St. Paul Academy,140,2,4,2,80,13.33,21
+"
+Henderson (West Chester, PA)",390,1,14,1,240,16.00,Portsmouth,75,2,1,1,40,13.33,21
+"
+Christian Brothers",335,1,13,2,200,14.29,Burnsville C,55,1,2,0,20,6.67,20
+"
+Savannah",280,2,11,0,140,10.77,Dothan,10,0,2,4,10,5.00,22
+"
+Caddo Magnet",365,3,11,4,230,16.43,Innovation Academy B,105,2,3,1,50,10.00,22
+"
+Norfolk Academic Guild",375,4,10,5,240,17.14,Jasper A,120,0,5,2,80,16.00,20
+"
+William Fremd A",380,5,9,3,230,16.43,Grand Ledge,125,0,6,1,70,11.67,22
+"
+Richard Montgomery B",335,4,9,1,190,14.62,Leland,85,2,2,1,40,10.00,19
+"
+Carmel B",355,6,7,1,200,15.38,Ridgewood B,110,1,4,1,60,12.00,22
+"
+Hunter B",360,1,12,1,230,17.69,Heights,120,2,4,6,80,13.33,22
+"
+Kickapoo A",335,2,11,1,200,15.38,White Station B,95,1,4,2,50,10.00,19
+"
+Brunswick",340,3,12,3,190,12.67,Greenville,110,1,4,1,60,12.00,23
+"
+Chattahoochee C",325,3,10,2,190,14.62,Bellaire,105,2,3,1,50,10.00,19
+"
+Buffalo Grove",405,6,6,3,270,22.50,Chattahoochee B,210,4,4,2,120,15.00,21
+"
+Chattahoochee E",285,3,11,0,130,9.29,Alma Bryant,90,1,3,1,50,12.50,19
+"
+East Chapel Hill B",220,1,10,1,110,10.00,Franklin,25,0,2,1,10,5.00,17
+"
+Ridgewood A",360,6,6,2,220,18.33,Thomas Jefferson Science & Tech A,170,4,3,4,100,14.29,19
+"
+Carmel A",455,6,7,1,300,23.08,"Clark (Las Vegas, NV)",265,3,6,0,160,17.78,22
+"
+Adlai E. Stevenson A",375,3,10,2,240,18.46,"Midtown (Atlanta, GA)",190,2,6,4,120,15.00,21
+"
+IMSA",370,6,6,2,230,19.17,Moravian Academy,190,1,7,3,120,15.00,22
+"
+Westview",260,3,8,1,140,12.73,Carmel C,80,1,4,3,40,8.00,20
+"
+Francis Parker",320,5,7,1,180,15.00,Beaconsfield Scholars,140,3,3,3,80,13.33,19
+"
+Ward Melville",245,1,10,0,130,11.82,White Station C,65,0,3,5,60,20.00,18
+"
+Freeman",325,5,6,0,190,17.27,Edison,155,2,5,1,80,11.43,18
+"
+Mission San Jose",310,2,10,4,200,16.67,Hume-Fogg,145,0,7,1,80,11.43,22
+"
+William Fremd B",225,0,11,1,120,10.91,Herron,65,0,5,1,20,4.00,18
+"
+West Point",215,0,10,1,120,12.00,Jasper B,60,0,4,2,30,7.50,17
+"
+Onalaska",215,0,11,1,110,10.00,Lightridge B,80,0,4,0,40,10.00,20
+"
+International Academy Okma",195,0,8,1,120,15.00,Great Valley C,65,0,5,3,30,6.00,22
+"
+Thomas Jefferson Science & Tech B",380,4,9,4,250,19.23,Bellarmine College Prep,260,4,4,0,160,20.00,21
+"
+Minnetonka",280,2,9,0,160,14.55,North Carolina Science and Math,165,0,7,1,100,14.29,20
+"
+Homestead",350,3,9,1,220,18.33,Maggie Walker Governor's School,240,1,8,1,150,16.67,22
+"
+Stanton College Prep B",220,1,9,3,130,13.00,Thomas Jefferson Science & Tech F,110,1,5,3,60,10.00,21
+"
+Winston Churchill",265,4,7,1,140,12.73,Barrington B,160,3,4,3,90,12.86,18
+"
+Stillwater",220,3,8,1,100,9.09,Downingtown STEM,115,0,6,3,70,11.67,19
+"
+Adlai E. Stevenson B",280,4,6,2,170,17.00,Alabama Cyber Tech,190,1,8,3,110,12.22,21
+"
+Edmond North",190,1,8,1,100,11.11,Phillips Academy,100,0,5,2,60,12.00,20
+"
+Holy Spirit",195,0,10,1,100,10.00,Winnebago,110,0,7,0,40,5.71,21
+"
+Northwest Guilford",165,2,6,1,80,10.00,Greater Atlanta Christian,80,0,5,2,40,8.00,17
+"
+Innovation Academy A",210,2,7,2,120,13.33,Saint Agnes,130,0,7,2,70,10.00,22
+"
+Rock Bridge",185,1,8,2,100,11.11,"Midtown Classical (Tallahassee, FL)",105,2,4,1,40,6.67,20
+"
+Solon B",220,3,7,1,110,11.00,Detroit Catholic Central C,140,3,3,1,70,11.67,18
+"
+Thomas Jefferson Science & Tech C",275,2,9,3,170,15.45,Alexandria City,200,4,3,0,110,15.71,22
+"
+Lightridge A",230,2,8,0,120,12.00,Allderdice,175,2,6,3,100,12.50,20
+"
+Arcadia",380,7,4,1,240,21.82,Detroit Catholic Central A,330,7,4,3,200,18.18,22
+"
+East Brunswick",255,3,7,4,160,16.00,Grosse Pointe North,205,2,6,1,120,15.00,20
+"
+Athens",90,0,6,0,30,5.00,Irvin,40,0,4,0,0,0.00,21
+"
+Chattahoochee F",105,1,5,0,40,6.67,Burnsville B,60,0,4,2,30,7.50,18
+"
+Troy (Troy, MI)",265,3,7,2,160,16.00,Kinkaid,225,2,6,3,150,18.75,19
+"
+Overland Park North Scholars",175,0,7,1,110,15.71,Great Valley D,135,0,9,1,50,5.56,23
+"
+Barrington A",265,3,6,2,170,18.89,Detroit Catholic Central B,230,5,4,1,120,13.33,18
+"
+Burnsville A",160,1,7,1,80,10.00,Kickapoo B,125,1,7,0,40,5.00,20
+"
+Santa Monica",305,3,9,4,190,15.83,Saline,275,4,5,1,170,18.89,22
+"
+John Adams B",120,1,6,1,50,7.14,"Clarke (Westbury, NY)",90,1,4,1,40,8.00,24
+"
+Hoover B",230,2,8,2,130,13.00,Langley,205,3,5,4,130,16.25,19
+"
+Walnut Hills",210,2,7,2,120,13.33,Carlisle,185,0,8,1,110,13.75,18
+"
+Chattahoochee D",185,3,6,0,80,8.89,Detroit Catholic Central E,160,0,8,0,80,10.00,19
+"
+Stanton College Prep A",280,2,9,0,160,14.55,Chattahoochee A,260,5,3,1,160,20.00,20
+"
+Herberger",190,1,7,1,110,13.75,Chaska,170,5,3,3,80,10.00,18
+"
+Morgantown",245,2,7,3,160,17.78,St. John's,225,2,8,1,120,12.00,22
+"
+Detroit Catholic Central D",180,1,9,1,80,8.00,Osbourn Park,160,1,7,1,80,10.00,21
+"
+Hoover A (OT)",320,3,10,5,200,18.18,High Tech,305,5,6,4,190,19.00,25
+"
+Irondale",230,3,8,1,110,10.00,Seven Lakes,215,0,9,1,130,14.44,23
+"
+Wilmington Charter",260,2,9,0,140,12.73,University Lab,250,1,7,1,170,21.25,20
+"
+Grissom B",110,1,4,1,60,12.00,North Oconee,100,1,6,3,40,5.71,20
+"
+Irvington",300,4,6,0,180,18.00,Del Norte,295,3,8,0,170,15.45,21
+"
+Plano West A (OT)",190,3,5,1,100,12.50,Lake Highland,185,2,8,1,80,8.89,18
+"
+Thomas Jefferson Science & Tech E",145,1,6,4,90,12.86,Archbishop Mitty,140,2,6,2,60,7.50,22
+"
+Plano West B",200,2,7,2,110,12.22,Chanhassen,195,3,5,0,100,12.50,20
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Buffalo Grove",495,6,8,3,340,24.29,Centennial A,170,2,5,2,100,14.29,23
+"
+Detroit Country Day A",410,4,10,2,260,18.57,Minnetonka,115,2,4,1,50,8.33,20
+"
+Baker",385,5,9,2,230,16.43,Northmont A,105,2,4,1,40,6.67,20
+"
+Stanton College Prep B",325,1,14,0,170,11.33,LAMP,65,1,1,2,50,25.00,19
+"
+Solon A",410,8,6,2,240,17.14,Stanton College Prep A,160,2,4,0,90,15.00,20
+"
+Ladue",405,2,10,1,280,23.33,Strake Jesuit B,180,2,5,2,110,15.71,19
+"
+Johns Creek A",310,0,14,2,180,12.86,Onalaska,85,2,3,3,40,8.00,22
+"
+Detroit Catholic Central A",460,7,7,3,300,21.43,Beavercreek,250,3,5,3,170,21.25,23
+"
+Hunter A",445,7,6,4,300,23.08,Manheim Township A,235,3,6,4,150,16.67,23
+"
+Ithaca",385,6,7,1,230,17.69,Stanford Online,190,2,5,2,120,17.14,20
+"
+Barrington A",415,5,8,4,280,21.54,Chelsea,225,3,6,0,120,13.33,22
+"
+Kinkaid",360,4,8,6,250,20.83,Staples,175,1,6,2,110,15.71,21
+"
+Darien A",385,5,9,2,230,16.43,Hunter B,200,4,4,2,110,13.75,22
+"
+Savannah",250,0,11,0,140,12.73,St. Joseph Central B,65,1,3,2,30,7.50,20
+"
+Winston Churchill",365,2,12,1,220,15.71,Okemos,185,2,5,7,140,20.00,21
+"
+Freeman",355,4,8,3,230,19.17,South Burlington,175,2,6,1,90,11.25,20
+"
+North Oconee",255,2,9,1,140,12.73,Arab,75,0,3,1,50,16.67,21
+"
+Raleigh Charter",285,4,8,5,170,14.17,"Clark (Las Vegas, NV)",115,0,5,1,70,14.00,19
+"
+DeLaSalle",255,3,10,2,120,9.23,Overland Park North Scholars,90,1,3,1,50,12.50,22
+"
+Strake Jesuit A",375,4,8,1,240,20.00,Cinco Ranch A,215,1,7,2,140,17.50,20
+"
+Emmaus",250,1,11,1,130,10.83,Rock Bridge,100,1,5,3,50,8.33,22
+"
+Centennial C",235,4,5,3,140,15.56,Franklin,85,0,6,1,30,5.00,19
+"
+Mandarin",205,2,10,1,80,6.67,Innovation Academy B,65,1,3,4,40,10.00,19
+"
+Canyon Crest A",300,2,9,0,180,16.36,IMSA,170,4,3,6,110,15.71,19
+"
+Coalgate",210,2,9,2,100,9.09,Alma Bryant,80,1,3,1,40,10.00,18
+"
+Maine East",260,2,10,4,150,12.50,International Academy Okma,140,0,6,0,80,13.33,24
+"
+Greenhill",335,3,9,4,220,18.33,East Brunswick,220,0,8,2,150,18.75,21
+"
+Saint Agnes",220,1,8,1,130,14.44,Cistercian B,105,1,5,2,50,8.33,20
+"
+Great Valley A",320,7,5,3,180,15.00,"Troy (Troy, MI)",215,4,4,3,130,16.25,22
+"
+Thales Academy-Rolesville",160,1,7,1,80,10.00,Phillips Academy,55,0,4,5,40,10.00,20
+"
+Great Valley C",155,0,9,1,70,7.78,Eastlake,50,0,4,2,20,5.00,20
+"
+Christian Brothers",240,3,6,1,140,15.56,Mounds Park,140,1,6,1,70,10.00,22
+"
+Arcadia",410,6,6,6,290,24.17,Lambert,315,2,9,3,210,19.09,23
+"
+Catholic",235,3,7,2,130,13.00,Plano West B,140,0,7,2,80,11.43,20
+"
+Johns Creek C",155,0,9,1,70,7.78,John Adams B,65,1,3,2,30,7.50,19
+"
+Wilmington Charter",315,4,7,1,190,17.27,Wando A,230,1,9,3,140,14.00,23
+"
+Kickapoo B",185,1,9,2,90,9.00,Western Dubuque,100,0,5,0,50,10.00,20
+"
+North Kansas City",180,1,9,1,80,8.00,Burnsville C,100,2,5,0,20,2.86,19
+"
+Holton",95,0,6,1,40,6.67,Irvin,15,0,2,3,10,5.00,24
+"
+Allderdice",195,2,8,3,100,10.00,Ysleta,120,0,7,0,50,7.14,18
+"
+Troy (Fullerton, CA)",150,1,7,1,70,8.75,Dothan,75,0,5,3,40,8.00,23
+"
+Wayzata A",285,5,5,2,170,17.00,Hoover B,220,4,4,2,130,16.25,20
+"
+Wayzata E",130,0,8,2,60,7.50,Grissom B,65,0,4,1,30,7.50,20
+"
+Oswego East",185,2,6,1,100,12.50,Jasper B,120,0,6,0,60,10.00,19
+"
+Detroit Catholic Central C",205,1,9,2,110,11.00,Wayzata F,140,2,5,2,70,10.00,19
+"
+Wando B",115,1,5,2,60,10.00,Burnsville B,50,0,5,4,20,4.00,24
+"
+East Chapel Hill A",360,5,6,3,240,21.82,Ridgewood A,300,2,9,2,190,17.27,22
+"
+Paideia",295,2,10,1,170,14.17,Chattahoochee A,235,4,5,3,140,15.56,21
+"
+Thomas Jefferson Science & Tech A",380,10,2,8,250,20.83,James E. Taylor,325,1,11,0,200,16.67,24
+"
+Wayzata C",210,0,9,2,130,14.44,Solon B,155,3,6,4,70,7.78,23
+"
+Osbourn Park",165,0,6,1,110,18.33,Dutch Fork B,110,2,4,0,40,6.67,19
+"
+Clarke (Westbury, NY)",200,2,7,2,110,12.22,Northmont B,145,0,8,1,70,8.75,22
+"
+Wayzata D",150,0,7,4,100,14.29,White Station C,100,1,5,5,60,10.00,23
+"
+Detroit Country Day B",120,0,7,2,60,8.57,Athens,70,0,5,2,30,6.00,23
+"
+Detroit Catholic Central D",205,1,9,0,100,10.00,Friends Select A,160,1,7,3,90,11.25,20
+"
+Grand Junction A",120,0,8,4,60,7.50,Great Valley D,85,1,4,2,40,8.00,23
+"
+Chattahoochee F",160,0,8,0,80,10.00,Farmington Hills Mercy,130,1,5,3,80,13.33,18
+"
+Wade Hampton",190,1,9,3,100,10.00,Chanhassen,160,1,7,1,80,10.00,21
+"
+Thomas Jefferson Science & Tech B",310,3,8,3,200,18.18,Westminster A,285,4,7,1,160,14.55,22
+"
+Saratoga",345,6,6,1,200,16.67,Homestead,320,3,8,3,210,19.09,24
+"
+Carmel A",365,4,7,3,250,22.73,McLean A,345,5,6,0,210,19.09,22
+"
+Edgewood",160,0,6,0,100,16.67,"Midtown Classical (Tallahassee, FL)",140,1,9,3,50,5.00,19
+"
+Fletcher",200,2,8,2,100,10.00,Lightridge A,185,1,8,2,100,11.11,22
+"
+Berwick",145,1,6,2,80,11.43,Burnsville A,135,0,6,1,80,13.33,24
+"
+Great Valley B",175,0,10,1,80,8.00,Ridgewood B,165,1,6,2,100,14.29,19
+"
+Hoover A",345,7,4,2,210,19.09,Richard Montgomery A,340,5,6,3,220,20.00,22
+"
+Irvington",255,2,9,1,140,12.73,White Station A,250,4,6,2,140,14.00,22
+"
+Thomas Jefferson Science & Tech F",Forfeit, , , , , ,Flowery Branch,Forfeit, , , , , ,-
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+St. Joseph Central A",420,3,12,1,260,17.33,Irondale,60,1,2,3,40,13.33,19
+"
+Centennial B",395,4,9,1,250,19.23,Carlisle,65,1,2,2,40,13.33,20
+"
+Dunbar A",475,4,10,1,320,22.86,Chattahoochee C,170,5,2,3,90,12.86,23
+"
+Silver Spring Scholars B",345,3,10,0,200,15.38,Chattahoochee E,50,1,2,3,30,10.00,19
+"
+Del Norte",390,4,10,0,230,16.43,Canyon Crest B,115,1,3,0,70,17.50,19
+"
+Brunswick",430,3,12,1,270,18.00,Jesuit,160,1,5,1,100,16.67,23
+"
+Silver Spring Scholars A",385,10,3,3,220,16.92,Walnut Hills,145,1,5,2,90,15.00,21
+"
+Wilton",335,2,11,1,200,15.38,Grosse Pointe North,95,1,3,4,70,17.50,20
+"
+Bellaire",310,1,10,1,200,18.18,Myers Park,80,1,3,3,50,12.50,19
+"
+Lake Highland",305,0,13,1,180,13.85,Northfield,90,1,3,3,60,15.00,19
+"
+Cedar Crest",355,5,8,0,200,15.38,Francis Parker,145,2,4,1,80,13.33,20
+"
+Eden Prairie A",320,3,10,5,200,15.38,Edmond North,115,0,5,1,70,14.00,20
+"
+Thomas Jefferson Classical",335,4,7,1,210,19.09,Thomas Jefferson Science & Tech E,135,2,3,1,80,16.00,18
+"
+North Carolina Science and Math",255,1,9,4,170,17.00,Chattahoochee D,65,0,4,5,50,12.50,20
+"
+Norfolk Academic Guild",330,1,12,1,200,15.38,St. Louis Park,145,2,3,1,90,18.00,20
+"
+Jasper A",280,1,11,3,170,14.17,BASIS McLean,95,0,5,3,60,12.00,21
+"
+Ward Melville",255,0,11,3,160,14.55,Herron,80,0,4,2,50,12.50,21
+"
+Thomas Jefferson Science & Tech D",305,4,7,1,180,16.36,Vista Del Lago A,135,2,4,5,90,15.00,18
+"
+Thomas Jefferson Science & Tech C",330,2,10,2,210,17.50,Westminster B,165,3,4,4,100,14.29,21
+"
+Grand Ledge",330,2,9,0,210,19.09,Cinco Ranch B,165,0,7,1,100,14.29,22
+"
+Glasgow",375,3,9,2,250,20.83,Caddo Magnet,215,5,3,4,130,16.25,20
+"
+University Lab",360,5,8,1,210,16.15,Harker B,200,2,5,2,130,18.57,20
+"
+Greenville",225,3,7,2,120,12.00,Friends Select B,80,1,4,3,40,8.00,19
+"
+Seven Lakes",305,3,8,2,190,17.27,Vista Del Lago B,160,3,4,1,80,11.43,20
+"
+Wissahickon",305,4,6,1,190,19.00,St. Paul Academy,165,2,6,1,80,10.00,21
+"
+Carmel C",235,0,10,3,150,15.00,East Grand Rapids,95,2,4,3,40,6.67,21
+"
+Bellarmine College Prep",330,6,6,2,190,15.83,Copley,195,4,4,3,110,13.75,21
+"
+Livingston",330,4,7,0,200,18.18,Morgantown,195,4,3,1,110,15.71,19
+"
+William Fremd B",285,2,10,1,160,13.33,Leland,150,1,5,3,100,16.67,20
+"
+Westview",290,1,10,1,180,16.36,Hopkins,165,2,4,3,110,18.33,20
+"
+Mira Loma",340,5,6,1,210,19.09,Santa Monica,220,4,3,2,140,20.00,18
+"
+Alabama Cyber Tech",290,2,9,4,190,17.27,Macomb,170,2,5,2,100,14.29,22
+"
+Champlain Valley",265,1,10,2,160,14.55,Heights,150,1,5,5,110,18.33,21
+"
+Detroit Catholic Central B",275,3,8,2,160,14.55,Hewitt-Trussville,160,0,7,4,110,15.71,20
+"
+Downingtown STEM",290,2,10,2,170,14.17,Holy Spirit,175,0,6,1,120,20.00,21
+"
+William Fremd A",345,3,8,2,230,20.91,Southside A,235,5,3,4,150,18.75,20
+"
+Dutch Fork A",295,2,10,1,170,14.17,Alexandria City,185,1,6,2,120,17.14,20
+"
+Greater Atlanta Christian",185,1,9,4,100,10.00,Lightridge B,75,0,4,1,40,10.00,20
+"
+Lake Braddock",265,4,8,1,130,10.83,Innovation Academy A,160,2,4,0,90,15.00,21
+"
+Chattahoochee B",305,3,9,4,190,15.83,Southside B,205,2,6,1,120,15.00,21
+"
+Maggie Walker Governor's School",270,2,8,2,170,17.00,Benet Academy,170,2,5,2,100,14.29,20
+"
+Dunbar B",315,4,7,1,190,17.27,Plano West A,215,1,7,0,130,16.25,20
+"
+Adlai E. Stevenson A",410,4,8,2,280,23.33,High Tech,315,5,7,2,180,15.00,24
+"
+Manheim Township B",195,0,8,1,120,15.00,Chaska,100,1,4,3,60,12.00,16
+"
+Langley",255,6,4,5,150,15.00,Johns Creek B,165,1,7,2,90,11.25,20
+"
+East Chapel Hill B",185,0,9,3,110,12.22,Winnebago,110,1,5,3,60,10.00,19
+"
+Beaconsfield Scholars",265,0,10,1,170,17.00,Eden Prairie B,195,1,7,0,110,13.75,19
+"
+Mission San Jose",290,2,9,2,180,16.36,Harker A,235,5,3,0,130,16.25,21
+"
+Wayzata B",285,2,9,3,180,16.36,Moravian Academy,230,0,9,2,150,16.67,20
+"
+Edison",250,3,7,5,160,16.00,Cistercian C,195,3,6,0,90,10.00,24
+"
+Chamblee Charter",235,0,9,1,150,16.67,Carmel B,180,1,6,3,120,17.14,18
+"
+John Adams A",175,1,7,0,90,11.25,Northwest Guilford,120,0,6,2,70,11.67,22
+"
+Stillwater",260,1,9,1,160,16.00,Central Hardin,210,1,7,3,140,17.50,20
+"
+White Station B",205,2,6,1,120,15.00,Weston,155,3,3,2,90,15.00,19
+"
+Detroit Catholic Central E",190,2,7,0,90,10.00,St. Vincent-St. Mary,150,1,5,1,90,15.00,17
+"
+Grand Junction B",185,1,8,0,90,10.00,St. John's,145,1,5,2,90,15.00,18
+"
+North Gwinnett",240,0,9,0,150,16.67,Herberger,205,2,6,3,130,16.25,18
+"
+Barrington B",295,4,6,1,180,18.00,McLean B,265,0,9,1,180,20.00,22
+"
+Providence",280,2,8,4,190,19.00,Grissom A,250,0,10,0,150,15.00,23
+"
+Hume-Fogg (OT)",250,0,13,0,120,12.00,Cistercian A,220,1,7,3,150,18.75,22
+"
+Loyola Academy",210,2,6,0,120,15.00,Archbishop Mitty,180,2,6,2,100,12.50,18
+"
+Adlai E. Stevenson B",260,3,7,5,170,17.00,Carbondale,235,2,8,1,130,13.00,21
+"
+Sparkman",215,1,8,2,130,14.44,West Point,195,1,7,2,120,15.00,21
+"
+Richard Montgomery B",340,4,7,0,210,19.09,"Midtown (Atlanta, GA)",325,5,5,4,220,22.00,22
+"
+Henderson County (Henderson, KY)",235,1,9,4,150,15.00,"Henderson (West Chester, PA)",220,0,9,2,140,15.56,22
+"
+Decatur",225,4,5,1,120,13.33,Kickapoo A,210,1,8,3,130,14.44,20
+"
+Wayzata G",140,1,7,3,70,8.75,Portsmouth,125,1,5,2,70,11.67,21
+"
+Saline",240,2,7,2,150,16.67,Darien B,235,2,7,3,150,16.67,21
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Hunter A",555,8,8,1,360,22.50,Ladue,140,3,2,1,80,16.00,22
+"
+Ridgewood A",485,3,12,2,330,22.00,Ithaca,110,0,4,2,80,20.00,20
+"
+Darien B",360,1,13,1,220,15.71,Onalaska,55,0,3,3,40,13.33,19
+"
+Harker A",365,4,9,1,220,16.92,Stanton College Prep B,115,0,5,1,70,14.00,18
+"
+Detroit Country Day A",410,2,12,2,270,19.29,Wilmington Charter,170,0,7,2,110,15.71,23
+"
+Irvington",335,3,10,4,210,16.15,Paideia,100,0,5,2,60,12.00,19
+"
+Stanford Online",355,1,12,2,230,17.69,William Fremd B,120,0,6,4,80,13.33,21
+"
+Francis Parker",270,2,10,4,160,13.33,Berwick,70,2,1,0,30,10.00,20
+"
+Jesuit",335,2,10,1,210,17.50,Catholic,145,1,6,2,80,11.43,20
+"
+Mounds Park",275,2,9,1,160,14.55,Innovation Academy B,85,0,4,1,50,12.50,22
+"
+Chanhassen",210,0,9,2,130,14.44,Holton,25,0,3,1,0,0.00,21
+"
+Richard Montgomery A",430,6,8,0,260,18.57,Saratoga,250,3,5,3,170,21.25,23
+"
+Lambert",415,7,6,0,250,19.23,Hoover A,245,3,6,4,160,17.78,24
+"
+Archbishop Mitty",230,1,9,3,140,14.00,Kickapoo B,65,0,5,1,20,4.00,20
+"
+Cinco Ranch B",280,1,11,3,170,14.17,Osbourn Park,115,0,6,3,70,11.67,20
+"
+Cistercian B",195,0,10,1,100,10.00,Great Valley C,30,0,2,4,30,15.00,18
+"
+Johns Creek A",235,0,10,3,150,15.00,Mandarin,75,0,4,1,40,10.00,17
+"
+Alexandria City",265,2,9,1,150,13.64,Allderdice,105,1,6,4,50,7.14,23
+"
+Burnsville A",235,0,11,1,130,11.82,Vista Del Lago B,80,0,6,4,40,6.67,22
+"
+Thomas Jefferson Science & Tech A",410,5,7,1,270,22.50,Wayzata A,260,5,4,3,160,17.78,21
+"
+Friends Select A",215,1,9,0,110,11.00,Friends Select B,70,0,5,2,30,6.00,21
+"
+Lightridge A",205,1,10,0,90,8.18,Johns Creek C,65,0,3,1,40,13.33,20
+"
+Weston",245,0,10,1,150,15.00,Chattahoochee F,115,1,4,2,70,14.00,18
+"
+Saint Agnes",225,1,10,2,120,10.91,Edmond North,110,0,5,2,70,14.00,18
+"
+Midtown Classical (Tallahassee, FL)",210,4,5,4,120,13.33,"Clarke (Westbury, NY)",95,0,4,1,60,15.00,22
+"
+Morgantown",255,0,10,3,170,17.00,Emmaus,145,1,6,2,80,11.43,19
+"
+Rock Bridge",220,2,8,4,130,13.00,Wayzata E,110,0,6,2,60,10.00,20
+"
+Burnsville B",145,0,7,1,80,11.43,Irvin,35,0,3,1,10,3.33,23
+"
+Strake Jesuit A",355,4,8,3,230,19.17,Solon A,250,3,6,3,160,17.78,21
+"
+White Station B",235,0,10,3,150,15.00,Hopkins,135,1,5,4,90,15.00,20
+"
+Eastlake",170,0,9,0,80,8.89,Great Valley D,70,0,4,0,30,7.50,19
+"
+Irondale",220,0,9,2,140,15.56,Christian Brothers,130,0,5,2,90,18.00,19
+"
+Coalgate",200,1,8,1,110,12.22,Northwest Guilford,110,1,5,3,60,10.00,24
+"
+Franklin",185,0,8,1,110,13.75,"Troy (Fullerton, CA)",95,1,4,0,40,8.00,24
+"
+Ridgewood B",145,0,9,1,60,6.67,John Adams B,55,0,4,1,20,5.00,21
+"
+Carmel A",380,4,8,2,250,20.83,Detroit Catholic Central A,295,2,7,1,200,22.22,22
+"
+Alma Bryant",185,0,9,1,100,11.11,Burnsville C,100,0,5,2,60,12.00,19
+"
+Troy (Troy, MI)",265,1,9,0,160,16.00,Freeman,185,2,5,3,120,17.14,17
+"
+Oswego East",200,0,8,2,130,16.25,Northfield,130,1,6,1,60,8.57,21
+"
+Portsmouth",165,0,7,3,110,15.71,Thomas Jefferson Science & Tech F,100,1,4,3,60,12.00,22
+"
+BASIS McLean",155,0,8,3,90,11.25,North Kansas City,90,0,6,2,40,6.67,18
+"
+Edgewood",160,1,5,1,100,16.67,East Grand Rapids,95,0,5,1,50,10.00,20
+"
+Arab",130,0,8,0,50,6.25,Athens,65,0,4,1,30,7.50,21
+"
+Maine East",210,0,9,2,130,14.44,DeLaSalle,150,1,6,1,80,11.43,19
+"
+Barrington A",355,5,6,2,230,20.91,Thomas Jefferson Science & Tech B,300,4,6,4,200,20.00,21
+"
+Stanton College Prep A",360,4,9,2,220,16.92,Buffalo Grove,310,4,5,2,210,23.33,24
+"
+Eden Prairie B",180,1,6,1,110,15.71,Solon B,130,0,8,4,70,8.75,21
+"
+Great Valley B",205,1,8,2,120,13.33,Holy Spirit,165,0,8,1,90,11.25,18
+"
+Plano West B",190,0,9,2,110,12.22,Macomb,150,2,6,2,70,8.75,21
+"
+Innovation Academy A",175,1,6,2,110,15.71,Wayzata D,140,0,7,2,80,11.43,18
+"
+Overland Park North Scholars",165,0,9,1,80,8.89,White Station C,130,0,7,2,70,10.00,20
+"
+East Chapel Hill A",335,2,9,1,220,20.00,Great Valley A,305,5,5,4,200,20.00,21
+"
+Carbondale",170,0,9,2,90,10.00,Wayzata C,145,0,7,1,80,11.43,20
+"
+Kinkaid",275,3,6,2,180,20.00,Canyon Crest A,255,3,7,2,150,15.00,20
+"
+International Academy Okma",150,0,6,2,100,16.67,Western Dubuque,130,1,6,1,60,8.57,22
+"
+Jasper B",110,0,6,2,60,10.00,Grand Junction A,90,1,5,1,30,5.00,21
+"
+Beavercreek",325,4,8,1,190,15.83,Baker,310,5,5,3,200,20.00,22
+"
+Raleigh Charter",225,1,9,4,140,14.00,Winston Churchill,210,2,7,4,130,14.44,22
+"
+Chattahoochee D",140,0,9,2,60,6.67,Fletcher,125,1,5,2,70,11.67,22
+"
+Wade Hampton",170,1,8,1,80,8.89,Chaska,155,0,7,1,90,12.86,19
+"
+Greenhill",325,2,8,1,220,22.00,McLean A,315,3,7,0,200,20.00,20
+"
+Detroit Catholic Central C",210,0,9,2,130,14.44,Myers Park,200,2,7,0,100,11.11,20
+"
+Wando B",100,1,6,1,30,4.29,Wayzata F,90,0,5,2,50,10.00,20
+"
+Dutch Fork B",115,1,6,2,50,7.14,St. Joseph Central B,105,0,5,1,60,12.00,20
+"
+Detroit Country Day B",130,0,7,0,60,8.57,Farmington Hills Mercy,120,0,8,0,40,5.00,19
+"
+Grissom B",105,0,5,3,70,14.00,Ysleta,95,0,7,3,40,5.71,20
+"
+Chattahoochee E",110,0,7,2,50,7.14,Centennial C,105,0,6,3,60,10.00,21
+"
+Phillips Academy",Forfeit, , , , , ,Flowery Branch,Forfeit, , , , , ,-
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Carmel B",390,2,13,0,230,15.33,Savannah,40,0,2,0,20,10.00,18
+"
+Arcadia",480,7,7,3,320,22.86,Adlai E. Stevenson A,190,1,6,1,120,17.14,22
+"
+St. John's",325,2,11,1,190,14.62,LAMP,50,0,3,2,30,10.00,20
+"
+IMSA",390,3,10,1,250,19.23,Thomas Jefferson Science & Tech C,125,2,4,3,70,11.67,19
+"
+Wando A",380,1,14,3,240,16.00,Wissahickon,130,0,5,0,80,16.00,21
+"
+Homestead",450,4,11,2,290,19.33,Detroit Catholic Central B,215,1,6,2,150,21.43,22
+"
+Mira Loma",420,3,11,5,290,20.71,Bellarmine College Prep,190,2,4,4,140,23.33,22
+"
+St. Joseph Central A",340,0,13,0,210,16.15,Thomas Jefferson Science & Tech D,115,1,3,2,80,20.00,19
+"
+St. Paul Academy",340,0,13,2,220,16.92,Downingtown STEM,115,1,4,4,80,16.00,21
+"
+Saline",305,1,11,0,180,15.00,Benet Academy,80,0,4,2,50,12.50,20
+"
+Staples",315,0,13,1,190,14.62,Wilton,100,0,5,2,60,12.00,21
+"
+Midtown (Atlanta, GA)",350,3,10,3,220,16.92,Bellaire,135,0,6,3,90,15.00,19
+"
+Moravian Academy",315,0,12,3,210,17.50,Greenville,105,1,5,2,50,8.33,21
+"
+White Station A",330,2,9,2,220,20.00,Dunbar B,145,2,5,3,80,11.43,21
+"
+Manheim Township A",300,2,10,2,180,15.00,Thomas Jefferson Classical,115,0,5,1,70,14.00,20
+"
+Herberger",260,1,10,1,150,13.64,Jasper A,75,0,5,3,40,8.00,21
+"
+Westview",325,2,11,1,190,14.62,South Burlington,160,1,4,1,110,22.00,20
+"
+Dunbar A",300,1,9,1,200,20.00,Hoover B,135,2,5,3,70,10.00,20
+"
+Wayzata B",325,2,10,5,220,18.33,Mission San Jose,160,1,5,1,100,16.67,21
+"
+Vista Del Lago A",285,2,11,5,170,13.08,Hume-Fogg,120,0,6,0,60,10.00,20
+"
+Okemos",355,4,8,1,220,18.33,North Gwinnett,195,1,7,2,120,15.00,21
+"
+McLean B",250,0,11,0,140,12.73,East Chapel Hill B,95,1,5,2,40,6.67,19
+"
+North Oconee",200,0,11,2,100,9.09,Lightridge B,45,0,3,1,20,6.67,20
+"
+Seven Lakes",290,1,9,1,190,19.00,Grosse Pointe North,145,1,6,2,80,11.43,19
+"
+Providence",230,0,11,0,120,10.91,Northmont A,90,0,5,0,40,8.00,18
+"
+University Lab",325,4,7,3,210,19.09,Chelsea,185,0,7,1,120,17.14,21
+"
+Plano West A",300,2,9,2,190,17.27,Dutch Fork A,160,1,6,1,90,12.86,21
+"
+Cistercian A",195,1,8,2,110,12.22,Winnebago,55,0,4,1,20,5.00,20
+"
+Central Hardin",240,1,10,3,140,12.73,Wayzata G,105,0,5,1,60,12.00,19
+"
+James E. Taylor",315,2,10,3,200,16.67,Del Norte,185,2,5,1,110,15.71,20
+"
+Chattahoochee A",285,4,7,5,180,16.36,Edison,155,0,7,1,90,12.86,19
+"
+Kickapoo A",260,1,9,1,160,16.00,Carmel C,130,1,5,1,70,11.67,19
+"
+Johns Creek B",245,0,11,3,150,13.64,Detroit Catholic Central E,115,0,7,1,50,7.14,21
+"
+Centennial A",340,4,8,0,200,16.67,Norfolk Academic Guild,220,2,6,2,140,17.50,20
+"
+Centennial B",275,0,10,3,190,19.00,Canyon Crest B,155,0,8,1,80,10.00,22
+"
+Thomas Jefferson Science & Tech E",215,0,11,5,130,11.82,John Adams A,100,0,5,0,50,10.00,21
+"
+Eden Prairie A",300,2,10,2,180,15.00,Southside A,185,3,3,2,120,20.00,21
+"
+Henderson (West Chester, PA)",230,0,10,0,130,13.00,Silver Spring Scholars B,115,1,5,4,70,11.67,20
+"
+Walnut Hills",255,1,11,2,140,11.67,Chamblee Charter,140,0,5,2,100,20.00,21
+"
+Harker B",260,3,7,1,150,15.00,Grand Ledge,150,0,7,4,100,14.29,20
+"
+Caddo Magnet",250,2,8,2,150,15.00,Detroit Catholic Central D,140,1,6,1,70,10.00,20
+"
+Cedar Crest",290,0,11,0,180,16.36,Langley,195,4,4,5,120,15.00,21
+"
+St. Louis Park",225,1,8,0,130,14.44,Manheim Township B,130,0,7,2,70,10.00,20
+"
+Cinco Ranch A",295,2,8,1,190,19.00,Richard Montgomery B,205,1,6,2,140,20.00,18
+"
+Silver Spring Scholars A",310,4,6,2,200,20.00,Westminster A,220,1,8,1,130,14.44,20
+"
+Hewitt-Trussville",215,0,9,1,130,14.44,Ward Melville,130,0,7,2,70,10.00,20
+"
+Lake Highland",255,1,10,0,140,12.73,Westminster B,170,0,7,2,110,15.71,20
+"
+Lake Braddock",215,1,9,2,120,12.00,Chattahoochee C,130,0,7,2,70,10.00,20
+"
+Leland",260,2,8,0,150,15.00,Heights,175,0,8,1,100,12.50,20
+"
+Loyola Academy",215,0,9,1,130,14.44,Grissom A,135,0,7,3,80,11.43,18
+"
+Cistercian C",225,2,7,1,130,14.44,Grand Junction B,145,1,6,0,70,10.00,20
+"
+Northmont B",130,0,8,0,50,6.25,Dothan,50,0,4,4,30,7.50,19
+"
+William Fremd A",300,2,8,2,200,20.00,Hunter B,230,1,7,1,150,18.75,18
+"
+Clark (Las Vegas, NV)",270,1,9,1,170,17.00,Maggie Walker Governor's School,210,0,8,2,140,17.50,21
+"
+Alabama Cyber Tech",245,1,10,2,140,12.73,Southside B,190,0,8,2,120,15.00,23
+"
+Darien A",315,1,11,2,200,16.67,High Tech,265,5,4,4,170,18.89,23
+"
+Livingston",225,1,8,2,140,15.56,North Carolina Science and Math,175,2,6,1,90,11.25,19
+"
+Stillwater",255,0,10,1,160,16.00,Strake Jesuit B,210,1,9,3,120,12.00,21
+"
+Brunswick",235,1,8,2,150,16.67,Champlain Valley,190,1,8,1,100,11.11,20
+"
+West Point",210,1,8,1,120,13.33,Thales Academy-Rolesville,165,1,6,0,90,12.86,19
+"
+Glasgow",285,2,8,1,180,18.00,Chattahoochee B,245,4,6,5,150,15.00,21
+"
+Adlai E. Stevenson B",215,3,5,4,140,17.50,Barrington B,180,0,8,0,100,12.50,21
+"
+East Brunswick",250,2,8,2,150,15.00,Decatur,220,0,10,2,130,13.00,22
+"
+Sparkman",205,1,8,0,110,12.22,Santa Monica,190,0,8,2,120,15.00,21
+"
+Beaconsfield Scholars",185,1,7,2,110,13.75,Copley,175,0,9,1,90,10.00,21
+"
+Carlisle",150,0,8,0,70,8.75,Greater Atlanta Christian,140,1,5,1,80,13.33,18
+"
+St. Vincent-St. Mary",170,0,9,4,100,11.11,Herron,160,0,10,2,70,7.00,23
+"
+Minnetonka",260,0,10,0,160,16.00,"Henderson County (Henderson, KY)",255,2,8,3,160,16.00,22
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Winston Churchill",480,5,11,1,300,18.75,Minnetonka,50,0,2,2,40,20.00,19
+"
+Kinkaid",490,7,8,1,310,20.67,Ridgewood A,85,1,3,4,60,15.00,20
+"
+IMSA",535,9,7,2,340,21.25,Wayzata B,135,0,5,3,100,20.00,21
+"
+Stanford Online",510,5,10,1,340,22.67,White Station B,145,2,4,1,80,13.33,22
+"
+Beavercreek",480,8,7,0,290,19.33,Irvington,130,3,2,1,70,14.00,23
+"
+Thomas Jefferson Science & Tech B",475,8,8,3,290,18.12,Staples,135,2,3,1,80,16.00,22
+"
+Chattahoochee B",400,5,10,1,230,15.33,Cistercian C,65,1,2,2,40,13.33,19
+"
+James E. Taylor",410,5,9,3,260,18.57,Centennial A,115,2,3,1,60,12.00,20
+"
+Wayzata A",450,6,7,2,300,23.08,Brunswick,160,3,3,3,100,16.67,21
+"
+Chaska",325,2,12,1,180,12.86,Johns Creek C,55,1,2,4,40,13.33,20
+"
+Innovation Academy A",325,3,10,0,180,13.85,Friends Select A,65,0,3,1,40,13.33,18
+"
+Hunter A",495,8,6,3,330,23.57,Greenhill,240,5,3,1,140,17.50,22
+"
+McLean A",460,4,11,2,300,20.00,Livingston,205,2,4,1,140,23.33,22
+"
+Baker",460,8,6,4,300,21.43,Chattahoochee A,245,3,6,2,150,16.67,23
+"
+Hunter B",345,0,14,3,220,15.71,Chattahoochee D,130,2,4,0,60,10.00,23
+"
+White Station A",365,2,12,3,230,16.43,Providence,155,2,4,1,90,15.00,22
+"
+Buffalo Grove",445,7,6,2,290,22.31,Dunbar A,240,4,5,2,140,15.56,23
+"
+Central Hardin",340,2,10,2,220,18.33,Barrington B,135,1,6,4,80,11.43,20
+"
+Francis Parker",350,4,8,2,220,18.33,Mission San Jose,170,1,6,3,110,15.71,20
+"
+Edmond North",255,1,9,0,150,15.00,Thomas Jefferson Science & Tech F,100,0,6,2,50,8.33,19
+"
+Bellarmine College Prep",275,2,8,3,180,18.00,Lake Braddock,125,0,6,1,70,11.67,17
+"
+Seven Lakes",350,5,7,1,210,17.50,Maggie Walker Governor's School,205,3,4,2,130,18.57,20
+"
+East Grand Rapids",170,1,8,1,80,8.89,Wando B,30,0,2,2,20,10.00,20
+"
+Glasgow",285,1,10,2,180,16.36,Westview,150,0,6,0,90,15.00,19
+"
+Wilton",255,2,10,1,130,10.83,Saline,125,0,6,1,70,11.67,19
+"
+Allderdice",240,0,11,2,140,12.73,Solon B,110,0,5,2,70,14.00,19
+"
+Wayzata F",175,0,10,1,80,8.00,Athens,45,0,2,1,30,15.00,20
+"
+Clarke (Westbury, NY)",195,0,7,1,130,18.57,Burnsville B,65,0,5,1,20,4.00,22
+"
+Darien B",245,3,8,4,140,12.73,Saint Agnes,120,1,5,1,60,10.00,21
+"
+Chanhassen",265,1,9,0,160,16.00,DeLaSalle,140,0,7,4,90,12.86,22
+"
+Plano West A",300,1,9,1,200,20.00,North Carolina Science and Math,180,1,6,1,110,15.71,18
+"
+Holy Spirit",200,0,10,2,110,11.00,Kickapoo B,85,1,5,4,40,6.67,21
+"
+East Chapel Hill A",405,6,7,3,260,20.00,Lambert,295,4,5,5,210,23.33,23
+"
+Barrington A",400,3,9,1,270,22.50,"Troy (Troy, MI)",290,3,6,3,200,22.22,23
+"
+Vista Del Lago B",205,1,8,2,120,13.33,Phillips Academy,105,0,6,3,60,10.00,18
+"
+Westminster A",270,3,6,1,170,18.89,"Henderson (West Chester, PA)",175,0,9,1,90,10.00,19
+"
+Morgantown",280,2,7,2,190,21.11,North Gwinnett,185,0,8,3,120,15.00,20
+"
+Innovation Academy B",200,2,8,4,110,11.00,Dutch Fork B,110,0,6,0,50,8.33,18
+"
+Grand Junction A",135,1,5,0,70,11.67,Great Valley D,50,0,4,2,20,5.00,24
+"
+Thomas Jefferson Science & Tech A",340,7,5,3,200,16.67,Solon A,260,4,5,2,160,17.78,21
+"
+Ithaca",295,2,9,3,190,17.27,"Clark (Las Vegas, NV)",220,3,6,1,120,13.33,21
+"
+Hoover A",405,7,5,2,260,21.67,Great Valley A,335,7,3,2,210,21.00,22
+"
+Emmaus",215,0,8,1,140,17.50,Alexandria City,155,2,4,1,90,15.00,18
+"
+Chattahoochee F",175,1,8,0,80,8.89,"Midtown Classical (Tallahassee, FL)",115,1,5,2,60,10.00,22
+"
+Paideia",305,3,7,2,200,20.00,William Fremd A,250,2,7,2,160,17.78,20
+"
+Rock Bridge",180,0,8,0,100,12.50,Chattahoochee E,125,1,5,2,70,11.67,18
+"
+Onalaska",200,0,10,0,100,10.00,Myers Park,145,0,7,3,90,12.86,21
+"
+Wayzata D",230,0,10,0,130,13.00,Ridgewood B,175,2,5,3,110,15.71,18
+"
+Richard Montgomery A",370,7,4,1,230,20.91,Strake Jesuit A,320,4,7,2,200,18.18,22
+"
+Homestead",320,4,7,0,190,17.27,Wando A,270,2,7,4,190,21.11,20
+"
+Edison",235,1,9,2,140,14.00,Johns Creek B,185,1,8,4,110,12.22,20
+"
+BASIS McLean",245,1,9,2,150,15.00,Eden Prairie B,195,2,7,1,100,11.11,20
+"
+Detroit Country Day A",360,3,8,1,240,21.82,Stanton College Prep A,315,6,4,1,190,19.00,22
+"
+Maine East",170,0,8,2,100,12.50,Berwick,125,0,6,1,70,11.67,19
+"
+Burnsville C",155,2,4,1,90,15.00,John Adams B,110,1,7,1,30,3.75,23
+"
+Wayzata E",155,1,6,0,80,11.43,Detroit Country Day B,120,1,5,1,60,10.00,19
+"
+Macomb",210,0,9,2,130,14.44,Franklin,175,1,6,2,110,15.71,21
+"
+Manheim Township A",290,4,6,0,170,17.00,Canyon Crest A,260,5,5,1,140,14.00,21
+"
+Grissom B",150,0,7,2,90,12.86,North Kansas City,125,0,6,1,70,11.67,19
+"
+Henderson County (Henderson, KY)",245,2,6,1,160,20.00,Carbondale,225,0,10,1,130,13.00,19
+"
+Alma Bryant",180,1,9,1,80,8.00,Northwest Guilford,160,0,7,2,100,14.29,19
+"
+Eastlake",160,0,8,0,80,10.00,Great Valley C,140,1,7,1,60,7.50,21
+"
+University Lab",300,3,7,1,190,19.00,Okemos,285,5,5,4,180,18.00,21
+"
+Thomas Jefferson Classical (OT)",240,3,7,3,140,17.50,Jesuit,225,0,10,1,130,14.44,23
+"
+Centennial C",150,2,5,4,90,12.86,Jasper B,140,0,7,2,80,11.43,20
+"
+Farmington Hills Mercy",120,0,6,2,70,11.67,Arab,110,0,7,2,50,7.14,22
+"
+Wilmington Charter",295,2,9,1,180,16.36,Adlai E. Stevenson B,290,3,7,3,190,19.00,24
+"
+Western Dubuque",Forfeit, , , , , ,Flowery Branch,Forfeit, , , , , ,-
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Detroit Catholic Central A",535,9,7,2,340,21.25,Adlai E. Stevenson A,170,3,3,5,120,20.00,24
+"
+Silver Spring Scholars A",380,5,7,3,250,20.83,Stillwater,80,0,5,4,50,10.00,19
+"
+Northfield",305,1,12,0,170,13.08,LAMP,15,0,2,5,20,10.00,17
+"
+High Tech",410,5,8,1,260,20.00,Harker B,125,1,4,2,80,16.00,20
+"
+Chattahoochee C",325,1,13,2,190,13.57,John Adams A,60,0,3,2,40,13.33,22
+"
+Heights",300,1,11,3,190,15.83,Mandarin,60,0,5,2,20,4.00,23
+"
+St. Vincent-St. Mary",270,2,8,2,170,17.00,Oswego East,45,0,4,3,20,5.00,22
+"
+St. Joseph Central A",360,4,8,0,220,18.33,Darien A,160,4,2,2,90,15.00,19
+"
+Freeman",435,3,10,2,300,23.08,East Brunswick,235,4,5,1,130,14.44,24
+"
+Carlisle",255,1,9,4,170,17.00,Southside B,60,1,3,3,30,7.50,23
+"
+Mounds Park",285,3,7,2,180,18.00,Detroit Catholic Central E,90,0,4,2,60,15.00,17
+"
+Richard Montgomery B",305,6,5,7,200,18.18,Loyola Academy,115,1,4,0,60,12.00,23
+"
+Grissom A",320,0,12,0,200,16.67,Burnsville A,130,2,4,2,70,11.67,19
+"
+Herron",205,0,11,1,100,9.09,Cistercian B,15,1,1,4,10,5.00,21
+"
+Ladue",360,3,8,3,250,22.73,Cedar Crest,180,1,7,1,100,12.50,22
+"
+Jasper A",255,0,10,1,160,16.00,Detroit Catholic Central C,80,1,5,5,40,6.67,22
+"
+Hopkins",270,1,9,1,170,17.00,East Chapel Hill B,110,2,5,4,50,7.14,19
+"
+Thomas Jefferson Science & Tech E",280,1,10,1,170,15.45,South Burlington,125,2,4,5,80,13.33,23
+"
+St. John's",350,4,8,0,210,17.50,Stanton College Prep B,195,3,6,0,90,10.00,24
+"
+Hoover B",295,1,11,0,170,14.17,Irondale,145,2,4,3,90,15.00,18
+"
+Raleigh Charter",310,3,8,3,200,18.18,Cinco Ranch A,165,3,5,2,80,10.00,21
+"
+Dutch Fork A",205,2,9,1,90,8.18,Wade Hampton,65,0,4,3,40,10.00,18
+"
+Greater Atlanta Christian",200,2,8,2,100,10.00,International Academy Okma,65,0,4,1,30,7.50,18
+"
+Osbourn Park",255,1,9,0,150,15.00,Thales Academy-Rolesville,125,2,4,1,60,10.00,18
+"
+Copley",245,1,10,6,160,14.55,Wayzata C,120,0,6,0,60,10.00,22
+"
+Weston",235,1,9,4,150,15.00,Carmel C,110,2,4,2,50,8.33,23
+"
+Norfolk Academic Guild",310,1,11,3,200,16.67,Kickapoo A,195,3,5,2,110,13.75,22
+"
+Strake Jesuit B",300,3,7,3,200,20.00,Alabama Cyber Tech,195,1,7,2,120,15.00,21
+"
+Thomas Jefferson Science & Tech C",305,3,9,2,180,15.00,Eden Prairie A,205,2,6,3,130,16.25,22
+"
+Northmont A",255,2,9,1,140,12.73,Beaconsfield Scholars,155,1,6,4,100,14.29,23
+"
+Bellaire",240,2,6,0,150,18.75,Hewitt-Trussville,140,0,8,4,80,10.00,20
+"
+Ward Melville",265,2,8,1,160,16.00,Portsmouth,165,1,6,0,90,12.86,21
+"
+Johns Creek A",315,4,8,1,180,15.00,Del Norte,220,3,5,3,140,17.50,22
+"
+Leland",190,0,8,2,120,15.00,Wayzata G,95,1,4,2,50,10.00,21
+"
+Hume-Fogg",240,2,8,2,140,14.00,Fletcher,145,1,5,2,90,15.00,20
+"
+Chamblee Charter",195,4,5,3,100,11.11,Grand Ledge,100,0,5,2,60,12.00,19
+"
+Archbishop Mitty",245,1,9,0,140,14.00,Grand Junction B,150,1,6,1,80,11.43,19
+"
+Troy (Fullerton, CA)",115,0,7,1,50,7.14,Irvin,20,1,0,1,10,10.00,24
+"
+Downingtown STEM",200,0,11,2,100,9.09,William Fremd B,115,0,6,5,80,13.33,19
+"
+St. Joseph Central B",145,0,6,1,90,15.00,Northmont B,60,0,6,2,10,1.67,22
+"
+Carmel A",355,6,5,3,230,20.91,Arcadia,285,4,5,3,190,21.11,21
+"
+Holton",130,0,6,2,80,13.33,Dothan,60,1,3,3,30,7.50,23
+"
+Chelsea",215,1,7,0,130,16.25,Vista Del Lago A,150,2,6,6,90,11.25,17
+"
+Canyon Crest B",170,1,8,1,80,8.89,Silver Spring Scholars B,105,0,6,7,80,13.33,22
+"
+Westminster B",225,1,8,2,140,15.56,Benet Academy,160,1,5,1,100,16.67,18
+"
+Harker A",305,3,8,2,190,17.27,Wissahickon,245,3,5,0,150,18.75,22
+"
+Moravian Academy",250,1,11,3,140,11.67,St. Louis Park,190,1,6,1,120,17.14,20
+"
+McLean B",200,0,8,2,130,16.25,Great Valley B,140,1,6,3,80,11.43,20
+"
+Southside A",255,5,6,2,130,11.82,Santa Monica,195,1,6,2,130,18.57,18
+"
+Langley",275,3,8,2,160,14.55,Caddo Magnet,220,3,6,5,140,15.56,21
+"
+Centennial B",300,0,11,0,190,17.27,Herberger,245,2,7,5,170,18.89,23
+"
+Grosse Pointe North",255,1,10,4,160,14.55,Cinco Ranch B,200,1,7,1,120,15.00,21
+"
+Edgewood",185,1,7,0,100,12.50,Manheim Township B,130,0,7,0,60,8.57,19
+"
+Savannah",190,1,7,1,110,13.75,Overland Park North Scholars,140,2,5,4,80,11.43,21
+"
+Mira Loma",330,4,7,2,210,19.09,Saratoga,285,4,4,3,200,25.00,21
+"
+Decatur",235,5,5,4,130,13.00,Sparkman,190,1,7,1,110,13.75,21
+"
+Coalgate",150,0,8,0,70,8.75,Cistercian A,105,1,5,4,60,10.00,20
+"
+Champlain Valley",220,3,6,1,120,13.33,St. Paul Academy,180,1,7,3,110,13.75,20
+"
+Catholic",205,3,5,4,130,16.25,Greenville,165,1,6,4,110,15.71,23
+"
+White Station C",140,0,7,0,70,10.00,Winnebago,100,0,6,2,50,8.33,18
+"
+Midtown (Atlanta, GA)",310,4,6,4,210,21.00,Thomas Jefferson Science & Tech D,275,1,9,0,170,17.00,21
+"
+Detroit Catholic Central B",230,1,9,3,140,14.00,Lake Highland,195,2,6,3,120,15.00,24
+"
+Dunbar B",240,1,8,3,160,17.78,Walnut Hills,215,2,5,3,150,21.43,21
+"
+Ysleta",120,1,6,1,50,7.14,Lightridge B,95,0,6,1,40,6.67,21
+"
+Christian Brothers",235,1,9,0,130,13.00,Carmel B,220,4,4,2,130,16.25,22
+"
+Plano West B",200,1,6,1,130,18.57,West Point,185,2,7,1,90,10.00,19
+"
+Friends Select B",190,2,4,0,120,20.00,North Oconee,175,0,9,3,100,11.11,22
+"
+Lightridge A",180,1,8,1,90,10.00,Detroit Catholic Central D,175,1,6,0,100,14.29,19
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Solon A",600,8,10,0,380,21.11,Stanford Online,65,2,1,3,40,13.33,22
+"
+East Brunswick",355,5,8,2,210,16.15,Thomas Jefferson Science & Tech E,65,1,3,2,30,7.50,20
+"
+Norfolk Academic Guild",385,4,10,3,240,17.14,Central Hardin,125,1,4,2,80,16.00,22
+"
+Baker",420,7,7,3,260,18.57,Wilmington Charter,175,2,5,1,100,14.29,22
+"
+Thomas Jefferson Science & Tech B",425,7,6,2,270,20.77,"Midtown (Atlanta, GA)",195,3,4,2,120,17.14,20
+"
+Thomas Jefferson Science & Tech C",400,2,11,2,270,20.77,Moravian Academy,185,2,5,3,120,17.14,21
+"
+Clark (Las Vegas, NV)",380,3,10,1,240,18.46,Hoover B,165,1,7,2,90,11.25,23
+"
+Ridgewood A",430,6,7,0,270,20.77,University Lab,215,5,1,0,130,21.67,20
+"
+Strake Jesuit B",340,7,6,1,180,13.85,Canyon Crest A,160,4,1,2,100,20.00,21
+"
+Edison",315,3,9,2,190,15.83,Morgantown,165,1,6,2,100,14.29,23
+"
+Langley",300,2,9,2,190,17.27,Minnetonka,155,2,5,1,80,11.43,20
+"
+Wayzata A",315,6,4,3,200,20.00,Richard Montgomery B,175,0,6,1,120,20.00,19
+"
+Irvington",365,5,8,0,210,16.15,Homestead,225,4,3,3,150,21.43,21
+"
+Chelsea",265,5,6,4,150,13.64,Westview,130,1,5,1,70,11.67,23
+"
+Wilton",325,1,12,0,190,14.62,Johns Creek A,195,3,5,2,110,13.75,23
+"
+McLean B",250,1,9,1,150,15.00,Decatur,120,1,5,5,80,13.33,22
+"
+Staples",335,4,8,5,220,18.33,Centennial B,210,2,5,0,130,18.57,22
+"
+Cinco Ranch A",410,8,6,2,240,17.14,McLean A,285,3,5,0,190,23.75,22
+"
+Ithaca",310,4,7,2,190,17.27,IMSA,195,3,6,4,110,12.22,23
+"
+Greenhill",355,6,6,3,220,18.33,Glasgow,240,2,7,2,150,16.67,23
+"
+Centennial A",315,4,7,1,190,17.27,Hunter B,215,2,6,3,140,17.50,22
+"
+Manheim Township A",335,5,6,2,210,19.09,Adlai E. Stevenson A,235,5,3,2,140,17.50,20
+"
+Great Valley A",410,5,7,3,280,23.33,Stanton College Prep A,325,6,5,1,190,17.27,24
+"
+Wayzata B",230,3,6,5,150,16.67,Stillwater,150,1,6,1,80,11.43,22
+"
+Mira Loma",340,5,7,5,220,18.33,White Station A,260,2,7,2,170,18.89,22
+"
+Dunbar B",265,4,6,1,150,15.00,Champlain Valley,195,2,6,1,110,13.75,22
+"
+Plano West A",285,3,7,2,180,18.00,Brunswick,215,3,6,2,120,13.33,20
+"
+Troy (Troy, MI)",300,7,5,3,160,13.33,James E. Taylor,235,1,7,0,150,18.75,23
+"
+St. Joseph Central A",305,3,8,2,190,17.27,Silver Spring Scholars A,240,2,7,4,160,17.78,22
+"
+Northmont A",245,1,9,0,140,14.00,Westminster A,195,2,6,3,120,15.00,18
+"
+Darien A",310,6,5,4,190,17.27,Freeman,270,3,5,1,180,22.50,20
+"
+Francis Parker",195,2,6,3,120,15.00,Thomas Jefferson Classical,160,3,4,1,80,11.43,20
+"
+Detroit Catholic Central B",235,2,8,3,140,14.00,Adlai E. Stevenson B,205,1,7,4,140,17.50,20
+"
+Providence",210,1,8,1,120,13.33,"Henderson County (Henderson, KY)",195,2,6,5,130,16.25,21
+"
+Paideia",295,4,8,3,170,14.17,Buffalo Grove,285,4,5,3,190,21.11,22
+"
+Ladue",295,3,7,2,190,19.00,Winston Churchill,285,3,6,2,190,21.11,20
+"
+Beavercreek",Forfeit, , , , , ,Bye,Forfeit, , , , , ,-
+"
+Richard Montgomery A",Forfeit, , , , , ,Bye,Forfeit, , , , , ,-
+"
+Kinkaid",Forfeit, , , , , ,Bye,Forfeit, , , , , ,-
+"
+Strake Jesuit A",Forfeit, , , , , ,Bye,Forfeit, , , , , ,-
+"
+Raleigh Charter",Forfeit, , , , , ,Bye,Forfeit, , , , , ,-
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Dunbar B",465,5,11,0,280,17.50,Richard Montgomery B,0,1,1,5,0,0.00,19
+"
+Hunter A",500,5,10,3,340,22.67,St. Joseph Central A,160,1,5,1,100,16.67,22
+"
+Arcadia",440,6,8,2,280,20.00,Ladue,115,1,4,6,90,18.00,23
+"
+Richard Montgomery A",460,6,9,4,300,20.00,Ridgewood A,150,0,5,2,110,22.00,22
+"
+Baker",445,5,10,2,280,18.67,Raleigh Charter,145,0,6,3,100,16.67,21
+"
+Kinkaid",410,2,12,2,270,19.29,"Troy (Troy, MI)",140,1,4,3,100,20.00,20
+"
+Wayzata A",390,7,6,5,250,19.23,Paideia,120,1,4,3,80,16.00,24
+"
+Lambert",490,8,6,4,330,23.57,Mira Loma,225,4,4,1,130,16.25,24
+"
+Homestead",385,4,10,3,240,17.14,Detroit Catholic Central B,125,0,5,1,80,16.00,22
+"
+University Lab",375,6,6,1,230,19.17,Thomas Jefferson Science & Tech C,130,2,4,0,60,10.00,21
+"
+William Fremd A",395,1,13,2,260,18.57,Okemos,155,1,5,4,110,18.33,22
+"
+Detroit Catholic Central A",420,1,13,1,280,20.00,Irvington,180,3,3,3,120,20.00,21
+"
+Midtown (Atlanta, GA)",370,4,9,2,230,17.69,"Clark (Las Vegas, NV)",155,1,5,0,90,15.00,21
+"
+Silver Spring Scholars A",360,6,7,2,210,16.15,Chelsea,155,2,5,1,80,11.43,22
+"
+East Chapel Hill A",470,8,6,0,290,20.71,Solon A,265,1,8,4,190,21.11,23
+"
+McLean A",420,1,12,1,290,22.31,Wilton,220,4,4,0,120,15.00,23
+"
+Winston Churchill",315,2,9,3,210,19.09,McLean B,125,2,4,1,60,10.00,23
+"
+James E. Taylor",340,1,10,1,230,20.91,Edison,175,1,7,0,90,11.25,21
+"
+Freeman",330,1,10,3,230,20.91,Francis Parker,170,2,6,4,100,12.50,21
+"
+Detroit Country Day A",360,5,7,1,220,18.33,Thomas Jefferson Science & Tech B,205,3,5,6,140,17.50,22
+"
+Plano West A",285,1,9,0,180,18.00,Adlai E. Stevenson A,140,3,4,5,80,11.43,20
+"
+Buffalo Grove",325,5,6,2,200,18.18,East Brunswick,205,1,6,0,130,18.57,20
+"
+Dunbar A",290,1,9,1,190,19.00,Wando A,175,1,7,6,120,15.00,21
+"
+Chattahoochee A",270,1,9,1,170,17.00,Seven Lakes,175,2,4,1,110,18.33,18
+"
+Carmel A",295,3,6,2,200,22.22,Manheim Township A,215,3,5,6,150,18.75,20
+"
+Bellarmine College Prep",330,3,9,3,210,17.50,High Tech,255,1,7,2,180,22.50,22
+"
+Beavercreek",290,0,10,4,210,21.00,Ithaca,220,2,8,2,120,12.00,24
+"
+Glasgow",310,2,11,2,180,13.85,Staples,250,2,7,2,160,17.78,23
+"
+Providence",225,2,8,1,120,12.00,IMSA,170,2,6,6,110,13.75,23
+"
+Stanton College Prep A",245,2,8,3,150,15.00,Norfolk Academic Guild,190,1,8,3,110,12.22,21
+"
+Strake Jesuit A",320,3,8,1,200,18.18,Great Valley A,270,2,7,6,200,22.22,22
+"
+Cinco Ranch A",315,5,6,2,190,17.27,Barrington A,270,3,6,3,180,20.00,22
+"
+Stanford Online",280,1,9,3,190,19.00,Centennial A,240,2,7,4,160,17.78,24
+"
+Hoover A",270,1,10,5,180,16.36,Greenhill,235,1,8,4,160,17.78,22
+"
+Wilmington Charter",220,1,9,1,120,12.00,Northmont A,190,1,7,1,110,13.75,20
+"
+Saratoga (OT)",260,2,8,2,160,20.00,Chattahoochee B,230,3,7,5,140,14.00,23
+"
+Darien A",310,5,7,3,180,15.00,Thomas Jefferson Science & Tech A,290,3,6,3,200,22.22,24
+"
+White Station A",275,2,8,3,180,18.00,Strake Jesuit B,260,6,4,0,130,13.00,20
+"
+Wayzata B",Forfeit, , , , , ,Bye,Forfeit, , , , , ,-
+"
+Langley",Forfeit, , , , , ,Bye,Forfeit, , , , , ,-
+"
+Livingston",Forfeit, , , , , ,Bye,Forfeit, , , , , ,-
+"
+Cedar Crest",Forfeit, , , , , ,Bye,Forfeit, , , , , ,-
+"
+Harker A",Forfeit, , , , , ,Bye,Forfeit, , , , , ,-
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Buffalo Grove",570,9,8,1,360,21.18,Mira Loma,85,2,1,5,70,23.33,21
+"
+Greenhill",535,7,10,2,340,20.00,Dunbar B,150,2,3,2,100,20.00,24
+"
+Thomas Jefferson Science & Tech A",465,10,4,7,310,22.14,Cedar Crest,180,1,5,1,120,20.00,24
+"
+Hunter A",515,9,6,2,330,22.00,Darien A,230,6,1,2,140,20.00,24
+"
+Richard Montgomery A",435,4,10,3,290,20.71,Lambert,180,3,3,5,130,21.67,21
+"
+Arcadia",510,6,9,0,330,22.00,Wayzata A,270,5,4,3,170,18.89,24
+"
+Thomas Jefferson Science & Tech B",400,7,6,5,260,20.00,Wayzata B,165,1,5,2,110,18.33,21
+"
+Solon A",390,7,5,5,260,21.67,Wilmington Charter,210,1,7,1,130,16.25,22
+"
+Raleigh Charter",375,3,10,2,240,18.46,Dunbar A,200,2,5,0,120,17.14,20
+"
+Carmel A",435,6,8,1,270,19.29,Baker,280,6,3,4,180,20.00,23
+"
+Irvington",350,5,7,1,210,17.50,Langley,200,2,5,4,140,20.00,19
+"
+Chattahoochee A",385,3,9,2,260,21.67,"Troy (Troy, MI)",240,5,3,3,150,18.75,22
+"
+Bellarmine College Prep",345,5,6,2,220,20.00,Ithaca,200,1,7,1,120,15.00,21
+"
+Ladue",340,5,6,3,220,20.00,James E. Taylor,205,1,7,0,120,15.00,20
+"
+Kinkaid",385,6,6,1,240,20.00,Hoover A,260,4,5,4,170,18.89,22
+"
+Providence",280,0,11,2,180,16.36,Plano West A,160,1,5,3,110,18.33,19
+"
+East Chapel Hill A",355,8,3,3,220,20.00,Strake Jesuit A,255,1,8,0,160,17.78,20
+"
+Saratoga",375,3,9,0,240,20.00,Ridgewood A,285,5,4,4,190,21.11,23
+"
+White Station A",390,3,10,1,250,19.23,Silver Spring Scholars A,305,5,5,2,190,19.00,23
+"
+Great Valley A",360,7,4,1,220,20.00,William Fremd A,280,3,7,3,180,18.00,22
+"
+Homestead",390,4,8,2,260,21.67,"Midtown (Atlanta, GA)",310,1,9,1,210,21.00,23
+"
+Livingston",270,4,5,2,170,18.89,St. Joseph Central A,195,1,7,2,120,15.00,17
+"
+Detroit Country Day A",330,5,7,5,210,17.50,Beavercreek,255,3,5,2,170,21.25,24
+"
+McLean A",355,2,8,1,250,25.00,Stanford Online,290,3,7,3,190,19.00,22
+"
+Freeman",290,2,8,2,190,19.00,Glasgow,250,0,9,2,170,18.89,19
+"
+Winston Churchill",325,4,6,3,220,22.00,University Lab,290,4,6,2,180,18.00,23
+"
+Manheim Township A",295,3,8,4,190,17.27,Stanton College Prep A,260,3,6,3,170,18.89,21
+"
+Barrington A",305,4,6,3,200,20.00,Harker A,280,4,6,0,160,16.00,21
+"
+Detroit Catholic Central A (OT)",340,2,9,2,230,25.56,Cinco Ranch A,330,6,7,4,190,17.27,24
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Thomas Jefferson Science & Tech B",470,5,10,3,310,20.67,Chattahoochee A,40,0,3,6,40,13.33,20
+"
+Hunter A",515,6,9,1,340,22.67,Arcadia,160,2,3,6,130,26.00,23
+"
+Strake Jesuit A",515,7,8,2,340,22.67,Winston Churchill,175,3,3,2,110,18.33,24
+"
+Cinco Ranch A",405,5,9,2,250,17.86,White Station A,75,0,4,5,60,15.00,20
+"
+Lambert",505,8,6,3,340,24.29,McLean A,205,5,2,2,120,17.14,24
+"
+Saratoga",445,9,4,2,280,21.54,Irvington,210,2,6,2,130,16.25,22
+"
+Great Valley A",430,9,4,1,260,20.00,Buffalo Grove,200,3,4,5,140,20.00,23
+"
+Freeman",485,9,5,2,310,22.14,Beavercreek,285,6,3,3,180,20.00,24
+"
+Kinkaid",390,6,8,2,230,16.43,Richard Montgomery A,230,4,4,4,150,18.75,23
+"
+Baker",385,5,7,2,250,20.83,Ladue,240,5,4,3,140,15.56,24
+"
+Livingston",315,5,6,0,180,16.36,Bellarmine College Prep,190,2,7,2,100,11.11,24
+"
+Greenhill",335,6,6,3,200,16.67,Raleigh Charter,220,2,6,2,140,17.50,24
+"
+Solon A",350,3,9,5,240,20.00,Paideia,240,3,6,3,150,16.67,24
+"
+Thomas Jefferson Science & Tech A",315,5,5,6,220,22.00,Barrington A,255,2,6,1,170,21.25,22
+"
+East Chapel Hill A",400,5,6,1,270,24.55,Detroit Country Day A,350,5,6,3,230,20.91,24
+"
+Homestead",315,6,5,1,180,16.36,Darien A,280,2,8,2,180,18.00,23
+"
+Wayzata A",275,1,9,2,180,18.00,Manheim Township A,255,5,4,2,150,16.67,22
+"
+Hoover A",235,3,6,4,150,16.67,Providence,220,2,7,2,130,14.44,22
+"
+Detroit Catholic Central A",350,8,2,2,220,22.00,Carmel A,345,6,4,3,230,23.00,23
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Thomas Jefferson Science & Tech A",525,7,7,2,360,25.71,Detroit Country Day A,160,2,5,4,100,14.29,23
+"
+Arcadia",490,9,5,3,320,22.86,Saratoga,210,4,4,2,120,15.00,23
+"
+Cinco Ranch A",380,3,10,1,240,18.46,Great Valley A,185,3,3,6,140,23.33,20
+"
+Strake Jesuit A",395,5,7,4,270,22.50,Baker,250,1,8,3,170,18.89,21
+"
+Livingston",390,4,8,2,260,21.67,Carmel A,255,6,2,5,170,21.25,23
+"
+Thomas Jefferson Science & Tech B",405,3,10,2,270,20.77,Homestead,275,2,7,5,200,22.22,22
+"
+Freeman",395,2,10,1,270,22.50,Greenhill,295,4,5,5,210,23.33,23
+"
+Hoover A",375,4,8,3,250,20.83,Wayzata A,280,5,4,5,190,21.11,24
+"
+Solon A",375,4,8,3,250,20.83,Lambert,300,7,4,5,180,16.36,24
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Hunter A",550,10,7,2,340,20.00,Kinkaid,145,2,3,3,100,20.00,23
+"
+Arcadia",545,9,7,2,350,21.88,Freeman,165,3,4,2,90,12.86,23
+"
+Thomas Jefferson Science & Tech A",430,8,5,4,280,21.54,Hoover A,225,2,6,1,140,17.50,23
+"
+Solon A",385,2,11,3,260,20.00,Livingston,200,1,6,1,130,18.57,23
+"
+East Chapel Hill A",430,7,7,3,270,19.29,Detroit Catholic Central A,270,8,0,2,160,20.00,24
+"
+Strake Jesuit A",385,5,8,2,240,18.46,Richard Montgomery A,250,3,5,1,160,20.00,23
+"
+Thomas Jefferson Science & Tech B",290,3,7,3,190,19.00,Cinco Ranch A,285,3,7,0,170,17.00,23
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Kinkaid",425,6,8,3,270,19.29,Thomas Jefferson Science & Tech B,145,1,5,8,120,20.00,23
+"
+Thomas Jefferson Science & Tech A",445,9,6,4,270,18.00,Solon A,195,2,5,3,130,18.57,22
+"
+Arcadia",380,5,6,1,250,22.73,Strake Jesuit A,265,5,4,4,170,18.89,22
+"
+Hunter A",375,3,9,2,250,20.83,East Chapel Hill A,360,6,4,2,240,24.00,22
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Kinkaid",435,7,6,2,280,21.54,Thomas Jefferson Science & Tech A,175,5,3,6,100,12.50,22
+"
+Detroit Catholic Central A",340,3,7,1,230,23.00,Arcadia,310,5,5,3,200,20.00,22
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Hunter A",520,9,6,1,330,22.00,Kinkaid,220,4,3,4,150,21.43,24
+"
+Detroit Catholic Central A",455,7,7,0,280,20.00,East Chapel Hill A,230,5,3,3,140,17.50,23
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Detroit Catholic Central A",470,6,9,0,290,19.33,Hunter A,275,2,6,1,190,23.75,23
+"
+East Chapel Hill A",425,5,8,2,280,21.54,Kinkaid,235,5,3,4,150,18.75,21
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Detroit Catholic Central A",380,6,7,2,230,17.69,Hunter A,295,3,7,4,200,20.00,23

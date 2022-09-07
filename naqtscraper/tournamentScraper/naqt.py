@@ -1,4 +1,5 @@
 import csv
+import urllib
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import urllib.request
@@ -63,7 +64,7 @@ csvFile.close()'''
 
 def get_tournaments(tournamentUrl):
     newTournamentUrl = tournamentUrl.replace('standings', 'round')
-    csvFile = open('MIT-Data.csv', 'wt+')
+    csvFile = open('HSNCT-Data.csv', 'wt+')
     for x in range(1, 200):
         roundUrl = newTournamentUrl + '&round=' + str(x)
         html = urlopen(roundUrl)
@@ -86,7 +87,7 @@ def get_tournaments(tournamentUrl):
     csvFile.close()
 
 
-#get_tournaments("https://www.naqt.com/stats/tournament/standings.jsp?tournament_id=12821")
+get_tournaments("https://www.naqt.com/stats/tournament/standings.jsp?tournament_id=12402")
 '''
 def get_HSQBtournaments(HSQBtournamentUrl):
     html = urlopen(HSQBtournamentUrl)
@@ -109,7 +110,7 @@ def get_HSQBtournaments(HSQBtournamentUrl):
     csvFile.close()
 '''
 
-get_HSQBtournaments2('https://hsquizbowl.org/db/tournaments/7160/stats/combined/games/')
+#get_HSQBtournaments2('https://hsquizbowl.org/db/tournaments/7160/stats/combined/games/')
 '''
 HTMLFileToBeOpened = open("UKY-Stats.html", "r")
 contents = HTMLFileToBeOpened.read()
