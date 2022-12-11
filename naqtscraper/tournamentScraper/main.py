@@ -7,14 +7,14 @@ import urllib.request
 user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'
 
 #url = "http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers"
-url = "https://hsquizbowl.org/db/tournaments/6989/stats/all_games_%28no_finish_order%29/games/"
+url = "https://hsquizbowl.org/db/tournaments/7530/stats/lunch_(1-5)/"
 headers={'User-Agent':user_agent,}
 
 def get_HSQBtournaments2(url):
     #html = urlopen(url)
     #bs = BeautifulSoup(html, 'html.parser')
-    csvFile = open('ACFWINTER-Data.csv', 'wt+')
-    htmlFile = open('ACFWINTER-Stats.html', 'w')
+    csvFile = open('SCOTTIE22-Data.csv', 'wt+')
+    htmlFile = open('SCOTTIE22-Stats.html', 'w')
     request=urllib.request.Request(url,None,headers) 
     response = urllib.request.urlopen(request)
     data = response.read() 
@@ -81,7 +81,7 @@ def get_HSQBtournaments(HSQBtournamentUrl):
     csvFile.close()
 '''
 
-get_HSQBtournaments2('https://hsquizbowl.org/db/tournaments/7211/stats/round_robin/')
+get_HSQBtournaments2('https://hsquizbowl.org/db/tournaments/7596/stats/prelims_(rounds_1-5)/games')
 '''
 HTMLFileToBeOpened = open("UKY-Stats.html", "r")
 contents = HTMLFileToBeOpened.read()

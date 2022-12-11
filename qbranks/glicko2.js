@@ -161,7 +161,7 @@
         // Internal glicko2 parameter. "Reasonable choices are between 0.3 and
         // 1.2, though the system should be tested to decide which value results
         // in greatest predictive accuracy."
-        this._tau = settings.tau || 0.5;
+        this._tau = settings.tau || 0.2;
 
         // Default rating
         this._default_rating = settings.rating || 1500;

@@ -7,22 +7,21 @@ import urllib.request
 user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'
 
 # url = "http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers"
-url = "https://hsquizbowl.org/db/tournaments/7212/stats/rounds_1-11/games/"
+url = "https://hsquizbowl.org/db/tournaments/7604/stats/playoffs_(8-11)/games/"
 headers = {'User-Agent': user_agent, }
 
 
 def get_HSQBtournaments2(url):
     # html = urlopen(url)
     # bs = BeautifulSoup(html, 'html.parser')
-    csvFile = open('WUFAT-Data.csv', 'wt+')
-    htmlFile = open('WUFAT-Stats.html', 'w')
+    csvFile = open('ITHACAFALL22-Data.csv', 'wt+')
+    htmlFile = open('ITHACAFALL22-Stats.html', 'w')
     request = urllib.request.Request(url, None, headers)
     response = urllib.request.urlopen(request)
     data = response.read()
     print(data)
     htmlFile.write(str(data))
     htmlFile.close()
-
 
 '''
 for x in range(1, 49):
@@ -64,7 +63,7 @@ csvFile.close()'''
 
 def get_tournaments(tournamentUrl):
     newTournamentUrl = tournamentUrl.replace('standings', 'round')
-    csvFile = open('HSNCT-Data.csv', 'wt+')
+    csvFile = open('BBLEAGUE22-Data.csv', 'wt+')
     for x in range(1, 200):
         roundUrl = newTournamentUrl + '&round=' + str(x)
         html = urlopen(roundUrl)
@@ -78,21 +77,22 @@ def get_tournaments(tournamentUrl):
                 csvRow = []
                 for cell in row.findAll(['td', 'th']):
                     csvRow.append(cell.get_text())
-                    # print(csvRow)
+                    print(csvRow)
                     # writer.writerow(csvRow)
-                    if len(csvRow) == 15:
+                    if len(csvRow) == 4:
                         writer.writerow(csvRow)
         finally:
             print()
     csvFile.close()
 
 
-get_tournaments("https://www.naqt.com/stats/tournament/standings.jsp?tournament_id=12402")
+get_tournaments("https://www.naqt.com/stats/tournament/standings.jsp?tournament_id=13427")
+
 '''
 def get_HSQBtournaments(HSQBtournamentUrl):
     html = urlopen(HSQBtournamentUrl)
     bs = BeautifulSoup(html, 'html.parser')
-    csvFile = open('CORGI-Data.csv', 'wt+')
+    csvFile = open('-Data.csv', 'wt+')
     for x in range(1,49):
         if x%2 == 0:
             table = bs.findAll('table')[x]
@@ -110,7 +110,7 @@ def get_HSQBtournaments(HSQBtournamentUrl):
     csvFile.close()
 '''
 
-#get_HSQBtournaments2('https://hsquizbowl.org/db/tournaments/7160/stats/combined/games/')
+#get_HSQBtournaments2('https://hsquizbowl.org/db/tournaments/7729/stats/all_games/games/')
 '''
 HTMLFileToBeOpened = open("UKY-Stats.html", "r")
 contents = HTMLFileToBeOpened.read()
@@ -119,7 +119,7 @@ print(beautifulSoupText.body.prettify())
 for tag in beautifulSoupText.findAll(True):
     print(tag.name, " : ", len(beautifulSoupText.find(tag.name).text))
 
-html = urlopen('CORGI-Stats.html')
+html = urlopen('-Stats.html')
 bs = BeautifulSoup(html, 'html.parser')
 for x in range(1, 49):
     if x % 2 == 0:
@@ -138,20 +138,22 @@ for x in range(1, 49):
 csvFile.close()
 '''
 
-csvFile = open('WUFAT-Data.csv', 'wt+')
-with open('WUFAT-Stats.html') as f:
+csvFile = open('BBLEAGUE22-Data.csv', 'wt+')
+with open('BBLEAGUE22-Stats.html') as f:
     # read File
     content = f.read()
     # parse HTML
     soup = BeautifulSoup(content, 'html.parser')
     y = 0
-    '''for x in range(0,200):
+
+    for x in range(0,2000):
         print(x)
         font = soup.findAll('h3')[x]
         print("xfont", x, font)
         writer = csv.writer(csvFile)
         csvRow = []
-        fontSplitZero = str(font).split("</span>")
+        fontSplitZero = str(font).split("<h3>")
+        #fontSplitZero = str(font).split("<\span>")
         fontSplitOne = str(fontSplitZero[1]).split("<")
         print("fs1", fontSplitOne)
         fontSplitTwo = fontSplitOne
@@ -168,8 +170,11 @@ with open('WUFAT-Stats.html') as f:
         rowArray.append(B[2])
         print(rowArray)
         csvRow = rowArray
-        writer.writerow(csvRow)'''
-    '''for x in range(0, 200):
+        writer.writerow(csvRow)
+
+    '''
+    y = 1
+    for x in range(0, 200):
         if x % 1 == 0:
             if x % 1 == 0:
                 print(x)
@@ -177,8 +182,11 @@ with open('WUFAT-Stats.html') as f:
                 print("xfont",x, font)
                 writer = csv.writer(csvFile)
                 csvRow = []
-                fontSplitZero = str(font).split("</span>")
-                fontSplitOne=str(fontSplitZero[1]).split("<")
+                fontSplitZero = str(font).split("<")[1]
+                print("fs0",fontSplitZero)
+                fontSplitZeroPointFive = fontSplitZero.split(">")
+                print("fs0.5",fontSplitZeroPointFive)
+                fontSplitOne=str(fontSplitZeroPointFive[1]).split("\n")
                 print("fs1",fontSplitOne)
                 fontSplitTwo = fontSplitOne
                 #fontSplitTwo = str(fontSplitOne[1]).split(">")
@@ -200,11 +208,14 @@ with open('WUFAT-Stats.html') as f:
             if y == 1:
                 y = 0
             elif y == 0:
-                y = 1'''
-    '''for x in range(0, 200):
-        if x % 13 != 0 and x != 89 and x != 101:
-            # print(1, x, soup.findAll('font')[x])
-            if (x + y) % 2 == 0 and x != 76 and x != 78 and x != 90:
+                y = 1
+    '''
+    '''y=1
+    for x in range(1, 200):
+        if x % 13 != 0:
+            print(soup.findAll('font'))
+            print(1, x, soup.findAll('font')[x])
+            if ((x + y) % 2 == 0) and not (x%66==300):
                 font = soup.findAll('font')[x]
                 print("xfont", x, font)
                 writer = csv.writer(csvFile)
@@ -213,8 +224,8 @@ with open('WUFAT-Stats.html') as f:
                 fontSplitOne = str(fontSplitZero[0]).split(">")
                 fontSplitTwo = fontSplitOne[1]
                 print("fs1", fontSplitTwo)
-                # fontSplitTwo = str(fontSplitOne[1]).split(">")
-                # print(fontSplitTwo[1])
+                #fontSplitTwo = str(fontSplitOne[1]).split(">")
+                #print(fontSplitTwo[1])
                 finalFontSplit = str(fontSplitTwo).split(", ")
                 print("ffs", finalFontSplit)
                 rowArray = []
@@ -232,7 +243,8 @@ with open('WUFAT-Stats.html') as f:
             if y == 1:
                 y = 0
             elif y == 0:
-                y = 1'''
+                y = 1
+    '''
     '''for x in range(0, 200):
         if (x % 17 != 0 and x <100) or ((x-104) % 21 != 0 and x >= 100):
             # print(1, x, soup.findAll('font')[x])
@@ -265,9 +277,10 @@ with open('WUFAT-Stats.html') as f:
                 y = 0
             elif y == 0:
                 y = 1'''
-    y = 1
+    '''
+    y = 0
     for x in range(0, 200):
-        if x % 11 != 0:
+        if x % 10000 != 0:
             if x % 1 == 0:
                 print(x)
                 font = soup.findAll('h3')[x]
@@ -299,4 +312,5 @@ with open('WUFAT-Stats.html') as f:
                 y = 0
             elif y == 0:
                 y = 1
+        '''
 csvFile.close()

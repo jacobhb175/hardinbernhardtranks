@@ -1,84 +1,90 @@
-Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
-"
-Beavercreek",485,10,4,3,310,22.14,Dublin Scioto,90,2,3,2,40,8.00,20
-"
-Miami Valley",360,1,14,1,210,14.00,Bellefontaine,5,0,1,1,0,0.00,20
-"
-Walnut Hills",440,2,14,2,280,17.50,Indian Hill,85,0,3,1,60,20.00,20
-"
-Solon A",430,13,0,7,270,20.77,Tippecanoe,110,0,5,0,60,12.00,20
-Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
-"
-Beavercreek",465,6,8,3,310,22.14,Tippecanoe,55,0,4,5,40,10.00,20
-"
-Solon A",435,6,6,5,310,25.83,Dublin Scioto,75,2,1,1,40,13.33,20
-"
-Miami Valley",340,2,10,0,210,17.50,Walnut Hills,205,4,3,3,130,18.57,20
-"
-Solon B",240,0,9,4,170,18.89,Bellefontaine,110,1,5,1,50,8.33,20
-Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
-"
-Solon A",540,11,4,5,360,24.00,Miami Valley,100,0,5,0,50,10.00,20
-"
-Beavercreek",410,6,6,4,280,23.33,Indian Hill,130,4,2,0,50,8.33,20
-"
-Dublin Scioto",165,1,9,6,90,9.00,Bellefontaine,100,2,3,0,40,8.00,20
-"
-Solon B",245,2,8,5,160,16.00,Tippecanoe,185,3,5,0,90,11.25,20
-Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
-"
-Beavercreek",625,9,8,2,420,24.71,Bellefontaine,25,0,2,1,10,5.00,20
-"
-Solon B",375,4,9,3,240,18.46,Dublin Scioto,80,0,4,2,50,12.50,20
-"
-Solon A",470,6,7,2,320,24.62,Walnut Hills,190,4,3,2,110,15.71,20
-"
-Miami Valley",300,0,12,4,200,16.67,Indian Hill,75,0,4,1,40,10.00,20
-Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
-"
-Indian Hill",250,2,10,0,120,10.00,Bellefontaine,35,0,4,3,10,2.50,20
-"
-Dublin Scioto",275,4,8,5,160,13.33,Tippecanoe,80,0,4,0,40,10.00,20
-"
-Solon A",425,8,3,1,280,25.45,Beavercreek,310,5,3,1,210,26.25,20
-"
-Solon B",275,3,6,0,170,18.89,Walnut Hills,265,5,4,0,150,16.67,20
-Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
-"
-Miami Valley",505,5,13,0,300,16.67,Dublin Scioto,35,0,2,1,20,10.00,20
-"
-Beavercreek",550,7,8,1,370,24.67,Walnut Hills,110,0,5,0,60,12.00,20
-"
-Solon B",340,4,7,4,230,20.91,Indian Hill,75,1,4,0,20,4.00,20
-"
-Tippecanoe",170,2,6,0,80,10.00,Bellefontaine,95,0,6,1,40,6.67,20
-Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
-"
-Solon A",585,12,5,3,370,21.76,Indian Hill,30,0,2,0,10,5.00,20
-"
-Beavercreek",500,8,6,2,330,23.57,Solon B,160,2,4,2,100,16.67,20
-"
-Miami Valley",320,5,7,1,180,15.00,Tippecanoe,35,1,2,2,10,3.33,20
-"
-Walnut Hills",370,2,12,2,230,16.43,Dublin Scioto,110,1,5,3,60,10.00,20
-Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
-"
-Solon A",590,11,6,3,380,22.35,Bellefontaine,40,0,2,0,20,10.00,20
-"
-Miami Valley",395,2,12,1,250,17.86,Solon B,160,4,2,4,100,16.67,20
-"
-Dublin Scioto",180,4,6,6,90,9.00,Indian Hill,80,1,3,1,40,10.00,20
-"
-Walnut Hills",200,4,4,2,110,13.75,Tippecanoe,120,1,5,1,60,10.00,20
-Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
-"
-Walnut Hills",350,3,11,3,210,15.00,Bellefontaine,40,0,2,0,20,10.00,20
-"
-Beavercreek",425,8,5,3,270,20.77,Miami Valley,120,3,2,1,60,12.00,20
-"
-Solon B",395,5,8,0,240,18.46,Solon A,210,4,3,6,150,21.43,20
-"
-Tippecanoe",170,2,6,2,90,11.25,Indian Hill,145,0,7,1,80,11.43,20
-Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
-"
-Solon A",435,6,6,3,300,25.00,Beavercreek,265,4,4,3,180,22.50,20
+Walnut Hills,260,Tippecanoe B,10
+Miami Valley A,300,Sidney,65
+Dunbar,360,Northmont B,120
+Solon B,330,Celina,30
+Indian Hill,235,St. Xavier B,75
+Solon A,525,Butler,65
+Beavercreek,375,St. Xavier A,85
+Northmont A,290,Mason,65
+Tippecanoe A,270,Miami Valley B,115
+Northmont A,510,St. Xavier B,40
+Tippecanoe A,290,Northmont B,180
+Sidney,190,Tippecanoe B,60
+Solon B,495,Indian Hill,120
+Solon A,400,Miami Valley A,190
+Mason,300,Celina,20
+St. Xavier A,265,Miami Valley B,130
+Walnut Hills,285,Butler,90
+Dunbar,430,Beavercreek,205
+Solon B,380,St. Xavier B,140
+Northmont A,475,Celina,40
+Indian Hill,215,Mason,190
+Northmont B,210,St. Xavier A,200
+Beavercreek,305,Miami Valley B,105
+Dunbar,425,Tippecanoe A,60
+Butler,165,Tippecanoe B,80
+Solon A,685,Sidney,-10
+Miami Valley A,235,Walnut Hills,195
+Northmont A,425,Indian Hill,120
+Solon B,390,Mason,155
+St. Xavier B,155,Celina,85
+Beavercreek,490,Tippecanoe A,85
+Northmont B,250,Miami Valley B,40
+Dunbar,420,St. Xavier A,165
+Miami Valley A,260,Butler,130
+Walnut Hills,200,Sidney,155
+Solon A,545,Tippecanoe B,50
+Indian Hill,440,Celina,10
+Northmont A,365,Solon B,250
+St. Xavier A,235,Tippecanoe A,155
+Mason,265,St. Xavier B,140
+Beavercreek,445,Northmont B,70
+Solon A,500,Walnut Hills,80
+Dunbar,575,Miami Valley B,5
+Butler,135,Sidney,80
+Miami Valley A,480,Tippecanoe B,10
+St. Xavier A,265,Mason,185
+Northmont A,375,Solon B,215
+Indian Hill,290,Butler,95
+Beavercreek,330,Dunbar,300
+Solon A,545,Miami Valley A,130
+Walnut Hills,210,Tippecanoe A,175
+Miami Valley B,110,Sidney,65
+Northmont B,265,Celina,20
+St. Xavier B,180,Tippecanoe B,30
+Mason,330,Butler,75
+Miami Valley A,300,Northmont A,295
+St. Xavier A,175,Walnut Hills,160
+Solon A,525,Beavercreek,115
+Indian Hill,245,Tippecanoe A,80
+Dunbar,485,Solon B,155
+Sidney,160,Celina,10
+Miami Valley B,120,St. Xavier B,90
+Northmont B,245,Tippecanoe B,65
+Miami Valley B,190,Tippecanoe B,30
+Indian Hill,245,St. Xavier A,180
+Tippecanoe A,255,Butler,120
+Mason,250,Walnut Hills,245
+Beavercreek,365,Miami Valley A,175
+Solon A,415,Solon B,220
+Dunbar,470,Northmont A,240
+Northmont B,220,Miami Valley B,110
+Tippecanoe B,105,Celina,20
+St. Xavier B, 150, Sidney, 90
+Northmont B,275,St. Xavier B,230
+Indian Hill,240,Mason,235
+Solon B,400,Beavercreek,155
+Walnut Hills,230,Butler,105
+Tippecanoe A,315,St. Xavier A,125
+Dunbar,435,Miami Valley A,210
+Solon A,615,Northmont A,160
+Northmont B,295,Sidney,65
+St. Xavier B, 180, Celina, 30
+Sidney,265,Tippecanoe B,50
+Northmont A,430,Beavercreek,150
+Solon A,350,Dunbar,315
+St. Xavier A,250,Butler,120
+Tippecanoe A,245,Mason,215
+Solon B,300,Miami Valley A,285
+Walnut Hills,225,Indian Hill,180
+Miami Valley B,190,Celina,50
