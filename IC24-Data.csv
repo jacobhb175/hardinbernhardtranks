@@ -1,0 +1,313 @@
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Eastchester",590,6,12,0,380,21.11,Kings Park C,0,0,1,2,0,0.00,20
+"
+Darien A",530,10,5,2,340,22.67,Kellenberg,130,1,3,1,90,22.50,20
+"
+Hastings",530,6,9,2,360,24.00,Bronx Science,130,2,2,2,90,22.50,20
+"
+Ward Melville A",430,6,7,0,270,20.77,Middlesex Middle B,150,3,3,3,90,15.00,20
+"
+Darien B",385,3,9,2,260,21.67,North Babylon B,115,1,3,0,70,17.50,20
+"
+Middlesex Middle A",465,6,8,1,300,21.43,Livingston A,225,4,2,1,150,25.00,20
+"
+Heritage Middle A",280,3,7,5,190,19.00,South Side B,40,0,3,0,10,3.33,20
+"
+North Babylon A",365,3,10,4,240,18.46,Great Neck South,155,1,5,4,110,18.33,20
+"
+Ward Melville B",360,3,9,1,230,19.17,Half Hollow Hills West,185,2,4,1,120,20.00,20
+"
+Kings Park D",160,0,7,0,90,12.86,Half Hollow Hills East,0,0,1,2,0,0.00,20
+"
+Kings Park B",295,2,8,3,200,20.00,Hopkins,150,1,5,1,90,15.00,20
+"
+Hightstown",380,8,3,2,240,21.82,Kings Park A,275,4,5,1,170,18.89,20
+"
+Wilton",280,2,8,0,170,17.00,Heritage Middle B,225,1,8,4,150,16.67,20
+"
+Greens Farms B",180,2,6,0,90,11.25,South Side A,165,1,6,2,100,14.29,20
+"
+Livingston B",300,5,5,1,180,18.00,Greens Farms A,295,4,6,3,190,19.00,20
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Darien A",610,10,7,2,400,23.53,Kings Park D,10,0,1,0,0,0.00,20
+"
+Hastings",620,12,5,0,390,22.94,Heritage Middle A,75,1,2,0,40,13.33,20
+"
+Kings Park B",435,3,12,2,280,18.67,South Side B,-10,0,1,4,0,0.00,20
+"
+Half Hollow Hills West",340,3,9,1,210,17.50,Half Hollow Hills East,10,1,0,1,0,0.00,20
+"
+Livingston B",375,2,8,1,270,27.00,North Babylon B,60,1,3,1,20,5.00,20
+"
+Middlesex Middle B",405,4,6,1,290,29.00,Kings Park C,105,0,4,1,70,17.50,20
+"
+Eastchester",485,8,6,1,310,22.14,Heritage Middle B,195,4,2,1,120,20.00,20
+"
+Livingston A",345,6,5,5,230,20.91,Greens Farms B,65,0,5,1,20,4.00,20
+"
+Bronx Science",365,4,9,1,220,16.92,Hopkins,130,1,4,1,80,16.00,20
+"
+Middlesex Middle A",305,4,7,3,190,17.27,Great Neck South,100,3,1,1,50,12.50,20
+"
+North Babylon A",360,4,9,2,220,16.92,South Side A,160,3,3,1,90,15.00,20
+"
+Kellenberg",365,4,9,1,220,16.92,Ward Melville B,180,4,2,0,100,16.67,20
+"
+Ward Melville A",380,8,3,2,240,21.82,Wilton,250,2,7,0,150,16.67,20
+"
+Hightstown",345,4,6,3,240,24.00,Darien B,255,6,3,1,140,15.56,20
+"
+Kings Park A",285,2,7,1,190,21.11,Greens Farms A,225,4,6,3,120,12.00,20
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Kings Park A",510,5,12,1,320,18.82,North Babylon B,65,0,3,1,40,13.33,20
+"
+Middlesex Middle A",515,9,7,2,320,20.00,South Side A,120,0,4,0,80,20.00,20
+"
+Darien A",420,7,5,7,300,25.00,Half Hollow Hills East,55,1,4,0,0,0.00,20
+"
+Eastchester",480,7,7,1,310,22.14,Ward Melville A,155,3,2,4,110,22.00,20
+"
+Darien B",485,5,10,0,310,20.67,Livingston B,180,3,2,1,120,24.00,20
+"
+Bronx Science",380,6,7,2,230,17.69,Heritage Middle A,90,2,3,6,60,12.00,20
+"
+Kellenberg",430,8,6,0,250,17.86,Half Hollow Hills West,145,1,4,0,90,18.00,20
+"
+Hopkins",315,3,9,0,180,15.00,South Side B,35,0,3,3,20,6.67,20
+"
+Livingston A",340,4,8,4,220,18.33,Great Neck South,115,1,4,2,70,14.00,20
+"
+Heritage Middle B",315,3,8,2,200,18.18,Kings Park C,115,2,3,1,60,12.00,20
+"
+Hastings",440,8,3,2,300,27.27,Kings Park B,265,3,4,0,180,25.71,20
+"
+North Babylon A",240,2,6,6,180,22.50,Greens Farms B,120,2,4,2,60,10.00,20
+"
+Ward Melville B",190,2,6,2,110,13.75,Kings Park D,80,0,6,0,20,3.33,20
+"
+Hightstown",330,6,5,2,200,18.18,Greens Farms A,225,5,3,2,130,16.25,20
+"
+Middlesex Middle B",225,3,4,4,160,22.86,Wilton,195,0,9,1,110,12.22,20
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Hightstown",565,8,9,1,360,21.18,North Babylon B,55,1,2,0,20,6.67,20
+"
+Eastchester",600,9,8,1,390,22.94,Wilton,100,2,1,0,60,20.00,20
+"
+Hastings",575,8,9,1,370,21.76,Hopkins,80,2,1,2,50,16.67,20
+"
+Ward Melville A",485,7,6,2,330,25.38,Kings Park C,55,2,1,3,30,10.00,20
+"
+Darien A",505,9,6,2,320,21.33,Ward Melville B,115,3,1,0,60,15.00,20
+"
+Middlesex Middle A",370,9,3,3,220,18.33,Greens Farms B,50,0,2,2,40,20.00,20
+"
+Kellenberg",350,7,7,1,180,12.86,Half Hollow Hills East,55,1,3,0,10,2.50,20
+"
+Bronx Science",360,5,6,1,230,20.91,South Side B,75,2,3,1,20,4.00,20
+"
+Half Hollow Hills West",315,1,10,0,200,18.18,Kings Park D,50,1,2,1,20,6.67,20
+"
+Livingston A",390,4,9,2,250,19.23,North Babylon A,170,1,5,1,110,18.33,20
+"
+Middlesex Middle B",320,6,6,2,180,15.00,Heritage Middle B,120,1,4,1,70,14.00,20
+"
+Kings Park A",345,2,10,1,220,18.33,Livingston B,230,3,5,1,140,17.50,20
+"
+Heritage Middle A",335,8,3,1,190,17.27,Kings Park B,230,3,6,1,130,14.44,20
+"
+Greens Farms A",320,6,7,4,180,13.85,Darien B,220,1,6,1,150,21.43,20
+"
+South Side A",160,2,6,2,80,10.00,Great Neck South,110,1,5,3,60,10.00,20
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Hastings",620,10,7,0,400,23.53,South Side B,35,0,2,1,20,10.00,20
+"
+Hightstown",505,10,6,3,310,19.38,Livingston B,90,1,2,1,60,20.00,20
+"
+Eastchester",515,9,7,0,310,19.38,Middlesex Middle B,105,1,3,2,70,17.50,20
+"
+Greens Farms A",435,8,7,3,260,17.33,North Babylon B,30,0,2,0,10,5.00,20
+"
+Kellenberg",395,0,17,3,240,14.12,Kings Park D,-5,0,0,1,0,0.00,20
+"
+Middlesex Middle A",470,7,8,1,290,19.33,North Babylon A,105,2,2,3,70,17.50,20
+"
+Darien A",460,10,4,4,290,20.71,Half Hollow Hills West,145,1,5,0,80,13.33,20
+"
+Livingston A",410,8,4,4,270,22.50,South Side A,140,1,5,1,80,13.33,20
+"
+Bronx Science",440,8,4,0,280,23.33,Kings Park B,175,4,3,1,90,12.86,20
+"
+Ward Melville B",290,3,7,1,180,18.00,Half Hollow Hills East,40,0,3,0,10,3.33,20
+"
+Ward Melville A",330,5,6,3,210,19.09,Heritage Middle B,160,3,3,1,90,15.00,20
+"
+Great Neck South",245,3,8,0,120,10.91,Greens Farms B,95,0,5,3,60,12.00,20
+"
+Wilton",265,2,8,1,160,16.00,Kings Park C,145,1,6,4,90,12.86,20
+"
+Hopkins",245,1,9,0,140,14.00,Heritage Middle A,230,3,5,3,150,18.75,20
+"
+Kings Park A",280,4,6,2,170,17.00,Darien B,275,5,4,0,160,17.78,20
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Heritage Middle B",345,1,11,2,230,19.17,Great Neck South,20,0,3,2,0,0.00,20
+"
+Ward Melville A",395,3,10,2,260,20.00,Livingston A,110,3,1,5,80,20.00,20
+"
+Middlesex Middle A",430,3,12,1,270,18.00,Kings Park A,145,1,4,2,100,20.00,20
+"
+Darien B",355,6,4,1,230,23.00,Ward Melville B,100,1,5,1,40,6.67,20
+"
+Greens Farms B",260,0,11,0,150,13.64,Kings Park D,80,1,4,1,30,6.00,20
+"
+Heritage Middle A",300,0,12,2,190,15.83,South Side A,135,1,3,2,100,25.00,20
+"
+Darien A",420,7,5,5,290,24.17,Eastchester,260,1,7,3,190,23.75,20
+"
+Wilton",265,2,7,1,170,18.89,Half Hollow Hills West,140,0,7,2,80,11.43,20
+"
+Bronx Science",265,3,7,2,160,16.00,Middlesex Middle B,160,2,4,2,100,16.67,20
+"
+Kings Park C",220,3,6,1,120,13.33,North Babylon B,140,0,7,0,70,10.00,20
+"
+North Babylon A",295,2,9,1,180,16.36,Kellenberg,245,2,7,3,160,17.78,20
+"
+Greens Farms A",235,3,8,4,130,11.82,Kings Park B,210,0,8,2,140,17.50,20
+"
+Hastings",345,6,4,1,220,22.00,Hightstown,325,6,4,1,200,20.00,20
+"
+Half Hollow Hills East",85,1,6,0,10,1.43,South Side B,70,0,5,0,20,4.00,20
+"
+Hopkins",245,1,9,0,140,14.00,Livingston B,230,3,6,1,130,14.44,20
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Kings Park C",330,1,11,1,210,17.50,Kings Park D,15,0,1,1,10,10.00,20
+"
+Darien B",445,4,9,1,300,23.08,Half Hollow Hills West,175,3,4,0,90,12.86,20
+"
+Heritage Middle B",350,2,11,2,220,16.92,South Side A,90,1,3,1,50,12.50,20
+"
+Darien A",455,7,6,2,300,23.08,Kellenberg,205,1,6,0,130,18.57,20
+"
+Hopkins",290,5,6,3,170,15.45,Great Neck South,105,2,4,1,40,6.67,20
+"
+Hastings",410,6,6,0,260,21.67,Middlesex Middle A,230,6,2,2,130,16.25,20
+"
+Greens Farms B",180,1,8,1,90,10.00,South Side B,30,0,1,0,20,20.00,20
+"
+Kings Park A",325,2,9,3,220,20.00,Middlesex Middle B,190,3,4,3,120,17.14,20
+"
+Ward Melville A",370,2,8,0,260,26.00,Eastchester,240,4,4,4,160,20.00,20
+"
+Greens Farms A",265,3,7,4,170,17.00,Wilton,170,0,7,0,100,14.29,20
+"
+Hightstown",325,6,5,3,200,18.18,Bronx Science,240,4,3,2,160,22.86,20
+"
+North Babylon B",80,0,6,2,30,5.00,Half Hollow Hills East,0,0,1,2,0,0.00,20
+"
+Kings Park B",220,2,9,0,100,9.09,Ward Melville B,155,2,4,3,100,16.67,20
+"
+Livingston A",265,3,6,2,170,18.89,North Babylon A,210,1,7,1,130,16.25,20
+"
+Heritage Middle A",270,0,11,2,170,15.45,Livingston B,235,2,6,1,150,18.75,20
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Darien A",615,11,7,0,380,21.11,North Babylon A,60,2,0,2,40,20.00,20
+"
+Hastings",590,11,6,1,370,21.76,Kings Park A,95,0,3,1,70,23.33,20
+"
+Hightstown",575,10,6,1,370,23.12,Middlesex Middle B,105,0,4,1,70,17.50,20
+"
+Greens Farms A",450,5,10,1,280,18.67,Ward Melville B,110,1,3,1,70,17.50,20
+"
+Middlesex Middle A",415,7,8,2,240,16.00,Bronx Science,105,1,4,4,70,14.00,20
+"
+Heritage Middle A",370,9,4,1,200,15.38,Hopkins,130,0,5,2,90,18.00,20
+"
+Kings Park C",275,2,11,1,140,10.77,South Side B,60,1,2,3,40,13.33,20
+"
+Darien B",335,2,10,1,210,17.50,Wilton,210,3,4,1,130,18.57,20
+"
+Greens Farms B",160,1,7,3,90,11.25,Half Hollow Hills East,45,0,4,3,20,5.00,20
+"
+Heritage Middle B",315,3,9,0,180,15.00,Livingston B,210,3,4,1,130,18.57,20
+"
+Kings Park B",265,2,8,1,160,16.00,Half Hollow Hills West,190,1,9,1,90,9.00,20
+"
+Kellenberg",295,4,4,1,200,25.00,Ward Melville A,260,2,8,4,170,17.00,20
+"
+North Babylon B (OT)",120,1,5,1,60,12.00,Kings Park D,110,0,8,0,30,3.75,21
+"
+Livingston A",330,5,5,1,210,21.00,Eastchester,320,6,4,2,200,20.00,20
+"
+Great Neck South",200,3,6,1,100,11.11,South Side A,195,3,6,0,90,10.00,20
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Darien A",440,6,8,2,280,20.00,Livingston A,155,2,4,3,100,16.67,20
+"
+Eastchester",435,7,6,0,270,20.77,Kellenberg,175,3,3,0,100,16.67,20
+"
+Heritage Middle A",385,7,5,0,230,19.17,Heritage Middle B,125,3,2,0,60,12.00,20
+"
+Kings Park C",260,1,6,1,190,27.14,Half Hollow Hills East,20,0,1,0,10,10.00,20
+"
+Hastings",425,7,5,2,280,23.33,Bronx Science,205,2,5,1,130,18.57,20
+"
+Half Hollow Hills West",295,1,11,0,170,14.17,Ward Melville B,125,2,5,1,50,7.14,20
+"
+Greens Farms A",335,5,6,2,210,19.09,Darien B,245,1,8,0,150,16.67,20
+"
+Ward Melville A",320,5,4,1,210,23.33,North Babylon A,240,2,8,0,130,13.00,20
+"
+Greens Farms B",210,2,7,0,110,12.22,North Babylon B,135,1,5,0,70,11.67,20
+"
+Hightstown",300,5,5,3,190,19.00,Kings Park A,235,1,8,0,140,15.56,20
+"
+Kings Park D",135,0,5,1,90,18.00,South Side B,80,0,4,0,40,10.00,20
+"
+Livingston B",255,2,7,3,170,18.89,Great Neck South,215,1,7,2,140,17.50,20
+"
+Middlesex Middle A",300,3,6,1,200,22.22,Middlesex Middle B,285,3,7,2,180,18.00,20
+"
+Wilton",245,1,10,0,130,11.82,Kings Park B,230,1,5,3,180,30.00,20
+"
+South Side A",225,2,7,1,130,14.44,Hopkins,215,0,9,3,140,15.56,20
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Hastings",675,12,5,1,450,26.47,Middlesex Middle B,40,1,1,5,40,20.00,20
+"
+Eastchester",545,6,9,1,370,24.67,North Babylon A,130,2,3,2,80,16.00,20
+"
+Darien A",530,13,2,3,330,22.00,Ward Melville A,160,2,3,2,110,22.00,20
+"
+Livingston B",470,0,13,0,340,26.15,South Side A,115,0,5,1,70,14.00,20
+"
+Greens Farms A",355,9,5,2,180,12.86,Half Hollow Hills West,80,0,4,0,40,10.00,20
+"
+Middlesex Middle A",460,8,6,2,290,20.71,Hightstown,195,3,3,4,140,23.33,20
+"
+Heritage Middle A",365,4,9,1,220,16.92,Great Neck South,100,0,6,0,40,6.67,20
+"
+Wilton",380,2,11,0,240,18.46,Ward Melville B,140,2,4,0,70,11.67,20
+"
+North Babylon B",150,0,6,0,90,15.00,South Side B,15,0,3,3,0,0.00,20
+"
+Livingston A",350,5,5,3,240,24.00,Kellenberg,280,1,8,1,190,21.11,20
+"
+Darien B",315,1,9,4,230,23.00,Kings Park B,255,3,7,2,150,15.00,20
+"
+Bronx Science",335,3,7,2,230,23.00,Kings Park A,290,2,7,0,190,21.11,20
+"
+Heritage Middle B",275,3,7,4,180,18.00,Hopkins,230,0,9,0,140,15.56,20
+"
+Kings Park D",55,0,4,1,20,5.00,Half Hollow Hills East,15,0,1,1,10,10.00,20
+"
+Greens Farms B",165,0,9,1,80,8.89,Kings Park C,125,1,6,2,60,8.57,20
+Winner,Score,P,TU,I,B,PPB,Loser,Score,P,TU,I,B,PPB,TUH
+"
+Darien A",410,8,3,0,260,23.64,Hastings,295,7,2,2,180,20.00,20
