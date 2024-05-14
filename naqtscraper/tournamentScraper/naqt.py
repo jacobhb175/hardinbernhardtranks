@@ -63,7 +63,7 @@ csvFile.close()'''
 
 def get_tournaments(tournamentUrl):
     newTournamentUrl = tournamentUrl.replace('standings', 'round')
-    csvFile = open('LIFT24-Data.csv', 'wt+')
+    csvFile = open('CENTRALNY24-Data.csv', 'wt+')
     for x in range(1, 2000):
         roundUrl = newTournamentUrl + '&round=' + str(x)
         html = urlopen(roundUrl)
@@ -79,14 +79,14 @@ def get_tournaments(tournamentUrl):
                     csvRow.append(cell.get_text())
                     print(csvRow)
                     # writer.writerow(csvRow)
-                    if len(csvRow) == 4:
+                    if len(csvRow) == 7:
                         writer.writerow(csvRow)
         finally:
             print()
     csvFile.close()
 
 
-#get_tournaments("https://www.naqt.com/stats/tournament/standings.jsp?tournament_id=15270")
+get_tournaments("https://www.naqt.com/stats/tournament/standings.jsp?tournament_id=15644")
 
 '''
 def get_HSQBtournaments(HSQBtournamentUrl):
@@ -110,7 +110,7 @@ def get_HSQBtournaments(HSQBtournamentUrl):
     csvFile.close()
 '''
 
-get_HSQBtournaments2('https://hsquizbowl.org/db/tournaments/8657/stats/all_games/games/')
+#get_HSQBtournaments2('https://hsquizbowl.org/db/tournaments/8657/stats/all_games/games/')
 '''
 HTMLFileToBeOpened = open("UKY-Stats.html", "r")
 contents = HTMLFileToBeOpened.read()
